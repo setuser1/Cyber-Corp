@@ -1,5 +1,5 @@
-# mostly debugged
-# code below only decrypt the part from More Encryption.py
+# mostly debugged, uses mostly the same code from MoreEncyption.py
+# code below only decrypt the part from MoreEncryption.py
 
 import random
 
