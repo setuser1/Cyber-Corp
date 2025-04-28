@@ -1,7 +1,6 @@
 import random
 
 def main():
-# Large prime number for modulus
     constant = 395  # Example prime number, should be much larger in real scenarios
     pubkey = random.randint(500, 1000)
     print(pubkey)
