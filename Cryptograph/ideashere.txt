@@ -1,1 +1,9 @@
+we get the mixed key
 
+then we have the user input the text they want to send
+
+we use the mixed key value which is currently a number
+
+to sort the text the amount of times the mixed key says
+
+then output
