@@ -22,4 +22,7 @@ characters = [
         ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~',
 ]
 
-print(mixkey)
+total = 0
+mixkey = list(mixkey)
+for i in mixkey:
+        total+=i
