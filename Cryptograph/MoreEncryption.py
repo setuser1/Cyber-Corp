@@ -1,4 +1,4 @@
-#made using copilot, I debugged the code and haven't found any other bugs in the code
+# made using copilot, I debugged the code and haven't found any other bugs in the code
 
 import random
 
