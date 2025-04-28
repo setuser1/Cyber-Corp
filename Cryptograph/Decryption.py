@@ -27,7 +27,6 @@ random.shuffle(numbers)
 # Assign characters to shuffled numbers
 char_to_number = {char: numbers[i] for i, char in enumerate(characters[:len(numbers)])}
 
-
 # Reverse mapping: numbers back to characters
 number_to_char = {num: char for char, num in char_to_number.items()}
 
