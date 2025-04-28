@@ -1,4 +1,4 @@
-#made using copilot, I debugged the code shouldn't have any problems encrypting
+#made using copilot, I debugged the code and haven't found any other bugs in the code
 
 import random
 
@@ -21,7 +21,11 @@ random.shuffle(numbers)
 # Assign characters to shuffled numbers
 char_to_number = {char: numbers[i] for i, char in enumerate(characters[:len(numbers)])}
 
-# Print the result
-for char, num in char_to_number.items():
-    print(f"'{char}': {num}")
+# Get user input
+user_text = input("Enter text to encrypt: ")
 
+# Encrypt the input text
+encrypted_numbers = [str(char_to_number[char]) if char in char_to_number else '?' for char in user_text]
+
+# Output encrypted message without space after ":"
+print("Encrypted text:" + ' '.join(encrypted_numbers))
