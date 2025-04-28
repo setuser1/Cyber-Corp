@@ -1,4 +1,5 @@
 # mostly debugged
+# code below only debugs the part from More Encryption.py
 
 # Reverse mapping: numbers back to characters
 number_to_char = {num: char for char, num in char_to_number.items()}
