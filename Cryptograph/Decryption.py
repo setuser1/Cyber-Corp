@@ -1,6 +1,8 @@
 # mostly debugged, uses mostly the same code from MoreEncyption.py
 # code below only decrypt the part from MoreEncryption.py
 
+#haven't figured out how we're going to decrypt the number sorter thing
+
 import random
 
 characters = [
