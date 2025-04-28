@@ -26,4 +26,17 @@ total = 0
 mixkey = list(str(mixkey))
 for i in mixkey:
         total += int(i)
-print(total)
+
+total = total % len(characters)
+text = input("Enter the text to be encrypted: ")
+for i in range(total):        
+        random.shuffle(characters)  # Shuffle the characters based on the seed
+text.split()
+text = list(text)  # Convert the text to a list of characters
+for i in text:
+        if i in characters:
+                index = characters.index(i)
+                new_index = (index + total) % len(characters)
+                text[text.index(i)] = characters[new_index]
+print("Encrypted text:", ''.join(text))  # Join the list back into a string for output
+
