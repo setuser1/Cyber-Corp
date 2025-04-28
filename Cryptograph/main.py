@@ -33,10 +33,7 @@ for i in range(total):
         random.shuffle(characters)  # Shuffle the characters based on the seed
 text.split()
 text = list(text)  # Convert the text to a list of characters
-for i in text:
-        if i in characters:
-                index = characters.index(i)
-                new_index = (index + total) % len(characters)
-                text[text.index(i)] = characters[new_index]
+for index, i in enumerate(text):
+        text[index] = characters[characters.index(i) - total]  # Replace each character with the shuffled character
 print("Encrypted text:", ''.join(text))  # Join the list back into a string for output
 
