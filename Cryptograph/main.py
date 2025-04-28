@@ -23,6 +23,7 @@ characters = [
 ]
 
 total = 0
-mixkey = list(mixkey)
+mixkey = list(str(mixkey))
 for i in mixkey:
-        total+=i
+        total += int(i)
+print(total)
