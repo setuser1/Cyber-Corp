@@ -1,5 +1,5 @@
 import random
-from crypto import mixkey
+from user import mixkey
 
 characters = [
     # Uppercase letters
