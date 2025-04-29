@@ -6,6 +6,7 @@ def main():
     privkey = random.randint(500, 1000)
 
     keymsg1 = pubkey*privkey1*constant # send this to other participent
+    print(keymsg1)
 
     othermsg = int(input("Enter key msg from other participent: ")
     complete = othermsg*privkey*constant
