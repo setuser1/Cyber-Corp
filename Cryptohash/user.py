@@ -7,7 +7,7 @@ def main():
 
     keymsg1 = pubkey*privkey1*constant # send this to other participent
 
-    othermsg = int(input("Enter key msg from other.")
+    othermsg = int(input("Enter key msg from other participent: ")
     complete = othermsg*privkey*constant
 
     secret = complete
