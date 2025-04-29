@@ -9,7 +9,7 @@ def main():
     print(keymsg1)
 
     othermsg = int(input("Enter key msg from other participent: "))
-    complete = othermsg*privkey*constant
+    complete = othermsg*privkey*constant*keymsg1
 
     secret = complete
 # If both computed secrets are the same, the key exchange is successful
@@ -17,4 +17,4 @@ def main():
 
 mixkey = main()
 print(f'Heres your key: {mixkey}')
-# error free version
+# update 2.1
