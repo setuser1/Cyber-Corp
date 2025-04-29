@@ -12,7 +12,7 @@ def main():
     other_pubkey = int(input("Enter their Pubkey: "))
 
     # Compute the shared secret
-    shared_secret = pow(other_pubkey, privkey, prime)
+    shared_secret = pow(other_pubkey, privkey, prime)*1878426628
 
     return shared_secret
 
