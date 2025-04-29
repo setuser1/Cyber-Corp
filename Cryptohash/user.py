@@ -15,3 +15,4 @@ def main():
     return secret
 
 mixkey = main()
+print(f'Heres your key: {mixkey}')
