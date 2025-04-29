@@ -8,7 +8,7 @@ def main():
     # Your private key and public key
     privkey = random.randint(500, 1000)
     pubkey = pow(base, privkey, prime)
-
+    other_pubkey = int(input("Enter their Pubkey: "))
 
     # Compute the shared secret
     shared_secret = pow(other_pubkey, privkey, prime)
