@@ -1,24 +1,21 @@
 import random
 
 def main():
-    constant = 395  # Example prime number, should be much larger in real scenarios
-    pubkey = random.randint(500, 1000)
-    privkey1 = random.randint(500, 1000)
-    privkey2 = random.randint(500, 1000)
+    # Use a large prime and a base (primitive root mod p)
+    prime = 395  # Example large prime
+    base = random.randint(1,15)        # Base (generator)
 
-# Both participants compute their key messages using the public key and their private keys
+    privkey1 = random.randint(1000, 2000)
+    privkey2 = random.randint(1000, 2000)
 
-    keymsg1 = pubkey*privkey1^constant
-    keymsg2 = pubkey*privkey2^constant
+    pubkey = pow(base, privkey1, prime) * random.randint(1,15)
 
-# Now they exchange and compute the secret
-    complete1 = keymsg2*privkey1*constant*keymsg1  # Participant 1 computes complete secret
-    complete2 = keymsg1*privkey2*constant*keymsg2  # Participant 2 computes complete secret
+    # Exchange public keys and compute shared secret
+    complete1 = pow(pubkey, privkey1, prime)
+    complete2 = pow(pubkey, privkey2, prime)
 
-    secret = complete1
-# If both computed secrets are the same, the key exchange is successful
-    return secret if complete1 == complete2 else None
-
-# update 2.1
-
+    return complete1 if complete1 == complete2 else None
 mixkey = main()
+print(mixkey)
+
+# working exchange
