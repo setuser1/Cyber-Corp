@@ -12,11 +12,13 @@ def main():
     keymsg2 = pubkey*privkey2^constant
 
 # Now they exchange and compute the secret
-    complete1 = keymsg2*privkey1*constant  # Participant 1 computes complete secret
-    complete2 = keymsg1*privkey2*constant  # Participant 2 computes complete secret
+    complete1 = keymsg2*privkey1*constant*keymsg1  # Participant 1 computes complete secret
+    complete2 = keymsg1*privkey2*constant*keymsg2  # Participant 2 computes complete secret
 
     secret = complete1
 # If both computed secrets are the same, the key exchange is successful
     return secret if complete1 == complete2 else None
+
+# update 2.1
 
 mixkey = main()
