@@ -1,20 +1,20 @@
 import random
 
 def main():
-    constant = 395  # Example prime number, should be much larger in real scenarios
-    pubkey = random.randint(500, 1000)
+    # Shared values (agreed ahead of time)
+    prime = 397  # Insecurely small, just for demo
+    base = random.randint(2, prime - 2)
+
+    # Your private key and public key
     privkey = random.randint(500, 1000)
+    pubkey = pow(base, privkey, prime)
 
-    keymsg1 = pubkey*privkey^constant # send this to other participent
-    print(keymsg1)
 
-    othermsg = int(input("Enter key msg from other participent: "))
-    complete = othermsg*privkey*constant*keymsg1
+    # Compute the shared secret
+    shared_secret = pow(other_pubkey, privkey, prime)
 
-    secret = complete
-# If both computed secrets are the same, the key exchange is successful
-    return secret
+    return shared_secret
 
 mixkey = main()
-print(f'Heres your key: {mixkey}')
-# update 2.1
+print(mixkey)
+# working
