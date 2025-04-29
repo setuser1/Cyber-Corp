@@ -8,8 +8,8 @@ def main():
 
 # Both participants compute their key messages using the public key and their private keys
 
-    keymsg1 = pubkey*privkey1*constant
-    keymsg2 = pubkey*privkey2*constant
+    keymsg1 = pubkey*privkey1^constant
+    keymsg2 = pubkey*privkey2^constant
 
 # Now they exchange and compute the secret
     complete1 = keymsg2*privkey1*constant  # Participant 1 computes complete secret
