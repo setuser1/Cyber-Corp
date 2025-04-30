@@ -1,5 +1,5 @@
 # first of all import the socket library 
-import socket
+import socket as s
 import random
 
 def generate_key():
@@ -18,13 +18,12 @@ def pubkey():
     base = 30
 
     # Your private key and public key
+
     pubkey = pow(base, privkey, prime)
     print(f'Your Public key: {pubkey}')
     return pubkey
 
-# Declare other_pubkey as a global variable
-global other_pubkey
-other_pubkey = None
+
 
 port = 90
 
@@ -43,60 +42,41 @@ def keyexchange(c=None, pubkey=None, other_pubkey=None, privkey=None, prime=397)
 
     return shared_secret
 
-# Original socket
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-# Server socket
-server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-# Client socket
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-# Third socket for additional purposes
-third_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
+s = s.socket(s.AF_INET, s.SOCK_STREAM)
 pubkey = pubkey()
 
 def init():
-    global other_pubkey  # Declare it as global to modify the global variable
+    
     # Host and connect first
     host = input("Enter your user: ")
     user = input("Enter the user: ")
-
-    # Bind and listen with the server socket
-    server_socket.bind(('0.0.0.0', port))
-    server_socket.listen(1)  # Allow 1 connection in the backlog
-    print(f"Server listening on port {port}...")
-
-    # Connect with the client socket
+    s.bind(('0.0.0.0', port))
+    
     try:
-        client_socket.connect((user, port))
+        s.connect((user, port))
         print(f"Connected to {user}:{port}")
+        other_pubkey = c.recv(1024).decode()
+        print(f"Public key received: {other_pubkey}")
     except Exception as e:
         print(f"Connection failed: {e}")
         return None, None, None, 500
-
-    # Accept a connection with the server socket
-    c, addr = server_socket.accept()
+    
+    s.listen(5)
+    c, addr = s.accept()
     print(f"Connected to {addr}")
 
-    # Receive the peer's public key first
-    other_pubkey = c.recv(1024).decode()  # Assign to the global variable
-    print(f"Public key received: {other_pubkey}")
 
-    # Send your public key to the peer
     c.send(str(pubkey).encode())
     print(f"Public key sent: {pubkey}")
-
-    # Perform key exchange
-    mixkey = keyexchange(c, pubkey, int(other_pubkey), privkey, 397)
+    mixkey = keyexchange(c,pubkey,other_pubkey,privkey,397)
     print(f"Shared secret: {mixkey}")
     status = 200 if addr else 500
+    return host, user, status, mixkey,other_pubkey
 
-    return host, user, status, mixkey
+
 
 def system():
-    host, user, status, mixkey = init()
+    host, user, status, mixkey, other_pubkey = init()
     if status == 200:
         print('Connected to the user:', user)
         print('Host:', host)
@@ -130,8 +110,9 @@ def system():
 
 def send(message):
     # send the message to the user
-    client_socket.send(message.encode())
+    s.send(message.encode())
     print('Message sent:', message)
+
 
 def main():
     system()
