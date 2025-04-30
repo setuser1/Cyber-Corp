@@ -10,14 +10,15 @@ def init():
     s.listen(5)
     c,addr = s.accept()
     status = None
-    if addr:    
-        try:
-            s.connect(addr)
-            status = 200
-        except Exception as e:
-            print("Failed to get a connection")
-            addr = input("Enter new user to connect to: ")
-            status = 404
+    while True
+        if addr:    
+            try:
+                s.connect(addr)
+                status = 200
+                break
+            except Exception as e:
+                print("Failed to get a connection")
+                addr = input("Enter new user to connect to: ")
     
 
 def send(message):
