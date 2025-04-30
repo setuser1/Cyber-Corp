@@ -8,7 +8,9 @@ def init():
     port = 90
     s.bind(('0.0.0.0', port))
     s.listen(5)
-    s.accept()
+    c,addr = s.accept()
+    if addr:    
+        s.connect(addr)
 
 
 def send(message):
