@@ -10,6 +10,8 @@ def generate_key():
 privkey = generate_key()
 
 global pubkey
+global other_pubkey
+other_pubkey = None
 
 def pubkey():
     # Generate a public key using a random number
@@ -18,14 +20,9 @@ def pubkey():
     base = 30
 
     # Your private key and public key
-
     pubkey = pow(base, privkey, prime)
     print(f'Your Public key: {pubkey}')
     return pubkey
-
-# Declare other_pubkey as a global variable
-global other_pubkey
-other_pubkey = None
 
 port = 90
 
@@ -47,45 +44,62 @@ def keyexchange(c=None, pubkey=None, other_pubkey=None, privkey=None, prime=397)
 s = s.socket(s.AF_INET, s.SOCK_STREAM)
 pubkey = pubkey()
 
-def init():
-    global other_pubkey  # Declare it as global to modify the global variable
-    # Host and connect first
-    host = input("Enter your user: ")
-    user = input("Enter the user: ")
+def server_mode():
+    global other_pubkey
     s.bind(('0.0.0.0', port))
-    
-    try:
-        s.connect((user, port))
-        print(f"Connected to {user}:{port}")
-    except Exception as e:
-        print(f"Connection failed: {e}")
-        return None, None, None, 500
-
     s.listen(5)
+    print(f"Server listening on port {port}...")
     c, addr = s.accept()
     print(f"Connected to {addr}")
 
-    # Receive the peer's public key first
-    other_pubkey = c.recv(1024).decode()  # Assign to the global variable
+    # Receive the client's public key
+    other_pubkey = c.recv(1024).decode()
     print(f"Public key received: {other_pubkey}")
 
-    # Send your public key to the peer
+    # Send the server's public key
     c.send(str(pubkey).encode())
     print(f"Public key sent: {pubkey}")
 
     # Perform key exchange
     mixkey = keyexchange(c, pubkey, int(other_pubkey), privkey, 397)
     print(f"Shared secret: {mixkey}")
-    status = 200 if addr else 500
 
-    return host, user, status, mixkey
+    return c, mixkey
 
-def system():
-    host, user, status, mixkey = init()
-    if status == 200:
-        print('Connected to the user:', user)
-        print('Host:', host)
-        print('Status:', status)
+def client_mode():
+    global other_pubkey
+    server_ip = input("Enter the server IP: ")
+    try:
+        s.connect((server_ip, port))
+        print(f"Connected to server {server_ip}:{port}")
+    except Exception as e:
+        print(f"Connection failed: {e}")
+        return None, None
+
+    # Send the client's public key
+    s.send(str(pubkey).encode())
+    print(f"Public key sent: {pubkey}")
+
+    # Receive the server's public key
+    other_pubkey = s.recv(1024).decode()
+    print(f"Public key received: {other_pubkey}")
+
+    # Perform key exchange
+    mixkey = keyexchange(s, pubkey, int(other_pubkey), privkey, 397)
+    print(f"Shared secret: {mixkey}")
+
+    return s, mixkey
+
+def system(mode):
+    if mode == 'server':
+        conn, mixkey = server_mode()
+    elif mode == 'client':
+        conn, mixkey = client_mode()
+    else:
+        print("Invalid mode selected.")
+        return
+
+    if conn:
         print('Connection established.')
         print('Shared secret:', mixkey)
         print('Public key:', other_pubkey)
@@ -97,28 +111,29 @@ def system():
             if options.lower() == 'e':
                 unencrypted_message = str(input("Enter the message to encrypt: "))
                 encrypted_message = algo.encode(unencrypted_message)
-                send(encrypted_message)
+                send(conn, encrypted_message)
             elif options.lower() == 'd':
                 print("Decrypting...")
                 # Decrypt the message using the shared key
-                recieved_message = s.recv(1024).decode()
-                if not recieved_message:
+                received_message = conn.recv(1024).decode()
+                if not received_message:
                     print('No message received. Exiting...')
                     continue
                 try:
-                    decrypted_message = algo.decode(recieved_message)     
+                    decrypted_message = algo.decode(received_message)     
                 except Exception as e:
                     print(f"Error decrypting message: {e}")
                     continue
-                print("Message received:", recieved_message)
+                print("Message received:", received_message)
                 print('Message decrypted:', decrypted_message)
 
-def send(message):
+def send(conn, message):
     # send the message to the user
-    s.send(message.encode())
+    conn.send(message.encode())
     print('Message sent:', message)
 
 def main():
-    system()
+    mode = input("Enter mode (server/client): ").strip().lower()
+    system(mode)
 
 main()
