@@ -4,53 +4,10 @@ import socket as s
 s = s.socket(s.AF_INET, s.SOCK_STREAM)
 
 def init():
-    host = input("Enter your host: ")
-    capability = input("Enter your capability (s/r or both(sr)): ")
-    recipent = input("Enter the recipent: ")
-
-
-def system():
-    host,capability,recipent = init()
-    # bind the socket to the host and port
-    s.bind(('0.0.0.0', 90))
-    
+    host,user,capab = input("Enter (host,user and capability): ")
+    port = 90
     s.listen(5)
-    print('Listening active')
-    # accept connections from outside
-    user = input("Enter the ip of user: ")
-    conn, addr = s.accept()
-    print('Got connection from', addr)
-    s.connect((str(user),90))
-    
-    status = None
-    # check if the user is connected to us
-    if addr == user:
-        print('user connected to us')
-        status = 200
-    else:
-        print('user not connected to us')
-        status = 404
-    
-    # status
-    print('Connected to', user)
-    if addr == user:
-        print('user connected to us')
-    s.send(capability.encode())
-    # receive the capability of the user
-    data = conn.recv(1024).decode()
-    print('Recieved capability:', data)
-    # check if the capability of user
-    if data == 's':
-        print('user is a sender')
-    elif data == 'r':
-        print('user is a receiver')
-    elif data == 'sr':
-        print('user is a sender and receiver')
-        
-    print('Recieved capability:', data)
-    print('Host:', host)
-    print('Recipent:', recipent)
-    print('Status:', status)
+
 
 def send(message):
     # send the message to the user
