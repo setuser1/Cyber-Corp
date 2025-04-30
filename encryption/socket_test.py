@@ -10,15 +10,20 @@ def init():
     s.listen(5)
     c,addr = s.accept()
     status = None
-    while True
-        if addr:    
-            try:
-                s.connect(addr)
-                status = 200
-                break
-            except Exception as e:
-                print("Failed to get a connection")
-                addr = input("Enter new user to connect to: ")
+
+    option = input('do you want to connect or wait? c/w: ').lower()
+    if option == 'w'
+        while True
+            if addr:    
+                try:
+                    s.connect(addr)
+                    status = 200
+                    break
+    else:
+        addr = user
+        s.connect(addr)
+        status = 200
+    return host,user,capab,status
     
 
 def send(message):
