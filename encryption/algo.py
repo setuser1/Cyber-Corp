@@ -1,5 +1,5 @@
 import random
-from user import mixkey
+from socket_test import mixkey
 
 characters = [
     # Uppercase letters
