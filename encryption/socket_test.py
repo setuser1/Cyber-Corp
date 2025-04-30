@@ -6,7 +6,9 @@ s = s.socket(s.AF_INET, s.SOCK_STREAM)
 def init():
     host,user,capab = input("Enter (host,user and capability): ")
     port = 90
+    s.bind(('0.0.0.0', port))
     s.listen(5)
+    s.accept()
 
 
 def send(message):
