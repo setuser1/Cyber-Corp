@@ -23,7 +23,9 @@ def pubkey():
     print(f'Your Public key: {pubkey}')
     return pubkey
 
-
+# Declare other_pubkey as a global variable
+global other_pubkey
+other_pubkey = None
 
 port = 90
 
@@ -46,7 +48,7 @@ s = s.socket(s.AF_INET, s.SOCK_STREAM)
 pubkey = pubkey()
 
 def init():
-    
+    global other_pubkey  # Declare it as global to modify the global variable
     # Host and connect first
     host = input("Enter your user: ")
     user = input("Enter the user: ")
@@ -55,28 +57,31 @@ def init():
     try:
         s.connect((user, port))
         print(f"Connected to {user}:{port}")
-        other_pubkey = c.recv(1024).decode()
-        print(f"Public key received: {other_pubkey}")
     except Exception as e:
         print(f"Connection failed: {e}")
         return None, None, None, 500
-    
+
     s.listen(5)
     c, addr = s.accept()
     print(f"Connected to {addr}")
 
+    # Receive the peer's public key first
+    other_pubkey = c.recv(1024).decode()  # Assign to the global variable
+    print(f"Public key received: {other_pubkey}")
 
+    # Send your public key to the peer
     c.send(str(pubkey).encode())
     print(f"Public key sent: {pubkey}")
-    mixkey = keyexchange(c,pubkey,other_pubkey,privkey,397)
+
+    # Perform key exchange
+    mixkey = keyexchange(c, pubkey, int(other_pubkey), privkey, 397)
     print(f"Shared secret: {mixkey}")
     status = 200 if addr else 500
-    return host, user, status, mixkey,other_pubkey
 
-
+    return host, user, status, mixkey
 
 def system():
-    host, user, status, mixkey, other_pubkey = init()
+    host, user, status, mixkey = init()
     if status == 200:
         print('Connected to the user:', user)
         print('Host:', host)
@@ -112,7 +117,6 @@ def send(message):
     # send the message to the user
     s.send(message.encode())
     print('Message sent:', message)
-
 
 def main():
     system()
