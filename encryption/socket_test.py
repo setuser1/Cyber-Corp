@@ -10,7 +10,10 @@ def init():
     s.listen(5)
     c,addr = s.accept()
     if addr:    
-        s.connect(addr)
+        try:
+            s.connect(addr)
+        except Exception as e:
+            print(f"Failed to connect to {addr}: {e}")
 
 
 def send(message):
