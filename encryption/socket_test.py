@@ -11,7 +11,9 @@ privkey = generate_key()
 
 global pubkey
 global other_pubkey
+global mixkey  # Declare mixkey as a global variable
 other_pubkey = None
+mixkey = None  # Initialize mixkey
 
 def pubkey():
     # Generate a public key using a random number
@@ -45,7 +47,7 @@ s = s.socket(s.AF_INET, s.SOCK_STREAM)
 pubkey = pubkey()
 
 def server_mode():
-    global other_pubkey
+    global other_pubkey, mixkey
     s.bind(('0.0.0.0', port))
     s.listen(5)
     print(f"Server listening on port {port}...")
@@ -64,17 +66,17 @@ def server_mode():
     mixkey = keyexchange(c, pubkey, int(other_pubkey), privkey, 397)
     print(f"Shared secret: {mixkey}")
 
-    return c, mixkey
+    return c
 
 def client_mode():
-    global other_pubkey
+    global other_pubkey, mixkey
     server_ip = input("Enter the server IP: ")
     try:
         s.connect((server_ip, port))
         print(f"Connected to server {server_ip}:{port}")
     except Exception as e:
         print(f"Connection failed: {e}")
-        return None, None
+        return None
 
     # Send the client's public key
     s.send(str(pubkey).encode())
@@ -88,13 +90,13 @@ def client_mode():
     mixkey = keyexchange(s, pubkey, int(other_pubkey), privkey, 397)
     print(f"Shared secret: {mixkey}")
 
-    return s, mixkey
+    return s
 
 def system(mode):
     if mode == 'server':
-        conn, mixkey = server_mode()
+        conn = server_mode()
     elif mode == 'client':
-        conn, mixkey = client_mode()
+        conn = client_mode()
     else:
         print("Invalid mode selected.")
         return
