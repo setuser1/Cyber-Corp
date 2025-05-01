@@ -37,10 +37,11 @@ def decode(encrypted_text, mixkey):
     random.shuffle(shuffled_characters)
 
     decrypted_text = []
-    for char in list(encrypted_text):
+    for char in encrypted_text:
         if char in shuffled_characters:
+            # Reverse the mapping: find the index in shuffled_characters and map to characters
             decrypted_text.append(characters[shuffled_characters.index(char)])
         else:
-            decrypted_text.append(char)
+            decrypted_text.append(char)  # Leave unsupported characters unchanged
 
     return ''.join(decrypted_text)
