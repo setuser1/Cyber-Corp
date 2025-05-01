@@ -1,139 +1,108 @@
-# first of all import the socket library 
-import socket as s
+import socket
 import random
 import algo
+from typing import Tuple
 
-def generate_key():
-    # Generate a random key for encryption/decryption
-    key = random.randint(500, 1000)  # Insecurely small, just for demo
-    return key
+# ——— your exactly-given character list lives in algo.py ———
 
-privkey = generate_key()
+# Insecure small DH params, just for demo
+PRIME = 397
+BASE  = 30
+PORT  = 90
 
-global pubkey
-global other_pubkey
-global mixkey  # Declare mixkey as a global variable
-other_pubkey = None
-mixkey = None  # Initialize mixkey
+privkey = random.randint(500, 1000)
 
-def pubkey():
-    # Generate a public key using a random number
-    # Shared values (agreed ahead of time)
-    prime = 397  # Insecurely small, just for demo
-    base = 30
-    # Your private key and public key
-    pubkey = pow(base, privkey, prime)
-    print(f'Your Public key: {pubkey}')
-    return pubkey
 
-port = 90
+def make_pubkey(priv: int) -> int:
+    return pow(BASE, priv, PRIME)
 
-def keyexchange(pubkey=None, other_pubkey=None, privkey=None, prime=397):
-    # Compute the shared secret
-    shared_secret = pow(other_pubkey, privkey, prime)*pubkey*1837732
-    print(f"Shared secret: {shared_secret}")
-    return shared_secret
 
-s = s.socket(s.AF_INET, s.SOCK_STREAM)
-pubkey = pubkey()
+def derive_shared_secret(their_pub: int, priv: int) -> int:
+    # Standard DH: (their_pub ^ priv) mod prime
+    return pow(their_pub, priv, PRIME)
 
-def server_mode():
-    global other_pubkey, mixkey
-    s.bind(('0.0.0.0', port))
-    s.listen(5)
-    print(f"Server listening on port {port}...")
-    c, addr = s.accept()
-    print(f"Connected to {addr}")
 
-    # Send the server's public key
-    c.send(str(pubkey).encode())
-    print(f"Public key sent: {pubkey}")
+def server_mode() -> Tuple[int, socket.socket]:
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.bind(('0.0.0.0', PORT))  # Listen on all interfaces
+    sock.listen(1)
+    print(f"[SERVER] Listening on 0.0.0.0:{PORT}…")
+    conn, addr = sock.accept()
+    print(f"[SERVER] Connected by {addr}")
 
-    # Receive the client's public key
-    other_pubkey = int(c.recv(1024).decode())
-    print(f"Public key received: {other_pubkey}")
+    my_pub = make_pubkey(privkey)
+    conn.send(str(my_pub).encode())
+    print(f"[SERVER] Sent our public key: {my_pub}")
 
-    # Perform key exchange
-    mixkey = keyexchange(pubkey, other_pubkey, privkey, 397)
-    print(f"Shared secret: {mixkey}")
+    their_pub = int(conn.recv(1024).decode())
+    print(f"[SERVER] Received client public key: {their_pub}")
 
-    return mixkey,c
+    mixkey = derive_shared_secret(their_pub, privkey)
+    print(f"[SERVER] Derived shared secret: {mixkey}")
+    return mixkey, conn
 
-def client_mode():
-    global other_pubkey, mixkey
+
+def client_mode() -> Tuple[int, socket.socket]:
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_ip = input("Enter the server IP: ")
-    try:
-        s.connect((server_ip, port))
-        print(f"Connected to server {server_ip}:{port}")
-    except Exception as e:
-        print(f"Connection failed: {e}")
-        return None
+    sock.connect((server_ip, PORT))
+    print(f"[CLIENT] Connected to {server_ip}:{PORT}")
 
-    # Receive the server's public key
-    other_pubkey = int(s.recv(1024).decode())
-    print(f"Public key received: {other_pubkey}")
+    their_pub = int(sock.recv(1024).decode())
+    print(f"[CLIENT] Received server public key: {their_pub}")
 
-    # Send the client's public key
-    s.send(str(pubkey).encode())
-    print(f"Public key sent: {pubkey}")
+    my_pub = make_pubkey(privkey)
+    sock.send(str(my_pub).encode())
+    print(f"[CLIENT] Sent our public key: {my_pub}")
 
-    # Perform key exchange
-    mixkey = keyexchange(pubkey, other_pubkey, privkey, 397)
-    print(f"Shared secret: {mixkey}")
+    mixkey = derive_shared_secret(their_pub, privkey)
+    print(f"[CLIENT] Derived shared secret: {mixkey}")
+    return mixkey, sock
 
-    return mixkey,s
 
-def system(mixkey, connection):
-    
+def chat_loop(mixkey: int, conn: socket.socket):
+    print("Connection established.")
+    print("Shared secret:", mixkey)
 
-    if connection:
-        print('Connection established.')
-        print('Shared secret:', mixkey)
-        print('Public key:', other_pubkey)
-        print('Connection: ', connection)
+    while True:
+        choice = input("Encrypt or Decrypt? (e/d/x): ").lower()
+        if choice == 'e':
+            msg = input("Enter the message to encrypt: ")
+            ct = algo.encode(msg, mixkey)
+            conn.send(ct.encode())
+            print("Message sent:", ct)
 
-        
-        # Encrypt the message using the shared key
-        
-        while True:
-            options = str(input("Encrypt or Decrypt? (e/d/x): "))
-            if options.lower() == 'e':
-                unencrypted_message = str(input("Enter the message to encrypt: "))
-                encrypted_message = algo.encode(unencrypted_message, mixkey)
-                send(connection, encrypted_message)
-            elif options.lower() == 'd':
-                print("Decrypting...")
-                # Decrypt the message using the shared key
-                received_message = connection.recv(1024).decode()
-            
-                if not received_message:
-                    print('No message received. Exiting...')
-                    continue
-                try:
-                    decrypted_message = algo.decode(received_message, mixkey)     
-                except Exception as e:
-                    print(f"Error decrypting message: {e}")
-                    continue
-                print("Message received:", received_message)
-                print('Message decrypted:', decrypted_message)
-            elif options.lower() == 'x':
-                print("Exiting...")
-                break
-        return mixkey
+        elif choice == 'd':
+            print("Waiting for message…")
+            data = conn.recv(1024).decode()
+            if not data:
+                print("No message received.")
+                continue
+            pt = algo.decode(data, mixkey)
+            print("Ciphertext received:", data)
+            print("Decrypted message:", pt)
 
-def send(conn, message):
-    # send the message to the user
-    conn.send(message.encode())
-    print('Message sent:', message)
+        elif choice == 'x':
+            print("Exiting chat.")
+            break
 
-mode = str(input("server or client: ").lower().strip())
+        else:
+            print("Invalid option, choose e, d, or x.")
 
-if mode == 'server':
-    mixkey, conn = server_mode()
-elif mode == 'client':
-    mixkey, conn = client_mode()
-else:
-    print("Invalid mode selected.")
-    conn = None  # Ensure conn is defined to avoid errors
 
-system(mixkey, conn)
+def main():
+    mode = input("server or client: ").strip().lower()
+    if mode == 'server':
+        mixkey, conn = server_mode()
+    elif mode == 'client':
+        mixkey, conn = client_mode()
+    else:
+        print("Invalid mode; use 'server' or 'client'.")
+        return
+
+    chat_loop(mixkey, conn)
+    conn.close()
+
+
+if __name__ == "__main__":
+    main()
