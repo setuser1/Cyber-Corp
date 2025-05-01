@@ -21,27 +21,26 @@ def encode(text, mixkey):
     random.seed(mixkey)
     shuffled_characters = characters.copy()
     random.shuffle(shuffled_characters)
-
+    
+    # Create a mapping dictionary for encoding
+    encode_map = {original: shuffled for original, shuffled in zip(characters, shuffled_characters)}
+    
     encrypted_text = []
     for char in text:
-        if char in characters:
-            encrypted_text.append(shuffled_characters[characters.index(char)])
-        else:
-            encrypted_text.append(char)
-
+        encrypted_text.append(encode_map.get(char, char))  # Use the map, or leave unsupported characters unchanged
+    
     return ''.join(encrypted_text)
 
 def decode(encrypted_text, mixkey):
     random.seed(mixkey)
     shuffled_characters = characters.copy()
     random.shuffle(shuffled_characters)
-
+    
+    # Create a mapping dictionary for decoding
+    decode_map = {shuffled: original for original, shuffled in zip(characters, shuffled_characters)}
+    
     decrypted_text = []
     for char in encrypted_text:
-        if char in shuffled_characters:
-            # Reverse the mapping: find the index in shuffled_characters and map to characters
-            decrypted_text.append(characters[shuffled_characters.index(char)])
-        else:
-            decrypted_text.append(char)  # Leave unsupported characters unchanged
-
+        decrypted_text.append(decode_map.get(char, char))  # Use the map, or leave unsupported characters unchanged
+    
     return ''.join(decrypted_text)
