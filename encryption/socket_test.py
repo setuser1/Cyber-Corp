@@ -125,6 +125,7 @@ def system(mode):
             elif options.lower() == 'x':
                 print("Exiting...")
                 break
+        return mixkey
 
 def send(conn, message):
     # send the message to the user
