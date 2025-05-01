@@ -83,14 +83,8 @@ def client_mode():
 
     return mixkey,s
 
-def system(mode):
-    if mode == 'server':
-        mixkey,conn = server_mode()
-    elif mode == 'client':
-        mixkey,conn = client_mode()
-    else:
-        print("Invalid mode selected.")
-        return
+def system(mixkey, connection):
+    
 
     if conn:
         print('Connection established.')
@@ -132,11 +126,12 @@ def send(conn, message):
     conn.send(message.encode())
     print('Message sent:', message)
 
-def main():
-    mode = input("Enter mode (server/client): ").strip().lower()
-    mixkey = system(mode)
+mode = str(input("server or client: ").lower().strip()
+if mode == 'server':
+    mixkey,conn = server_mode()
+elif mode == 'client':
+    mixkey,conn = client_mode()
+else:
+    print("Invalid mode selected.")
 
-mixkey = main()
-
-if __name__ == "__main__":
-    main()
+system(mixkey, conn)
