@@ -1,6 +1,7 @@
 # first of all import the socket library 
 import socket as s
 import random
+import algo
 
 def generate_key():
     # Generate a random key for encryption/decryption
@@ -97,7 +98,7 @@ def system(mode):
         print('Public key:', other_pubkey)
         print('Connection: ', conn)
 
-        import algo
+        
         # Encrypt the message using the shared key
         
         while True:
