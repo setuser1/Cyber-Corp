@@ -1,5 +1,4 @@
 import random
-from socket_test import mixkey
 
 characters = [
     # Uppercase letters
@@ -18,11 +17,8 @@ characters = [
     ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~',
 ]
 
-alreadyhavekey = str(input("Do you already have a key? Y/n: "))
-if alreadyhavekey.lower() == 'y':
-    mixkey = int(input("enter the key then: "))
 
-def encode(text):
+def encode(text,mixkey):
     # Set the random seed for deterministic shuffling
     random.seed(mixkey)
     shuffled_characters = characters.copy()
@@ -37,7 +33,7 @@ def encode(text):
 
     return ''.join(encrypted_text)
 
-def decode(encrypted_text):
+def decode(encrypted_text,mixkey):
     # Set the same random seed to reproduce the shuffle
     random.seed(mixkey)
     shuffled_characters = characters.copy()
