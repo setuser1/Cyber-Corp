@@ -86,11 +86,11 @@ def client_mode():
 def system(mixkey, connection):
     
 
-    if conn:
+    if connection:
         print('Connection established.')
         print('Shared secret:', mixkey)
         print('Public key:', other_pubkey)
-        print('Connection: ', conn)
+        print('Connection: ', connection)
 
         
         # Encrypt the message using the shared key
@@ -100,11 +100,11 @@ def system(mixkey, connection):
             if options.lower() == 'e':
                 unencrypted_message = str(input("Enter the message to encrypt: "))
                 encrypted_message = algo.encode(unencrypted_message)
-                send(conn, encrypted_message)
+                send(connection, encrypted_message)
             elif options.lower() == 'd':
                 print("Decrypting...")
                 # Decrypt the message using the shared key
-                received_message = conn.recv(1024).decode()
+                received_message = connection.recv(1024).decode()
             
                 if not received_message:
                     print('No message received. Exiting...')
@@ -126,12 +126,14 @@ def send(conn, message):
     conn.send(message.encode())
     print('Message sent:', message)
 
-mode = str(input("server or client: ").lower().strip()
+mode = str(input("server or client: ").lower().strip())
+
 if mode == 'server':
-    mixkey,conn = server_mode()
+    mixkey, conn = server_mode()
 elif mode == 'client':
-    mixkey,conn = client_mode()
+    mixkey, conn = client_mode()
 else:
     print("Invalid mode selected.")
+    conn = None  # Ensure conn is defined to avoid errors
 
 system(mixkey, conn)
