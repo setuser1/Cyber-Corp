@@ -99,7 +99,7 @@ def system(mixkey, connection):
             options = str(input("Encrypt or Decrypt? (e/d/x): "))
             if options.lower() == 'e':
                 unencrypted_message = str(input("Enter the message to encrypt: "))
-                encrypted_message = algo.encode(unencrypted_message)
+                encrypted_message = algo.encode(unencrypted_message, mixkey)
                 send(connection, encrypted_message)
             elif options.lower() == 'd':
                 print("Decrypting...")
@@ -110,7 +110,7 @@ def system(mixkey, connection):
                     print('No message received. Exiting...')
                     continue
                 try:
-                    decrypted_message = algo.decode(received_message)     
+                    decrypted_message = algo.decode(received_message, mixkey)     
                 except Exception as e:
                     print(f"Error decrypting message: {e}")
                     continue
