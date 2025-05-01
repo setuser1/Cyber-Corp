@@ -18,10 +18,6 @@ characters = [
     ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~',
 ]
 
-alreadyhavekey = str(input("Do you already have a key? Y/n: "))
-if alreadyhavekey.lower() == 'y':
-    mixkey = int(input("enter the key then: "))
-
 def encode(text):
     # Set the random seed for deterministic shuffling
     random.seed(mixkey)
