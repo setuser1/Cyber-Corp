@@ -23,6 +23,13 @@ def encode(text: str, mixkey: Union[str, int]) -> str:
     """
     Shuffle-encode `text` using your exact `mixkey` with an isolated RNG.
     """
+
+    total = 0
+    for i in str(mixkey):
+        total += int(i)
+
+    mixkey = total
+
     rng = random.Random(mixkey)        # seed RNG directly with mixkey
     shuffled = characters[:]           # copy your exact list
     rng.shuffle(shuffled)              # shuffle in isolation
@@ -35,6 +42,13 @@ def decode(encrypted_text: str, mixkey: Union[str, int]) -> str:
     """
     Reverse the shuffle using the same `mixkey`.
     """
+
+    total = 0
+    for i in str(mixkey):
+        total += int(i)
+
+    mixkey = total
+
     rng = random.Random(mixkey)
     shuffled = characters[:]
     rng.shuffle(shuffled)
