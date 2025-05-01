@@ -1,5 +1,6 @@
 import random
 
+
 characters = [
     # Uppercase letters
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
@@ -18,8 +19,8 @@ characters = [
 ]
 
 
-def encode(text,mixkey):
-    # Set the random seed for deterministic shuffling
+
+def encode(text, mixkey):
     random.seed(mixkey)
     shuffled_characters = characters.copy()
     random.shuffle(shuffled_characters)
@@ -29,12 +30,11 @@ def encode(text,mixkey):
         if char in characters:
             encrypted_text.append(shuffled_characters[characters.index(char)])
         else:
-            encrypted_text.append(char)  # Leave unsupported characters unchanged
+            encrypted_text.append(char)
 
     return ''.join(encrypted_text)
 
-def decode(encrypted_text,mixkey):
-    # Set the same random seed to reproduce the shuffle
+def decode(encrypted_text, mixkey):
     random.seed(mixkey)
     shuffled_characters = characters.copy()
     random.shuffle(shuffled_characters)
@@ -42,10 +42,9 @@ def decode(encrypted_text,mixkey):
     decrypted_text = []
     for char in encrypted_text:
         if char in shuffled_characters:
-            # Use the index of the character in shuffled_characters to find the original character
             index = shuffled_characters.index(char)
             decrypted_text.append(characters[index])
         else:
-            decrypted_text.append(char)  # Leave unsupported characters unchanged
+            decrypted_text.append(char)
 
     return ''.join(decrypted_text)
