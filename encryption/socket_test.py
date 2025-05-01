@@ -53,7 +53,7 @@ def server_mode():
     print(f"Public key received: {other_pubkey}")
 
     # Perform key exchange
-    mixkey = keyexchange(addr, pubkey, other_pubkey, privkey, 397)
+    mixkey = keyexchange(pubkey, other_pubkey, privkey, 397)
     print(f"Shared secret: {mixkey}")
 
     return mixkey
