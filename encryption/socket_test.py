@@ -45,18 +45,18 @@ def server_mode():
     print(f"Connected to {addr}")
 
     # Send the server's public key
-    s.send(str(pubkey).encode())
+    c.send(str(pubkey).encode())
     print(f"Public key sent: {pubkey}")
 
     # Receive the client's public key
-    other_pubkey = int(c.recv(1024).decode())
+    other_pubkey = int(s.recv(1024).decode())
     print(f"Public key received: {other_pubkey}")
 
     # Perform key exchange
     mixkey = keyexchange(pubkey, other_pubkey, privkey, 397)
     print(f"Shared secret: {mixkey}")
 
-    return mixkey
+    return mixkey,c
 
 def client_mode():
     global other_pubkey, mixkey
@@ -80,11 +80,11 @@ def client_mode():
     mixkey = keyexchange(pubkey, other_pubkey, privkey, 397)
     print(f"Shared secret: {mixkey}")
 
-    return server_ip
+    return s
 
 def system(mode):
     if mode == 'server':
-        conn = server_mode()
+        mixkey,conn = server_mode()
     elif mode == 'client':
         conn = client_mode()
     else:
