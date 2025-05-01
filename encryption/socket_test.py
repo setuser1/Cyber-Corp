@@ -50,7 +50,7 @@ def server_mode():
     print(f"Public key sent: {pubkey}")
 
     # Receive the client's public key
-    other_pubkey = int(s.recv(1024).decode())
+    other_pubkey = int(c.recv(1024).decode())
     print(f"Public key received: {other_pubkey}")
 
     # Perform key exchange
