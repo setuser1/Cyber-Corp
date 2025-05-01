@@ -45,7 +45,7 @@ def server_mode():
     print(f"Connected to {addr}")
 
     # Send the server's public key
-    addr.send(str(pubkey).encode())
+    s.send(str(pubkey).encode())
     print(f"Public key sent: {pubkey}")
 
     # Receive the client's public key
