@@ -134,9 +134,9 @@ def send(conn, message):
 
 def main():
     mode = input("Enter mode (server/client): ").strip().lower()
-    system(mode)
+    mixkey = system(mode)
 
-mixkey = system(mode)
+mixkey = main()
 
 if __name__ == "__main__":
     main()
