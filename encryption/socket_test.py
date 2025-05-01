@@ -20,7 +20,6 @@ def pubkey():
     # Shared values (agreed ahead of time)
     prime = 397  # Insecurely small, just for demo
     base = 30
-
     # Your private key and public key
     pubkey = pow(base, privkey, prime)
     print(f'Your Public key: {pubkey}')
@@ -28,19 +27,10 @@ def pubkey():
 
 port = 90
 
-def keyexchange(c=None, pubkey=None, other_pubkey=None, privkey=None, prime=397):
-    try:
-        if c:
-            # Send your public key to the peer
-            c.send(str(pubkey).encode())
-            # Receive the peer's public key
-    except ValueError:
-        print("Invalid input. Please enter a valid integer.")
-        return None, None
-
+def keyexchange(pubkey=None, other_pubkey=None, privkey=None, prime=397):
     # Compute the shared secret
-    shared_secret = pow(other_pubkey, privkey, prime) * 182887372681
-
+    shared_secret = pow(other_pubkey, privkey, prime)*pubkey*1837732
+    print(f"Shared secret: {shared_secret}")
     return shared_secret
 
 s = s.socket(s.AF_INET, s.SOCK_STREAM)
@@ -54,19 +44,19 @@ def server_mode():
     c, addr = s.accept()
     print(f"Connected to {addr}")
 
-    # Receive the client's public key
-    other_pubkey = c.recv(1024).decode()
-    print(f"Public key received: {other_pubkey}")
-
     # Send the server's public key
-    c.send(str(pubkey).encode())
+    addr.send(str(pubkey).encode())
     print(f"Public key sent: {pubkey}")
 
+    # Receive the client's public key
+    other_pubkey = int(addr.recv(1024).decode())
+    print(f"Public key received: {other_pubkey}")
+
     # Perform key exchange
-    mixkey = keyexchange(c, pubkey, int(other_pubkey), privkey, 397)
+    mixkey = keyexchange(addr, pubkey, other_pubkey, privkey, 397)
     print(f"Shared secret: {mixkey}")
 
-    return c
+    return mixkey
 
 def client_mode():
     global other_pubkey, mixkey
@@ -78,19 +68,19 @@ def client_mode():
         print(f"Connection failed: {e}")
         return None
 
+    # Receive the server's public key
+    other_pubkey = int(s.recv(1024).decode())
+    print(f"Public key received: {other_pubkey}")
+
     # Send the client's public key
     s.send(str(pubkey).encode())
     print(f"Public key sent: {pubkey}")
 
-    # Receive the server's public key
-    other_pubkey = s.recv(1024).decode()
-    print(f"Public key received: {other_pubkey}")
-
     # Perform key exchange
-    mixkey = keyexchange(s, pubkey, int(other_pubkey), privkey, 397)
+    mixkey = keyexchange(pubkey, other_pubkey, privkey, 397)
     print(f"Shared secret: {mixkey}")
 
-    return s
+    return server_ip
 
 def system(mode):
     if mode == 'server':
@@ -105,11 +95,13 @@ def system(mode):
         print('Connection established.')
         print('Shared secret:', mixkey)
         print('Public key:', other_pubkey)
+        print('Connection: ', conn)
 
         import algo
         # Encrypt the message using the shared key
+        
         while True:
-            options = str(input("Encrypt or Decrypt? (e/d): "))
+            options = str(input("Encrypt or Decrypt? (e/d/x): "))
             if options.lower() == 'e':
                 unencrypted_message = str(input("Enter the message to encrypt: "))
                 encrypted_message = algo.encode(unencrypted_message)
@@ -118,6 +110,7 @@ def system(mode):
                 print("Decrypting...")
                 # Decrypt the message using the shared key
                 received_message = conn.recv(1024).decode()
+            
                 if not received_message:
                     print('No message received. Exiting...')
                     continue
@@ -128,6 +121,9 @@ def system(mode):
                     continue
                 print("Message received:", received_message)
                 print('Message decrypted:', decrypted_message)
+            elif options.lower() == 'x':
+                print("Exiting...")
+                break
 
 def send(conn, message):
     # send the message to the user
@@ -138,4 +134,5 @@ def main():
     mode = input("Enter mode (server/client): ").strip().lower()
     system(mode)
 
-main()
+if __name__ == "__main__":
+    main()
