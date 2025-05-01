@@ -136,5 +136,7 @@ def main():
     mode = input("Enter mode (server/client): ").strip().lower()
     system(mode)
 
+mixkey = system(mode)
+
 if __name__ == "__main__":
     main()
