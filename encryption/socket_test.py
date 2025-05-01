@@ -80,13 +80,13 @@ def client_mode():
     mixkey = keyexchange(pubkey, other_pubkey, privkey, 397)
     print(f"Shared secret: {mixkey}")
 
-    return s
+    return mixkey,s
 
 def system(mode):
     if mode == 'server':
         mixkey,conn = server_mode()
     elif mode == 'client':
-        conn = client_mode()
+        mixkey,conn = client_mode()
     else:
         print("Invalid mode selected.")
         return
