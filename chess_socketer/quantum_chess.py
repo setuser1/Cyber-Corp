@@ -1,181 +1,160 @@
 import tkinter as tk
+from tkinter import messagebox
 import random
 
-# Unicode characters for chess pieces
-WHITE_KING = '\u2654'
-WHITE_QUEEN = '\u2655'
-WHITE_ROOK = '\u2656'
-WHITE_BISHOP = '\u2657'
-WHITE_KNIGHT = '\u2658'
-WHITE_PAWN = '\u2659'
+# Quantum Chess with full pieces, legal moves, and up to 2-position superposition
+# Supports left-click to add superposition (max 2 positions) and right-click to collapse to that position
+# Networking stubs for LAN extension
 
-BLACK_KING = '\u265A'
-BLACK_QUEEN = '\u265B'
-BLACK_ROOK = '\u265C'
-BLACK_BISHOP = '\u265D'
-BLACK_KNIGHT = '\u265E'
-BLACK_PAWN = '\u265F'
+class QuantumPiece:
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+        self.positions = []  # superposed positions, up to 2
 
-class ChessApp(tk.Tk):
-    def __init__(self):
-        super().__init__()
-        self.title("Tkinter Chess")
-        self.board_frame = tk.Frame(self)
-        self.board_frame.pack()
+    def legal_moves(self, board):
+        # Generate legal classical moves ignoring check/capture rules beyond bounds and occupancy
+        dirs = []
+        r, c = self.positions[0]
+        moves = []
+        if self.name == 'pawn':
+            step = -1 if self.color == 'white' else 1
+            for dc in [0]:
+                nr, nc = r + step, c + dc
+                if board.is_empty(nr, nc): moves.append((nr,nc))
+        elif self.name == 'knight':
+            offsets = [(2,1),(2,-1),(-2,1),(-2,-1),(1,2),(1,-2),(-1,2),(-1,-2)]
+            for dr,dc in offsets:
+                nr,nc = r+dr, c+dc
+                if board.is_on_board(nr,nc) and not board.is_friendly(nr,nc,self.color): moves.append((nr,nc))
+        elif self.name == 'bishop': dirs = [(1,1),(1,-1),(-1,1),(-1,-1)]
+        elif self.name == 'rook': dirs = [(1,0),(-1,0),(0,1),(0,-1)]
+        elif self.name == 'queen': dirs = [(1,1),(1,-1),(-1,1),(-1,-1),(1,0),(-1,0),(0,1),(0,-1)]
+        elif self.name == 'king':
+            for dr in [-1,0,1]:
+                for dc in [-1,0,1]:
+                    if dr==0 and dc==0: continue
+                    nr,nc = r+dr, c+dc
+                    if board.is_on_board(nr,nc) and not board.is_friendly(nr,nc,self.color): moves.append((nr,nc))
+        # sliding for bishop/rook/queen
+        if dirs:
+            for dr,dc in dirs:
+                nr, nc = r+dr, c+dc
+                while board.is_on_board(nr,nc):
+                    if board.is_empty(nr,nc):
+                        moves.append((nr,nc))
+                    elif board.is_enemy(nr,nc,self.color):
+                        moves.append((nr,nc)); break
+                    else:
+                        break
+                    nr += dr; nc += dc
+        return moves
 
-        # 8x8 board state: each cell holds piece character or None
-        self.board = [[None for _ in range(8)] for _ in range(8)]
-
-        # Randomly decide who plays first
-        self.turn = random.choice(['white', 'black'])
-        self.status_label = tk.Label(self, text=f"{self.turn.capitalize()} to move", font=('Arial', 14))
-        self.status_label.pack(pady=5)
-
-        # Track drag data
-        self.drag_data = {'widget': None, 'r0': None, 'c0': None, 'piece': None}
-
-        self.squares = {}  # (row, col) -> label widget
-        self._create_board_ui()
-        self._setup_pieces()
-
-        # Buffers for socket moves
-        self.last_sent_move = None
-        self.last_received_move = None
-
-    def _create_board_ui(self):
-        for row in range(8):
-            for col in range(8):
-                square_color = '#F0D9B5' if (row + col) % 2 == 0 else '#B58863'
-                lbl = tk.Label(
-                    self.board_frame,
-                    text=' ',
-                    font=('Arial', 32),
-                    width=2,
-                    height=1,
-                    bg=square_color
-                )
-                lbl.grid(row=row, column=col)
-                lbl.bind('<ButtonPress-1>', lambda e, r=row, c=col: self.on_drag_start(e, r, c))
-                lbl.bind('<B1-Motion>', self.on_drag_motion)
-                lbl.bind('<ButtonRelease-1>', self.on_drag_release)
-                self.squares[(row, col)] = lbl
-
-    def _setup_pieces(self):
-        # Setup pawns
-        for col in range(8):
-            self.board[1][col] = WHITE_PAWN
-            self.board[6][col] = BLACK_PAWN
-        # Rooks
-        self.board[0][0] = self.board[0][7] = WHITE_ROOK
-        self.board[7][0] = self.board[7][7] = BLACK_ROOK
-        # Knights
-        self.board[0][1] = self.board[0][6] = WHITE_KNIGHT
-        self.board[7][1] = self.board[7][6] = BLACK_KNIGHT
-        # Bishops
-        self.board[0][2] = self.board[0][5] = WHITE_BISHOP
-        self.board[7][2] = self.board[7][5] = BLACK_BISHOP
-        # Queens
-        self.board[0][3] = WHITE_QUEEN
-        self.board[7][3] = BLACK_QUEEN
-        # Kings
-        self.board[0][4] = WHITE_KING
-        self.board[7][4] = BLACK_KING
-
-        self._redraw_board()
-
-    def _redraw_board(self):
-        for row in range(8):
-            for col in range(8):
-                piece = self.board[row][col]
-                lbl = self.squares[(row, col)]
-                lbl['text'] = piece if piece else ' '
-
-    def on_drag_start(self, event, row, col):
-        piece = self.board[row][col]
-        if piece and self._piece_color(piece) == self.turn:
-            widget = event.widget
-            self.drag_data['piece'] = piece
-            self.drag_data['r0'] = row
-            self.drag_data['c0'] = col
-            # Create floating widget
-            drag_lbl = tk.Label(self.board_frame, text=piece, font=('Arial', 32))
-            drag_lbl.place(x=event.x, y=event.y)
-            self.drag_data['widget'] = drag_lbl
-            # Remove original
-            self.board[row][col] = None
-            widget['text'] = ' '
-
-    def on_drag_motion(self, event):
-        drag_lbl = self.drag_data.get('widget')
-        if drag_lbl:
-            # update position relative to board_frame
-            x = event.x_root - self.board_frame.winfo_rootx() - 20
-            y = event.y_root - self.board_frame.winfo_rooty() - 20
-            drag_lbl.place(x=x, y=y)
-
-    def on_drag_release(self, event):
-        drag_lbl = self.drag_data.get('widget')
-        if not drag_lbl:
-            return
-        # Determine target square
-        x_rel = event.x_root - self.board_frame.winfo_rootx()
-        y_rel = event.y_root - self.board_frame.winfo_rooty()
-        lbl_w = self.squares[(0,0)].winfo_width()
-        lbl_h = self.squares[(0,0)].winfo_height()
-        c1 = min(max(int(x_rel / lbl_w), 0), 7)
-        r1 = min(max(int(y_rel / lbl_h), 0), 7)
-
-        r0, c0 = self.drag_data['r0'], self.drag_data['c0']
-        piece = self.drag_data['piece']
-        move_str = self._coords_to_move(r0, c0, r1, c1)
-        if self._is_valid_move(r0, c0, r1, c1):
-            self.board[r1][c1] = piece
-            self._redraw_board()
-            self.last_sent_move = move_str
-            self.send_move(move_str)
-            self.turn = 'black' if self.turn == 'white' else 'white'
-            self.status_label['text'] = f"{self.turn.capitalize()} to move"
-        else:
-            # Revert
-            self.board[r0][c0] = piece
-            self.squares[(r0, c0)]['text'] = piece
-
-        drag_lbl.destroy()
-        self.drag_data = {'widget': None, 'r0': None, 'c0': None, 'piece': None}
-
-    def _is_valid_move(self, r0, c0, r1, c1):
-        piece = self.board[r1][c1]
-        # Block capturing own
-        if piece and self._piece_color(piece) == self.turn:
+    def add_superposition(self, pos, board):
+        if len(self.positions) >= 2:
             return False
-        return True  # full rules omitted
+        if pos in self.positions:
+            return False
+        if pos in self.legal_moves(board):
+            self.positions.append(pos)
+            return True
+        return False
 
-    def _coords_to_move(self, r0, c0, r1, c1):
-        cols = 'abcdefgh'
-        return f"{cols[c0]}{8-r0}{cols[c1]}{8-r1}"
+    def collapse(self, chosen_pos=None):
+        if not self.positions:
+            return None
+        if chosen_pos and chosen_pos in self.positions:
+            self.positions = [chosen_pos]
+        else:
+            self.positions = [random.choice(self.positions)]
+        return self.positions[0]
 
-    def _piece_color(self, piece):
-        return 'white' if piece in (WHITE_KING, WHITE_QUEEN, WHITE_ROOK,
-                                     WHITE_BISHOP, WHITE_KNIGHT, WHITE_PAWN) else 'black'
+class QuantumChessBoard(tk.Canvas):
+    def __init__(self, parent, rows=8, cols=8, cell_size=64, *args, **kwargs):
+        super().__init__(parent, width=cols*cell_size, height=rows*cell_size, *args, **kwargs)
+        self.rows, self.cols, self.cell_size = rows, cols, cell_size
+        self.pieces = []
+        self.selected = None
+        self.draw_board()
+        self.bind("<Button-1>", self.on_left_click)
+        self.bind("<Button-3>", self.on_right_click)
 
-    # Placeholder socket methods
-    def send_move(self, move_str):
-        print(f"Sending move: {move_str}")
+    def is_on_board(self, r, c): return 0 <= r < self.rows and 0 <= c < self.cols
+    def is_empty(self, r, c): return all((r,c) not in p.positions for p in self.pieces)
+    def is_friendly(self, r, c, color): return any((r,c) in p.positions and p.color==color for p in self.pieces)
+    def is_enemy(self, r, c, color): return any((r,c) in p.positions and p.color!=color for p in self.pieces)
 
-    def on_move_received(self, move_str):
-        self.last_received_move = move_str
-        cols = 'abcdefgh'
-        c0 = cols.index(move_str[0])
-        r0 = 8 - int(move_str[1])
-        c1 = cols.index(move_str[2])
-        r1 = 8 - int(move_str[3])
-        if self._is_valid_move(r0, c0, r1, c1):
-            self.board[r1][c1] = self.board[r0][c0]
-            self.board[r0][c0] = None
-            self._redraw_board()
-            self.turn = 'black' if self.turn == 'white' else 'white'
-            self.status_label['text'] = f"{self.turn.capitalize()} to move"
+    def draw_board(self):
+        self.delete("all")
+        for r in range(self.rows):
+            for c in range(self.cols):
+                x1,y1 = c*self.cell_size, r*self.cell_size
+                x2,y2 = x1+self.cell_size, y1+self.cell_size
+                color = "white" if (r+c)%2 else "gray"
+                self.create_rectangle(x1,y1,x2,y2, fill=color)
+        self.draw_pieces()
 
-if __name__ == '__main__':
-    app = ChessApp()
-    app.mainloop()
+    def draw_pieces(self):
+        for p in self.pieces:
+            for pos in p.positions:
+                r,c = pos
+                x,y = c*self.cell_size+self.cell_size//2, r*self.cell_size+self.cell_size//2
+                symbol = p.name[0].upper() if p.color=='white' else p.name[0].lower()
+                self.create_text(x,y, text=symbol, font=(None,24), tags="piece")
+
+    def on_left_click(self, event):
+        r,c = event.y//self.cell_size, event.x//self.cell_size
+        # select piece
+        for p in self.pieces:
+            if (r,c) in p.positions:
+                self.selected = p
+                return
+        # add superposition
+        if self.selected:
+            added = self.selected.add_superposition((r,c), self)
+            if not added:
+                messagebox.showinfo("Illegal Move", "Cannot superpose there.")
+            self.selected = None
+            self.draw_board()
+            # send_move(self.selected)
+
+    def on_right_click(self, event):
+        r,c = event.y//self.cell_size, event.x//self.cell_size
+        for p in self.pieces:
+            if (r,c) in p.positions:
+                p.collapse(chosen_pos=(r,c))
+                self.draw_board()
+                # send_move(p)
+                return
+
+class QuantumChessApp:
+    def __init__(self):
+        self.root = tk.Tk(); self.root.title("Quantum Chess")
+        self.board = QuantumChessBoard(self.root)
+        self.board.pack()
+        self.setup_pieces()
+
+    def setup_pieces(self):
+        back = ['rook','knight','bishop','queen','king','bishop','knight','rook']
+        # white
+        for i,name in enumerate(back):
+            p = QuantumPiece(name,'white'); p.positions=[(7,i)]; self.board.pieces.append(p)
+        for i in range(8):
+            p = QuantumPiece('pawn','white'); p.positions=[(6,i)]; self.board.pieces.append(p)
+        # black
+        for i,name in enumerate(back):
+            p = QuantumPiece(name,'black'); p.positions=[(0,i)]; self.board.pieces.append(p)
+        for i in range(8):
+            p = QuantumPiece('pawn','black'); p.positions=[(1,i)]; self.board.pieces.append(p)
+        self.board.draw_board()
+
+    def run(self): self.root.mainloop()
+
+if __name__=='__main__':
+    QuantumChessApp().run()
+
+# Networking stubs
+# def send_move(piece):
+#     pass
+# def receive_move():
+#     pass
