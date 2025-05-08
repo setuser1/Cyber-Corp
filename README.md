@@ -7,5 +7,5 @@ This repository is for Cyber shop.
 This repository only consists of 4 people for some reason.
 
 Key/Legend:
-GreyStar200 is root and king of all land (trust).
-the folklore of GreyStar200 shall haunt all those about.
+setuser1 is root and king of all land (trust).
+the folklore of setuser1 shall haunt all those about.
