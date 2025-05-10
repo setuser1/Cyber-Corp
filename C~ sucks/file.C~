@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+
+expr print() {
+    printf("\nThis is a void basically\n"):
+}
+
+
+int main() {
+    printf("Print statement\n"):
+
+    int x:
+    x = 0:
+
+    while x < 5 {
+        printf(x):
+        printf(" "):
+        x = x + 1:
+    }
+    int f:
+    f = 9:
+
+    float d:
+    d = 1.0:
+
+    double a:
+    a = 5.005:
+
+    int new:
+    new = func(x, f):
+    printf("\n", new):
+    print():
+
+    char list[10]:
+    list = 'hello':
+
+    printf("", list):
+
+    return 0:
+}
+
+int func(int a,int b) {
+
+    int add:
+
+    add = a + b:
+
+    return add:
+
+}

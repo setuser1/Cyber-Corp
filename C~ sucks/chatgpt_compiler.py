@@ -1,0 +1,520 @@
+#!/usr/bin/env python3
+import sys
+import os
+import llvmlite.ir as ir
+import llvmlite.binding as llvm
+import codecs
+
+# AST node classes
+class Function:
+    def __init__(self, ret_type, name, params, body):
+        self.ret_type = ret_type
+        self.name = name
+        self.params = params
+        self.body = body
+
+class IfStmt:
+    def __init__(self, cond, body):
+        self.cond = cond
+        self.body = body
+
+class WhileStmt:
+    def __init__(self, cond, body):
+        self.cond = cond
+        self.body = body
+
+class ReturnStmt:
+    def __init__(self, expr):
+        self.expr = expr  # None for void
+
+def unescape_string(s):
+    if (s.startswith('"') and s.endswith('"')) or (s.startswith("'") and s.endswith("'")):
+        s = s[1:-1]
+    return codecs.decode(s, 'unicode_escape')
+
+# Parser (brace-based)
+def parse_block(lines, i):
+    stmts = []
+    while i < len(lines):
+        line = lines[i].strip()
+        if not line:
+            i += 1; continue
+        if line == '}':
+            return stmts, i+1
+        if line.endswith('{'):
+            hdr = line[:-1].strip()
+            if hdr.startswith('if '):
+                parts = hdr[3:].split()
+                lhs, op, rhs = parts
+                body, i = parse_block(lines, i+1)
+                stmts.append(IfStmt((lhs, op, rhs), body))
+                continue
+            if hdr.startswith('while '):
+                parts = hdr[6:].split()
+                lhs, op, rhs = parts
+                body, i = parse_block(lines, i+1)
+                stmts.append(WhileStmt((lhs, op, rhs), body))
+                continue
+        if line.startswith('return'):
+            expr = line[6:].strip() or None
+            stmts.append(ReturnStmt(expr))
+            i += 1; continue
+        stmts.append(line)
+        i += 1
+    return stmts, i
+
+def parse(lines):
+    functions = []
+    i = 0
+    valid_types = ('int', 'float', 'double', 'void', 'expr', 'char')
+    while i < len(lines):
+        raw = lines[i].strip()
+        if raw.startswith('#include'):
+            i += 1; continue
+        # Only accept known types
+        if any(raw.startswith(t + ' ') for t in valid_types) and raw.endswith('{'):
+            hdr = raw[:-1].strip()
+            parts = hdr.split(' ',1)
+            ret_type, rest = parts
+            if ret_type == 'expr':
+                ret_type = 'void'
+            elif ret_type not in ('int', 'float', 'double', 'void', 'char'):
+                raise SyntaxError(f"Unknown return type '{ret_type}' in function definition: {hdr}")
+            name = rest[:rest.find('(')].strip()
+            params_str = rest[rest.find('(')+1:rest.find(')')].strip()
+            params = [p.strip().split()[-1] for p in params_str.split(',') if p.strip()] if params_str else []
+            body, i = parse_block(lines, i+1)
+            functions.append(Function(ret_type, name, params, body))
+            continue
+        elif raw.endswith('{'):
+            raise SyntaxError(f"Missing or unknown return type in function definition: {raw}")
+        i += 1
+    return functions
+
+def get_llvm_type(typ):
+    if typ == 'int':
+        return ir.IntType(32)
+    elif typ == 'float':
+        return ir.FloatType()
+    elif typ == 'double':
+        return ir.DoubleType()
+    elif typ == 'char':
+        return ir.IntType(8)
+    elif typ == 'void':
+        return ir.VoidType()
+    else:
+        raise ValueError(f"Unknown type: {typ}")
+
+def build_module(functions):
+    module = ir.Module(name='module')
+    module.triple = llvm.get_default_triple()
+    # declare external functions
+    f_printf = ir.Function(module, ir.FunctionType(ir.IntType(32), [ir.PointerType(ir.IntType(8))], var_arg=True), name='printf')
+    f_scanf  = ir.Function(module, ir.FunctionType(ir.IntType(32), [ir.PointerType(ir.IntType(8)), ir.PointerType(ir.IntType(32))], var_arg=True), name='scanf')
+    # constants
+    fmt_int  = ir.GlobalVariable(module, ir.ArrayType(ir.IntType(8), 4), name='fmt_int')
+    fmt_int.global_constant = True
+    fmt_int.initializer = ir.Constant(fmt_int.type.pointee, bytearray(b"%d\n\0"))
+    fmt_in = ir.GlobalVariable(module, ir.ArrayType(ir.IntType(8), 3), name='fmt_in')
+    fmt_in.global_constant = True
+    fmt_in.initializer = ir.Constant(fmt_in.type.pointee, bytearray(b"%d\0"))
+
+    # --- Predeclare all functions for forward references ---
+    llvm_fns = {}
+    for fn in functions:
+        ftype = get_llvm_type(fn.ret_type)
+        # Default all params to int for now (extend as needed)
+        arg_types = [ir.IntType(32)] * len(fn.params)
+        func_ty = ir.FunctionType(ftype, arg_types)
+        llvm_fns[fn.name] = ir.Function(module, func_ty, name=fn.name)
+
+    for fn in functions:
+        llvm_fn = llvm_fns[fn.name]
+        block = llvm_fn.append_basic_block('entry')
+        builder = ir.IRBuilder(block)
+        locals = {}
+        arrays = {}
+        array_types = {}
+        array_sizes = {}
+
+        # First pass: allocate all locals and arrays
+        for stmt in fn.body:
+            if isinstance(stmt, str):
+                stmt_stripped = stmt.lstrip()
+                # Support all types
+                if stmt_stripped.startswith('int ') or stmt_stripped.startswith('char ') or stmt_stripped.startswith('float ') or stmt_stripped.startswith('double '):
+                    decl = stmt_stripped[stmt_stripped.find(' ')+1:].strip().rstrip(';:')
+                    if '[' in decl and decl.endswith(']'):
+                        var = decl[:decl.find('[')].strip()
+                        size = decl[decl.find('[')+1:-1].strip()
+                        size_val = int(size) if size.isdigit() else 10
+                        if stmt_stripped.startswith('char '):
+                            arr_ptr = builder.alloca(ir.IntType(8), ir.Constant(ir.IntType(32), size_val), name=var)
+                            arrays[var] = arr_ptr
+                            array_types[var] = 'char'
+                            array_sizes[var] = size_val
+                        elif stmt_stripped.startswith('float '):
+                            arr_ptr = builder.alloca(ir.FloatType(), ir.Constant(ir.IntType(32), size_val), name=var)
+                            arrays[var] = arr_ptr
+                            array_types[var] = 'float'
+                            array_sizes[var] = size_val
+                        elif stmt_stripped.startswith('double '):
+                            arr_ptr = builder.alloca(ir.DoubleType(), ir.Constant(ir.IntType(32), size_val), name=var)
+                            arrays[var] = arr_ptr
+                            array_types[var] = 'double'
+                            array_sizes[var] = size_val
+                        else:
+                            arr_ptr = builder.alloca(ir.IntType(32), ir.Constant(ir.IntType(32), size_val), name=var)
+                            arrays[var] = arr_ptr
+                            array_types[var] = 'int'
+                            array_sizes[var] = size_val
+                    else:
+                        var = decl.strip()
+                        if stmt_stripped.startswith('char '):
+                            locals[var] = builder.alloca(ir.IntType(8), name=var)
+                        elif stmt_stripped.startswith('float '):
+                            locals[var] = builder.alloca(ir.FloatType(), name=var)
+                        elif stmt_stripped.startswith('double '):
+                            locals[var] = builder.alloca(ir.DoubleType(), name=var)
+                        else:
+                            locals[var] = builder.alloca(ir.IntType(32), name=var)
+
+        # Allocate and store function parameters
+        for idx, param in enumerate(fn.params):
+            param_name = param.strip()
+            ptr = builder.alloca(ir.IntType(32), name=param_name)
+            builder.store(llvm_fn.args[idx], ptr)
+            locals[param_name] = ptr
+
+        fmt_str_cache = {}
+
+        def gen_cond(c):
+            lhs, op, rhs = c
+            l = builder.load(locals[lhs], name=f'load_{lhs}')
+            r = ir.Constant(ir.IntType(32), int(rhs)) if rhs.isdigit() else builder.load(locals[rhs], name=f'load_{rhs}')
+            cmp_map = {'<':'<', '>':'>', '==':'==', '<=':'<=', '>=':'>='}
+            return builder.icmp_signed(cmp_map[op], l, r)
+
+        def emit(stmt):
+            if isinstance(stmt, str):
+                stmt = stmt.rstrip(':;').strip()
+                if stmt.startswith('scanf'):
+                    var = stmt[stmt.find('(')+1:stmt.rfind(')')].split(',')[1].strip().lstrip('&')
+                    ptr = builder.gep(fmt_in, [ir.Constant(ir.IntType(32), 0), ir.Constant(ir.IntType(32), 0)])
+                    builder.call(f_scanf, [ptr, locals[var]])
+                elif stmt.startswith('printf'):
+                    args = [a.strip() for a in stmt[stmt.find('(')+1:stmt.rfind(')')].split(',')]
+                    args = [a for a in args if a]
+                    fmt_parts = []
+                    values = []
+                    for a in args:
+                        if (a.startswith('"') and a.endswith('"')) or (a.startswith("'") and a.endswith("'")):
+                            fmt_parts.append(unescape_string(a))
+                        elif a in arrays and array_types[a] == 'char':
+                            fmt_parts.append("%s")
+                            values.append(builder.bitcast(arrays[a], ir.PointerType(ir.IntType(8))))
+                        elif '[' in a and a.endswith(']'):
+                            arrname = a[:a.find('[')].strip()
+                            idx = a[a.find('[')+1:-1].strip()
+                            if arrname in arrays:
+                                arr_ptr = arrays[arrname]
+                                idx_val = ir.Constant(ir.IntType(32), int(idx)) if idx.isdigit() else builder.load(locals[idx], name=f'load_{idx}')
+                                elem_ptr = builder.gep(arr_ptr, [idx_val])
+                                if array_types[arrname] == 'char':
+                                    fmt_parts.append("%c")
+                                    values.append(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'))
+                                elif array_types[arrname] == 'float':
+                                    fmt_parts.append("%f")
+                                    values.append(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'))
+                                elif array_types[arrname] == 'double':
+                                    fmt_parts.append("%lf")
+                                    values.append(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'))
+                                else:
+                                    fmt_parts.append("%d")
+                                    values.append(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'))
+                            else:
+                                raise ValueError(f"Unknown array '{arrname}'")
+                        elif a in locals:
+                            # Print float/double/int/char
+                            if isinstance(locals[a].type.pointee, ir.FloatType):
+                                fmt_parts.append("%f")
+                                values.append(builder.load(locals[a], name=f'load_{a}'))
+                            elif isinstance(locals[a].type.pointee, ir.DoubleType):
+                                fmt_parts.append("%lf")
+                                values.append(builder.load(locals[a], name=f'load_{a}'))
+                            elif isinstance(locals[a].type.pointee, ir.IntType) and locals[a].type.pointee.width == 8:
+                                fmt_parts.append("%c")
+                                values.append(builder.load(locals[a], name=f'load_{a}'))
+                            else:
+                                fmt_parts.append("%d")
+                                values.append(builder.load(locals[a], name=f'load_{a}'))
+                        else:
+                            raise ValueError(f"Unknown printf argument: {a}")
+                    fmt_str = "".join(fmt_parts) + "\0"
+                    fmt_hash = abs(hash(fmt_str))
+                    if fmt_hash not in fmt_str_cache:
+                        arr_ty = ir.ArrayType(ir.IntType(8), len(fmt_str.encode('utf8')))
+                        str_const = ir.GlobalVariable(module, arr_ty, name=f"fmt_str_{fmt_hash}")
+                        str_const.global_constant = True
+                        str_const.initializer = ir.Constant(arr_ty, bytearray(fmt_str.encode('utf8')))
+                        fmt_str_cache[fmt_hash] = str_const
+                    else:
+                        str_const = fmt_str_cache[fmt_hash]
+                    ptr = builder.gep(str_const, [ir.Constant(ir.IntType(32), 0), ir.Constant(ir.IntType(32), 0)])
+                    builder.call(f_printf, [ptr] + values)
+                elif '=' in stmt:
+                    lhs, expr = stmt.split('=', 1)
+                    lhs = lhs.strip()
+                    expr = expr.strip().rstrip(';:')
+                    # String assignment to char array: arr = "hello" or arr = 'hello'
+                    if lhs in arrays and array_types[lhs] == 'char' and (
+                        (expr.startswith('"') and expr.endswith('"')) or (expr.startswith("'") and expr.endswith("'"))
+                    ):
+                        arr_ptr = arrays[lhs]
+                        string_val = unescape_string(expr)
+                        for idx, ch in enumerate(string_val):
+                            if idx >= array_sizes[lhs]:
+                                break
+                            elem_ptr = builder.gep(arr_ptr, [ir.Constant(ir.IntType(32), idx)])
+                            builder.store(ir.Constant(ir.IntType(8), ord(ch)), elem_ptr)
+                        # Null-terminate if space
+                        if len(string_val) < array_sizes[lhs]:
+                            elem_ptr = builder.gep(arr_ptr, [ir.Constant(ir.IntType(32), len(string_val))])
+                            builder.store(ir.Constant(ir.IntType(8), 0), elem_ptr)
+                    # Char assignment: arr[0] = 'h'
+                    elif '[' in lhs and lhs.endswith(']') and (
+                        (expr.startswith('"') and expr.endswith('"')) or (expr.startswith("'") and expr.endswith("'"))
+                    ):
+                        arrname = lhs[:lhs.find('[')].strip()
+                        idx = lhs[lhs.find('[')+1:-1].strip()
+                        if arrname not in arrays or array_types[arrname] != 'char':
+                            raise ValueError(f"Unknown char array '{arrname}'")
+                        arr_ptr = arrays[arrname]
+                        idx_val = ir.Constant(ir.IntType(32), int(idx)) if idx.isdigit() else builder.load(locals[idx], name=f'load_{idx}')
+                        elem_ptr = builder.gep(arr_ptr, [idx_val])
+                        builder.store(ir.Constant(ir.IntType(8), ord(unescape_string(expr))), elem_ptr)
+                    # Array assignment: arr[0] = x
+                    elif '[' in lhs and lhs.endswith(']'):
+                        arrname = lhs[:lhs.find('[')].strip()
+                        idx = lhs[lhs.find('[')+1:-1].strip()
+                        if arrname not in arrays:
+                            raise ValueError(f"Unknown array '{arrname}'")
+                        arr_ptr = arrays[arrname]
+                        idx_val = ir.Constant(ir.IntType(32), int(idx)) if idx.isdigit() else builder.load(locals[idx], name=f'load_{idx}')
+                        elem_ptr = builder.gep(arr_ptr, [idx_val])
+                        # Right side: variable, int, or arr[x]
+                        if '[' in expr and expr.endswith(']'):
+                            rarr = expr[:expr.find('[')].strip()
+                            ridx = expr[expr.find('[')+1:-1].strip()
+                            rarr_ptr = arrays[rarr]
+                            ridx_val = ir.Constant(ir.IntType(32), int(ridx)) if ridx.isdigit() else builder.load(locals[ridx], name=f'load_{ridx}')
+                            relem_ptr = builder.gep(rarr_ptr, [ridx_val])
+                            rval = builder.load(relem_ptr, name=f'load_{rarr}_{ridx}')
+                            builder.store(rval, elem_ptr)
+                        elif expr in locals:
+                            rval = builder.load(locals[expr], name=f'load_{expr}')
+                            builder.store(rval, elem_ptr)
+                        elif expr.isdigit() or (expr.startswith('-') and expr[1:].isdigit()):
+                            # Store as correct type
+                            if array_types[arrname] == 'char':
+                                rval = ir.Constant(ir.IntType(8), int(expr))
+                            elif array_types[arrname] == 'float':
+                                rval = ir.Constant(ir.FloatType(), float(expr))
+                            elif array_types[arrname] == 'double':
+                                rval = ir.Constant(ir.DoubleType(), float(expr))
+                            else:
+                                rval = ir.Constant(ir.IntType(32), int(expr))
+                            builder.store(rval, elem_ptr)
+                        else:
+                            raise ValueError(f"Unsupported array assignment: {stmt}")
+                    # Array access: x = arr[0]
+                    elif '[' in expr and expr.endswith(']'):
+                        arrname = expr[:expr.find('[')].strip()
+                        idx = expr[expr.find('[')+1:-1].strip()
+                        if arrname not in arrays:
+                            raise ValueError(f"Unknown array '{arrname}'")
+                        arr_ptr = arrays[arrname]
+                        idx_val = ir.Constant(ir.IntType(32), int(idx)) if idx.isdigit() else builder.load(locals[idx], name=f'load_{idx}')
+                        elem_ptr = builder.gep(arr_ptr, [idx_val])
+                        builder.store(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'), locals[lhs])
+                    else:
+                        if lhs not in locals:
+                            raise ValueError(f"Variable '{lhs}' used before declaration")
+                        # Simple support for 'a = b + c' or 'a = 3 + 4'
+                        if '+' in expr:
+                            left, right = expr.split('+', 1)
+                            left = left.strip()
+                            right = right.strip()
+                            if left in locals:
+                                left_val = builder.load(locals[left], name=f'load_{left}')
+                            elif left.isdigit() or (left.startswith('-') and left[1:].isdigit()):
+                                left_val = ir.Constant(ir.IntType(32), int(left))
+                            else:
+                                raise ValueError(f"Unknown variable or invalid literal: '{left}'")
+                            if right in locals:
+                                right_val = builder.load(locals[right], name=f'load_{right}')
+                            elif right.isdigit() or (right.startswith('-') and right[1:].isdigit()):
+                                right_val = ir.Constant(ir.IntType(32), int(right))
+                            else:
+                                raise ValueError(f"Unknown variable or invalid literal: '{right}'")
+                            result = builder.add(left_val, right_val, name=f'add_{lhs}')
+                            builder.store(result, locals[lhs])
+                        elif '-' in expr:
+                            left, right = expr.split('-', 1)
+                            left = left.strip()
+                            right = right.strip()
+                            if left in locals:
+                                left_val = builder.load(locals[left], name=f'load_{left}')
+                            elif left.isdigit() or (left.startswith('-') and left[1:].isdigit()):
+                                left_val = ir.Constant(ir.IntType(32), int(left))
+                            else:
+                                raise ValueError(f"Unknown variable or invalid literal: '{left}'")
+                            if right in locals:
+                                right_val = builder.load(locals[right], name=f'load_{right}')
+                            elif right.isdigit() or (right.startswith('-') and right[1:].isdigit()):
+                                right_val = ir.Constant(ir.IntType(32), int(right))
+                            else:
+                                raise ValueError(f"Unknown variable or invalid literal: '{right}'")
+                            result = builder.sub(left_val, right_val, name=f'sub_{lhs}')
+                            builder.store(result, locals[lhs])
+                        else:
+                            expr_clean = expr.strip()
+                            # Function call assignment: a = func(x, y)
+                            if '(' in expr_clean and expr_clean.endswith(')'):
+                                fname = expr_clean[:expr_clean.find('(')].strip()
+                                argstr = expr_clean[expr_clean.find('(')+1:-1]
+                                argnames = [a.strip() for a in argstr.split(',') if a.strip()]
+                                call_args = []
+                                for a in argnames:
+                                    if a in locals:
+                                        call_args.append(builder.load(locals[a], name=f'load_{a}'))
+                                    elif a.isdigit() or (a.startswith('-') and a[1:].isdigit()):
+                                        call_args.append(ir.Constant(ir.IntType(32), int(a)))
+                                    elif '[' in a and a.endswith(']'):
+                                        arrname = a[:a.find('[')].strip()
+                                        idx = a[a.find('[')+1:-1].strip()
+                                        arr_ptr = arrays[arrname]
+                                        idx_val = ir.Constant(ir.IntType(32), int(idx)) if idx.isdigit() else builder.load(locals[idx], name=f'load_{idx}')
+                                        elem_ptr = builder.gep(arr_ptr, [idx_val])
+                                        call_args.append(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'))
+                                    else:
+                                        raise ValueError(f"Unknown argument '{a}' in call to '{fname}'")
+                                if fname not in llvm_fns:
+                                    raise ValueError(f"Function '{fname}' not declared")
+                                callee = llvm_fns[fname]
+                                result = builder.call(callee, call_args, name=f'call_{fname}')
+                                builder.store(result, locals[lhs])
+                            else:
+                                try:
+                                    # Detect variable type
+                                    var_type = locals[lhs].type.pointee
+                                    if isinstance(var_type, ir.FloatType):
+                                        value = float(expr_clean)
+                                        builder.store(ir.Constant(ir.FloatType(), value), locals[lhs])
+                                    elif isinstance(var_type, ir.DoubleType):
+                                        value = float(expr_clean)
+                                        builder.store(ir.Constant(ir.DoubleType(), value), locals[lhs])
+                                    elif isinstance(var_type, ir.IntType):
+                                        value = int(float(expr_clean))  # Accepts '1.0' as '1' for int
+                                        builder.store(ir.Constant(var_type, value), locals[lhs])
+                                    else:
+                                        raise ValueError(f"Unsupported variable type for '{lhs}'")
+                                except ValueError:
+                                    if expr_clean in locals:
+                                        value = builder.load(locals[expr_clean], name=f'load_{expr_clean}')
+                                        builder.store(value, locals[lhs])
+                                    else:
+                                        raise ValueError(f"Unsupported expression or invalid literal: '{expr_clean}'")
+                elif '(' in stmt and stmt.endswith(')'):
+                    # Bare function call, e.g., print():
+                    fname = stmt[:stmt.find('(')].strip()
+                    argstr = stmt[stmt.find('(')+1:-1]
+                    argnames = [a.strip() for a in argstr.split(',') if a.strip()]
+                    call_args = []
+                    for a in argnames:
+                        if a in locals:
+                            call_args.append(builder.load(locals[a], name=f'load_{a}'))
+                        elif a.isdigit() or (a.startswith('-') and a[1:].isdigit()):
+                            call_args.append(ir.Constant(ir.IntType(32), int(a)))
+                        elif '[' in a and a.endswith(']'):
+                            arrname = a[:a.find('[')].strip()
+                            idx = a[a.find('[')+1:-1].strip()
+                            arr_ptr = arrays[arrname]
+                            idx_val = ir.Constant(ir.IntType(32), int(idx)) if idx.isdigit() else builder.load(locals[idx], name=f'load_{idx}')
+                            elem_ptr = builder.gep(arr_ptr, [idx_val])
+                            call_args.append(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'))
+                        else:
+                            raise ValueError(f"Unknown argument '{a}' in call to '{fname}'")
+                    if fname not in llvm_fns:
+                        raise ValueError(f"Function '{fname}' not declared")
+                    callee = llvm_fns[fname]
+                    builder.call(callee, call_args)
+                    return
+            elif isinstance(stmt, ReturnStmt):
+                if stmt.expr:
+                    expr = stmt.expr.strip().rstrip(';:')
+                    if expr in locals:
+                        builder.ret(builder.load(locals[expr], name=f'load_{expr}'))
+                    else:
+                        builder.ret(ir.Constant(ir.IntType(32), int(expr)))
+                else:
+                    builder.ret_void()
+            elif isinstance(stmt, IfStmt):
+                cond_val = gen_cond(stmt.cond)
+                then_bb = llvm_fn.append_basic_block('then')
+                end_bb = llvm_fn.append_basic_block('end_if')
+                builder.cbranch(cond_val, then_bb, end_bb)
+                builder.position_at_end(then_bb)
+                for s in stmt.body:
+                    emit(s)
+                builder.branch(end_bb)
+                builder.position_at_end(end_bb)
+            elif isinstance(stmt, WhileStmt):
+                loop_bb = llvm_fn.append_basic_block('loop')
+                body_bb = llvm_fn.append_basic_block('body')
+                after_bb = llvm_fn.append_basic_block('after')
+                builder.branch(loop_bb)
+                builder.position_at_end(loop_bb)
+                cond_val = gen_cond(stmt.cond)
+                builder.cbranch(cond_val, body_bb, after_bb)
+                builder.position_at_end(body_bb)
+                for s in stmt.body:
+                    emit(s)
+                builder.branch(loop_bb)
+                builder.position_at_end(after_bb)
+
+        # Second pass: emit all statements
+        for st in fn.body:
+            emit(st)
+
+        # default return
+        if not builder.block.is_terminated:
+            if fn.ret_type=='int':
+                builder.ret(ir.Constant(ir.IntType(32), 0))
+            elif fn.ret_type=='float':
+                builder.ret(ir.Constant(ir.FloatType(), 0.0))
+            elif fn.ret_type=='double':
+                builder.ret(ir.Constant(ir.DoubleType(), 0.0))
+            else:
+                builder.ret_void()
+
+    return module
+
+def main():
+    if len(sys.argv)!=2:
+        print("Usage: python compiler.py file.cpy"); sys.exit(1)
+    in_path = sys.argv[1]
+    if not os.path.isfile(in_path):
+        print(f"Error: '{in_path}' not found."); sys.exit(1)
+
+    with open(in_path) as f:
+        lines = [l.rstrip() for l in f]
+    funcs = parse(lines)
+    mod = build_module(funcs)
+    out = os.path.splitext(in_path)[0] + '.ll'
+    with open(out,'w') as f:
+        f.write(str(mod))
+    print(f"LLVM IR written to {out}")
+
+if __name__=='__main__':
+    main()
