@@ -14,8 +14,19 @@ class Function:
         self.body = body
 
 class IfStmt:
+    def __init__(self, cond, body, elifs=None, else_body=None):
+        self.cond = cond
+        self.body = body
+        self.elifs = elifs or []
+        self.else_body = else_body
+
+class ElifStmt:
     def __init__(self, cond, body):
         self.cond = cond
+        self.body = body
+
+class ElseStmt:
+    def __init__(self, body):
         self.body = body
 
 class WhileStmt:
@@ -44,16 +55,31 @@ def parse_block(lines, i):
         if line.endswith('{'):
             hdr = line[:-1].strip()
             if hdr.startswith('if '):
-                parts = hdr[3:].split()
-                lhs, op, rhs = parts
+                cond = hdr[3:].strip()
                 body, i = parse_block(lines, i+1)
-                stmts.append(IfStmt((lhs, op, rhs), body))
+                elifs = []
+                else_body = None
+                # Parse xif (elif) and else blocks
+                while i < len(lines):
+                    next_line = lines[i].strip()
+                    if next_line.startswith('xif '):
+                        xif_cond = next_line[4:].strip()
+                        if xif_cond.endswith('{'):
+                            xif_cond = xif_cond[:-1].strip()
+                        xif_body, i = parse_block(lines, i+1)
+                        elifs.append(ElifStmt(xif_cond, xif_body))
+                    elif next_line.startswith('else'):
+                        i += 1  # skip 'else {'
+                        else_body, i = parse_block(lines, i)
+                        break
+                    else:
+                        break
+                stmts.append(IfStmt(cond, body, elifs, else_body))
                 continue
             if hdr.startswith('while '):
-                parts = hdr[6:].split()
-                lhs, op, rhs = parts
+                cond = hdr[6:].strip()
                 body, i = parse_block(lines, i+1)
-                stmts.append(WhileStmt((lhs, op, rhs), body))
+                stmts.append(WhileStmt(cond, body))
                 continue
         if line.startswith('return'):
             expr = line[6:].strip() or None
@@ -188,12 +214,23 @@ def build_module(functions):
 
         fmt_str_cache = {}
 
-        def gen_cond(c):
-            lhs, op, rhs = c
-            l = builder.load(locals[lhs], name=f'load_{lhs}')
-            r = ir.Constant(ir.IntType(32), int(rhs)) if rhs.isdigit() else builder.load(locals[rhs], name=f'load_{rhs}')
-            cmp_map = {'<':'<', '>':'>', '==':'==', '<=':'<=', '>=':'>='}
-            return builder.icmp_signed(cmp_map[op], l, r)
+        def gen_cond(cond):
+            # Remove any surrounding parentheses and whitespace
+            cond = cond.strip()
+            if cond.startswith('(') and cond.endswith(')'):
+                cond = cond[1:-1].strip()
+            # Support ==, !=, <, >, <=, >=
+            for op in ['==', '!=', '<=', '>=', '<', '>']:
+                if op in cond:
+                    lhs, rhs = cond.split(op, 1)
+                    lhs = lhs.strip().lstrip('(').rstrip(')')
+                    rhs = rhs.strip().lstrip('(').rstrip(')')
+                    l = builder.load(locals[lhs], name=f'load_{lhs}')
+                    r = ir.Constant(ir.IntType(32), int(rhs)) if rhs.isdigit() else builder.load(locals[rhs], name=f'load_{rhs}')
+                    cmp_map = {'<':'<', '>':'>', '==':'==', '<=':'<=', '>=':'>=', '!=':'!='}
+                    return builder.icmp_signed(cmp_map[op], l, r)
+            else:
+                raise ValueError(f"Unsupported condition: {cond}")
 
         def emit(stmt):
             if isinstance(stmt, str):
@@ -377,6 +414,42 @@ def build_module(functions):
                                 raise ValueError(f"Unknown variable or invalid literal: '{right}'")
                             result = builder.sub(left_val, right_val, name=f'sub_{lhs}')
                             builder.store(result, locals[lhs])
+                        elif '*' in expr:
+                            left, right = expr.split('*', 1)
+                            left = left.strip()
+                            right = right.strip()
+                            if left in locals:
+                                left_val = builder.load(locals[left], name=f'load_{left}')
+                            elif left.isdigit() or (left.startswith('-') and left[1:].isdigit()):
+                                left_val = ir.Constant(ir.IntType(32), int(left))
+                            else:
+                                raise ValueError(f"Unknown variable or invalid literal: '{left}'")
+                            if right in locals:
+                                right_val = builder.load(locals[right], name=f'load_{right}')
+                            elif right.isdigit() or (right.startswith('-') and right[1:].isdigit()):
+                                right_val = ir.Constant(ir.IntType(32), int(right))
+                            else:
+                                raise ValueError(f"Unknown variable or invalid literal: '{right}'")
+                            result = builder.mul(left_val, right_val, name=f'mul_{lhs}')
+                            builder.store(result, locals[lhs])
+                        elif '/' in expr:
+                            left, right = expr.split('/', 1)
+                            left = left.strip()
+                            right = right.strip()
+                            if left in locals:
+                                left_val = builder.load(locals[left], name=f'load_{left}')
+                            elif left.isdigit() or (left.startswith('-') and left[1:].isdigit()):
+                                left_val = ir.Constant(ir.IntType(32), int(left))
+                            else:
+                                raise ValueError(f"Unknown variable or invalid literal: '{left}'")
+                            if right in locals:
+                                right_val = builder.load(locals[right], name=f'load_{right}')
+                            elif right.isdigit() or (right.startswith('-') and right[1:].isdigit()):
+                                right_val = ir.Constant(ir.IntType(32), int(right))
+                            else:
+                                raise ValueError(f"Unknown variable or invalid literal: '{right}'")
+                            result = builder.sdiv(left_val, right_val, name=f'div_{lhs}')
+                            builder.store(result, locals[lhs])
                         else:
                             expr_clean = expr.strip()
                             # Function call assignment: a = func(x, y)
@@ -460,15 +533,38 @@ def build_module(functions):
                 else:
                     builder.ret_void()
             elif isinstance(stmt, IfStmt):
-                cond_val = gen_cond(stmt.cond)
-                then_bb = llvm_fn.append_basic_block('then')
-                end_bb = llvm_fn.append_basic_block('end_if')
-                builder.cbranch(cond_val, then_bb, end_bb)
-                builder.position_at_end(then_bb)
-                for s in stmt.body:
-                    emit(s)
-                builder.branch(end_bb)
-                builder.position_at_end(end_bb)
+                # Handle if/elif/else chain
+                def emit_if_chain(ifstmt, after_bb):
+                    cond_val = gen_cond(ifstmt.cond)
+                    then_bb = llvm_fn.append_basic_block('then')
+                    else_bb = llvm_fn.append_basic_block('else') if (ifstmt.elifs or ifstmt.else_body) else after_bb
+                    builder.cbranch(cond_val, then_bb, else_bb)
+                    builder.position_at_end(then_bb)
+                    for s in ifstmt.body:
+                        emit(s)
+                    builder.branch(after_bb)
+                    if ifstmt.elifs or ifstmt.else_body:
+                        builder.position_at_end(else_bb)
+                        # Handle elifs
+                        elifs = ifstmt.elifs or []
+                        for idx, elifstmt in enumerate(elifs):
+                            next_else_bb = llvm_fn.append_basic_block(f'elif_else_{idx}') if (idx < len(elifs)-1 or ifstmt.else_body) else after_bb
+                            cond_val = gen_cond(elifstmt.cond)
+                            then_bb = llvm_fn.append_basic_block(f'elif_then_{idx}')
+                            builder.cbranch(cond_val, then_bb, next_else_bb)
+                            builder.position_at_end(then_bb)
+                            for s in elifstmt.body:
+                                emit(s)
+                            builder.branch(after_bb)
+                            builder.position_at_end(next_else_bb)
+                        # Handle else
+                        if ifstmt.else_body:
+                            for s in ifstmt.else_body:
+                                emit(s)
+                            builder.branch(after_bb)
+                after_bb = llvm_fn.append_basic_block('end_if')
+                emit_if_chain(stmt, after_bb)
+                builder.position_at_end(after_bb)
             elif isinstance(stmt, WhileStmt):
                 loop_bb = llvm_fn.append_basic_block('loop')
                 body_bb = llvm_fn.append_basic_block('body')
