@@ -48,42 +48,14 @@ int main() {
 }
 ```
 
-## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## How to install
 
-## Extension Settings
+download the ctilde.vsix and open visual studio
+then open the command palette and look for Extentsions: Install via Vsix
+find the file you downloaded and give it to the prompt
+you are now done.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
 
 ## Working with Markdown
 
