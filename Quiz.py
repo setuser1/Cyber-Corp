@@ -17,7 +17,7 @@ def delete_file():
 def load_quiz(filename):
     quiz = []
     if os.path.exists(filename):
-        with open(filename, "r") as file:
+        with open(filename, "r", encoding="utf-8") as file:  # UTF-8 encoding
             lines = file.readlines()
             for line in lines:
                 question, answer = line.strip().split("|")
@@ -44,7 +44,7 @@ def save_to_file(quiz):
     else:
         mode = "w"
 
-    with open(filename, mode) as file:
+    with open(filename, mode, encoding="utf-8") as file:  # UTF-8 encoding
         for question, answer in quiz:
             file.write(f"{question}|{answer}\n")
     
