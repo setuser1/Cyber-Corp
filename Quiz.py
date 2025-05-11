@@ -1,8 +1,23 @@
 #ai generated
+#version 2
+#untested
 
 import os
 
+def list_files():
+    print("\nSupported quiz filenames must end in: .quiz, .txt, .csv, or .json")
+    
+    files = [f for f in os.listdir() if f.endswith((".quiz", ".txt", ".csv", ".json"))]
+    
+    if files:
+        print("\nAvailable quiz files:")
+        for idx, file in enumerate(files, start=1):
+            print(f"{idx}. {file}")  
+    else:
+        print("\nNo quiz files found.\n")
+
 def delete_file():
+    list_files()  
     filename = input("Enter the filename to delete: ")
     if os.path.exists(filename):
         confirm = input(f"Are you sure you want to delete '{filename}'? (yes/no): ").strip().lower()
@@ -17,11 +32,15 @@ def delete_file():
 def load_quiz(filename):
     quiz = []
     if os.path.exists(filename):
-        with open(filename, "r", encoding="utf-8") as file:  # UTF-8 encoding
+        with open(filename, "r", encoding="utf-8") as file:  
             lines = file.readlines()
             for line in lines:
-                question, answer = line.strip().split("|")
-                quiz.append((question, answer))
+                parts = line.strip().split("|")
+                if len(parts) == 2:  # Ensure correct format
+                    question, answer = parts
+                    quiz.append((question, answer))
+                else:
+                    print(f"Warning: Skipping invalid line -> {line.strip()}")
     return quiz
 
 def get_quiz_input():
@@ -35,22 +54,18 @@ def get_quiz_input():
         quiz.append((question, answer))
     return quiz
 
-def save_to_file(quiz):
-    filename = input("Enter the filename to save the quiz (e.g., quiz.txt): ")
-    
-    if os.path.exists(filename):
-        choice = input(f"The file '{filename}' exists. Do you want to append to it? (yes/no): ").strip().lower()
-        mode = "a" if choice == "yes" else "w"
-    else:
-        mode = "w"
-
-    with open(filename, mode, encoding="utf-8") as file:  # UTF-8 encoding
+def save_to_file(quiz, filename, mode):
+    with open(filename, mode, encoding="utf-8") as file:  
         for question, answer in quiz:
             file.write(f"{question}|{answer}\n")
     
     print(f"Quiz saved to {filename} successfully!\n")
 
 def run_quiz(quiz):
+    if not quiz:  # Prevents running an empty quiz
+        print("This quiz is empty. No questions to ask!")
+        return
+    
     print("\nStarting Quiz!\n")
     score = 0
     for question, answer in quiz:
@@ -68,18 +83,36 @@ def main():
     if delete_choice == "yes":
         delete_file()
 
-    choice = input("Do you want to open an existing quiz file? (yes/no): ").strip().lower()
-
-    if choice == "yes":
+    file_choice = input("Do you want to add to an existing quiz file or create a new one? (existing/new): ").strip().lower()
+    
+    if file_choice == "existing":
+        list_files()  
         filename = input("Enter the filename of the existing quiz: ")
         if os.path.exists(filename):
             quiz = load_quiz(filename)
+            add_more = input("Do you want to add new questions to this quiz? (yes/no): ").strip().lower()
+            if add_more == "yes":
+                quiz.extend(get_quiz_input())
+                save_to_file(quiz, filename, "w")
         else:
             print("File does not exist. Exiting.")
             return
-    else:
+    elif file_choice == "new":
+        filename = input("Enter the filename for your new quiz (including extension, e.g., quiz.txt): ")
+        if "." not in filename:  # Ensure extension is added
+            filename += ".txt"
+        
+        if os.path.exists(filename):
+            confirm = input(f"Warning: '{filename}' already exists. Overwrite? (yes/no): ").strip().lower()
+            if confirm != "yes":
+                print("File creation canceled.")
+                return
+        
         quiz = get_quiz_input()
-        save_to_file(quiz)
+        save_to_file(quiz, filename, "w")
+    else:
+        print("Invalid option. Exiting.")
+        return
 
     run_quiz(quiz)
 
