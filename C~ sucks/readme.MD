@@ -71,7 +71,7 @@ int func(int a, int b) {
 2. **Compile to LLVM IR**  
    Use the provided Python compiler ('chatgpt_compiler.py'):
    ```
-   python hi.py file.C~
+   python chatgpt_compiler.py file.C~
    ```
    This generates `file.ll`.
 
