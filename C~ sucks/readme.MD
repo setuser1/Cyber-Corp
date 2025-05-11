@@ -24,7 +24,7 @@ int main() {
     x = 0:
 
     while x < 5 {
-        printf(x):
+        printf("{x}"):
         printf(" "):
         x = x + 1:
     }
@@ -35,14 +35,14 @@ int main() {
 
     int new:
     new = func(x, f):
-    printf(new):
+    printf("{new}"):
     printf("\n"):
     print():
 
     char list[10]:
     list = "hello":
 
-    printf(list):
+    printf("{list}"):
     printf("\n"):
 
     return 0:
@@ -96,6 +96,7 @@ int func(int a, int b) {
 Print statement
 0 1 2 3 4
 14
+
 This is a void basically
 hello
 ```
