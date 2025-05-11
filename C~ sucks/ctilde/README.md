@@ -27,7 +27,8 @@ This extension adds syntax highlighting and basic editing support for the **C~**
 3. Enjoy C~ syntax highlighting and editing features!
 
 4.  **Extension marketplace install:**
-    You can install the extension's latest version via the market by searching "tink.ctilde"
+
+    - You can install the extension's latest version via the market by searching "tink.ctilde"
 
 ## Example
 
