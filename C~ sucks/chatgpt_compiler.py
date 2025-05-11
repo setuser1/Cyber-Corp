@@ -4,6 +4,8 @@ import os
 import llvmlite.ir as ir
 import llvmlite.binding as llvm
 import codecs
+import shlex
+import re
 
 # AST node classes
 class Function:
@@ -63,7 +65,7 @@ def parse_block(lines, i):
                 while i < len(lines):
                     next_line = lines[i].strip()
                     if next_line.startswith('xif '):
-                        xif_cond = next_line[4:].strip()
+                        xif_cond = next_line[4:].trip()
                         if xif_cond.endswith('{'):
                             xif_cond = xif_cond[:-1].strip()
                         xif_body, i = parse_block(lines, i+1)
@@ -136,7 +138,9 @@ def build_module(functions):
     module.triple = llvm.get_default_triple()
     # declare external functions
     f_printf = ir.Function(module, ir.FunctionType(ir.IntType(32), [ir.PointerType(ir.IntType(8))], var_arg=True), name='printf')
-    f_scanf  = ir.Function(module, ir.FunctionType(ir.IntType(32), [ir.PointerType(ir.IntType(8)), ir.PointerType(ir.IntType(32))], var_arg=True), name='scanf')
+    f_scanf  = ir.Function(module, ir.FunctionType(ir.IntType(32), [ir.PointerType(ir.IntType(8))], var_arg=True), name='scanf')
+    # Add strcmp for string comparison
+    f_strcmp = ir.Function(module, ir.FunctionType(ir.IntType(32), [ir.PointerType(ir.IntType(8)), ir.PointerType(ir.IntType(8))]), name='strcmp')
     # constants
     fmt_int  = ir.GlobalVariable(module, ir.ArrayType(ir.IntType(8), 4), name='fmt_int')
     fmt_int.global_constant = True
@@ -144,12 +148,14 @@ def build_module(functions):
     fmt_in = ir.GlobalVariable(module, ir.ArrayType(ir.IntType(8), 3), name='fmt_in')
     fmt_in.global_constant = True
     fmt_in.initializer = ir.Constant(fmt_in.type.pointee, bytearray(b"%d\0"))
+    fmt_str = ir.GlobalVariable(module, ir.ArrayType(ir.IntType(8), 3), name='fmt_str')
+    fmt_str.global_constant = True
+    fmt_str.initializer = ir.Constant(fmt_str.type.pointee, bytearray(b"%s\0"))
 
     # --- Predeclare all functions for forward references ---
     llvm_fns = {}
     for fn in functions:
         ftype = get_llvm_type(fn.ret_type)
-        # Default all params to int for now (extend as needed)
         arg_types = [ir.IntType(32)] * len(fn.params)
         func_ty = ir.FunctionType(ftype, arg_types)
         llvm_fns[fn.name] = ir.Function(module, func_ty, name=fn.name)
@@ -215,85 +221,123 @@ def build_module(functions):
         fmt_str_cache = {}
 
         def gen_cond(cond):
-            # Remove any surrounding parentheses and whitespace
             cond = cond.strip()
-            if cond.startswith('(') and cond.endswith(')'):
-                cond = cond[1:-1].strip()
-            # Support ==, !=, <, >, <=, >=
-            for op in ['==', '!=', '<=', '>=', '<', '>']:
+            # Handle string/char[] == "literal" or != "literal"
+            for op in ['==', '!=']:
+                if op in cond:
+                    lhs, rhs = cond.split(op, 1)
+                    lhs = lhs.strip().lstrip('(').rstrip(')')
+                    rhs = rhs.strip().lstrip('(').rstrip(')')
+                    # Detect char array vs string literal
+                    if lhs in arrays and array_types[lhs] == 'char' and (
+                        (rhs.startswith('"') and rhs.endswith('"')) or (rhs.startswith("'") and rhs.endswith("'"))
+                    ):
+                        arr_ptr = arrays[lhs]
+                        string_val = unescape_string(rhs)
+                        arr_ty = ir.ArrayType(ir.IntType(8), len(string_val)+1)
+                        str_const = ir.GlobalVariable(module, arr_ty, name=f"str_{abs(hash(string_val))}")
+                        str_const.global_constant = True
+                        str_const.initializer = ir.Constant(arr_ty, bytearray(string_val.encode('utf8')+b'\0'))
+                        str_ptr = builder.gep(str_const, [ir.Constant(ir.IntType(32), 0), ir.Constant(ir.IntType(32), 0)])
+                        cmp_result = builder.call(f_strcmp, [arr_ptr, str_ptr], name="strcmp_call")
+                        if op == '==':
+                            return builder.icmp_signed('==', cmp_result, ir.Constant(ir.IntType(32), 0))
+                        else:
+                            return builder.icmp_signed('!=', cmp_result, ir.Constant(ir.IntType(32), 0))
+                    # Detect string literal vs char array (reverse order)
+                    if rhs in arrays and array_types[rhs] == 'char' and (
+                        (lhs.startswith('"') and lhs.endswith('"')) or (lhs.startswith("'") and lhs.endswith("'"))
+                    ):
+                        arr_ptr = arrays[rhs]
+                        string_val = unescape_string(lhs)
+                        arr_ty = ir.ArrayType(ir.IntType(8), len(string_val)+1)
+                        str_const = ir.GlobalVariable(module, arr_ty, name=f"str_{abs(hash(string_val))}")
+                        str_const.global_constant = True
+                        str_const.initializer = ir.Constant(arr_ty, bytearray(string_val.encode('utf8')+b'\0'))
+                        str_ptr = builder.gep(str_const, [ir.Constant(ir.IntType(32), 0), ir.Constant(ir.IntType(32), 0)])
+                        cmp_result = builder.call(f_strcmp, [arr_ptr, str_ptr], name="strcmp_call")
+                        if op == '==':
+                            return builder.icmp_signed('==', cmp_result, ir.Constant(ir.IntType(32), 0))
+                        else:
+                            return builder.icmp_signed('!=', cmp_result, ir.Constant(ir.IntType(32), 0))
+                    # Fallback to numeric/variable comparison
+                    l = builder.load(locals[lhs], name=f'load_{lhs}')
+                    r = ir.Constant(ir.IntType(32), int(rhs)) if rhs.isdigit() else builder.load(locals[rhs], name=f'load_{rhs}')
+                    cmp_map = {'==':'==', '!=':'!='}
+                    return builder.icmp_signed(cmp_map[op], l, r)
+            # Support <, >, <=, >= as before
+            for op in ['<=', '>=', '<', '>']:
                 if op in cond:
                     lhs, rhs = cond.split(op, 1)
                     lhs = lhs.strip().lstrip('(').rstrip(')')
                     rhs = rhs.strip().lstrip('(').rstrip(')')
                     l = builder.load(locals[lhs], name=f'load_{lhs}')
                     r = ir.Constant(ir.IntType(32), int(rhs)) if rhs.isdigit() else builder.load(locals[rhs], name=f'load_{rhs}')
-                    cmp_map = {'<':'<', '>':'>', '==':'==', '<=':'<=', '>=':'>=', '!=':'!='}
+                    cmp_map = {'<':'<', '>':'>', '<=':'<=', '>=':'>='}
                     return builder.icmp_signed(cmp_map[op], l, r)
-            else:
-                raise ValueError(f"Unsupported condition: {cond}")
+            raise ValueError(f"Unsupported condition: {cond}")
 
         def emit(stmt):
             if isinstance(stmt, str):
                 stmt = stmt.rstrip(':;').strip()
                 if stmt.startswith('scanf'):
                     var = stmt[stmt.find('(')+1:stmt.rfind(')')].split(',')[1].strip().lstrip('&')
-                    ptr = builder.gep(fmt_in, [ir.Constant(ir.IntType(32), 0), ir.Constant(ir.IntType(32), 0)])
-                    builder.call(f_scanf, [ptr, locals[var]])
+                    if var in arrays and array_types[var] == 'char':
+                        # Use "%s" format string and cast array pointer to i8*
+                        ptr = builder.gep(fmt_str, [ir.Constant(ir.IntType(32), 0), ir.Constant(ir.IntType(32), 0)])
+                        char_ptr = builder.bitcast(arrays[var], ir.PointerType(ir.IntType(8)))
+                        builder.call(f_scanf, [ptr, char_ptr])
+                    else:
+                        # Use "%d" format string and i32* pointer
+                        ptr = builder.gep(fmt_in, [ir.Constant(ir.IntType(32), 0), ir.Constant(ir.IntType(32), 0)])
+                        builder.call(f_scanf, [ptr, locals[var]])
                 elif stmt.startswith('printf'):
-                    args = [a.strip() for a in stmt[stmt.find('(')+1:stmt.rfind(')')].split(',')]
-                    args = [a for a in args if a]
-                    fmt_parts = []
+                    argstr = stmt[stmt.find('(')+1:stmt.rfind(')')]
+                    lexer = shlex.shlex(argstr, posix=True)
+                    lexer.whitespace_split = True
+                    lexer.whitespace = ','
+                    args = list(lexer)
+                    args = [a.strip() for a in args if a]
+
+                    if not args:
+                        raise ValueError("printf requires at least a format string")
+                    fmt_literal = args[0]
+                    # Accept both quoted and unquoted strings
+                    if (fmt_literal.startswith('"') and fmt_literal.endswith('"')) or (fmt_literal.startswith("'") and fmt_literal.endswith("'")):
+                        fmt_user_str = unescape_string(fmt_literal)
+                    else:
+                        fmt_user_str = unescape_string('"' + fmt_literal + '"')
+
+                    # Find all {var} in the format string
+                    var_matches = list(re.finditer(r"\{([a-zA-Z_][a-zA-Z0-9_]*)\}", fmt_user_str))
                     values = []
-                    for a in args:
-                        if (a.startswith('"') and a.endswith('"')) or (a.startswith("'") and a.endswith("'")):
-                            fmt_parts.append(unescape_string(a))
-                        elif a in arrays and array_types[a] == 'char':
-                            fmt_parts.append("%s")
-                            values.append(builder.bitcast(arrays[a], ir.PointerType(ir.IntType(8))))
-                        elif '[' in a and a.endswith(']'):
-                            arrname = a[:a.find('[')].strip()
-                            idx = a[a.find('[')+1:-1].strip()
-                            if arrname in arrays:
-                                arr_ptr = arrays[arrname]
-                                idx_val = ir.Constant(ir.IntType(32), int(idx)) if idx.isdigit() else builder.load(locals[idx], name=f'load_{idx}')
-                                elem_ptr = builder.gep(arr_ptr, [idx_val])
-                                if array_types[arrname] == 'char':
-                                    fmt_parts.append("%c")
-                                    values.append(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'))
-                                elif array_types[arrname] == 'float':
-                                    fmt_parts.append("%f")
-                                    values.append(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'))
-                                elif array_types[arrname] == 'double':
-                                    fmt_parts.append("%lf")
-                                    values.append(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'))
-                                else:
-                                    fmt_parts.append("%d")
-                                    values.append(builder.load(elem_ptr, name=f'load_{arrname}_{idx}'))
-                            else:
-                                raise ValueError(f"Unknown array '{arrname}'")
-                        elif a in locals:
-                            # Print float/double/int/char
-                            if isinstance(locals[a].type.pointee, ir.FloatType):
-                                fmt_parts.append("%f")
-                                values.append(builder.load(locals[a], name=f'load_{a}'))
-                            elif isinstance(locals[a].type.pointee, ir.DoubleType):
-                                fmt_parts.append("%lf")
-                                values.append(builder.load(locals[a], name=f'load_{a}'))
-                            elif isinstance(locals[a].type.pointee, ir.IntType) and locals[a].type.pointee.width == 8:
-                                fmt_parts.append("%c")
-                                values.append(builder.load(locals[a], name=f'load_{a}'))
-                            else:
-                                fmt_parts.append("%d")
-                                values.append(builder.load(locals[a], name=f'load_{a}'))
+                    fmt_out = ""
+                    last_idx = 0
+                    for match in var_matches:
+                        varname = match.group(1)
+                        # Append text before the {var}
+                        fmt_out += fmt_user_str[last_idx:match.start()]
+                        # Substitute with %d or %s
+                        if varname in arrays and array_types[varname] == 'char':
+                            fmt_out += "%s"
+                            values.append(builder.bitcast(arrays[varname], ir.PointerType(ir.IntType(8))))
+                        elif varname in locals:
+                            fmt_out += "%d"
+                            values.append(builder.load(locals[varname], name=f'load_{varname}'))
                         else:
-                            raise ValueError(f"Unknown printf argument: {a}")
-                    fmt_str = "".join(fmt_parts) + "\0"
-                    fmt_hash = abs(hash(fmt_str))
+                            raise ValueError(f"Unknown variable in printf f-string: {varname}")
+                        last_idx = match.end()
+                    # Append the rest of the string
+                    fmt_out += fmt_user_str[last_idx:]
+                    fmt_out += "\0"
+
+                    # Build or reuse the format string global
+                    fmt_hash = abs(hash(fmt_out))
                     if fmt_hash not in fmt_str_cache:
-                        arr_ty = ir.ArrayType(ir.IntType(8), len(fmt_str.encode('utf8')))
+                        arr_ty = ir.ArrayType(ir.IntType(8), len(fmt_out.encode('utf8')))
                         str_const = ir.GlobalVariable(module, arr_ty, name=f"fmt_str_{fmt_hash}")
                         str_const.global_constant = True
-                        str_const.initializer = ir.Constant(arr_ty, bytearray(fmt_str.encode('utf8')))
+                        str_const.initializer = ir.Constant(arr_ty, bytearray(fmt_out.encode('utf8')))
                         fmt_str_cache[fmt_hash] = str_const
                     else:
                         str_const = fmt_str_cache[fmt_hash]
