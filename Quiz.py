@@ -5,7 +5,7 @@
 #you can access your quiz files any time using this progran as long as you don't delete it and is using the same device
 
 #ideas that might possibly be added
-#mutiple choice questions, timed question, shuffled questions, and a GUI
+#mutiple choice questions, timed questions, shuffled questions, and a GUI
 
 import os
 
