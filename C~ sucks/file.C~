@@ -1,10 +1,8 @@
 #include <stdio.h>
 
-
 expr print() {
     printf("\nThis is a void basically\n"):
 }
-
 
 int main() {
     printf("Print statement\n"):
@@ -13,38 +11,37 @@ int main() {
     x = 0:
 
     while x < 5 {
-        printf(x):
-        printf(" "):
+        printf("{x} "):
         x = x + 1:
     }
+    printf("\n"):
+
+
     int f:
-    f = 9:
+    f = 5:
 
-    float d:
-    d = 1.0:
-
-    double a:
-    a = 5.005:
-
+    float fl:
+    fl = 9.1312:
+    printf("{fl}\n"):
     int new:
     new = func(x, f):
-    printf("\n", new):
+    printf("{new}\n"):
     print():
 
     char list[10]:
-    list = 'hello':
+    list = "hello":
 
-    printf("", list):
+    printf("{list}\n"):
+
+    double d:
+    d = 3.14:
+    printf("{d}\n"):
 
     return 0:
 }
 
-int func(int a,int b) {
-
+int func(int a, int b) {
     int add:
-
     add = a + b:
-
     return add:
-
 }
