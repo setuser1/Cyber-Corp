@@ -119,17 +119,19 @@ int main() {
             running = 0:
             printf("Goodbye!\n"):
         }
-        xif (choice == 1) {
-            printf("Enter numbers: "):
+        if (choice == 1) {
+            printf("Enter first number: "):
             scanf("%d", &x):
+            printf("Enter second number: "):
             scanf("%d", &y):
             result = add(x, y):
             printf("Result: ", result):
             printf("\n"):
         }
-        xif (choice == 2) {
-            printf("Enter numbers: "):
+        if (choice == 2) {
+            printf("Enter first number: "):
             scanf("%d", &x):
+            printf("Enter second number: "):
             scanf("%d", &y):
             result = x - y:
             printf("Result: ", result):
