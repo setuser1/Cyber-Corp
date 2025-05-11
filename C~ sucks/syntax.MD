@@ -35,7 +35,7 @@ else {
 
 ```
 while (x < 10) {
-    printf(x):
+    printf("{x}"):
     x = x + 1:
 }
 ```
@@ -59,8 +59,8 @@ INPUT/OUTPUT
 ---------------------------
 
 - Print: `printf("Hello\n"):`
-- Print variable: `printf(x):`
-- Print string variable: `printf(str):`
+- Print variable: `printf("{x}"):`
+- Print string variable: `printf("{str}"):
 - Input: `scanf("%d", &x):`
 
 ---------------------------
@@ -125,8 +125,7 @@ int main() {
             printf("Enter second number: "):
             scanf("%d", &y):
             result = add(x, y):
-            printf("Result: ", result):
-            printf("\n"):
+            printf("Result: {result}\n"):
         }
         if (choice == 2) {
             printf("Enter first number: "):
@@ -134,8 +133,7 @@ int main() {
             printf("Enter second number: "):
             scanf("%d", &y):
             result = x - y:
-            printf("Result: ", result):
-            printf("\n"):
+            printf("Result: {result}\n"):
         }
     }
     return 0:
