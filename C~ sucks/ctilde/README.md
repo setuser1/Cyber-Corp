@@ -45,10 +45,12 @@ int main() {
     scanf("%d", &choice):
     if (choice == 1) {
         printf("Add selected\n"):
-    } xif (choice == 2) {
+    }
+    xif (choice == 2) {
         printf("Subtract selected\n"):
-    } else {
-        printf("Exit\n"):
+    }
+    else {
+        printf("You chose option {choice}\n"):
     }
 }
 ```
