@@ -46,3 +46,7 @@ my-project/
   ]
 }
 ```
+
+## Instructions
+
+- **When dowloading this folder, make sure to reanme it to ".vsocde" instead of "vscode" so vsocde can read it and know what the folder is meant for**
