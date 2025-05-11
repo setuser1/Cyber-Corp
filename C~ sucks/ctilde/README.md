@@ -19,7 +19,6 @@ This extension adds syntax highlighting and basic editing support for the **C~**
 ## Usage
 
 1. **Manual Installation:**  
-   Since this extension is not yet on the VS Code Marketplace, you must install it manually:
    - Download or clone this repository.
    - Run `vsce package` in the extension folder to generate a `.vsix` file (if you don't have `vsce`, install it with `npm install -g @vscode/vsce`).
    - In VS Code, press `Ctrl+Shift+P` and select `Extensions: Install from VSIX...`.
@@ -27,9 +26,12 @@ This extension adds syntax highlighting and basic editing support for the **C~**
 2. Open any file with the `.C~` extension.
 3. Enjoy C~ syntax highlighting and editing features!
 
+4.  **Extension marketplace install:**
+    You can install the extension's latest version via the market by searching "tink.ctilde"
+
 ## Example
 
-```c
+```c~
 #include <stdio.h>
 
 expr print_menu() {
