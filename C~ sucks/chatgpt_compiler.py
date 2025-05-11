@@ -322,8 +322,20 @@ def build_module(functions):
                             fmt_out += "%s"
                             values.append(builder.bitcast(arrays[varname], ir.PointerType(ir.IntType(8))))
                         elif varname in locals:
-                            fmt_out += "%d"
-                            values.append(builder.load(locals[varname], name=f'load_{varname}'))
+                            # Detect type for correct format specifier
+                            llvm_val = builder.load(locals[varname], name=f'load_{varname}')
+                            llvm_type = locals[varname].type.pointee
+                            if isinstance(llvm_type, ir.DoubleType):
+                                fmt_out += "%f"
+                                values.append(llvm_val)
+                            elif isinstance(llvm_type, ir.FloatType):
+                                fmt_out += "%f"
+                                # Cast float to double for printf
+                                llvm_val = builder.fpext(llvm_val, ir.DoubleType())
+                                values.append(llvm_val)
+                            else:
+                                fmt_out += "%d"
+                                values.append(llvm_val)
                         else:
                             raise ValueError(f"Unknown variable in printf f-string: {varname}")
                         last_idx = match.end()
