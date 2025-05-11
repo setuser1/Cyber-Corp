@@ -57,7 +57,7 @@ def parse_block(lines, i):
         if line.endswith('{'):
             hdr = line[:-1].strip()
             if hdr.startswith('if '):
-                cond = hdr[3:].strip()
+                cond = hdr[3:].trip()
                 body, i = parse_block(lines, i+1)
                 elifs = []
                 else_body = None
@@ -297,7 +297,7 @@ def build_module(functions):
                     lexer.whitespace_split = True
                     lexer.whitespace = ','
                     args = list(lexer)
-                    args = [a.strip() for a in args if a]
+                    args = [a for a in args if a != '']
 
                     if not args:
                         raise ValueError("printf requires at least a format string")
