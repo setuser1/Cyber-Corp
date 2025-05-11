@@ -22,9 +22,11 @@ CONTROL FLOW
 ```
 if (x == 1) {
     printf("one\n"):
-} xif (x == 2) {
+}
+xif (x == 2) {
     printf("two\n"):
-} else {
+}
+else {
     printf("other\n"):
 }
 ```
