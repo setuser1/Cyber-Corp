@@ -18,7 +18,7 @@ This extension adds syntax highlighting and basic editing support for the **C~**
 
 ## Usage
 
-1. **Manual Installation:**  
+1. **Manual Installation:**  (WARNING, This way is outdated)
    - Download or clone this repository.
    - Run `vsce package` in the extension folder to generate a `.vsix` file (if you don't have `vsce`, install it with `npm install -g @vscode/vsce`).
    - In VS Code, press `Ctrl+Shift+P` and select `Extensions: Install from VSIX...`.
