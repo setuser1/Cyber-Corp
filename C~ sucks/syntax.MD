@@ -118,14 +118,16 @@ int main() {
         if (choice == 3) {
             running = 0:
             printf("Goodbye!\n"):
-        } else xif (choice == 1) {
+        }
+        xif (choice == 1) {
             printf("Enter numbers: "):
             scanf("%d", &x):
             scanf("%d", &y):
             result = add(x, y):
             printf("Result: ", result):
             printf("\n"):
-        } else xif (choice == 2) {
+        }
+        xif (choice == 2) {
             printf("Enter numbers: "):
             scanf("%d", &x):
             scanf("%d", &y):
