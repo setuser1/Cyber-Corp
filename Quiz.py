@@ -4,6 +4,9 @@
 #when you save a file using this program it will actually create a file on your device and save it there
 #you can access your quiz files any time using this progran as long as you don't delete it and is using the same device
 
+#ideas that might possibly be added
+#mutiple choice questions, timed question, shuffled questions, and a GUI
+
 import os
 
 def list_files():
