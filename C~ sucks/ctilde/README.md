@@ -18,7 +18,12 @@ This extension adds syntax highlighting and basic editing support for the **C~**
 
 ## Usage
 
-1. Install this extension.
+1. **Manual Installation:**  
+   Since this extension is not yet on the VS Code Marketplace, you must install it manually:
+   - Download or clone this repository.
+   - Run `vsce package` in the extension folder to generate a `.vsix` file (if you don't have `vsce`, install it with `npm install -g @vscode/vsce`).
+   - In VS Code, press `Ctrl+Shift+P` and select `Extensions: Install from VSIX...`.
+   - Choose the generated `.vsix` file to install.
 2. Open any file with the `.C~` extension.
 3. Enjoy C~ syntax highlighting and editing features!
 
@@ -48,54 +53,17 @@ int main() {
 }
 ```
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Some advanced C~ features may not be fully highlighted.
+- Only basic editing features are supported.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of C~ Language Support for VS Code.
 
 ---
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy using C~ in VS Code!**
