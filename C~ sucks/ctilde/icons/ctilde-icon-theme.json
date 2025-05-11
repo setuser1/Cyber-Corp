@@ -1,0 +1,13 @@
+{
+  "iconDefinitions": {
+    "ctilde-file-icon": {
+      "iconPath": "./ctilde.png"
+    }
+  },
+  "fileExtensions": {
+    "C~": "ctilde-file-icon"
+  },
+  "languageIds": {
+    "ctilde": "ctilde-file-icon"
+  }
+}
