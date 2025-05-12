@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> // imports the standard input and output lib
 
 expr print() {
     printf("\nThis is a void basically\n"):
@@ -7,7 +7,7 @@ expr print() {
 int main() {
     printf("Print statement\n"):
 
-    int x:
+    int x: // declares x and allocates memory for it.
     x = 0:
 
     while x < 5 {
