@@ -8,6 +8,7 @@
 #mutiple choice questions, timed questions, shuffled questions, and a GUI
 
 import os
+import pygame
 
 def list_files():
     print("\nSupported quiz filenames must end in: .quiz, .txt, .csv, or .json")
