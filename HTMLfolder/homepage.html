@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copilot ruined this one</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // Dark mode toggle
+        if (!localStorage.theme) localStorage.theme = 'light';
+        document.documentElement.classList.toggle('dark', localStorage.theme === 'dark');
+
+        function toggleDarkMode() {
+            localStorage.theme = localStorage.theme === 'dark' ? 'light' : 'dark';
+            document.documentElement.classList.toggle('dark');
+        }
+
+        // Replace the dark mode button creation code
+        window.addEventListener('DOMContentLoaded', () => {
+            const darkModeBtn = document.createElement('button');
+            darkModeBtn.className = 'fixed right-4 bottom-20 bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-white text-center transition-all z-50 shadow-lg';
+            darkModeBtn.innerHTML = '🌓';  // Moon emoji for toggle icon
+            darkModeBtn.title = 'Toggle Dark Mode';
+            darkModeBtn.style.writingMode = 'vertical-rl';
+            darkModeBtn.onclick = toggleDarkMode;
+            document.body.appendChild(darkModeBtn);
+        });
+    </script>
+    <style>
+        .dark body { background-color: #1a1a1a; }
+        .dark section { background-color: #2d2d2d !important; }
+        .dark .text-slate-800 { color: #e5e5e5; }
+        .dark .text-slate-600 { color: #d1d1d1; }
+
+        /* Add these button styles */
+        .inline-block {
+            background-color: white !important;
+            color: #2563eb !important; /* blue-600 */
+            border: 2px solid #2563eb !important;
+        }
+
+        .inline-block:hover {
+            background-color: #2563eb !important;
+            color: white !important;
+            border: 2px solid #2563eb !important;
+        }
+
+        /* Dark mode adjustments */
+        .dark .inline-block {
+            background-color: #2d2d2d !important;
+            color: #60a5fa !important; /* blue-400 for better contrast in dark mode */
+            border: 2px solid #60a5fa !important;
+        }
+
+        .dark .inline-block:hover {
+            background-color: #60a5fa !important;
+            color: #2d2d2d !important;
+        }
+
+        .text-slate-800 {
+            color: #1a1a1a !important;
+        }
+
+        .text-slate-600 {
+            color: #2d2d2d !important;
+        }
+
+        .dark .text-slate-800 {
+            color: #ffffff !important;
+        }
+
+        .dark .text-slate-600 {
+            color: #e5e5e5 !important;
+        }
+
+        /* For list items inside ordered and unordered lists */
+        .list-disc li,
+        .list-decimal li {
+            color: #2d2d2d !important;
+        }
+
+        .dark .list-disc li,
+        .dark .list-decimal li {
+            color: #e5e5e5 !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-80">
+    <header class="bg-slate-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <img src="https://cmsv2-assets.apptegy.net/uploads/19212/logo/21197/SE_Regional_logo.png" 
+                 alt="Southeast Regional Logo" 
+                 class="h-16 mx-4 mb-4 transition-transform hover:scale-105">
+            <h1 class="text-3xl font-bold text-center">The goal.</h1>
+            
+            <nav class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 my-6">
+                <a href="#python-section" class="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-center transition-all">Python</a>
+                <a href="#linux-section" class="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-center transition-all">Linux</a>
+                <a href="#subnetting-section" class="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-center transition-all">Subnetting</a>
+                <a href="#crashcourse-section" class="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-center transition-all">Crash Course</a>
+                <a href="#packet-tracer-section" class="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-center transition-all">Packet Tracer</a>
+                <a href="#netacad-section" class="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-center transition-all">Netacad</a>
+                <a href="#html-section" class="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-center transition-all">HTML & CSS</a>
+                <a href="#networks-section" class="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-center transition-all">Networks</a>
+                <a href="#digicerts-section" class="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-center transition-all">Digi-certs</a>
+                <a href="#hexadecimal-section" class="bg-slate-800 hover:bg-blue-600 px-4 py-2 rounded-lg text-center transition-all">Hexadecimal</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="python-section" class="bg-gradient-to-br from-blue-200 to-indigo-400 dark:from-blue-900 dark:to-indigo-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4"</section>Python</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="mb-4 rounded-lg shadow-md w-48 mx-auto">
+            <p class="text-slate-600 mb-4">Python is a programming language that is general use. It is slower compared to its creator C.</p>
+            <p class="text-slate-600 mb-4">Python is used for many things, including:</p>
+            <ul class="list-disc list-inside text-slate-600 mb-4 space-y-2">
+                <li>Web Development</li>
+                <li>Data Science</li>
+                <li>Machine Learning</li>
+                <li>Automation</li>
+                <li>Scripting</li>
+                <li>Game Development</li>
+            </ul>
+            <p class="text-slate-600 mb-4">Python is created by Guido van Rossum in 1991. It was named after the British comedy show "Monty Python's Flying Circus".</p>
+            <a href="https://python.org" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all">Explore Python</a>
+        </section>
+
+        <section id="linux-section" class="bg-gradient-to-br from-orange-200 to-amber-400 dark:from-orange-900 dark:to-amber-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">Linux</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux Logo" class="mb-4 rounded-lg shadow-md w-32 mx-auto">
+            <p class="text-slate-600 mb-4">Linux is a great operating system type, it uses the linux kernal made by Linus Torvalds. An example of linux is Arch!</p>
+            <a href="https://github.com/torvalds/linux" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all">Linux Kernel GitHub</a>
+        </section>
+
+        <section id="subnetting-section" class="bg-gradient-to-br from-green-200 to-emerald-400 dark:from-green-900 dark:to-emerald-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">Subnetting</h2>
+            <p class="text-slate-600 mb-4">Subnetting is the way to divide IP networks into smaller, subnetworks, they use CIDR notation or full 4 octet notation.</p>
+            <ul class="list-disc list-inside text-slate-600 mb-4 space-y-2">
+                <li>CIDR Notation: /24 equals 255.255.255.0</li>
+                <li>Class A Networks: 10.0.0.0/8</li>
+                <li>Class B Networks: 172.16.0.0/12</li>
+                <li>Class C Networks: 192.168.0.0/16</li>
+                <li>Default Subnet Mask: Changes based on network class</li>
+                <li>Private IP Ranges: Reserved for internal networks</li>
+            </ul>
+            <a href="https://www.google.com" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all">Visit resources</a>
+        </section>
+
+        <section id="crashcourse-section" class="bg-gradient-to-br from-purple-200 to-violet-400 dark:from-purple-900 dark:to-violet-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">Crash Course</h2>
+            <p class="text-slate-600 mb-4">Crash Course Computer Science is a series on CS, this includes:</p>
+            <ul class="list-disc list-inside text-slate-600 mb-4 space-y-2">
+                <li>Computer Architecture & Organization</li>
+                <li>Operating Systems & System Design</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Software Engineering Principles</li>
+            </ul>
+            <a href="https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all">Watch Crash Course</a>
+        </section>
+
+        <section id="packet-tracer-section" class="bg-gradient-to-br from-cyan-200 to-sky-400 dark:from-cyan-900 dark:to-sky-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">Packet Tracer</h2>
+            <img src="https://www.netacad.com/skillsforall/img/desktop/cisco_packet_tracer.png" alt="Packet Tracer" class="mb-4 rounded-lg shadow-md text-align-center mx-auto">
+            <p class="text-slate-600 mb-4">Packet tracer is a program to learn networks and hardware</p>
+            <a href="https://www.netacad.com/courses/packet-tracer" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all">Learn Packet Tracer</a>
+        </section>
+
+        <section id="netacad-section" class="bg-gradient-to-br from-teal-200 to-cyan-400 dark:from-teal-900 dark:to-cyan-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">Netacad</h2>
+            <p class="text-slate-600 mb-4">Netacad is a bad learning platform because it teaches you networking and more.</p>
+            <ul class="list-disc list-inside text-slate-600 mb-4 space-y-2">
+                <li>Networking</li>
+                <li>Certifications</li>
+                <li>Mr Comeau</li>
+                <li>Networking</li>
+            </ul>
+            <a href="https://www.netacad.com" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all">Netacad Training</a>
+        </section>
+
+        <section id="html-section" class="bg-gradient-to-br from-red-200 to-orange-400 dark:from-red-900 dark:to-orange-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">HTML & CSS</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo" class="mb-4 rounded-lg shadow-md w-32 mx-auto">
+            <p class="text-slate-600 mb-4">HTML provides the structure of web pages, while CSS handles their visual styling.</p>
+            <ul class="list-disc list-inside text-slate-600 mb-4 space-y-2">
+                <li>HTML uses tags to define elements</li>
+                <li>CSS uses selectors and properties</li>
+                <li>Flexbox and Grid for layouts</li>
+                <li>Responsive design with media queries</li>
+            </ul>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all">Learn HTML & CSS</a>
+        </section>
+
+        <section id="networks-section" class="bg-gradient-to-br from-blue-200 to-sky-400 dark:from-blue-900 dark:to-sky-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">Networks</h2>
+            <p class="text-slate-600 mb-4">There are many different types of networks</p>
+            <ol class="list-decimal list-inside text-slate-600 mb-4 space-y-2">
+                <li>One type includes: LANs, local area networks</li>
+                <li>Another type includes: WANs, wide area networks</li>
+                <li>Another type includes: MANs, metropolitan area networks</li>
+                <li>Another type includes: PANs, personal area networks</li>
+                <li>Lastly one type includes: CANs, campus area networks</li>
+            </ol>
+            <a href="https://www.cisco.com/c/en/us/solutions/small-business/resource-center/networking/what-is-a-network.html" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all">Learn about networks</a>
+        </section>
+
+        <section id="digicerts-section" class="bg-gradient-to-br from-indigo-200 to-purple-400 dark:from-indigo-900 dark:to-purple-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">Digi-certs</h2>
+            <p class="text-slate-600 mb-4">Digtial certifications allow us to prove ourselves</p>
+            <p class="text-slate-600 mb-4">There are many different types of certifications</p>
+            <ol class="list-decimal list-inside text-slate-600 mb-4 space-y-2">
+                <li>One type includes: CompTIA A+</li>
+                <li>Another type includes: CompTIA Network+</li>
+                <li>Another type includes: CompTIA Security+</li>
+                <li>Another type includes: CompTIA Linux+</li>
+                <li>Lastly one type includes: CompTIA PenTest+</li>
+            </ol>
+            <p class="text-slate-600 mb-4">Theres also NetAcad</p>
+            <a href="https://www.comptia.org/certifications" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all">Learn about CompTIA</a>
+        </section>
+
+        <section id="hexadecimal-section" class="bg-gradient-to-br from-rose-200 to-pink-400 dark:from-rose-900 dark:to-pink-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-4">Hexadecimal</h2>
+            <p class="text-slate-600 mb-4">Hexadecimal is a base-16 number system commonly used in computing:</p>
+            <ul class="list-disc list-inside text-slate-600 mb-4 space-y-2">
+            <li>Uses digits 0-9 and letters A-F</li>
+            <li>Common in color codes (#FF0000 for red)</li>
+            <li>Used in memory addresses</li>
+            <li>Each hex digit represents 4 binary digits</li>
+            </ul>
+            <a href="https://en.wikipedia.org/wiki/Hexadecimal" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all">Learn Hexadecimal</a>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 AI - Built with great copilot CSS</p>
+        </div>
+    </footer>
+</body>
+</html>
