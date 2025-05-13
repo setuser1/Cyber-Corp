@@ -14,60 +14,50 @@ import tkinter as tk
 from tkinter import messagebox, simpledialog
 import tkinter.font as tkFont
 
-# Helper function: Recursively set the width, ipady, and font size of all Entry widgets (and others)
+# Helper function: Recursively set the width, ipady, and font size of widgets in a container.
 def scale_entries_and_fonts(container):
-    # Calculate a new width in characters based on current window width.
     new_width = max(20, container.winfo_width() // 15)
-    # Calculate a new ipady value (makes the Entry box taller)
     new_ipady = max(5, container.winfo_height() // 30)
-    # Calculate a new font size based on container width.
     new_font_size = max(8, container.winfo_width() // 50)
-    
     for child in container.winfo_children():
-        # If the widget is an Entry, update its width and ipady.
         if isinstance(child, tk.Entry):
             child.config(width=new_width)
             try:
                 child.pack_configure(ipady=new_ipady, padx=10)
             except Exception:
                 pass
-
-        # Try to update the font of widgets that support the "font" configuration.
         try:
             current_font = tkFont.Font(font=child.cget("font"))
             current_font.configure(size=new_font_size)
             child.config(font=current_font)
         except Exception:
-            pass  # Some widgets might not have a font attribute.
-
-        # Recursively process any child widgets.
+            pass
         scale_entries_and_fonts(child)
 
 class QuizApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Quiz Program")
-        # Allow the main window to be resizable.
         self.root.rowconfigure(0, weight=1)
         self.root.columnconfigure(0, weight=1)
         
-        self.quiz = []  # Holds all quiz questions (both FR and MC)
+        self.quiz = []  # Holds quiz questions
         self.selected_file = None
-        
-        # Main menu interface with some horizontal padding.
+
+        # Main Menu Interface
         self.main_label = tk.Label(root, text="Select a quiz option:", font=("Arial", 14))
         self.main_label.pack(pady=10, fill=tk.X, expand=True, padx=10)
-        
+
         self.list_button = tk.Button(root, text="Show Available Quizzes", command=self.list_quizzes)
         self.list_button.pack(pady=5, fill=tk.X, expand=True, padx=10)
-        
+
         self.new_button = tk.Button(root, text="Create New Quiz", command=self.create_quiz_gui)
         self.new_button.pack(pady=5, fill=tk.X, expand=True, padx=10)
-        
+
         self.delete_button = tk.Button(root, text="Delete a Quiz", command=self.delete_quiz_gui)
         self.delete_button.pack(pady=5, fill=tk.X, expand=True, padx=10)
     
-    # ---------- Helper methods to close windows ----------
+    # ---------- Helper Methods ----------
     def _select_quiz(self, filename):
         if hasattr(self, "list_window") and self.list_window.winfo_exists():
             self.list_window.destroy()
@@ -76,7 +66,7 @@ class QuizApp:
     def _close_and_run(self, window, func):
         window.destroy()
         func()
-
+    
     # ---------- Listing & Deleting Files ----------
     def list_quizzes(self):
         quiz_files = [f for f in os.listdir() if f.endswith((".quiz", ".txt", ".csv", ".json"))]
@@ -117,7 +107,7 @@ class QuizApp:
             except Exception as e:
                 messagebox.showerror("Error", f"Failed to delete '{filename}': {e}")
     
-    # ---------- Quiz Options (Load & Add Questions) ----------
+    # ---------- Quiz Options ----------
     def quiz_options(self, filename):
         self.selected_file = filename
         self.quiz = self.load_quiz(filename)
@@ -135,9 +125,9 @@ class QuizApp:
                                  command=lambda: self._close_and_run(options_window, self.run_quiz_gui))
         start_button.pack(pady=5, fill=tk.X, expand=True, padx=10)
     
-    # ---------- Adding Questions to an Existing Quiz ----------
+    # ---------- Adding Questions Screen ----------
     def add_questions_gui(self, filename):
-        self.new_questions = []  # Track new questions added.
+        self.new_questions = []
         self.add_window = tk.Toplevel(self.root)
         self.add_window.title("Add Questions to Quiz")
         self.add_window.bind("<Configure>", lambda event: scale_entries_and_fonts(self.add_window))
@@ -157,15 +147,15 @@ class QuizApp:
         self.add_question_entry = tk.Entry(self.add_window, width=50)
         self.add_question_entry.pack(pady=2, fill=tk.X, expand=True, padx=10)
         
-        # For Free Response:
+        # FR answer fields.
         self.fr_answer_label = tk.Label(self.add_window, text="Free Response Answer (for FR questions):")
         self.fr_answer_entry = tk.Entry(self.add_window, width=50)
         
-        # For Multiple Choice: dynamic input fields.
-        self.mc_dynamic_frame_add = None
+        # MC dynamic fields.
+        self.mc_dynamic_frame_add = None  
         self.mc_choices_container_add = None
         self.mc_radio_frame_add = None
-        self.mc_choice_entries_add = []     # List for dynamic Entry widgets.
+        self.mc_choice_entries_add = []
         self.mc_correct_var_add = None
         
         self.updateAddQuestionFields()
@@ -184,7 +174,7 @@ class QuizApp:
         qtype = self.add_qtype.get()
         self.fr_answer_label.pack_forget()
         self.fr_answer_entry.pack_forget()
-        if self.mc_dynamic_frame_add is not None:
+        if self.mc_dynamic_frame_add:
             self.mc_dynamic_frame_add.destroy()
             self.mc_choices_container_add.destroy()
             self.mc_radio_frame_add.destroy()
@@ -227,8 +217,14 @@ class QuizApp:
         self.mc_correct_var_add = tk.IntVar(value=0)
         tk.Label(self.mc_radio_frame_add, text="Select correct answer:").pack(side=tk.LEFT)
         for i in range(num):
-            rb = tk.Radiobutton(self.mc_radio_frame_add, text=f"Option {i+1}", variable=self.mc_correct_var_add, value=i)
+            rb = tk.Radiobutton(self.mc_radio_frame_add, text=f"Option {i+1}",
+                                variable=self.mc_correct_var_add, value=i,
+                                indicatoron=False, width=10, height=2, padx=5, pady=5)
             rb.pack(side=tk.LEFT, padx=5)
+        # Remove the dynamic frame (so that the spinbox area does not remain)
+        if self.mc_dynamic_frame_add:
+            self.mc_dynamic_frame_add.destroy()
+            self.mc_dynamic_frame_add = None
     
     def add_question_existing(self):
         qtype = self.add_qtype.get()
@@ -242,7 +238,7 @@ class QuizApp:
                 messagebox.showwarning("Input Error", "Answer is required for free response!")
                 return
             new_q = ("FR", question, answer)
-        else:  # Multiple Choice
+        else:
             if not hasattr(self, 'mc_choice_entries_add') or len(self.mc_choice_entries_add) == 0:
                 messagebox.showwarning("Input Error", "Please generate the options fields.")
                 return
@@ -284,12 +280,11 @@ class QuizApp:
         except Exception as e:
             messagebox.showerror("Error", f"Failed to save quiz: {e}")
     
-    # ---------- Creating a New Quiz ----------
     def create_quiz_gui(self):
-        self.quiz = []  # Reset master quiz list.
+        self.quiz = []
         self.new_window = tk.Toplevel(self.root)
         self.new_window.title("Create New Quiz")
-        self.new_window.bind("<Configure>", lambda event: scale_entries(self.new_window))
+        self.new_window.bind("<Configure>", lambda event: scale_entries_and_fonts(self.new_window))
         
         tk.Label(self.new_window, text="Select question type:", font=("Arial", 12))\
             .pack(pady=5, fill=tk.X, expand=True, padx=10)
@@ -305,11 +300,9 @@ class QuizApp:
         self.question_entry_new = tk.Entry(self.new_window, width=50)
         self.question_entry_new.pack(pady=2, fill=tk.X, expand=True, padx=10)
         
-        # For FR questions.
         self.fr_answer_label_new = tk.Label(self.new_window, text="Answer (for FR questions):")
         self.fr_answer_entry_new = tk.Entry(self.new_window, width=50)
         
-        # For MC questions, dynamic fields.
         self.mc_dynamic_frame_new = None
         self.mc_choices_container_new = None
         self.mc_radio_frame_new = None
@@ -343,10 +336,11 @@ class QuizApp:
             self.mc_dynamic_frame_new.pack(pady=5, fill=tk.X, expand=True, padx=10)
             tk.Label(self.mc_dynamic_frame_new, text="Number of choices:").pack(side=tk.LEFT)
             self.mc_num_choices_var_new = tk.StringVar(value="4")
-            self.mc_num_choices_spinbox_new = tk.Spinbox(self.mc_dynamic_frame_new, from_=2, to=10, width=5, 
+            self.mc_num_choices_spinbox_new = tk.Spinbox(self.mc_dynamic_frame_new, from_=2, to=10, width=5,
                                                        textvariable=self.mc_num_choices_var_new)
             self.mc_num_choices_spinbox_new.pack(side=tk.LEFT, padx=5)
-            self.mc_generate_button_new = tk.Button(self.mc_dynamic_frame_new, text="Generate Options", command=self.generateMCFieldsNew)
+            self.mc_generate_button_new = tk.Button(self.mc_dynamic_frame_new, text="Generate Options", 
+                                                    command=self.generateMCFieldsNew)
             self.mc_generate_button_new.pack(side=tk.LEFT, padx=5)
             self.mc_choices_container_new = tk.Frame(self.new_window)
             self.mc_choices_container_new.pack(pady=5, fill=tk.X, expand=True, padx=10)
@@ -371,8 +365,13 @@ class QuizApp:
         self.mc_correct_var_new = tk.IntVar(value=0)
         tk.Label(self.mc_radio_frame_new, text="Select correct answer:").pack(side=tk.LEFT)
         for i in range(num):
-            rb = tk.Radiobutton(self.mc_radio_frame_new, text=f"Option {i+1}", variable=self.mc_correct_var_new, value=i)
+            rb = tk.Radiobutton(self.mc_radio_frame_new, text=f"Option {i+1}", variable=self.mc_correct_var_new, value=i,
+                                indicatoron=False, width=10, height=2, padx=5, pady=5)
             rb.pack(side=tk.LEFT, padx=5)
+        # Remove the spinbox frame after generating options.
+        if self.mc_dynamic_frame_new:
+            self.mc_dynamic_frame_new.destroy()
+            self.mc_dynamic_frame_new = None
     
     def add_question_new(self):
         qtype = self.new_qtype.get()
@@ -434,7 +433,6 @@ class QuizApp:
             except Exception as e:
                 messagebox.showerror("Error", f"Failed to save quiz: {e}")
     
-    # ---------- Loading & Running the Quiz ----------
     def load_quiz(self, filename):
         quiz = []
         if os.path.exists(filename):
@@ -454,18 +452,19 @@ class QuizApp:
                 messagebox.showerror("Error", f"Failed to load quiz: {e}")
         return quiz
     
+    # ---------- Quiz Navigation with Back and Forward Buttons ----------
     def run_quiz_gui(self):
         if not self.quiz:
             messagebox.showwarning("Error", "This quiz is empty or invalid!")
             return
         
         random.shuffle(self.quiz)
-        self.results = []  # Clear previous results
+        self.user_answers = ["" for _ in range(len(self.quiz))]
+        self.current_question = 0
+        
         self.quiz_window = tk.Toplevel(self.root)
         self.quiz_window.title("Quiz")
         self.quiz_window.bind("<Configure>", lambda event: scale_entries_and_fonts(self.quiz_window))
-        self.score = 0
-        self.current_question = 0
         
         self.question_label = tk.Label(self.quiz_window, text="", font=("Arial", 14))
         self.question_label.pack(pady=10, fill=tk.X, expand=True, padx=10)
@@ -473,55 +472,83 @@ class QuizApp:
         self.answer_frame = tk.Frame(self.quiz_window)
         self.answer_frame.pack(pady=5, fill=tk.BOTH, expand=True, padx=10)
         
-        self.submit_button = tk.Button(self.quiz_window, text="Submit Answer", command=self.check_answer)
-        self.submit_button.pack(pady=5, fill=tk.X, expand=True, padx=10)
+        self.nav_frame = tk.Frame(self.quiz_window)
+        self.nav_frame.pack(pady=5, fill=tk.X, expand=True, padx=10)
+        self.back_button = tk.Button(self.nav_frame, text="Back", command=self.go_back)
+        self.back_button.pack(side=tk.LEFT, padx=5)
+        self.next_button = tk.Button(self.nav_frame, text="Next", command=self.go_forward)
+        self.next_button.pack(side=tk.RIGHT, padx=5)
         
-        self.next_question()
+        self.show_question()
     
-    def next_question(self):
+    def show_question(self):
         for widget in self.answer_frame.winfo_children():
             widget.destroy()
-        if self.current_question < len(self.quiz):
-            current = self.quiz[self.current_question]
-            qtype = current[0]
-            self.question_label.config(text=current[1])
-            if qtype == "FR":
-                self.answer_entry = tk.Entry(self.answer_frame, width=50)
-                self.answer_entry.pack(fill=tk.X, expand=True, padx=10)
-            elif qtype == "MC":
-                self.answer_var = tk.StringVar()
-                for choice in current[2]:
-                    rb = tk.Radiobutton(self.answer_frame, text=choice, variable=self.answer_var, value=choice)
-                    rb.pack(anchor="w", fill=tk.X, expand=True, padx=10)
-            else:
-                messagebox.showerror("Error", "Unknown question type encountered!")
-        else:
-            self.quiz_window.destroy()
-            self.show_results()
-    
-    def check_answer(self):
         current = self.quiz[self.current_question]
         qtype = current[0]
+        self.question_label.config(text=current[1])
         if qtype == "FR":
-            user_answer = self.answer_entry.get().strip().lower()
-            correct_answer = current[2].strip().lower()
+            self.answer_entry = tk.Entry(self.answer_frame, width=50)
+            self.answer_entry.pack(fill=tk.X, expand=True, padx=10)
+            if self.user_answers[self.current_question]:
+                self.answer_entry.insert(0, self.user_answers[self.current_question])
         elif qtype == "MC":
-            user_answer = self.answer_var.get().strip().lower()
-            correct_answer = current[3].strip().lower()
+            self.answer_var = tk.StringVar()
+            if self.user_answers[self.current_question]:
+                self.answer_var.set(self.user_answers[self.current_question])
+            for choice in current[2]:
+                rb = tk.Radiobutton(self.answer_frame, text=choice, variable=self.answer_var, value=choice,
+                                    indicatoron=False, width=10, height=2, padx=5, pady=5)
+                rb.pack(anchor="w", fill=tk.X, expand=True, padx=10)
+        if self.current_question == 0:
+            self.back_button.config(state=tk.DISABLED)
         else:
-            messagebox.showerror("Error", "Unknown question type encountered!")
-            return
-        is_correct = (user_answer == correct_answer)
-        self.results.append({
-            "question": current[1],
-            "user_answer": user_answer,
-            "correct_answer": correct_answer,
-            "correct": is_correct
-        })
-        if is_correct:
-            self.score += 1
-        self.current_question += 1
-        self.next_question()
+            self.back_button.config(state=tk.NORMAL)
+        if self.current_question == len(self.quiz) - 1:
+            self.next_button.config(text="Submit Quiz")
+        else:
+            self.next_button.config(text="Next")
+    
+    def go_forward(self):
+        current = self.quiz[self.current_question]
+        if current[0] == "FR":
+            self.user_answers[self.current_question] = self.answer_entry.get().strip()
+        elif current[0] == "MC":
+            self.user_answers[self.current_question] = self.answer_var.get().strip()
+        if self.current_question == len(self.quiz) - 1:
+            self.submit_quiz()
+        else:
+            self.current_question += 1
+            self.show_question()
+    
+    def go_back(self):
+        current = self.quiz[self.current_question]
+        if current[0] == "FR":
+            self.user_answers[self.current_question] = self.answer_entry.get().strip()
+        elif current[0] == "MC":
+            self.user_answers[self.current_question] = self.answer_var.get().strip()
+        if self.current_question > 0:
+            self.current_question -= 1
+            self.show_question()
+    
+    def submit_quiz(self):
+        self.quiz_window.destroy()
+        self.results = []
+        self.score = 0
+        for i, q in enumerate(self.quiz):
+            qtype = q[0]
+            correct = q[2].strip().lower() if qtype == "FR" else q[3].strip().lower()
+            user = self.user_answers[i].strip().lower() if self.user_answers[i] else ""
+            is_correct = (user == correct)
+            if is_correct:
+                self.score += 1
+            self.results.append({
+                "question": q[1],
+                "user_answer": user,
+                "correct_answer": correct,
+                "correct": is_correct
+            })
+        self.show_results()
     
     def show_results(self):
         results_window = tk.Toplevel(self.root)
