@@ -199,32 +199,37 @@ class QuizApp:
             self.mc_radio_frame_add = tk.Frame(self.add_window)
             self.mc_radio_frame_add.pack(pady=5, fill=tk.X, expand=True, padx=10)
     
-    def generateMCFieldsAdd(self):
+def generateMCFieldsAdd(self):
+    # Clear all existing widgets in the choice containers
+    if self.mc_choices_container_add:
         for widget in self.mc_choices_container_add.winfo_children():
             widget.destroy()
+    if self.mc_radio_frame_add:
         for widget in self.mc_radio_frame_add.winfo_children():
             widget.destroy()
-        try:
-            num = int(self.mc_num_choices_var.get())
-        except ValueError:
-            messagebox.showwarning("Input Error", "Please enter a valid number for choices.")
-            return
-        self.mc_choice_entries_add = []
-        for i in range(num):
-            entry = tk.Entry(self.mc_choices_container_add, width=50)
-            entry.pack(pady=2, fill=tk.X, expand=True, padx=10)
-            self.mc_choice_entries_add.append(entry)
-        self.mc_correct_var_add = tk.IntVar(value=0)
-        tk.Label(self.mc_radio_frame_add, text="Select correct answer:").pack(side=tk.LEFT)
-        for i in range(num):
-            rb = tk.Radiobutton(self.mc_radio_frame_add, text=f"Option {i+1}",
-                                variable=self.mc_correct_var_add, value=i,
-                                indicatoron=False, width=10, height=2, padx=5, pady=5)
-            rb.pack(side=tk.LEFT, padx=5)
-        # Remove the dynamic frame (so that the spinbox area does not remain)
-        if self.mc_dynamic_frame_add:
-            self.mc_dynamic_frame_add.destroy()
-            self.mc_dynamic_frame_add = None
+    
+    try:
+        # Get the number of choices from the spinbox
+        num = int(self.mc_num_choices_var.get())
+    except ValueError:
+        messagebox.showwarning("Input Error", "Please enter a valid number for choices.")
+        return
+    
+    # Regenerate the fields for multiple-choice options
+    self.mc_choice_entries_add = []
+    for i in range(num):
+        entry = tk.Entry(self.mc_choices_container_add, width=50)
+        entry.pack(pady=2, fill=tk.X, expand=True, padx=10)
+        self.mc_choice_entries_add.append(entry)
+    
+    # Regenerate the radio buttons for selecting the correct answer
+    self.mc_correct_var_add = tk.IntVar(value=0)
+    tk.Label(self.mc_radio_frame_add, text="Select correct answer:").pack(side=tk.LEFT)
+    for i in range(num):
+        rb = tk.Radiobutton(self.mc_radio_frame_add, text=f"Option {i+1}",
+                            variable=self.mc_correct_var_add, value=i,
+                            indicatoron=False, width=10, height=2, padx=5, pady=5)
+        rb.pack(side=tk.LEFT, padx=5)
     
     def add_question_existing(self):
         qtype = self.add_qtype.get()
@@ -347,31 +352,37 @@ class QuizApp:
             self.mc_radio_frame_new = tk.Frame(self.new_window)
             self.mc_radio_frame_new.pack(pady=5, fill=tk.X, expand=True, padx=10)
     
-    def generateMCFieldsNew(self):
+def generateMCFieldsNew(self):
+    # Clear all existing widgets in the choice containers
+    if self.mc_choices_container_new:
         for widget in self.mc_choices_container_new.winfo_children():
             widget.destroy()
+    if self.mc_radio_frame_new:
         for widget in self.mc_radio_frame_new.winfo_children():
             widget.destroy()
-        try:
-            num = int(self.mc_num_choices_var_new.get())
-        except ValueError:
-            messagebox.showwarning("Input Error", "Please enter a valid number for choices.")
-            return
-        self.mc_choice_entries_new = []
-        for i in range(num):
-            entry = tk.Entry(self.mc_choices_container_new, width=50)
-            entry.pack(pady=2, fill=tk.X, expand=True, padx=10)
-            self.mc_choice_entries_new.append(entry)
-        self.mc_correct_var_new = tk.IntVar(value=0)
-        tk.Label(self.mc_radio_frame_new, text="Select correct answer:").pack(side=tk.LEFT)
-        for i in range(num):
-            rb = tk.Radiobutton(self.mc_radio_frame_new, text=f"Option {i+1}", variable=self.mc_correct_var_new, value=i,
-                                indicatoron=False, width=10, height=2, padx=5, pady=5)
-            rb.pack(side=tk.LEFT, padx=5)
-        # Remove the spinbox frame after generating options.
-        if self.mc_dynamic_frame_new:
-            self.mc_dynamic_frame_new.destroy()
-            self.mc_dynamic_frame_new = None
+    
+    try:
+        # Get the number of choices from the spinbox
+        num = int(self.mc_num_choices_var_new.get())
+    except ValueError:
+        messagebox.showwarning("Input Error", "Please enter a valid number for choices.")
+        return
+    
+    # Regenerate the fields for multiple-choice options
+    self.mc_choice_entries_new = []
+    for i in range(num):
+        entry = tk.Entry(self.mc_choices_container_new, width=50)
+        entry.pack(pady=2, fill=tk.X, expand=True, padx=10)
+        self.mc_choice_entries_new.append(entry)
+    
+    # Regenerate the radio buttons for selecting the correct answer
+    self.mc_correct_var_new = tk.IntVar(value=0)
+    tk.Label(self.mc_radio_frame_new, text="Select correct answer:").pack(side=tk.LEFT)
+    for i in range(num):
+        rb = tk.Radiobutton(self.mc_radio_frame_new, text=f"Option {i+1}",
+                            variable=self.mc_correct_var_new, value=i,
+                            indicatoron=False, width=10, height=2, padx=5, pady=5)
+        rb.pack(side=tk.LEFT, padx=5)
     
     def add_question_new(self):
         qtype = self.new_qtype.get()
