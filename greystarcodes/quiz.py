@@ -289,7 +289,7 @@ class QuizApp:
         self.quiz = []  # Reset master quiz list.
         self.new_window = tk.Toplevel(self.root)
         self.new_window.title("Create New Quiz")
-        self.new_window.bind("<Configure>", lambda event: scale_entries(self.new_window))
+        self.new_window.bind("<Configure>", lambda event: scale_entries_and_fonts(self.new_window))
         
         tk.Label(self.new_window, text="Select question type:", font=("Arial", 12))\
             .pack(pady=5, fill=tk.X, expand=True, padx=10)
