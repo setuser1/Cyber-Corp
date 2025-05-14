@@ -1,57 +1,39 @@
+; File: createfile.asm
+; Assemble with: nasm -f elf64 createfile.asm && ld -o createfile createfile.o
+; Run with: ./createfile
+; After running, you should see “output.txt” containing “Hello, world!”
+
 section .data
-filename db "output.txt", 0       ; Null-terminated filename
-var db "charlie is good person", 30  ; Message to write (20 bytes)
-length equ $ - var                ; Length of message (20 bytes)
-filecontent times 100 db 0        ; Buffer for reading (100 bytes)
+    filename db  "output.txt", 0      ; null-terminated filename
+    msg db  "Hello, world!", 10  ; message plus newline
+    msg_len equ $ - msg              ; length of the message
 
 section .text
-global _start
+    global _start
 
 _start:
-    ; Open file (syscall 2)
-    mov rax, 2                    ; Syscall number for open
-    mov rdi, filename             ; Pointer to filename
-    mov rsi, 0x100                ; Flags: O_WRONLY (1) | O_CREAT (0x100) | O_TRUNC (0x400)
-    mov rdx, 0644                 ; Mode: rw-r--r-- (owner read/write, others read)
-    syscall                       ; Invoke open
-    mov rbx, rax                  ; Save fd in rbx
+    ; --- sys_open (syscall #2) ---
+    mov rax, 2               ; sys_open
+    lea rdi, [rel filename]  ; pointer to filename
+    mov rsi, 577             ; flags: O_WRONLY(1) | O_CREAT(64) | O_TRUNC(512) = 577
+    mov rdx, 0644            ; mode: rw-r--r-- (octal 0644)
+    syscall
+    ; on return, rax = file descriptor or negative error
 
-    ; Write to file (syscall 1)
-    mov rax, 1                    ; Syscall number for write
-    mov rdi, rbx                  ; fd from open
-    mov rsi, var                  ; Buffer
-    mov rdx, length                   ; Length (10 bytes, "charlie is")
-    ; mov rdx, length             ; Uncomment for full string (20 bytes)
-    syscall                       ; Invoke write
+    ; move fd into rdi for write/close
+    mov rdi, rax
 
-    ; Reset file pointer to start (lseek, syscall 8)
-    mov rax, 8                    ; Syscall number for lseek
-    mov rdi, rbx                  ; fd
-    mov rsi, 0                    ; Offset (0 = start of file)
-    mov rdx, 0                    ; Whence: SEEK_SET (0)
-    syscall                       ; Invoke lseek
+    ; --- sys_write (syscall #1) ---
+    mov rax, 1               ; sys_write
+    lea rsi, [rel msg]       ; pointer to buffer
+    mov rdx, msg_len         ; number of bytes to write
+    syscall
 
-    ; Read from file (syscall 0)
-    mov rax, 0                    ; Syscall number for read
-    mov rdi, rbx                  ; fd from open
-    mov rsi, filecontent          ; Buffer to store data
-    mov rdx, 100                  ; Max bytes to read
-    syscall                       ; Invoke read
-    mov r12, rax                  ; Save bytes read in r12
+    ; --- sys_close (syscall #3) ---
+    mov rax, 3               ; sys_close
+    syscall
 
-    ; Close file (syscall 3)
-    mov rax, 3                    ; Syscall number for close
-    mov rdi, rbx                  ; fd
-    syscall                       ; Invoke close
-
-    ; Write to stdout (syscall 1)
-    mov rax, 1                    ; Syscall number for write
-    mov rdi, 1                    ; fd = 1 (stdout)
-    mov rsi, filecontent          ; Buffer with read data
-    mov rdx, r12                  ; Bytes to write (from read)
-    syscall                       ; Invoke write
-
-    ; Exit (syscall 60)
-    mov rax, 60                   ; Syscall number for exit
-    mov rdi, 0                    ; Exit status 0
-    syscall                       ; Invoke exit
+    ; --- sys_exit (syscall #60) ---
+    mov rax, 60              ; sys_exit
+    mov rdi, 80
+    syscall
