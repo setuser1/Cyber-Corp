@@ -1,5 +1,5 @@
 #ai generated
-#version 3.2
+#version 3.2, bug fixes
 #version 3 added a GUI, shuffled questions, and an option to add multiple questions
 #tested
 #when you save a file using this program it will actually create a file on your device and save it there
