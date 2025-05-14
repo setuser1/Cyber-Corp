@@ -1,7 +1,7 @@
 #ai generated
 #version 3.2, bug fixes
 #version 3 added a GUI, shuffled questions, and an option to add multiple questions
-#tested
+
 #when you save a file using this program it will actually create a file on your device and save it there
 #you can access your quiz files any time using this progran as long as you don't delete it and is using the same device
 
