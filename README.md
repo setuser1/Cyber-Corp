@@ -8,12 +8,12 @@ This repository only consists of 4 people for some reason.
 
 Key/Legend:
 
-.py = Python3
+  .py = Python3
 
-.ll = LLVM
+  .ll = LLVM
 
-.html = Html5
+  .html = Html5
 
-.css = CSS
+  .css = CSS
 
-.txt = text file
+  .txt = text file
