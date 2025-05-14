@@ -1,6 +1,6 @@
 section .data
 filename db "output.txt", 0       ; Null-terminated filename
-var db "charlie is bad dude", 10  ; Message to write (20 bytes)
+var db "charlie is good person", 10  ; Message to write (20 bytes)
 length equ $ - var                ; Length of message (20 bytes)
 filecontent times 100 db 0        ; Buffer for reading (100 bytes)
 
