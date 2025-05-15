@@ -13,3 +13,5 @@ Key/Legend:
   .c = C
 
   .ll = LLVM
+
+  .asm = Assembly
