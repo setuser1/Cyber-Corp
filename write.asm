@@ -16,7 +16,7 @@ _start:
     mov rax, 2               ; sys_open
     lea rdi, [rel filename]  ; pointer to filename
     mov rsi, 1089             ; flags: O_WRONLY(1) | O_CREAT(64) | O_TRUNC(512) = 577
-    mov rdx, 0644            ; mode: rw-r--r-- (octal 0644)
+    mov rdx, 0766            ; mode: rw-r--r-- (octal 0644)
     syscall
     mov rdi, rax            ; save file descriptor
 
