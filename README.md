@@ -4,7 +4,7 @@ Programming
 
 This repository is for Cyber shop.
 
-This repository only consists of 4 people for some reason.
+This repository currently consists of 5 people.
 
 Key/Legend:
 
@@ -15,5 +15,3 @@ Key/Legend:
   .ll = LLVM
 
   .asm = Assembly
-
-**5 people work here**
