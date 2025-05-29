@@ -2,6 +2,8 @@
 
 C~ is a custom, C and python inspired programming language that compiles to LLVM IR using a Python-based compiler. It features a simplified syntax (using `:` instead of `;`, no format specifiers for `printf`, etc.) and is designed for educational and experimental purposes.
 
+## Read syntax.MD for more detailed syntax refrence
+
 ## Features
 
 - C-like syntax with simplified statement endings
