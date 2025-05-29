@@ -2,7 +2,7 @@
 
 C~ is a custom, C and python inspired programming language that compiles to LLVM IR using a Python-based compiler. It features a simplified syntax (using `:` instead of `;`, no format specifiers for `printf`, etc.) and is designed for educational and experimental purposes.
 
-**Read https://github.com/setuser1/SERSD-Cyber-Class/blob/e8e0ed2e794c68800fef4dd7ccf43fe0c87a2d28/C~%20sucks/syntax.MD for more detailed syntax refrence**
+**Read https://github.com/setuser1/SERSD-Cyber-Class/blob/main/C~%20sucks/syntax.MD for more detailed syntax refrence**
 
 ## Features
 
