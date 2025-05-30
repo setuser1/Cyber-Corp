@@ -1,9 +1,9 @@
 import socket
 
 # Read the HTML file to serve as the main page body
-global body
+global body_html
 with open("index.html", "r") as f:
-    body = f.read()
+    body_html = f.read()
 
 # Function to generate HTTP headers for GET responses
 def get_header(status_code, status_header, content_type, body):
@@ -20,7 +20,7 @@ def post_header(status_code, status_header, content_type, body):
            "Connection: close\r\n\r\n"
         
 # Main request handler
-def handle_request(request):
+def handle_request(request, body=body_html):
     # Split the request into lines and parse the request line
     request_lines = request.split("\r\n")
     request_line = request_lines[0]
@@ -69,3 +69,5 @@ def serv(port=80, host='127.0.0.1'):
         response = handle_request(request)
         conn.sendall(response.encode('utf-8'))
         conn.close()
+if __name__ == "__main__":
+    serv()
