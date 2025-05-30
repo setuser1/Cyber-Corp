@@ -2,8 +2,11 @@ import socket
 
 # Read the HTML file to serve as the main page body
 global body_html
-with open("index.html", "r") as f:
-    body_html = f.read()
+try:
+    with open("index.html", "r") as f:
+        body_html = f.read()
+except:
+    body_html = None
 
 # Function to generate HTTP headers for GET responses
 def get_header(status_code, status_header, content_type, body):
@@ -70,4 +73,4 @@ def serv(port=80, host='127.0.0.1'):
         conn.sendall(response.encode('utf-8'))
         conn.close()
 if __name__ == "__main__":
-    serv()
+    serv(80,"0.0.0.0")
