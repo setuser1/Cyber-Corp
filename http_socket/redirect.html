@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Info</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .search-bar-container {
+            width: 100%;
+            margin: 24px 0 4px 0; /* Reduced bottom margin */
+            margin-top: 2px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar {
+            width: 80%;
+            padding: 8px 12px;
+            font-size: 1em;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            outline: none;
+        }
+        .search-results-box {
+            width: 80%;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(60,64,67,.10);
+            margin-top: 2px; /* Reduced top margin for closer results */
+            display: none;
+            position: relative;
+            z-index: 10;
+            margin-bottom: 16px;
+        }
+        .search-results-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .search-results-list li {
+            padding: 10px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            color: #222;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .search-results-list li:last-child {
+            border-bottom: none;
+        }
+        .search-results-list li:hover {
+            background: #f1f3f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="google-login-container">
+        <div class="google-login-card" id="loginCard">
+            <h2>User Info</h2>
+            <pre id="userinfo"></pre>
+            <div class="search-bar-container">
+                <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
+            </div>
+            <div id="searchResultsBox" class="search-results-box">
+                <ul id="searchResultsList" class="search-results-list"></ul>
+            </div>
+            <p>Thanks for your valuable data.<br>Here at Foogle we care about not keeping you private.</p>
+            <p>&copy; 2024 Foogle. All rights reserved.</p>
+        </div>
+    </div>
+    <script>
+        // Show the card with transition
+        window.onload = function() {
+            document.getElementById('loginCard').classList.add('show');
+        };
+
+        // Fetch userinfo.txt and display its contents
+        fetch('userinfo.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('userinfo').textContent = data;
+            });
+
+        // Search bar logic: show "hacked" and "foolish" in a box when anything is typed
+        const searchBar = document.getElementById('searchBar');
+        const searchResultsBox = document.getElementById('searchResultsBox');
+        const searchResultsList = document.getElementById('searchResultsList');
+        searchBar.addEventListener('input', function() {
+            const val = this.value.trim();
+            if (val.length > 0) {
+                searchResultsBox.style.display = "block";
+                searchResultsList.innerHTML = `
+                    <li>hacked</li>
+                    <li>foolish</li>
+                `;
+            } else {
+                searchResultsBox.style.display = "none";
+                searchResultsList.innerHTML = "";
+            }
+        });
+        // Optional: Hide results box if user clicks outside
+        document.addEventListener('click', function(e) {
+            if (!searchBar.contains(e.target) && !searchResultsBox.contains(e.target)) {
+                searchResultsBox.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
