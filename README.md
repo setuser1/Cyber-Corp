@@ -4,7 +4,7 @@ _Programming_
 
 This repository is for Cyber shop.
 
-This repository currently consists of 5 people.
+This repository currently consists of 6 people.
 
 Key/Legend:
 
