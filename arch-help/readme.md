@@ -1,6 +1,6 @@
 # Arch Linux Installation Guide (Using `pacstrap`)
 
-This guide covers the steps to install Arch Linux using the `pacstrap` tool. It assumes you're starting from the official Arch ISO and stops just before transitioning to a full installation from the mounted disk.
+This guide covers the steps to install Arch Linux using the `pacstrap` tool. It assumes you're starting from the official Arch ISO and stops just before transitioning to a full installation from the mounted disk. But you guys don't need this help anyway since arch isn't for y'all.
 
 ---
 
