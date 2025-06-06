@@ -17,6 +17,11 @@ class Player:
         self.xp = 0
         self.attack = 10
         self.inventory = []
+        # Bleed chance in percent; if 0 then no bleed enchantment on weapon.
+        self.bleed_chance = 0
+        # Attributes for tracking active bleed effects.
+        self.bleed_turns = 0
+        self.bleed_damage = 0
 
     def level_up(self):
         # Every time XP reaches 100 or more, level up!
@@ -24,7 +29,7 @@ class Player:
             self.level += 1
             self.xp -= 100
             self.max_hp += 20
-            self.hp = self.max_hp  # Restore HP on level up
+            self.hp = self.max_hp  # Restore HP on level up.
             self.attack += 5
             print(f"\n*** Congratulations {self.name}! You leveled up to Level {self.level}! ***")
             print(f"New stats - Max HP: {self.max_hp}, Attack: {self.attack}\n")
@@ -37,32 +42,131 @@ class Player:
         print(f"HP: {self.hp}/{self.max_hp}")
         print(f"XP: {self.xp}/100")
         print("Inventory:", self.inventory if self.inventory else "Empty")
+        if self.bleed_chance > 0:
+            print(f"Weapon Enchantment: Bleed (Chance: {self.bleed_chance}%)")
         print("=======================\n")
 
 
 class Enemy:
-    def __init__(self, name, hp, attack, xp_reward):
+    def __init__(self, name, hp, attack, xp_reward, has_bleed_enchantment=False):
         self.name = name
         self.hp = hp
         self.attack = attack
         self.xp_reward = xp_reward
+        # Flag for bleed enchantment. (Enemies do not upgrade theirs—their chance is fixed.)
+        self.has_bleed_enchantment = has_bleed_enchantment
+        # Attributes for tracking active bleed effects.
+        self.bleed_turns = 0
+        self.bleed_damage = 0
 
     def is_alive(self):
         return self.hp > 0
 
+
+# -------------------------------
+# In-Battle Inventory Function
+# -------------------------------
+def battle_inventory(player):
+    """Allows the player to access and use their inventory during battle.
+       There is a 5% chance the item is accidentally dropped (lost); if so,
+       there's a 3% chance to recover it immediately."""
+    if not player.inventory:
+        print("\nYour inventory is empty.")
+        return
+    print("\n==== Battle Inventory ====")
+    for index, item in enumerate(player.inventory, start=1):
+        print(f"{index}. {item}")
+    choice = input("\nEnter the number of the item to use (or press Enter to cancel): ").strip()
+    if choice == "":
+        print("Canceled inventory usage.")
+        return
+    try:
+        item_index = int(choice) - 1
+        if item_index < 0 or item_index >= len(player.inventory):
+            print("Invalid selection.")
+            return
+        # remove the selected item (we assume usage will consume it)
+        item = player.inventory.pop(item_index)
+        
+        # Roll for the risk of dropping the item during battle.
+        if random.random() < 0.05:  # 5% chance to lose it
+            print(f"\nIn the chaos of battle, you accidentally drop your {item}!")
+            # Roll for a chance to recover it immediately.
+            if random.random() < 0.03:  # 3% chance to recover
+                player.inventory.append(item)
+                print(f"Luckily, you quickly recover your {item}!")
+            else:
+                print(f"You lose your {item} and it is gone!")
+            return  # No effect is applied if the item is lost.
+        
+        # If the item is not lost, apply its effect.
+        if item == "Health Potion":
+            heal_amount = 30
+            effective_heal = min(heal_amount, player.max_hp - player.hp)
+            player.hp += effective_heal
+            print(f"\nYou use a {item} and restore {effective_heal} HP!")
+        elif item == "Magic Scroll":
+            bonus = 2
+            player.attack += bonus
+            print(f"\nYou use a {item} and feel empowered! Your attack increases by {bonus} permanently.")
+        elif item == "Steel Sword":
+            bonus = 5
+            player.attack += bonus
+            print(f"\nYou wield the {item} expertly, increasing your attack by {bonus} permanently!")
+        elif item == "Bleed Enchantment":
+            if player.bleed_chance == 0:
+                player.bleed_chance = 10
+                print("\nYour weapon is now imbued with a bleed enchantment! (Bleed chance: 10%)")
+            else:
+                if player.bleed_chance < 25:
+                    player.bleed_chance += 1
+                    print(f"\nYour weapon's bleed chance increases by 1%. (Bleed chance: {player.bleed_chance}%)")
+                else:
+                    print("\nYour weapon's bleed chance is already at its maximum (25%).")
+        else:
+            print(f"\nThe {item} had no effect when used.")
+    except ValueError:
+        print("Invalid selection.")
+
+
 # -------------------------------
 # Battle Function
 # -------------------------------
-
 def battle(player, enemy):
     print(f"\n*** A wild {enemy.name} appears! ***")
     time.sleep(1)
     while enemy.is_alive() and player.hp > 0:
+        # Apply bleed damage effects at the start of each round.
+        if player.bleed_turns > 0:
+            print(f"\n{player.name} suffers {player.bleed_damage} bleed damage.")
+            player.hp -= player.bleed_damage
+            player.bleed_turns -= 1
+            if player.hp <= 0:
+                print("\n*** You have bled out... Game Over! ***")
+                break
+        if enemy.bleed_turns > 0:
+            print(f"\n{enemy.name} suffers {enemy.bleed_damage} bleed damage.")
+            enemy.hp -= enemy.bleed_damage
+            enemy.bleed_turns -= 1
+            if enemy.hp <= 0:
+                print(f"\n*** {enemy.name} bled out and is defeated! ***")
+                player.xp += enemy.xp_reward
+                print(f"You earned {enemy.xp_reward} XP!")
+                player.level_up()
+                if random.random() < 0.3:
+                    item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment"])
+                    player.inventory.append(item)
+                    print(f"You found a {item} on the enemy!")
+                break
+        # Check if someone died from bleed.
+        if player.hp <= 0 or enemy.hp <= 0:
+            break
+
         print(f"\n{player.name}'s HP: {player.hp}/{player.max_hp} | {enemy.name}'s HP: {enemy.hp}")
-        action = input("Do you want to (a)ttack or (r)un? ").lower().strip()
+        action = input("Do you want to (a)ttack, (r)un, or access (i)nventory? ").lower().strip()
 
         if action == 'a':
-            # Apply debuff if player's HP is 30% or below of max HP
+            # Apply low HP debuff if player is at or below 30% of max HP.
             if player.hp <= player.max_hp * 0.3:
                 effective_attack = max(1, player.attack - 3)
                 print("\n[Debuff Active: Your low HP is reducing your attack by 3 points!]")
@@ -77,23 +181,21 @@ def battle(player, enemy):
                 player.xp += enemy.xp_reward
                 print(f"You earned {enemy.xp_reward} XP!")
                 player.level_up()
-                # Chance to loot an item after winning
                 if random.random() < 0.3:
-                    item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword"])
+                    item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment"])
                     player.inventory.append(item)
                     print(f"You found a {item} on the enemy!")
-                break  # Exit battle loop after enemy is defeated
-
-            # Enemy's turn if still alive
-            enemy_damage = random.randint(max(1, enemy.attack // 2), enemy.attack)
-            player.hp -= enemy_damage
-            print(f"{enemy.name} counterattacks for {enemy_damage} damage!")
-            if player.hp <= 0:
-                print("\n*** You have been defeated... Game Over! ***")
                 break
 
+            # Player’s bleed enchantment: chance to apply bleed to enemy.
+            if player.bleed_chance > 0:
+                if random.random() < (player.bleed_chance / 100):
+                    enemy.bleed_turns = 3
+                    enemy.bleed_damage = 5
+                    print(f"{enemy.name} is now bleeding!")
+
         elif action == 'r':
-            # Attempt to run away
+            # Attempt to run away.
             if random.random() > 0.5:
                 print("\nYou successfully escaped the battle!")
                 break
@@ -102,37 +204,70 @@ def battle(player, enemy):
                 enemy_damage = random.randint(max(1, enemy.attack // 2), enemy.attack)
                 player.hp -= enemy_damage
                 print(f"As you try to run, {enemy.name} hits you for {enemy_damage} damage!")
-
+        elif action == 'i':
+            # Access the in-battle inventory.
+            battle_inventory(player)
         else:
-            print("\nInvalid action. Please choose 'a' to attack or 'r' to run.")
+            print("\nInvalid selection. Please choose 'a' to attack, 'r' to run, or 'i' for inventory.")
+
+        # Enemy’s turn (if still alive and if the player hasn't run away).
+        if enemy.is_alive() and action in ['a', 'i']:
+            enemy_damage = random.randint(max(1, enemy.attack // 2), enemy.attack)
+            player.hp -= enemy_damage
+            print(f"\n{enemy.name} counterattacks for {enemy_damage} damage!")
+            # Check for enemy bleed chance.
+            if enemy.has_bleed_enchantment:
+                if random.random() < 0.10:  # Fixed 10% chance for enemy bleed effect.
+                    player.bleed_turns = 3
+                    player.bleed_damage = 5
+                    print(f"{player.name} is now bleeding!")
+
+            if player.hp <= 0:
+                print("\n*** You have been defeated... Game Over! ***")
+                break
 
         time.sleep(1)
-
-    # Short pause after the battle
     input("\nPress Enter to continue...")
+
 
 # -------------------------------
 # Exploration Function
 # -------------------------------
-
 def explore(player):
     print("\nYou venture into the wilds...")
     time.sleep(1)
     outcome = random.random()
     if outcome < 0.6:
-        # Encounter an enemy – different enemy types for variety
-        enemy_types = [
+        # Expanded enemy pool.
+        enemy_pool = [
             ("Goblin", 30, 5, 20),
             ("Skeleton", 40, 7, 25),
+            ("Wolf", 35, 6, 22),
+            ("Bat", 25, 4, 15),
             ("Orc", 50, 10, 30),
+            ("Troll", 60, 12, 40),
+            ("Giant", 70, 15, 50)
         ]
+        # If the player's level is below 3, filter out enemies with 50 or more HP.
+        if player.level < 3:
+            enemy_types = [e for e in enemy_pool if e[1] < 50]
+        else:
+            enemy_types = enemy_pool
+
         chosen_enemy = random.choice(enemy_types)
-        enemy = Enemy(name=chosen_enemy[0], hp=chosen_enemy[1], attack=chosen_enemy[2], xp_reward=chosen_enemy[3])
+        # Enemy now has only a 3% chance to spawn with a bleed enchantment.
+        enemy = Enemy(
+            name=chosen_enemy[0],
+            hp=chosen_enemy[1],
+            attack=chosen_enemy[2],
+            xp_reward=chosen_enemy[3],
+            has_bleed_enchantment=(random.random() < 0.03)
+        )
         battle(player, enemy)
     else:
-        # No enemy encountered – chance for a random rest or a simple treasure
-        if outcome < 0.8:
-            print("You discover a hidden cache of supplies and restore some health.")
+        # Lowered chance of finding supplies: only a 10% chance.
+        if outcome < 0.7:
+            print("You discover a small hidden cache of supplies and restore some health.")
             heal = random.randint(10, 30)
             player.hp = min(player.max_hp, player.hp + heal)
             print(f"You regained {heal} HP!")
@@ -140,36 +275,30 @@ def explore(player):
             print("The area is peaceful, and you take the time to enjoy the scenery.")
     input("\nPress Enter to return to the menu...")
 
-# -------------------------------
-# Inventory Management Function
-# -------------------------------
 
+# -------------------------------
+# Inventory Management Function (Out of Battle)
+# -------------------------------
 def manage_inventory(player):
     if not player.inventory:
         print("\nYour inventory is empty.")
         input("Press Enter to continue...")
         return
-    
     print("\n==== Inventory ====")
     for index, item in enumerate(player.inventory, start=1):
         print(f"{index}. {item}")
-        
     choice = input("\nEnter the number of the item you want to use (or press Enter to cancel): ").strip()
     if choice == "":
         print("Canceled inventory usage.")
         input("Press Enter to continue...")
         return
-    
     try:
         item_index = int(choice) - 1
         if item_index < 0 or item_index >= len(player.inventory):
             print("Invalid selection.")
             input("Press Enter to continue...")
             return
-        
         item = player.inventory.pop(item_index)
-        
-        # Define effects based on item type
         if item == "Health Potion":
             heal_amount = 30
             effective_heal = min(heal_amount, player.max_hp - player.hp)
@@ -183,17 +312,26 @@ def manage_inventory(player):
             bonus = 5
             player.attack += bonus
             print(f"\nYou wield the {item} expertly, increasing your attack by {bonus} permanently!")
+        elif item == "Bleed Enchantment":
+            if player.bleed_chance == 0:
+                player.bleed_chance = 10
+                print("\nYour weapon is now imbued with a bleed enchantment! (Bleed chance: 10%)")
+            else:
+                if player.bleed_chance < 25:
+                    player.bleed_chance += 1
+                    print(f"\nYour weapon's bleed chance increases by 1%. (Bleed chance: {player.bleed_chance}%)")
+                else:
+                    print("\nYour weapon's bleed chance is already at maximum (25%).")
         else:
             print(f"\nThe {item} had no effect when used.")
     except ValueError:
         print("Invalid selection.")
-    
     input("Press Enter to continue...")
+
 
 # -------------------------------
 # Main Game Loop
 # -------------------------------
-
 def main():
     print("========================================")
     print(" Welcome to the Python LitRPG Adventure!")
@@ -209,7 +347,7 @@ def main():
         print("3. Use Inventory")
         print("4. Quit Game")
         choice = input("Choose an option (1-4): ").strip()
-
+        
         if choice == '1':
             explore(player)
         elif choice == '2':
@@ -221,14 +359,14 @@ def main():
             print("\nThanks for playing the Python LitRPG Adventure!")
             break
         else:
-            print("\nInvalid selection. Please choose an option from the menu.")
+            print("\nInvalid selection. Please choose a number from the menu.")
     
     if player.hp <= 0:
         print("\nYour journey has ended. Better luck next time!")
 
+
 # -------------------------------
 # Run the Game
 # -------------------------------
-
 if __name__ == "__main__":
     main()
