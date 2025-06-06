@@ -62,8 +62,14 @@ def battle(player, enemy):
         action = input("Do you want to (a)ttack or (r)un? ").lower().strip()
 
         if action == 'a':
-            # Player's turn
-            damage = random.randint(max(1, player.attack // 2), player.attack)
+            # Apply debuff if player's HP is 30% or below of max HP
+            if player.hp <= player.max_hp * 0.3:
+                effective_attack = max(1, player.attack - 3)
+                print("\n[Debuff Active: Your low HP is reducing your attack by 3 points!]")
+            else:
+                effective_attack = player.attack
+
+            damage = random.randint(max(1, effective_attack // 2), effective_attack)
             enemy.hp -= damage
             print(f"\nYou attack {enemy.name} for {damage} damage!")
             if not enemy.is_alive():
