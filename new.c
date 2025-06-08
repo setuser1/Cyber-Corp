@@ -1,18 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int angle(int n, int side) {
-    int measure = ((n-2)/side)*180;
+#define BUFFERSIZE 2048
+static int n;
+
+int angle() {
+    int measure = ((n - 2) * 180) / n;
     return measure;
 }
 
-static int N;
 
 int main() {
+    char *buffer = malloc(BUFFERSIZE);
+    printf("Enter number of sides: ");
+    fgets(buffer, BUFFERSIZE, stdin);
 
-    printf("Enter sides: ");
-    scanf("%d", &N);
+    sscanf(buffer, "%d", &n);
 
-    angle(N,N);
+    int result = angle();
+    printf("Angle measure: %d°\n", result);
 
+    free(buffer);
     return 0;
 }
