@@ -3,6 +3,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <dirent.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 #define BUFF 1024
 
@@ -44,6 +46,42 @@ void ls() {
     closedir(dir);
 }
 
+void shell_chmod(char *args) {
+    while (*args == ' ') args++;
+    char *mode_str = strtok(args, " ");
+    char *filename = strtok(NULL, "");
+
+    if (!mode_str || !filename) {
+        fprintf(stderr, "chmod: usage: chmod MODE FILE\n");
+        return;
+    }
+
+    mode_t mode = strtol(mode_str, NULL, 8);
+    if (chmod(filename, mode) == 0) {
+        printf("Permissions of '%s' changed to %s\n", filename, mode_str);
+    } else {
+        perror("chmod");
+    }
+}
+
+void shell_chown(char *args) {
+    while (*args == ' ') args++;
+    char *filename = args;
+    if (!filename || *filename == '\0') {
+        fprintf(stderr, "chown: usage: chown FILE\n");
+        return;
+    }
+
+    uid_t uid = getuid();
+    gid_t gid = getgid();
+
+    if (chown(filename, uid, gid) == 0) {
+        printf("Ownership of '%s' changed to UID %d and GID %d\n", filename, uid, gid);
+    } else {
+        perror("chown");
+    }
+}
+
 int main() {
     char *content = malloc(1);
     size_t len = 0;
@@ -58,7 +96,6 @@ int main() {
         if (strncmp(input, "cat ", 4) == 0) {
             char *filename = input + 4;
             while (*filename == ' ') filename++;
-
             content = cat(filename, content, &len);
             printf("\n--- File Content ---\n%s\n", content);
         } else if (strcmp(input, "exit") == 0) {
@@ -98,6 +135,10 @@ int main() {
                     perror("rm");
                 }
             }
+        } else if (strncmp(input, "chmod ", 6) == 0) {
+            shell_chmod(input + 6);
+        } else if (strncmp(input, "chown ", 6) == 0) {
+            shell_chown(input + 6);
         } else {
             printf("Unknown command: %s\n", input);
         }
