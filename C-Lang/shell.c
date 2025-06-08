@@ -3,8 +3,6 @@
 #include <string.h>
 #include <unistd.h>
 #include <dirent.h>
-#include <sys/stat.h>
-#include <sys/types.h>
 
 #define BUFF 1024
 
@@ -82,6 +80,41 @@ void shell_chown(char *args) {
     }
 }
 
+int rmdir_recursive(const char *path) {
+    DIR *dir = opendir(path);
+    if (!dir) {
+        perror("opendir");
+        return -1;
+    }
+
+    struct dirent *entry;
+    char fullpath[1024];
+
+    while ((entry = readdir(dir)) != NULL) {
+        if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0)
+            continue;
+
+        snprintf(fullpath, sizeof(fullpath), "%s/%s", path, entry->d_name);
+
+        if (rmdir_recursive(fullpath) != 0) {
+            if (remove(fullpath) != 0) {
+                perror("remove");
+                closedir(dir);
+                return -1;
+            }
+        }
+    }
+
+    closedir(dir);
+
+    if (rmdir(path) != 0) {
+        perror("rmdir");
+        return -1;
+    }
+
+    return 0;
+}
+
 int main() {
     char *content = malloc(1);
     size_t len = 0;
@@ -139,6 +172,16 @@ int main() {
             shell_chmod(input + 6);
         } else if (strncmp(input, "chown ", 6) == 0) {
             shell_chown(input + 6);
+        } else if (strncmp(input, "rmdir ", 6) == 0) {
+            char *dirname = input + 6;
+            while (*dirname == ' ') dirname++;
+            if (*dirname == '\0') {
+                fprintf(stderr, "rmdir: missing operand\n");
+            } else {
+                if (rmdir_recursive(dirname) != 0) {
+                    fprintf(stderr, "rmdir: failed to remove '%s'\n", dirname);
+                }
+            }
         } else {
             printf("Unknown command: %s\n", input);
         }
