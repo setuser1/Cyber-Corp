@@ -6,7 +6,6 @@ import time
 # -------------------------------
 # Classes for Player and Enemy
 # -------------------------------
-
 class Player:
     def __init__(self, name):
         self.name = name
@@ -16,7 +15,8 @@ class Player:
         self.xp = 0
         self.attack = 10
         self.inventory = []
-        self.gold = 0  # New: Player's gold
+        self.gold = 0  # Player gold
+        self.reputation = 100  # Player reputation (0-100)
         # Bleed chance in percent; if 0 then no bleed enchantment on weapon.
         self.bleed_chance = 0
         # Attributes for tracking active bleed effects.
@@ -45,6 +45,7 @@ class Player:
         print(f"HP: {self.hp}/{self.max_hp}")
         print(f"XP: {self.xp}/100")
         print(f"Gold: {self.gold}")
+        print(f"Reputation: {self.reputation}/100")
         print("Inventory:", self.inventory if self.inventory else "Empty")
         if self.bleed_chance > 0:
             print(f"Weapon Enchantment: Bleed (Chance: {self.bleed_chance}%)")
@@ -66,6 +67,97 @@ class Enemy:
     def is_alive(self):
         return self.hp > 0
 
+# -------------------------------
+# Jail and Guard Battle Functions
+# -------------------------------
+def jail(player):
+    print("\n*** You have been caught by the guards and are sent to jail! ***")
+    lost_gold = int(player.gold * 0.3)  # lose 30% of your gold
+    player.gold -= lost_gold
+    if player.inventory:
+        lost_item = random.choice(player.inventory)
+        player.inventory.remove(lost_item)
+        print(f"In jail, they confiscated your {lost_item}!")
+    healed_hp = int(0.3 * player.max_hp)
+    player.hp = healed_hp
+    print(f"Your HP is restored to {healed_hp} (30% of max). You lost {lost_gold} gold coins as a fine.")
+
+def guard_battle(player, guard):
+    print("\n*** You are now fighting a guard! ***")
+    while guard.is_alive() and player.hp > 0:
+        # Apply bleed damage on player.
+        if player.bleed_turns > 0:
+            print(f"\n{player.name} suffers {player.bleed_damage} bleed damage.")
+            player.hp -= player.bleed_damage
+            player.bleed_turns -= 1
+            if player.hp <= 0:
+                jail(player)
+                return False
+        # Apply bleed damage on guard.
+        if guard.bleed_turns > 0:
+            print(f"\n{guard.name} suffers {guard.bleed_damage} bleed damage.")
+            guard.hp -= guard.bleed_damage
+            guard.bleed_turns -= 1
+            if guard.hp <= 0:
+                print(f"\n*** {guard.name} bled out and is defeated! ***")
+                return True
+
+        print(f"\n{player.name}'s HP: {player.hp}/{player.max_hp} | {guard.name}'s HP: {guard.hp}")
+        action = input("Do you want to (a)ttack, (r)un, or access (i)nventory? ").lower().strip()
+        if action == 'a':
+            if player.hp <= player.max_hp * 0.3:
+                effective_attack = max(1, player.attack - 3)
+                print("\n[Debuff Active: Your low HP is reducing your attack by 3 points!]")
+            else:
+                effective_attack = player.attack
+            damage = random.randint(max(1, effective_attack // 2), effective_attack)
+            guard.hp -= damage
+            print(f"\nYou attack the guard for {damage} damage!")
+            if guard.hp <= 0:
+                print("\n*** You have defeated the guard! ***")
+                return True
+            # Guard counterattack.
+            enemy_damage = random.randint(max(1, guard.attack // 2), guard.attack)
+            player.hp -= enemy_damage
+            print(f"\nThe guard counterattacks for {enemy_damage} damage!")
+            if player.hp <= 0:
+                jail(player)
+                return False
+        elif action == 'r':
+            if random.random() > 0.5:
+                print("\nYou managed to escape the guard!")
+                return True
+            else:
+                print("\nYou failed to escape!")
+                enemy_damage = random.randint(max(1, guard.attack // 2), guard.attack)
+                player.hp -= enemy_damage
+                print(f"\nThe guard hits you for {enemy_damage} damage!")
+                if player.hp <= 0:
+                    jail(player)
+                    return False
+        elif action == 'i':
+            battle_inventory(player)
+        else:
+            print("\nInvalid selection. Choose 'a', 'r', or 'i'.")
+        time.sleep(1)
+    return True
+
+def guard_encounter(player):
+    print("\nGuards have caught you!")
+    if player.hp < 0.2 * player.max_hp:
+        print("Your HP is too low to fight the guards. They arrest you and send you straight to jail.")
+        jail(player)
+    else:
+        print("You are strong enough to fight the guards!")
+        guard = Enemy("Guard", hp=40, attack=8, xp_reward=0, has_bleed_enchantment=False)
+        result = guard_battle(player, guard)
+        if not result:
+            return
+        else:
+            print("After the fight, your reputation suffers further!")
+            player.reputation -= 10
+            if player.reputation < 0:
+                player.reputation = 0
 
 # -------------------------------
 # In-Battle Inventory Function
@@ -89,21 +181,18 @@ def battle_inventory(player):
         if item_index < 0 or item_index >= len(player.inventory):
             print("Invalid selection.")
             return
-        # Remove the selected item (the usage will consume it).
+        # Remove the selected item.
         item = player.inventory.pop(item_index)
-        
-        # Roll for the risk of dropping the item during battle.
-        if random.random() < 0.05:  # 5% chance to lose it.
+        # Roll for risk of dropping the item.
+        if random.random() < 0.05:  # 5% chance
             print(f"\nIn the chaos of battle, you accidentally drop your {item}!")
-            # Roll for a chance to recover it immediately.
             if random.random() < 0.03:  # 3% chance to recover.
                 player.inventory.append(item)
                 print(f"Luckily, you quickly recover your {item}!")
             else:
                 print(f"You lose your {item} and it is gone!")
-            return  # No further effect if the item is lost.
-        
-        # If the item is not lost, apply its effect.
+            return
+        # Apply the item's effect.
         if item == "Health Potion":
             heal_amount = 30
             effective_heal = min(heal_amount, player.max_hp - player.hp)
@@ -132,38 +221,89 @@ def battle_inventory(player):
     except ValueError:
         print("Invalid selection.")
 
-
 # -------------------------------
-# Shop Interface
+# Shop Interface & Stealing Option with Limited Stock
 # -------------------------------
 def shop_interface(player):
+    # Base shop prices (before adjustment).
     shop_inventory = {
         "Health Potion": 10,
         "Magic Scroll": 15,
         "Steel Sword": 20,
         "Bleed Enchantment": 25
     }
+    # Define stock for each item (refreshed each visit).
+    shop_stock = {
+        "Health Potion": 3,
+        "Magic Scroll": 2,
+        "Steel Sword": 1,
+        "Bleed Enchantment": 1
+    }
+    # Calculate reputation-based multiplier.
+    multiplier = 1 + ((100 - player.reputation) / 100)
+    # Adjust prices.
+    adjusted_prices = {item: int(price * multiplier) for item, price in shop_inventory.items()}
     print("\n--- Welcome to the Shop ---")
+    print(f"Due to your reputation, prices are multiplied by {multiplier:.2f}.")
     while True:
-        print(f"\nYou have {player.gold} gold coins.")
+        print(f"\nYou have {player.gold} gold coins and your reputation is {player.reputation}/100.")
         print("Items available:")
-        for item, price in shop_inventory.items():
-            print(f" - {item}: {price} gold")
-        print("Type the name of the item to purchase it, or type 'exit' to leave the shop.")
+        for item in shop_inventory:
+            stock = shop_stock[item]
+            price = adjusted_prices[item]
+            print(f" - {item}: {price} gold (Stock: {stock})")
+        print("Type the name of the item to purchase it,")
+        print("or type 'steal <item>' to attempt to steal it,")
+        print("or type 'exit' to leave the shop.")
         choice = input("Your choice: ").strip()
         if choice.lower() == "exit":
             print("You leave the shop and head back out into the world.")
             break
+        elif choice.startswith("steal "):
+            item_to_steal = choice[6:]
+            if item_to_steal in shop_inventory:
+                if shop_stock[item_to_steal] <= 0:
+                    print(f"Sorry, there is no stock left of {item_to_steal} to steal.")
+                else:
+                    attempt_steal(player, item_to_steal, adjusted_prices[item_to_steal], shop_stock)
+            else:
+                print("That item is not available to steal.")
         elif choice in shop_inventory:
-            if player.gold >= shop_inventory[choice]:
-                player.gold -= shop_inventory[choice]
+            if shop_stock[choice] <= 0:
+                print("That item is out of stock.")
+                continue
+            price = adjusted_prices[choice]
+            if player.gold >= price:
+                player.gold -= price
                 player.inventory.append(choice)
-                print(f"You purchased a {choice}!")
+                shop_stock[choice] -= 1
+                print(f"You purchased a {choice} for {price} gold!")
             else:
                 print("You do not have enough gold for that item.")
         else:
             print("That item is not available.")
 
+def attempt_steal(player, item, price, stock):
+    print(f"\nYou attempt to steal a {item} from the shop!")
+    if stock[item] <= 0:
+        print("That item is out of stock and cannot be stolen.")
+        return
+    # 30% chance to successfully steal the item; if successful, no reputation loss.
+    if random.random() < 0.3:
+        print(f"You successfully stole a {item}!")
+        player.inventory.append(item)
+        stock[item] -= 1
+    else:
+        print(f"You failed to steal the {item}!")
+        # On failure, subtract reputation.
+        player.reputation -= 15
+        if player.reputation < 0:
+            player.reputation = 0
+        # 50% chance that guards are alerted.
+        if random.random() < 0.5:
+            guard_encounter(player)
+        else:
+            print("Luckily, no guards were alerted this time.")
 
 def visit_city(player):
     print("\nYou arrive at a bustling city full of merchants and adventurers.")
@@ -171,15 +311,14 @@ def visit_city(player):
     shop_interface(player)
     input("\nPress Enter to leave the city and return to your adventure...")
 
-
 # -------------------------------
-# Battle Function
+# Standard Battle Function
 # -------------------------------
 def battle(player, enemy):
     print(f"\n*** A wild {enemy.name} appears! ***")
     time.sleep(1)
     while enemy.is_alive() and player.hp > 0:
-        # Apply bleed effect to player.
+        # Apply bleed effects (player).
         if player.bleed_turns > 0:
             print(f"\n{player.name} suffers {player.bleed_damage} bleed damage.")
             player.hp -= player.bleed_damage
@@ -187,7 +326,7 @@ def battle(player, enemy):
             if player.hp <= 0:
                 print("\n*** You have bled out... Game Over! ***")
                 break
-        # Apply bleed effect to enemy.
+        # Apply bleed effects (enemy).
         if enemy.bleed_turns > 0:
             print(f"\n{enemy.name} suffers {enemy.bleed_damage} bleed damage.")
             enemy.hp -= enemy.bleed_damage
@@ -201,27 +340,22 @@ def battle(player, enemy):
                     item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment"])
                     player.inventory.append(item)
                     print(f"You found a {item} on the enemy!")
-                # 20% chance of gold drop.
                 if random.random() < 0.20:
                     coins = random.randint(5, 15)
                     player.gold += coins
                     print(f"{enemy.name} dropped {coins} gold coins!")
                 break
-        # Check if someone died from bleed.
         if player.hp <= 0 or enemy.hp <= 0:
             break
 
         print(f"\n{player.name}'s HP: {player.hp}/{player.max_hp} | {enemy.name}'s HP: {enemy.hp}")
         action = input("Do you want to (a)ttack, (r)un, or access (i)nventory? ").lower().strip()
-
         if action == 'a':
-            # Apply low HP debuff.
             if player.hp <= player.max_hp * 0.3:
                 effective_attack = max(1, player.attack - 3)
                 print("\n[Debuff Active: Your low HP is reducing your attack by 3 points!]")
             else:
                 effective_attack = player.attack
-
             damage = random.randint(max(1, effective_attack // 2), effective_attack)
             enemy.hp -= damage
             print(f"\nYou attack {enemy.name} for {damage} damage!")
@@ -234,20 +368,16 @@ def battle(player, enemy):
                     item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment"])
                     player.inventory.append(item)
                     print(f"You found a {item} on the enemy!")
-                # 20% chance for gold drop.
                 if random.random() < 0.20:
                     coins = random.randint(5, 15)
                     player.gold += coins
                     print(f"{enemy.name} dropped {coins} gold coins!")
                 break
-
-            # Check for player's bleed enchantment.
             if player.bleed_chance > 0:
                 if random.random() < (player.bleed_chance / 100):
                     enemy.bleed_turns = 3
                     enemy.bleed_damage = 5
                     print(f"{enemy.name} is now bleeding!")
-
         elif action == 'r':
             if random.random() > 0.5:
                 print("\nYou successfully escaped the battle!")
@@ -261,8 +391,6 @@ def battle(player, enemy):
             battle_inventory(player)
         else:
             print("\nInvalid selection. Please choose 'a', 'r', or 'i'.")
-
-        # Enemy’s turn (if still alive and if the player hasn't run away).
         if enemy.is_alive() and action in ['a', 'i']:
             enemy_damage = random.randint(max(1, enemy.attack // 2), enemy.attack)
             player.hp -= enemy_damage
@@ -275,10 +403,8 @@ def battle(player, enemy):
             if player.hp <= 0:
                 print("\n*** You have been defeated... Game Over! ***")
                 break
-
         time.sleep(1)
     input("\nPress Enter to continue...")
-
 
 # -------------------------------
 # Exploration Function
@@ -288,7 +414,6 @@ def explore(player):
     time.sleep(1)
     outcome = random.random()
     if outcome < 0.6:
-        # Expanded enemy pool.
         enemy_pool = [
             ("Goblin", 30, 5, 20),
             ("Skeleton", 40, 7, 25),
@@ -312,7 +437,6 @@ def explore(player):
         )
         battle(player, enemy)
     else:
-        # Adjusted exploration events.
         if outcome < 0.7:
             print("You discover a small hidden cache of supplies and restore some health.")
             heal = random.randint(10, 30)
@@ -323,7 +447,6 @@ def explore(player):
         else:
             print("The area is peaceful, and you take the time to enjoy the scenery.")
     input("\nPress Enter to return to the menu...")
-
 
 # -------------------------------
 # Inventory Management Function (Out of Battle)
@@ -377,7 +500,6 @@ def manage_inventory(player):
         print("Invalid selection.")
     input("Press Enter to continue...")
 
-
 # -------------------------------
 # Main Game Loop
 # -------------------------------
@@ -412,7 +534,6 @@ def main():
     
     if player.hp <= 0:
         print("\nYour journey has ended. Better luck next time!")
-
 
 # -------------------------------
 # Run the Game
