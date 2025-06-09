@@ -7,8 +7,9 @@ import os
 # Classes for Player and Enemy
 # -------------------------------
 class Player:
-    def __init__(self, name):
+    def __init__(self, name, role="Warrior"):
         self.name = name
+        self.role = role  # "Warrior" or "Mage"
         self.level = 1
         self.max_hp = 100
         self.hp = self.max_hp
@@ -17,20 +18,26 @@ class Player:
         self.inventory = []
         self.gold = 0                 # Player gold
         self.reputation = 100         # Player reputation (0-100)
-        self.stat_points = 0          # New stat points available for allocation
+        self.stat_points = 0          # Stat points available for allocation
+        # For mage: add mana attributes; for Warrior, these remain 0.
+        if self.role == "Mage":
+            self.max_mana = 50
+            self.mana = 50
+        else:
+            self.max_mana = 0
+            self.mana = 0
         # Bleed chance and effects.
         self.bleed_chance = 0
         self.bleed_turns = 0
         self.bleed_damage = 0
 
     def level_up(self):
-        # Each level up now grants stat points instead of auto-improving stats.
+        # Each level up grants 5 stat points.
         while self.xp >= 100:
             self.level += 1
             self.xp -= 100
-            # Instead of adding fixed stat increases, grant 5 stat points.
             self.stat_points += 5
-            # Fully heal upon level up.
+            # Fully heal upon leveling up.
             self.hp = self.max_hp
             print(f"\n*** Congratulations {self.name}! You leveled up to Level {self.level}! ***")
             print("You have gained 5 stat points.")
@@ -38,9 +45,12 @@ class Player:
 
     def show_status(self):
         print("\n==== Player Status ====")
-        print(f"Name: {self.name}")
+        print(f"Name: {self.name} ({self.role})")
         print(f"Level: {self.level}")
         print(f"HP: {self.hp}/{self.max_hp}")
+        print(f"Attack: {self.attack}")
+        if self.role == "Mage":
+            print(f"Mana: {self.mana}/{self.max_mana}")
         print(f"XP: {self.xp}/100")
         print(f"Gold: {self.gold}")
         print(f"Reputation: {self.reputation}/100")
@@ -49,7 +59,6 @@ class Player:
         if self.bleed_chance > 0:
             print(f"Weapon Enchantment: Bleed (Chance: {self.bleed_chance}%)")
         print("=======================\n")
-
 
 class Enemy:
     def __init__(self, name, hp, attack, xp_reward, has_bleed_enchantment=False):
@@ -70,6 +79,7 @@ class Enemy:
 def save_game(player):
     save_data = {
         "name": player.name,
+        "role": player.role,
         "level": player.level,
         "max_hp": player.max_hp,
         "hp": player.hp,
@@ -79,6 +89,8 @@ def save_game(player):
         "gold": player.gold,
         "reputation": player.reputation,
         "stat_points": player.stat_points,
+        "max_mana": player.max_mana,
+        "mana": player.mana,
         "bleed_chance": player.bleed_chance,
         "bleed_turns": player.bleed_turns,
         "bleed_damage": player.bleed_damage
@@ -91,7 +103,7 @@ def load_game():
     try:
         with open("save_game.json", "r") as f:
             save_data = json.load(f)
-        player = Player(save_data["name"])
+        player = Player(save_data["name"], role=save_data.get("role", "Warrior"))
         player.level = save_data["level"]
         player.max_hp = save_data["max_hp"]
         player.hp = save_data["hp"]
@@ -101,6 +113,8 @@ def load_game():
         player.gold = save_data["gold"]
         player.reputation = save_data["reputation"]
         player.stat_points = save_data["stat_points"]
+        player.max_mana = save_data.get("max_mana", 0)
+        player.mana = save_data.get("mana", 0)
         player.bleed_chance = save_data["bleed_chance"]
         player.bleed_turns = save_data["bleed_turns"]
         player.bleed_damage = save_data["bleed_damage"]
@@ -199,6 +213,38 @@ def guard_encounter(player):
                 player.reputation = 0
 
 # -------------------------------
+# Mage Spell Casting Function
+# -------------------------------
+def mage_cast_spell(player, enemy):
+    print("\n*** Spell Casting ***")
+    print("Available spells:")
+    print("1. Fireball (Cost: 10 mana) - Deals heavy damage.")
+    print("2. Ice Blast (Cost: 5 mana) - Deals moderate damage.")
+    spell_choice = input("Choose your spell (1 or 2): ").strip()
+    if spell_choice == "1":
+        if player.mana < 10:
+            print("Not enough mana to cast Fireball!")
+            return False
+        player.mana -= 10
+        damage = random.randint((player.attack // 2) + 10, player.attack + 10)
+        enemy.hp -= damage
+        print(f"You cast Fireball for {damage} damage!")
+        return False  # Enemy may counterattack as usual.
+    elif spell_choice == "2":
+        if player.mana < 5:
+            print("Not enough mana to cast Ice Blast!")
+            return False
+        player.mana -= 5
+        damage = random.randint(3, 7)
+        enemy.hp -= damage
+        print(f"You cast Ice Blast for {damage} damage!")
+        print("The enemy is chilled!")
+        return False  # Unlike before, Ice Blast no longer prevents a counterattack.
+    else:
+        print("Invalid spell selection.")
+        return False
+
+# -------------------------------
 # In-Battle Inventory Function
 # -------------------------------
 def battle_inventory(player):
@@ -232,9 +278,15 @@ def battle_inventory(player):
             player.hp += effective_heal
             print(f"\nYou use a {item} and restore {effective_heal} HP!")
         elif item == "Magic Scroll":
-            bonus = 2
-            player.attack += bonus
-            print(f"\nYou use a {item} and feel empowered! Your attack increases by {bonus} permanently.")
+            if player.role == "Mage":
+                bonus = 10
+                player.max_mana += bonus
+                player.mana += bonus
+                print(f"\nYou use a {item} and your mana increases by {bonus} permanently!")
+            else:
+                bonus = 2
+                player.attack += bonus
+                print(f"\nYou use a {item} and feel empowered! Your attack increases by {bonus} permanently.")
         elif item == "Steel Sword":
             bonus = 5
             player.attack += bonus
@@ -270,7 +322,7 @@ def shop_interface(player):
         "Steel Sword": 1,
         "Bleed Enchantment": 1
     }
-    # New pricing formula: price = base_price * (1 + ((100 - current_reputation) / 5))
+    # Adjusted price formula: adjusted_price = base_price * (1 + ((100 - current_reputation) / 5))
     adjusted_prices = {item: int(price * (1 + ((100 - player.reputation) / 5)))
                        for item, price in shop_inventory.items()}
     print("\n--- Welcome to the Shop ---")
@@ -375,8 +427,28 @@ def battle(player, enemy):
             break
 
         print(f"\n{player.name}'s HP: {player.hp}/{player.max_hp} | {enemy.name}'s HP: {enemy.hp}")
-        action = input("Do you want to (a)ttack, (r)un, or access (i)nventory? ").lower().strip()
-        if action == 'a':
+        if player.role == "Mage":
+            prompt = "Do you want to (a)ttack, (r)un, (i)nventory, or cast a (s)pell? "
+        else:
+            prompt = "Do you want to (a)ttack, (r)un, or access (i)nventory? "
+        action = input(prompt).lower().strip()
+        if action == 's' and player.role == "Mage":
+            skip_counter = mage_cast_spell(player, enemy)
+            if enemy.hp <= 0:
+                print(f"\n*** You have defeated {enemy.name} with your spell! ***")
+                player.xp += enemy.xp_reward
+                print(f"You earned {enemy.xp_reward} XP!")
+                player.level_up()
+                if random.random() < 0.3:
+                    item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment"])
+                    player.inventory.append(item)
+                    print(f"You found a {item} on the enemy!")
+                if random.random() < 0.20:
+                    coins = random.randint(5, 15)
+                    player.gold += coins
+                    print(f"{enemy.name} dropped {coins} gold coins!")
+                continue
+        elif action == 'a':
             if player.hp <= player.max_hp * 0.3:
                 effective_attack = max(1, player.attack - 3)
                 print("\n[Debuff Active: Your low HP is reducing your attack by 3 points!]")
@@ -416,19 +488,22 @@ def battle(player, enemy):
         elif action == 'i':
             battle_inventory(player)
         else:
-            print("\nInvalid selection. Please choose 'a', 'r', or 'i'.")
-        if enemy.is_alive() and action in ['a', 'i']:
-            enemy_damage = random.randint(max(1, enemy.attack // 2), enemy.attack)
-            player.hp -= enemy_damage
-            print(f"\n{enemy.name} counterattacks for {enemy_damage} damage!")
-            if enemy.has_bleed_enchantment:
-                if random.random() < 0.10:
-                    player.bleed_turns = 3
-                    player.bleed_damage = 5
-                    print(f"{player.name} is now bleeding!")
-            if player.hp <= 0:
-                print("\n*** You have been defeated... Game Over! ***")
-                break
+            print("\nInvalid selection. Please choose a valid option.")
+        if enemy.is_alive() and action in ['a', 'i', 's']:
+            if player.role == "Mage" and action == 's' and skip_counter:
+                pass
+            else:
+                enemy_damage = random.randint(max(1, enemy.attack // 2), enemy.attack)
+                player.hp -= enemy_damage
+                print(f"\n{enemy.name} counterattacks for {enemy_damage} damage!")
+                if enemy.has_bleed_enchantment:
+                    if random.random() < 0.10:
+                        player.bleed_turns = 3
+                        player.bleed_damage = 5
+                        print(f"{player.name} is now bleeding!")
+                if player.hp <= 0:
+                    print("\n*** You have been defeated... Game Over! ***")
+                    break
         time.sleep(1)
     input("\nPress Enter to continue...")
 
@@ -484,22 +559,32 @@ def allocate_stats(player):
     print(f"\nYou have {player.stat_points} stat points to allocate.")
     print("1. Increase max HP by 4 per point")
     print("2. Increase Attack by 1 per point")
+    if player.role == "Mage":
+        print("3. Increase max Mana by 5 per point")
     while player.stat_points > 0:
         print(f"\nRemaining stat points: {player.stat_points}")
-        choice = input("Enter 1 for HP, 2 for Attack, or 'q' to quit allocation: ").strip().lower()
+        if player.role == "Mage":
+            choice = input("Enter 1 for HP, 2 for Attack, 3 for Mana, or 'q' to quit allocation: ").strip().lower()
+        else:
+            choice = input("Enter 1 for HP, 2 for Attack, or 'q' to quit allocation: ").strip().lower()
         if choice == '1':
             player.max_hp += 4
-            player.hp += 4  # Increase current HP as well.
+            player.hp += 4
             player.stat_points -= 1
             print("Increased max HP by 4.")
         elif choice == '2':
             player.attack += 1
             player.stat_points -= 1
             print("Increased Attack by 1.")
+        elif choice == '3' and player.role == "Mage":
+            player.max_mana += 5
+            player.mana += 5
+            player.stat_points -= 1
+            print("Increased max Mana by 5.")
         elif choice == 'q':
             break
         else:
-            print("Invalid selection. Please choose 1, 2, or 'q'.")
+            print("Invalid selection. Please choose a valid option.")
     print("Allocation complete.")
 
 # -------------------------------
@@ -531,9 +616,15 @@ def manage_inventory(player):
             player.hp += effective_heal
             print(f"\nYou use a {item} and restore {effective_heal} HP!")
         elif item == "Magic Scroll":
-            bonus = 2
-            player.attack += bonus
-            print(f"\nYou use a {item} and feel empowered! Your attack increases by {bonus} permanently.")
+            if player.role == "Mage":
+                bonus = 10
+                player.max_mana += bonus
+                player.mana += bonus
+                print(f"\nYou use a {item} and your mana increases by {bonus} permanently!")
+            else:
+                bonus = 2
+                player.attack += bonus
+                print(f"\nYou use a {item} and feel empowered! Your attack increases by {bonus} permanently.")
         elif item == "Steel Sword":
             bonus = 5
             player.attack += bonus
@@ -562,20 +653,25 @@ def main():
     print(" Welcome to the Python LitRPG Adventure!")
     print("========================================\n")
     
-    # Load game if available.
+    role_choice = input("Choose your class: Enter 1 for Warrior or 2 for Mage (default is Warrior): ").strip()
+    if role_choice == "2":
+        role = "Mage"
+    else:
+        role = "Warrior"
+        
     if os.path.isfile("save_game.json"):
         load_choice = input("A saved game was found. Would you like to load it? (y/n): ").strip().lower()
         if load_choice == 'y':
             player = load_game()
             if player is None:
                 name = input("Enter your character name: ").strip()
-                player = Player(name)
+                player = Player(name, role=role)
         else:
             name = input("Enter your character name: ").strip()
-            player = Player(name)
+            player = Player(name, role=role)
     else:
         name = input("Enter your character name: ").strip()
-        player = Player(name)
+        player = Player(name, role=role)
     
     while player.hp > 0:
         print("\nWhat would you like to do next?")
@@ -603,7 +699,6 @@ def main():
             break
         else:
             print("\nInvalid selection. Please choose a number from the menu.")
-    
     if player.hp <= 0:
         print("\nYour journey has ended. Better luck next time!")
 
