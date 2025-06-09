@@ -1,7 +1,7 @@
-#command line game, litrpg
-
 import random
 import time
+import json
+import os
 
 # -------------------------------
 # Classes for Player and Enemy
@@ -16,8 +16,8 @@ class Player:
         self.xp = 0
         self.attack = 10
         self.inventory = []
-        self.gold = 0  # Player gold
-        self.reputation = 100  # Player reputation (0-100)
+        self.gold = 0         # Player gold
+        self.reputation = 100   # Player reputation (0-100)
         # Bleed chance in percent; if 0 then no bleed enchantment on weapon.
         self.bleed_chance = 0
         # Attributes for tracking active bleed effects.
@@ -67,6 +67,50 @@ class Enemy:
 
     def is_alive(self):
         return self.hp > 0
+
+# -------------------------------
+# Save and Load Functions
+# -------------------------------
+def save_game(player):
+    save_data = {
+        "name": player.name,
+        "level": player.level,
+        "max_hp": player.max_hp,
+        "hp": player.hp,
+        "xp": player.xp,
+        "attack": player.attack,
+        "inventory": player.inventory,
+        "gold": player.gold,
+        "reputation": player.reputation,
+        "bleed_chance": player.bleed_chance,
+        "bleed_turns": player.bleed_turns,
+        "bleed_damage": player.bleed_damage
+    }
+    with open("save_game.json", "w") as f:
+        json.dump(save_data, f)
+    print("\n--- Game saved! ---\n")
+
+def load_game():
+    try:
+        with open("save_game.json", "r") as f:
+            save_data = json.load(f)
+        player = Player(save_data["name"])
+        player.level = save_data["level"]
+        player.max_hp = save_data["max_hp"]
+        player.hp = save_data["hp"]
+        player.xp = save_data["xp"]
+        player.attack = save_data["attack"]
+        player.inventory = save_data["inventory"]
+        player.gold = save_data["gold"]
+        player.reputation = save_data["reputation"]
+        player.bleed_chance = save_data["bleed_chance"]
+        player.bleed_turns = save_data["bleed_turns"]
+        player.bleed_damage = save_data["bleed_damage"]
+        print("\n--- Game loaded successfully! ---\n")
+        return player
+    except FileNotFoundError:
+        print("\nNo saved game found.\n")
+        return None
 
 # -------------------------------
 # Jail and Guard Battle Functions
@@ -165,8 +209,7 @@ def guard_encounter(player):
 # -------------------------------
 def battle_inventory(player):
     """Allows the player to access and use their inventory during battle.
-       There is a 5% chance the item is accidentally dropped (lost); if so,
-       there's a 3% chance to recover it immediately."""
+       There is a 5% chance the item is accidentally dropped; if so, there's a 3% chance to recover it immediately."""
     if not player.inventory:
         print("\nYour inventory is empty.")
         return
@@ -184,10 +227,10 @@ def battle_inventory(player):
             return
         # Remove the selected item.
         item = player.inventory.pop(item_index)
-        # Roll for risk of dropping the item.
-        if random.random() < 0.05:  # 5% chance
+        # Roll for risk of dropping.
+        if random.random() < 0.05:
             print(f"\nIn the chaos of battle, you accidentally drop your {item}!")
-            if random.random() < 0.03:  # 3% chance to recover.
+            if random.random() < 0.03:
                 player.inventory.append(item)
                 print(f"Luckily, you quickly recover your {item}!")
             else:
@@ -240,10 +283,8 @@ def shop_interface(player):
         "Steel Sword": 1,
         "Bleed Enchantment": 1
     }
-    # Calculate adjusted prices using the new formula:
-    # adjusted_price = base_price * ((100 - player.reputation) / 5)
-    # But we want items to stay at base value at full reputation, so add 1 multiplier:
-    # Final formula: adjusted_price = base_price * (1 + ((100 - player.reputation) / 5))
+    # Adjusted price formula:
+    # adjusted_price = base_price * (1 + ((100 - current_reputation) / 5))
     adjusted_prices = {item: int(price * (1 + ((100 - player.reputation) / 5)))
                        for item, price in shop_inventory.items()}
 
@@ -265,7 +306,7 @@ def shop_interface(player):
             print("You leave the shop and head back out into the world.")
             break
         elif choice.startswith("steal "):
-            item_to_steal = choice[6:]  # the rest of the string after "steal "
+            item_to_steal = choice[6:]
             if item_to_steal in shop_inventory:
                 if shop_stock[item_to_steal] <= 0:
                     print(f"Sorry, there is no stock left of {item_to_steal} to steal.")
@@ -498,7 +539,7 @@ def manage_inventory(player):
                     player.bleed_chance += 1
                     print(f"\nYour weapon's bleed chance increases by 1%. (Bleed chance: {player.bleed_chance}%)")
                 else:
-                    print("\nYour weapon's bleed chance is already at maximum (25%).")
+                    print("\nYour weapon's bleed chance is already at its maximum (25%).")
         else:
             print(f"\nThe {item} had no effect when used.")
     except ValueError:
@@ -506,23 +547,36 @@ def manage_inventory(player):
     input("Press Enter to continue...")
 
 # -------------------------------
-# Main Game Loop
+# Save Game Menu Option & Main Menu Modification
 # -------------------------------
 def main():
     print("========================================")
     print(" Welcome to the Python LitRPG Adventure!")
     print("========================================\n")
     
-    name = input("Enter your character name: ").strip()
-    player = Player(name)
+    # Ask if the player wants to load a saved game if one exists.
+    if os.path.isfile("save_game.json"):
+        load_choice = input("A saved game was found. Would you like to load it? (y/n): ").strip().lower()
+        if load_choice == 'y':
+            player = load_game()
+            if player is None:
+                name = input("Enter your character name: ").strip()
+                player = Player(name)
+        else:
+            name = input("Enter your character name: ").strip()
+            player = Player(name)
+    else:
+        name = input("Enter your character name: ").strip()
+        player = Player(name)
     
     while player.hp > 0:
         print("\nWhat would you like to do next?")
         print("1. Explore")
         print("2. Check Status")
         print("3. Use Inventory")
-        print("4. Quit Game")
-        choice = input("Choose an option (1-4): ").strip()
+        print("4. Save Game")
+        print("5. Quit Game")
+        choice = input("Choose an option (1-5): ").strip()
         
         if choice == '1':
             explore(player)
@@ -532,6 +586,8 @@ def main():
         elif choice == '3':
             manage_inventory(player)
         elif choice == '4':
+            save_game(player)
+        elif choice == '5':
             print("\nThanks for playing the Python LitRPG Adventure!")
             break
         else:
@@ -539,8 +595,6 @@ def main():
     
     if player.hp <= 0:
         print("\nYour journey has ended. Better luck next time!")
-# -------------------------------
-# Run the Game
-# -------------------------------
+
 if __name__ == "__main__":
     main()
