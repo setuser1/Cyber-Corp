@@ -467,7 +467,8 @@ def explore(player):
             ("Bat", 25, 4, 15),
             ("Orc", 50, 10, 30),
             ("Troll", 60, 12, 40),
-            ("Giant", 70, 15, 50)
+            ("Giant", 70, 15, 50),
+            ("Baby Dragon", 100, 25, 200)
         ]
         if player.level < 3:
             enemy_types = [e for e in enemy_pool if e[1] < 50]
