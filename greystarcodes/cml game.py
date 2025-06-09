@@ -6,7 +6,6 @@ import os
 # -------------------------------
 # Classes for Player and Enemy
 # -------------------------------
-
 class Player:
     def __init__(self, name):
         self.name = name
@@ -16,27 +15,25 @@ class Player:
         self.xp = 0
         self.attack = 10
         self.inventory = []
-        self.gold = 0         # Player gold
-        self.reputation = 100   # Player reputation (0-100)
-        # Bleed chance in percent; if 0 then no bleed enchantment on weapon.
+        self.gold = 0                 # Player gold
+        self.reputation = 100         # Player reputation (0-100)
+        self.stat_points = 0          # New stat points available for allocation
+        # Bleed chance and effects.
         self.bleed_chance = 0
-        # Attributes for tracking active bleed effects.
         self.bleed_turns = 0
         self.bleed_damage = 0
 
     def level_up(self):
-        # Every time XP reaches 100 or more, level up!
+        # Each level up now grants stat points instead of auto-improving stats.
         while self.xp >= 100:
             self.level += 1
             self.xp -= 100
-            self.max_hp += 20
-            self.hp = self.max_hp  # Restore HP on level up.
-            self.attack += 5
-            # Remove all debuffs upon leveling up.
-            self.bleed_turns = 0
-            self.bleed_damage = 0
+            # Instead of adding fixed stat increases, grant 5 stat points.
+            self.stat_points += 5
+            # Fully heal upon level up.
+            self.hp = self.max_hp
             print(f"\n*** Congratulations {self.name}! You leveled up to Level {self.level}! ***")
-            print(f"New stats - Max HP: {self.max_hp}, Attack: {self.attack}\n")
+            print("You have gained 5 stat points.")
             time.sleep(1)
 
     def show_status(self):
@@ -47,6 +44,7 @@ class Player:
         print(f"XP: {self.xp}/100")
         print(f"Gold: {self.gold}")
         print(f"Reputation: {self.reputation}/100")
+        print(f"Unallocated Stat Points: {self.stat_points}")
         print("Inventory:", self.inventory if self.inventory else "Empty")
         if self.bleed_chance > 0:
             print(f"Weapon Enchantment: Bleed (Chance: {self.bleed_chance}%)")
@@ -59,9 +57,7 @@ class Enemy:
         self.hp = hp
         self.attack = attack
         self.xp_reward = xp_reward
-        # Flag for bleed enchantment. (Enemies do not upgrade theirs—their chance is fixed.)
         self.has_bleed_enchantment = has_bleed_enchantment
-        # Attributes for tracking active bleed effects.
         self.bleed_turns = 0
         self.bleed_damage = 0
 
@@ -82,6 +78,7 @@ def save_game(player):
         "inventory": player.inventory,
         "gold": player.gold,
         "reputation": player.reputation,
+        "stat_points": player.stat_points,
         "bleed_chance": player.bleed_chance,
         "bleed_turns": player.bleed_turns,
         "bleed_damage": player.bleed_damage
@@ -103,6 +100,7 @@ def load_game():
         player.inventory = save_data["inventory"]
         player.gold = save_data["gold"]
         player.reputation = save_data["reputation"]
+        player.stat_points = save_data["stat_points"]
         player.bleed_chance = save_data["bleed_chance"]
         player.bleed_turns = save_data["bleed_turns"]
         player.bleed_damage = save_data["bleed_damage"]
@@ -117,7 +115,7 @@ def load_game():
 # -------------------------------
 def jail(player):
     print("\n*** You have been caught by the guards and are sent to jail! ***")
-    lost_gold = int(player.gold * 0.3)  # lose 30% of your gold
+    lost_gold = int(player.gold * 0.3)
     player.gold -= lost_gold
     if player.inventory:
         lost_item = random.choice(player.inventory)
@@ -130,7 +128,6 @@ def jail(player):
 def guard_battle(player, guard):
     print("\n*** You are now fighting a guard! ***")
     while guard.is_alive() and player.hp > 0:
-        # Apply bleed damage on player.
         if player.bleed_turns > 0:
             print(f"\n{player.name} suffers {player.bleed_damage} bleed damage.")
             player.hp -= player.bleed_damage
@@ -138,7 +135,6 @@ def guard_battle(player, guard):
             if player.hp <= 0:
                 jail(player)
                 return False
-        # Apply bleed damage on guard.
         if guard.bleed_turns > 0:
             print(f"\n{guard.name} suffers {guard.bleed_damage} bleed damage.")
             guard.hp -= guard.bleed_damage
@@ -146,7 +142,6 @@ def guard_battle(player, guard):
             if guard.hp <= 0:
                 print(f"\n*** {guard.name} bled out and is defeated! ***")
                 return True
-
         print(f"\n{player.name}'s HP: {player.hp}/{player.max_hp} | {guard.name}'s HP: {guard.hp}")
         action = input("Do you want to (a)ttack, (r)un, or access (i)nventory? ").lower().strip()
         if action == 'a':
@@ -161,7 +156,6 @@ def guard_battle(player, guard):
             if guard.hp <= 0:
                 print("\n*** You have defeated the guard! ***")
                 return True
-            # Guard counterattack.
             enemy_damage = random.randint(max(1, guard.attack // 2), guard.attack)
             player.hp -= enemy_damage
             print(f"\nThe guard counterattacks for {enemy_damage} damage!")
@@ -208,8 +202,6 @@ def guard_encounter(player):
 # In-Battle Inventory Function
 # -------------------------------
 def battle_inventory(player):
-    """Allows the player to access and use their inventory during battle.
-       There is a 5% chance the item is accidentally dropped; if so, there's a 3% chance to recover it immediately."""
     if not player.inventory:
         print("\nYour inventory is empty.")
         return
@@ -225,9 +217,7 @@ def battle_inventory(player):
         if item_index < 0 or item_index >= len(player.inventory):
             print("Invalid selection.")
             return
-        # Remove the selected item.
         item = player.inventory.pop(item_index)
-        # Roll for risk of dropping.
         if random.random() < 0.05:
             print(f"\nIn the chaos of battle, you accidentally drop your {item}!")
             if random.random() < 0.03:
@@ -236,7 +226,6 @@ def battle_inventory(player):
             else:
                 print(f"You lose your {item} and it is gone!")
             return
-        # Apply the item's effect.
         if item == "Health Potion":
             heal_amount = 30
             effective_heal = min(heal_amount, player.max_hp - player.hp)
@@ -266,28 +255,24 @@ def battle_inventory(player):
         print("Invalid selection.")
 
 # -------------------------------
-# Shop Interface & Stealing Option with Limited Stock and Reputation-Based Prices
+# Shop Interface with Limited Stock and Reputation-Based Prices
 # -------------------------------
 def shop_interface(player):
-    # Base shop prices (before adjustment).
     shop_inventory = {
         "Health Potion": 10,
         "Magic Scroll": 15,
         "Steel Sword": 20,
         "Bleed Enchantment": 25
     }
-    # Define stock for each item (refreshed each visit).
     shop_stock = {
         "Health Potion": 3,
         "Magic Scroll": 2,
         "Steel Sword": 1,
         "Bleed Enchantment": 1
     }
-    # Adjusted price formula:
-    # adjusted_price = base_price * (1 + ((100 - current_reputation) / 5))
+    # New pricing formula: price = base_price * (1 + ((100 - current_reputation) / 5))
     adjusted_prices = {item: int(price * (1 + ((100 - player.reputation) / 5)))
                        for item, price in shop_inventory.items()}
-
     print("\n--- Welcome to the Shop ---")
     print("Prices are adjusted based on your reputation.")
     print("Formula: adjusted_price = base_price * (1 + ((100 - current_reputation) / 5))")
@@ -334,18 +319,15 @@ def attempt_steal(player, item, price, stock):
     if stock[item] <= 0:
         print("That item is out of stock and cannot be stolen.")
         return
-    # 30% chance to successfully steal the item; if successful, no reputation loss.
     if random.random() < 0.3:
         print(f"You successfully stole a {item}!")
         player.inventory.append(item)
         stock[item] -= 1
     else:
         print(f"You failed to steal the {item}!")
-        # On failure, subtract reputation.
         player.reputation -= 15
         if player.reputation < 0:
             player.reputation = 0
-        # 50% chance that guards are alerted.
         if random.random() < 0.5:
             guard_encounter(player)
         else:
@@ -364,7 +346,6 @@ def battle(player, enemy):
     print(f"\n*** A wild {enemy.name} appears! ***")
     time.sleep(1)
     while enemy.is_alive() and player.hp > 0:
-        # Apply bleed effects (player).
         if player.bleed_turns > 0:
             print(f"\n{player.name} suffers {player.bleed_damage} bleed damage.")
             player.hp -= player.bleed_damage
@@ -372,7 +353,6 @@ def battle(player, enemy):
             if player.hp <= 0:
                 print("\n*** You have bled out... Game Over! ***")
                 break
-        # Apply bleed effects (enemy).
         if enemy.bleed_turns > 0:
             print(f"\n{enemy.name} suffers {enemy.bleed_damage} bleed damage.")
             enemy.hp -= enemy.bleed_damage
@@ -467,8 +447,7 @@ def explore(player):
             ("Bat", 25, 4, 15),
             ("Orc", 50, 10, 30),
             ("Troll", 60, 12, 40),
-            ("Giant", 70, 15, 50),
-            ("Baby Dragon", 100, 25, 200)
+            ("Giant", 70, 15, 50)
         ]
         if player.level < 3:
             enemy_types = [e for e in enemy_pool if e[1] < 50]
@@ -494,6 +473,34 @@ def explore(player):
         else:
             print("The area is peaceful, and you take the time to enjoy the scenery.")
     input("\nPress Enter to return to the menu...")
+
+# -------------------------------
+# Allocate Stat Points Function
+# -------------------------------
+def allocate_stats(player):
+    if player.stat_points <= 0:
+        print("\nYou have no stat points to allocate.")
+        return
+    print(f"\nYou have {player.stat_points} stat points to allocate.")
+    print("1. Increase max HP by 4 per point")
+    print("2. Increase Attack by 1 per point")
+    while player.stat_points > 0:
+        print(f"\nRemaining stat points: {player.stat_points}")
+        choice = input("Enter 1 for HP, 2 for Attack, or 'q' to quit allocation: ").strip().lower()
+        if choice == '1':
+            player.max_hp += 4
+            player.hp += 4  # Increase current HP as well.
+            player.stat_points -= 1
+            print("Increased max HP by 4.")
+        elif choice == '2':
+            player.attack += 1
+            player.stat_points -= 1
+            print("Increased Attack by 1.")
+        elif choice == 'q':
+            break
+        else:
+            print("Invalid selection. Please choose 1, 2, or 'q'.")
+    print("Allocation complete.")
 
 # -------------------------------
 # Inventory Management Function (Out of Battle)
@@ -548,14 +555,14 @@ def manage_inventory(player):
     input("Press Enter to continue...")
 
 # -------------------------------
-# Save Game Menu Option & Main Menu Modification
+# Main Game Loop
 # -------------------------------
 def main():
     print("========================================")
     print(" Welcome to the Python LitRPG Adventure!")
     print("========================================\n")
     
-    # Ask if the player wants to load a saved game if one exists.
+    # Load game if available.
     if os.path.isfile("save_game.json"):
         load_choice = input("A saved game was found. Would you like to load it? (y/n): ").strip().lower()
         if load_choice == 'y':
@@ -575,9 +582,10 @@ def main():
         print("1. Explore")
         print("2. Check Status")
         print("3. Use Inventory")
-        print("4. Save Game")
-        print("5. Quit Game")
-        choice = input("Choose an option (1-5): ").strip()
+        print("4. Allocate Stats")
+        print("5. Save Game")
+        print("6. Quit Game")
+        choice = input("Choose an option (1-6): ").strip()
         
         if choice == '1':
             explore(player)
@@ -587,8 +595,10 @@ def main():
         elif choice == '3':
             manage_inventory(player)
         elif choice == '4':
-            save_game(player)
+            allocate_stats(player)
         elif choice == '5':
+            save_game(player)
+        elif choice == '6':
             print("\nThanks for playing the Python LitRPG Adventure!")
             break
         else:
