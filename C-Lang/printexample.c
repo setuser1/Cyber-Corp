@@ -8,5 +8,9 @@ int main() {
     strcpy(string, "Hello World!");
     write(STDOUT_FILENO, string, strlen(string));
     free(string);
+
+    // the noob way of printing
+    printf("Hello World!);
+    
     return 0;
 }
