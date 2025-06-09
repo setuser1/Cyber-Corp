@@ -1,4 +1,4 @@
-#ai generated command line game, genre litrpg
+#command line game, litrpg
 
 import random
 import time
@@ -6,6 +6,7 @@ import time
 # -------------------------------
 # Classes for Player and Enemy
 # -------------------------------
+
 class Player:
     def __init__(self, name):
         self.name = name
@@ -222,7 +223,7 @@ def battle_inventory(player):
         print("Invalid selection.")
 
 # -------------------------------
-# Shop Interface & Stealing Option with Limited Stock
+# Shop Interface & Stealing Option with Limited Stock and Reputation-Based Prices
 # -------------------------------
 def shop_interface(player):
     # Base shop prices (before adjustment).
@@ -239,12 +240,16 @@ def shop_interface(player):
         "Steel Sword": 1,
         "Bleed Enchantment": 1
     }
-    # Calculate reputation-based multiplier.
-    multiplier = 1 + ((100 - player.reputation) / 100)
-    # Adjust prices.
-    adjusted_prices = {item: int(price * multiplier) for item, price in shop_inventory.items()}
+    # Calculate adjusted prices using the new formula:
+    # adjusted_price = base_price * ((100 - player.reputation) / 5)
+    # But we want items to stay at base value at full reputation, so add 1 multiplier:
+    # Final formula: adjusted_price = base_price * (1 + ((100 - player.reputation) / 5))
+    adjusted_prices = {item: int(price * (1 + ((100 - player.reputation) / 5)))
+                       for item, price in shop_inventory.items()}
+
     print("\n--- Welcome to the Shop ---")
-    print(f"Due to your reputation, prices are multiplied by {multiplier:.2f}.")
+    print("Prices are adjusted based on your reputation.")
+    print("Formula: adjusted_price = base_price * (1 + ((100 - current_reputation) / 5))")
     while True:
         print(f"\nYou have {player.gold} gold coins and your reputation is {player.reputation}/100.")
         print("Items available:")
@@ -260,7 +265,7 @@ def shop_interface(player):
             print("You leave the shop and head back out into the world.")
             break
         elif choice.startswith("steal "):
-            item_to_steal = choice[6:]
+            item_to_steal = choice[6:]  # the rest of the string after "steal "
             if item_to_steal in shop_inventory:
                 if shop_stock[item_to_steal] <= 0:
                     print(f"Sorry, there is no stock left of {item_to_steal} to steal.")
@@ -534,7 +539,6 @@ def main():
     
     if player.hp <= 0:
         print("\nYour journey has ended. Better luck next time!")
-
 # -------------------------------
 # Run the Game
 # -------------------------------
