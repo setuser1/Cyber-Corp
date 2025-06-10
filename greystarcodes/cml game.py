@@ -11,21 +11,29 @@ class Player:
         self.name = name
         self.role = role  # "Warrior" or "Mage"
         self.level = 1
-        self.max_hp = 100
-        self.hp = self.max_hp
+        # Set base stats based on class.
+        if self.role == "Mage":
+            self.max_hp = 75           # Lower base HP for mage.
+            self.hp = self.max_hp
+            self.attack = 7            # Lower physical attack for mage.
+            self.max_mana = 50         # Mage mana.
+            self.mana = 50
+            # Starter items for Mage: 2 Mana Potions.
+            self.inventory = ["Mana Potion", "Mana Potion"]
+            # New: Mage spell power bonus (adds to spell damage)
+            self.spell_power = 0
+        else:
+            self.max_hp = 100
+            self.hp = self.max_hp
+            self.attack = 10
+            self.max_mana = 0
+            self.mana = 0
+            # Starter items for Warrior: Steel Sword and Health Potion.
+            self.inventory = ["Steel Sword", "Health Potion"]
         self.xp = 0
-        self.attack = 10
-        self.inventory = []
         self.gold = 0                 # Player gold
         self.reputation = 100         # Player reputation (0-100)
         self.stat_points = 0          # Stat points available for allocation
-        # For mage: add mana attributes; for Warrior, these remain 0.
-        if self.role == "Mage":
-            self.max_mana = 50
-            self.mana = 50
-        else:
-            self.max_mana = 0
-            self.mana = 0
         # Bleed chance and effects.
         self.bleed_chance = 0
         self.bleed_turns = 0
@@ -51,6 +59,7 @@ class Player:
         print(f"Attack: {self.attack}")
         if self.role == "Mage":
             print(f"Mana: {self.mana}/{self.max_mana}")
+            print(f"Spell Power Bonus: {self.spell_power}")
         print(f"XP: {self.xp}/100")
         print(f"Gold: {self.gold}")
         print(f"Reputation: {self.reputation}/100")
@@ -59,7 +68,7 @@ class Player:
         if self.bleed_chance > 0:
             print(f"Weapon Enchantment: Bleed (Chance: {self.bleed_chance}%)")
         print("=======================\n")
-
+        
 class Enemy:
     def __init__(self, name, hp, attack, xp_reward, has_bleed_enchantment=False):
         self.name = name
@@ -91,6 +100,7 @@ def save_game(player):
         "stat_points": player.stat_points,
         "max_mana": player.max_mana,
         "mana": player.mana,
+        "spell_power": player.spell_power if player.role == "Mage" else 0,
         "bleed_chance": player.bleed_chance,
         "bleed_turns": player.bleed_turns,
         "bleed_damage": player.bleed_damage
@@ -115,6 +125,8 @@ def load_game():
         player.stat_points = save_data["stat_points"]
         player.max_mana = save_data.get("max_mana", 0)
         player.mana = save_data.get("mana", 0)
+        if player.role == "Mage":
+            player.spell_power = save_data.get("spell_power", 0)
         player.bleed_chance = save_data["bleed_chance"]
         player.bleed_turns = save_data["bleed_turns"]
         player.bleed_damage = save_data["bleed_damage"]
@@ -213,7 +225,7 @@ def guard_encounter(player):
                 player.reputation = 0
 
 # -------------------------------
-# Mage Spell Casting Function
+# Mage Spell Casting Function (with Spell Power Upgrade)
 # -------------------------------
 def mage_cast_spell(player, enemy):
     print("\n*** Spell Casting ***")
@@ -226,20 +238,30 @@ def mage_cast_spell(player, enemy):
             print("Not enough mana to cast Fireball!")
             return False
         player.mana -= 10
-        damage = random.randint((player.attack // 2) + 10, player.attack + 10)
+        base_damage = random.randint((player.attack // 2) + 10, player.attack + 10)
+        # Add spell power bonus.
+        damage = base_damage + player.spell_power
+        # If enemy is a guard, halve the damage.
+        if enemy.name == "Guard":
+            damage //= 2
+            print("The Magic Suppression Array in effect weakens your Fireball!")
         enemy.hp -= damage
         print(f"You cast Fireball for {damage} damage!")
-        return False  # Enemy may counterattack as usual.
+        return False
     elif spell_choice == "2":
         if player.mana < 5:
             print("Not enough mana to cast Ice Blast!")
             return False
         player.mana -= 5
-        damage = random.randint(3, 7)
+        base_damage = random.randint(3, 7)
+        damage = base_damage + player.spell_power
+        if enemy.name == "Guard":
+            damage //= 2
+            print("The Magic Suppression Array in effect weakens your Ice Blast!")
         enemy.hp -= damage
         print(f"You cast Ice Blast for {damage} damage!")
-        print("The enemy is chilled!")
-        return False  # Unlike before, Ice Blast no longer prevents a counterattack.
+        # Ice Blast no longer prevents counterattack.
+        return False
     else:
         print("Invalid spell selection.")
         return False
@@ -280,6 +302,7 @@ def battle_inventory(player):
         elif item == "Magic Scroll":
             if player.role == "Mage":
                 bonus = 10
+                # Now, for mage, Magic Scroll increases mana instead.
                 player.max_mana += bonus
                 player.mana += bonus
                 print(f"\nYou use a {item} and your mana increases by {bonus} permanently!")
@@ -291,6 +314,13 @@ def battle_inventory(player):
             bonus = 5
             player.attack += bonus
             print(f"\nYou wield the {item} expertly, increasing your attack by {bonus} permanently!")
+        elif item == "Mana Potion":
+            if player.role == "Mage":
+                restore = min(20, player.max_mana - player.mana)
+                player.mana += restore
+                print(f"\nYou use a {item} and restore {restore} mana!")
+            else:
+                print(f"\nThe {item} has no effect for a Warrior!")
         elif item == "Bleed Enchantment":
             if player.bleed_chance == 0:
                 player.bleed_chance = 10
@@ -322,10 +352,12 @@ def shop_interface(player):
         "Steel Sword": 1,
         "Bleed Enchantment": 1
     }
-    # Adjusted price formula: adjusted_price = base_price * (1 + ((100 - current_reputation) / 5))
+    # Pricing formula: adjusted_price = base_price * (1 + ((100 - current_reputation) / 5))
     adjusted_prices = {item: int(price * (1 + ((100 - player.reputation) / 5)))
                        for item, price in shop_inventory.items()}
     print("\n--- Welcome to the Shop ---")
+    if player.role == "Mage":
+        print("Notice: A Magic Suppression Array is active here! Your spells against guards will deal half damage.")
     print("Prices are adjusted based on your reputation.")
     print("Formula: adjusted_price = base_price * (1 + ((100 - current_reputation) / 5))")
     while True:
@@ -561,15 +593,16 @@ def allocate_stats(player):
     print("2. Increase Attack by 1 per point")
     if player.role == "Mage":
         print("3. Increase max Mana by 5 per point")
+        print("4. Increase Spell Power by 1 per point")
     while player.stat_points > 0:
         print(f"\nRemaining stat points: {player.stat_points}")
         if player.role == "Mage":
-            choice = input("Enter 1 for HP, 2 for Attack, 3 for Mana, or 'q' to quit allocation: ").strip().lower()
+            choice = input("Enter 1 for HP, 2 for Attack, 3 for Mana, 4 for Spell Power, or 'q' to quit allocation: ").strip().lower()
         else:
             choice = input("Enter 1 for HP, 2 for Attack, or 'q' to quit allocation: ").strip().lower()
         if choice == '1':
             player.max_hp += 4
-            player.hp += 4
+            player.hp += 4  # Increase current HP as well.
             player.stat_points -= 1
             print("Increased max HP by 4.")
         elif choice == '2':
@@ -581,6 +614,10 @@ def allocate_stats(player):
             player.mana += 5
             player.stat_points -= 1
             print("Increased max Mana by 5.")
+        elif choice == '4' and player.role == "Mage":
+            player.spell_power += 1
+            player.stat_points -= 1
+            print("Increased Spell Power by 1.")
         elif choice == 'q':
             break
         else:
@@ -629,6 +666,13 @@ def manage_inventory(player):
             bonus = 5
             player.attack += bonus
             print(f"\nYou wield the {item} expertly, increasing your attack by {bonus} permanently!")
+        elif item == "Mana Potion":
+            if player.role == "Mage":
+                restore = min(20, player.max_mana - player.mana)
+                player.mana += restore
+                print(f"\nYou use a {item} and restore {restore} mana!")
+            else:
+                print(f"\nThe {item} has no effect for a Warrior!")
         elif item == "Bleed Enchantment":
             if player.bleed_chance == 0:
                 player.bleed_chance = 10
