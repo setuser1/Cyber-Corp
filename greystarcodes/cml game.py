@@ -20,7 +20,7 @@ class Player:
             self.mana = 50
             # Starter items for Mage: 2 Mana Potions.
             self.inventory = ["Mana Potion", "Mana Potion"]
-            # New: Mage spell power bonus (adds to spell damage)
+            # Spell power that increases spell damage.
             self.spell_power = 0
         else:
             self.max_hp = 100
@@ -34,7 +34,7 @@ class Player:
         self.gold = 0                 # Player gold
         self.reputation = 100         # Player reputation (0-100)
         self.stat_points = 0          # Stat points available for allocation
-        # Bleed chance and effects.
+        # Bleed effects.
         self.bleed_chance = 0
         self.bleed_turns = 0
         self.bleed_damage = 0
@@ -68,7 +68,7 @@ class Player:
         if self.bleed_chance > 0:
             print(f"Weapon Enchantment: Bleed (Chance: {self.bleed_chance}%)")
         print("=======================\n")
-        
+
 class Enemy:
     def __init__(self, name, hp, attack, xp_reward, has_bleed_enchantment=False):
         self.name = name
@@ -225,7 +225,7 @@ def guard_encounter(player):
                 player.reputation = 0
 
 # -------------------------------
-# Mage Spell Casting Function (with Spell Power Upgrade)
+# Mage Spell Casting Function (with Spell Power Upgrade and Reduced Damage Against Guards)
 # -------------------------------
 def mage_cast_spell(player, enemy):
     print("\n*** Spell Casting ***")
@@ -239,12 +239,10 @@ def mage_cast_spell(player, enemy):
             return False
         player.mana -= 10
         base_damage = random.randint((player.attack // 2) + 10, player.attack + 10)
-        # Add spell power bonus.
         damage = base_damage + player.spell_power
-        # If enemy is a guard, halve the damage.
         if enemy.name == "Guard":
             damage //= 2
-            print("The Magic Suppression Array in effect weakens your Fireball!")
+            print("The Magic Suppression Array weakens your Fireball!")
         enemy.hp -= damage
         print(f"You cast Fireball for {damage} damage!")
         return False
@@ -257,10 +255,9 @@ def mage_cast_spell(player, enemy):
         damage = base_damage + player.spell_power
         if enemy.name == "Guard":
             damage //= 2
-            print("The Magic Suppression Array in effect weakens your Ice Blast!")
+            print("The Magic Suppression Array weakens your Ice Blast!")
         enemy.hp -= damage
         print(f"You cast Ice Blast for {damage} damage!")
-        # Ice Blast no longer prevents counterattack.
         return False
     else:
         print("Invalid spell selection.")
@@ -302,7 +299,6 @@ def battle_inventory(player):
         elif item == "Magic Scroll":
             if player.role == "Mage":
                 bonus = 10
-                # Now, for mage, Magic Scroll increases mana instead.
                 player.max_mana += bonus
                 player.mana += bonus
                 print(f"\nYou use a {item} and your mana increases by {bonus} permanently!")
@@ -344,13 +340,15 @@ def shop_interface(player):
         "Health Potion": 10,
         "Magic Scroll": 15,
         "Steel Sword": 20,
-        "Bleed Enchantment": 25
+        "Bleed Enchantment": 25,
+        "Mana Potion": 12
     }
     shop_stock = {
         "Health Potion": 3,
         "Magic Scroll": 2,
         "Steel Sword": 1,
-        "Bleed Enchantment": 1
+        "Bleed Enchantment": 1,
+        "Mana Potion": 2
     }
     # Pricing formula: adjusted_price = base_price * (1 + ((100 - current_reputation) / 5))
     adjusted_prices = {item: int(price * (1 + ((100 - player.reputation) / 5)))
@@ -447,7 +445,7 @@ def battle(player, enemy):
                 print(f"You earned {enemy.xp_reward} XP!")
                 player.level_up()
                 if random.random() < 0.3:
-                    item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment"])
+                    item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment", "Mana Potion"])
                     player.inventory.append(item)
                     print(f"You found a {item} on the enemy!")
                 if random.random() < 0.20:
@@ -472,7 +470,7 @@ def battle(player, enemy):
                 print(f"You earned {enemy.xp_reward} XP!")
                 player.level_up()
                 if random.random() < 0.3:
-                    item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment"])
+                    item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment", "Mana Potion"])
                     player.inventory.append(item)
                     print(f"You found a {item} on the enemy!")
                 if random.random() < 0.20:
@@ -495,7 +493,7 @@ def battle(player, enemy):
                 print(f"You earned {enemy.xp_reward} XP!")
                 player.level_up()
                 if random.random() < 0.3:
-                    item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment"])
+                    item = random.choice(["Health Potion", "Magic Scroll", "Steel Sword", "Bleed Enchantment", "Mana Potion"])
                     player.inventory.append(item)
                     print(f"You found a {item} on the enemy!")
                 if random.random() < 0.20:
@@ -602,7 +600,7 @@ def allocate_stats(player):
             choice = input("Enter 1 for HP, 2 for Attack, or 'q' to quit allocation: ").strip().lower()
         if choice == '1':
             player.max_hp += 4
-            player.hp += 4  # Increase current HP as well.
+            player.hp += 4  # Increase current HP.
             player.stat_points -= 1
             print("Increased max HP by 4.")
         elif choice == '2':
@@ -690,7 +688,7 @@ def manage_inventory(player):
     input("Press Enter to continue...")
 
 # -------------------------------
-# Main Game Loop
+# Main Game Loop with Mana Regeneration for Mages
 # -------------------------------
 def main():
     print("========================================")
@@ -718,6 +716,12 @@ def main():
         player = Player(name, role=role)
     
     while player.hp > 0:
+        # If player is Mage and not in combat, regenerate mana.
+        if player.role == "Mage":
+            player.mana = min(player.max_mana, player.mana + 5)
+            # Regeneration notice (can be commented out if too spammy)
+            print(f"(Your mana regenerates by 5. Current Mana: {player.mana}/{player.max_mana})")
+        
         print("\nWhat would you like to do next?")
         print("1. Explore")
         print("2. Check Status")
