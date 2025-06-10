@@ -3,6 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <dirent.h>
+#include <sys/wait.h>
 
 #define BUFF 1024
 
@@ -181,6 +182,21 @@ int main() {
                 if (rmdir_recursive(dirname) != 0) {
                     fprintf(stderr, "rmdir: failed to remove '%s'\n", dirname);
                 }
+            }
+        } else if (strncmp(input, "./", 2) == 0) {
+            pid_t pid = fork();
+            if (pid == 0) {
+                // Child process
+                char *argv_exec[] = {input, NULL};
+                execve(input, argv_exec, NULL);
+                perror("execve failed");
+                exit(1);
+            } else if (pid > 0) {
+                // Parent process
+                int status;
+                waitpid(pid, &status, 0);
+            } else {
+                perror("fork failed");
             }
         } else {
             printf("Unknown command: %s\n", input);
