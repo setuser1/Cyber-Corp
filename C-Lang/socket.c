@@ -6,13 +6,6 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
-struct sockaddr_in {
-    unsigned short sin_family; // Address family (AF_INET)
-    unsigned short sin_port;   // Port number (in network byte order)
-    struct in_addr sin_addr;   // Internet address (IP address)
-    char sin_zero[8];          // Padding to make the structure size equal to sockaddr
-};
-
 struct socket_info {
     int socket_fd;
     socklen_t addr_len;
@@ -72,13 +65,20 @@ int accept_connection(int socket_fd, struct sockaddr_in *client_addr) {
 }
 
 int main() {
-    struct socket_info server = serv("127.0.0.1", 8080);
+    struct socket_info server = serv("127.0.0.1", 80);
     if (server.socket_fd < 0) return 1;
 
     struct sockaddr_in client_addr;
     int client_fd = accept_connection(server.socket_fd, &client_addr);
     if (client_fd >= 0) {
         printf("Accepted a connection!\n");
+        const char *msg = "HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nHello, World!";
+        const char *html = "<!DOCTYPE html><html><body><h1>Hello, World!</h1></body></html>";
+        char response[1024];
+        snprintf(response, sizeof(response),
+            "HTTP/1.1 200 OK\r\nContent-Length: %zu\r\nContent-Type: text/html\r\n\r\n%s",
+            strlen(html), html);
+        send(client_fd, response, strlen(response), 0);
         close(client_fd);
     }
 
