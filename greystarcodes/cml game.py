@@ -19,6 +19,8 @@ class Player:
         self.inventory = []
         self.stat_points = 0
         self.bleed_chance = 0
+        self.quests = []
+
 
         if role == "Mage":
             self.max_mana = 50
@@ -48,6 +50,43 @@ class Enemy:
         self.attack = attack
         self.xp_reward = xp_reward
         self.has_bleed_enchantment = has_bleed_enchantment
+
+
+# -------------------------------
+# Quests
+# -------------------------------
+
+QUESTS = [
+    {"id": 1, "name": "First Blood", "desc": "Defeat 1 enemy", "type": "kill", "goal": 1, "progress": 0, "completed": False, "reward": "Health Potion"},
+    {"id": 2, "name": "Hunter", "desc": "Defeat 5 enemies", "type": "kill", "goal": 5, "progress": 0, "completed": False, "reward": "Steel Sword"},
+    {"id": 3, "name": "Survivor", "desc": "Reach level 3", "type": "level", "goal": 3, "completed": False, "reward": "Magic Scroll"},
+]
+
+def assign_quests(player):
+    for quest in QUESTS:
+        if quest not in player.quests:
+            player.quests.append(dict(quest))  # deep copy
+
+def check_quests(player, type_, value=1):
+    for quest in player.quests:
+        if quest["completed"]:
+            continue
+        if quest["type"] == type_:
+            if type_ == "kill":
+                quest["progress"] += value
+            elif type_ == "level" and player.level >= quest["goal"]:
+                quest["progress"] = quest["goal"]
+        if quest["progress"] >= quest["goal"]:
+            quest["completed"] = True
+            player.inventory.append(quest["reward"])
+            print(f"\nQuest Complete: {quest['name']}! You received a {quest['reward']}!")
+
+def show_quests(player):
+    print("\n==== Quest Log ====")
+    for quest in player.quests:
+        status = "✔" if quest["completed"] else f"{quest.get('progress', 0)}/{quest['goal']}"
+        print(f"{quest['name']} - {quest['desc']} ({status})")
+    input("Press Enter to continue...")
 
 # -------------------------------
 # Battle System
@@ -111,6 +150,8 @@ def battle(player, enemy):
         print(f"You gained {enemy.xp_reward} XP!")
         if player.xp >= player.level * 100:
             level_up(player)
+        check_quests(player, "kill")
+
     else:
         print("\nYou have fallen in battle.")
 
