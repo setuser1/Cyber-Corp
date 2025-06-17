@@ -133,21 +133,72 @@ def level_up(player):
 # Save/Load Game
 # -------------------------------
 def save_game(player):
-    data = player.__dict__
-    with open("save_game.json", "w") as f:
-        json.dump(data, f)
-    print("Game saved.")
+    save_data = {
+        "name": player.name,
+        "role": player.role,
+        "level": player.level,
+        "xp": player.xp,
+        "xp_to_level": player.xp_to_level,
+        "hp": player.hp,
+        "max_hp": player.max_hp,
+        "attack": player.attack,
+        "inventory": player.inventory,
+        "stat_points": player.stat_points,
+        "bleed_chance": player.bleed_chance
+    }
+
+    if player.role == "Mage":
+        save_data.update({
+            "mana": player.mana,
+            "max_mana": player.max_mana,
+            "spell_power": player.spell_power
+        })
+
+    filename = f"save_{player.name.lower()}.json"
+    with open(filename, "w") as f:
+        json.dump(save_data, f)
+    print(f"\nGame saved successfully to {filename}!")
+
 
 def load_game():
-    try:
-        with open("save_game.json", "r") as f:
-            data = json.load(f)
-            player = Player(data['name'], data['role'])
-            player.__dict__.update(data)
-            return player
-    except:
-        print("Failed to load saved game.")
+    saves = [f for f in os.listdir() if f.startswith("save_") and f.endswith(".json")]
+    if not saves:
+        print("No save files found.")
         return None
+
+    print("\nAvailable Save Files:")
+    for idx, file in enumerate(saves, 1):
+        print(f"{idx}. {file}")
+
+    try:
+        choice = int(input("Enter the number of the save file to load: "))
+        selected_file = saves[choice - 1]
+    except (ValueError, IndexError):
+        print("Invalid selection.")
+        return None
+
+    with open(selected_file, "r") as f:
+        data = json.load(f)
+
+    player = Player(
+        name=data["name"],
+        role=data["role"],
+        level=data["level"],
+        xp=data["xp"],
+        xp_to_level=data["xp_to_level"],
+        hp=data["hp"],
+        max_hp=data["max_hp"],
+        attack=data["attack"],
+        inventory=data["inventory"],
+        stat_points=data["stat_points"],
+        bleed_chance=data["bleed_chance"],
+        mana=data.get("mana", 0),
+        max_mana=data.get("max_mana", 0),
+        spell_power=data.get("spell_power", 0)
+    )
+    print(f"\nGame loaded successfully from {selected_file}!")
+    return player
+
 
 # -------------------------------
 # City Visit (Placeholder)
