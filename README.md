@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SERSD-Cyber-Class
 ## Programming
 
@@ -14,3 +15,7 @@ Key/Legend:
 .ll = LLVM
 
 .asm = Assembly
+=======
+# Final Products
+## All final files are here
+>>>>>>> 2ee80ce (Update README.md)
