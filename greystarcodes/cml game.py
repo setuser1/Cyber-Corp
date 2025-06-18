@@ -1,3 +1,5 @@
+#save function update
+
 import os
 import random
 import json
@@ -247,6 +249,13 @@ def manage_inventory(player):
 def save_game(player):
     filename = input("Enter a name for your save file: ").strip() or "save_game"
     filepath = f"{filename}.json"
+
+    if os.path.exists(filepath):
+        confirm = input("A save with this name already exists. Overwrite? (y/n): ").strip().lower()
+        if confirm != 'y':
+            print("Save cancelled.")
+            return
+
     with open(filepath, "w") as f:
         json.dump(player.__dict__, f)
     print("Game saved!")
