@@ -1,5 +1,3 @@
-#bugged version, still being fixed
-
 import os
 import random
 import json
@@ -47,13 +45,16 @@ class Enemy:
 QUESTS = [
     {"id": 1, "name": "First Blood", "desc": "Defeat 1 enemy", "type": "kill", "goal": 1, "progress": 0, "completed": False, "reward": "Health Potion"},
     {"id": 2, "name": "Hunter", "desc": "Defeat 5 enemies", "type": "kill", "goal": 5, "progress": 0, "completed": False, "reward": "Steel Sword"},
-    {"id": 3, "name": "Survivor", "desc": "Reach level 3", "type": "level", "goal": 3, "completed": False, "reward": "Magic Scroll"},
+    {"id": 3, "name": "Survivor", "desc": "Reach level 3", "type": "level", "goal": 3, "progress": 0, "completed": False, "reward": "Magic Scroll"},
 ]
 
 def assign_quests(player):
     for quest in QUESTS:
-        if quest not in player.quests:
-            player.quests.append(dict(quest))
+        quest_copy = dict(quest)  # Make a copy
+        if "progress" not in quest_copy:
+            quest_copy["progress"] = 0
+        if quest_copy not in player.quests:
+            player.quests.append(quest_copy)
 
 def check_quests(player, type_, value=1):
     for quest in player.quests:
