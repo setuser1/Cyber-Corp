@@ -1,10 +1,6 @@
-## SERSD-Cyber-Class
+# Welcome to the testing branch
 
-_Programming_
-
-This repository is for Cyber shop.
-
-This repository currently consists of 6 people.
+## Very top secret!!!
 
 Key/Legend:
 
@@ -15,7 +11,3 @@ Key/Legend:
   .ll = LLVM
 
   .asm = Assembly
-
-
-
-# People pEPoeopeo {eople, Listen here guys, Your leader setuser1 is here to inform you that your coding lang sucks compared to C and asm.
