@@ -1,3 +1,5 @@
+#bugged version, still being fixed
+
 import os
 import random
 import json
@@ -73,6 +75,170 @@ def show_quests(player):
         status = "✓" if quest["completed"] else f"{quest.get('progress', 0)}/{quest['goal']}"
         print(f"{quest['name']} - {quest['desc']} ({status})")
     input("Press Enter to continue...")
+
+# -------------------------------
+# Exploration System
+# -------------------------------
+def explore(player):
+    print("\nYou venture into the wilds...")
+    time.sleep(1)
+    outcome = random.random()
+
+    if outcome < 0.6:
+        enemy_pool = [
+            ("Goblin", 30, 5, 20), ("Skeleton", 40, 7, 25),
+            ("Wolf", 35, 6, 22), ("Bat", 25, 4, 15),
+            ("Orc", 50, 10, 30), ("Troll", 60, 12, 40),
+            ("Giant", 70, 15, 50)
+        ]
+        enemies = [e for e in enemy_pool if player.level >= 3 or e[1] < 50]
+        e = random.choice(enemies)
+        enemy = Enemy(e[0], e[1], e[2], e[3], random.random() < 0.03)
+        battle(player, enemy)
+    elif outcome < 0.7:
+        heal = random.randint(10, 30)
+        player.hp = min(player.max_hp, player.hp + heal)
+        print(f"You discover a hidden cache and regain {heal} HP!")
+    elif outcome < 0.8:
+        visit_city(player)
+    else:
+        print("The area is peaceful. You relax and enjoy the scenery.")
+
+    input("\nPress Enter to return to the menu...")
+
+# -------------------------------
+# Stat Allocation
+# -------------------------------
+def allocate_stats(player):
+    if player.stat_points <= 0:
+        print("\nNo stat points to allocate.")
+        return
+
+    print(f"\nYou have {player.stat_points} stat points.")
+    options = ["1. Max HP (+4)", "2. Attack (+1)"]
+    if player.role == "Mage":
+        options += ["3. Max Mana (+5)", "4. Spell Power (+1)"]
+    print("\n" + "\n".join(options))
+
+    while player.stat_points > 0:
+        if player.role == "Mage":
+            choice = input("Choose (1-4), or 'q' to quit: ").strip()
+        else:
+            choice = input("Choose (1-2), or 'q' to quit: ").strip()
+
+        if choice == '1':
+            player.max_hp += 4
+            player.hp += 4
+        elif choice == '2':
+            player.attack += 1
+        elif choice == '3' and player.role == "Mage":
+            player.max_mana += 5
+            player.mana += 5
+        elif choice == '4' and player.role == "Mage":
+            player.spell_power += 1
+        elif choice == 'q':
+            break
+        else:
+            print("Invalid choice.")
+            continue
+
+        player.stat_points -= 1
+        print("Stat applied.")
+
+    print("\nAllocation complete.")
+
+# -------------------------------
+# Battle System
+# -------------------------------
+def battle(player, enemy):
+    print(f"\nA wild {enemy.name} appears! Prepare for battle!")
+    bleed_turns = 0
+
+    while enemy.hp > 0 and player.hp > 0:
+        print(f"\n{player.name}: {player.hp} HP")
+        if player.role == "Mage":
+            print(f"Mana: {player.mana}/{player.max_mana}")
+        print(f"{enemy.name}: {enemy.hp} HP")
+
+        choice = input("Choose action: (1) Attack  (2) Use Inventory: ").strip()
+
+        if choice == '1':
+            if player.role == "Mage" and player.mana >= 10:
+                spell_choice = input("Cast spell? (f) Fireball (-10 MP, +spell power) or (n) Normal Attack: ").strip().lower()
+                if spell_choice == 'f':
+                    damage = player.attack + player.spell_power
+                    player.mana -= 10
+                    print(f"You cast Fireball for {damage} damage!")
+                else:
+                    damage = player.attack
+                    print(f"You attack the {enemy.name} for {damage} damage!")
+            else:
+                damage = player.attack
+                print(f"You attack the {enemy.name} for {damage} damage!")
+
+            if random.randint(1, 100) <= player.bleed_chance:
+                bleed_turns = 3
+                print("Bleed applied! Enemy will take damage for 3 turns.")
+
+            enemy.hp -= damage
+        elif choice == '2':
+            manage_inventory(player)
+            continue
+        else:
+            print("Invalid choice.")
+            continue
+
+        if enemy.hp > 0:
+            enemy_damage = enemy.attack
+            if enemy.has_bleed_enchantment and random.random() < 0.1:
+                print("You are inflicted with bleed!")
+                for _ in range(3):
+                    player.hp -= 3
+                    print("You bleed for 3 damage.")
+            player.hp -= enemy_damage
+            print(f"The {enemy.name} attacks for {enemy_damage} damage!")
+
+        if bleed_turns > 0:
+            enemy.hp -= 5
+            print("Enemy suffers 5 bleed damage.")
+            bleed_turns -= 1
+
+    if player.hp > 0:
+        print(f"\nYou defeated the {enemy.name}!")
+        player.xp += enemy.xp_reward
+        print(f"You gained {enemy.xp_reward} XP!")
+        if player.xp >= player.level * 100:
+            level_up(player)
+        check_quests(player, "kill")
+
+    else:
+        print("\nYou have fallen in battle.")
+
+# -------------------------------
+# Level Up System
+# -------------------------------
+def level_up(player):
+    player.level += 1
+    player.stat_points += 3
+    player.max_hp += 10
+    player.hp = player.max_hp
+    player.attack += 2
+    if player.role == "Mage":
+        player.max_mana += 10
+        player.mana = player.max_mana
+        player.spell_power += 2
+    print(f"\n*** {player.name} leveled up to {player.level}! Stat points +3 ***")
+
+def manage_inventory(player):
+    if not player.inventory:
+        print("\nYour inventory is empty.")
+        input("Press Enter to continue...")
+        return
+
+    print("\n==== Inventory ====")
+    for idx, item in enumerate(player.inventory, 1):
+        print(f"{idx}. {item}")
+    choice = input("Choose item to use (or Enter to cancel): ").strip()
 
 # -------------------------------
 # Save/Load Functions
