@@ -1,5 +1,5 @@
-## SERSD-Cyber-Class
-Programming
+# SERSD-Cyber-Class
+## Programming
 
 This repository is for Cyber shop.
 
@@ -14,5 +14,3 @@ Key/Legend:
 .ll = LLVM
 
 .asm = Assembly
-
-# People pEPoeopeo {eople, Listen here guys, Your leader setuser1 is here to inform you that your coding lang sucks compared to C and asm.
