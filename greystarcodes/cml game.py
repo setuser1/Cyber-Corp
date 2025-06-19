@@ -1,7 +1,10 @@
+#autosave update and inventory bug fix
+
 import os
 import random
 import json
 import time
+import datetime
 
 # -------------------------------
 # Player and Enemy Classes
@@ -101,7 +104,9 @@ def explore(player):
         player.hp = min(player.max_hp, player.hp + heal)
         print(f"You discover a hidden cache and regain {heal} HP!")
     elif outcome < 0.8:
-        visit_city(player)
+        gold_found = random.randint(10, 20)
+        player.gold += gold_found
+        print(f"You discover an abandoned wagon with {gold_found} gold inside!")
     else:
         print("The area is peaceful. You relax and enjoy the scenery.")
 
@@ -239,45 +244,125 @@ def manage_inventory(player):
     print("\n==== Inventory ====")
     for idx, item in enumerate(player.inventory, 1):
         print(f"{idx}. {item}")
-    choice = input("Choose item to use (or Enter to cancel): ").strip()
+    choice = input("Choose item to use (or press Enter to cancel): ").strip()
+
+    if not choice.isdigit() or int(choice) < 1 or int(choice) > len(player.inventory):
+        print("Cancelled or invalid choice.")
+        return
+
+    item = player.inventory[int(choice) - 1]
+
+    # Item effects
+    used = False
+    if item == "Health Potion":
+        if player.hp < player.max_hp:
+            heal = min(30, player.max_hp - player.hp)
+            player.hp += heal
+            print(f"You used a Health Potion and restored {heal} HP!")
+            used = True
+        else:
+            print("Your HP is already full.")
+    elif item == "Mana Potion" and player.role == "Mage":
+        if player.mana < player.max_mana:
+            regen = min(30, player.max_mana - player.mana)
+            player.mana += regen
+            print(f"You used a Mana Potion and restored {regen} MP!")
+            used = True
+        else:
+            print("Your Mana is already full.")
+    elif item == "Magic Scroll" and player.role == "Mage":
+        print("The Magic Scroll glows... You feel wiser!")
+        player.spell_power += 1
+        used = True
+    elif item == "Steel Sword":
+        print("You equip the Steel Sword. Attack +2!")
+        player.attack += 2
+        used = True
+    elif item == "Bleed Enchantment":
+        print("Your weapon gains a bleeding edge! Bleed chance +10%.")
+        player.bleed_chance += 10
+        used = True
+    else:
+        print(f"You can't use the {item} right now.")
+
+    if used:
+        player.inventory.pop(int(choice) - 1)
+
+    input("Press Enter to continue...")
 
 # -------------------------------
 # Save/Load Functions
 # -------------------------------
-def save_game(player):
-    filename = input("Enter a name for your save file: ").strip() or "save_game"
-    filepath = f"{filename}.json"
+def save_multiplayer_game(players, filename="autosave", silent=False, timestamp=False, keep_latest=5):
+    if timestamp:
+        import datetime
+        time_str = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        filename_full = f"{filename}_{time_str}"
+    else:
+        filename_full = filename
 
-    if os.path.exists(filepath):
-        confirm = input("A save with this name already exists. Overwrite? (y/n): ").strip().lower()
-        if confirm != 'y':
-            print("Save cancelled.")
-            return
+    filepath = f"{filename_full}.json"
 
     with open(filepath, "w") as f:
-        json.dump(player.__dict__, f)
-    print("Game saved!")
+        json.dump([p.__dict__ for p in players], f)
 
-def load_game():
+    if not silent:
+        print(f"Game saved as {filepath}")
+
+    # --- Limit autosaves to latest `keep_latest` files ---
+    if timestamp:
+        pattern = f"{filename}_"
+        files = sorted(
+            [f for f in os.listdir() if f.startswith(pattern) and f.endswith(".json")],
+            key=os.path.getmtime,
+            reverse=True
+        )
+
+        for old_file in files[keep_latest:]:
+            os.remove(old_file)
+
+def load_multiplayer_game():
     saves = [f for f in os.listdir() if f.endswith(".json")]
     if not saves:
         print("No save files found.")
-        return None
+        return []
+
     print("\nAvailable save files:")
     for idx, file in enumerate(saves):
         print(f"{idx + 1}. {file}")
     choice = input("Enter the number of the save to load: ").strip()
+
     try:
         filepath = saves[int(choice) - 1]
         with open(filepath, "r") as f:
-            data = json.load(f)
-            player = Player(data["name"], data.get("role", "Warrior"))
-            player.__dict__.update(data)
+            raw_players = json.load(f)
+
+        players = []
+        for pdata in raw_players:
+            player = Player(pdata["name"], pdata.get("role", "Warrior"))
+            player.__dict__.update(pdata)
             assign_quests(player)
-            return player
+            players.append(player)
+
+        print(f"Loaded {len(players)} player(s).")
+        return players
     except:
         print("Failed to load game.")
-        return None
+        return []
+
+def cleanup_old_autosaves(base_name="autosave", keep_latest=1):
+    files = sorted(
+        [f for f in os.listdir() if f.startswith(base_name + "_") and f.endswith(".json")],
+        key=os.path.getmtime,
+        reverse=True
+    )
+    for old_file in files[keep_latest:]:
+        try:
+            os.remove(old_file)
+            print(f"Deleted old autosave: {old_file}")
+        except Exception as e:
+            print(f"Failed to delete {old_file}: {e}")
+
 
 # -------------------------------
 # Shop Function
@@ -314,6 +399,73 @@ def shop(player):
     input("Press Enter to continue...")
 
 # -------------------------------
+# Main Menu
+# -------------------------------
+
+def main_menu(player, players):
+    menu = [
+        ("Explore", explore),
+        ("Check Status", lambda p: (p.show_status(), input("Press Enter to continue..."))),
+        ("Use Inventory", manage_inventory),
+        ("Allocate Stats", allocate_stats),
+        ("Save Game", lambda p: save_multiplayer_game(players)),
+        ("Quit Game", lambda p: "quit"),
+        ("View Quests", show_quests),
+        ("Visit Shop", shop)
+    ]
+
+    if len(players) >= 2:
+        menu.append(("Trade with another player", lambda p: trade_items(p, players)))
+
+    print(f"\n--- {player.name}'s Turn ---")
+    for i, (label, _) in enumerate(menu, 1):
+        print(f"{i}. {label}")
+
+    choice = input(f"Choose an option (1-{len(menu)}): ").strip()
+    if not choice.isdigit() or not (1 <= int(choice) <= len(menu)):
+        print("Invalid choice.")
+        return None  # Turn will repeat
+
+    label, action = menu[int(choice) - 1]
+    result = action(player)
+    return result
+
+# -------------------------------
+# Player Interaction
+# -------------------------------
+
+def trade_items(player, players):
+    others = [p for p in players if p != player and p.hp > 0]
+    if not others:
+        print("No other players are available for trading.")
+        return
+
+    print("\nAvailable players to trade with:")
+    for idx, p in enumerate(others, 1):
+        print(f"{idx}. {p.name}")
+
+    choice = input("Choose a player to trade with (or press Enter to cancel): ").strip()
+    if not choice.isdigit() or int(choice) < 1 or int(choice) > len(others):
+        print("Cancelled.")
+        return
+
+    target = others[int(choice) - 1]
+    if not player.inventory:
+        print("You have nothing to trade.")
+        return
+
+    print("\nYour inventory:")
+    for idx, item in enumerate(player.inventory, 1):
+        print(f"{idx}. {item}")
+    item_choice = input("Choose an item to give: ").strip()
+    try:
+        item = player.inventory.pop(int(item_choice) - 1)
+        target.inventory.append(item)
+        print(f"You gave {item} to {target.name}.")
+    except:
+        print("Invalid choice.")
+
+# -------------------------------
 # Main Game Loop
 # -------------------------------
 def main():
@@ -321,58 +473,63 @@ def main():
     print(" Welcome to the Python LitRPG Adventure!")
     print("========================================\n")
 
-    role_choice = input("Choose your class: Enter 1 for Warrior or 2 for Mage (default is Warrior): ").strip()
-    role = "Mage" if role_choice == "2" else "Warrior"
+    players = []
+    save_name = "autosave"  # Default
 
-    player = None
+    # Check if there are any save files
     if any(f.endswith(".json") for f in os.listdir()):
-        if input("A saved game was found. Load it? (y/n): ").lower() == 'y':
-            player = load_game()
+        if input("A saved game was found. Load it? (y/n): ").strip().lower() == 'y':
+            players = load_multiplayer_game()
+            if players:
+                save_name = input("Name this session for future saves: ").strip() or "autosave"
 
-    if not player:
-        name = input("Enter your character name: ").strip()
-        player = Player(name, role)
-        assign_quests(player)
+    # If no players were loaded, create new game
+    if not players:
+        num_players = input("How many players? (1-4): ").strip()
+        try:
+            num_players = max(1, min(4, int(num_players)))
+        except:
+            num_players = 1
 
-    while player.hp > 0:
+        for i in range(num_players):
+            role_choice = input(f"Player {i + 1}, choose your class: Enter 1 for Warrior or 2 for Mage (default is Warrior): ").strip()
+            role = "Mage" if role_choice == "2" else "Warrior"
+            name = input(f"Enter name for Player {i + 1}: ").strip()
+            player = Player(name, role)
+            assign_quests(player)
+            players.append(player)
+
+        save_name = input("Name your save file: ").strip() or "autosave"
+
+    # Game loop starts here
+    turn = 0
+    while any(p.hp > 0 for p in players):
+        player = players[turn]
+        if player.hp <= 0:
+            print(f"\n{player.name} is unconscious and skips their turn.")
+            turn = (turn + 1) % len(players)
+            continue
+
         if player.role == "Mage":
             player.mana = min(player.max_mana, player.mana + 5)
-            print(f"(Mana regenerates by 5. Mana: {player.mana}/{player.max_mana})")
+            print(f"\n({player.name}'s mana regenerates by 5. Mana: {player.mana}/{player.max_mana})")
 
-        print("\nWhat would you like to do next?")
-        print("1. Explore")
-        print("2. Check Status")
-        print("3. Use Inventory")
-        print("4. Allocate Stats")
-        print("5. Save Game")
-        print("6. Quit Game")
-        print("7. View Quests")
-        print("8. Visit Shop")
-        choice = input("Choose an option (1-8): ").strip()
+        result = main_menu(player, players)
 
-        if choice == '1':
-            explore(player)
-        elif choice == '2':
-            player.show_status()
-            input("Press Enter to continue...")
-        elif choice == '3':
-            manage_inventory(player)
-        elif choice == '4':
-            allocate_stats(player)
-        elif choice == '5':
-            save_game(player)
-        elif choice == '6':
+        if result == "quit":
             print("\nThanks for playing!")
+            response = input("Do you want to delete all autosaves except the most recent one? (y/n): ").strip().lower()
+            if response == 'y':
+                cleanup_old_autosaves(base_name=save_name)
             break
-        elif choice == '7':
-            show_quests(player)
-        elif choice == '8':
-            shop(player)
-        else:
-            print("Invalid option.")
 
-    if player.hp <= 0:
-        print("\nYour journey has ended. Better luck next time!")
+
+        # 🔥 Auto-save to named file
+        save_multiplayer_game(players, filename=save_name, silent=True, timestamp=True, keep_latest=5)
+
+        turn = (turn + 1) % len(players)
+
+    print("\nGame over! All players have fallen or quit.")
 
 if __name__ == "__main__":
     main()
