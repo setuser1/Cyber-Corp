@@ -1,4 +1,5 @@
 #autosave update and inventory bug fix
+#added same device multiplayer, hotseat
 
 import os
 import random
