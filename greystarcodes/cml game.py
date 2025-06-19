@@ -1,5 +1,3 @@
-#added revive function and a new item
-
 import os
 import random
 import json
@@ -194,9 +192,11 @@ def battle(player, enemy):
                 print("Bleed applied! Enemy will take damage for 3 turns.")
 
             enemy.hp -= damage
+
         elif choice == '2':
-            manage_inventory(player, [player])
-            continue
+            used = manage_inventory(player, [player], in_battle=True)
+            if not used:
+                continue  # Let player re-choose action
         else:
             print("Invalid choice.")
             continue
@@ -223,7 +223,6 @@ def battle(player, enemy):
         if player.xp >= player.level * 100:
             level_up(player)
         check_quests(player, "kill")
-
     else:
         print("\nYou have fallen in battle.")
 
@@ -242,28 +241,39 @@ def group_battle(players, enemy):
             else:
                 print()
 
-            choice = input(f"{p.name}'s turn - (1) Attack  (2) Inventory: ").strip()
-            if choice == '1':
-                if p.role == "Mage" and p.mana >= 10:
-                    spell_choice = input("Cast spell? (f) Fireball or (n) Normal Attack: ").strip().lower()
-                    if spell_choice == 'f':
-                        damage = p.attack + p.spell_power
-                        p.mana -= 10
-                        print(f"{p.name} casts Fireball for {damage} damage!")
+            while True:
+                choice = input(f"{p.name}'s turn - (1) Attack  (2) Inventory: ").strip()
+                if choice == '1':
+                    if p.role == "Mage" and p.mana >= 10:
+                        spell_choice = input("Cast spell? (f) Fireball or (n) Normal Attack: ").strip().lower()
+                        if spell_choice == 'f':
+                            damage = p.attack + p.spell_power
+                            p.mana -= 10
+                            print(f"{p.name} casts Fireball for {damage} damage!")
+                        else:
+                            damage = p.attack
+                            print(f"{p.name} attacks for {damage} damage!")
                     else:
                         damage = p.attack
                         print(f"{p.name} attacks for {damage} damage!")
+
+                    if random.randint(1, 100) <= p.bleed_chance:
+                        bleed_turns = 3
+                        print("Bleed applied!")
+
+                    enemy.hp -= damage
+                    break  # Turn complete
+
+                elif choice == '2':
+                    used = manage_inventory(p, players, in_battle=True)
+                    if used:
+                        break  # Turn used
+                    else:
+                        continue  # Let them act again
+
                 else:
-                    damage = p.attack
-                    print(f"{p.name} attacks for {damage} damage!")
+                    print("Invalid choice.")
 
-                if random.randint(1, 100) <= p.bleed_chance:
-                    bleed_turns = 3
-                    print("Bleed applied!")
-
-                enemy.hp -= damage
-            elif choice == '2':
-                manage_inventory(p, players)
             if enemy.hp <= 0:
                 break
 
@@ -311,12 +321,17 @@ def level_up(player):
         player.spell_power += 2
     print(f"\n*** {player.name} leveled up to {player.level}! Stat points +3 ***")
 
-def manage_inventory(player, players):
+# -------------------------------
+# Inventory
+# -------------------------------
+
+def manage_inventory(player, players, in_battle=False):
+    used = False
 
     if not player.inventory:
         print("\nYour inventory is empty.")
         input("Press Enter to continue...")
-        return
+        return used
 
     print("\n==== Inventory ====")
     for idx, item in enumerate(player.inventory, 1):
@@ -325,12 +340,10 @@ def manage_inventory(player, players):
 
     if not choice.isdigit() or int(choice) < 1 or int(choice) > len(player.inventory):
         print("Cancelled or invalid choice.")
-        return
+        return used
 
     item = player.inventory[int(choice) - 1]
 
-    # Item effects
-    used = False
     if item == "Health Potion":
         if player.hp < player.max_hp:
             heal = min(30, player.max_hp - player.hp)
@@ -339,6 +352,7 @@ def manage_inventory(player, players):
             used = True
         else:
             print("Your HP is already full.")
+
     elif item == "Mana Potion" and player.role == "Mage":
         if player.mana < player.max_mana:
             regen = min(30, player.max_mana - player.mana)
@@ -347,23 +361,27 @@ def manage_inventory(player, players):
             used = True
         else:
             print("Your Mana is already full.")
+
     elif item == "Magic Scroll" and player.role == "Mage":
         print("The Magic Scroll glows... You feel wiser!")
         player.spell_power += 1
         used = True
+
     elif item == "Steel Sword":
         print("You equip the Steel Sword. Attack +2!")
         player.attack += 2
         used = True
+
     elif item == "Bleed Enchantment":
         print("Your weapon gains a bleeding edge! Bleed chance +10%.")
         player.bleed_chance += 10
         used = True
+
     elif item == "Phoenix Feather":
         unconscious_allies = [p for p in players if p != player and p.hp <= 0]
         if not unconscious_allies:
             print("No teammates to revive.")
-            player.inventory.append(item)
+            return used  # Don’t consume turn or item
         else:
             for idx, p in enumerate(unconscious_allies, 1):
                 print(f"{idx}. {p.name}")
@@ -372,9 +390,10 @@ def manage_inventory(player, players):
                 revived = unconscious_allies[int(choice) - 1]
                 revived.hp = revived.max_hp // 2
                 print(f"{revived.name} has been revived with {revived.hp} HP!")
+                used = True
             except:
                 print("Invalid choice. Feather not used.")
-                player.inventory.append(item)
+                return used  # Don't consume turn or item if error
 
     else:
         print(f"You can't use the {item} right now.")
@@ -383,6 +402,7 @@ def manage_inventory(player, players):
         player.inventory.pop(int(choice) - 1)
 
     input("Press Enter to continue...")
+    return used
 
 # -------------------------------
 # Save/Load Functions
@@ -597,7 +617,7 @@ def main_menu(player, players):
     menu = [
         ("Explore", lambda p: explore(p, players)),
         ("Check Status", lambda p: (p.show_status(), input("Press Enter to continue..."))),
-        ("Use Inventory", lambda p: manage_inventory(p, players)),
+        ("Use Inventory", lambda p: manage_inventory(p, players, in_battle=False)),
         ("Allocate Stats", allocate_stats),
         ("Revive Teammate", lambda p: revive_teammate(p, players)),
         ("Save Game", lambda p: save_multiplayer_game(players)),
