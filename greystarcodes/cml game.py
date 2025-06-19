@@ -1,5 +1,4 @@
-#save delete function added
-#exploration function updated to be compatible with multiple players
+#added revive function and a new item
 
 import os
 import random
@@ -196,7 +195,7 @@ def battle(player, enemy):
 
             enemy.hp -= damage
         elif choice == '2':
-            manage_inventory(player)
+            manage_inventory(player, [player])
             continue
         else:
             print("Invalid choice.")
@@ -264,8 +263,7 @@ def group_battle(players, enemy):
 
                 enemy.hp -= damage
             elif choice == '2':
-                manage_inventory(p)
-
+                manage_inventory(p, players)
             if enemy.hp <= 0:
                 break
 
@@ -313,7 +311,8 @@ def level_up(player):
         player.spell_power += 2
     print(f"\n*** {player.name} leveled up to {player.level}! Stat points +3 ***")
 
-def manage_inventory(player):
+def manage_inventory(player, players):
+
     if not player.inventory:
         print("\nYour inventory is empty.")
         input("Press Enter to continue...")
@@ -360,6 +359,23 @@ def manage_inventory(player):
         print("Your weapon gains a bleeding edge! Bleed chance +10%.")
         player.bleed_chance += 10
         used = True
+    elif item == "Phoenix Feather":
+        unconscious_allies = [p for p in players if p != player and p.hp <= 0]
+        if not unconscious_allies:
+            print("No teammates to revive.")
+            player.inventory.append(item)
+        else:
+            for idx, p in enumerate(unconscious_allies, 1):
+                print(f"{idx}. {p.name}")
+            choice = input("Choose a teammate to revive: ").strip()
+            try:
+                revived = unconscious_allies[int(choice) - 1]
+                revived.hp = revived.max_hp // 2
+                print(f"{revived.name} has been revived with {revived.hp} HP!")
+            except:
+                print("Invalid choice. Feather not used.")
+                player.inventory.append(item)
+
     else:
         print(f"You can't use the {item} right now.")
 
@@ -514,34 +530,64 @@ def delete_save_file(protect_latest=True, base_name="autosave"):
 # -------------------------------
 def shop(player):
     print("\n==== Welcome to the Shop ====")
-    items_for_sale = {
+
+    # Define item prices
+    all_items = {
         "Health Potion": 20,
         "Mana Potion": 25,
         "Magic Scroll": 40,
         "Steel Sword": 50,
-        "Bleed Enchantment": 60
+        "Bleed Enchantment": 60,
+        "Phoenix Feather": 150  # Rare item for reviving teammates
     }
-    for idx, (item, price) in enumerate(items_for_sale.items(), start=1):
-        print(f"{idx}. {item} - {price} gold")
-    print("0. Leave Shop")
 
-    choice = input("Choose an item to buy or 0 to exit: ").strip()
-    if choice == "0":
-        print("You leave the shop.")
-        return
-    try:
-        idx = int(choice) - 1
-        item = list(items_for_sale.keys())[idx]
-        price = items_for_sale[item]
-        if player.gold >= price:
-            player.gold -= price
-            player.inventory.append(item)
-            print(f"You bought a {item}!")
-        else:
-            print("You don't have enough gold.")
-    except:
-        print("Invalid selection.")
-    input("Press Enter to continue...")
+    # Weighted item pool for rarity
+    weighted_pool = (
+        ["Health Potion"] * 5 +
+        ["Mana Potion"] * 4 +
+        ["Magic Scroll"] * 3 +
+        ["Steel Sword"] * 2 +
+        ["Bleed Enchantment"] * 2 +
+        ["Phoenix Feather"] * 1  # Rare
+    )
+
+    # Choose 3 to 5 unique items randomly
+    stock_keys = random.sample(list(set(weighted_pool)), random.randint(3, 5))
+
+    # Assign random stock quantities (1–3 for each item)
+    shop_stock = {item: {"price": all_items[item], "stock": random.randint(1, 3)} for item in stock_keys}
+
+    while True:
+        print("\nAvailable Items:")
+        for idx, (item, data) in enumerate(shop_stock.items(), 1):
+            rare = " (Rare!)" if item == "Phoenix Feather" else ""
+            print(f"{idx}. {item} - {data['price']} gold (Stock: {data['stock']}){rare}")
+        print("0. Leave Shop")
+
+        choice = input("Choose an item to buy or 0 to exit: ").strip()
+        if choice == "0":
+            print("You leave the shop.")
+            break
+
+        try:
+            idx = int(choice) - 1
+            item = list(shop_stock.keys())[idx]
+            data = shop_stock[item]
+
+            if player.gold >= data["price"]:
+                if data["stock"] > 0:
+                    player.gold -= data["price"]
+                    player.inventory.append(item)
+                    shop_stock[item]["stock"] -= 1
+                    print(f"You bought a {item}!")
+                    if shop_stock[item]["stock"] == 0:
+                        print(f"{item} is now out of stock.")
+                else:
+                    print(f"{item} is out of stock.")
+            else:
+                print("You don't have enough gold.")
+        except (IndexError, ValueError):
+            print("Invalid selection.")
 
 # -------------------------------
 # Main Menu
@@ -551,8 +597,9 @@ def main_menu(player, players):
     menu = [
         ("Explore", lambda p: explore(p, players)),
         ("Check Status", lambda p: (p.show_status(), input("Press Enter to continue..."))),
-        ("Use Inventory", manage_inventory),
+        ("Use Inventory", lambda p: manage_inventory(p, players)),
         ("Allocate Stats", allocate_stats),
+        ("Revive Teammate", lambda p: revive_teammate(p, players)),
         ("Save Game", lambda p: save_multiplayer_game(players)),
         ("Quit Game", lambda p: "quit"),
         ("View Quests", show_quests),
@@ -610,6 +657,33 @@ def trade_items(player, players):
         print(f"You gave {item} to {target.name}.")
     except:
         print("Invalid choice.")
+
+def revive_teammate(current_player, players):
+    unconscious_allies = [p for p in players if p != current_player and p.hp <= 0]
+    if not unconscious_allies:
+        print("\nNo teammates need reviving.")
+        input("Press Enter to continue...")
+        return
+
+    print("\nUnconscious teammates:")
+    for idx, ally in enumerate(unconscious_allies, 1):
+        print(f"{idx}. {ally.name}")
+
+    choice = input("Choose a teammate to revive (or press Enter to cancel): ").strip()
+    if not choice.isdigit() or not (1 <= int(choice) <= len(unconscious_allies)):
+        print("Cancelled.")
+        return
+
+    ally = unconscious_allies[int(choice) - 1]
+
+    if "Phoenix Feather" in current_player.inventory:
+        current_player.inventory.remove("Phoenix Feather")
+        ally.hp = int(ally.max_hp * 0.5)
+        print(f"\nYou used a Phoenix Feather to revive {ally.name} with {ally.hp} HP!")
+    else:
+        print("You need a Phoenix Feather to revive someone.")
+    
+    input("Press Enter to continue...")
 
 # -------------------------------
 # Main Game Loop
@@ -669,8 +743,6 @@ def main():
                 cleanup_old_autosaves(base_name=save_name)
             break
 
-
-        # 🔥 Auto-save to named file
         save_multiplayer_game(players, filename=save_name, silent=True, timestamp=True, keep_latest=5)
 
         turn = (turn + 1) % len(players)
