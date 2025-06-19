@@ -1,5 +1,5 @@
-#autosave update and inventory bug fix
-#added same device multiplayer, hotseat
+#save delete function added
+#exploration function updated to be compatible with multiple players
 
 import os
 import random
@@ -84,8 +84,8 @@ def show_quests(player):
 # -------------------------------
 # Exploration System
 # -------------------------------
-def explore(player):
-    print("\nYou venture into the wilds...")
+def explore(current_player, all_players):
+    print(f"\n{current_player.name} ventures into the wilds...")
     time.sleep(1)
     outcome = random.random()
 
@@ -96,17 +96,24 @@ def explore(player):
             ("Orc", 50, 10, 30), ("Troll", 60, 12, 40),
             ("Giant", 70, 15, 50)
         ]
-        enemies = [e for e in enemy_pool if player.level >= 3 or e[1] < 50]
+        enemies = [e for e in enemy_pool if current_player.level >= 3 or e[1] < 50]
         e = random.choice(enemies)
         enemy = Enemy(e[0], e[1], e[2], e[3], random.random() < 0.03)
-        battle(player, enemy)
+
+        # Only trigger group battle if there are 2 or more *alive* players
+        living_players = [p for p in all_players if p.hp > 0]
+        if len(living_players) >= 2:
+            group_battle(living_players, enemy)
+        else:
+            battle(current_player, enemy)
+
     elif outcome < 0.7:
         heal = random.randint(10, 30)
-        player.hp = min(player.max_hp, player.hp + heal)
+        current_player.hp = min(current_player.max_hp, current_player.hp + heal)
         print(f"You discover a hidden cache and regain {heal} HP!")
     elif outcome < 0.8:
         gold_found = random.randint(10, 20)
-        player.gold += gold_found
+        current_player.gold += gold_found
         print(f"You discover an abandoned wagon with {gold_found} gold inside!")
     else:
         print("The area is peaceful. You relax and enjoy the scenery.")
@@ -220,6 +227,76 @@ def battle(player, enemy):
 
     else:
         print("\nYou have fallen in battle.")
+
+def group_battle(players, enemy):
+    print(f"\nA wild {enemy.name} appears! All players must fight together!")
+
+    bleed_turns = 0
+    while enemy.hp > 0 and any(p.hp > 0 for p in players):
+        print(f"\n{enemy.name}: {enemy.hp} HP")
+        for p in players:
+            if p.hp <= 0:
+                continue
+            print(f"\n{p.name}: {p.hp} HP", end='')
+            if p.role == "Mage":
+                print(f", Mana: {p.mana}/{p.max_mana}")
+            else:
+                print()
+
+            choice = input(f"{p.name}'s turn - (1) Attack  (2) Inventory: ").strip()
+            if choice == '1':
+                if p.role == "Mage" and p.mana >= 10:
+                    spell_choice = input("Cast spell? (f) Fireball or (n) Normal Attack: ").strip().lower()
+                    if spell_choice == 'f':
+                        damage = p.attack + p.spell_power
+                        p.mana -= 10
+                        print(f"{p.name} casts Fireball for {damage} damage!")
+                    else:
+                        damage = p.attack
+                        print(f"{p.name} attacks for {damage} damage!")
+                else:
+                    damage = p.attack
+                    print(f"{p.name} attacks for {damage} damage!")
+
+                if random.randint(1, 100) <= p.bleed_chance:
+                    bleed_turns = 3
+                    print("Bleed applied!")
+
+                enemy.hp -= damage
+            elif choice == '2':
+                manage_inventory(p)
+
+            if enemy.hp <= 0:
+                break
+
+        if enemy.hp > 0:
+            target = random.choice([p for p in players if p.hp > 0])
+            damage = enemy.attack
+            target.hp -= damage
+            print(f"\nThe {enemy.name} attacks {target.name} for {damage} damage!")
+
+            if enemy.has_bleed_enchantment and random.random() < 0.1:
+                print(f"{target.name} is bleeding!")
+                for _ in range(3):
+                    target.hp -= 3
+                    print(f"{target.name} bleeds for 3 damage.")
+
+            if bleed_turns > 0:
+                enemy.hp -= 5
+                print("Enemy suffers 5 bleed damage.")
+                bleed_turns -= 1
+
+    if enemy.hp <= 0:
+        print(f"\nThe {enemy.name} is defeated!")
+        for p in players:
+            if p.hp > 0:
+                p.xp += enemy.xp_reward
+                print(f"{p.name} gains {enemy.xp_reward} XP!")
+                if p.xp >= p.level * 100:
+                    level_up(p)
+                check_quests(p, "kill")
+    else:
+        print("\nThe party has been defeated.")
 
 # -------------------------------
 # Level Up System
@@ -364,6 +441,73 @@ def cleanup_old_autosaves(base_name="autosave", keep_latest=1):
         except Exception as e:
             print(f"Failed to delete {old_file}: {e}")
 
+def delete_save_file(protect_latest=True, base_name="autosave"):
+    saves = [f for f in os.listdir() if f.endswith(".json")]
+    if not saves:
+        print("No save files to delete.")
+        return
+
+    # Identify the latest autosave (if protection is enabled)
+    latest_autosave = None
+    if protect_latest:
+        autosaves = [f for f in saves if f.startswith(base_name + "_")]
+        if autosaves:
+            latest_autosave = max(autosaves, key=os.path.getmtime)
+
+    while True:
+        print("\n==== Delete Save Files ====")
+        for idx, file in enumerate(saves, 1):
+            tag = " (LATEST AUTOSAVE)" if protect_latest and file == latest_autosave else ""
+            print(f"{idx}. {file}{tag}")
+        print("a. Delete all (except latest autosave)" if protect_latest else "a. Delete all")
+        print("q. Cancel")
+
+        choice = input("Choose a save to delete (by number), 'a' to delete all, or 'q' to cancel: ").strip().lower()
+
+        if choice == 'q':
+            print("Cancelled.")
+            return
+        elif choice == 'a':
+            confirm = input("Are you sure you want to delete all save files" +
+                            (" except the latest autosave" if protect_latest else "") +
+                            "? (y/n): ").strip().lower()
+            if confirm == 'y':
+                deleted = 0
+                for file in saves:
+                    if protect_latest and file == latest_autosave:
+                        continue
+                    try:
+                        os.remove(file)
+                        deleted += 1
+                    except Exception as e:
+                        print(f"Failed to delete {file}: {e}")
+                print(f"Deleted {deleted} save file(s).")
+            else:
+                print("Bulk deletion cancelled.")
+            return
+        elif choice.isdigit():
+            idx = int(choice) - 1
+            if 0 <= idx < len(saves):
+                filename = saves[idx]
+                if protect_latest and filename == latest_autosave:
+                    print("⚠ You cannot delete the latest autosave.")
+                    continue
+                confirm = input(f"Are you sure you want to delete '{filename}'? (y/n): ").strip().lower()
+                if confirm == 'y':
+                    try:
+                        os.remove(filename)
+                        print(f"Deleted {filename}")
+                        saves.remove(filename)
+                        if filename == latest_autosave:
+                            latest_autosave = None
+                    except Exception as e:
+                        print(f"Error deleting file: {e}")
+                else:
+                    print("Deletion cancelled.")
+            else:
+                print("Invalid selection.")
+        else:
+            print("Invalid input.")
 
 # -------------------------------
 # Shop Function
@@ -405,14 +549,15 @@ def shop(player):
 
 def main_menu(player, players):
     menu = [
-        ("Explore", explore),
+        ("Explore", lambda p: explore(p, players)),
         ("Check Status", lambda p: (p.show_status(), input("Press Enter to continue..."))),
         ("Use Inventory", manage_inventory),
         ("Allocate Stats", allocate_stats),
         ("Save Game", lambda p: save_multiplayer_game(players)),
         ("Quit Game", lambda p: "quit"),
         ("View Quests", show_quests),
-        ("Visit Shop", shop)
+        ("Visit Shop", shop),
+        ("Delete Save File", lambda p: delete_save_file())
     ]
 
     if len(players) >= 2:
