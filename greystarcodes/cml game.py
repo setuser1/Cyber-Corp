@@ -1,5 +1,3 @@
-#save function update
-
 import os
 import random
 import json
