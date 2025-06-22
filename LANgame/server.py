@@ -44,6 +44,7 @@ def handle_client(conn, addr):
     player = Player(player_data['name'], player_data['role'])
     player.from_dict(player_data)
     assign_quests(player)
+    send_data(conn, {"type": "info", "msg": f"Welcome {player.name} the {player.role}!"})
 
     with lock:
         players.append(player)
