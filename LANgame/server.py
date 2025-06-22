@@ -3,7 +3,7 @@
 import socket
 import threading
 import pickle
-from litrpg_game import Player, assign_quests, explore, use_item, player_turn_done
+from litrpg_game import Player, assign_quests, explore, use_item
 
 HOST = '0.0.0.0'
 PORT = 65432
