@@ -3,7 +3,7 @@
 import socket
 import threading
 import pickle
-from litrpg_game import Player, assign_quests, explore, use_item
+from litrpg_game import Player, assign_quests, explore, use_item, player_turn_done
 
 HOST = '0.0.0.0'
 PORT = 65432
@@ -44,7 +44,6 @@ def handle_client(conn, addr):
     player = Player(player_data['name'], player_data['role'])
     player.from_dict(player_data)
     assign_quests(player)
-    send_data(conn, {"type": "info", "msg": f"Welcome {player.name} the {player.role}!"})
 
     with lock:
         players.append(player)
@@ -64,26 +63,30 @@ def handle_client(conn, addr):
         log = []
 
         if action["command"] == "explore":
-            log = explore(player)
+            log = explore(player, players)
         elif action["command"] == "use_item":
             item = action.get("item")
             log = use_item(player, item, players)
+        elif action["command"] == "status":
+            log = [f"{player.name} - HP: {player.hp}/{player.max_hp}  Gold: {player.gold}"]
         elif action["command"] == "quit":
             send_data(conn, {"type": "info", "msg": "Thanks for playing!"})
             conn.close()
             break
 
-        # Broadcast log to all players
+        # Broadcast log and state to all clients
         with lock:
             for c, _ in clients:
-                send_data(c, {"type": "log", "log": log, "players": [p.to_dict() for p in players]})
-
+                send_data(c, {
+                    "type": "log",
+                    "log": log,
+                    "players": [p.to_dict() for p in players]
+                })
             turn_index = (turn_index + 1) % len(players)
 
     conn.close()
 
 # Main server loop
-
 def start_server():
     print(f"[STARTING] Server listening on {HOST}:{PORT}")
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
