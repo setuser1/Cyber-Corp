@@ -69,52 +69,45 @@ def level_up(player):
     log.append(f"*** {player.name} leveled up to {player.level}! Stat points +3 ***")
     return log
 
-def explore(player):
-    log = [f"{player.name} explores the area..."]
+def explore(player, players):
+    log = []
+    log.append(f"{player.name} ventures into the wilds...")
+
     outcome = random.random()
-    
+
     if outcome < 0.6:
-        enemies = [
+        enemy_pool = [
             ("Goblin", 30, 5, 20), ("Skeleton", 40, 7, 25),
             ("Wolf", 35, 6, 22), ("Bat", 25, 4, 15),
             ("Orc", 50, 10, 30), ("Troll", 60, 12, 40),
             ("Giant", 70, 15, 50)
         ]
-        valid = [e for e in enemies if player.level >= 3 or e[1] < 50]
-        name, hp, atk, xp = random.choice(valid)
-        enemy = {"name": name, "hp": hp, "atk": atk, "xp": xp}
+        enemies = [e for e in enemy_pool if player.level >= 3 or e[1] < 50]
+        name, hp, atk, xp = random.choice(enemies)
+        enemy = Enemy(name, hp, atk, xp, has_bleed_enchantment=(random.random() < 0.05))
 
-        # simplified single round battle
-        damage = player.attack + (player.spell_power if player.role == "Mage" else 0)
-        enemy["hp"] -= damage
-        log.append(f"You attack the {enemy['name']} for {damage} damage!")
-
-        if enemy["hp"] > 0:
-            player.hp -= enemy["atk"]
-            log.append(f"The {enemy['name']} strikes back for {enemy['atk']} damage!")
-
-        if player.hp > 0:
-            player.xp += enemy["xp"]
-            log.append(f"You defeated the {enemy['name']} and gained {enemy['xp']} XP!")
-            if player.xp >= player.level * 100:
-                log += level_up(player)
-            log += check_quests(player, "kill")
+        # Group battle if 2 or more players are alive
+        living = [p for p in players if p.hp > 0]
+        if len(living) >= 2:
+            log.append(f"A {enemy.name} appears and ambushes the group!")
+            log += group_battle(living, enemy)
         else:
-            log.append("You were defeated in battle!")
+            log.append(f"A wild {enemy.name} appears!")
+            log += battle(player, enemy)
 
-    elif outcome < 0.7:
+    elif outcome < 0.75:
         heal = random.randint(10, 30)
-        player.hp = min(player.max_hp, player.hp + heal)
-        log.append(f"You find a stream and regain {heal} HP.")
-    elif outcome < 0.8:
+        actual = min(player.max_hp - player.hp, heal)
+        player.hp += actual
+        log.append(f"{player.name} finds a healing spring and recovers {actual} HP!")
+    elif outcome < 0.9:
         gold = random.randint(10, 20)
         player.gold += gold
-        log.append(f"You find {gold} gold in an abandoned pouch.")
+        log.append(f"{player.name} discovers a hidden pouch with {gold} gold!")
     else:
-        log.append("The area is peaceful. Nothing happens.")
+        log.append(f"{player.name} enjoys a moment of peace. Nothing happens.")
 
     return log
-
 def use_item(player, item, players):
     log = []
     if item not in player.inventory:
