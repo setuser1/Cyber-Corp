@@ -2,6 +2,7 @@
 
 import random
 import time
+from litrpg_game import Enemy
 
 class Player:
     def __init__(self, name, role="Warrior"):
