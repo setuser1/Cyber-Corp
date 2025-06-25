@@ -1,9 +1,7 @@
-import random
-import time
+# litrpg_game.py
 
-# -------------------------------
-# Player and Enemy Classes
-# -------------------------------
+import random
+
 class Player:
     def __init__(self, name, role="Warrior"):
         self.name = name
@@ -18,7 +16,7 @@ class Player:
         self.inventory = []
         self.bleed_chance = 0
         self.quests = []
-        if role == "Mage":
+        if self.role == "Mage":
             self.mana = 50
             self.max_mana = 50
             self.spell_power = 10
@@ -30,217 +28,209 @@ class Player:
         self.__dict__.update(data)
 
 class Enemy:
-    def __init__(self, name, hp, attack, xp_reward, has_bleed_enchantment=False):
+    def __init__(self, name, hp, atk, xp, has_bleed_enchantment=False):
         self.name = name
         self.hp = hp
-        self.attack = attack
-        self.xp_reward = xp_reward
+        self.attack = atk
+        self.xp_reward = xp
         self.has_bleed_enchantment = has_bleed_enchantment
 
-# -------------------------------
-# Quest System
-# -------------------------------
+# ====================
+# Quest Handling
+# ====================
 QUESTS = [
     {"id": 1, "name": "First Blood", "desc": "Defeat 1 enemy", "type": "kill", "goal": 1, "progress": 0, "completed": False, "reward": "Health Potion"},
     {"id": 2, "name": "Hunter", "desc": "Defeat 5 enemies", "type": "kill", "goal": 5, "progress": 0, "completed": False, "reward": "Steel Sword"},
+    {"id": 3, "name": "Survivor", "desc": "Reach level 3", "type": "level", "goal": 3, "progress": 0, "completed": False, "reward": "Magic Scroll"},
 ]
 
 def assign_quests(player):
-    for q in QUESTS:
-        quest = dict(q)
-        if quest not in player.quests:
-            player.quests.append(quest)
+    for quest in QUESTS:
+        q = dict(quest)
+        if q not in player.quests:
+            player.quests.append(q)
 
 def check_quests(player, type_, value=1):
-    logs = []
-    for quest in player.quests:
-        if quest["completed"]:
+    log = []
+    for q in player.quests:
+        if q["completed"]:
             continue
-        if quest["type"] == type_:
+        if q["type"] == type_:
             if type_ == "kill":
-                quest["progress"] += value
-            if quest["progress"] >= quest["goal"]:
-                quest["completed"] = True
-                player.inventory.append(quest["reward"])
-                logs.append(f"{player.name} completed quest: {quest['name']} and received {quest['reward']}!")
-    return logs
+                q["progress"] += value
+            elif type_ == "level" and player.level >= q["goal"]:
+                q["progress"] = q["goal"]
+        if q["progress"] >= q["goal"]:
+            q["completed"] = True
+            player.inventory.append(q["reward"])
+            log.append(f"✓ Quest Complete: {q['name']}! You received a {q['reward']}!")
+    return log
 
-# -------------------------------
-# Game Logic Functions
-# -------------------------------
-def level_up(player):
-    player.level += 1
-    player.stat_points += 3
-    player.max_hp += 10
-    player.hp = player.max_hp
-    player.attack += 2
-    logs = [f"{player.name} leveled up to {player.level}! Stat points +3"]
-    if player.role == "Mage":
-        player.max_mana += 10
-        player.mana = player.max_mana
-        player.spell_power += 2
-        logs.append(f"{player.name}'s mana and spell power increased!")
-    return logs
-
-def explore(player, all_players):
-    logs = [f"{player.name} ventures into the wilds..."]
+# ====================
+# Game Actions
+# ====================
+def explore(player, all_players=None):
+    log = [f"{player.name} explores the wilds..."]
     outcome = random.random()
 
     if outcome < 0.6:
-        enemies = [
+        enemy_data = random.choice([
             ("Goblin", 30, 5, 20), ("Skeleton", 40, 7, 25),
             ("Wolf", 35, 6, 22), ("Bat", 25, 4, 15),
             ("Orc", 50, 10, 30), ("Troll", 60, 12, 40),
             ("Giant", 70, 15, 50)
-        ]
-        e = random.choice(enemies)
-        enemy = Enemy(e[0], e[1], e[2], e[3], random.random() < 0.1)
+        ])
+        enemy = Enemy(*enemy_data, has_bleed_enchantment=(random.random() < 0.05))
+        damage = player.attack
+        enemy.hp -= damage
+        log.append(f"{player.name} attacks a {enemy.name} for {damage} damage.")
 
-        if len([p for p in all_players if p.hp > 0]) > 1:
-            logs += group_battle(all_players, enemy)
+        if enemy.hp <= 0:
+            player.xp += enemy.xp_reward
+            log.append(f"{player.name} defeated the {enemy.name} and earned {enemy.xp_reward} XP!")
+            if player.xp >= player.level * 100:
+                level_up(player)
+                log.append(f"{player.name} leveled up to {player.level}!")
+            log += check_quests(player, "kill")
         else:
-            logs += battle(player, enemy)
-    elif outcome < 0.75:
+            player.hp -= enemy.attack
+            log.append(f"The {enemy.name} strikes back for {enemy.attack} damage!")
+
+    elif outcome < 0.7:
         heal = random.randint(10, 30)
         player.hp = min(player.max_hp, player.hp + heal)
-        logs.append(f"{player.name} found a healing spring and restored {heal} HP!")
-    elif outcome < 0.85:
+        log.append(f"{player.name} found a health spring and restored {heal} HP.")
+    elif outcome < 0.8:
         gold = random.randint(10, 20)
         player.gold += gold
-        logs.append(f"{player.name} found an old chest and looted {gold} gold!")
+        log.append(f"{player.name} found {gold} gold!")
     else:
-        logs.append("Nothing eventful happens...")
+        log.append("Nothing happened.")
 
-    return logs
+    return log
 
-def battle(player, enemy):
-    logs = [f"{player.name} encountered a {enemy.name}!"]
-    bleed_turns = 0
-
-    while enemy.hp > 0 and player.hp > 0:
-        damage = player.attack
-        if player.role == "Mage" and player.mana >= 10:
-            damage += player.spell_power
-            player.mana -= 10
-            logs.append(f"{player.name} casts Fireball for {damage} damage!")
-        else:
-            logs.append(f"{player.name} attacks for {damage} damage!")
-
-        enemy.hp -= damage
-
-        if random.randint(1, 100) <= player.bleed_chance:
-            bleed_turns = 3
-            logs.append(f"{enemy.name} is bleeding!")
-
-        if enemy.hp > 0:
-            enemy_damage = enemy.attack
-            player.hp -= enemy_damage
-            logs.append(f"{enemy.name} attacks {player.name} for {enemy_damage} damage!")
-
-        if bleed_turns > 0:
-            enemy.hp -= 5
-            logs.append(f"{enemy.name} suffers 5 bleed damage.")
-            bleed_turns -= 1
-
-    if player.hp > 0:
-        logs.append(f"{player.name} defeated the {enemy.name}!")
-        player.xp += enemy.xp_reward
-        logs.append(f"{player.name} gained {enemy.xp_reward} XP.")
-        if player.xp >= player.level * 100:
-            logs += level_up(player)
-        logs += check_quests(player, "kill")
-    else:
-        logs.append(f"{player.name} was defeated...")
-
-    return logs
-
-def group_battle(players, enemy):
-    logs = [f"A group battle begins against {enemy.name}!"]
-    bleed_turns = 0
-
-    while enemy.hp > 0 and any(p.hp > 0 for p in players):
-        for p in players:
-            if p.hp <= 0:
-                continue
-            damage = p.attack
-            if p.role == "Mage" and p.mana >= 10:
-                damage += p.spell_power
-                p.mana -= 10
-                logs.append(f"{p.name} casts Fireball for {damage} damage!")
-            else:
-                logs.append(f"{p.name} attacks for {damage} damage!")
-            enemy.hp -= damage
-            if random.randint(1, 100) <= p.bleed_chance:
-                bleed_turns = 3
-                logs.append(f"{enemy.name} is bleeding!")
-            if enemy.hp <= 0:
-                break
-
-        if enemy.hp > 0:
-            target = random.choice([p for p in players if p.hp > 0])
-            dmg = enemy.attack
-            target.hp -= dmg
-            logs.append(f"{enemy.name} hits {target.name} for {dmg} damage!")
-
-            if enemy.has_bleed_enchantment and random.random() < 0.1:
-                for _ in range(3):
-                    target.hp -= 3
-                    logs.append(f"{target.name} bleeds for 3 damage.")
-
-            if bleed_turns > 0:
-                enemy.hp -= 5
-                logs.append(f"{enemy.name} suffers 5 bleed damage.")
-                bleed_turns -= 1
-
-    if enemy.hp <= 0:
-        logs.append(f"The party has defeated {enemy.name}!")
-        for p in players:
-            if p.hp > 0:
-                p.xp += enemy.xp_reward
-                logs.append(f"{p.name} earned {enemy.xp_reward} XP!")
-                if p.xp >= p.level * 100:
-                    logs += level_up(p)
-                logs += check_quests(p, "kill")
-    else:
-        logs.append("All players have fallen.")
-
-    return logs
-
-# -------------------------------
-# Item System
-# -------------------------------
 def use_item(player, item, players):
-    logs = []
-
+    log = []
     if item not in player.inventory:
-        return [f"{item} not in inventory."]
+        log.append(f"{item} not in inventory.")
+        return log
 
+    used = False
     if item == "Health Potion":
         if player.hp < player.max_hp:
             heal = min(30, player.max_hp - player.hp)
             player.hp += heal
-            logs.append(f"{player.name} used a Health Potion and restored {heal} HP.")
-            player.inventory.remove(item)
+            log.append(f"{player.name} used a Health Potion and healed {heal} HP.")
+            used = True
         else:
-            logs.append("HP is already full.")
+            log.append("You're already at full health.")
     elif item == "Mana Potion" and player.role == "Mage":
         if player.mana < player.max_mana:
             regen = min(30, player.max_mana - player.mana)
             player.mana += regen
-            logs.append(f"{player.name} used a Mana Potion and restored {regen} MP.")
-            player.inventory.remove(item)
+            log.append(f"{player.name} used a Mana Potion and restored {regen} MP.")
+            used = True
         else:
-            logs.append("Mana is already full.")
+            log.append("You're already at full mana.")
+    elif item == "Magic Scroll" and player.role == "Mage":
+        player.spell_power += 1
+        log.append(f"{player.name} used a Magic Scroll. Spell power increased!")
+        used = True
+    elif item == "Steel Sword":
+        player.attack += 2
+        log.append(f"{player.name} equipped a Steel Sword. Attack +2!")
+        used = True
+    elif item == "Bleed Enchantment":
+        player.bleed_chance += 10
+        log.append(f"{player.name}'s weapon is now bleeding! Bleed chance +10%.")
+        used = True
     elif item == "Phoenix Feather":
         unconscious = [p for p in players if p != player and p.hp <= 0]
         if unconscious:
-            target = unconscious[0]
-            target.hp = target.max_hp // 2
-            player.inventory.remove(item)
-            logs.append(f"{player.name} used Phoenix Feather to revive {target.name} with {target.hp} HP.")
+            revived = unconscious[0]
+            revived.hp = revived.max_hp // 2
+            log.append(f"{player.name} revived {revived.name} with a Phoenix Feather!")
+            used = True
         else:
-            logs.append("No unconscious teammates to revive.")
+            log.append("No one to revive.")
     else:
-        logs.append(f"{item} has no use right now.")
+        log.append(f"{item} has no effect.")
 
-    return logs
+    if used:
+        player.inventory.remove(item)
+
+    return log
+
+def allocate_stats(player):
+    log = []
+    if player.stat_points <= 0:
+        log.append("No stat points available.")
+        return log
+
+    # For simplicity, assign all points to attack
+    while player.stat_points > 0:
+        player.attack += 1
+        player.stat_points -= 1
+        log.append(f"{player.name} allocated 1 point to attack. Attack is now {player.attack}.")
+
+    return log
+
+def show_status(player):
+    lines = [
+        f"Name: {player.name} ({player.role})",
+        f"Level: {player.level} | XP: {player.xp}",
+        f"HP: {player.hp}/{player.max_hp}",
+        f"Gold: {player.gold} | Attack: {player.attack} | Bleed Chance: {player.bleed_chance}%",
+        f"Inventory: {player.inventory if player.inventory else 'Empty'}"
+    ]
+    if player.role == "Mage":
+        lines.insert(3, f"Mana: {player.mana}/{player.max_mana} | Spell Power: {player.spell_power}")
+    return lines
+
+def show_quests(player):
+    lines = ["--- Quest Log ---"]
+    for q in player.quests:
+        status = "✓" if q["completed"] else f"{q['progress']}/{q['goal']}"
+        lines.append(f"{q['name']} - {q['desc']} ({status})")
+    return lines
+
+def visit_shop(player):
+    log = []
+    shop_items = {
+        "Health Potion": 20,
+        "Mana Potion": 25,
+        "Steel Sword": 50,
+        "Bleed Enchantment": 60,
+        "Phoenix Feather": 150
+    }
+
+    # Always buy a health potion for demo
+    item = "Health Potion"
+    if player.gold >= shop_items[item]:
+        player.gold -= shop_items[item]
+        player.inventory.append(item)
+        log.append(f"{player.name} bought a {item}.")
+    else:
+        log.append(f"{player.name} couldn't afford a {item}.")
+
+    return log
+
+def revive_teammate(player, players):
+    log = []
+    unconscious = [p for p in players if p != player and p.hp <= 0]
+    if not unconscious:
+        log.append("No one to revive.")
+        return log
+
+    if "Phoenix Feather" in player.inventory:
+        target = unconscious[0]
+        target.hp = target.max_hp // 2
+        player.inventory.remove("Phoenix Feather")
+        log.append(f"{player.name} used a Phoenix Feather to revive {target.name}!")
+    else:
+        log.append("You need a Phoenix Feather to revive someone.")
+
+    return log
+
+def player_turn_done():
+    return ["Turn complete."]
