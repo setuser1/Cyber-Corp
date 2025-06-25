@@ -1,9 +1,15 @@
-# server.py (LAN turn-based game server)
+# server.py
 
 import socket
 import threading
 import pickle
-from litrpg_game import Player, assign_quests, explore, use_item
+from litrpg_game import (
+    Player, assign_quests,
+    explore, use_item,
+    allocate_stats, show_status,
+    show_quests, visit_shop,
+    revive_teammate, player_turn_done
+)
 
 HOST = '0.0.0.0'
 PORT = 65432
@@ -14,24 +20,20 @@ players = []
 lock = threading.Lock()
 turn_index = 0
 
-# Send data to client
 def send_data(conn, data):
     try:
         conn.sendall(pickle.dumps(data))
     except:
         pass
 
-# Receive data from client
 def recv_data(conn):
     try:
-        return pickle.loads(conn.recv(4096))
+        return pickle.loads(conn.recv(8192))
     except:
         return None
 
-# Handle a single client connection
 def handle_client(conn, addr):
     global turn_index
-
     print(f"[CONNECTED] {addr}")
     send_data(conn, {"type": "info", "msg": "Connected to server. Send your character."})
 
@@ -50,31 +52,50 @@ def handle_client(conn, addr):
         clients.append((conn, player))
 
     while True:
-        if players[turn_index] != player:
-            continue
+        with lock:
+            if players[turn_index] != player:
+                continue
 
-        send_data(conn, {"type": "turn", "player": player.to_dict(), "players": [p.to_dict() for p in players]})
+        send_data(conn, {
+            "type": "turn",
+            "player": player.to_dict(),
+            "players": [p.to_dict() for p in players],
+            "msg": f"It is your turn, {player.name}!"
+        })
 
         action = recv_data(conn)
         if not action:
             print(f"[DISCONNECT] {addr}")
             break
 
+        command = action.get("command")
         log = []
 
-        if action["command"] == "explore":
+        if command == "explore":
             log = explore(player, players)
-        elif action["command"] == "use_item":
+        elif command == "use_item":
             item = action.get("item")
             log = use_item(player, item, players)
-        elif action["command"] == "status":
-            log = [f"{player.name} - HP: {player.hp}/{player.max_hp}  Gold: {player.gold}"]
-        elif action["command"] == "quit":
+        elif command == "allocate_stats":
+            log = allocate_stats(player)
+        elif command == "status":
+            log = show_status(player)
+        elif command == "quests":
+            log = show_quests(player)
+        elif command == "shop":
+            log = visit_shop(player)
+        elif command == "revive":
+            log = revive_teammate(player, players)
+        elif command == "quit":
             send_data(conn, {"type": "info", "msg": "Thanks for playing!"})
             conn.close()
             break
+        else:
+            log = ["Unknown command."]
 
-        # Broadcast log and state to all clients
+        log += player_turn_done()
+
+        # Broadcast update to all clients
         with lock:
             for c, _ in clients:
                 send_data(c, {
@@ -82,11 +103,11 @@ def handle_client(conn, addr):
                     "log": log,
                     "players": [p.to_dict() for p in players]
                 })
+
             turn_index = (turn_index + 1) % len(players)
 
     conn.close()
 
-# Main server loop
 def start_server():
     print(f"[STARTING] Server listening on {HOST}:{PORT}")
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -99,7 +120,7 @@ def start_server():
                 conn.sendall(pickle.dumps({"type": "error", "msg": "Server full."}))
                 conn.close()
                 continue
-            thread = threading.Thread(target=handle_client, args=(conn, addr))
+            thread = threading.Thread(target=handle_client, args=(conn, addr), daemon=True)
             thread.start()
 
 if __name__ == "__main__":
