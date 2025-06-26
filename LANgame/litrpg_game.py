@@ -1,5 +1,3 @@
-# litrpg_game.py
-
 import random
 
 class Player:
@@ -36,7 +34,7 @@ class Enemy:
         self.has_bleed_enchantment = has_bleed_enchantment
 
 # ====================
-# Quest Handling
+# Quests
 # ====================
 QUESTS = [
     {"id": 1, "name": "First Blood", "desc": "Defeat 1 enemy", "type": "kill", "goal": 1, "progress": 0, "completed": False, "reward": "Health Potion"},
@@ -67,7 +65,7 @@ def check_quests(player, type_, value=1):
     return log
 
 # ====================
-# Game Actions
+# Actions
 # ====================
 def explore(player, all_players=None):
     log = [f"{player.name} explores the wilds..."]
@@ -204,7 +202,6 @@ def visit_shop(player):
         "Phoenix Feather": 150
     }
 
-    # Always buy a health potion for demo
     item = "Health Potion"
     if player.gold >= shop_items[item]:
         player.gold -= shop_items[item]
