@@ -1,5 +1,3 @@
-# server.py
-
 import socket
 import threading
 import pickle
@@ -95,7 +93,6 @@ def handle_client(conn, addr):
 
         log += player_turn_done()
 
-        # Broadcast update to all clients
         with lock:
             for c, _ in clients:
                 send_data(c, {
