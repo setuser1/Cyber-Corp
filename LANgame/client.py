@@ -12,7 +12,7 @@ def send_data(sock, data):
 
 def recv_data(sock):
     try:
-        return pickle.loads(sock.recv(4096))
+        return pickle.loads(sock.recv(8192))
     except:
         return None
 
@@ -39,7 +39,12 @@ def show_menu():
     print("\n=== MENU ===")
     print("1. Explore")
     print("2. Use Item")
-    print("3. Quit")
+    print("3. Allocate Stats")
+    print("4. Show Status")
+    print("5. View Quests")
+    print("6. Visit Shop")
+    print("7. Revive Teammate")
+    print("8. Quit")
 
 def choose_item(inventory):
     if not inventory:
@@ -60,11 +65,9 @@ def client_main():
             s.connect((server_ip, SERVER_PORT))
             print("[CONNECTED]")
 
-            # Initial server greeting
             welcome = recv_data(s)
             print(welcome["msg"])
 
-            # Create and send character
             player_data = create_character()
             send_data(s, player_data)
 
@@ -93,6 +96,21 @@ def client_main():
                                 send_data(s, {"command": "use_item", "item": item})
                                 break
                         elif cmd == "3":
+                            send_data(s, {"command": "allocate_stats"})
+                            break
+                        elif cmd == "4":
+                            send_data(s, {"command": "status"})
+                            break
+                        elif cmd == "5":
+                            send_data(s, {"command": "quests"})
+                            break
+                        elif cmd == "6":
+                            send_data(s, {"command": "shop"})
+                            break
+                        elif cmd == "7":
+                            send_data(s, {"command": "revive"})
+                            break
+                        elif cmd == "8":
                             send_data(s, {"command": "quit"})
                             print("Goodbye!")
                             return
