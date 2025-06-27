@@ -4,7 +4,7 @@ import pickle
 from litrpg_game import (
     Player, assign_quests,
     explore, use_item,
-    allocate_stats, show_status,
+    allocate_stats,
     show_quests, visit_shop,
     revive_teammate, player_turn_done
 )
@@ -76,8 +76,6 @@ def handle_client(conn, addr):
             log = use_item(player, item, players)
         elif command == "allocate_stats":
             log = allocate_stats(player)
-        elif command == "status":
-            log = show_status(player)
         elif command == "quests":
             log = show_quests(player)
         elif command == "shop":
