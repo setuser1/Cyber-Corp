@@ -1,6 +1,7 @@
 import socket
 import threading
 import pickle
+import time
 from litrpg_game import (
     Player, assign_quests,
     explore, use_item,
@@ -15,14 +16,15 @@ MAX_PLAYERS = 4
 
 clients = []
 players = []
+last_heartbeat = {}  # Track last response time
 lock = threading.Lock()
 turn_index = 0
 
 def send_data(conn, data):
     try:
         conn.sendall(pickle.dumps(data))
-    except:
-        pass
+    except Exception as e:
+        print(f"[SEND ERROR] {e}")
 
 def recv_data(conn):
     try:
@@ -36,11 +38,24 @@ def recv_data(conn):
         print(f"[ERROR recv_data] {e}")
         return None
 
+def remove_player(player):
+    global turn_index
+    with lock:
+        if player in players:
+            idx = players.index(player)
+            players.pop(idx)
+            clients.pop(idx)
+            last_heartbeat.pop(player, None)
+            print(f"[REMOVED] {player.name} removed from game.")
+            if turn_index >= len(players):
+                turn_index = 0
+
 def handle_client(conn, addr):
     global turn_index
     print(f"[CONNECTED] {addr}")
-    send_data(conn, {"type": "info", "msg": "Connected to server. Send your character."})
+    conn.settimeout(60)  # auto-timeout
 
+    send_data(conn, {"type": "info", "msg": "Connected to server. Send your character."})
     player_data = recv_data(conn)
     if not player_data:
         print("[ERROR] Failed to receive player data.")
@@ -54,10 +69,15 @@ def handle_client(conn, addr):
     with lock:
         players.append(player)
         clients.append((conn, player))
+        last_heartbeat[player] = time.time()
 
     while True:
+        if not players:
+            break
+
         with lock:
-            if players[turn_index] != player:
+            if player != players[turn_index]:
+                time.sleep(0.1)
                 continue
 
         send_data(conn, {
@@ -70,8 +90,10 @@ def handle_client(conn, addr):
         action = recv_data(conn)
         if not action:
             print(f"[DISCONNECT] {addr}")
+            remove_player(player)
             break
 
+        last_heartbeat[player] = time.time()
         command = action.get("command")
         log = []
 
@@ -89,15 +111,15 @@ def handle_client(conn, addr):
         elif command == "revive":
             log = revive_teammate(player, players)
         elif command == "quit":
-            print(f"[DISCONNECT] {addr} (quit)")
+            print(f"[QUIT] {player.name} has left.")
             send_data(conn, {"type": "info", "msg": "Thanks for playing!"})
             conn.close()
-            with lock:
-                if player in players:
-                idx = players.index(player)
-                players.pop(idx)
-                clients.pop(idx)
+            remove_player(player)
             break
+        elif command == "ping":
+            # heartbeat ping
+            send_data(conn, {"type": "info", "msg": "pong"})
+            continue
         else:
             log = ["Unknown command."]
 
@@ -110,22 +132,32 @@ def handle_client(conn, addr):
                     "log": log,
                     "players": [p.to_dict() for p in players]
                 })
-
             turn_index = (turn_index + 1) % len(players)
 
     conn.close()
 
+def monitor_heartbeats(timeout=90):
+    while True:
+        time.sleep(10)
+        now = time.time()
+        with lock:
+            to_remove = [p for p, t in last_heartbeat.items() if now - t > timeout]
+        for p in to_remove:
+            print(f"[TIMEOUT] {p.name} unresponsive.")
+            remove_player(p)
+
 def start_server():
     print(f"[STARTING] Server listening on {HOST}:{PORT}")
+    threading.Thread(target=monitor_heartbeats, daemon=True).start()
+
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind((HOST, PORT))
         s.listen()
 
         while True:
             conn, addr = s.accept()
-            conn.settimeout(60)  # disconnects unresponsive clients after 60 seconds
             if len(clients) >= MAX_PLAYERS:
-                conn.sendall(pickle.dumps({"type": "error", "msg": "Server full."}))
+                send_data(conn, {"type": "error", "msg": "Server full."})
                 conn.close()
                 continue
             thread = threading.Thread(target=handle_client, args=(conn, addr), daemon=True)
