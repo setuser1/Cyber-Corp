@@ -26,8 +26,14 @@ def send_data(conn, data):
 
 def recv_data(conn):
     try:
-        return pickle.loads(conn.recv(8192))
-    except:
+        data = conn.recv(8192)
+        if not data:
+            return None
+        return pickle.loads(data)
+    except (ConnectionResetError, EOFError, socket.timeout):
+        return None
+    except Exception as e:
+        print(f"[ERROR recv_data] {e}")
         return None
 
 def handle_client(conn, addr):
