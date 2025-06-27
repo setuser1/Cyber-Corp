@@ -10,6 +10,16 @@ from litrpg_game import (
     revive_teammate, player_turn_done
 )
 
+HOST = '0.0.0.0'
+PORT = 65432
+MAX_PLAYERS = 4
+
+clients = []
+players = []
+last_heartbeat = {}  # Track last response time
+lock = threading.Lock()
+turn_index = 0
+
 def save_game(filename="save.pkl"):
     with open(filename, "wb") as f:
         pickle.dump([p.to_dict() for p in players], f)
@@ -29,16 +39,6 @@ def load_game(filename="save.pkl"):
         print(f"[LOAD] Loaded {len(players)} players from save.")
     except Exception as e:
         print(f"[LOAD ERROR] {e}")
-
-HOST = '0.0.0.0'
-PORT = 65432
-MAX_PLAYERS = 4
-
-clients = []
-players = []
-last_heartbeat = {}  # Track last response time
-lock = threading.Lock()
-turn_index = 0
 
 def send_data(conn, data):
     try:
