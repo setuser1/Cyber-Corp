@@ -1,7 +1,11 @@
+# server.py
+
 import socket
 import threading
 import pickle
-import time
+import os
+import json
+from datetime import datetime
 from litrpg_game import (
     Player, assign_quests,
     explore, use_item,
@@ -13,38 +17,48 @@ from litrpg_game import (
 HOST = '0.0.0.0'
 PORT = 65432
 MAX_PLAYERS = 4
+SAVE_PREFIX = "autosave"
 
 clients = []
 players = []
-last_heartbeat = {}  # Track last response time
 lock = threading.Lock()
 turn_index = 0
 
-def save_game(filename="save.pkl"):
-    with open(filename, "wb") as f:
-        pickle.dump([p.to_dict() for p in players], f)
-    print("[SAVE] Game state saved.")
+# === Save/Load ===
+def save_game_state():
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    filename = f"{SAVE_PREFIX}_{timestamp}.json"
+    with open(filename, "w") as f:
+        json.dump([p.to_dict() for p in players], f)
+    print(f"[SAVE] Game saved to {filename}")
 
-def load_game(filename="save.pkl"):
-    global players, clients
-    try:
-        with open(filename, "rb") as f:
-            player_dicts = pickle.load(f)
-            players = []
-            for data in player_dicts:
-                p = Player(data['name'], data.get('role', 'Warrior'))
-                p.from_dict(data)
-                assign_quests(p)
-                players.append(p)
-        print(f"[LOAD] Loaded {len(players)} players from save.")
-    except Exception as e:
-        print(f"[LOAD ERROR] {e}")
+    # Keep only 5 most recent
+    saves = sorted([f for f in os.listdir() if f.startswith(SAVE_PREFIX) and f.endswith(".json")], key=os.path.getmtime, reverse=True)
+    for old in saves[5:]:
+        os.remove(old)
+        print(f"[CLEANUP] Removed old save {old}")
 
+def load_latest_save():
+    saves = sorted([f for f in os.listdir() if f.startswith(SAVE_PREFIX) and f.endswith(".json")], key=os.path.getmtime, reverse=True)
+    if saves:
+        filename = saves[0]
+        print(f"[LOAD] Loading {filename}")
+        with open(filename, "r") as f:
+            data = json.load(f)
+            for pdata in data:
+                player = Player(pdata['name'], pdata['role'])
+                player.from_dict(pdata)
+                assign_quests(player)
+                players.append(player)
+        return True
+    return False
+
+# === Networking ===
 def send_data(conn, data):
     try:
         conn.sendall(pickle.dumps(data))
-    except Exception as e:
-        print(f"[SEND ERROR] {e}")
+    except:
+        pass
 
 def recv_data(conn):
     try:
@@ -58,24 +72,11 @@ def recv_data(conn):
         print(f"[ERROR recv_data] {e}")
         return None
 
-def remove_player(player):
-    global turn_index
-    with lock:
-        if player in players:
-            idx = players.index(player)
-            players.pop(idx)
-            clients.pop(idx)
-            last_heartbeat.pop(player, None)
-            print(f"[REMOVED] {player.name} removed from game.")
-            if turn_index >= len(players):
-                turn_index = 0
-
 def handle_client(conn, addr):
     global turn_index
     print(f"[CONNECTED] {addr}")
-    conn.settimeout(60)  # auto-timeout
-
     send_data(conn, {"type": "info", "msg": "Connected to server. Send your character."})
+
     player_data = recv_data(conn)
     if not player_data:
         print("[ERROR] Failed to receive player data.")
@@ -89,15 +90,10 @@ def handle_client(conn, addr):
     with lock:
         players.append(player)
         clients.append((conn, player))
-        last_heartbeat[player] = time.time()
 
     while True:
-        if not players:
-            break
-
         with lock:
-            if player != players[turn_index]:
-                time.sleep(0.1)
+            if players[turn_index] != player:
                 continue
 
         send_data(conn, {
@@ -110,10 +106,13 @@ def handle_client(conn, addr):
         action = recv_data(conn)
         if not action:
             print(f"[DISCONNECT] {addr}")
-            remove_player(player)
+            with lock:
+                idx = players.index(player)
+                players.pop(idx)
+                clients.pop(idx)
+                turn_index %= max(1, len(players))
             break
 
-        last_heartbeat[player] = time.time()
         command = action.get("command")
         log = []
 
@@ -131,15 +130,15 @@ def handle_client(conn, addr):
         elif command == "revive":
             log = revive_teammate(player, players)
         elif command == "quit":
-            print(f"[QUIT] {player.name} has left.")
+            print(f"[DISCONNECT] {addr} (quit)")
             send_data(conn, {"type": "info", "msg": "Thanks for playing!"})
             conn.close()
-            remove_player(player)
+            with lock:
+                idx = players.index(player)
+                players.pop(idx)
+                clients.pop(idx)
+                turn_index %= max(1, len(players))
             break
-        elif command == "ping":
-            # heartbeat ping
-            send_data(conn, {"type": "info", "msg": "pong"})
-            continue
         else:
             log = ["Unknown command."]
 
@@ -153,22 +152,13 @@ def handle_client(conn, addr):
                     "players": [p.to_dict() for p in players]
                 })
             turn_index = (turn_index + 1) % len(players)
+            save_game_state()
 
     conn.close()
 
-def monitor_heartbeats(timeout=90):
-    while True:
-        time.sleep(10)
-        now = time.time()
-        with lock:
-            to_remove = [p for p, t in last_heartbeat.items() if now - t > timeout]
-        for p in to_remove:
-            print(f"[TIMEOUT] {p.name} unresponsive.")
-            remove_player(p)
-
 def start_server():
     print(f"[STARTING] Server listening on {HOST}:{PORT}")
-    threading.Thread(target=monitor_heartbeats, daemon=True).start()
+    load_latest_save()
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind((HOST, PORT))
@@ -176,8 +166,9 @@ def start_server():
 
         while True:
             conn, addr = s.accept()
+            conn.settimeout(60)
             if len(clients) >= MAX_PLAYERS:
-                send_data(conn, {"type": "error", "msg": "Server full."})
+                conn.sendall(pickle.dumps({"type": "error", "msg": "Server full."}))
                 conn.close()
                 continue
             thread = threading.Thread(target=handle_client, args=(conn, addr), daemon=True)
