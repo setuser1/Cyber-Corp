@@ -10,6 +10,26 @@ from litrpg_game import (
     revive_teammate, player_turn_done
 )
 
+def save_game(filename="save.pkl"):
+    with open(filename, "wb") as f:
+        pickle.dump([p.to_dict() for p in players], f)
+    print("[SAVE] Game state saved.")
+
+def load_game(filename="save.pkl"):
+    global players, clients
+    try:
+        with open(filename, "rb") as f:
+            player_dicts = pickle.load(f)
+            players = []
+            for data in player_dicts:
+                p = Player(data['name'], data.get('role', 'Warrior'))
+                p.from_dict(data)
+                assign_quests(p)
+                players.append(p)
+        print(f"[LOAD] Loaded {len(players)} players from save.")
+    except Exception as e:
+        print(f"[LOAD ERROR] {e}")
+
 HOST = '0.0.0.0'
 PORT = 65432
 MAX_PLAYERS = 4
