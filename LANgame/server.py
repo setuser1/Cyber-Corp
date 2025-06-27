@@ -117,7 +117,7 @@ def start_server():
 
         while True:
             conn, addr = s.accept()
-            conn.settimeout(30)  # disconnects unresponsive clients after 30 seconds
+            conn.settimeout(60)  # disconnects unresponsive clients after 30 seconds
             if len(clients) >= MAX_PLAYERS:
                 conn.sendall(pickle.dumps({"type": "error", "msg": "Server full."}))
                 conn.close()
