@@ -1,6 +1,8 @@
 import socket
 import pickle
 import os
+import threading
+import time
 
 SERVER_PORT = 65432
 
@@ -40,7 +42,7 @@ def show_menu():
     print("1. Explore")
     print("2. Use Item")
     print("3. Allocate Stats")
-    print("4. View Quests")
+    print("4. Show Quests")
     print("5. Visit Shop")
     print("6. Revive Teammate")
     print("7. Quit")
@@ -57,12 +59,23 @@ def choose_item(inventory):
         return None
     return inventory[int(choice) - 1]
 
+def heartbeat_loop(sock):
+    while True:
+        try:
+            time.sleep(30)
+            send_data(sock, {"command": "ping"})
+        except:
+            break
+
 def client_main():
     server_ip = input("Enter server IP address: ").strip()
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.connect((server_ip, SERVER_PORT))
             print("[CONNECTED]")
+
+            # Start heartbeat thread
+            threading.Thread(target=heartbeat_loop, args=(s,), daemon=True).start()
 
             welcome = recv_data(s)
             print(welcome["msg"])
