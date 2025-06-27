@@ -40,11 +40,10 @@ def show_menu():
     print("1. Explore")
     print("2. Use Item")
     print("3. Allocate Stats")
-    print("4. Show Status")
-    print("5. View Quests")
-    print("6. Visit Shop")
-    print("7. Revive Teammate")
-    print("8. Quit")
+    print("4. View Quests")
+    print("5. Visit Shop")
+    print("6. Revive Teammate")
+    print("7. Quit")
 
 def choose_item(inventory):
     if not inventory:
@@ -99,18 +98,15 @@ def client_main():
                             send_data(s, {"command": "allocate_stats"})
                             break
                         elif cmd == "4":
-                            send_data(s, {"command": "status"})
-                            break
-                        elif cmd == "5":
                             send_data(s, {"command": "quests"})
                             break
-                        elif cmd == "6":
+                        elif cmd == "5":
                             send_data(s, {"command": "shop"})
                             break
-                        elif cmd == "7":
+                        elif cmd == "6":
                             send_data(s, {"command": "revive"})
                             break
-                        elif cmd == "8":
+                        elif cmd == "7":
                             send_data(s, {"command": "quit"})
                             print("Goodbye!")
                             return
