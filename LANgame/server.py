@@ -83,8 +83,14 @@ def handle_client(conn, addr):
         elif command == "revive":
             log = revive_teammate(player, players)
         elif command == "quit":
+            print(f"[DISCONNECT] {addr} (quit)")
             send_data(conn, {"type": "info", "msg": "Thanks for playing!"})
             conn.close()
+            with lock:
+                if player in players:
+                idx = players.index(player)
+                players.pop(idx)
+                clients.pop(idx)
             break
         else:
             log = ["Unknown command."]
