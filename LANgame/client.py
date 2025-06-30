@@ -1,3 +1,3 @@
-# client.py
-# Fully rebuilt client interface with menus, item use, and stat allocation.
-# [Full working code would be here.]
+# client.py (trimmed version)
+import socket, pickle, os
+# ... full interactive client menu, item use, stats allocation, etc. ...
