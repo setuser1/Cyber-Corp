@@ -1,8 +1,10 @@
+# ------------------ client.py ------------------
 import socket
 import pickle
 import os
 
-SERVER_PORT = 65432
+HOST = input("Enter server IP (blank for localhost): ") or "localhost"
+PORT = 65432
 
 def send_data(sock, data):
     try:
@@ -12,125 +14,90 @@ def send_data(sock, data):
 
 def recv_data(sock):
     try:
-        return pickle.loads(sock.recv(8192))
+        data = sock.recv(8192)
+        if not data:
+            return None
+        return pickle.loads(data)
     except:
         return None
 
-def clear():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
-def create_character():
-    name = input("Enter your character's name: ").strip()
-    role_input = input("Choose your class: (1) Warrior (2) Mage: ").strip()
-    role = "Mage" if role_input == "2" else "Warrior"
-    return {"name": name, "role": role}
-
-def display_player(player):
-    print(f"\n=== {player['name']} ({player['role']}) ===")
-    print(f"Level: {player['level']} | XP: {player['xp']} | Gold: {player['gold']}")
-    print(f"HP: {player['hp']}/{player['max_hp']}")
+def print_stats(player):
+    print(f"
+{player['name']} the {player['role']} - Level {player['level']}")
+    print(f"HP: {player['hp']} / {player['max_hp']}, ATK: {player['attack']}, XP: {player['xp']}/{player['xp_needed']}")
     if player['role'] == "Mage":
-        print(f"Mana: {player['mana']}/{player['max_mana']} | Spell Power: {player['spell_power']}")
-    print(f"Attack: {player['attack']} | Bleed Chance: {player['bleed_chance']}%")
-    print(f"Inventory: {player['inventory'] if player['inventory'] else 'Empty'}")
-    print(f"Stat Points: {player['stat_points']}")
+        print(f"MP: {player['mana']} / {player['max_mana']}, Spell Power: {player['spell_power']}")
+    print(f"Inventory: {player['inventory']}, Gold: {player['gold']}, Stat Points: {player['stat_points']}")
 
-def show_menu():
-    print("\n=== MENU ===")
-    print("1. Explore")
-    print("2. Use Item")
-    print("3. Allocate Stats")
-    print("4. View Quests")
-    print("5. Visit Shop")
-    print("6. Revive Teammate")
-    print("7. Quit")
+def player_turn(sock, player, players):
+    while True:
+        print_stats(player)
+        print("Your actions:")
+        print("1. Explore")
+        print("2. Use Item")
+        print("3. Allocate Stats")
+        print("4. View Quests")
+        print("5. Visit Shop")
+        print("6. Revive Teammate")
+        print("7. Quit Game")
+        choice = input("> ").strip()
 
-def choose_item(inventory):
-    if not inventory:
-        print("You have no items.")
-        return None
-    print("\nYour Inventory:")
-    for i, item in enumerate(inventory, 1):
-        print(f"{i}. {item}")
-    choice = input("Choose item number to use (or press Enter to cancel): ").strip()
-    if not choice.isdigit() or not (1 <= int(choice) <= len(inventory)):
-        return None
-    return inventory[int(choice) - 1]
+        if choice == "1":
+            send_data(sock, {"command": "explore"})
+            break
+        elif choice == "2":
+            print(f"Inventory: {player['inventory']}")
+            item = input("Which item do you want to use? ").strip()
+            send_data(sock, {"command": "use_item", "item": item})
+            break
+        elif choice == "3":
+            send_data(sock, {"command": "allocate_stats"})
+            break
+        elif choice == "4":
+            send_data(sock, {"command": "quests"})
+            break
+        elif choice == "5":
+            send_data(sock, {"command": "shop"})
+            break
+        elif choice == "6":
+            send_data(sock, {"command": "revive"})
+            break
+        elif choice == "7":
+            send_data(sock, {"command": "quit"})
+            return False
+        else:
+            print("Invalid input. Try again.")
+    return True
 
-def client_main():
-    server_ip = input("Enter server IP address: ").strip()
-    try:
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.connect((server_ip, SERVER_PORT))
-            print("[CONNECTED]")
+def main():
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        sock.connect((HOST, PORT))
 
-            welcome = recv_data(s)
-            print(welcome["msg"])
+        intro = recv_data(sock)
+        print(intro.get("msg", ""))
 
-            player_data = create_character()
-            send_data(s, player_data)
+        name = input("Enter your character's name: ").strip()
+        role = input("Choose your class (Warrior/Mage): ").strip().capitalize()
+        send_data(sock, {"name": name, "role": role})
 
-            while True:
-                response = recv_data(s)
-                if not response:
-                    print("[DISCONNECTED]")
+        while True:
+            data = recv_data(sock)
+            if not data:
+                print("[DISCONNECTED] Server closed connection.")
+                break
+
+            if data["type"] == "info":
+                print(data["msg"])
+            elif data["type"] == "turn":
+                print("
+--- YOUR TURN ---")
+                if not player_turn(sock, data["player"], data["players"]):
                     break
-
-                if response["type"] == "turn":
-                    clear()
-                    player = response["player"]
-                    players = response["players"]
-
-                    display_player(player)
-                    show_menu()
-
-                    while True:
-                        cmd = input("Choose an action: ").strip()
-                        if cmd == "1":
-                            send_data(s, {"command": "explore"})
-                            break
-                        elif cmd == "2":
-                            item = choose_item(player["inventory"])
-                            if item:
-                                send_data(s, {"command": "use_item", "item": item})
-                                break
-                        elif cmd == "3":
-                            send_data(s, {"command": "allocate_stats"})
-                            break
-                        elif cmd == "4":
-                            send_data(s, {"command": "quests"})
-                            break
-                        elif cmd == "5":
-                            send_data(s, {"command": "shop"})
-                            break
-                        elif cmd == "6":
-                            send_data(s, {"command": "revive"})
-                            break
-                        elif cmd == "7":
-                            send_data(s, {"command": "quit"})
-                            print("Goodbye!")
-                            return
-                        else:
-                            print("Invalid input.")
-
-                elif response["type"] == "log":
-                    clear()
-                    print("\n=== Battle Log ===")
-                    for line in response["log"]:
-                        print(line)
-                    print("\n=== Updated Player Status ===")
-                    for p in response["players"]:
-                        print(f"{p['name']} - HP: {p['hp']}/{p['max_hp']} | Gold: {p['gold']} | XP: {p['xp']}")
-                    input("\nPress Enter to continue...")
-
-                elif response["type"] == "info":
-                    print(response["msg"])
-
-                elif response["type"] == "error":
-                    print("[ERROR]", response["msg"])
-                    break
-    except Exception as e:
-        print(f"[ERROR] {e}")
+            elif data["type"] == "log":
+                print("
+--- GAME LOG ---")
+                for line in data["log"]:
+                    print(line)
 
 if __name__ == "__main__":
-    client_main()
+    main()
