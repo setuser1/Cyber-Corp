@@ -1,3 +1,1 @@
-# client.py (trimmed version)
-import socket, pickle, os
-# ... full interactive client menu, item use, stats allocation, etc. ...
+# Missing: final_client.py
