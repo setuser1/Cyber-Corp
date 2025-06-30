@@ -1,5 +1,4 @@
-# server.py
-
+# ------------------ server.py ------------------
 import socket
 import threading
 import pickle
@@ -7,11 +6,8 @@ import os
 import json
 from datetime import datetime
 from litrpg_game import (
-    Player, assign_quests,
-    explore, use_item,
-    allocate_stats,
-    show_quests, visit_shop,
-    revive_teammate, player_turn_done
+    Player, assign_quests, explore, use_item, allocate_stats,
+    show_quests, visit_shop, revive_teammate, player_turn_done
 )
 
 HOST = '0.0.0.0'
@@ -24,28 +20,20 @@ players = []
 lock = threading.Lock()
 turn_index = 0
 
-# === Save/Load ===
 def save_game_state():
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     filename = f"{SAVE_PREFIX}_{timestamp}.json"
     with open(filename, "w") as f:
         json.dump([p.to_dict() for p in players], f)
-    print(f"[SAVE] Game saved to {filename}")
-
-    # Keep only 5 most recent
     saves = sorted([f for f in os.listdir() if f.startswith(SAVE_PREFIX) and f.endswith(".json")], key=os.path.getmtime, reverse=True)
     for old in saves[5:]:
         os.remove(old)
-        print(f"[CLEANUP] Removed old save {old}")
 
 def load_latest_save():
     saves = sorted([f for f in os.listdir() if f.startswith(SAVE_PREFIX) and f.endswith(".json")], key=os.path.getmtime, reverse=True)
     if saves:
-        filename = saves[0]
-        print(f"[LOAD] Loading {filename}")
-        with open(filename, "r") as f:
-            data = json.load(f)
-            for pdata in data:
+        with open(saves[0], "r") as f:
+            for pdata in json.load(f):
                 player = Player(pdata['name'], pdata['role'])
                 player.from_dict(pdata)
                 assign_quests(player)
@@ -53,7 +41,6 @@ def load_latest_save():
         return True
     return False
 
-# === Networking ===
 def send_data(conn, data):
     try:
         conn.sendall(pickle.dumps(data))
@@ -66,10 +53,7 @@ def recv_data(conn):
         if not data:
             return None
         return pickle.loads(data)
-    except (ConnectionResetError, EOFError, socket.timeout):
-        return None
-    except Exception as e:
-        print(f"[ERROR recv_data] {e}")
+    except:
         return None
 
 def handle_client(conn, addr):
@@ -79,7 +63,6 @@ def handle_client(conn, addr):
 
     player_data = recv_data(conn)
     if not player_data:
-        print("[ERROR] Failed to receive player data.")
         conn.close()
         return
 
@@ -105,7 +88,6 @@ def handle_client(conn, addr):
 
         action = recv_data(conn)
         if not action:
-            print(f"[DISCONNECT] {addr}")
             with lock:
                 idx = players.index(player)
                 players.pop(idx)
@@ -130,7 +112,6 @@ def handle_client(conn, addr):
         elif command == "revive":
             log = revive_teammate(player, players)
         elif command == "quit":
-            print(f"[DISCONNECT] {addr} (quit)")
             send_data(conn, {"type": "info", "msg": "Thanks for playing!"})
             conn.close()
             with lock:
