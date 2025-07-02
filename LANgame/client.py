@@ -88,13 +88,11 @@ def main():
             if data["type"] == "info":
                 print(data["msg"])
             elif data["type"] == "turn":
-                print("
---- YOUR TURN ---")
+                print("--- YOUR TURN ---")
                 if not player_turn(sock, data["player"], data["players"]):
                     break
             elif data["type"] == "log":
-                print("
---- GAME LOG ---")
+                print("--- GAME LOG ---")
                 for line in data["log"]:
                     print(line)
 
