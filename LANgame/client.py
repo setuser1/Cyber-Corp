@@ -22,8 +22,7 @@ def recv_data(sock):
         return None
 
 def print_stats(player):
-    print(f"
-{player['name']} the {player['role']} - Level {player['level']}")
+    print(f"{player['name']} the {player['role']} - Level {player['level']}")
     print(f"HP: {player['hp']} / {player['max_hp']}, ATK: {player['attack']}, XP: {player['xp']}/{player['xp_needed']}")
     if player['role'] == "Mage":
         print(f"MP: {player['mana']} / {player['max_mana']}, Spell Power: {player['spell_power']}")
