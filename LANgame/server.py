@@ -113,12 +113,21 @@ def handle_client(conn, addr):
             log = revive_teammate(player, players)
         elif command == "quit":
             send_data(conn, {"type": "info", "msg": "Thanks for playing!"})
+            log.append(f"{player.name} has left the game.")
+            print(f"[DISCONNECTED] {player.name} has left the game.")
             conn.close()
             with lock:
                 idx = players.index(player)
                 players.pop(idx)
                 clients.pop(idx)
                 turn_index %= max(1, len(players))
+        # Notify remaining players
+                for c, _ in clients:
+                    send_data(c, {
+                        "type": "log",
+                        "log": log,
+                        "players": [p.to_dict() for p in players]
+                    })
             break
         else:
             log = ["Unknown command."]
