@@ -1,264 +1,240 @@
 import tkinter as tk
 from tkinter import messagebox, simpledialog
-import random
-import threading
-import lan_socket  # Presumed corrected module with server_mode, client_mode, closing
+import threading, time, sys
+import lan_socket
 
-# Quantum Chess with LAN room connect menu and random color assignment
+SQUARE_SIZE = 64
+UNICODE = {
+    'white': {'K':'\u2654','Q':'\u2655','R':'\u2656','B':'\u2657','N':'\u2658','P':'\u2659'},
+    'black': {'K':'\u265A','Q':'\u265B','R':'\u265C','B':'\u265D','N':'\u265E','P':'\u265F'}
+}
 
-class QuantumPiece:
-    def __init__(self, name, color):
-        self.name = name
+class Piece:
+    def __init__(self, kind, color):
+        self.kind = kind          # 'K','Q','R','B','N','P'
         self.color = color
-        self.positions = []  # superposed positions, up to 2
+    def char(self):
+        return UNICODE[self.color][self.kind]
 
-    def legal_moves(self, board):
-        dirs = []
-        r, c = self.positions[0]
+class Board:
+    def __init__(self):
+        self.grid = [[None]*8 for _ in range(8)]
+        self.turn = 'white'
+        self._setup()
+
+    def _setup(self):
+        # Pawns
+        for c in range(8):
+            self.grid[6][c] = Piece('P', 'white')
+            self.grid[1][c] = Piece('P', 'black')
+        # Back rank
+        order = ['R','N','B','Q','K','B','N','R']
+        for c, k in enumerate(order):
+            self.grid[7][c] = Piece(k, 'white')
+            self.grid[0][c] = Piece(k, 'black')
+
+    # ——— helpers ———
+    def inside(self, r, c):     return 0 <= r < 8 and 0 <= c < 8
+    def get   (self, r, c):     return self.grid[r][c] if self.inside(r, c) else None
+
+    # ——— moves ———
+    def move(self, sr, sc, tr, tc):
+        self.grid[tr][tc] = self.grid[sr][sc]
+        self.grid[sr][sc] = None
+        self.turn = 'black' if self.turn == 'white' else 'white'
+
+    def legal_moves(self, r, c):
+        p = self.get(r, c)
+        if not p or p.color != self.turn:
+            return []
+
         moves = []
-        if self.name == 'pawn':
-            step = -1 if self.color == 'white' else 1
-            start_row = 6 if self.color == 'white' else 1
-            # One square
-            nr, nc = r + step, c
-            if board.is_on_board(nr, nc) and board.is_empty(nr, nc):
-                moves.append((nr, nc))
-                # Two squares
-                nr2 = r + 2 * step
-                if r == start_row and board.is_on_board(nr2, c) and board.is_empty(nr2, c):
-                    moves.append((nr2, c))
-        elif self.name == 'knight':
-            offsets = [(2,1),(2,-1),(-2,1),(-2,-1),(1,2),(1,-2),(-1,2),(-1,-2)]
-            for dr, dc in offsets:
-                nr, nc = r + dr, c + dc
-                if board.is_on_board(nr, nc) and not board.is_friendly(nr, nc, self.color):
-                    moves.append((nr, nc))
-        elif self.name in ('bishop', 'rook', 'queen'):
-            if self.name == 'bishop': dirs = [(1,1),(1,-1),(-1,1),(-1,-1)]
-            if self.name == 'rook':   dirs = [(1,0),(-1,0),(0,1),(0,-1)]
-            if self.name == 'queen':  dirs = [(1,1),(1,-1),(-1,1),(-1,-1),(1,0),(-1,0),(0,1),(0,-1)]
-            for dr, dc in dirs:
-                nr, nc = r + dr, c + dc
-                while board.is_on_board(nr, nc):
-                    if board.is_empty(nr, nc):
+        if p.kind == 'P':
+            dir_   = -1 if p.color == 'white' else  1
+            start  =  6 if p.color == 'white' else 1
+            nr = r + dir_
+            # forward
+            if self.inside(nr, c) and self.get(nr, c) is None:
+                moves.append((nr, c))
+                # double push
+                if r == start and self.get(nr + dir_, c) is None:
+                    moves.append((nr + dir_, c))
+            # captures
+            for dc in (-1, 1):
+                nc = c + dc
+                if self.inside(nr, nc):
+                    t = self.get(nr, nc)
+                    if t and t.color != p.color:
                         moves.append((nr, nc))
-                    elif board.is_enemy(nr, nc, self.color):
+
+        elif p.kind == 'N':
+            for dr, dc in [(2,1),(2,-1),(-2,1),(-2,-1),(1,2),(1,-2),(-1,2),(-1,-2)]:
+                nr, nc = r + dr, c + dc
+                if self.inside(nr, nc):
+                    t = self.get(nr, nc)
+                    if t is None or t.color != p.color:
                         moves.append((nr, nc))
-                        break
-                    else:
-                        break
-                    nr += dr; nc += dc
-        elif self.name == 'king':
-            for dr in (-1, 0, 1):
-                for dc in (-1, 0, 1):
-                    if dr == 0 and dc == 0:
-                        continue
+
+        elif p.kind in ('B', 'R', 'Q'):
+            dirs = []
+            if p.kind in ('B', 'Q'):
+                dirs += [(1,1),(1,-1),(-1,1),(-1,-1)]
+            if p.kind in ('R', 'Q'):
+                dirs += [(1,0),(-1,0),(0,1),(0,-1)]
+            moves += self._slide_moves(r, c, dirs, p.color)
+
+        elif p.kind == 'K':
+            for dr in (-1,0,1):
+                for dc in (-1,0,1):
+                    if dr == dc == 0: continue
                     nr, nc = r + dr, c + dc
-                    if board.is_on_board(nr, nc) and not board.is_friendly(nr, nc, self.color):
-                        moves.append((nr, nc))
+                    if self.inside(nr, nc):
+                        t = self.get(nr, nc)
+                        if t is None or t.color != p.color:
+                            moves.append((nr, nc))
         return moves
 
-    def add_superposition(self, pos, board):
-        if len(self.positions) >= 2 or pos in self.positions:
-            return False
-        if pos in self.legal_moves(board):
-            self.positions.append(pos)
-            return True
-        return False
+    def _slide_moves(self, r, c, dirs, color):
+        res = []
+        for dr, dc in dirs:
+            nr, nc = r + dr, c + dc
+            while self.inside(nr, nc):
+                t = self.get(nr, nc)
+                if t is None:
+                    res.append((nr, nc))
+                else:
+                    if t.color != color:
+                        res.append((nr, nc))
+                    break
+                nr += dr; nc += dc
+        return res
 
-    def collapse(self, chosen_pos=None):
-        if not self.positions:
-            return None
-        if chosen_pos and chosen_pos in self.positions:
-            self.positions = [chosen_pos]
+# ——————————————————————————————————  GUI  ———————————————————————————————————
+
+class ChessGUI:
+    def __init__(self):
+        self.board = Board()
+
+        self.root   = tk.Tk()
+        self.root.title("LAN Chess")
+        self.canvas = tk.Canvas(self.root, width=8*SQUARE_SIZE, height=8*SQUARE_SIZE)
+        self.canvas.pack()
+        self.status = tk.Label(self.root)
+        self.status.pack()
+
+        # Networking setup
+        choice = simpledialog.askstring("Network", "Type 'host' to host, or enter host-IP to join:")
+        if not choice: sys.exit(0)
+        if choice.lower() == 'host':
+            self.is_host  = True
+            self.color    = 'white'
+            self.opponent = 'black'
         else:
-            self.positions = [random.choice(self.positions)]
-        return self.positions[0]
+            self.is_host  = False
+            self.host_ip  = choice.strip()
+            self.color    = 'black'
+            self.opponent = 'white'
 
-class QuantumChessBoard(tk.Canvas):
-    def __init__(self, parent, cell_size=64):
-        super().__init__(parent, width=8*cell_size, height=8*cell_size)
-        self.cell_size = cell_size
-        self.pieces = []
         self.selected = None
-        self.turn = None
-        self.draw_board()
-        self.bind("<Button-1>", self.on_left_click)
-        self.bind("<Button-3>", self.on_right_click)
+        self.highlight = []
 
-    def is_on_board(self, r, c):
-        return 0 <= r < 8 and 0 <= c < 8
+        self.canvas.bind('<Button-1>', self.on_click)
+        self.draw()
+        self.update_status()
 
-    def is_empty(self, r, c):
-        return all((r, c) not in p.positions for p in self.pieces)
+        # background thread for incoming moves
+        threading.Thread(target=self.net_loop, daemon=True).start()
 
-    def is_friendly(self, r, c, color):
-        return any((r, c) in p.positions and p.color == color for p in self.pieces)
+    # ——— drawing ———
+    def rc(self, x, y):  return y//SQUARE_SIZE, x//SQUARE_SIZE
+    def center(self, r, c): return c*SQUARE_SIZE+SQUARE_SIZE//2, r*SQUARE_SIZE+SQUARE_SIZE//2
 
-    def is_enemy(self, r, c, color):
-        return any((r, c) in p.positions and p.color != color for p in self.pieces)
-
-    def draw_board(self):
-        self.delete("all")
+    def draw(self):
+        self.canvas.delete('all')
+        light, dark = '#EEEED2', '#769656'
         for r in range(8):
             for c in range(8):
-                x1 = c * self.cell_size
-                y1 = r * self.cell_size
-                x2 = x1 + self.cell_size
-                y2 = y1 + self.cell_size
-                color = "white" if (r + c) % 2 else "gray"
-                self.create_rectangle(x1, y1, x2, y2, fill=color)
-        self.draw_pieces()
-
-    def draw_pieces(self):
-        self.delete("piece")
-        for p in self.pieces:
-            for (r, c) in p.positions:
-                x = c * self.cell_size + self.cell_size // 2
-                y = r * self.cell_size + self.cell_size // 2
-                sym = p.name[0].upper() if p.color == 'white' else p.name[0].lower()
-                self.create_text(x, y, text=sym, font=(None, 24), tags="piece")
-
-    def on_left_click(self, event):
-        r = event.y // self.cell_size
-        c = event.x // self.cell_size
-        for p in self.pieces:
-            if (r, c) in p.positions and p.color == self.turn:
-                self.selected = p
-                return
-        if self.selected:
-            if not self.selected.add_superposition((r, c), self):
-                messagebox.showinfo("Illegal Move", "Cannot superpose there.")
-            self.selected = None
-            self.draw_board()
-
-    def on_right_click(self, event):
-        r = event.y // self.cell_size
-        c = event.x // self.cell_size
-        for p in self.pieces:
-            if (r, c) in p.positions and p.color == self.turn:
-                old_pos = list(p.positions)[0]
-                new_pos = p.collapse(chosen_pos=(r, c))
-                self.draw_board()
-                move_str = f"{old_pos}->{new_pos}"
-                self.master.on_move_complete(move_str)
-                return
-
-class QuantumChessApp:
-    def __init__(self):
-        self.root = tk.Tk()
-        self.root.title("Quantum Chess LAN")
-        self.won = self.lost = self.draw = False
-        self.mode = None
-        self.color = None
-        self.opponent_color = None
-
-        # Menu
-        menubar = tk.Menu(self.root)
-        netmenu = tk.Menu(menubar, tearoff=0)
-        netmenu.add_command(label="Host Game", command=self.host_game)
-        netmenu.add_command(label="Join Game", command=self.join_game)
-        menubar.add_cascade(label="Network", menu=netmenu)
-        self.root.config(menu=menubar)
-
-        # Status
-        self.status = tk.Label(self.root, font=('Arial', 18))
-        self.status.pack(pady=2)
-
-        # Board
-        self.board = QuantumChessBoard(self.root)
-        self.board.pack()
-        self.setup_pieces()
-
-    def setup_pieces(self):
-        self.board.pieces.clear()
-        back = ['rook', 'knight', 'bishop', 'queen', 'king', 'bishop', 'knight', 'rook']
-        # White back row
-        for i, name in enumerate(back):
-            w = QuantumPiece(name, 'white')
-            w.positions = [(7, i)]
-            self.board.pieces.append(w)
-        # White pawns
-        for i in range(8):
-            w = QuantumPiece('pawn', 'white')
-            w.positions = [(6, i)]
-            self.board.pieces.append(w)
-        # Black back row
-        for i, name in enumerate(back):
-            b = QuantumPiece(name, 'black')
-            b.positions = [(0, i)]
-            self.board.pieces.append(b)
-        # Black pawns
-        for i in range(8):
-            b = QuantumPiece('pawn', 'black')
-            b.positions = [(1, i)]
-            self.board.pieces.append(b)
-        self.board.draw_board()
-
-    def host_game(self):
-        # Assign random color to host
-        self.mode = 's'
-        self.color = random.choice(['white', 'black'])
-        self.opponent_color = 'black' if self.color == 'white' else 'white'
-        self.board.turn = self.color
-        messagebox.showinfo("Hosting", f"You are {self.color}. Opponent will be {self.opponent_color}.")
-        # Send host color to client
-        threading.Thread(target=lan_socket.server_mode, args=(None, self.color), daemon=True).start()
-        self.update_status()
-
-    def join_game(self):
-        self.mode = 'c'
-        ip = simpledialog.askstring("Join Game", "Server IP:", parent=self.root)
-        self.server_ip = ip
-        # Receive host color
-        host_color = lan_socket.client_mode(None, None, ip)
-        if host_color not in ('white', 'black'):
-            messagebox.showerror("Error", "Failed to receive host color.")
-            return
-        self.opponent_color = host_color
-        self.color = 'black' if host_color == 'white' else 'white'
-        self.board.turn = host_color  # host starts
-        messagebox.showinfo("Joined", f"Host is {host_color}. You are {self.color}.")
-        # Start listening for moves
-        threading.Thread(target=self.receive_moves, daemon=True).start()
-        self.update_status()
+                self.canvas.create_rectangle(
+                    c*SQUARE_SIZE, r*SQUARE_SIZE,
+                    (c+1)*SQUARE_SIZE, (r+1)*SQUARE_SIZE,
+                    fill= light if (r+c)%2==0 else dark, outline='')
+        for r, c in self.highlight:
+            self.canvas.create_rectangle(
+                    c*SQUARE_SIZE, r*SQUARE_SIZE,
+                    (c+1)*SQUARE_SIZE, (r+1)*SQUARE_SIZE,
+                    fill='yellow', stipple='gray25', outline='')
+        for r in range(8):
+            for c in range(8):
+                p = self.board.get(r, c)
+                if p:
+                    x, y = self.center(r, c)
+                    self.canvas.create_text(x, y, text=p.char(), font=('Arial', 36))
 
     def update_status(self):
-        mode_text = "Host" if self.mode == 's' else "Client" if self.mode == 'c' else ""
-        self.status.config(text=f"{self.board.turn.capitalize()} to move [{mode_text}]")
+        self.status.config(text=f"You are {self.color}.    Turn: {self.board.turn}")
 
-    def on_move_complete(self, move_str):
-        # Send move and/or receive opponent
-        if self.mode == 's':
-            opp = lan_socket.server_mode(move_str, self.color)
+    # ——— move encoding helpers ———
+    def encode(self, sr, sc, tr, tc):
+        files = "abcdefgh"
+        return f"{files[sc]}{8-sr}{files[tc]}{8-tr}"
+
+    def decode(self, s):
+        files = "abcdefgh"
+        sc = files.index(s[0]); sr = 8 - int(s[1])
+        tc = files.index(s[2]); tr = 8 - int(s[3])
+        return sr, sc, tr, tc
+
+    # ——— mouse interaction ———
+    def on_click(self, event):
+        if self.board.turn != self.color:
+            return
+
+        r, c = self.rc(event.x, event.y)
+        if self.selected:
+            if (r, c) in self.highlight:
+                sr, sc = self.selected
+                move = self.encode(sr, sc, r, c)
+                self.board.move(sr, sc, r, c)
+                self.selected  = None
+                self.highlight = []
+                self.draw(); self.update_status()
+                threading.Thread(target=self.send_move, args=(move,), daemon=True).start()
+            else:
+                self.selected  = None
+                self.highlight = []
         else:
-            opp = lan_socket.client_mode(move_str, self.color)
-        # Switch turn
-        self.board.turn = self.opponent_color
-        self.update_status()
-        # Apply opponent move immediately if returned
-        if opp:
-            # TODO: parse opp string and apply to board
-            self.board.turn = self.color
-            self.update_status()
+            p = self.board.get(r, c)
+            if p and p.color == self.color:
+                self.selected  = (r, c)
+                self.highlight = self.board.legal_moves(r, c)
+        self.draw()
 
-    def receive_moves(self):
-        while not (self.won or self.lost or self.draw):
-            opp = lan_socket.client_mode(None, self.color)
-            if opp:
-                # TODO: apply opp
-                self.board.turn = self.color
-                self.update_status()
+    # ——— networking helpers ———
+    def send_move(self, mv):
+        # “white” flag → send,  “black” flag → receive   (lan_socket’s original convention)
+        if self.is_host:
+            lan_socket.server_mode(mv, 'white')
+        else:
+            lan_socket.client_mode(mv, 'white', self.host_ip)
 
-    def end_game(self, result):
-        self.won = (result == self.color)
-        self.lost = (result != self.color and result in ['white', 'black'])
-        self.draw = (result == 'draw')
-        messagebox.showinfo("Game Over", f"Result: {result}")
-        lan_socket.closing(self.won, self.lost, self.draw)
+    def recv_move(self):
+        if self.is_host:
+            return lan_socket.server_mode("", 'black')
+        else:
+            return lan_socket.client_mode("", 'black', self.host_ip)
+
+    def net_loop(self):
+        while True:
+            if self.board.turn == self.opponent:
+                mv = self.recv_move()
+                if mv:
+                    sr, sc, tr, tc = self.decode(mv)
+                    self.board.move(sr, sc, tr, tc)
+                    self.draw(); self.update_status()
+            time.sleep(0.25)
 
     def run(self):
         self.root.mainloop()
 
 if __name__ == '__main__':
-    QuantumChessApp().run()
+    ChessGUI().run()
