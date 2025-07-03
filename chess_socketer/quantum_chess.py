@@ -185,30 +185,33 @@ class ChessGUI:
         tc = files.index(s[2]); tr = 8 - int(s[3])
         return sr, sc, tr, tc
 
-    # ——— mouse interaction ———
-    def on_click(self, event):
-        if self.board.turn != self.color:
-            return
+def on_click(self, event):
+    if self.board.turn != self.color:
+        return
 
-        r, c = self.rc(event.x, event.y)
-        if self.selected:
-            if (r, c) in self.highlight:
-                sr, sc = self.selected
-                move = self.encode(sr, sc, r, c)
-                self.board.move(sr, sc, r, c)
-                self.selected  = None
-                self.highlight = []
-                self.draw(); self.update_status()
-                threading.Thread(target=self.send_move, args=(move,), daemon=True).start()
-            else:
-                self.selected  = None
-                self.highlight = []
+    r, c = self.rc(event.x, event.y)
+    if self.selected:
+        if (r, c) in self.highlight:
+            sr, sc = self.selected
+            move = self.encode(sr, sc, r, c)
+            self.board.move(sr, sc, r, c)
+            self.selected = None
+            self.highlight = []
+            self.draw()
+            self.update_status()
+
+            self.sending = True  # ← NEW: block net_loop from receiving until send is done
+            threading.Thread(target=self.send_move, args=(move,), daemon=True).start()
         else:
-            p = self.board.get(r, c)
-            if p and p.color == self.color:
-                self.selected  = (r, c)
-                self.highlight = self.board.legal_moves(r, c)
-        self.draw()
+            self.selected = None
+            self.highlight = []
+    else:
+        p = self.board.get(r, c)
+        if p and p.color == self.color:
+            self.selected = (r, c)
+            self.highlight = self.board.legal_moves(r, c)
+
+    self.draw()
 
     # ——— networking helpers ———
     def send_move(self, mv):
