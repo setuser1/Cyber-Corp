@@ -185,33 +185,51 @@ class ChessGUI:
         tc = files.index(s[2]); tr = 8 - int(s[3])
         return sr, sc, tr, tc
 
-def on_click(self, event):
-    if self.board.turn != self.color:
-        return
+    # ──────────────────────────────────────────────────────────────
+    # Mouse handler – left-click on the board
+    # ──────────────────────────────────────────────────────────────
+    def on_click(self, event):
+        # Only act on our own turn
+        if self.board.turn != self.color:
+            return
 
-    r, c = self.rc(event.x, event.y)
-    if self.selected:
-        if (r, c) in self.highlight:
-            sr, sc = self.selected
-            move = self.encode(sr, sc, r, c)
-            self.board.move(sr, sc, r, c)
-            self.selected = None
-            self.highlight = []
-            self.draw()
-            self.update_status()
+        r, c = self.rc(event.x, event.y)      # board coordinates
 
-            self.sending = True  # ← NEW: block net_loop from receiving until send is done
-            threading.Thread(target=self.send_move, args=(move,), daemon=True).start()
+        # ── CASE 1: we already have a piece selected ──────────────
+        if self.selected:
+            if (r, c) in self.highlight:      # clicked a highlighted square → make the move
+                sr, sc = self.selected
+                move = self.encode(sr, sc, r, c)
+
+                # update local board
+                self.board.move(sr, sc, r, c)
+                self.selected  = None
+                self.highlight = []
+                self.draw()
+                self.update_status()
+
+                # tell the background thread we’re about to send
+                self.sending = True
+                threading.Thread(
+                    target=self.send_move,
+                    args=(move,),
+                    daemon=True
+                ).start()
+            else:
+                # clicked somewhere else → cancel selection
+                self.selected  = None
+                self.highlight = []
+
+        # ── CASE 2: nothing selected yet ──────────────────────────
         else:
-            self.selected = None
-            self.highlight = []
-    else:
-        p = self.board.get(r, c)
-        if p and p.color == self.color:
-            self.selected = (r, c)
-            self.highlight = self.board.legal_moves(r, c)
+            p = self.board.get(r, c)
+            if p and p.color == self.color:
+                # select this piece and highlight legal moves
+                self.selected  = (r, c)
+                self.highlight = self.board.legal_moves(r, c)
 
-    self.draw()
+        # always redraw after a click
+        self.draw()
 
     # ——— networking helpers ———
     def send_move(self, mv):
