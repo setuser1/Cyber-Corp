@@ -211,7 +211,6 @@ class ChessGUI:
 
     # ——— networking helpers ———
     def send_move(self, mv):
-        # “white” flag → send,  “black” flag → receive   (lan_socket’s original convention)
         if self.is_host:
             lan_socket.server_mode(mv, 'white')
         else:
@@ -223,15 +222,21 @@ class ChessGUI:
         else:
             return lan_socket.client_mode("", 'black', self.host_ip)
 
+    # --- UI-thread wrapper for remote moves ---
+    def _apply_remote_move(self, mv):
+        sr, sc, tr, tc = self.decode(mv)
+        self.board.move(sr, sc, tr, tc)
+        self.draw()
+        self.update_status()
+
     def net_loop(self):
         while True:
             if self.board.turn == self.opponent:
                 mv = self.recv_move()
                 if mv:
-                    sr, sc, tr, tc = self.decode(mv)
-                    self.board.move(sr, sc, tr, tc)
-                    self.draw(); self.update_status()
-            time.sleep(0.25)
+                    # run UI update safely on the main thread
+                    self.root.after(0, self._apply_remote_move, mv)
+            time.sleep(0.1)
 
     def run(self):
         self.root.mainloop()
