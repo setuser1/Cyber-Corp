@@ -1,40 +1,33 @@
 import socket
 
-# We’ll create a fresh socket for each server/client call,
-# to avoid binding/sending on the same socket object multiple times.
+PORT = 90
 
-def server_mode(move: str, color: str):
-    """Listen for one connection, then send or receive the single move."""
+def _to_bytes(move):              # str ➜ bytes helper
+    return move.encode('utf-8') if isinstance(move, str) else move
+
+def server_mode(move: str | bytes, color: str):
+    """Host side: listen once, then send OR receive a single move."""
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind(('', 90))
+        s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        s.bind(('', PORT))
         s.listen(1)
-        print("Server is listening on host:90...")
+        print(f"Server listening on :{PORT} …")
         conn, addr = s.accept()
         with conn:
-            print(f"Connected by {addr}")
+            print("Connected", addr)
             if color == 'white':
-                print("White sends move:", move)
-                conn.send(move)
+                conn.send(_to_bytes(move))
             else:
-                print("Black waiting for opponent move...")
-                data = conn.recv(1024)
-                print("Received move:", data.decode('utf-8'))
-                return data.decode('utf-8')
+                return conn.recv(1024).decode('utf-8')
 
-
-def client_mode(move: str, color: str, host: str):
-    """Connect to server (prompting IP), then send or receive the single move."""
-    host = host.strip()  # Prompt for IP address of the server
+def client_mode(move: str | bytes, color: str, host: str):
+    """Guest side: connect once, then send OR receive a single move."""
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.connect((host, 90))
+        s.connect((host.strip(), PORT))
         if color == 'white':
-            print("White sends move:", move)
-            s.send(move)
+            s.send(_to_bytes(move))
         else:
-            print("Black waiting for opponent move...")
-            data = s.recv(1024)
-            print("Received move:", data.decode('utf-8'))
-            return data.decode('utf-8')
+            return s.recv(1024).decode('utf-8')
 
 
 def closing(won: bool, lost: bool, draw: bool):
