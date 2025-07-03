@@ -137,6 +137,7 @@ class ChessGUI:
 
         self.selected = None
         self.highlight = []
+        self.sending  = False 
 
         self.canvas.bind('<Button-1>', self.on_click)
         self.draw()
