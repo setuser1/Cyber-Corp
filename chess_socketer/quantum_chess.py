@@ -431,11 +431,16 @@ class ChessGUI:
         finally:
             self.sending = False
 
+        # ——— receive ONE move from the other side ———
     def recv_move(self):
-        if self.is_host:
-            return lan_socket.server_mode(b'', 'black')
-        else:
-            return lan_socket.client_mode(b'', 'black', self.host_ip)
+        try:
+            if self.is_host:                       # host listens
+                return lan_socket.server_mode(b'', 'black')
+            else:                                  # guest connects
+                return lan_socket.client_mode(b'', 'black', self.host_ip)
+        except (ConnectionResetError, ConnectionRefusedError, OSError):
+            # remote isn’t ready yet → just try again on the next pass
+            return ''
 
     # apply a move received from the other side, on UI thread
     def _apply_remote_move(self, mv):
