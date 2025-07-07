@@ -278,96 +278,152 @@ class Board:
 
 class ChessGUI:
     def __init__(self):
-        self.board      = Board()
-        self.root       = tk.Tk()
+        self.board = Board()
+
+        # ── Tk setup ───────────────────────────────────────────────
+        self.root   = tk.Tk()
         self.root.title("LAN Chess")
-        self.canvas     = tk.Canvas(self.root, width=8*SQUARE_SIZE, height=8*SQUARE_SIZE)
+        self.canvas = tk.Canvas(self.root, width=8*SQUARE_SIZE, height=8*SQUARE_SIZE)
         self.canvas.pack()
-        self.status     = tk.Label(self.root, font=('Arial', 12))
+        self.status = tk.Label(self.root, font=('Arial', 12))
         self.status.pack()
 
-        choice = simpledialog.askstring("Network", "Type 'host' to host, or enter host-IP to join:")
-        if not choice: sys.exit(0)
-        if choice.lower()=='host':
-            self.is_host, self.color, self.opponent = True, 'white', 'black'
+        # ── Networking side choice ────────────────────────────────
+        choice = simpledialog.askstring("Network",
+                                        "Type 'host' to host, or enter host-IP to join:")
+        if not choice:
+            sys.exit(0)
+        if choice.lower() == 'host':
+            self.is_host, self.color, self.opponent = True,  'white', 'black'
         else:
-            self.is_host, self.host_ip, self.color, self.opponent = False, choice.strip(), 'black', 'white'
+            self.is_host, self.host_ip = False, choice.strip()
+            self.color,   self.opponent = 'black', 'white'
 
-        self.selected  = None
-        self.highlight = []
-        self.sending   = False
+        # flip → show Black’s perspective
+        self.flip = (self.color == 'black')
 
+        # ── GUI/session state ─────────────────────────────────────
+        self.selected  = None      # (row, col) of currently selected piece
+        self.highlight = []        # list of legal-move squares to tint
+        self.sending   = False     # True while a send-thread owns the port
+
+        # ── Bindings & start ──────────────────────────────────────
         self.canvas.bind('<Button-1>', self.on_click)
         self.draw()
         self.update_status()
 
+        # background thread for incoming moves
         threading.Thread(target=self.net_loop, daemon=True).start()
 
-    def rc(self, x, y):  return y//SQUARE_SIZE, x//SQUARE_SIZE
-    def center(self, r, c): return c*SQUARE_SIZE+SQUARE_SIZE//2, r*SQUARE_SIZE+SQUARE_SIZE//2
+    # ──────────────────────────────────────────────────────────────
+    # Helpers: coordinate transforms
+    # ──────────────────────────────────────────────────────────────
+    def board_to_screen(self, br, bc):
+        """(board-row,col) → canvas pixel centre (x,y)"""
+        sr  = 7 - br if self.flip else br
+        sc  = 7 - bc if self.flip else bc
+        x   = sc * SQUARE_SIZE + SQUARE_SIZE // 2
+        y   = sr * SQUARE_SIZE + SQUARE_SIZE // 2
+        return x, y
 
+    def rc(self, x, y):
+        """Canvas click → (board-row, board-col)"""
+        sr = y // SQUARE_SIZE
+        sc = x // SQUARE_SIZE
+        return (7 - sr, 7 - sc) if self.flip else (sr, sc)
+
+    # ──────────────────────────────────────────────────────────────
+    # Drawing
+    # ──────────────────────────────────────────────────────────────
     def draw(self):
         self.canvas.delete('all')
         light, dark = '#EEEED2', '#769656'
-        for r in range(8):
-            for c in range(8):
+
+        # squares
+        for br in range(8):
+            for bc in range(8):
+                sr = 7 - br if self.flip else br
+                sc = 7 - bc if self.flip else bc
+                color = light if (br + bc) % 2 == 0 else dark
                 self.canvas.create_rectangle(
-                    c*SQUARE_SIZE, r*SQUARE_SIZE,
-                    (c+1)*SQUARE_SIZE, (r+1)*SQUARE_SIZE,
-                    fill= light if (r+c)%2==0 else dark, outline='')
-        for r,c in self.highlight:
+                    sc * SQUARE_SIZE, sr * SQUARE_SIZE,
+                    (sc + 1) * SQUARE_SIZE, (sr + 1) * SQUARE_SIZE,
+                    fill=color, outline=''
+                )
+
+        # highlights
+        for br, bc in self.highlight:
+            sr = 7 - br if self.flip else br
+            sc = 7 - bc if self.flip else bc
             self.canvas.create_rectangle(
-                c*SQUARE_SIZE, r*SQUARE_SIZE,
-                (c+1)*SQUARE_SIZE, (r+1)*SQUARE_SIZE,
-                fill='yellow', stipple='gray25', outline='')
-        for r in range(8):
-            for c in range(8):
-                p = self.board.get(r,c)
+                sc * SQUARE_SIZE, sr * SQUARE_SIZE,
+                (sc + 1) * SQUARE_SIZE, (sr + 1) * SQUARE_SIZE,
+                fill='yellow', stipple='gray25', outline=''
+            )
+
+        # pieces
+        for br in range(8):
+            for bc in range(8):
+                p = self.board.get(br, bc)
                 if p:
-                    x,y = self.center(r,c)
-                    self.canvas.create_text(x,y, text=p.char(), font=('Arial',36))
+                    x, y = self.board_to_screen(br, bc)
+                    self.canvas.create_text(x, y, text=p.char(), font=('Arial', 36))
 
     def update_status(self):
         st = f"You are {self.color}   |   Turn: {self.board.turn}"
         gs = self.board.game_state()
-        if gs=='check' and self.board.turn==self.color:
+        if gs == 'check' and self.board.turn == self.color:
             st += "   —  YOU are in check!"
-        elif gs=='check':
+        elif gs == 'check':
             st += "   —  Opponent in check."
         self.status.config(text=st)
 
+    # ──────────────────────────────────────────────────────────────
+    # Algebraic helpers for LAN
+    # ──────────────────────────────────────────────────────────────
     def encode(self, sr, sc, tr, tc):
-        files="abcdefgh"
+        files = "abcdefgh"
         return f"{files[sc]}{8-sr}{files[tc]}{8-tr}"
 
     def decode(self, s):
-        files="abcdefgh"
-        sc = files.index(s[0]); sr = 8-int(s[1])
-        tc = files.index(s[2]); tr = 8-int(s[3])
+        files = "abcdefgh"
+        sc = files.index(s[0]); sr = 8 - int(s[1])
+        tc = files.index(s[2]); tr = 8 - int(s[3])
         return sr, sc, tr, tc
 
+    # ──────────────────────────────────────────────────────────────
+    # Mouse interaction
+    # ──────────────────────────────────────────────────────────────
     def on_click(self, event):
-        if self.board.turn!=self.color: return
-        r,c = self.rc(event.x, event.y)
+        if self.board.turn != self.color:
+            return
+
+        r, c = self.rc(event.x, event.y)
         if self.selected:
-            if (r,c) in self.highlight:
-                sr,sc = self.selected
-                move = self.encode(sr,sc,r,c)
-                self.board.move(sr,sc,r,c)
-                self.selected, self.highlight = None, []
+            if (r, c) in self.highlight:
+                sr, sc = self.selected
+                move = self.encode(sr, sc, r, c)
+                self.board.move(sr, sc, r, c)
+                self.selected = None
+                self.highlight = []
                 self.draw()
                 self.post_move_updates()
+
                 self.sending = True
                 threading.Thread(target=self.send_move, args=(move,), daemon=True).start()
             else:
-                self.selected, self.highlight = None, []
+                self.selected = None
+                self.highlight = []
         else:
-            p = self.board.get(r,c)
-            if p and p.color==self.color:
-                self.selected = (r,c)
-                self.highlight = self.board.legal_moves(r,c)
+            p = self.board.get(r, c)
+            if p and p.color == self.color:
+                self.selected = (r, c)
+                self.highlight = self.board.legal_moves(r, c)
         self.draw()
 
+    # ──────────────────────────────────────────────────────────────
+    # Networking wrappers
+    # ──────────────────────────────────────────────────────────────
     def send_move(self, mv):
         try:
             if self.is_host:
@@ -384,33 +440,37 @@ class ChessGUI:
             else:
                 return lan_socket.client_mode(b'', 'black', self.host_ip)
         except (ConnectionResetError, ConnectionRefusedError, OSError):
-            return ''  # no data yet
+            return ''
 
     def _apply_remote_move(self, mv):
-        sr,sc,tr,tc = self.decode(mv)
-        self.board.move(sr,sc,tr,tc)
+        sr, sc, tr, tc = self.decode(mv)
+        self.board.move(sr, sc, tr, tc)
         self.draw()
         self.post_move_updates()
 
     def net_loop(self):
         while True:
-            if not self.sending and self.board.turn==self.opponent:
+            if not self.sending and self.board.turn == self.opponent:
                 mv = self.recv_move()
                 if mv:
                     self.root.after(0, self._apply_remote_move, mv)
             time.sleep(0.1)
 
+    # ──────────────────────────────────────────────────────────────
+    # Post-move state / pop-ups
+    # ──────────────────────────────────────────────────────────────
     def post_move_updates(self):
         gs = self.board.game_state()
-        if gs=='mate':
-            winner = 'white' if self.board.turn=='black' else 'black'
+        if gs == 'mate':
+            winner = 'white' if self.board.turn == 'black' else 'black'
             messagebox.showinfo("Check-mate", f"{winner.capitalize()} wins!")
-        elif gs=='stalemate':
+        elif gs == 'stalemate':
             messagebox.showinfo("Stalemate", "Draw by stalemate.")
-        elif gs=='check':
+        elif gs == 'check':
             messagebox.showinfo("Check", "Check!")
         self.update_status()
 
+    # ──────────────────────────────────────────────────────────────
     def run(self):
         self.root.mainloop()
 
