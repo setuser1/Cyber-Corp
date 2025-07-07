@@ -377,20 +377,33 @@ class ChessGUI:
         except Exception:
             return ""
 
-    def _apply_remote(self, msg):
+       # ———————————————————————————————————————————
+    # Apply one message that arrived over the LAN
+    # ———————————————————————————————————————————
+    def _apply_remote(self, msg: str):
         if msg.startswith("C:"):
+            # classical  C:<src><dst>
             _, move = msg.split(":", 1)
             src, dst = move[:2], move[2:]
             sr, sc = self.dec(src)
             tr, tc = self.dec(dst)
             self.local_c_move(sr, sc, tr, tc)
+
         elif msg.startswith("Q:"):
-            _, part1, part2, seed = msg.split(":")
+            # quantum    Q:<src><t1>:<src><t2>:<seed>
+            _, part1, part2, seed_str = msg.split(":")
+            seed = int(seed_str)
+
+            # decode squares
             sr, sc = self.dec(part1[:2])
             t1r, t1c = self.dec(part1[2:])
             t2r, t2c = self.dec(part2[2:])
+
+            # reproduce local side’s collapse-then-split sequence
+            self.board.collapse_on(sr, sc, seed)
             self.board.quantum_move(sr, sc, t1r, t1c, t2r, t2c)
-            self.board.turn = "black" if self.board.turn == "white" else "white"
+
+        # one redraw & status update covers both cases
         self.draw()
         self.update_status()
 
