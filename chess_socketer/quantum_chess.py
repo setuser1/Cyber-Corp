@@ -1,3 +1,4 @@
+#note to self: didn't add the updated function yet
 import tkinter as tk
 from tkinter import messagebox, simpledialog
 import threading, time, sys, random, copy
