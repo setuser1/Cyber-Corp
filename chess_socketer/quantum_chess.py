@@ -1,9 +1,9 @@
-#note to self: didn't add the updated function yet
 import tkinter as tk
 from tkinter import messagebox, simpledialog
 import threading, time, sys, random, copy
 import lan_socket
 
+# ─────────────────── constants ───────────────────
 SQUARE_SIZE = 64
 UNICODE = {
     "white": {"K": "♔", "Q": "♕", "R": "♖", "B": "♗", "N": "♘", "P": "♙"},
@@ -11,29 +11,25 @@ UNICODE = {
 }
 FILES = "abcdefgh"
 
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Piece object – shared across branches (except when collapsed)
-# ─────────────────────────────────────────────────────────────────────────────
+# ─────────────────── data model ───────────────────
 class Piece:
     def __init__(self, kind: str, color: str):
-        self.kind = kind             # 'K','Q','R','B','N','P'
-        self.color = color           # 'white'/'black'
-        self.moved = False           # for castling / pawn first move
-        self.q_id = None             # None = classical; int tag = fuzzy set
+        self.kind = kind
+        self.color = color
+        self.moved = False
+        self.q_id = None          # None → classical, int → fuzzy tag
 
     def char(self) -> str:
         return UNICODE[self.color][self.kind]
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Board = list of *branches*, each branch is an 8×8 array of Piece|None
-# ─────────────────────────────────────────────────────────────────────────────
 class Board:
+    """A list of branches; each branch is an 8×8 Piece|None grid."""
+
     def __init__(self):
         self.branches = [self._start_grid()]
         self.turn = "white"
-        self.q_counter = 1           # next quantum-ID to tag superposed pieces
+        self.q_counter = 1        # next tag for a new fuzzy pair
 
     @staticmethod
     def _start_grid():
@@ -46,14 +42,13 @@ class Board:
             g[1][c] = Piece("P", "black")
         return g
 
-    # ------------------------------------------------------------------ helpers
+    # ── helpers ────────────────────────────────
     @staticmethod
     def inside(r, c):
         return 0 <= r < 8 and 0 <= c < 8
 
-    # merged view – if every branch has *identical* piece here ➜ that piece,
-    # else None (meaning "?" in the GUI)
     def merged_piece(self, r, c):
+        """Return piece if *all* branches agree; else None (means '?')."""
         first = self.branches[0][r][c]
         for b in self.branches[1:]:
             if (b[r][c] is None) != (first is None):
@@ -64,18 +59,67 @@ class Board:
                 return None
         return first
 
-    # for move-generation we just inspect the *first* branch that contains the
-    # piece at (r,c).  That is enough for highlighting.
     def piece_at_any_branch(self, r, c):
         for b in self.branches:
-            p = b[r][c]
-            if p:
-                return p
+            if b[r][c]:
+                return b[r][c]
         return None
 
-    # ---------------------------------------------------------------- movement
+    # ── chess legality (simplified) ────────────
+    def _classical_legal(self, g, p, sr, sc, tr, tc):
+        if not self.inside(tr, tc):
+            return False
+        if g[tr][tc] and g[tr][tc].color == p.color:
+            return False
+        if p.kind == "K":
+            return max(abs(tr - sr), abs(tc - sc)) == 1
+        if p.kind == "N":
+            return (abs(tr - sr), abs(tc - sc)) in [(2, 1), (1, 2)]
+        if p.kind == "B":
+            if abs(tr - sr) != abs(tc - sc):
+                return False
+            step_r = 1 if tr > sr else -1
+            step_c = 1 if tc > sc else -1
+            r, c = sr + step_r, sc + step_c
+            while (r, c) != (tr, tc):
+                if g[r][c]:
+                    return False
+                r += step_r
+                c += step_c
+            return True
+        if p.kind == "R":
+            if sr != tr and sc != tc:
+                return False
+            if sr == tr:
+                step = 1 if tc > sc else -1
+                for c in range(sc + step, tc, step):
+                    if g[sr][c]:
+                        return False
+            else:
+                step = 1 if tr > sr else -1
+                for r in range(sr + step, tr, step):
+                    if g[r][sc]:
+                        return False
+            return True
+        if p.kind == "Q":
+            return self._classical_legal(g, Piece("B", p.color), sr, sc, tr, tc) or \
+                   self._classical_legal(g, Piece("R", p.color), sr, sc, tr, tc)
+        if p.kind == "P":
+            direction = -1 if p.color == "white" else 1
+            start_row = 6 if p.color == "white" else 1
+            # forward
+            if tc == sc and g[tr][tc] is None:
+                if tr - sr == direction:
+                    return True
+                if sr == start_row and tr - sr == 2 * direction and g[sr + direction][sc] is None:
+                    return True
+            # capture
+            if abs(tc - sc) == 1 and tr - sr == direction and g[tr][tc] and g[tr][tc].color != p.color:
+                return True
+        return False   # (no castling/en-passant/promo here for brevity)
+
+    # ── apply moves ────────────────────────────
     def classical_move(self, sr, sc, tr, tc):
-        """Apply a classical move across *all* branches where legal."""
         new_branches = []
         for g in self.branches:
             p = g[sr][sc]
@@ -90,72 +134,42 @@ class Board:
         self.branches = new_branches
         self.turn = "black" if self.turn == "white" else "white"
 
-    # simplified: only basic orthogonal / diagonal / knight / pawn moves
-    def _classical_legal(self, grid, piece, sr, sc, tr, tc):
-        if piece.kind == "K":  # kings stay classical, normal king move
-            return max(abs(tr - sr), abs(tc - sc)) == 1
-        if piece.kind == "N":
-            return (abs(tr - sr), abs(tc - sc)) in [(2, 1), (1, 2)]
-        if piece.kind == "B":
-            return abs(tr - sr) == abs(tc - sc)
-        if piece.kind == "R":
-            return (sr == tr) ^ (sc == tc)
-        if piece.kind == "Q":
-            return abs(tr - sr) == abs(tc - sc) or (sr == tr) ^ (sc == tc)
-        if piece.kind == "P":
-            direction = -1 if piece.color == "white" else 1
-            if tc == sc and tr - sr == direction and grid[tr][tc] is None:
-                return True
-        return False  # (castling, en-passant omitted for brevity)
-
     def quantum_move(self, sr, sc, t1r, t1c, t2r, t2c):
-        """
-        Remove every branch that doesn't have the moving piece on (sr,sc),
-        then duplicate each surviving branch so the piece is on t1 and t2.
-        """
-        survivors = []
-        for g in self.branches:
-            if g[sr][sc]:
-                survivors.append(g)
+        survivors = [g for g in self.branches if g[sr][sc]]
         if not survivors:
-            return  # nothing to split
-
+            return
         tag = self.q_counter
         self.q_counter += 1
-        new_branches = []
+        new = []
         for g in survivors:
             p = g[sr][sc]
-            if p.kind == "K":
-                continue  # kings can't quantum-move
+            if p.kind == "K":         # kings can't quantum-move
+                continue
             # branch 1
-            g1 = copy.deepcopy(g)
-            g1[t1r][t1c] = g1[sr][sc]
-            g1[sr][sc] = None
-            g1[t1r][t1c].q_id = tag
-            new_branches.append(g1)
+            if self._classical_legal(g, p, sr, sc, t1r, t1c):
+                g1 = copy.deepcopy(g)
+                g1[t1r][t1c] = g1[sr][sc]
+                g1[sr][sc] = None
+                g1[t1r][t1c].q_id = tag
+                new.append(g1)
             # branch 2
-            g2 = copy.deepcopy(g)
-            g2[t2r][t2c] = g2[sr][sc]
-            g2[sr][sc] = None
-            g2[t2r][t2c].q_id = tag
-            new_branches.append(g2)
-        self.branches = new_branches
-        self.turn = "black" if self.turn == "white" else "white"
+            if self._classical_legal(g, p, sr, sc, t2r, t2c):
+                g2 = copy.deepcopy(g)
+                g2[t2r][t2c] = g2[sr][sc]
+                g2[sr][sc] = None
+                g2[t2r][t2c].q_id = tag
+                new.append(g2)
+        if new:
+            self.branches = new
+            self.turn = "black" if self.turn == "white" else "white"
 
-    # ---------------------------------------------------------------- collapse
+    # ── collapse ───────────────────────────────
     def collapse_on(self, r, c, seed):
-        """
-        Observe square (r,c) with given RNG seed.  Remove every branch where
-        that square *doesn't* contain a piece, then *randomly* choose one
-        remaining branch.
-        """
         branches = [b for b in self.branches if b[r][c]]
         if not branches:
-            return False  # nothing there
-        rng = random.Random(seed)
-        chosen = rng.choice(branches)
+            return False
+        chosen = random.Random(seed).choice(branches)
         self.branches = [copy.deepcopy(chosen)]
-        # tag cleared – collapsed pieces become classical
         for rr in range(8):
             for cc in range(8):
                 p = self.branches[0][rr][cc]
@@ -164,31 +178,25 @@ class Board:
         return True
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# ChessGUI  (board-flip + quantum toggle + LAN sync)
-# ─────────────────────────────────────────────────────────────────────────────
+# ─────────────────── GUI / controller ───────────────────
 class ChessGUI:
     def __init__(self):
         self.board = Board()
 
-        # --------------- Tk setup ---------------
+        # ── Tk root & widgets ──────────────────
         self.root = tk.Tk()
         self.root.title("LAN Quantum Chess")
-        self.canvas = tk.Canvas(
-            self.root, width=8 * SQUARE_SIZE, height=8 * SQUARE_SIZE
-        )
+        self.canvas = tk.Canvas(self.root, width=8 * SQUARE_SIZE, height=8 * SQUARE_SIZE)
         self.canvas.pack()
-        self.chk_var = tk.BooleanVar()
-        tk.Checkbutton(
-            self.root, text="Q-move", variable=self.chk_var
-        ).pack(anchor="w")
+
+        self.chk_var = tk.BooleanVar(value=False)   # OFF = classical, ON = quantum
+        tk.Checkbutton(self.root, text="Q-move", variable=self.chk_var).pack(anchor="w")
+
         self.status = tk.Label(self.root, font=("Arial", 12))
         self.status.pack()
 
-        # --------------- network side -----------
-        choice = simpledialog.askstring(
-            "Network", "Type 'host' to host, or enter host-IP to join:"
-        )
+        # ── network side choice ─────────────────
+        choice = simpledialog.askstring("Network", "Type 'host' to host, or enter host-IP to join:")
         if not choice:
             sys.exit(0)
         if choice.lower() == "host":
@@ -199,9 +207,9 @@ class ChessGUI:
 
         self.flip = self.color == "black"
 
-        # --------------- click state ------------
+        # ── selection state ─────────────────────
         self.selected = None          # (r,c)
-        self.q_first = None           # first target square for Q-move
+        self.q_first = None           # first target for Q-move
         self.highlight = []
         self.sending = False
 
@@ -211,7 +219,7 @@ class ChessGUI:
 
         threading.Thread(target=self.net_loop, daemon=True).start()
 
-    # ---------- board ↔ screen helpers ----------
+    # ── board ↔ screen helpers ─────────────────
     def rc(self, x, y):
         sr, sc = y // SQUARE_SIZE, x // SQUARE_SIZE
         return (7 - sr, 7 - sc) if self.flip else (sr, sc)
@@ -220,7 +228,7 @@ class ChessGUI:
         sr, sc = (7 - br, 7 - bc) if self.flip else (br, bc)
         return sc * SQUARE_SIZE, sr * SQUARE_SIZE
 
-    # ---------- drawing -------------------------
+    # ── drawing ────────────────────────────────
     def draw(self):
         self.canvas.delete("all")
         light, dark = "#EEEED2", "#769656"
@@ -228,137 +236,132 @@ class ChessGUI:
             for bc in range(8):
                 x0, y0 = self.screen_square(br, bc)
                 self.canvas.create_rectangle(
-                    x0,
-                    y0,
-                    x0 + SQUARE_SIZE,
-                    y0 + SQUARE_SIZE,
-                    fill=light if (br + bc) % 2 == 0 else dark,
-                    outline="",
+                    x0, y0, x0 + SQUARE_SIZE, y0 + SQUARE_SIZE,
+                    fill=light if (br + bc) % 2 == 0 else dark, outline=""
                 )
 
         # highlights
         for br, bc in self.highlight:
             x0, y0 = self.screen_square(br, bc)
             self.canvas.create_rectangle(
-                x0,
-                y0,
-                x0 + SQUARE_SIZE,
-                y0 + SQUARE_SIZE,
-                fill="yellow",
-                stipple="gray25",
-                outline="",
+                x0, y0, x0 + SQUARE_SIZE, y0 + SQUARE_SIZE,
+                fill="yellow", stipple="gray25", outline=""
             )
 
-        # pieces / ?
+        # pieces / '?'
         for br in range(8):
             for bc in range(8):
-                p = self.board.merged_piece(br, bc)
-                glyph = "?" if p is None and any(
-                    b[br][bc] for b in self.board.branches
-                ) else (p.char() if p else None)
+                glyph = None
+                if any(b[br][bc] for b in self.board.branches):
+                    mp = self.board.merged_piece(br, bc)
+                    glyph = mp.char() if mp else "?"
                 if glyph:
                     x0, y0 = self.screen_square(br, bc)
                     self.canvas.create_text(
-                        x0 + SQUARE_SIZE // 2,
-                        y0 + SQUARE_SIZE // 2,
-                        text=glyph,
-                        font=("Arial", 36),
+                        x0 + SQUARE_SIZE // 2, y0 + SQUARE_SIZE // 2,
+                        text=glyph, font=("Arial", 36)
                     )
 
     def update_status(self):
         mode = "Q" if self.chk_var.get() else "C"
-        self.status.config(
-            text=f"You are {self.color}  |  Turn: {self.board.turn}  |  Mode: {mode}"
-        )
+        self.status.config(text=f"You are {self.color}  |  Turn: {self.board.turn}  |  Mode: {mode}")
 
-    # ---------- algebraic helpers --------------
-    def enc(self, r, c):
-        return f"{FILES[c]}{8 - r}"
+    # ── algebraic helpers ──────────────────────
+    def enc(self, r, c):  return f"{FILES[c]}{8 - r}"
+    def dec(self, s):     return 8 - int(s[1]), FILES.index(s[0])
 
-    def dec(self, s):
-        return 8 - int(s[1]), FILES.index(s[0])
+    # ── legal moves generator ──────────────────
+    def _legal_moves(self, r, c):
+        for g in self.board.branches:
+            p = g[r][c]
+            if not p:
+                continue
+            moves = []
+            for tr in range(8):
+                for tc in range(8):
+                    if self.board._classical_legal(g, p, r, c, tr, tc):
+                        moves.append((tr, tc))
+            return moves
+        return []
 
-    # ---------- click handler ------------------
+    # ── click handler ──────────────────────────
     def on_click(self, e):
         r, c = self.rc(e.x, e.y)
         p = self.board.piece_at_any_branch(r, c)
 
+        # block move if not our turn
         if self.board.turn != self.color:
-            return  # not our turn
+            self._clear_selection()
+            return
 
-        # ---------- Q-move flow ----------
+        # ——— QUANTUM mode ————————————————————
         if self.chk_var.get():
-            if self.selected is None:          # select piece first
-                if p and p.color == self.color and p.kind != "K":
+            if p and p.kind == "K":
+                self._clear_selection()
+                return
+
+            if self.selected is None:                       # pick piece
+                if p and p.color == self.color:
                     self.selected = (r, c)
-                    self.highlight = self._legal_moves_rough(r, c)
-            elif self.q_first is None:         # pick first target
+                    self.highlight = self._legal_moves(r, c)
+
+            elif self.q_first is None:                      # first target
                 if (r, c) in self.highlight:
                     self.q_first = (r, c)
-                    self.highlight = [
-                        sq for sq in self.highlight if sq != (r, c)
-                    ]
-            else:                              # pick second target → commit
-                if (r, c) in self.highlight:
+                else:
+                    self._clear_selection()
+
+            else:                                           # second target
+                if (r, c) in self.highlight and (r, c) != self.q_first:
                     sr, sc = self.selected
                     t1r, t1c = self.q_first
                     t2r, t2c = r, c
                     seed = random.randrange(2**32)
                     self.local_q_move(sr, sc, t1r, t1c, t2r, t2c, seed)
-                    msg = f"Q:{self.enc(sr,sc)}{self.enc(t1r,t1c)}:{self.enc(sr,sc)}{self.enc(t2r,t2c)}:{seed}"
+                    msg = (
+                        f"Q:{self.enc(sr,sc)}{self.enc(t1r,t1c)}:"
+                        f"{self.enc(sr,sc)}{self.enc(t2r,t2c)}:{seed}"
+                    )
                     self.send_async(msg)
-                    self._clear_selection()
-        # -------- classical flow ----------
+                self._clear_selection()
+
+        # ——— CLASSICAL mode ———————————————————
         else:
-            if self.selected is None:
+            if self.selected is None:                       # pick piece
                 if p and p.color == self.color:
                     self.selected = (r, c)
-                    self.highlight = self._legal_moves_rough(r, c)
-            else:
+                    self.highlight = self._legal_moves(r, c)
+
+            else:                                           # choose target
                 if (r, c) in self.highlight:
                     sr, sc = self.selected
                     self.local_c_move(sr, sc, r, c)
                     msg = f"C:{self.enc(sr,sc)}{self.enc(r,c)}"
                     self.send_async(msg)
-                    self._clear_selection()
-                else:
-                    self._clear_selection()
+                self._clear_selection()
 
         self.draw()
         self.update_status()
-
-    def _legal_moves_rough(self, r, c):
-        # simplistic: any square inside board not holding our own classical king
-        sqs = []
-        for tr in range(8):
-            for tc in range(8):
-                if (tr, tc) != (r, c):
-                    sqs.append((tr, tc))
-        return sqs
 
     def _clear_selection(self):
         self.selected = None
         self.q_first = None
         self.highlight = []
 
-    # ---------- local move helpers -------------
+    # ── local move helpers ─────────────────────
     def local_c_move(self, sr, sc, tr, tc):
-        # collapse if target square fuzzy
         seed = random.randrange(2**32)
         self.board.collapse_on(tr, tc, seed)
         self.board.classical_move(sr, sc, tr, tc)
 
     def local_q_move(self, sr, sc, t1r, t1c, t2r, t2c, seed):
-        # collapse origin square first if fuzzy
         self.board.collapse_on(sr, sc, seed)
         self.board.quantum_move(sr, sc, t1r, t1c, t2r, t2c)
 
-    # ---------- networking ---------------------
+    # ── networking helpers ─────────────────────
     def send_async(self, msg_str):
         self.sending = True
-        threading.Thread(
-            target=self._send, args=(msg_str,), daemon=True
-        ).start()
+        threading.Thread(target=self._send, args=(msg_str,), daemon=True).start()
 
     def _send(self, s):
         try:
@@ -378,12 +381,8 @@ class ChessGUI:
         except Exception:
             return ""
 
-       # ———————————————————————————————————————————
-    # Apply one message that arrived over the LAN
-    # ———————————————————————————————————————————
-    def _apply_remote(self, msg: str):
+    def _apply_remote(self, msg):
         if msg.startswith("C:"):
-            # classical  C:<src><dst>
             _, move = msg.split(":", 1)
             src, dst = move[:2], move[2:]
             sr, sc = self.dec(src)
@@ -391,20 +390,14 @@ class ChessGUI:
             self.local_c_move(sr, sc, tr, tc)
 
         elif msg.startswith("Q:"):
-            # quantum    Q:<src><t1>:<src><t2>:<seed>
             _, part1, part2, seed_str = msg.split(":")
             seed = int(seed_str)
-
-            # decode squares
             sr, sc = self.dec(part1[:2])
             t1r, t1c = self.dec(part1[2:])
             t2r, t2c = self.dec(part2[2:])
-
-            # reproduce local side’s collapse-then-split sequence
             self.board.collapse_on(sr, sc, seed)
             self.board.quantum_move(sr, sc, t1r, t1c, t2r, t2c)
 
-        # one redraw & status update covers both cases
         self.draw()
         self.update_status()
 
@@ -416,7 +409,7 @@ class ChessGUI:
                     self.root.after(0, self._apply_remote, msg)
             time.sleep(0.1)
 
-    # ---------- go! ----------------------------
+    # ── run ────────────────────────────────────
     def run(self):
         self.root.mainloop()
 
