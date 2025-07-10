@@ -179,39 +179,56 @@ class Board:
             return tot/samples
 
     # ––– AI search (simple) –––––––––––––––––––
-    def best_ai_move(self,color,max_q_samples=8):
-        best_score=-1e9 if color=="white" else 1e9
-        best=None
-        # classical moves
+    def best_ai_move(self, color, max_q_samples=8):
+        best_score = -1e9 if color == "white" else 1e9
+        best = None
+
+        # ----- classical moves -----
         for r in range(8):
             for c in range(8):
-                p=self.piece_at_any(r,c)
-                if not(p and p.color==color): continue
+                p = self.piece_at_any(r, c)
+                if not (p and p.color == color):
+                    continue
                 for tr in range(8):
                     for tc in range(8):
-                        if self._legal(self.branches[0],p,r,c,tr,tc):
-                            sim=copy.deepcopy(self)
-                            sim.classical_move(r,c,tr,tc)
-                            sc=sim.evaluate(color,2,6)
-                            if (color=="white" and sc>best_score) or (color=="black" and sc<best_score):
-                                best_score, best=("C",r,c,tr,tc)
-        # quantum samples
-        samples=0
-        while samples<max_q_samples:
-            r,c=random.randrange(8),random.randrange(8)
-            p=self.piece_at_any(r,c)
-            if not(p and p.color==color and p.kind!="K"): continue
-            leg=[(tr,tc) for tr in range(8) for tc in range(8)
-                 if self._legal(self.branches[0],p,r,c,tr,tc)]
-            if len(leg)<2: continue
-            t1,t2=random.sample(leg,2)
-            seed=random.randrange(2**32)
-            sim=copy.deepcopy(self); sim.collapse_on(r,c,seed)
-            sim.quantum_move(r,c,*t1,*t2)
-            sc=sim.evaluate(color,2,6)
-            if (color=="white" and sc>best_score) or (color=="black" and sc<best_score):
-                best_score, best=("Q",r,c,*t1,*t2,seed)
-            samples+=1
+                        if self._legal(self.branches[0], p, r, c, tr, tc):
+                            sim = copy.deepcopy(self)
+                            sim.classical_move(r, c, tr, tc)
+                            sc = sim.evaluate(color, 2, 6)
+                            if (color == "white" and sc > best_score) or (
+                                color == "black" and sc < best_score
+                            ):
+                                best_score = sc               # ← FIXED
+                                best = ("C", r, c, tr, tc)    # ← FIXED
+
+        # ----- quantum samples -----
+        samples = 0
+        while samples < max_q_samples:
+            r, c = random.randrange(8), random.randrange(8)
+            p = self.piece_at_any(r, c)
+            if not (p and p.color == color and p.kind != "K"):
+                continue
+            leg = [
+                (tr, tc)
+                for tr in range(8)
+                for tc in range(8)
+                if self._legal(self.branches[0], p, r, c, tr, tc)
+            ]
+            if len(leg) < 2:
+                continue
+            t1, t2 = random.sample(leg, 2)
+            seed = random.randrange(2**32)
+            sim = copy.deepcopy(self)
+            sim.collapse_on(r, c, seed)
+            sim.quantum_move(r, c, *t1, *t2)
+            sc = sim.evaluate(color, 2, 6)
+            if (color == "white" and sc > best_score) or (
+                color == "black" and sc < best_score
+            ):
+                best_score = sc                               # ← FIXED
+                best = ("Q", r, c, *t1, *t2, seed)            # ← FIXED
+            samples += 1
+
         return best
 
 # ───────────────────────── GUI / Controller ─────────────────────────
