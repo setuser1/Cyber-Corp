@@ -5,7 +5,7 @@ import chess, chess.engine                        # python-chess
 import lan_socket
 
 # ── Path to Stockfish ────────────────────────────────────────────
-STOCKFISH_PATH = "stockfish"   # change to full .exe path if you like
+STOCKFISH_PATH = r"C:\Users\Charlie T\stockfish.exe"
 
 # ── Check engine exists, else warn & fall back to random AI ——–––
 if not (shutil.which(STOCKFISH_PATH) or os.path.isfile(STOCKFISH_PATH)):
