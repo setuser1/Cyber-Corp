@@ -4,7 +4,7 @@ import chess, chess.engine
 import lan_socket
 
 # ───────── Stockfish location ─────────
-STOCKFISH_PATH = r"C:\Users\Charlie T\stockfish.exe"  # <— adjust if needed
+STOCKFISH_PATH = "stockfish.exe"  # <— adjust if needed
 
 # fall-back if engine unreachable
 if not (shutil.which(STOCKFISH_PATH) or os.path.isfile(STOCKFISH_PATH)):
