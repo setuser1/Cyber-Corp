@@ -4,16 +4,37 @@
 #include <unistd.h>
 #include <dirent.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <signal.h>
 
 #define BUFF 1024
 
-char* cat(char *filename, char *content, size_t *length) {
+extern char **environ;
+
+void handle_sigint(int sig) {
+    (void)sig;
+    printf("\nroot# ");
+    fflush(stdout);
+}
+
+char* cat(const char *filename, char *content, size_t *length) {
     FILE *file = fopen(filename, "r");
+    if (!file) {
+        perror("cat");
+        return content;
+    }
     char buffer[BUFF];
 
     while (fgets(buffer, sizeof(buffer), file)) {
         size_t line = strlen(buffer);
         char *temp = realloc(content, *length + line + 1);
+        if (!temp) {
+            perror("realloc");
+            fclose(file);
+            free(content);
+            exit(EXIT_FAILURE);
+        }
         content = temp;
         strcpy(content + *length, buffer);
         *length += line;
@@ -23,20 +44,24 @@ char* cat(char *filename, char *content, size_t *length) {
     return content;
 }
 
-char* touch(char *filename) {
+char* touch(const char *filename) {
     FILE *file = fopen(filename, "w");
     if (file == NULL) {
         perror("touch");
         return NULL;
     }
     fclose(file);
-    return filename;
+    return (char *)filename;
 }
 
-void ls() {
+void ls(void) {
     DIR *dir;
     struct dirent *entry;
     dir = opendir(".");
+    if (!dir) {
+        perror("ls");
+        return;
+    }
     while ((entry = readdir(dir)) != NULL) {
         if (entry->d_name[0] != '.') {
             printf("%s\n", entry->d_name);
@@ -46,7 +71,6 @@ void ls() {
 }
 
 void shell_chmod(char *args) {
-    #include <sys/stat.h>
     while (*args == ' ') args++;
     char *mode_str = strtok(args, " ");
     char *filename = strtok(NULL, "");
@@ -85,8 +109,12 @@ void shell_chown(char *args) {
 int rmdir_recursive(const char *path) {
     DIR *dir = opendir(path);
     if (!dir) {
-        perror("opendir");
-        return -1;
+        // Not a directory, try to remove as file
+        if (remove(path) != 0) {
+            perror("remove");
+            return -1;
+        }
+        return 0;
     }
 
     struct dirent *entry;
@@ -99,11 +127,8 @@ int rmdir_recursive(const char *path) {
         snprintf(fullpath, sizeof(fullpath), "%s/%s", path, entry->d_name);
 
         if (rmdir_recursive(fullpath) != 0) {
-            if (remove(fullpath) != 0) {
-                perror("remove");
-                closedir(dir);
-                return -1;
-            }
+            closedir(dir);
+            return -1;
         }
     }
 
@@ -117,9 +142,16 @@ int rmdir_recursive(const char *path) {
     return 0;
 }
 
-int main() {
+int main(void) {
+    // Handle Ctrl+C gracefully
+    signal(SIGINT, handle_sigint);
+
     char *content = malloc(1);
     size_t len = 0;
+    if (!content) {
+        perror("malloc");
+        exit(EXIT_FAILURE);
+    }
     content[0] = '\0';
 
     char input[BUFF];
@@ -139,7 +171,10 @@ int main() {
         } else if (strcmp(input, "ls") == 0) {
             ls();
         } else if (strcmp(input, "clear") == 0) {
-            printf("\033[H\033[J");
+            // Clear screen, clear scrollback, move cursor to top-left
+            printf("\033[H\033[J\033[3J");
+            fflush(stdout);
+            continue; // Skip printing prompt again this loop
         } else if (strncmp(input, "cd ", 3) == 0) {
             char *path = input + 3;
             while (*path == ' ') path++;
@@ -189,7 +224,7 @@ int main() {
             if (pid == 0) {
                 // Child process
                 char *argv_exec[] = {input, NULL};
-                execve(input, argv_exec, NULL);
+                execve(input, argv_exec, environ);
                 perror("execve failed");
                 exit(1);
             } else if (pid > 0) {
@@ -205,6 +240,10 @@ int main() {
 
         free(content);
         content = malloc(1);
+        if (!content) {
+            perror("malloc");
+            exit(EXIT_FAILURE);
+        }
         len = 0;
         content[0] = '\0';
     }
