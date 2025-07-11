@@ -46,6 +46,7 @@ void ls() {
 }
 
 void shell_chmod(char *args) {
+    #include <sys/stat.h>
     while (*args == ' ') args++;
     char *mode_str = strtok(args, " ");
     char *filename = strtok(NULL, "");
