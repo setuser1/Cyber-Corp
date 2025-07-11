@@ -16,3 +16,5 @@ Key/Legend:
 .ll = LLVM
 
 .asm = Assembly
+
+Python is bad, only good for ai.
