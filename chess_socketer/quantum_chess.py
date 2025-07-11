@@ -1,3 +1,4 @@
+#download stockfish so the computer oppenent doesn't move randomly, change the path to where the stockfish file is
 import os, shutil, random, copy, threading, time, sys, tkinter as tk
 from tkinter import messagebox, simpledialog
 import chess, chess.engine
