@@ -2,17 +2,18 @@
 #include <string.h>
 #include <stdarg.h>
 
+// are you underestimating me?????
 void print_string(const char* s) {
     write(1, s, strlen(s));
 }
-
+// just like string but needs check yk.
 void print_c(const char* s) {
     if (strlen(s) == 1) {
         write(1, s, 1);
     }
 }
 
-
+// hardest js like me
 void print_int(int i) {
     if (i == 0) {
         write(1, "0", 1);
@@ -25,22 +26,17 @@ void print_int(int i) {
         i = -i;
     }
 
-
     char temp[32];
-
     temp[0] = '\0';
-    char digit[2];       // 1 for digit, 1 for null terminator
+    char digit[2];
     for (; i != 0; i /= 10) {
         const int n = i % 10;
-
-
-        digit[0] = (char)(n + '0');  // convert int to char
-        digit[1] = '\0';     // null terminator
-        strcat(temp, digit);    // now safe
+        digit[0] = (char)(n + '0');
+        digit[1] = '\0';
+        strcat(temp, digit);
         pos++;
     }
 
-    // Build final string with correct order
     char final[32];
     int idx = 0;
 
@@ -56,7 +52,7 @@ void print_int(int i) {
     print_string(final);
 }
 
-
+// easy after doing int
 void print_long_long(long long i) {
     if (i == 0) {
         write(1, "0", 1);
@@ -69,22 +65,17 @@ void print_long_long(long long i) {
         i = -i;
     }
 
-
     char temp[32];
-
     temp[0] = '\0';
-    char digit[2];       // 1 for digit, 1 for null terminator
+    char digit[2];
     for (; i != 0; i /= 10) {
         const long long n = i % 10;
-
-
-        digit[0] = (char)(n + '0');  // convert int to char
-        digit[1] = '\0';     // null terminator
-        strcat(temp, digit);    // now safe
+        digit[0] = (char)(n + '0');
+        digit[1] = '\0';
+        strcat(temp, digit);
         pos++;
     }
 
-    // Build final string with correct order
     char final[32];
     int idx = 0;
 
@@ -100,7 +91,6 @@ void print_long_long(long long i) {
     print_string(final);
 }
 
-
 void print_float(const double val) {
     int int_part = (int)val;
     double frac_part = val - (double)int_part;
@@ -110,9 +100,9 @@ void print_float(const double val) {
         frac_part = -frac_part;
     }
 
-    print_int(int_part);      // print integer part
-    write(1, ".", 1);         // print decimal point
-    const int decimals = 6;         // Number of digits after the decimal
+    print_int(int_part);
+    write(1, ".", 1);
+    const int decimals = 6;
     for (int i = 0; i < decimals; i++) {
         frac_part *= 10;
         const int digit = (int)frac_part;
@@ -120,10 +110,9 @@ void print_float(const double val) {
         write(1, &c, 1);
         frac_part -= digit;
     }
-
 }
 
-
+// this one sucks
 void printd(const char *buff, ...) {
     va_list args;
     va_start(args, buff);
@@ -132,14 +121,12 @@ void printd(const char *buff, ...) {
         if (*buff == '%') {
             buff++;
 
-            // Handle %lld (long long) first
             if (buff[0] == 'l' && buff[1] == 'l' && buff[2] == 'd') {
                 print_long_long(va_arg(args, long long));
-                buff += 3;  // Skip 'l', 'l', and 'd'
+                buff += 3;
                 continue;
             }
 
-            // Single-character specifiers
             switch (*buff) {
                 case 'd':
                     print_int(va_arg(args, int));
@@ -148,7 +135,7 @@ void printd(const char *buff, ...) {
                     print_string(va_arg(args, char*));
                     break;
                 case 'c':
-                    print_c(va_arg(args, char*));  // Still using char* (if changed to char, cast from int)
+                    print_c(va_arg(args, char*));
                     break;
                 case 'f':
                     print_float(va_arg(args, double));
@@ -157,7 +144,6 @@ void printd(const char *buff, ...) {
                     write(1, "%", 1);
                     break;
                 default:
-                    // Unknown format specifier, print it literally
                     write(1, "%", 1);
                     write(1, buff, 1);
                     break;
@@ -169,5 +155,5 @@ void printd(const char *buff, ...) {
         buff++;
     }
 
-    va_end(args);
+    va_end(args); // finally
 }
