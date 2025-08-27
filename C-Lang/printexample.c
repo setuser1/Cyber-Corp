@@ -16,5 +16,11 @@ int main() {
     // the hacker way of printing
     extern void printd(const char* s);
     printd("Hello World!\n");
+
+    // the god way to print something
+    long long msg1 = 0x67206D6F6D207275LL;
+    long long msg2 = 0x00000000007961LL;
+    puts((char*)&msg1);
+    
     return 0;
 }
