@@ -18,7 +18,7 @@ int main() {
     printd("Hello World!\n");
 
     // the god way to print something
-    long long msg1 = 0x67206D6F6D207275LL;
+    long long msg1 = 7431059710500958837LL;
     long long msg2 = 0x00000000007961LL;
     puts((char*)&msg1);
     
