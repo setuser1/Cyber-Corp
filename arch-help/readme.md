@@ -32,7 +32,7 @@ Example layout for UEFI:
 * `/dev/sda1` — EFI System Partition (512 MiB, type EFI System)
 * `/dev/sda2` — Root partition (rest of disk, type Linux filesystem)
   
-if for BIOS use a 1MB unformatted partition for bios boot and rest as filesystem
+if for BIOS use a 1-2MB unformatted partition for bios boot and rest as filesystem
 
 * `/dev/sda1` - Root
 * `/dev/sda2` - Bios Boot partition
