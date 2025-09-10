@@ -12,17 +12,27 @@ This guide covers the steps to install Arch Linux using the `pacstrap` tool. It 
   ```bash
   ping -c 3 archlinux.org
   ```
+  * if not connected through ethernet, use iwctl like below
+  ```bash
+  iwctl
+  device list
+  station name scan
+  ```
 
 ---
 
 ## Step 2: Partition the Disk
 
 Use `fdisk`, `cfdisk`, or `parted` to partition your target disk.
+cfdisk is easiest for users wanting a more graphical interface whilst being built-in
 
 Example layout for UEFI:
 
 * `/dev/sda1` — EFI System Partition (512 MiB, type EFI System)
 * `/dev/sda2` — Root partition (rest of disk, type Linux filesystem)
+* if for BIOS use a 1MB unformatted partition for bios boot and rest as filesystem
+* `/dev/sda1` - Root
+* `/dev/sda2` - Bios Boot partition
 
 ---
 
@@ -32,7 +42,8 @@ Example layout for UEFI:
 mkfs.fat -F32 /dev/sda1        # EFI
 mkfs.ext4 /dev/sda2            # Root
 ```
-
+* use only the ext4 example if its BIOS based
+  
 (Optional) If using swap:
 
 ```bash
@@ -49,6 +60,7 @@ mount /dev/sda2 /mnt           # Mount root
 mkdir -p /mnt/boot             # Create boot dir
 mount /dev/sda1 /mnt/boot      # Mount EFI
 ```
+**DO NOT MOUNT THE BIOS BOOT PARTITION IF YOU ARE USING BIOS**
 
 ---
 
@@ -58,6 +70,10 @@ Use `pacstrap` to install the minimal base system:
 
 ```bash
 pacstrap /mnt base linux linux-firmware
+```
+or 
+```bash
+pacstrap -P /mnt base linux linux-firmware
 ```
 
 Optionally include other essential packages:
