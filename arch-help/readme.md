@@ -12,7 +12,7 @@ This guide covers the steps to install Arch Linux using the `pacstrap` tool. It 
   ```bash
   ping -c 3 archlinux.org
   ```
-  * if not connected through ethernet, use iwctl like below
+if not connected through ethernet, use iwctl like below
   ```bash
   iwctl
   device list
