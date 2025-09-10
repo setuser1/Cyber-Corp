@@ -17,6 +17,7 @@ if not connected through ethernet, use iwctl like below
   iwctl
   device list
   station name scan
+  etc
   ```
 
 ---
