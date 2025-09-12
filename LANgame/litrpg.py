@@ -22,6 +22,8 @@ class Player:
         self.bleed_chance = 0
         self.quests = []
         if role == "Mage":
+            self.hp = 75
+            self.max_hp = 75
             self.mana = 50
             self.max_mana = 50
             self.spell_power = 10
