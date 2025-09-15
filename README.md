@@ -1,4 +1,4 @@
-# SERSD-Cyber-Class
+# Cyber Corp Repo
 ## Programming
 
 This repository is for Cyber shop.
