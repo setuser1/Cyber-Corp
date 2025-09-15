@@ -1,7 +1,7 @@
-# Cyber Corp Repo
+# Cyber Corp Repository
 ## Programming
 
-This repository is for Cyber shop.
+This repository is for Cyber Corp.
 
 This repository currently consists of 6 contributors.
 
