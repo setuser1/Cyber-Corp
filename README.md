@@ -3,7 +3,7 @@
 
 This repository is for Cyber Corp.
 
-This repository currently consists of 6 contributors.
+This repository currently consists of 8 contributors.
 
 Key/Legend:
 
