@@ -10,7 +10,7 @@ def game(): #defines a function
     print("Your previous highscore is 0.")
     while True: #a while loop that runs the game until the user decides to not play no more
         r_b = input("Would you like to roll or bank? ")
-        if r_b == "roll": 
+        if r_b == "roll" or "r": 
             roll_dice = random.randint(1,6) #rolls the dice to get a value from 1 through 6
             if roll_dice > 1:
                 print(f"You rolled a {roll_dice}.")
@@ -20,7 +20,7 @@ def game(): #defines a function
                 round_score = 0 #if the dice value is 1 the round score gets reseted
                 print(f"You rolled a {roll_dice}.") 
                 print(f"Your round score has been reseted You now have {round_score}.")
-        elif r_b == "bank": #banking adds the score to the overall score that doesn't reset when 1 is rolled
+        elif r_b == "bank" or "b": #banking adds the score to the overall score that doesn't reset when 1 is rolled
             overall_score = overall_score + round_score
             round_score = 0
             turn_num += 1 #change the turn number when the user banks
