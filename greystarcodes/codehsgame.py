@@ -54,7 +54,7 @@ def game(): #defines a function
                 overall_score = 0
                 round_score = 0
                 turn_num = 1
-                print(f"Turn {turn_num}") #tells player defualt score
+                print(f"Turn {turn_num}") #tells player default score
                 print(f"Your Current Score is: {overall_score}")
                 print(f"This round you have: {round_score}")    
                 print(f"Your current highscore is {high_score}.")
