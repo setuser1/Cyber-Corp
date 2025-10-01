@@ -1,5 +1,5 @@
 Sebastian
-https://www.wired.com/story/microplastics-could-be-weakening-your-bones-research-suggests-osteoporosis/
+https://www.wired.com/story/how-to-buy-a-gaming-laptop/
 
 
-The review of more than 60 scientific articles showed that microplastics, among other effects, can stimulate the formation of osteoclasts, cells specialized in degrading bone tissue.
+With over a decade of experience in reviewing gaming laptops, here's my rundown of what to consider before pulling the trigger.
