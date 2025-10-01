@@ -1,5 +1,5 @@
 Sebastian
-https://www.wired.com/story/how-a-travel-youtuber-captured-nepals-revolution-for-the-world/
+https://www.wired.com/gallery/best-meal-kit-services-1/
 
 
-Harry Jackson went into Kathmandu as a tourist. He ended up being one of the main international sources of news on Nepal’s Gen Z protests.
+Here are the best meal kits in 2025, from Martha Stewart’s meal kit to the best meal delivery on a budget.
