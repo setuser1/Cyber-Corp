@@ -1,5 +1,5 @@
 Sebastian
-https://www.wired.com/story/how-to-buy-a-gaming-laptop/
+https://www.wired.com/story/how-a-travel-youtuber-captured-nepals-revolution-for-the-world/
 
 
-With over a decade of experience in reviewing gaming laptops, here's my rundown of what to consider before pulling the trigger.
+Harry Jackson went into Kathmandu as a tourist. He ended up being one of the main international sources of news on Nepal’s Gen Z protests.
