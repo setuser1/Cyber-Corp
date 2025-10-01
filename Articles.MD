@@ -1,5 +1,5 @@
 Sebastian
-https://www.wired.com/gallery/best-meal-kit-services-1/
+https://www.wired.com/story/openai-teen-safety-tools-chatgpt-parents-suicidal-ideation/
 
 
-Here are the best meal kits in 2025, from Martha Stewart’s meal kit to the best meal delivery on a budget.
+OpenAI’s review process for teenage ChatGPT users who are flagged for suicidal ideation includes human moderators. Parents can expect an alert about alarming prompts within hours.
