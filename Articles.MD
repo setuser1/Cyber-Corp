@@ -1,5 +1,5 @@
 Sebastian
-https://www.wired.com/story/openai-teen-safety-tools-chatgpt-parents-suicidal-ideation/
+https://www.wired.com/story/tile-tracking-tags-can-be-exploited-by-tech-savvy-stalkers-researchers-say/
 
 
-OpenAI’s review process for teenage ChatGPT users who are flagged for suicidal ideation includes human moderators. Parents can expect an alert about alarming prompts within hours.
+A team of researchers found that, by not encrypting the data broadcast by Tile tags, users could be vulnerable to having their location information exposed to malicious actors.
