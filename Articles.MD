@@ -1,5 +1,5 @@
 Sebastian
-https://www.wired.com/story/tile-tracking-tags-can-be-exploited-by-tech-savvy-stalkers-researchers-say/
+https://www.wired.com/story/microplastics-could-be-weakening-your-bones-research-suggests-osteoporosis/
 
 
-A team of researchers found that, by not encrypting the data broadcast by Tile tags, users could be vulnerable to having their location information exposed to malicious actors.
+The review of more than 60 scientific articles showed that microplastics, among other effects, can stimulate the formation of osteoclasts, cells specialized in degrading bone tissue.
