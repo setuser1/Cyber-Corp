@@ -1,5 +1,5 @@
-https://techcrunch.com/2025/10/02/hackers-are-sending-extortion-emails-to-executives-after-claiming-oracle-apps-data-breach/
+https://techcrunch.com/2025/10/02/openai-is-the-worlds-most-valuable-private-company-after-private-stock-sale/
 
-Google says hackers associated with a prolific ransomware group are sending extortion emails to executives at &#8220;numerous&#8221; large organizations after claiming to have stolen their sensitive information from a suite of business software products developed by Oracle.
+OpenAI has sold $6.6 billion in shares held by current and former employees, according to a new report from Bloomberg. The sale pushed OpenAIs total valuation to $500 billion, the highest ever achieved by a privately held company. Purchasers included SoftBank, Dragoneer Investment Group, Thrive Capital, MGX, and T. Rowe Price, the report said.
 
-In a statement provided to TechCrunch, Googles head of cybercrime analysis Genevieve Stark said the hackers began sending emails to executives around September 29, but that the tech giant has not yet substantiated the hackers claims.
+The sale was not a conventional funding round, as the cash went to individuals holding shares or options in OpenAI rather than the companys own coffers. Still, its a powerful retention tool for the company, which has faced significant pressure from Metas newly revitalized AI lab. This summer, Meta poached at least seven top engineers from OpenAI, often luring them away with multi-million dollar signing bonuses.
