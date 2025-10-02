@@ -1,5 +1,5 @@
-https://techcrunch.com/2025/10/02/india-cracks-down-on-25-crypto-exchanges-including-bingx-lbank-coinw-over-compliance-failures/
+https://techcrunch.com/2025/10/02/tesla-has-its-best-sales-quarter-of-2025-as-ev-tax-credit-expires/
 
-Offshore crypto platforms with billions of dollars in assets are in the Indian governments crosshairs, as the governments financial watchdog moves against 25 exchanges for failing to register and comply with anti-money laundering obligations.
+Teslas sales growth has vanished over the last year-and-a-half, but the company just registered its best quarter of deliveries ever, in large part because buyers rushed to take advantage of the $7,500 federal EV tax credit before it went away.
 
-The Financial Intelligence Unit India (FIU-IND) issued notices to 25 crypto exchanges — including BingX, LBank, CoinW, ProBit Global, BTCC, AscendEX, Zoomex, and Poloniex — for failing to comply with the countrys anti-money laundering rules, the Indian finance ministry said on Wednesday. The regulator also ordered the platforms to withdraw their apps and websites from public access in India. However, most remained accessible as of press time.
+Tesla delivered 497,099 vehicles over the last three months, the company announced Thursday. Thats a massive 29% jump from the second quarter, about a 7% increase over the same period last year, and more than it has ever delivered in a single quarter.
