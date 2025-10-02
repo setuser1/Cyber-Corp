@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/02/perplexity-acquires-the-team-behind-sequioa-backed-ai-design-startup-visual-electric/
+https://techcrunch.com/2025/10/02/india-cracks-down-on-25-crypto-exchanges-including-bingx-lbank-coinw-over-compliance-failures/
 
-Sequoia-backed AI design startup Visual Electric said that it is joining search startup Perplexity today. The company noted on its site that the team would be joining a new Agent Experiences group at Perplexity.
+Offshore crypto platforms with billions of dollars in assets are in the Indian governments crosshairs, as the governments financial watchdog moves against 25 exchanges for failing to register and comply with anti-money laundering obligations.
 
-Aravind Srinivas, Perplexitys CEO, confirmed the acquisition with a post on X.
+The Financial Intelligence Unit India (FIU-IND) issued notices to 25 crypto exchanges — including BingX, LBank, CoinW, ProBit Global, BTCC, AscendEX, Zoomex, and Poloniex — for failing to comply with the countrys anti-money laundering rules, the Indian finance ministry said on Wednesday. The regulator also ordered the platforms to withdraw their apps and websites from public access in India. However, most remained accessible as of press time.
