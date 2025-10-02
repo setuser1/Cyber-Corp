@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/02/amazon-now-lets-prime-members-add-items-to-upcoming-orders-with-one-tap/
+https://techcrunch.com/2025/10/02/rivians-best-case-guess-for-2025-sales-is-a-16-drop-from-last-year/
 
-Amazon is rolling out a new feature that makes it easier to buy more throughout the week. The company said its now updating its Amazon Shopping app and website with a new addition that lets Prime members add items to upcoming deliveries with one tap, instead of having to create a new order.
+Rivian now expects to deliver no more than 43,500 electric vehicles by the end of 2025, which would represent a nearly 16% drop from last years sales.
 
-The feature is designed to better reflect how people actually shop on Amazon online.
+The company announced the new guidance for investors on Thursday alongside production and delivery figures for the third quarter of this year. Rivian saw deliveries jump to 13,201 vehicles, up from 10,661 and 8,640 in the second and first quarters, respectively. The company also built 10,720 EVs in the quarter.
