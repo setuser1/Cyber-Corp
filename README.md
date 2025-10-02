@@ -1,5 +1,5 @@
-https://techcrunch.com/2025/10/02/spacecoin-beams-blockchain-transaction-through-space-in-bid-for-decentralized-internet/
+https://techcrunch.com/2025/10/02/perplexity-acquires-the-team-behind-sequioa-backed-ai-design-startup-visual-electric/
 
-Spacecoin says it reached a new milestone in its quest to build a decentralized communications backbone that could one day rival SpaceXs Starlink.
+Sequoia-backed AI design startup Visual Electric said that it is joining search startup Perplexity today. The company noted on its site that the team would be joining a new Agent Experiences group at Perplexity.
 
-The company said this week that it successfully transmitted secured data via its first demonstration satellite, validating the spacecrafts ability to execute encrypted transactions in orbit.
+Aravind Srinivas, Perplexitys CEO, confirmed the acquisition with a post on X.
