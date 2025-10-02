@@ -1,5 +1,5 @@
-https://techcrunch.com/2025/10/02/a-new-a16z-report-looks-at-which-ai-companies-startups-are-actually-paying-for/
+https://techcrunch.com/2025/10/02/hackers-are-sending-extortion-emails-to-executives-after-claiming-oracle-apps-data-breach/
 
-On Thursday, Andreessen Horowitz released its first AI Spending Report in partnership with the fintech firm Mercury.  Using transaction data from Mercury, the report analyzes the top 50 AI-native application layer companies that startups are spending money on, similar to the previously published Top 100 Gen AI Consumer Apps.
+Google says hackers associated with a prolific ransomware group are sending extortion emails to executives at &#8220;numerous&#8221; large organizations after claiming to have stolen their sensitive information from a suite of business software products developed by Oracle.
 
-A16z partners Olivia Mooe and Seema Amble say the data shows companies are still adopting a range of different AI products for certain tasks — and new apps are rising and falling very quickly.
+In a statement provided to TechCrunch, Googles head of cybercrime analysis Genevieve Stark said the hackers began sending emails to executives around September 29, but that the tech giant has not yet substantiated the hackers claims.
