@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/02/tesla-has-its-best-sales-quarter-of-2025-as-ev-tax-credit-expires/
+https://techcrunch.com/2025/10/02/ex-openai-researcher-dissects-one-of-chatgpts-delusional-spirals/
 
-Teslas sales growth has vanished over the last year-and-a-half, but the company just registered its best quarter of deliveries ever, in large part because buyers rushed to take advantage of the $7,500 federal EV tax credit before it went away.
+Allan Brooks never set out to reinvent mathematics. But after weeks spent talking with ChatGPT, the 47-year-old Canadian came to believe he had discovered a new form of math powerful enough to take down the internet.
 
-Tesla delivered 497,099 vehicles over the last three months, the company announced Thursday. Thats a massive 29% jump from the second quarter, about a 7% increase over the same period last year, and more than it has ever delivered in a single quarter.
+Brooks — who had no history of mental illness or mathematical genius — spent 21 days in May spiraling deeper into the chatbots reassurances, a descent later detailed in The New York Times. His case illustrated how AI chatbots can venture down dangerous rabbit holes with users, leading them toward delusion or worse.
