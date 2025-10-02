@@ -1,5 +1,8 @@
-https://techcrunch.com/2025/10/02/tesla-has-its-best-sales-quarter-of-2025-as-ev-tax-credit-expires/
+# Article:
 
-Teslas sales growth has vanished over the last year-and-a-half, but the company just registered its best quarter of deliveries ever, in large part because buyers rushed to take advantage of the $7,500 federal EV tax credit before it went away.
+## Check commits for more!
+https://techcrunch.com/2025/10/02/amazon-now-lets-prime-members-add-items-to-upcoming-orders-with-one-tap/
 
-Tesla delivered 497,099 vehicles over the last three months, the company announced Thursday. Thats a massive 29% jump from the second quarter, about a 7% increase over the same period last year, and more than it has ever delivered in a single quarter.
+Amazon is rolling out a new feature that makes it easier to buy more throughout the week. The company said its now updating its Amazon Shopping app and website with a new addition that lets Prime members add items to upcoming deliveries with one tap, instead of having to create a new order.
+
+The feature is designed to better reflect how people actually shop on Amazon online.
