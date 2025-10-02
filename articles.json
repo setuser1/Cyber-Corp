@@ -1,5 +1,5 @@
-https://techcrunch.com/2025/10/02/openai-is-the-worlds-most-valuable-private-company-after-private-stock-sale/
+https://techcrunch.com/2025/10/02/apple-shelves-vision-pro-overhaul-to-focus-on-ai-glasses/
 
-OpenAI has sold $6.6 billion in shares held by current and former employees, according to a new report from Bloomberg. The sale pushed OpenAIs total valuation to $500 billion, the highest ever achieved by a privately held company. Purchasers included SoftBank, Dragoneer Investment Group, Thrive Capital, MGX, and T. Rowe Price, the report said.
+Apple is sidelining plans to overhaul its Vision Pro VR glasses to focus on developing AI smart glasses that can compete with products from Meta, according to a new report from Bloombergs Mark Gurman.
 
-The sale was not a conventional funding round, as the cash went to individuals holding shares or options in OpenAI rather than the companys own coffers. Still, its a powerful retention tool for the company, which has faced significant pressure from Metas newly revitalized AI lab. This summer, Meta poached at least seven top engineers from OpenAI, often luring them away with multi-million dollar signing bonuses.
+Although the company had been developing a cheaper and lighter version of its Vision Pro, Apple is moving staff from that project to work on smart glasses.
