@@ -1,49 +1,33 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/prime-day-deal-this-battery-powered-ring-doorbell-is-47-percent-off-154508525.html?src=rss
+https://www.engadget.com/wearables/apple-is-reportedly-pulling-staff-from-the-vision-pro-to-work-on-its-smart-glasses-130050475.html?src=rss
 
-Deals
+Wearables
 
-Prime Day deal: This battery-powered Ring doorbell is 47 percent off
+Apple is reportedly pulling staff from the Vision Pro to work on its smart glasses
 
-The Battery Doorbell Plus offers a wider field of vision, package alerts and high-resolution video.
+The company has changed priorities, Bloomberg says.
 
-Andre Revilla
+Mariella Moon
 
 Contributing Reporter
 
-Andre RevillaContributing Reporter
+Mariella MoonContributing Reporter
 
-Updated Thu, October 2, 2025 at 1:16 PM UTC
+Thu, October 2, 2025 at 1:00 PM UTC
 
-Ring
+2 min read
 
-If you've been considering a video doorbell for your front door, Prime Day deals may have just what you're looking for at a good price. A great deal already available is on the latest Ring Battery Doorbell Plus, which is 47 percent off and down to only $80.
+Photo by Devindra Hardawar/Engadget
 
-The Battery Doorbell Plus offers a 150-by-150-degree "head to toe" field of vision and 1536p high-resolution video. This makes it a lot easier to see boxes dropped off at your front door since it doesn't cut off the bottom of the image like a lot of video doorbells.
+Apple had big plans for the the future of the Vision Pro, but it has reportedly put them on the back burner and has prioritized the development of smart glasses that can compete directly against the Meta Ray-Bans. According to Bloomberg's Mark Gurman, the company told staff last week that it's moving team members working on a cheaper and lighter version of the Vision Pro to accelerate the development of its smart glasses. Apple is apparently developing two models, one of which, called the "N50," has no display of its own and will pair with iPhones. The company reportedly intends to launch it sometime next year and will it release in 2027.
 
-Ring
+Bloomberg says Apple is also working on smart glasses with an augmented reality display that can rival the Meta Ray-Ban Display. It was going to release the model in 2028, but now Apple is looking to expedite its development, presumably so it could be available at an earlier date. Like Meta's smart glasses, Apple's devices will rely heavily on voice interaction and AI commands. Bloomberg previously reported that Apple is releasing an updated Siri next year that's powered by large language models, meant for use on displays, speakers and, yes, glasses.
 
-Ring Battery Doorbell Plus
+Apple's smart glasses will reportedly come in a variety of styles, will be powered by a new chip and will have speakers for playback, as well as cameras to capture images and videos. The company is looking to equip it with health-tracking capabilities, as well.
 
-$80$150Save $70
-
-Pick one up now for almost half off ahead of Prime Day.
-
-$80 at Amazon
-
-This model features motion detection, privacy zones, color night vision and Live View with two-way talk, among other features. Installation is a breeze since you don't have to hardwire it to your existing doorbell wiring. Most users report that the battery lasts between several weeks and several months depending on how users set up the video doorbell, with power-heavy features like motion detection consuming more battery life.
-
-Advertisement
-
-Advertisement
-
-With most video doorbells today, you need a subscription to get the most out of them, and Ring is no exception. Features like package alerts require a Ring Home plan, with tiers ranging from Basic for $5 per month to Premium for $20 per month. You'll also need a plan to store your video event history.
-
-Ring was acquired by Amazon in 2018, and now offers a full suite of home security products including outdoor cameras, home alarm systems and more. This deal is part of a larger sale on Ring and Blink devices leading up to Prime Day.
-
-Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals
+It has long been reported that Apple's ultimate goal was to release augmented reality glasses of its own, since they could rival phones in the future. If this report is true, Apple is merely adjusting its timeline, especially since it's now fairly behind Meta in the space. While Apple's priorities have shifted, it hasn't abandoned the Vision Pro altogether. The FCC recently uploaded documents referencing an updated "Head Mounted Device" by Apple, though it's unclear if it's the upcoming lighter version that's supposed to be cheaper than the $3,499 original model.
 
 Advertisement
 
