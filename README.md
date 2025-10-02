@@ -1,61 +1,31 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/you-can-already-get-a-discount-on-the-apple-watch-series-11-at-amazon-135020356.html?src=rss
+https://www.engadget.com/ai/openai-is-now-the-worlds-most-valuable-private-company-at-500-billion-133028221.html?src=rss
 
-Deals
+AI
 
-You can already get a discount on the Apple Watch Series 11 at Amazon
+OpenAI is now the world's most valuable private company at $500 billion
 
-The newest generation adds hypertension alerts, 5G connectivity and better battery life.
+It has overtaken SpaceX and TikTok creator ByteDance.
 
-Andre Revilla
+Mariella Moon
 
 Contributing Reporter
 
-Andre RevillaContributing Reporter
+Mariella MoonContributing Reporter
 
-Updated Thu, October 2, 2025 at 1:50 PM UTC
+Thu, October 2, 2025 at 1:30 PM UTC
 
-Cherlynn Low for Engadget
+2 min read
 
-Despite coming out just a couple of weeks ago, the Apple Watch Series 11 is already discounted at Amazon. You can pick up one of the smartwatches for $10 off, starting at $389 right now. Apple revealed the latest generation of its wearable at its iPhone 17 event in Cupertino.
+MANDEL NGAN via Getty Images
 
-The Series 11 packs some new features like 5G connectivity on cellular models, a more scratch-resistant screen, new sleep features, improved battery life and a hypertension alert system that just received FDA clearance. The GPS-only version is our top pick for Best Apple Watch in 2025.
+OpenAI has overtaken SpaceX as the largest startup and most valuable private company in the world. Bloomberg has reported that the company has authorized a secondary share sale, which allowed its former and current employees to sell their stocks. OpenAI had authorized the sale of $10.3 billion in shares, but they ultimately sold $6.6 billion to investors that include Softbank, Abu Dhabi government's MGX fund, American investment firm Thrive Capital and global investment management firm T. Rowe Price. As Bloomberg explains, that has boosted the company's valuation to $500 billion from $300 billion, overtaking SpaceX with a $400 billion valuation and TikTok developer ByteDance at $220 billion.
 
-Apple
+In early September, OpenAI said it was getting closer to transitioning to a new structure that will turn it into a Public Benefit Corporation (PBC) controlled by its nonprofit arm. The company's nonprofit division received an equity stake of more than $100 billion, making it a major shareholder of the PBC. SpaceX's CEO Elon Musk is one of the biggest critics of OpenAI's decision and has been trying to block the company's for-profit transition in court. Musk was one of OpenAI's founders and funded its initial operations. He claimed in court that OpenAI and Altman are breaking their contract with him and violating the company's founding mission of building AI "for the benefit of humanity" by changing its structure.
 
-Apple Watch Series 11
-
-$389$399Save $10
-
-The new Apple Watch Series 11 is $10 off select color and band combos.
-
-$389 at Amazon
-
-In our hands-on review, we gave the Apple Watch Series 11 a score of 90 out of 100, noting its thin and light design, the excellent battery life, a nifty new wrist-flick gesture and its comprehensive approach to health and fitness monitoring. It is relatively pricey however, and the Watch SE 3 is probably enough for most users, but the Series 11 has a brighter and larger display, a thinner design, longer battery life and more advanced health features.
-
-Advertisement
-
-Advertisement
-
-For anyone who hasn't bought a new Apple Watch in a few years, the Series 11 is a worthy upgrade. If you're in the market for your first Apple Watch, then this model would be a great one to start with. If you're rocking a Series 10, then you probably don't need to upgrade now unless the improved battery life will mean that much to you.
-
-If your budget is tighter and you don't mind getting a slightly older model, you can save on the Apple Watch Series 10 and SE 2. The former is on sale for $329, while the latter is down to only $189.
-
-Apple Watch Series 10
-
-$329$399Save $70
-
-See at Amazon
-
-Apple Watch SE (2nd Gen)
-
-$189$299Save $110
-
-See at Amazon
-
-Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals
+OpenAI is hoping that being a PBC would make it more appealing to investors, as it would remove the cap on the financial returns they can get. It needs a lot more money than what it has raised so far, after all: OpenAI chief Sam Altman previously said he intends to spend trillions of dollars on building out data centers to run artificial intelligence services.
 
 Advertisement
 
