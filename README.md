@@ -1,127 +1,123 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/the-best-amazon-prime-day-deals-include-early-tech-discounts-on-apple-samsung-anker-shark-and-others-050801618.html?src=rss
+https://www.engadget.com/mobile/tablets/kindle-scribe-colorsoft-hands-on-vivid-and-responsive-145147981.html?src=rss
 
-Deals
+Mobile
 
-The best Amazon Prime Day deals include early tech discounts on Apple, Samsung, Anker, Shark and others
+Tablets
 
-The Big Deal Days shopping event returns soon, but you don't have to wait to get these deals.
+Kindle Scribe Colorsoft hands-on: Vivid and responsive
 
-Valentina Palladino
+Amazon brings color to its writing tablet lineup.
 
-Deputy Editor, Buying Advice
+Cherlynn Low
 
-Valentina PalladinoDeputy Editor, Buying Advice
+Managing editor
 
-Updated Thu, October 2, 2025 at 2:35 PM UTC
+Cherlynn LowManaging editor
 
-The best Amazon Prime Day deals include early tech discounts on Apple, Samsung, Anker, Shark and others
+Updated Thu, October 2, 2025 at 2:30 PM UTC
 
-Amazon Prime Day has returned in the fall for the past few years, and 2025 is no exception. Prime Day will return on October 7 and 8, but really, you don't have to wait until the official start date to save. Amazon typically always has early Prime Day deals in the lead-up to the event, and this year were already seeing some solid discounts on gadgets we like. Here, weve gathered all of the best Prime Day deals you can get right now, and well keep updating this post as we get close to Prime Day proper.
+Sam Rutherford for Engadget
 
-October Prime Day deals: Engadget's top picks
+For the third generation of its Kindle Scribe line of reading-and-writing tablets, Amazon is giving the device a makeover and two new configurations. Since its introduction in 2022, the Scribe hasnt changed much physically, with the sophomore model mostly getting a new color. This year, Amazon is launching three flavors of the Scribe. At the entry level is a model with a monochrome screen and no front light. Next is the Kindle Scribe 3, a version that has LED front lights but with a black-and-white display. Finally, at the top of the line is the Kindle Scribe Colorsoft — Amazons first writing tablet with a color display.
 
-Apple MagSafe charger (25W, 2m) for $35 (29 percent off): The latest version of Apple's MagSafe puck is Qi2.2-certified and supports up to 25W of wireless power when paired with a 30W adapter. The two-meter cable length on this particular model gives you more flexibility on where you can use it: in bed, on the couch, at your desk and elsewhere.
+I was able to briefly check out the three new tablets ahead of the companys launch event, and was quite impressed at the responsiveness and color saturation on the demo units I saw. Also, Amazon hasnt given these devices a name that indicates what generation they are, simply calling them the “all-new Kindle Scribe lineup” and adding the Colorsoft label to the color model. To make things easier for this article, Ill be occasionally referring to these as the Kindle Scribe 3.
 
-Shark AI robot vacuum with self-empty base for $230 (58 percent off, Prime exclusive): A version of one of our favorite robot vacuums, this Shark machine has strong suction power and supports home mapping. The Shark mobile app lets you set cleaning schedules, and the self-empty base that it comes with will hold 30 days worth of dust and debris.
-
-Advertisement
-
-Advertisement
-
-Leebein 2025 electric spin scrubber for $40 (43 percent off, Prime exclusive): This is an updated version of my beloved Leebein electric scrubber, which has made cleaning my shower easier than ever before. It comes with seven brush heads so you can use it to clean all kinds of surfaces, and its adjustable arm length makes it easier to clean hard-to-reach spots. It's IPX7 waterproof and recharges via USB-C.
-
-Jisulife Life7 handheld fan for $25 (14 percent off, Prime exclusive): This handy little fan is a must-have if you life in a warm climate or have a tropical vacation planned anytime soon. It can be used as a table or handheld fan and even be worn around the neck so you don't have to hold it at all. Its 5,000 mAh battery allows it to last hours on a single charge, and the small display in the middle of the fan's blades show its remaining battery level.
-
-XReal One Pro AR glasses for $649 (16 percent off): The latest from XReal, these smart glasses can let you use almost any device, including your smartphone, with a large virtual display. Their 1080p Micro-OLED screens are bright and sharp, plus they're pretty comfortable to wear.
-
-Blink Mini 2 security cameras (two-pack) for $35 (50 percent off): Blink makes some of our favorite security cameras, and the Mini 2 is a great option for indoor monitoring. It can be placed outside with the right weatherproof adapter, but since it needs to be plugged in, we like it for keeping an eye on your pets while you're away and watching over entry ways from the inside.
-
-October Prime Day deals on tech
-
-Anker
-
-Anker 622 5K magnetic foldable power bank with stand
-
-$34$48
-
-Save $14 with Prime
-
-Anker 622 5K magnetic foldable power bank with stand for $34 (29 percent off, Prime exclusive): This 0.5-inch thick power bank attaches magnetically to iPhones and won't get in your way when you're using your phone. It also has a built-in stand so you can watch videos, make FaceTime calls and more hands-free while your phone is powering up.
-
-Save $14 with Prime
-
-$34 at Amazon
-
-Apple Mac mini (M4) for $499 ($100 off): If you prefer desktops over laptops, the upgraded M4 Mac mini is one that wont take up too much space, but will provide a ton of power at the same time. Not only does it come with an M4 chipset, but it also includes 16GB of RAM in the base model, plus front-facing USB-C and headphone ports for easier access.
+The first thing I noticed was the Scribe 3s shape. Im used to the slightly thicker bezel along one long side of the display that, on the older Scribes, has been a handy place to grip the device without touching the screen. But it wasnt just there for my thumb to hold onto. That area was also where Amazon placed many of the Kindles components like the processor and memory.
 
 Advertisement
 
 Advertisement
 
-Apple Watch SE 2 for $189 (37 percent off): The SE 3 is the latest model as of September, but the SE 2 still has a lot going for it. It was our top pick for the best smartwatch for newbies (and those on a budget) because it gives you a solid core smartwatch experience at a great price.
+To reduce the size of the bezel, Amazons Kindle vice president Kevin Keith said “we had to engineer basically the electronics to fold behind the display.” The result is a symmetrical-looking device with a barely-there bezel thats the same size along all sides of the 11-inch display (slightly bigger than its predecessors). It weighs 400 grams (or 0.88 pounds), which should make it easier to hold with one hand while taking notes. Keith also said that, at 5.4mm, the new Kindle Scribe is “thinner than the iPhone Air.” I should point out that a lot of tablets are similarly sleek. The 13-inch iPad Pro and Samsungs Galaxy Tab S11 Ultra both have barely-there profiles of 5.1mm, while the 11-inch iPad Pro measures 5.3mm.
 
-Apple Watch Series 11 for $389 ($10 off): The latest flagship Apple Watch is our new pick for the best smartwatch you can get, and it's the best all-around Apple Watch, period. It's not too different from the previous model, but Apple promises noticeable gains in battery life, which will be handy for anyone who wants to wear their watch all day and all night to track sleep.
+Cherlynn Low for Engadget
 
-Amazon Smart Plug for $13 ($12 off): We named this the best smart plug for Alexa users because it hooks up painlessly and stays connected reliably. Use it to control lamps or your holiday lights using programs and schedules in the Alexa app, or just your voice by talking to your Echo Dot or other Alexa-enabled listener.
+Another way Amazon was able to make the latest Scribe so thin and light was by reducing the number of layers in the display. It removed the anti-glare film on the device, using a glare-free display instead, as well as a textured glass that mimics the friction youd get when putting pen to paper. The company also got rid of a touch layer that was on top of the display before, since it was able to use a screen with integrated touch input support. Keith said that Amazon also considered the size of the casing around the USB port to aid in shrinking the device further.
 
-JLab Go Air Pop+ for $17.49 (42 percent off): These ultra-affordable wireless earbuds are 15 percent smaller and 40 percent lighter than the previous model, and they have a mobile app in which you can choose from three preset EQ modes to customize your sound. Total battery life with the case comes in at more than 35 hours, and they come with three different sizes of eartips so you can get the best fit.
+On models with front lights (all but the entry-level configuration), Amazon had to use miniaturized LED front lights since there was no longer a chunky bezel to contain them. In addition to making them smaller, the company also doubled the number of bulbs to ensure consistency of lighting across the page.
 
-Advertisement
-
-Advertisement
-
-Samsung EVO Select microSD card (256GB) for $23 (15 percent off): This Samsung card has been one of our recommended models for a long time. It's a no-frills microSD card that, while not the fastest, will be perfectly capable in most devices where you're just looking for simple, expanded storage.
-
-Anker Soundcore Select 4 Go speaker for $26 (26 percent off, Prime exclusive): This small Bluetooth speaker gets pretty loud for its size and has decent sound quality. You can pair two together for stereo sound as well, and its IP67-rated design will keep it protected against water and dust.
-
-Roku Streaming Stick Plus 2025 for $29 (27 percent off): Roku makes some of the best streaming devices available, and this small dongle gives you access to a ton of free content plus all the other streaming services you could ask for: Netflix, Prime Video, Disney+, HBO Max and many more.
-
-JBL Go 4 portable speaker for $40 (20 percent off): The Go 4 is a handy little Bluetooth speaker that you can take anywhere you go thanks to its small, IP67-rated design and built-in carrying loop. It'll get seven hours of playtime on a single charge, and you can pair two together for stereo sound.
+I couldnt help reaching for the new Kindle Scribe when I saw it, mostly because it looks a lot different than its predecessor. I already found the original Scribe satisfyingly svelte and this latest model is similarly attractive. I do wonder if I might miss having something to grip onto that isnt the screen, but that might not be a problem if Amazons palm rejection technology is effective.
 
 Advertisement
 
 Advertisement
 
-Amazon Fire TV Stick 4K Max for $40 (33 percent off): Amazon's most powerful streaming dongle supports 4K HDR content, Dolby Vision and Atmos and Wi-Fi 6E. It also has double the storage of cheaper Fire TV sticks.
+I did notice a slight dullness in the model without the LED front lights, but it remained as easy to read as an older Kindle. The other two certainly looked a lot brighter, with the higher contrast making onscreen text and drawings look fresher and more vibrant. Ill get to the Colorsoft model in a bit, but I appreciated how clear and saturated colors appeared on its screen.
 
-Anker Soundcore Space A40 for $45 (44 percent off): Our top pick for the best budget wireless earbuds, the Space A40 have surprisingly good ANC, good sound quality, a comfortable fit and multi-device connectivity.
+One of my favorite updates this year is magnets. Specifically, the magnets holding Amazons stylus to the Scribe itself have gotten stronger. Keith said “we added more magnetic force so that its harder to fall off,” and when I tried pulling the pen off the tablet it required noticeably more effort than with previous models. It also snapped back on more easily. Considering this was one of my complaints about the older Scribes, Im very encouraged to see this improvement.
 
-Amazon Echo Spot for $50 ($30 off): Amazon brought the Echo Spot smart alarm clock back from the dead last year with a new design, improved speakers and added Alexa chops. In addition to being able to control smart home devices and respond to voice commands, the Echo Spot can also act as a Wi-Fi extender for those that have Eero systems.
+At Amazon's event, I got to spend a bit more time with the new Scribes and, at the suggestion of a rep at the demo area, picked up the Scribe Colorsoft just by holding onto the pen attached magnetically to it. The fact that I was able to do so without the tablet falling off seems like a testament not just to the strength of the magnets on this model but also to the light weight of the device.
 
-Anker MagGo 10K power bank (Qi2, 15W) for $63 (22 percent off, Prime exclusive): A 10K power bank like this is ideal if you want to be able to recharge your phone at least once fully and have extra power to spare. This one is also Qi2 compatible, providing up to 15W of power to supported phones.
+Cherlynn Low for Engadget
 
-Advertisement
-
-Advertisement
-
-Levoit Core 200S smart air purifier for $70 ($20 off, Prime exclusive): This compact air purifier cleans the air in rooms up to 140 square feet and uses a 3-in-1 filter that removes microscopic dust, pollen and airborne particles. It has a mobile app that you can use to set runtime schedules, and it works with Alexa and Google Assistant voice commands.
-
-Amazon
-
-Amazon Kindle Scribe (16GB)
-
-$300$400Save $100
-
-Amazon Kindle Scribe for $300 (25 percent off): The latest Kindle Scribe is one of the best E Ink tablets you can get, particularly if you want a slab that can handle both note-taking and e-reading well. Its edge is providing users full access to the Kindle ebook store and the ability to take notes to accompany reading material. This model has 16GB of storage and includes the Premium Pen.
-
-$300 at Amazon
-
-Amazon Fire TV Cube for $100 (29 percent off): Amazon's most powerful streaming device, the Fire TV Cube supports 4K, HDR and Dolby Vision content, Dolby Atmos sound, Wi-Fi 6E and it has a built-in Ethernet port. It has the most internal storage of any Fire TV streaming device, plus it comes with an enhanced Alexa Voice Remote.
-
-Levoit LVAC-300 cordless vacuum for $250 ($100 off, Prime exclusive): One of our favorite cordless vacuums, this Levoit machine has great handling, strong suction power for its price and a premium-feeling design. Its bin isn't too small, it has HEPA filtration and its battery life should be more than enough for you to clean your whole home many times over before it needs a recharge.
-
-Shark Robot Vacuum and Mop Combo for $300 (57 percent off, Prime exclusive): If you're looking for an autonomous dirt-sucker that can also mop, this is a good option. It has a mopping pad and water reservoir built in, and it supports home mapping as well. Its self-emptying base can hold up to 60 days worth of debris, too.
+The stylus itself has also been refined, with a slightly thicker, rounded silhouette that Keith said is “a little bit more ergonomic.” It still has a rubberized top that works as a digital eraser and when I used it on the new Scribe I felt the urge to brush off eraser dust, just like I did with the predecessors. The programmable action button remains present as well.
 
 Advertisement
 
 Advertisement
 
-Nintendo Switch 2 for $449: While not technically a discount, it's worth mentioning that the Switch 2 and the Mario Kart Switch 2 bundle are both available at Amazon now, no invitation required. Amazon only listed the new console for the first time in July after being left out of the initial pre-order/availability window in April. Once it became available, Amazon customers looking to buy the Switch 2 had to sign up to receive an invitation to do so. Now, that extra step has been removed and anyone can purchase the Switch 2 on Amazon.
+Inside the new Kindle Scribes sit a new custom chip and more memory. Amazon also added the oxide display from its Paperwhite reader, and together with the new processor, that brings a “40 percent faster overall experience with page turning,” according to Keith. The response rate also makes a significant difference in writing, which on the new Kindle Scribe is now down to under 12 milliseconds. That enables a much smoother writing experience with barely noticeable delay between putting the nib on the screen and the digital ink appearing, and because of the changes to the display, any parallax effect is “virtually gone.”
 
-Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals
+During the few moments I had to scribble on the new Kindle Scribe, I found it hard to tell if there was a big improvement in fluidity or parallax effects compared to the previous models. Its about as responsive as before, perhaps just a touch faster at showing what Ive written. Without a side-by-side comparison, its not something I can evaluate right now.
+
+I will say that I found the latest Scribe a lot easier to hold with one hand, even in spite of the thinner bezels. That is with the caveat, of course, that I have yet to spend more than a minute writing on it. I usually have a hard time writing on the Scribe without a surface on which to prop it up, so Im curious to see if itll be easier to do so with the newest model.
+
+The Kindle Scribe Colorsoft is surprisingly vivid
+
+I was able to get a good idea of how the Kindle Scribe Colorsofts color rendering compares to some of its competition, though. Every morning, I write three pages of free-flowing thoughts by hand, and I currently do so on the reMarkable Paper Pro. All my entries include highlighting of the date and time, and my experience with the color rendering on that device has been underwhelming. Technically, I can choose from yellow, green, blue, pink, orange and gray, but honestly I can barely tell the difference between yellow and orange, while blue and gray are also very close. So instead of five usable highlighter shades, I really only have three (gray is barely a hint of a tint).
+
+Advertisement
+
+Advertisement
+
+The Kindle Scribe Colorsoft not only renders colors more vividly, but hues are more distinct from each other. Id say the reMarkable Paper Pro is like reading a faded newspapers comic strip while the Colorsoft looks more like a glossy graphic novel. Its still a bit muted, but you can at least see variations in shades.
+
+Part of what makes the Colorsoft look nice is the fact that the device itself comes in a nice purplish hue that Amazon calls “fig.” With the selection of colors on its screen, I got a very autumnal vibe and was reminded of berries, for some reason. (Its also possible I was hungry.)
+
+Like the Kindle Colorsoft that Amazon announced in 2023, the Scribe Colorsoft uses a color filter and LEDs. Whats slightly different is a new rendering engine that Amazon said “enhances the color and ensures writing is fast, fluid and totally natural.”
+
+While the Kindle Scribe Colorsoft has the same dimensions and weight as its monochrome counterpart, it has a slightly slower response rate of 14ms. I have only written on the Colorsoft so far, and will wait till I can spend more time with both tablets to see if this different latency makes a big difference.
+
+Cherlynn Low for Engadget
+
+In addition to the new hardware, Amazon also updated the Scribes software. All Kindles will be getting a redesigned home page that better surfaces your recently added and edited content. Based on what I saw, instead of having rows of covers on the main screen, there is now a Search bar at the very top, followed by an area on the left half below that for “quick notes.” This is basically a notepad for you to continuously update whenever you need it, so you wont need to create a new notebook every time you want to jot down a thought. To the right of this top half is the “Jump back into” section, which will show things you were recently working on.
+
+Advertisement
+
+Advertisement
+
+Below those two portions is a row of titles called “Recently added,” where things you just downloaded into your library will appear. So if you have been reading, say, The Body Keeps the Score and just bought Katabasis, youll find the first one at the top right and the latter in the “Recently added” section.
+
+The search bar at the top is now powered by AI, because there is no escaping that. Thankfully, Amazon has been fairly cautious about its approach, which is particularly important for a product like the Kindle Scribe where people go to read and produce original content. The new AI feature here is a smarter search that not only indexes all your handwritten notes, but understands and groups common topics so you can search for something like “What have I told Panos Panay before?” The Scribe will scan your notebooks, find all your relevant scribblings and present everything youve written down across all your files and summarize its findings for you.
+
+I didnt have time to try this out but I am intrigued at the potential here. I make so many different to-do lists for Engadgets events coverage that it would be nice to be able to ask “What are the tasks I need to do by the end of October” and possibly get a neatly organized list. The usefulness of this feature depends almost entirely on how intelligent the AI is, so Ill have to wait till I can review it more thoroughly to say anything more evaluative.
+
+Amazon is also bringing support for Google Drive and OneDrive, so you can create a folder in either service, add documents to them and the system will download them onto your Kindle Scribe. This is just an easier way to get files onto your Kindle, in addition to sending an email to the associated address or finding a way to add them to your Amazon account. OneNote support is coming as well, and itll allow you to export your notes as an embedded image or as a converted text document.
+
+Advertisement
+
+Advertisement
+
+A “Send to Alexa+” feature is coming early next year, so you can share your notes or documents from the Kindle Scribe to the assistant. It will be able to pull information from your pages and remember or refer to them in your conversations, so you can ask it about whats next on your to-do list or what items are already on your shopping note.
+
+One more update on the redesigned home page: Instead of the existing “Notebooks” tab, Amazon is rolling out the “Workspace” section. Keith described this as “essentially like a new folder system.” Functionally, it didnt appear too different from the Notebooks setup, other than making it easier to group your related documents so you can access, say, all the lists youve written up for your wedding planning or writing projects.
+
+The redesigned home page will be launching later this year, and older Kindle devices will be able to update to the new software. The latest generation of Kindle Scribe will be available later this year, with the entry-level model going for $429, the version with the front light costing $499 and the Scribe Colorsoft starting at $629.
+
+Kindle Scribe 3
+
+$499 at Amazon
+
+Amazon Kindle Scribe Colorsoft
+
+$630 at Amazon
+
+Update, October 2 2025, 10:30AM ET: This story has been updated to include more impressions of the Kindle Scribe Colorsoft's increased magnetic force as well as pictures from Amazon's event this week.
+
+Amazon announced several new products at a Tuesday press event in New York City, including new Kindle Scribes, Fire TV products, Echo speakers and Echo Show displays and home security cameras from Blink and Ring. See a summary of everything Amazon announced, or read Engadget's Amazon event liveblog to see how the announcements unfolded in real-time.
 
 Advertisement
 
