@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/02/perplexitys-comet-ai-browser-now-free-max-users-get-new-background-assistant/
+https://techcrunch.com/2025/10/02/amazon-now-lets-prime-members-add-items-to-upcoming-orders-with-one-tap/
 
-AI search startup Perplexity is making its new Comet browser available to everyone in the world for free as it works to position the product against big browsers and search engines. For certain paid subscribers, the startup has also launched a new &#8220;background assistant&#8221; to handle multiple tasks via Comet.
+Amazon is rolling out a new feature that makes it easier to buy more throughout the week. The company said its now updating its Amazon Shopping app and website with a new addition that lets Prime members add items to upcoming deliveries with one tap, instead of having to create a new order.
 
-Perplexity first launched Comet to subscribers of its $200-per-month Max plan three months ago, and since then, “millions” have signed up on the waitlist to download the browser. Comets main feature is a sidecar assistant that joins you while you browse, helping to answer any questions you may have about the web page youre on, summarize content, manage web content, and navigate web pages on your behalf.
+The feature is designed to better reflect how people actually shop on Amazon online.
