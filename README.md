@@ -1,34 +1,40 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/crashout-crew-looks-like-overcooked-style-mayhem-from-one-of-the-studios-behind-peak-193854718.html?src=rss
+https://www.engadget.com/big-tech/dutch-court-orders-meta-to-change-its-facebook-and-instagram-timelines-185106583.html?src=rss
 
-Crashout Crew looks like Overcooked-style mayhem from one of the studios behind Peak
+Big tech
 
-A demo for this chaotic co-op game will go live during Steam Next Fest this month.
+Dutch court orders Meta to change its Facebook and Instagram timelines
 
-Kris Holt
+This is the latest action taken to reign in big tech under the EU's Digital Services Act.
+
+Andre Revilla
 
 Contributing Reporter
 
-Kris HoltContributing Reporter
+Andre RevillaContributing Reporter
 
-Thu, October 2, 2025 at 7:38 PM UTC
+Thu, October 2, 2025 at 6:51 PM UTC
 
 2 min read
 
-Crashout Crew
+NurPhoto via Getty Images
 
-(Aggro Crab)
+A court in the Netherlands has ordered Meta to change Facebook and Instagram's timelines, after finding that the element ran afoul of the European Union's Digital Services Act (DSA). As reported by Reuters, the Dutch court said that the company needs to provide users with simpler options — namely ones that don't rely on an algorithm.
 
-It's been quite the year for Aggro Crab. After stopping production on a sequel to Going Under (with funding issues and burnout both factoring into that decision), the studio decided to focus on self-funded game jam projects before moving onto another big game. Some of the team collaborated with Content Warning developer Landfall to create Peak. With the help of clever marketing, that co-op climbing game turned out to be a huge hit, selling 10 million copies in just two months.
+"People in the Netherlands are not sufficiently able to make free and autonomous choices about the use of profiled recommendation systems," the court said in its decision. It ruled that the timeline must honor a user's choice of chronological order or other non-profiled options, instead of reverting to the algorithm-driven version whenever a user closes and reopens either app.
 
-The rest of the Aggro Crab squad focused on a different multiplayer game, which is called Crashout Crew. This is a party game for up to four players (there's a single-player option too) in which you'll try to complete orders in hazard-filled warehouses using cute, color-coded forklifts. Time is of the essence as you race to meet quotas by loading boxes into trucks, so its just as well that you can drift around corners. Just be careful not to drop any explosives.
+The case was brought by Bits of Freedom, a Dutch digital rights group. "It is unacceptable that a few American tech billionaires can determine how we view the world," said the group's spokesperson, Maartje Knaap.
 
-Youll be skidding around icy environments and spinning out if you run over a broken egg. Falling rocks, bees and blackouts all add to the chaos. You can upgrade your forklift and warehouse, though theyll reset after the level ends.
+Advertisement
 
-The reveal trailer reminds me quite a bit of Overcooked. I wonder if this could turn out to be just as effective as a litmus test for how well you communicate with family and friends.
+Advertisement
 
-I adore Another Crab's Treasure, Aggro Crabs last large-scale game, so I'll always be interested in whatever the studio is cooking up. I'm looking forward to trying out Crashout Crew when the demo goes live on October 13 as part of Steam Next Fest. The game is scheduled to hit Steam next year.
+Advertisement
+
+Meta said it will appeal the decision, and that these DSA issues should be handled by the European Commission and other EU regulators, not by the courts of individual nations. "Proceedings like this threaten the digital single market and the harmonized regulatory regime that should underpin it," a Meta spokesperson said. Meta faces a potential fine of $117,450 for every day it fails to comply with the court's order, up to a maximum of $5.8 million.
+
+The DSA has been a common thorn in the side of big tech companies since its approval in 2022. The European Commission has levied hundreds of millions of dollars in fines against the likes of Apple, Meta and Alphabet for violations of the DSA. The regulations have also been used to effect certain changes on these platforms in the name of privacy, data security and the protection of minors.
 
 About our ads
