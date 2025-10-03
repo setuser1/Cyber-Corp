@@ -1,32 +1,34 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/wearables/strava-sues-garmin-in-bizarre-patent-infringement-lawsuit-213300227.html?src=rss
+https://www.engadget.com/crashout-crew-looks-like-overcooked-style-mayhem-from-one-of-the-studios-behind-peak-193854718.html?src=rss
 
-Wearables
+Crashout Crew looks like Overcooked-style mayhem from one of the studios behind Peak
 
-Strava sues Garmin in bizarre patent infringement lawsuit
+A demo for this chaotic co-op game will go live during Steam Next Fest this month.
 
-Cue the popcorn.
-
-Anna Washenko
+Kris Holt
 
 Contributing Reporter
 
-Anna WashenkoContributing Reporter
+Kris HoltContributing Reporter
 
-Thu, October 2, 2025 at 9:33 PM UTC
+Thu, October 2, 2025 at 7:38 PM UTC
 
 2 min read
 
-Reuters / Reuters
+Crashout Crew
 
-Fitness tech appears to be having a strange spat. Earlier this week, Strava filed a lawsuit alleging that Garmin infringed on its patents for two features related to tracking exercise routes: segments and heatmaps. It's also claiming that Garmin violated a Master Cooperation Agreement by developing its own heat map feature. The complaint (via The Verge) is seeking a permanent injunction to stop Garmin from selling any items with segments or a heat map features, which would amount to a majority of Garmin's hardware products as well as its Connect tracking program.
+(Aggro Crab)
 
-The lawsuit on its own is a surprise. Strava and Garmin are two major players in fitness tech that have worked together for about a decade, the pair have a number of integrations between their platforms. It also seems unlikely that Strava will make much headway with the case. DC Rainmaker, which first picked up on the lawsuit, has a thorough timeline of the companies' patent filings that strongly suggests the arguments won't hold water in court. It's also strange that these alleged infringements, by Strava's own assertions, began a long time ago and yet the company is only taking issue with them now.
+It's been quite the year for Aggro Crab. After stopping production on a sequel to Going Under (with funding issues and burnout both factoring into that decision), the studio decided to focus on self-funded game jam projects before moving onto another big game. Some of the team collaborated with Content Warning developer Landfall to create Peak. With the help of clever marketing, that co-op climbing game turned out to be a huge hit, selling 10 million copies in just two months.
 
-But the situation got even stranger when Strava Chief Product Officer Matt Salazar took to Reddit today to give some insight into why the company is taking such aggressive action against a frequent partner. According to Salazar's post, Strava is invoking the lawyers because Garmin is adopting new developer guidelines for API partners "that required the Garmin logo to be present on every single activity post, screen, graph, image, sharing card etc." Although he frames it as a move to protect users' data, the argument sounds more like a petty complaint that Garmin is putting its brand on the data its products are used to collect.
+The rest of the Aggro Crab squad focused on a different multiplayer game, which is called Crashout Crew. This is a party game for up to four players (there's a single-player option too) in which you'll try to complete orders in hazard-filled warehouses using cute, color-coded forklifts. Time is of the essence as you race to meet quotas by loading boxes into trucks, so its just as well that you can drift around corners. Just be careful not to drop any explosives.
 
-It's a weird lawsuit, and hopefully one that won't cause any disruptions for either company's customers.
+Youll be skidding around icy environments and spinning out if you run over a broken egg. Falling rocks, bees and blackouts all add to the chaos. You can upgrade your forklift and warehouse, though theyll reset after the level ends.
+
+The reveal trailer reminds me quite a bit of Overcooked. I wonder if this could turn out to be just as effective as a litmus test for how well you communicate with family and friends.
+
+I adore Another Crab's Treasure, Aggro Crabs last large-scale game, so I'll always be interested in whatever the studio is cooking up. I'm looking forward to trying out Crashout Crew when the demo goes live on October 13 as part of Steam Next Fest. The game is scheduled to hit Steam next year.
 
 About our ads
