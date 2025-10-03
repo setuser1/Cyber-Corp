@@ -1,42 +1,32 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/xbox/game-pass-ultimate-is-still-20-a-month-if-you-buy-pre-paid-codes-222333258.html?src=rss
+https://www.engadget.com/wearables/strava-sues-garmin-in-bizarre-patent-infringement-lawsuit-213300227.html?src=rss
 
-Gaming
+Wearables
 
-Xbox
+Strava sues Garmin in bizarre patent infringement lawsuit
 
-Game Pass Ultimate is still $20 a month if you buy pre-paid codes
+Cue the popcorn.
 
-Online retailers are selling pre-paid Game Pass subscriptions at their original price.
-
-Ian Carlos Campbell
+Anna Washenko
 
 Contributing Reporter
 
-Ian Carlos CampbellContributing Reporter
+Anna WashenkoContributing Reporter
 
-Thu, October 2, 2025 at 10:23 PM UTC
+Thu, October 2, 2025 at 9:33 PM UTC
 
-Microsoft
+2 min read
 
-Microsoft may have made the unfortunate decision to raise the price of a Xbox Game Pass Ultimate subscription to $30 a month, but you don't have to live by the company's rules — at least not yet. Most online retailers are still selling codes for prepaid Game Pass subscriptions at the original $20 a month price. That means you can pay $60 for three months of Xbox Game Pass Ultimate, stack your codes and keep your subscription without having to downgrade or cancel.
+Reuters / Reuters
 
-Xbox
+Fitness tech appears to be having a strange spat. Earlier this week, Strava filed a lawsuit alleging that Garmin infringed on its patents for two features related to tracking exercise routes: segments and heatmaps. It's also claiming that Garmin violated a Master Cooperation Agreement by developing its own heat map feature. The complaint (via The Verge) is seeking a permanent injunction to stop Garmin from selling any items with segments or a heat map features, which would amount to a majority of Garmin's hardware products as well as its Connect tracking program.
 
-Xbox Game Pass Ultimate – 3 Month Membership
+The lawsuit on its own is a surprise. Strava and Garmin are two major players in fitness tech that have worked together for about a decade, the pair have a number of integrations between their platforms. It also seems unlikely that Strava will make much headway with the case. DC Rainmaker, which first picked up on the lawsuit, has a thorough timeline of the companies' patent filings that strongly suggests the arguments won't hold water in court. It's also strange that these alleged infringements, by Strava's own assertions, began a long time ago and yet the company is only taking issue with them now.
 
-$60$90Save $30
+But the situation got even stranger when Strava Chief Product Officer Matt Salazar took to Reddit today to give some insight into why the company is taking such aggressive action against a frequent partner. According to Salazar's post, Strava is invoking the lawyers because Garmin is adopting new developer guidelines for API partners "that required the Garmin logo to be present on every single activity post, screen, graph, image, sharing card etc." Although he frames it as a move to protect users' data, the argument sounds more like a petty complaint that Garmin is putting its brand on the data its products are used to collect.
 
-You can still purchase pre-paid Game Pass codes at their original price.
-
-$60 at Amazon
-
-As the highest tier in Game Pass, an Ultimate subscription gives you the ability to download and play a library of over 200 games on your PC or Xbox. With Xbox Cloud Gaming, you can also stream the majority of those games to other devices, too, whether it's a smartphone, LG TV or in-car display. It's worth noting, though, the benefits of Ultimate did change with the introduction of the higher price. Microsoft shared that Ultimate subscribers will now also receive the benefits of an Ubisoft+ subscription at no additional cost, a $16 a month value that unlocks access to a back catalog of Ubisoft games from franchises like Assassin's Creed and Far Cry. Starting in November, the new Ultimate subscription also includes access to Fortnite Crew, Epic's $12 a month plan that gives you V-Bucks, battle passes and more in Fortnite.
-
-While those new benefits might justify a higher price monetarily, whether that's a convincing reason to stay subscribed is a separate question. This likely won't be the last time Microsoft will raise the price of its subscription service. Avoiding those fees by buying pre-paid Game Pass codes seems like an excellent way to try out the new Ultimate before committing to cancelling your subscription, downgrading your plan or sticking with Microsoft's new price. You can purchase three months of Xbox Game Pass Ultimate for $60 a month. Stacking four three-month codes should come out to around $240.
-
-Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals
+It's a weird lawsuit, and hopefully one that won't cause any disruptions for either company's customers.
 
 About our ads
