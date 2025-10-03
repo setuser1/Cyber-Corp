@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/02/department-of-energy-cancels-7-5b-of-clean-energy-projects-in-mostly-blue-states/
+https://techcrunch.com/2025/10/02/anthropic-hires-new-cto-with-focus-on-ai-infrastructure/
 
-The Department of Energy said Wednesday night it was canceling 321 awards worth $7.56 billion that were largely focused on clean energy.
+Anthropic has a new chief technical officer, former Stripe CTO Rahul Patil. Patil started at the company earlier this week, taking over from co-founder Sam McCandlish, who will move to a new role as chief architect.
 
-The agency hasnt publicly released a list of the affected projects and, at the time of publication, it had not provided one to TechCrunch. According to E&E News and Heatmap, which have obtained the list, the majority of the cuts have hit states that went for Kamala Harris in the last presidential election, though some were in “red” states that voted for President Trump.
+As part of the change, Anthropic is updating the structure of its core technical group, bringing the companys product-engineering team into closer contact with the infrastructure and inference teams. As CTO, Patil will oversee compute, infrastructure, inference, and a variety of other engineering tasks. In the chief architect role, McCandlish will work on pre-training and large-scale model training, extending much of his previous work. Both Patil and McCandlish will report to Anthropic president Daniela Amodei.
