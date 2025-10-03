@@ -1,32 +1,42 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/apps/apple-removes-iceblock-from-the-app-store-after-trump-administrations-demand-031659651.html?src=rss
+https://www.engadget.com/gaming/xbox/game-pass-ultimate-is-still-20-a-month-if-you-buy-pre-paid-codes-222333258.html?src=rss
 
-Apps
+Gaming
 
-Apple removes ICEBlock from the App Store after Trump administration's demand
+Xbox
 
-The company also removed similar apps from its store.
+Game Pass Ultimate is still $20 a month if you buy pre-paid codes
 
-Mariella Moon
+Online retailers are selling pre-paid Game Pass subscriptions at their original price.
+
+Ian Carlos Campbell
 
 Contributing Reporter
 
-Mariella MoonContributing Reporter
+Ian Carlos CampbellContributing Reporter
 
-Fri, October 3, 2025 at 3:16 AM UTC
+Thu, October 2, 2025 at 10:23 PM UTC
 
-2 min read
+Microsoft
 
-Anadolu via Getty Images
+Microsoft may have made the unfortunate decision to raise the price of a Xbox Game Pass Ultimate subscription to $30 a month, but you don't have to live by the company's rules — at least not yet. Most online retailers are still selling codes for prepaid Game Pass subscriptions at the original $20 a month price. That means you can pay $60 for three months of Xbox Game Pass Ultimate, stack your codes and keep your subscription without having to downgrade or cancel.
 
-Apple has removed ICEBlock, the app which allowed users to put a pin on a map to show where ICE agents have recently been spotted, from the App Store. It has also pulled other apps that served a similar purpose. According to Fox Business, Attorney General Pam Bondi demanded their takedown, telling Apple that the apps were "designed to put ICE agents at risk just for doing their jobs." Bondi added that "violence against law enforcement is an intolerable red line that cannot be crossed." She also said that the "Department of Justice will continue making every effort to protect [its] brave federal law enforcement officers, who risk their lives every day to keep Americans safe."
+Xbox
 
-"We created the App Store to be a safe and trusted place to discover apps," Apple told the publication in a statement. "Based on information we've received from law enforcement about the safety risks associated with ICEBlock, we have removed it and similar apps from the App Store."
+Xbox Game Pass Ultimate – 3 Month Membership
 
-Bondi demanded the apps' removal after the FBI and the administration reported that the gunman who attacked an ICE facility in Dallas used tracking apps, including ICEBlock, to open fire from a rooftop. The gunman killed two immigrants and injured a third, but he was allegedly targeting ICE agents. Joshua Aaron, the app's developer, told Fox Business that he was "incredibly disappointed" by Apple's actions. "Capitulating to an authoritarian regime is never the right move," he said. "Apple has claimed they received information from law enforcement that ICEBlock served to harm law enforcement officers. This is patently false." Aaron added: "We are determined to fight this with everything we have. Our mission has always been to protect our neighbors from the terror this administration continues to reign down on the people of this nation."
+$60$90Save $30
 
-ICEBlock climbed to the top of the App Store charts in July after administration officials slammed it, making more people aware of its existence. At the time, officials warned Aaron that they were "looking at him, and he better watch out" because the app threatens the lives of law enforcement agents. NBC News reports that it was downloaded more than 1 million times since it was introduced. Tom Homan, the administration's "border czar," recently told Fox News that the government will investigate the "people who put these apps up" because they put "law enforcement at great risk."
+You can still purchase pre-paid Game Pass codes at their original price.
+
+$60 at Amazon
+
+As the highest tier in Game Pass, an Ultimate subscription gives you the ability to download and play a library of over 200 games on your PC or Xbox. With Xbox Cloud Gaming, you can also stream the majority of those games to other devices, too, whether it's a smartphone, LG TV or in-car display. It's worth noting, though, the benefits of Ultimate did change with the introduction of the higher price. Microsoft shared that Ultimate subscribers will now also receive the benefits of an Ubisoft+ subscription at no additional cost, a $16 a month value that unlocks access to a back catalog of Ubisoft games from franchises like Assassin's Creed and Far Cry. Starting in November, the new Ultimate subscription also includes access to Fortnite Crew, Epic's $12 a month plan that gives you V-Bucks, battle passes and more in Fortnite.
+
+While those new benefits might justify a higher price monetarily, whether that's a convincing reason to stay subscribed is a separate question. This likely won't be the last time Microsoft will raise the price of its subscription service. Avoiding those fees by buying pre-paid Game Pass codes seems like an excellent way to try out the new Ultimate before committing to cancelling your subscription, downgrading your plan or sticking with Microsoft's new price. You can purchase three months of Xbox Game Pass Ultimate for $60 a month. Stacking four three-month codes should come out to around $240.
+
+Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals
 
 About our ads
