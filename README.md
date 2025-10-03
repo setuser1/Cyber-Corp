@@ -1,12 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/02/threads-takes-on-x-with-new-communities-feature/
+https://techcrunch.com/2025/10/02/how-startups-could-be-affected-by-a-prolonged-government-shutdown/
 
-Instagram Threads, Metas X rival that now has over 400 million monthly active users, is officially launching a new feature that could redefine how its app is used: Communities. On Thursday, Meta said its introducing over 100 communities to the app, where users worldwide can have casual conversations around topics like basketball, television, K-pop, books, and more.
+The U.S. government shutdown could stifle deal flow, freeze visa processing for workers, and cause other problems for startups and the broader tech sector, especially if it lasts longer than a week, according to experts who spoke to TechCrunch.
 
-The idea, explains Meta, is to give users dedicated spaces within the app where they can delve deeper into conversations on topics that matter to them. The communities users have joined will display on their Threads profile, and each community has its own custom &#8220;Like&#8221; emoji available to members who engage with the discussions.
-
-Image Credits:Meta
-
-While the concept, on the surface, sounds similar to Xs Communities, there are key differences between the two implementations.
+The U.S. government shutdown, which began Tuesday, is the first one in seven years. The unpredictability of the Trump administration coupled with a politically entrenched Congress makes it hard to predict when the shutdown will end. Out of eight shutdowns since 1990, four have happened during Trump administrations; the last one lasted 35 days, the longest in modern history.
