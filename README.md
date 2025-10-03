@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/02/anthropic-hires-new-cto-with-focus-on-ai-infrastructure/
+https://techcrunch.com/2025/10/02/openais-sora-soars-to-no-3-on-the-u-s-app-store/
 
-Anthropic has a new chief technical officer, former Stripe CTO Rahul Patil. Patil started at the company earlier this week, taking over from co-founder Sam McCandlish, who will move to a new role as chief architect.
+OpenAIs Sora app for AI videos is a viral hit, despite being invite-only for now and limited to users in the U.S. and Canada at launch. On its first day, Sora saw 56,000 downloads, and is now ranked as the No. 3 Top Overall app on the U.S. App Store, according to new data from app intelligence provider Appfigures.
 
-As part of the change, Anthropic is updating the structure of its core technical group, bringing the companys product-engineering team into closer contact with the infrastructure and inference teams. As CTO, Patil will oversee compute, infrastructure, inference, and a variety of other engineering tasks. In the chief architect role, McCandlish will work on pre-training and large-scale model training, extending much of his previous work. Both Patil and McCandlish will report to Anthropic president Daniela Amodei.
+The firm estimates Soras iOS app pulled in a total of 164,000 installs during its first two days, September 30th and October 1st.
