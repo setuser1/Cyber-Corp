@@ -1,20 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/02/celebrating-the-partners-driving-disrupts-big-ideas-connections-and-community/
+https://techcrunch.com/2025/10/02/ex-openai-researcher-dissects-one-of-chatgpts-delusional-spirals/
 
-TechCrunch Disrupt 2025 wouldnt be possible without the incredible support of our sponsors, who bring world-class expertise, bold innovation, and community energy to every corner of the conference.
+Allan Brooks never set out to reinvent mathematics. But after weeks spent talking with ChatGPT, the 47-year-old Canadian came to believe he had discovered a new form of math powerful enough to take down the internet.
 
-Spotlight sessions you wont want to miss
-
-Our sponsors are shaping the future of industries — and you can catch them live at Disrupt:
-
-Monday October 27
-
-Space Stage
-
-Aerospace Startup Showcase: Solving the Hardest Problems in Space
-
-8:35 a.m. – 9:40 a.m.
-
-Presented by The Aerospace Corporation
+Brooks — who had no history of mental illness or mathematical genius — spent 21 days in May spiraling deeper into the chatbots reassurances, a descent later detailed in The New York Times. His case illustrated how AI chatbots can venture down dangerous rabbit holes with users, leading them toward delusion or worse.
