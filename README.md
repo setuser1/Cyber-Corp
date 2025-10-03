@@ -1,98 +1,70 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/general/the-morning-after-amazons-kindle-scribe-colorsoft-fuses-two-types-of-ereader-111516509.html?src=rss
+https://www.engadget.com/mobile/smartphones/engadget-podcast-ea-xbox-and-the-state-of-gaming-in-2025-113000903.html?src=rss
 
-General
+Mobile
 
-The Morning After: Amazons Kindle Scribe Colorsoft fuses two types of ereader
+Smartphones
 
-Doodle, in color!
+Engadget Podcast: EA, Xbox and the state of gaming in 2025
 
-Mat Smith
+Also, we chat about Amazon's latest device event.
 
-Bureau Chief, UK
+Devindra Hardawar
 
-Mat SmithBureau Chief, UK
+Senior Editor
 
-Updated Fri, October 3, 2025 at 11:41 AM UTC
+Devindra HardawarSenior Editor
 
-3 min read
+Fri, October 3, 2025 at 11:30 AM UTC
 
-Sam Rutherford for Engadget
+1 min read
 
-If I covered everything announced at Amazons fall hardware event, it would take a while, and I would be repeating the hard work of my colleague Kris Holt. Check out his report for all the new Echo speakers, new Alexa tricks, more Nest Cameras and, yes, more Kindles — AKA the only Amazon hardware Im usually interested in.
+ROG Xbox Ally
 
-When it comes to Amazons ereader series, the standout new addition is the Kindle Scribe Colorsoft, combining its stylus-toting note-taking hardware with its latest color e-ink screen. It has a new rendering engine, too, which is meant to make writing faster, more fluid and more natural. Check out our first impressions of the device, and if youre intrigued, you can order one later this year for $630.
+(Microsoft)
 
-If you think color is overrated, theres a new regular Kindle Scribe, with a bigger screen that matches typical paper sizes. The refreshed Kindle Scribe will go on sale in the US by the end of the year, priced at $500. A version without a front light will be available for $430.
+This week, EA announced that it plans to go private as part of a massive $55 billion sale, a move that will likely have huge implications for the gaming landscape. In this episode, Devindra and Engadget's Sam Rutherford chat about what this deal really means (and why it includes a Saudi Arabian investment fund), and also dive into the messy state of Xbox. Is the ROG Ally Xbox X already a failure at $1,000?
 
-Amazon
+Subscribe!
 
-— Mat Smith
+iTunes
 
-Advertisement
+Spotify
 
-Advertisement
+Pocket Casts
 
-Advertisement
+Stitcher
 
-Get Engadget's newsletter delivered direct to your inbox. Subscribe right here!
+Google Podcasts
 
-The news you might have missed
+Topics
 
-Tile trackers reportedly have a security flaw that can let stalkers track your location
+Electronic Arts to go private in a deal worth $55 Billion – 1:43
 
-Disney reportedly lost 1.7 million paid subscribers in the week after suspending Kimmel
+What the heck is going on with Xbox? The $1,000 ROG Ally Xbox X could be a failure even before launch – 15:23
 
-Why Im breaking up with Xbox
+Great games out now: Final Fantasy Tactics, Hollow Knight: Silksong, Hades II and more – 42:46
 
-The best Amazon Prime Day deals include early tech discounts on Apple, Samsung and others
+Amazons fall hardware event announced new Echoes, a new Fire TV and a panopticon powered by Ring – 59:10
 
-Microsoft jacks up the price of Game Pass Ultimate
+Google announces new Nest Doorbell along with a couple of Nest Cams – 1:09:34
 
-But dont worry, there are 45 new games.
+Hollywood film stars recoil in disgust at Tilly Norwood, an AI actress created by a Dutch production studio –1:14:30
 
-Alongside some tier shuffling, theres also a painful sting in the tail for Game Pass Ultimate subscribers. It now costs $30 a month, a 50 percent increase on what it was before. And theres no discount if you go for an annual subscription, either. Its also the second price jump in the last two years. It went up from $17 in July 2024. Three dollars doesnt seem so bad now.
+OpenAIs Sora video app is full of fake shoplifting clips – 1:14:13
 
-At $360 per year, Game Pass Ultimate is now more than twice as expensive as PlayStations Plus Premium. If youre willing to pay up, though, Microsoft added 45 more games this week, including a lot of entries from the Assassins Creed and Far Cry series, two gaming franchises where the games definitely arent very similar to each other.
+Working on – 1:17:35
 
-Continue reading.
+Pop culture picks – 1:19:01
 
-Ray-Ban Meta (2nd Gen) review
+Credits
 
-Smart glasses are finally getting useful.
+Hosts: Devindra Hardawar and Sam Rutherford
 
-Engadget
+Producer: Ben Ellman
 
-Metas second-generation smart glasses are becoming a genuinely useful accessory. This years hardware upgrade addresses many of the issues we had with the original Ray-Ban Meta glasses. The battery life is much improved, while the 3K resolution bump makes video far more useful on platforms like YouTube. Resolution aside, the video quality is just better too. Check out our full review.
-
-Advertisement
-
-Advertisement
-
-Advertisement
-
-Continue reading.
-
-Sharks skincare gadget sucks gunk from pores and rinses them
-
-How's that morning coffee tasting?
-
-Shark
-
-I felt a little nauseous writing that headline, but if your interest is piqued…
-
-Continue reading, you sicko.
-
-Peloton updates its entire Bike, Tread and Row series
-
-The plus models have form-checking cameras, rotating screens and lots of AI.
-
-Its been a rough time for Peloton. Now, the company is back with major hardware (and software) upgrades across its Bike, Tread and Row family of machines. Its an almost-entire overhaul, with new software, programmable workouts and an array of collaborations. There are also some tentative steps toward wellness, because why not?
-
-All of the new machines have a screen that rotates away from the bike/track/rower. The updated Bike+, Row+ and Tread+ models feature a 23.8-inch display, while the base models have a 21.5-inch display. Rotating it turns your Peloton into a more versatile screen for cross-discipline workouts, which Peloton has already dabbled in, including yoga and strength training. The new devices are now available for purchase.
-
-Continue reading.
+Music: Dale North and Terrence O'Brien
 
 About our ads
