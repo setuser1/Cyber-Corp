@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/02/amazon-to-resume-drone-delivery-following-crash-in-arizona/
+https://techcrunch.com/2025/10/02/department-of-energy-cancels-7-5b-of-clean-energy-projects-in-mostly-blue-states/
 
-Amazon will restart its drone delivery service  in Arizona beginning Friday as two federal agencies continue to investigate a crash that occurred earlier this week.
+The Department of Energy said Wednesday night it was canceling 321 awards worth $7.56 billion that were largely focused on clean energy.
 
-Amazon suspended operations in the West Valley of the Phoenix Metro area — currently its only commercial market — following a crash Wednesday. Two of the companys Prime Air delivery drones collided with the boom of a crane near its same-day site in Tolleson, Arizona, which sent them crashing to the ground.
+The agency hasnt publicly released a list of the affected projects and, at the time of publication, it had not provided one to TechCrunch. According to E&E News and Heatmap, which have obtained the list, the majority of the cuts have hit states that went for Kamala Harris in the last presidential election, though some were in “red” states that voted for President Trump.
