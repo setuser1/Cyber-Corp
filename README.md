@@ -1,8 +1,20 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/02/how-startups-could-be-affected-by-a-prolonged-government-shutdown/
+https://techcrunch.com/2025/10/02/celebrating-the-partners-driving-disrupts-big-ideas-connections-and-community/
 
-The U.S. government shutdown could stifle deal flow, freeze visa processing for workers, and cause other problems for startups and the broader tech sector, especially if it lasts longer than a week, according to experts who spoke to TechCrunch.
+TechCrunch Disrupt 2025 wouldnt be possible without the incredible support of our sponsors, who bring world-class expertise, bold innovation, and community energy to every corner of the conference.
 
-The U.S. government shutdown, which began Tuesday, is the first one in seven years. The unpredictability of the Trump administration coupled with a politically entrenched Congress makes it hard to predict when the shutdown will end. Out of eight shutdowns since 1990, four have happened during Trump administrations; the last one lasted 35 days, the longest in modern history.
+Spotlight sessions you wont want to miss
+
+Our sponsors are shaping the future of industries — and you can catch them live at Disrupt:
+
+Monday October 27
+
+Space Stage
+
+Aerospace Startup Showcase: Solving the Hardest Problems in Space
+
+8:35 a.m. – 9:40 a.m.
+
+Presented by The Aerospace Corporation
