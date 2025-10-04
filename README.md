@@ -1,46 +1,46 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/prime-day-deal-the-second-gen-kindle-scribe-is-100-off-134701372.html?src=rss
+https://www.engadget.com/cybersecurity/congress-let-a-key-cybersecurity-law-expire-this-week-leaving-us-networks-more-vulnerable-174529522.html?src=rss
 
-Deals
+Cybersecurity
 
-Prime Day deal: The second-gen Kindle Scribe is $100 off
+Congress let a key cybersecurity law expire this week, leaving US networks more vulnerable
 
-Pick one up for $300 now.
+With the government shut down, it's unclear when CISA 2015 will be renewed.
 
-Sarah Fielding
+Will Shanklin
 
-Contributing reporter
+Contributing Reporter
 
-Sarah FieldingContributing reporter
+Will ShanklinContributing Reporter
 
-Updated Fri, October 3, 2025 at 6:00 PM UTC
+Fri, October 3, 2025 at 5:45 PM UTC
 
-Cherlynn Low for Engadget
+2 min read
 
-We're only one week away from Amazon Prime Day and the sales have already started. The deals include Amazon's devices, from Kindle tablets to Echo speakers.
+Louis Velazquez / Unsplash
 
-Take the Amazon Kindle Scribe, which has dropped to $300 from $400. The 25 percent discount brings the second-generation device back down to its all-time low price. This deal is available on the 16GB model in Tungsten (dark grey) and doesn't include Kindle Unlimited. If you want more storage, the 32GB and 64GB versions are also 25 and 24 percent off, respectively.
+There's a long list of reasons US stability is now teetering between "Fyre Festival" and "Charlie Sheen's 'Tiger Blood' era." Now you can add cybersecurity to the tally. A crucial cyber defense law, the Cybersecurity Information Sharing Act of 2015 (CISA 2015), has lapsed. With the government out of commission, the nation's computer networks are more exposed for… who knows how long. Welcome to 2025, baby.
 
-The Kindle Scribe is our pick for best e-reader E Ink tablet. It scored an 86 in our review, thanks to the smooth reading and writing experience it provides. We were also fans of its sleek and slender design. It has a 10.2-inch screen and offers front lights that auto-adjust to your needs. Our biggest gripe was the cost which, thanks to this deal, is less of an issue.
+CISA 2015 promotes the sharing of cyber threat information between the private and public sectors. It includes legal protections for companies that might otherwise hesitate to share that data. The law promotes "cyber threat information sharing with industry and government partners within a secure policy and legal framework," a coalition of industry groups wrote in a letter to Congress last week.
 
-Amazon
+As Cybersecurity Dive explains, CISA 2015 shields companies from antitrust liability, regulatory enforcement, private lawsuits and FOIA disclosures. Without it, sharing gets more complicated. "There will just be many more lawyers involved, and it will all go slower, particularly new sharing agreements," Ari Schwartz, cybersecurity director at the law firm Venable, told the publication. That could make it easier for adversaries like Russia and China to conduct cyberattacks.
 
-Amazon Kindle Scribe (16GB)
+Senator Rand Paul (R-KY)
 
-$300$400Save $100
+(Kevin Dietsch via Getty Images)
 
-Get it now for 25 percent off.
+Before the shutdown, there was support for renewal from the private sector, the Trump administration and bipartisan members of Congress. One of the biggest roadblocks was Sen. Rand Paul (R-KY), chairman of the Senate Homeland Security Committee. He objected to reauthorizing the law without changes to some of his pet issues. Notably, he wanted to add language that would neuter the ability to combat misinformation and disinformation. He canceled his planned revision of the bill after a backlash from his peers. The committee then failed to approve any version before the expiration date.
 
-$300 at Amazon
+Advertisement
 
-Explore More Buying Options
+Advertisement
 
-$300 at Target$300 at Best Buy
+Advertisement
 
-It's worth noting that Amazon announced a few new Kindle Scribe models recently, but none of them are available just yet. The Kindle Scribe 3 has a thinner and lighter design, plus faster page-turning and writing experiences. The Kindle Scribe Colorsoft is Amazon's first full-color E Ink tablet. If you want the latest and greatest, it's worth it to wait — but Amazon hasn't yet named specific release dates for either new model. During its latest hardware event, it only said the new Scribes were coming "later this year."
+Meanwhile, House Republicans included a short-term CISA 2015 renewal in its government funding bill. But Democrats, whose support the GOP needs, wouldn't support the Continuing Resolution for other reasons. They want Affordable Care Act premium tax credits extended beyond their scheduled expiration at the end of the year. Without an extension, Americans' already spiking health insurance premiums will continue to skyrocket.
 
-Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals
+In its letter to Congress last week, the industry coalition warned that the expiration of CISA 2015 would lead to "a more complex and dangerous" security landscape. "Sharing information about cyber threats and incidents makes it harder for attackers because defenders learn what to watch for and prioritize," the group wrote. "As a result, attackers must invest more in new tools or target different victims."
 
 About our ads
