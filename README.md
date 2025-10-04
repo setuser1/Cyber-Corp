@@ -1,146 +1,112 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/transportation/evs/nissan-leaf-2026-review-still-the-budget-ev-to-beat-173000858.html?src=rss
+https://www.engadget.com/why-do-ai-data-centers-use-so-many-resources-171500010.html?src=rss
 
-Transportation
+Why do AI data centers use so many resources?
 
-EVs
+The facilities supporting the AI boom present a novel strain of wastefulness.
 
-Nissan Leaf 2026 review: Still the budget EV to beat
+Daniel Cooper, Cheyenne MacDonald
 
-The third-gen Leaf is a phenomenal upgrade and should be a lesson for every carmaker.
+Fri, October 3, 2025 at 5:15 PM UTC
 
-Devindra Hardawar
+13 min read
 
-Senior Editor
+OpenAI
 
-Devindra HardawarSenior Editor
+With the AI boom, construction of new data centers has skyrocketed, and not without consequence — some communities that count these facilities as neighbors are now facing water shortages and strained power supplies. While tech's data center footprint has been growing for decades, generative AI has seemingly shifted the impacts of these operations toward the catastrophic. What exactly makes these new data centers such a burden on the environment and existing infrastructure, and is there anything we can do to fix it?
 
-Fri, October 3, 2025 at 5:30 PM UTC
+Chips
 
-The 2026 Nissan Leaf surrounded by leaves
+The industry believes AI will work its way into every corner of our lives, and so needs to build sufficient capacity to address that anticipated demand. But the hardware used to make AI work is so much more resource-intensive than standard cloud computing facilities that it requires a dramatic shift in how data centers are engineered.
 
-(Devindra Hardawar for Engadget)
-
-"Ohhh, this is niiice."
-
-I kept repeating that to myself when I first saw the 2026 Nissan Leaf in person, like the oft-memed Tiffany Haddish clip. I quickly learned it's hard not to love this third iteration of the Leaf. Its seats feel wonderfully comfortable, its infotainment screens are wide and immersive and its electromagnetic sunroof seemed like something meant for a far more premium car. I tested the highest-end Leaf, which retails for $38,990, but it still offers plenty of value at that price. And it makes me think the entry-level $30,000 model — which has smaller screens, cheaper seats and no sunroof — would be similarly great. Once again, the Nissan Leaf holds the crown as the ideal cheap EV.
-
-It's easy to forget what a revolutionary vehicle Nissan's original Leaf was. Released in 2010 for under $33,000, it was the first truly affordable EV on the market. Sure it was small and didn't go very far, but Nissan eventually fixed those issues with the second-gen model (which I ended up buying earlier this year). But that came at a time when the world was more hyped to see Tesla enter the fray with cheaper cars like the Model 3 and Model Y, and the Leaf was once again overshadowed when other automakers joined the EV arena.
-
-Nissan
-
-90100Expert Score
-
-Nissan Leaf
-
-The 2026 Leaf is an excellent revamp of Nissans iconic EV that also manages to stick to a $30,000 starting price.
-
-Pros
-
-Attractive design
-
-Huge infotainment screens
-
-Long range
-
-Solid driving performance
-
-Relatively affordable
-
-Cons
-
-No one-pedal driving
-
-Less storage with rear seats up
-
-$29,950 at NIssan
-
-Now the Leaf is back and better than ever. Its compact SUV styling makes it look more futuristic than the basic hatchback design of the previous model, it can get up to 300 miles of range (up from a maximum of 212 miles with the earlier Leaf SV Plus) and it offers more cargo space with the rear seats down (55.5 cubic feet compared to 30 cubic feet). And with the Leaf's new turquoise color option, it truly stands out on the road. While it didn't turn as many heads during my testing as the VW id.Buzz, several neighbors commented that it simply looks cool.
+Typically the most important part of a computer is its “brain,” the Central Processing Unit (CPU). It's designed to compute a wide variety of tasks, tackling them one at a time. Imagine a CPU as a one-lane motorway in which every vehicle, no matter the size, can get from A to B at extraordinary speed. What AI relies on instead are Graphics Processing Units (GPU), which are clusters of smaller, more specialized processors all running in parallel. In the example, a GPU is a thousand-lane motorway with a speed limit of just 30 mph. Both try to get a huge number of figurative vehicles to their destination in a short amount of time, but they take diametrically opposite approaches to solving that problem.
 
 Advertisement
 
 Advertisement
 
-On a fundamental level, the 2026 Nissan Leaf shouts "hot new EV" in ways the old one simply didn't. Its sloped roofline and unique side profile makes it simultaneously seem like a sporty coupe and a tiny SUV. Its front and rear LED lights give off sci-fi vibes. Those same neighbors who were intrigued by this Leaf didn't even realize I had a 2018 model parked right beside it. They just thought that was a boring old hatchback. Since its inception, the Nissan Leaf's design has gone from a quirky curiosity to a car that was desperately aiming for the mainstream. This time around, Nissan's design choices feel supremely confident.
+Phil Burr is Head of Product at Lumai, a British company looking to replace traditional GPUs with optical processors. “In AI, you repeatedly perform similar operations,” he explained, “and you can do that in parallel across the data set.” This gives GPUs an advantage over CPUs in large but fundamentally repetitive tasks, like graphics, executing AI models and crypto mining. “You can process a large amount of data very quickly, but its doing the same amount of processing each time,” he said.
 
-Nissan Leaf 2026 visiting Atlanta's Chinatown.
+In the same way that thousand-lane highway would be pretty wasteful, the more powerful GPUs get, the more energy hungry they become. “In the past, as [CPUs evolved] you could get a lot more transistors on a device, but the overall power [consumption] remained about the same," Burr said. They're also equipped with “specialized units that do [specific] work faster so the chip can return to idle sooner.” By comparison, “every iteration of a GPU has more and more transistors, but the power jumps up every time because getting gains from those processes is hard.” Not only are they physically larger — which results in higher power demands — but they “generally activate all of the processing units at once,” Burr said.
 
-Nissan Leaf 2026: There's no front trunk, sadly.
+In 2024, the Lawrence Berkeley National Laboratory published a congressionally mandated report into the energy consumption of data centers. The report identified a sharp increase in the amount of electricity data centers consumed as GPUs became more prevalent. Power use from 2014 to 2016 was stable at around 60 TWh, but started climbing in 2018, to 76 TWh, and leaping to 176 TWh by 2023. In just five years, data center energy use more than doubled from 1.9 percent of the US total, to nearly 4.4 percent — with that figure projected to reach up to 12 percent by the start of the 2030s.
 
-The nissan Leaf 2018 (left) next to the 2026 model (right).
+Heat
 
-Nissan Leaf 2026 wheels
-
-This is one of two charging ports on the 2026 Leaf.
-
-These speakers deliver navigation audio right to your ears.
-
-These LATCH connectors are are bright and easy to see, making it easy to install car seats.
-
-Here the sunroof is partially shaded.
-
-These large screens make it easy to see maps and apps.
-
-There's a decent amount of storage here, though it's 3 cubic feet less than the previous model.
-
-Nissan Leaf 2026 surrounded by leaves
-
-Here you can see a Doona tricycle, two scooters and a cooler.
-
-1 / 12
-
-Nissan Leaf 2026
-
-Nissan Leaf 2026 visiting Atlanta's Chinatown.
-
-Stepping into the Leaf makes that all the more clear: I loved its soft synthetic leather seats, which perfectly supported my aching back once I tweaked the lumbar support settings. Its enormous dual 14.3-inch infotainment screens also make a striking impression. The first screen, situated behind the steering wheel, makes it easy to see your current speed, charge level and additional driving information. But it's the center screen that takes the cake — it's gloriously colorful and bright enough to be visible in harsh sunlight. It's perfect for the Leaf's built-in Google Maps navigation, but it's even better when using wireless CarPlay, since every app fills the entire screen. (And thankfully, wireless CarPlay and Android Auto support are available on every Leaf trim.)
-
-The base 2026 Leaf has cloth seats and two 12.3-inch screens, but from photos I've seen they still look like a step up from most infotainment setups. My review model also had a 10-speaker "Bose Personal Plus" audio system, which includes small speakers inside the headrests of the driver and passenger seats. That makes music sound a bit more immersive, but more importantly, it also serves as a covert way to deliver navigation instructions to the driver without distracting everyone else in the car. During my testing, I found that the Bose system felt rich and detailed for most music (it has a small subwoofer, so anything bass-heavy sounded muddled), and I genuinely appreciated having directions whispered into my ears.
-
-Here the sunroof is partially shaded.
-
-(Devindra Hardawar for Engadget)
-
-The Leaf's panoramic sunroof, which is only available on the high-end Platinum+ FWD trim, also makes a striking impression. It lets in tons of light while blocking the heat of the sun, and it can also become opaque at the touch of a button with so-called Polymer Dispersed Crystal Display technology. You can also have it shade only part of the car, which is helpful when I'd like some light, but my kids in the back seat don't. The shaded mode still lets in diffuse light, but it's not powerful enough to cast shadows (it acts almost like a total solar filter, allowing you to see the sun safely). It doesn't darken the Leaf much, though, so you might need an additional shade for napping babies.
+Like a lightbulb filament, as electricity moves through the silicon of computer chips, it encounters resistance, generating heat. Extending that power efficiency metaphor from earlier, CPUs are closer to modern LEDs here, while GPUs, like old incandescent bulbs, lose a huge amount of their power to resistance. The newest generation of AI data centers are filled with rack after rack of them, depending on the owners needs and budget, each one kicking out what Burr described as “a massive amount of heat.”
 
 Advertisement
 
 Advertisement
 
-According to Christian Spencer, a Nissan senior manager and engineer, the company found that the sunroof's shading technology also allowed for more headroom. Adding a traditional retracting shade would have shaved off a few much-needed inches. As it stands, the Leaf's wide and round roof should easily fit very tall drivers and passengers. In a conversation with Engadget, Spencer noted that Nissan also brought over some design elements from existing vehicles, like the Z sports car, Rogue SUV and Ariya EV. In particular, the new Leaf's sturdy 4-link suspension comes directly from the Ariya, and it helps to make the car feel much more stable over bumps and at high speeds.
+Heat isnt just an unwelcome byproduct: if chips arent kept cool, they'll experience performance and longevity issues. The American Society of Heating, Refrigerating and Air Conditioning Engineers (ASHRAE) publishes guidelines for data center operators. It advocates server rooms should be kept between 18 to 27 degrees celsius (64.4 to 80.6 degrees Fahrenheit). Given the sheer volume of heat GPUs kick out, maintaining that temperature requires some intensive engineering, and a lot of energy.
 
-This is one of two charging ports on the 2026 Leaf.
+The majority of data centers use a handful of methods to keep their hardware within the optimal temperature. One of the oldest ways to maximize the efficiency of air conditioning is a technique of hot and cold aisle containment. Essentially, cold air is pushed through the server racks to keep them cool, while the hot air those servers expel is drawn out to be cooled and recirculated.
 
-(Devindra Hardawar for Engadget)
+Many data centers, especially in the US, rely on the cooling effect that occurs as water changes from a liquid to a gas. This is done by drawing hot air through a wet medium to facilitate evaporation and blowing the resulting cooled air into the server room, in a method known as direct evaporative cooling. There's also indirect evaporative cooling, which works similarly but adds a heat exchanger — a device that's used to transfer heat between different mediums. In this type of setup, the heat from the warm air is transferred and cooled separately from the server room to avoid raising the humidity levels indoors.
 
-That's something I definitely noticed during a recent 100-mile round trip. The Leaf is zippy to get to highway speed thanks to its 214-horsepower electric motor (up from 147hp on the previous gen, but matching the same performance of the previous higher-end SV Plus models). The revamped Leaf also feels very solid while cruising alongside much larger cars and in chaotic winds, whereas the previous model always felt a bit unstable at high speeds. The overall rigidity leads to slightly mushy steering on the 2026 Leaf, but I still found it more comfortable to drive than Kia's similarly-sized EV6. My wife and kids, who care less about driving dynamics, noted that it just felt very smooth to ride in.
-
-My 100-mile trip brought the leaf down to 60 percent from a full charge, which is in line with the 259 miles of range available on my Platinum+ review model. (Curiously, you lose range as you step up the Leafs specs. Im sure the large 19-inch tires didnt help with efficiency — the cheaper models have 18-inch tires.) I was able to charge the Leaf from 65 percent to 100 percent overnight with a standard Level 1 charger. In addition to the standard J1772 port for Level 1 and 2 charging at home, the Leaf also includes a Tesla-style (NACS, above) port for high-speed refills at Tesla Superchargers. That makes the 2026 Leaf far more suitable for road trips than the older model, which was stuck with an archaic CHAdeMO port for fast charging.
-
-The nissan Leaf 2018 (left) next to the 2026 model (right).
-
-(Devindra Hardawar for Engadget)
-
-A major difference I noticed from my 2018 Leaf is that the new model actually feels like a true electric car internally, rather than being built out of a frame that was originally designed for a gas-powered vehicle. The annoying center console from the second-gen Leaf — which was made out of cheap plastic, and led to so much knee banging I had to install a cushion — is completely gone, replaced with room for a small backpack or purse by your right foot. The new Leaf's floor also sits very low, which gives second-row passengers a ton of leg room.
+Due in part to their cooling needs, data centers have a tremendous water footprint. The Lawrence Berkeley report found that, in 2014, US-based data centers consumed 21.2 billion liters of water. By 2018, however, that figure had leapt to 66 billion liters, much of which was attributed to what it collectively terms “hyperscale” facilities, which include AI-focused operations. In 2023, traditional US data centers reportedly consumed 10.56 billion liters of water while AI facilities used around 55.4 billion liters. The reports projections believe that by 2028, AI data centers will likely consume as much as 124 billion liters of water.
 
 Advertisement
 
 Advertisement
 
-Not every change is a true step forward, though. While the 2026 Leaf offers more overall cargo space than the previous version, it loses 3.6 cubic feet of storage when the rear seats are up. And if you've got kids in car seats, those rear chairs will always be up. I was able to fit in a small tricycle, two scooters, protective gear and a small cooler during a recent trip, but it was definitely a tight squeeze. On a brighter note, I was at least able to fit in a large combination car seat and smaller booster chair without issue. I also really appreciated Nissan's easily accessible LATCH connections, which are brightly colored and easily visible. You don't have to go fishing around for them under cushions like on other cars.
+"Collectively, data centers are among the top-ten water consuming industrial or commercial industries in the US," according to a 2021 study published in the journal Environmental Research Letters. About one-fifth of these data centers use water from stressed watersheds, i.e. areas where the demand for water may be greater than the natural supply.
 
-Here you can see a Doona tricycle, two scooters and a cooler.
+Most of the water consumed by data centers evaporates and won't be immediately replenished, while the rest goes to wastewater treatment plants. As a trio of academics explained in an op-ed for The Dallas Morning News, data centers are "effectively removing [drinking water] from the local water cycle." Water used in the cooling process is typically treated with chemicals such as corrosion inhibitors and biocides, which prevent bacterial growth. The resulting wastewater often contains pollutants, so it can't be recycled for human consumption or agriculture.
 
-(Devindra Hardawar for Engadget)
+And data centers' water use goes well beyond cooling. A much bigger portion of their water footprint can be attributed to indirect uses, mainly through electricity generated by power plants but also through wastewater utilities. These account for about three-fourths of a data center's water footprint, the study notes. Power plants use water in a number of ways, primarily for cooling and to produce the steam needed to spin their electricity-generating turbines. According to the authors, 1 megawatt-hour of energy consumed by data centers in the US on average requires 7.1 cubic meters of water.
+
+"Data centers are indirectly dependent on water from every state in the contiguous US, much of which is sourced from power plants drawing water from subbasins in the eastern and western coastal states," the authors explain. To adequately address the water issue, energy consumption must be reigned in too.
+
+Exploring the alternatives
+
+One major approach to reduce the massive water footprint of these systems is to use closed-loop liquid cooling. This is already ubiquitous on a smaller scale in high-end PCs, where heat-generating components, such as the CPU and GPU, have large heat exchangers that a liquid is pumped through. The liquid draws away the heat, and then has to be cooled down via another heat exchanger, or a refrigeration unit, before being recirculated.
 
 Advertisement
 
 Advertisement
 
-There's also bad news for fans of one pedal driving: Nissan has dumped its original "E-pedal" feature for "E-step," which can dramatically slow the Leaf with regenerative braking, but won't fully stop the car. According to Spencer, that's partially due to Japanese regulators, who prefer having the brake be the only way to fully stop a car. But it's a bummer if you've gotten used to the convenience of one-pedal driving and never touching the brakes, a feature that Nissan helped to pioneer with the second-gen Leaf. Spencer says the company has heard plenty of feedback about the loss of true one pedal driving though, so it could be a feature Nissan implements again down the line.
+Liquid cooling is becoming more and more common, especially in AI data centers, given the heat that GPUs generate. With the exception of mechanical issues, like leaking, and the water needed to operate the facility more generally, closed-loop systems do not experience water loss and so make more reasonable demands on local water resources. Direct-to-chip liquid cooling drastically cuts a data center's potential water use, and more efficiently removes heat than traditional air-cooling systems. In recent years, companies including Google, NVIDIA and Microsoft have been championing liquid cooling systems as a more sustainable way forward. And researchers are looking into ways to employ this approach on an even more granular level to tackle the heat right at the source.
 
-Id consider those complaints minor quibbles, though. The 2026 Leaf is more attractive and feature-rich than the $34,000 Hyundai Kona EV or Chevy Equinox, and it also has the backing of a company with far more experience in the EV arena. While Id still recommend looking at used EV options — Ive seen great cars like the Hyundai Ioniq 5 dip to $25,000 or less — the 2026 Leaf is simply hard to beat.
+Whereas cold plates (metal slabs with tubing or internal channels for coolant to flow through) are commonly used in liquid cooling systems to transfer heat away from the electronics, Microsoft has been testing a microfluidics-based cooling system in which liquid coolant travels through tiny channels on the back of the chip itself. In the lab, this system performed "up to three times better than cold plates at removing heat," and the company said it "can effectively cool a server running core services for a simulated Teams meeting." A blog post about the findings noted, "microfluidics also reduced the maximum temperature rise of the silicon inside a GPU by 65 percent, though this will vary by the type of chip."
+
+Another option is "free" cooling, or making use of the natural environmental conditions at the data center site to cool the operation. Air-based free cooling utilizes the outdoor air in cold locales, while water-based free cooling relies on cold water sources such as seawater. Some facilities couple this with rainwater harvesting for their other water needs, like humidification.
+
+A map of Start Campus
+
+(Start Campus)
+
+Start Campus, a data center project in Portugal, is located on the site of an old coal-fired power station and will use much of its old infrastructure. Rather than simply employ a closed-loop, the high temperatures will require the closed-loop system to interact with an open loop. When the campus is fully operational, its heat will be passed onto around 1.4 million cubic tons of seawater per day. Omer Wilson, CMO at Start Campus, said that by the time the water has returned to its source, its temperature will be the same as the surrounding sea. Start Campus has also pledged that there will be no meaningful water loss from this process.
+
+Advertisement
+
+Advertisement
+
+There is another novel cooling method, immersion, in which computing equipment is — you guessed it — immersed in a non-conductive liquid suitable to draw heat. Wilson described it as a relatively niche approach, used in some crypto mining applications, but not used by industrial-scale facilities.
+
+To keep with both energy and cooling needs, some researchers say the industry must look to renewable resources. "Directly connecting data center facilities to wind and solar energy sources ensures that water and carbon footprints are minimized," wrote the authors of the aforementioned Environmental Research study. Even purchasing renewable energy certificates — which each represent one megawatt-hour of electricity generated from a renewable source and delivered to the grid — could help shift the grid toward these sources over time, they added. "Data center workloads can be migrated between data centers to align with the portion of the grid where renewable electricity supplies exceed instantaneous demand."
+
+Geothermal resources have begun to look especially promising. According to a recent report by the Rhodium Group, geothermal energy could meet up to 64 percent of data center's projected power demand growth in the US "by the early 2030s." In the Western US, geothermal could meet 100 percent of demand growth in areas such as Phoenix, Dallas-Fort Worth and Las Vegas.
+
+For cooling, geothermal heat pumps can be used to "leverage the consistently cool temperatures" found hundreds of feet beneath the surface. Or, in locations where there are shallow aquifers present, data centers can make use of geothermal absorption chillers. These rely on the low-grade heat at shallower depths "to drive a chemical reaction that produces water vapor," the report explains. "This water vapor cools as it is run through a condenser and cools the IT components of a data center using evaporation."
+
+Advertisement
+
+Advertisement
+
+Iron Mountain Data Centers operates a geothermally cooled data center in Boyers, Pennsylvania at the site of an old limestone mine. A 35-acre underground reservoir provides a year-round supply of cool water. Geothermal may not be a widespread solution just yet, but it's catching on. In 2024, Meta announced a partnership with Sage Geosystems to supply its data centers with up to 150 megawatts (MW) of geothermal power starting in 2027.
+
+Beyond the hardware
+
+While novel cooling methods will undoubtedly help curb some of the AI data centers' excessive resource demands, the first step to meaningful change is transparency, according to Vijay Gadepally, a senior scientist at MIT's Lincoln Laboratory Supercomputing Center. AI companies need to be upfront about the emissions and resource use associated with their operations to give people a clear view of their footprints.
+
+Then there is the hardware to consider. Incorporating more intelligent chip design — i.e. processors with better performance characteristics — could go a long way toward making data centers more sustainable. "That's a huge area of innovation right now," Gadepally said. And large data centers are often "running underutilized," with a lot of power that isnt being allocated efficiently. Rather than leaning into the push to build more such facilities, the industry should first make better use of existing data centers' capacities.
+
+Similarly, many of today's AI models are vastly overpowered for the tasks they're being given. The current approach is "like cutting a hamburger with a chainsaw," Gadepally said. "Does it work? Sure… but it definitely is overkill." This doesn't need to be the case. "We have found in many instances that you can use a smaller but tuned model, to achieve similar performance to a much larger model," Gadepally said, noting that this is especially true for new "agentic" systems. "You're often trying thousands of different parameters, or different combinations of things to discover which is the best one, and by being a little bit more intelligent, we could dismiss or essentially terminate a lot of the workloads or a lot of those combinations that weren't getting you towards the right answer."
+
+Each of those unnecessary parameters isn't just a computational dead end, it's another nudge towards rolling blackouts, less potable water and rising utility costs to surrounding communities. As Gadepally said, "We're just building bigger and bigger without thinking about, 'Do we actually need it?'"
 
 About our ads
