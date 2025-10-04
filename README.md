@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/03/supabase-nabs-5b-valuation-four-months-after-hitting-2b/
+https://techcrunch.com/2025/10/03/openais-sora-soars-to-no-1-on-the-u-s-app-store/
 
-Its been a whirlwind year for the vibe-coding worlds database of choice: Supabase. On Friday, Supabase announced that it raised a fresh $100 million Series E at a $5 billion valuation, led by Accel and Peak XV. This is just four months after closing its $200 million Series D at a $2 billion valuation, led by Accel.
+OpenAIs Sora app for AI videos is a viral hit, despite being invite-only for now and limited to users in the U.S. and Canada at launch. On its first day, Sora saw 56,000 downloads, and is now ranked as the No. 3 Top Overall app on Apples U.S. App Store, according to new data from app intelligence provider Appfigures. On Friday, October 3, it became the No. 1 app on the U.S. App Store.
 
-And that Series D was just seven months after raising an $80 million Series C led by Sequoia spinoff Peak XV and David Sacks Craft Ventures at an undisclosed valuation. PitchBook estimated Supabase was valued at around $765 million in that deal, post-money.
+That puts it ahead of Google Gemini and OpenAIs ChatGPT.
