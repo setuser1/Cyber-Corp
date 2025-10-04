@@ -1,53 +1,63 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/the-roku-streaming-stick-plus-drops-to-only-29-in-this-prime-day-deal-134656112.html?src=rss
+https://www.engadget.com/deals/the-best-prime-day-ssd-deals-include-discounts-on-gear-from-crucial-samsung-and-more-170039738.html?src=rss
 
 Deals
 
-The Roku Streaming Stick Plus drops to only $29 in this Prime Day deal
+The best Prime Day SSD deals include discounts on gear from Crucial, Samsung and more
 
-This travel-size streaming device was our top pick for free and live content.
+You can snap up extra storage and processing power with these early Amazon Prime Day deals.
 
-Andre Revilla
+Sam Chapman
 
-Contributing Reporter
+Senior Writer
 
-Andre RevillaContributing Reporter
+Sam ChapmanSenior Writer
 
-Updated Fri, October 3, 2025 at 7:01 PM UTC
+Updated Fri, October 3, 2025 at 6:15 PM UTC
 
-Jeff Dunn for Engadget
+Engadget
 
-The Roku Streaming Stick Plus is on sale for just $29. That's a discount of 27 percent and the lowest we've ever seen it.
+October Prime Day is here again, and as always, we've put together a list of the best, most-discounted extra storage options for consoles and gaming PCs. Our guide to the top storage deals is split into three categories — tiny microSD cards, portable external SSDs and generally faster (but more labor-intensive) internal SSDs. Whether you're building a gaming rig or just want to stop your PS5 from lagging, there's almost certainly a deal for you on our curated list. Take a look now to see what kind of extra storage might best fit your needs.
 
-Roku has held the top spot in the TV OS market for years thanks to its user-friendly interface, an affordable range of streaming devices and its own lineup of TVs. We picked the Streaming Stick Plus as the best streaming device for free and live content, thanks in large part to The Roku Channel app that accompanies it. The Roku Channel features over 500 free TV channels with live news, sports coverage and a rotating lineup of TV shows and movies.
+Best October Prime Day SSD deals
 
-Roku
+Amazon
 
-Roku Streaming Stick Plus
+Crucial T710 2TB Gen5 NVMe SSD
 
-$29$40Save $11
+$230 (36 percent off)$230
 
-On sale for almost 30 percent off.
+Fifth-generation SSDs are still a little faster than most people need, but with software only getting bigger, use cases are likely to grow. To get an early jump on future speeds, check out the Crucial T710 with 2TB of storage, a super-fast SSD that reads at up to 14,500MB/s. This deal doesn't include a heatsink, but it does come with free hardware encryption.
 
-$29 at Amazon
+$230 (36 percent off) at Amazon
 
-In our hands-on review of the Roku Streaming Stick Plus, we thought it was perfect for travel thanks to its small size and the fact that it can be powered by your TV's USB port, nixing the need for a wall adapter. Menu navigation and opening or closing apps won't happen at quite the same speeds as more expensive streamers, but it's quick enough for what is ultimately a pretty low-cost option. The Wi-Fi range on this one is also weaker than Roku's pricier devices, but unless you are placing it exceedingly far from your router, it shouldn't be an issue.
+Crucial X10 4TB Portable SSD for $240 (39 percent off): The Crucial X9 is our current favorite portable SSD, but the X10 is a step beyond. Based on USB 3.2, it's compatible with a wide range of devices, and reaches reading speeds of 2,100MB/s — all in an extremely portable pocket-sized case.
+
+Advertisement
+
+Advertisement
+
+Crucial BX500 1TB 3D NAND SATA 2.5-inch Internal SSD for $60 (36 percent off): The BX500 is Crucial's budget-conscious SSD option, but that doesn't mean it disappoints. This internal solid state drive cuts down on battery consumption and improves processing with read speeds reaching 540MB/s. It comes with a three-year warranty, too.
+
+Crucial P310 2TB for $149 (38 percent off): The 2TB level of the Crucial P310 is available at the lowest price we've seen all year. It's a compact drive that works great in small laptops or Steam Decks — especially the latter, given Valve's warning against cramming in large SSDs. For this small size and great price, you get read speeds of over 7,000MB/s.
+
+Samsung 990 Evo Plus 1TB for $70 (33 percent off): This is an incredible deal on an internal SSD from a reliable brand. All capacities of the Samsung 990 Evo Plus are currently on sale, but even the 1TB option can visibly boost your performance with top read speeds of 7,250MB/s. There's no heatsink, but nickel plating on the controller reduces both heat output and energy use.
+
+Samsung 990 PRO 2 TB for $156 (26 percent off): Samsung's 990 Pro series represents a massive leap forward for the brand, cutting energy costs by around half while boosting speeds up to at least 7,000MB/s write and 5,000MB/s read. This version comes with 2TB of storage and its own built-in heatsink.
 
 Advertisement
 
 Advertisement
 
-The Roku Streaming Stick Plus supports both HD and 4K TVs, as well as HDR10+ content. It doesn't support Dolby Vision, however; for that you'll need to upgrade to Roku's Streaming Stick 4K or Roku Ultra. It comes with Roku's rechargeable voice remote with push-to-talk voice controls. Roku's remote can also turn on your TV and adjust the volume while you're watching.
+Samsung Fit Plus 256GB for $23 (30 percent off): The Samsung Fit Plus isn't just the best thumb drive on the market right now — it's one of the best SSDs, period. This deal gets you 256GB of storage and read speeds of 400MB/s for almost unfathomably cheap. It's also built to resist water, extreme temperatures, magnets and even radiation.
 
-If you've been thinking about getting a Roku device, or you already love the platform and want a compact and convenient way to take it with you when you travel, then this sale provides a great opportunity. If you'd prefer a more powerful and slightly more stationary device, the Roku Ultra is on sale for $79 right now, too.
+Kingston SX1000 1TB High Performance for $89 (23 percent off): If you can't swing a Crucial X9 or X10 right now, Kingston offers a much more affordable alternative. The SX1000 can handle both PC backups and gaming storage with ease, nearly matching the X9 in our speed tests. It's also easy to carry around, though keep a tight grip as it's not officially rated for any drop height.
 
-Roku Ultra
+SanDisk 2TB Extreme Portable SSD for $148 (29 percent off): The SanDisk Extreme line of portable SSDs provides a great middle ground in both price and performance. Read speeds of 1,050MB/s are enough for transferring most files you'll encounter day-to-day. Its external design holds up too, with a large carabiner loop, IP65 waterproofing and dustproofing and drop protection as high as three meters.
 
-$79$100Save $21
-
-See at Amazon
+Seagate Storage Expansion Card 2TB for $220 (39 percent off): This SeaGate SSD is specifically for expanding storage on the Xbox Series X and S, and it's designed to meet Xbox specs exactly. You'll get exactly the same performance booting a game from this card as you would from internal Xbox storage, which makes data management infinitely easier.
 
 Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals
 
