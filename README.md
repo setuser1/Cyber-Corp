@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/03/openais-sora-soars-to-no-1-on-the-u-s-app-store/
+https://techcrunch.com/2025/10/03/leaked-doc-reveals-the-chaotic-politics-behind-trump-energy-department-cuts/
 
-OpenAIs Sora app for AI videos is a viral hit, despite being invite-only for now and limited to users in the U.S. and Canada at launch. On its first day, Sora saw 56,000 downloads, and is now ranked as the No. 3 Top Overall app on Apples U.S. App Store, according to new data from app intelligence provider Appfigures. On Friday, October 3, it became the No. 1 app on the U.S. App Store.
+This week, the Department of Energy canceled nearly $8 billion worth of awards — a move touted by the Trump administration as an effort to protect fossil fuels at the expense of renewables. But documents obtained by TechCrunch show that the reality is more complex than that simple message.
 
-That puts it ahead of Google Gemini and OpenAIs ChatGPT.
+The agency has not released a list of the canceled awards, but TechCrunch has obtained a copy and has analyzed the 321 contracts that the DOE is seeking to undo.
