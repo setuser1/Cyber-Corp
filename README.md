@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/03/googles-gemini-ai-app-could-soon-be-getting-a-big-makeover/
+https://techcrunch.com/2025/10/03/rivian-is-redesigning-the-r2-suvs-door-handles-for-better-safety/
 
-After the success of OpenAIs video editing app Sora, now at the top of the U.S. App Store, Google may be looking to give its Gemini AI app a more visually focused revamp. The company is seemingly experimenting with a new user interface that would shift the app from having a chatbot-style look and feel to one offering a scrollable feed with suggested prompts accompanied by eye-catching photos.
+Rivian is changing the door handle design on its upcoming R2 SUV after employees and customers raised safety concerns, according to Bloomberg News.
 
-The changes were spotted in a recent version of the Gemini Android app by the news site Android Authority but are not yet live to the public. Instead, by looking into the apps code, a reverse engineer enabled the apps new home screen. Here, shortcut buttons to do things like &#8220;Create Image&#8221; or access &#8220;Deep Research&#8221; were moved up on the screen and were then followed by the scrollable feed.
+The automaker is one of many that has leaned into electronically latched door handles over the last few years. While this allows for sleeker presentation and more aerodynamic design, it often results in the automaker tucking the manual emergency door releases away in hard-to-find places.
