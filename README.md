@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/03/sources-naveen-raos-new-ai-hardware-startup-targets-5b-valuation-with-backing-from-a16z/
+https://techcrunch.com/2025/10/03/what-to-expect-at-openais-devday-2025-and-how-to-watch-it/
 
-Naveen Rao, who was formerly the head of artificial intelligence at Databricks, is in talks to raise $1 billion at a $5 billion valuation for a new startup called Unconventional, Inc., thats building a new type of computer, according to four people familiar with discussions.
+OpenAI is gearing up to host its third annual developer conference, DevDay 2025, on Monday. The company says more than 1,500 people are scheduled to convene at Fort Mason in San Francisco for OpenAIs &#8220;biggest event yet,&#8221; which features announcements, keynotes from OpenAI executives, and a fireside chat between CEO Sam Altman and longtime Apple designer Jony Ive.
 
-Andreessen Horowitz has agreed to lead the investment, and Lightspeed and Lux Capital are also participating in the deal, two of the sources said, although none of those VC firms responded to our request for comment. Databricks is also said to be investing in Raos new company, Bloomberg reported last month.
+From the sound of it, DevDay 2025 is shaping up to be a grand display of OpenAIs rising dominance in Silicon Valley against giants like Apple, Google, and Meta. OpenAI is currently building an AI device, a social media app, and an AI-powered browser to take on Chrome. In other words, OpenAI has a lot more going on than it did during its first DevDay in 2023, when it mostly just had ChatGPT and an API business for developers to access its models.
