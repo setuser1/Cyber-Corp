@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/03/snapchat-is-going-to-charge-for-storage-heres-how-to-save-your-memories-for-free/
+https://techcrunch.com/2025/10/03/googles-gemini-ai-app-could-soon-be-getting-a-big-makeover/
 
-Nearly a decade after becoming a digital time capsule for your lifes moments, Snapchat is set to put a price on its Memories feature. The company announced last week that its capping free Memories storage at 5GB.
+After the success of OpenAIs video editing app Sora, now at the top of the U.S. App Store, Google may be looking to give its Gemini AI app a more visually focused revamp. The company is seemingly experimenting with a new user interface that would shift the app from having a chatbot-style look and feel to one offering a scrollable feed with suggested prompts accompanied by eye-catching photos.
 
-If your Memories exceed the limit, you will need to either export them or sign up for one of Snapchats new Memories Storage plans in order to preserve them.
+The changes were spotted in a recent version of the Gemini Android app by the news site Android Authority but are not yet live to the public. Instead, by looking into the apps code, a reverse engineer enabled the apps new home screen. Here, shortcut buttons to do things like &#8220;Create Image&#8221; or access &#8220;Deep Research&#8221; were moved up on the screen and were then followed by the scrollable feed.
