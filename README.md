@@ -1,42 +1,54 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/apps/google-is-also-removing-apps-used-to-report-sightings-of-ice-agents-192940612.html?src=rss
+https://www.engadget.com/deals/the-roku-streaming-stick-plus-drops-to-only-29-in-this-prime-day-deal-134656112.html?src=rss
 
-Apps
+Deals
 
-Google is also removing apps used to report sightings of ICE agents
+The Roku Streaming Stick Plus drops to only $29 in this Prime Day deal
 
-Red Dot, an app used to anonymously report ICE activity, was recently pulled from both the Play Store and the App Store.
+This travel-size streaming device was our top pick for free and live content.
 
-Ian Carlos Campbell
+Andre Revilla
 
 Contributing Reporter
 
-Ian Carlos CampbellContributing Reporter
+Andre RevillaContributing Reporter
 
-Fri, October 3, 2025 at 7:29 PM UTC
+Updated Fri, October 3, 2025 at 7:01 PM UTC
 
-2 min read
+Jeff Dunn for Engadget
 
-Red Dot / Engadget
+The Roku Streaming Stick Plus is on sale for just $29. That's a discount of 27 percent and the lowest we've ever seen it.
 
-Following Apple's removal of ICEBlock from the App Store, an app used to report on the activity of Immigration and Customs Enforcement agents, 404 Media reports that Google is also removing similar apps from the Play Store. In a statement to Engadget, Google said "ICEBlock was never available on Google Play, but we removed similar apps for violations of our policies."
+Roku has held the top spot in the TV OS market for years thanks to its user-friendly interface, an affordable range of streaming devices and its own lineup of TVs. We picked the Streaming Stick Plus as the best streaming device for free and live content, thanks in large part to The Roku Channel app that accompanies it. The Roku Channel features over 500 free TV channels with live news, sports coverage and a rotating lineup of TV shows and movies.
 
-Google says that it decided to remove apps that shared the location of a vulnerable group following a violent act that involved the group and a similar collection of apps. It suggests the apps were also removed because they didn't appropriately moderate user-generated content. To be offered in the Play Store, apps with user-generated content have to clearly define what is or isn't objectionable content in their terms of service, and make sure those terms line up with Google's definitions of inappropriate content for Google Play.
+Roku
 
-404 Media report specifically focuses on Red Dot, an app that both Google and Apple removed. Like ICEBlock, Red Dot designed to let users report on ICE activity in their neighborhood. Rather than just rely on user submissions, the app's website says that it "aggregates verified reports from multiple trusted sources" and then combines those sources to determine where to mark activity on a map of your area. "Red Dot never tracks ICE agents, law enforcement, or any person's movements" and the app's developers "categorically reject harassment, interference, or harm toward ICE agents or anyone else." Despite those claims, the app is not currently available to download from the Play Store or the App Store.
+Roku Streaming Stick Plus
+
+$29$40Save $11
+
+On sale for almost 30 percent off.
+
+$29 at Amazon
+
+In our hands-on review of the Roku Streaming Stick Plus, we thought it was perfect for travel thanks to its small size and the fact that it can be powered by your TV's USB port, nixing the need for a wall adapter. Menu navigation and opening or closing apps won't happen at quite the same speeds as more expensive streamers, but it's quick enough for what is ultimately a pretty low-cost option. The Wi-Fi range on this one is also weaker than Roku's pricier devices, but unless you are placing it exceedingly far from your router, it shouldn't be an issue.
 
 Advertisement
 
 Advertisement
 
-Advertisement
+The Roku Streaming Stick Plus supports both HD and 4K TVs, as well as HDR10+ content. It doesn't support Dolby Vision, however; for that you'll need to upgrade to Roku's Streaming Stick 4K or Roku Ultra. It comes with Roku's rechargeable voice remote with push-to-talk voice controls. Roku's remote can also turn on your TV and adjust the volume while you're watching.
 
-The pushback against ICE tracking apps seemed to begin in earnest following a shooting at a Dallas ICE facility that injured two detainees and killed another on September 24. According to an FBI agent that spoke to The New York Times, the shooter "had been following apps that track the location of ICE agents" in the days leading up to the event.
+If you've been thinking about getting a Roku device, or you already love the platform and want a compact and convenient way to take it with you when you travel, then this sale provides a great opportunity. If you'd prefer a more powerful and slightly more stationary device, the Roku Ultra is on sale for $79 right now, too.
 
-Apple pulled the ICEBlock app from the App Store yesterday following a request from US Attorney General Pam Bondi. In a statement shared with Fox Business, Bondi said that "ICEBlock is designed to put ICE agents at risk just for doing their jobs, and violence against law enforcement is an intolerable red line that cannot be crossed." Apple's response was to remove the app. "Based on information weve received from law enforcement about the safety risks associated with ICEBlock, we have removed it and similar apps from the App Store," Apple told the publication.
+Roku Ultra
 
-Google says it didn't receive a similar request to remove apps from the Play Store. Instead, the company appears to be acting proactively. The test for either platform going forward, though, is if there's a way that developers can offer these apps without them being removed again.
+$79$100Save $21
+
+See at Amazon
+
+Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals
 
 About our ads
