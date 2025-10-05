@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/04/teslas-insurance-arm-accused-of-egregious-delays-and-systemic-failures-by-ca-regulator/
+https://techcrunch.com/2025/10/03/bezos-predicts-that-millions-will-live-in-space-kind-of-soon/
 
-Tesla has been hit with an enforcement action by Californias Department of Insurance (CDI) for routinely denying or delaying customer claims despite years of warnings from the state regulator, according to a new pair of filings.
+Amazon founder Jeff Bezos made a rare public appearance at Italian Tech Week in Turin on Friday and used the opportunity to predict that millions of people will be living in space &#8220;in the next couple of decades,&#8221; the Financial Times reports.
 
-Teslas insurance arm, along with its partner State National Insurance Company, engaged in &#8220;willful unfair claims settlement practices&#8221; including &#8220;egregious delays in responding to policyholder claims in all steps&#8221; of the process and &#8220;unreasonable denials,&#8221; CDI wrote. This has allegedly caused &#8220;financial harm&#8221; and &#8220;distress to policyholders.&#8221;
+Speaking with John Elkann, a scion of Italys Agnelli dynasty, Bezos, who also founded rocket company Blue Origin, insisted people will be living in space &#8220;mostly because they want to,&#8221; and that robots will handle the grunt work, while vast AI data centers float overhead.
