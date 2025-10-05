@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/04/anker-offered-to-pay-eufy-camera-owners-to-share-videos-for-training-its-ai/
+https://techcrunch.com/2025/10/04/instacrops-will-demo-its-water-saving-crop-boosting-ai-at-techcrunch-disrupt-2025/
 
-Earlier this year, Anker, the Chinese company that makes Eufy security cameras, offered its users money in exchange for videos of package and car thefts.
+Agriculture is a thirsty industry, consuming 70% of all fresh water used worldwide. In some countries, like India or Chile, it can be more than 90%.
 
-The popular internet-connected security camera maker said it would pay its customers $2 per video to train its AI systems to help better detect thieves who steal cars and packages.
+For Mario Bustamante, who lives in Chile, the problem hits close to home. “Lack of water is a big issue here,” he told TechCrunch.
