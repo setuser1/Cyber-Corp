@@ -1,42 +1,34 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/entertainment/what-to-read-this-weekend-ghost-stories-to-kick-off-october-182937425.html?src=rss
+https://www.engadget.com/transportation/evs/california-regulators-threaten-to-revoke-teslas-insurance-license-for-mishandling-claims-180942929.html?src=rss
 
-Entertainment
+Transportation
 
-What to read this weekend: Ghost stories to kick off October
+EVs
 
-Check out Bora Chung's Midnight Timetable and the new comic series, It Killed Everyone But Me.
+California regulators threaten to revoke Tesla's insurance license for mishandling claims
 
-Cheyenne MacDonald
+The California Department of Insurance issued a severe enforcement action against Tesla's insurance division.
 
-Weekend Editor
+Jackson Chen
 
-Cheyenne MacDonaldWeekend Editor
+Contributing reporter
 
-Updated Sat, October 4, 2025 at 6:29 PM UTC
+Jackson ChenContributing reporter
 
-Here are some recently released titles to add to your reading list. This week, we read Bora Chung's Midnight Timetable: A Novel in Ghost Stories, and started a new series from Mad Cave Studios, It Killed Everyone But Me.
+Sat, October 4, 2025 at 6:09 PM UTC
 
-Algonquin Books
+2 min read
 
-Midnight Timetable
+Tesla
 
-"Spooky season" is all year round in my world, but I still can't resist the urge to plunge even deeper into all things eerie when that autumn chill starts creeping in. And what better way to get into that vibe than with a collection of ghost stories? Midnight Timetable is a short book composed of seven interconnected stories as told to a new nighttime employee of a facility known as The Institute. The rooms of The Institute are home to a menagerie of haunted objects and beings, each with its own ghastly backstory, and strange things tend to occur on the premises.
+Tesla launched its own auto insurance options for California customers back in 2019, but it may soon lose its authorization to do just that. The California Department of Insurance (CDI) issued enforcement actions against Tesla Insurance, which acts as an agent for State National Insurance Company and is also named in the legal notice. The issued warning claims that Tesla Insurance and State National saw "repeated failures to comply with long-standing claims handling laws." The agency also accused Tesla Insurance of "egregious delays" when responding to its customers' claims and not conducting "thorough, fair and objective investigations of claims."
 
-This was my introduction to Bora Chung's work and it absolutely hooked me. It's a really quick read with just the right amount of creep factor.
+According to the filing, the CDI received 97 complaints about State National in 2022 and determined that 21 were justified, while also noting that the insurance provider committed 40 violations of the state's insurance regulations. The numbers skyrocketed over the years, eventually hitting 1,095 received complaints about State National, which were boiled down to 415 justified complaints between January 1, 2025 and September 22, 2025. Within this year's complaints so far, the CDI said that State National committed 1,498 violations of the state's insurance code.
 
-$14 at Amazon
+As for Tesla Insurance, the CDI received 842 complaints and said that 166 of which were justified in the same time period. The agency also accused Tesla of committing 532 violations. On top of the violations, the state agency claimed that Tesla Insurance's Head of Claims position was left vacant for several months, and when eventually filled, saw frequent turnover between April 2023 and May 2025.
 
-Mad Cave
-
-It Killed Everyone But Me #1
-
-This has been sitting on my To Be Read list for weeks, but October seemed like the perfect time to finally dive into a fresh slasher story. In It Killed Everyone But Me, we meet a Final Girl, Sutton, decades after the violent tragedy she survived. She's the mom of a teenager now, works in real estate and is going through all the motions of a "normal" life. But when someone approaches her about a new case that appears to have similarities to hers, Sutton is forced to revisit her past. “This story is about somebody literally burying their trauma away and ignoring it and then having to dig it up 30 years later and deal with it,” writer Ryan Parrott said in a recent interview with AIPT. He added that it is, "in some ways, a cautionary tale about how you cant just pretend something didnt happen and be OK."
-
-This first issue is a strong start to the series, and leaves you hungry for more. There's a lot we still don't know — like what really happened back then, when all of Sutton's friends were killed during a weekend getaway.
-
-$5 at Amazon
+After the filing on Friday, Tesla Insurance and State National have 15 days to respond to the CDI. If the two insurance providers don't resolve the issues laid out in the complaint, they will be put in front of a judge who will determine if they can continue offering insurance in the state. Along with the potential regulatory consequences, Tesla Insurance and State National will face "monetary penalties up to $5,000 for each unlawful, unfair, or deceptive act, or up to $10,000 for each such act determined to be willful."
 
 About our ads
