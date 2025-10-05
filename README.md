@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/04/instacrops-will-demo-its-water-saving-crop-boosting-ai-at-techcrunch-disrupt-2025/
+https://techcrunch.com/2025/10/04/sam-altman-says-sora-will-add-granular-opt-in-copyright-controls/
 
-Agriculture is a thirsty industry, consuming 70% of all fresh water used worldwide. In some countries, like India or Chile, it can be more than 90%.
+OpenAI may be reversing course on how it approaches copyright and intellectual property in its new video app Sora.
 
-For Mario Bustamante, who lives in Chile, the problem hits close to home. “Lack of water is a big issue here,” he told TechCrunch.
+Prior to Soras launch this week, The Wall Street Journal reported that OpenAI had been telling Hollywood studios and agencies that they needed to explicitly opt out if they didnt want their IP to be included in Sora-generated videos.
