@@ -1,36 +1,30 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/kingmakers-the-medieval-battle-game-with-modern-weapons-has-been-delayed-211935670.html?src=rss
+https://www.engadget.com/ai/openai-acquires-an-ai-powered-personal-investing-app-192339271.html?src=rss
 
-Gaming
+AI
 
-Kingmakers, the medieval battle game with modern weapons, has been delayed
+OpenAI acquires an AI-powered personal investing app
 
-The game was supposed to launch in Early Access just days from now.
+This deal could point towards OpenAI's ChatGPT offering customized financial advice in the future.
 
-Cheyenne MacDonald
+Jackson Chen
 
-Weekend Editor
+Contributing reporter
 
-Cheyenne MacDonaldWeekend Editor
+Jackson ChenContributing reporter
 
-Sat, October 4, 2025 at 9:19 PM UTC
+Sat, October 4, 2025 at 7:23 PM UTC
 
-2 min read
+1 min read
 
-Redemption Road Games
+Roi
 
-Redemption Road's absolutely bonkers-looking medieval shooter, Kingmakers, was slated to launch in Early Access on October 8, but now its release has been pushed back with no new date in sight. The developers posted an update on Steam to say that the scheduled launch, just days away, "will no longer be possible," going on to explain that they need "a bit more time on content polish before we feel good about charging money for it."
+Just a day after dethroning SpaceX as the most valuable private company in the world, OpenAI has acquired another startup. This time, the AI giant acquired Roi, an app that offers a one-stop shop for all your financial portfolios and an AI chatbot that provides personalized investing advice. Details of the acquisition weren't made public, but TechCrunch reported that Sujith Vishwajith, the startup's CEO and co-founder, will be the only one joining OpenAI's team.
 
-A statement posted by the developers of Kingmakers announcing that the game is delayed
+It might come as a surprise for OpenAI to venture into the personal finance space, but this latest acquisition offers some hints at what the company could have in store for the future. OpenAI could be leaning into an AI chatbot that provides more than just responses to general queries and offers more personalization as a "proactive assistant," as detailed in its blog post introducing Pulse.
 
-(Redemption Road Games)
-
-Kingmakers has generated a fair amount of hype since it was announced last year, and it sits among the top wishlisted titles on Steam. The game sends players "back in time to a war-torn medieval era with a vast arsenal of modern weapons," from guns to tanks. And if you've seen the trailers, you know it's not just the concept that's bananas — the gameplay we've been shown so far is completely over the top. In its statement about the delay, the team said that Kingmakers is "an incredibly ambitious, uncompromising game, and we don't want to cut any planned features, for the sake of getting it out the door earlier."
-
-"With Kingmakers, we set out to push the Unreal Engine 4 codebase to its absolute limits, while still providing true 60fps to midrange PCs, without the need for fake frames," the team wrote. "We are an 80% engineering team, who got into this business to push technological barriers. We currently have tens of thousands of soldiers, each with AI and pathfinding that rivals what you'd expect from a AAA third person shooter. When you walk away from a battle, it continues to play out. Nothing is faked."
-
-The developers haven't provided any update on what the timeline looks like now beyond the fact that the game won't be ready for October 8. But, they added, "We will be presenting a half hour long deepdive on Kingmakers gameplay very soon, with a comprehensive overview of everything we've been working on."
+OpenAI is also no stranger to acquiring smaller companies that offer something that could advance ChatGPT. In May, the company acquired io, an AI hardware startup cofounded by former Apple designer Jony Ive, for $6.5 billion. OpenAI followed up that major purchase by spending another $1.1 billion to acquire Statsig, a startup that focused on product testing, in September.
 
 About our ads
