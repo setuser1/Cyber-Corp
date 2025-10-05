@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/04/newsom-signs-bill-giving-uber-and-lyft-drivers-in-california-the-right-to-unionize/
+https://techcrunch.com/2025/10/04/if-youre-not-an-ai-startup-good-luck-raising-money-from-vcs/
 
-Drivers for ride-hailing apps like Uber and Lyft will soon have the right to unionize in California as independent contractors, thanks to a bill signed Friday by Governor Gavin Newsom.
+New PitchBook data illustrates how dramatically AI is dominating startup investment, with 2025 on-track to become the first year when AI accounts for more than half of all VC money invested.
 
-This is part of a larger deal between lawmakers, unions, and ride-hailing companies, resulting in the passage of separate bills supporting lower insurance requirements for Uber and Lyft, along with union rights for their drivers. When the deal was first announced in August, Newsom described it as an “historic agreement between workers and business that only California could deliver.”
+PitchBook reports that VCs have poured $192.7 billion into the industry so far this year, out of a total $366.8 billion, according to Bloomberg. In the most recent quarter, AI accounted for 62.7% of the money invested by U.S. VCs, and for 53.2% of money invested by global firms.
