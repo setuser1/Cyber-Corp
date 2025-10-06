@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/05/the-reinforcement-gap-or-why-some-ai-skills-improve-faster-than-others/
+https://techcrunch.com/2025/10/05/the-young-minds-app-wants-to-protect-and-educate-children-online-and-will-show-its-tech-at-techcrunch-disrupt-2025/
 
-AI coding tools are getting better fast. If you dont work in code, it can be hard to notice how much things are changing, but GPT-5 and Gemini 2.5 have made a whole new set of developer tricks possible to automate, and last week Sonnet 4.5 did it again.
+An app called Young Minds wants to give parents control over what their kids do on the internet, while also protecting their childrens privacy and teaching them good online habits.
 
-At the same time, other skills are progressing more slowly. If you are using AI to write emails, youre probably getting the same value out of it you did a year ago. Even when the model gets better, the product doesnt always benefit — particularly when the product is a chatbot thats doing a dozen different jobs at the same time. AI is still making progress, but its not as evenly distributed as it used to be.
+The startup was founded by Nino Dvalidze (pictured), an entrepreneur and a mother of two from the United Kingdom. Dvalidze told TechCrunch that the idea for Young Minds came from conversations with fellow parents, who are also worried about how to keep their children safe, while also allowing them to have access to the internet, which, she admitted, is “enormously helpful in terms of education and exploration and connection with so many people outside of your immediate zone of contacts.”
