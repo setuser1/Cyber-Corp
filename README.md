@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/05/openai-and-jony-ive-may-be-struggling-to-figure-out-their-ai-device/
+https://techcrunch.com/2025/10/05/techcrunch-mobility-toyota-makes-a-1-5b-bet-on-the-startup-ecosystem/
 
-OpenAI and Jony Ive face significant technical challenges as they work to develop a screen-less, AI-powered device, according to the Financial Times.
+Welcome back to TechCrunch Mobility, your hub for all things “future of transportation.” To get this in your inbox, sign up here for free — just click TechCrunch Mobility!
 
-Back in May, OpenAI acquired io, the device startup founded by the legendary Apple designer with OpenAI CEO Sam Altman, for $6.5 billion. At the time, Altman declared that Ive and his team would help the company “create a new generation of AI-powered computers,&#8221; while Bloomberg reported that the first devices to emerge from the deal were scheduled to launch in 2026.
+More than a month ago, I asked you, dear reader, how you thought EV sales would play out once the $7,500 federal tax credit expired on September 30. The majority of those who responded to the poll predicted that EV sales would fall off a cliff.
