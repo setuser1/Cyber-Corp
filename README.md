@@ -1,46 +1,32 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/this-roomba-robot-vacuum-is-on-sale-for-150-for-prime-day-164953753.html?src=rss
+https://www.engadget.com/social-media/ice-is-planning-to-create-a-surveillance-team-that-hunts-for-leads-on-social-media-163743143.html?src=rss
 
-Deals
+Social media
 
-This Roomba robot vacuum is on sale for $150 for Prime Day
+ICE is planning to create a surveillance team that hunts for leads on social media
 
-Pick up the entry-level model for 40 percent off.
+The project in its current proposed state would add at least 28 full-time staffers tasked solely with generating leads 24/7.
 
-Lawrence Bonk
+Jackson Chen
 
-Contributing Reporter
+Contributing reporter
 
-Lawrence BonkContributing Reporter
+Jackson ChenContributing reporter
 
-Updated Sun, October 5, 2025 at 5:01 PM UTC
+Sun, October 5, 2025 at 4:37 PM UTC
 
-iRobot / Engadget
+1 min read
 
-Robot vacuums are great items to look for during events like October Prime Day. They're usually hundreds of dollars off, so you can save a ton if you're buying one as a gift or you want to upgrade an aging robovac you have at home already. One of the best deals this time around is on the iRobot Roomba 104, which is 40 percent off and on sale for only $150.
+ICE
 
-This is a newer version of the unit that topped our list of the best budget robot vacuums. It's an entry-level robovac that gets the job done. The cleaning motor is fairly powerful and it ships with a multi-surface brush and an edge-sweeping brush. The vacuum uses LiDAR to map a home and to help it avoid obstacles when cleaning.
+The US Immigration and Customs Enforcement (ICE) has plans to build out a 24/7/365 surveillance team that focuses on scouring social media for case leads, as revealed in documents first discovered by Wired. According to public records, ICE has put out a request for information — which allows the agency to detail its preliminary scope of work to gauge any interest from contractors — that details using social media platforms like Facebook, X, Instagram, TikTok, Reddit and YouTube to develop leads on wanted individuals.
 
-iRobot
+For "urgent cases," the team is expected to work on leads with ICE's Top 10 Most Wanted within a 30-minute timeframe. However, the breadth of work ranges all the way to low-priority cases, like those involving someone convicted of a non-violent misdemeanor or "has no convictions but has a significant arrest history," with a more generous eight-hour window to generate leads.
 
-iRobot Roomba 104 Robot Vacuum
+According to the documents, ICE wants at least 12 full-time staff to work at its National Criminal Analysis and Targeting Center in Williston, Vermont, which will require three staffers on duty at all times. On the other side of the country, ICE is looking for a minimum staff of 16 full-time contractors for its Pacific Enforcement Response Center in Santa Ana, California, that will also have a duty rotation of at least two staffers on for "after-hour requirements and emergency situations."
 
-$150$250Save $100
-
-This is 40 percent off.
-
-$150 at Amazon
-
-It's also been equipped with specialized sensors to prevent falling down stairs. Steps are the natural enemy of all robot vacuums, except maybe this one. The Roomba 104 integrates with the company's proprietary app, which allows for custom cleaning schedules and the like. The robot can also be controlled via voice assistant and boasts compatibility with Siri, Alexa and Google Assistant.
-
-Advertisement
-
-Advertisement
-
-The vacuum will automatically head to the charger for some juice when running low, which is nice. The battery lasts around 200 minutes per charge, which is a decent enough metric for a budget-friendly robovac. The only downside here? This is just a vacuum. It doesn't mop and it doesn't come with a dedicated debris canister.
-
-Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals | Best credit card for Amazon
+While the plans are in the very early stages, ICE's plans are aggressive and even ask how prospective contractors would use artificial intelligence to achieve its goals. The federal agency is no stranger to controversial tech though, as it has previously been accused of using facial recognition.
 
 About our ads
