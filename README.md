@@ -1,30 +1,66 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ai/openais-first-device-with-jony-ive-could-be-delayed-due-to-technical-issues-182226416.html?src=rss
+https://www.engadget.com/deals/ankers-latest-prime-charging-devices-are-already-20-percent-off-152040336.html?src=rss
 
-AI
+Deals
 
-OpenAI's first device with Jony Ive could be delayed due to 'technical issues'
+Anker's latest Prime charging devices are already 20 percent off
 
-A report from Financial Times claims that the team are still sorting out key issues related to personality and privacy.
+Ahead of October Prime Day, snag a 300W power bank for its lowest price yet.
 
-Jackson Chen
+Kris Holt
 
-Contributing reporter
+Contributing Reporter
 
-Jackson ChenContributing reporter
+Kris HoltContributing Reporter
 
-Sun, October 5, 2025 at 6:22 PM UTC
+Updated Sun, October 5, 2025 at 6:01 PM UTC
 
-1 min read
+Anker / Engadget
 
-OpenAI
+Anker's latest Prime charging devices are already on sale thanks to some handy coupons. The best deals include the laptop-compatible Prime Power Bank (26,250mAh, 300W), which is 20 percent off and down to $184 when you clip the on-page coupon on its Amazon page.
 
-OpenAI and Jony Ive could still have some serious loose ends to tie up before releasing their highly anticipated AI device. According to a Financial Times report, the partnership is still struggling with some "technical issues" that could ultimately end up pushing back the device's release date, which is expected to be sometime in 2026.
+This portable charger delivers a whopping 300W of total output between its two USB-C ports and single USB-A port. Anker says that, thanks to its 140W output (and if you're using a 5A cable), you can top up the battery of an M4 Pro MacBook Pro to 50 percent in 27 minutes and an iPhone 17 Pro Max to 50 percent in 22 minutes. You can keep tabs on what's happening on each port using the display.
 
-One of those lingering dilemmas involves figuring out the AI assistant's voice and mannerisms, according to FT's sources. The AI device is meant to be "a friend who's a computer who isn't your weird AI girlfriend," according to a FT source who was briefed on the plans. Beyond landing on a personality, OpenAI and Ive are still figuring out potential privacy concerns stemming from a device that's always listening. On top of that, the budget could reportedly be a challenge due to the increased computing power necessary to run these mass-produced AI devices.
+Anker
 
-Outside these latest struggles, we still know very little about the upcoming product. Sam Altman, OpenAI's CEO, reportedly offered some clues to employees that it could be pocket-sized, aware of its environment and sans display. There are still plenty of questions about what OpenAI's first hardware project will amount to, but the company could be exercising more caution since similar devices, like the Humane AI Pin, were discontinued after failing to deliver on sales.
+Anker Prime Power Bank (26,250mAh, 300W)
+
+$184$230
+
+Save $46 with coupon
+
+Anker's new powerbank can deliver total charging output of 300W, and it's 20 percent off when you apply a clippable coupon.
+
+Save $46 with coupon
+
+$184 at Amazon
+
+This is also the first Anker power bank that supports up to 250W of input recharging by using both USB-C ports simultaneously. This faster charging can top up the powerbank's own battery to 50 percent in just 13 minutes, according to Anker.
+
+Advertisement
+
+Advertisement
+
+This model has a capacity of 26,250mAh (99.75Wh), which is very close to the FAA's limit of 100W. It's TSA-approved, so you'll be able to take it on flights. It's capable of taking an M4 MacBook Pro from fully dead to an 80 percent charge. The power bank weighs 1.3 lbs — the same as about three iPhones, Anker says.
+
+Other Anker Prime devices are on sale too. A new 3-in-1 MagSafe charger — which can top up the batteries of your iPhone, Apple Watch and AirPods with wireless charging case simultaneously — also gets a 20 percent discount to $184 when you use a clippable coupon. While there are certainly less expensive 3-in-1 MagSafe options out there, this one includes Qi2 25W support for faster charging, as well as TEC active cooling. Anker suggests this can help speed up charging times and help guard against iPhone battery degradation over time.
+
+A three-port GaN Prime Charger that plugs into an outlet is 20 percent off too, at $120 with a clippable coupon. Anker says it's as compact as an AirPods Pro 3 case and can provide a total output of 160W, with up to 140W via a single USB-C cable. The charger is said to offer smart power distribution, and you can monitor what's happening and adjust modes via an onboard display and controls.
+
+Anker Prime 3-in-1 MagSafe Charging Station (Qi2 25W)
+
+$184$230Save $46with coupon
+
+See at Amazon
+
+Anker Prime Charger (160W 3-Port)
+
+$120$150Save $30with coupon
+
+See at Amazon
+
+Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals | Best credit card for Amazon
 
 About our ads
