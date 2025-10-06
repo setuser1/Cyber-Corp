@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/05/californias-new-ai-safety-law-shows-regulation-and-innovation-dont-have-to-clash/
+https://techcrunch.com/2025/10/05/openai-and-jony-ive-may-be-struggling-to-figure-out-their-ai-device/
 
-SB 53, the AI safety and transparency bill that California Gov. Gavin Newsom signed into law this week, is proof that state regulation doesnt have to hinder AI progress.
+OpenAI and Jony Ive face significant technical challenges as they work to develop a screen-less, AI-powered device, according to the Financial Times.
 
-So says Adam Billen, vice president of public policy at youth-led advocacy group Encode AI, on todays episode of Equity.
+Back in May, OpenAI acquired io, the device startup founded by the legendary Apple designer with OpenAI CEO Sam Altman, for $6.5 billion. At the time, Altman declared that Ive and his team would help the company “create a new generation of AI-powered computers,&#8221; while Bloomberg reported that the first devices to emerge from the deal were scheduled to launch in 2026.
