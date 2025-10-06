@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/04/if-youre-not-an-ai-startup-good-luck-raising-money-from-vcs/
+https://techcrunch.com/2025/10/04/startups-and-the-u-s-government-its-getting-complicated/
 
-New PitchBook data illustrates how dramatically AI is dominating startup investment, with 2025 on-track to become the first year when AI accounts for more than half of all VC money invested.
+The tie between startups and the U.S. government have strengthened in recent years, a shift buoyed by an interest in using AI, automation, space, robotics, and climate tech for defense. And while that has provided another welcome path to capital, the relationship is getting complicated.
 
-PitchBook reports that VCs have poured $192.7 billion into the industry so far this year, out of a total $366.8 billion, according to Bloomberg. In the most recent quarter, AI accounted for 62.7% of the money invested by U.S. VCs, and for 53.2% of money invested by global firms.
+A growing share of startups have the U.S. government as customers, or are aiming for permits and defense-related contracts. When the government is operational, that connection can provide a needed boost and revenue to startups. But when the government ceases to function, as it did starting October 1, those close ties can stifle or even halt progress for startups.
