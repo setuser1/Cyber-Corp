@@ -1,32 +1,44 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/social-media/ice-is-planning-to-create-a-surveillance-team-that-hunts-for-leads-on-social-media-163743143.html?src=rss
+https://www.engadget.com/deals/prime-day-kindle-deals-include-the-second-gen-scribe-for-100-off-134701051.html?src=rss
 
-Social media
+Deals
 
-ICE is planning to create a surveillance team that hunts for leads on social media
+Prime Day Kindle deals include the second-gen Scribe for $100 off
 
-The project in its current proposed state would add at least 28 full-time staffers tasked solely with generating leads 24/7.
+Pick one up for $300 now.
 
-Jackson Chen
+Sarah Fielding
 
 Contributing reporter
 
-Jackson ChenContributing reporter
+Sarah FieldingContributing reporter
 
-Sun, October 5, 2025 at 4:37 PM UTC
+Updated Sun, October 5, 2025 at 4:00 PM UTC
 
-1 min read
+Cherlynn Low for Engadget
 
-ICE
+Amazon devices are already on sale for fall Prime Day. Case in point: the second-gen Kindle Scribe. The E Ink tablet with 16GB of storage is $100 off, down from $400 to $300, which is a record-low price. If you want more storage, the 32GB and 64GB versions are also 25 and 24 percent off, respectively.
 
-The US Immigration and Customs Enforcement (ICE) has plans to build out a 24/7/365 surveillance team that focuses on scouring social media for case leads, as revealed in documents first discovered by Wired. According to public records, ICE has put out a request for information — which allows the agency to detail its preliminary scope of work to gauge any interest from contractors — that details using social media platforms like Facebook, X, Instagram, TikTok, Reddit and YouTube to develop leads on wanted individuals.
+The Kindle Scribe is our pick for best e-reader E Ink tablet. It scored an 86 in our review, thanks to the smooth reading and writing experience it provides. We were also fans of its sleek and slender design. It has a 10.2-inch screen and offers front lights that auto-adjust to your needs. Our biggest gripe was the cost which, thanks to this deal, is less of an issue.
 
-For "urgent cases," the team is expected to work on leads with ICE's Top 10 Most Wanted within a 30-minute timeframe. However, the breadth of work ranges all the way to low-priority cases, like those involving someone convicted of a non-violent misdemeanor or "has no convictions but has a significant arrest history," with a more generous eight-hour window to generate leads.
+Amazon
 
-According to the documents, ICE wants at least 12 full-time staff to work at its National Criminal Analysis and Targeting Center in Williston, Vermont, which will require three staffers on duty at all times. On the other side of the country, ICE is looking for a minimum staff of 16 full-time contractors for its Pacific Enforcement Response Center in Santa Ana, California, that will also have a duty rotation of at least two staffers on for "after-hour requirements and emergency situations."
+Amazon Kindle Scribe (16GB)
 
-While the plans are in the very early stages, ICE's plans are aggressive and even ask how prospective contractors would use artificial intelligence to achieve its goals. The federal agency is no stranger to controversial tech though, as it has previously been accused of using facial recognition.
+$300$400Save $100
+
+Get it now for 25 percent off.
+
+$300 at Amazon
+
+Explore More Buying Options
+
+$300 at Best Buy
+
+It's worth noting that Amazon announced a few new Kindle Scribe models recently, but none of them are available just yet. The Kindle Scribe 3 has a thinner and lighter design, plus faster page-turning and writing experiences. The Kindle Scribe Colorsoft is Amazon's first full-color E Ink tablet. If you want the latest and greatest, it's worth it to wait — but Amazon hasn't yet named specific release dates for either new model. During its latest hardware event, it only said the new Scribes were coming "later this year."
+
+Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals | Best credit card for Amazon
 
 About our ads
