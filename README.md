@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/05/the-young-minds-app-wants-to-protect-and-educate-children-online-and-will-show-its-tech-at-techcrunch-disrupt-2025/
+https://techcrunch.com/2025/10/04/a-breach-every-month-raises-doubts-about-south-koreas-digital-defenses/
 
-An app called Young Minds wants to give parents control over what their kids do on the internet, while also protecting their childrens privacy and teaching them good online habits.
+South Korea is world-famous for its blazing-fast internet, near-universal broadband coverage, and as a leader in digital innovation, hosting global tech brands like Hyundai, LG, and Samsung. But this very success has made the country a prime target for hackers and exposed how fragile its cybersecurity defenses remain.
 
-The startup was founded by Nino Dvalidze (pictured), an entrepreneur and a mother of two from the United Kingdom. Dvalidze told TechCrunch that the idea for Young Minds came from conversations with fellow parents, who are also worried about how to keep their children safe, while also allowing them to have access to the internet, which, she admitted, is “enormously helpful in terms of education and exploration and connection with so many people outside of your immediate zone of contacts.”
+The country is reeling from a string of high-profile hacks, affecting credit card companies, telecoms, tech startups, and government agencies, impacting vast swathes of the South Korean population. In each case, ministries and regulators appeared to scramble in parallel, sometimes deferring to one another rather than moving in unison.
