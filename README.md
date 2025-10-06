@@ -1,30 +1,46 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/transportation/uber-and-lyft-drivers-in-california-are-able-to-unionize-under-new-law-171309594.html?src=rss
+https://www.engadget.com/deals/this-roomba-robot-vacuum-is-on-sale-for-150-for-prime-day-164953753.html?src=rss
 
-Transportation
+Deals
 
-Uber and Lyft drivers in California are able to unionize under new law
+This Roomba robot vacuum is on sale for $150 for Prime Day
 
-The 800,000-plus rideshare drivers in the state will be able to collectively bargain for better conditions.
+Pick up the entry-level model for 40 percent off.
 
-Cheyenne MacDonald
+Lawrence Bonk
 
-Weekend Editor
+Contributing Reporter
 
-Cheyenne MacDonaldWeekend Editor
+Lawrence BonkContributing Reporter
 
-Sun, October 5, 2025 at 5:13 PM UTC
+Updated Sun, October 5, 2025 at 5:01 PM UTC
 
-1 min read
+iRobot / Engadget
 
-REUTERS / Reuters
+Robot vacuums are great items to look for during events like October Prime Day. They're usually hundreds of dollars off, so you can save a ton if you're buying one as a gift or you want to upgrade an aging robovac you have at home already. One of the best deals this time around is on the iRobot Roomba 104, which is 40 percent off and on sale for only $150.
 
-California governor Gavin Newsom signed legislation on Friday that grants rideshare drivers in the state the right to unionize. It's the second state to grant organizing rights to rideshare drivers, who are independent contractors, following the passage of a similar law in Massachusetts in 2024. There are over 800,000 rideshare drivers in California, and the bill that was just signed into law "establishes a clear legal framework for union certification, bargaining processes and enforcement," according to a press release from the office of Assemblymember Buffy Wicks.
+This is a newer version of the unit that topped our list of the best budget robot vacuums. It's an entry-level robovac that gets the job done. The cleaning motor is fairly powerful and it ships with a multi-surface brush and an edge-sweeping brush. The vacuum uses LiDAR to map a home and to help it avoid obstacles when cleaning.
 
-This means drivers working for companies like Uber and Lyft will be able to collectively bargain for better pay, benefits and working conditions. Under the terms of the law, driver organizations will be able to apply for union recognition starting in May 2026 as long as they have support from at least 10 percent of active rideshare drivers in the state. The organization would then need support from at least 30 percent of active drivers to begin bargaining on their behalf.
+iRobot
 
-As part of a deal made in September, Newsom also signed a measure that reduces the insurance coverage requirements for Uber and Lyft in the case of accidents caused by uninsured drivers, Associated Press reports.
+iRobot Roomba 104 Robot Vacuum
+
+$150$250Save $100
+
+This is 40 percent off.
+
+$150 at Amazon
+
+It's also been equipped with specialized sensors to prevent falling down stairs. Steps are the natural enemy of all robot vacuums, except maybe this one. The Roomba 104 integrates with the company's proprietary app, which allows for custom cleaning schedules and the like. The robot can also be controlled via voice assistant and boasts compatibility with Siri, Alexa and Google Assistant.
+
+Advertisement
+
+Advertisement
+
+The vacuum will automatically head to the charger for some juice when running low, which is nice. The battery lasts around 200 minutes per charge, which is a decent enough metric for a budget-friendly robovac. The only downside here? This is just a vacuum. It doesn't mop and it doesn't come with a dedicated debris canister.
+
+Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals | Best credit card for Amazon
 
 About our ads
