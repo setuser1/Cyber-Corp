@@ -1,107 +1,63 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/the-best-amazon-prime-day-deals-on-anker-wireless-chargers-power-banks-and-other-accessories-164536013.html?src=rss
+https://www.engadget.com/deals/the-best-prime-day-ssd-deals-save-on-gear-from-samsung-crucial-seagate-and-others-170039409.html?src=rss
 
 Deals
 
-The best Amazon Prime Day deals on Anker wireless chargers, power banks and other accessories
+The best Prime Day SSD deals: Save on gear from Samsung, Crucial, Seagate and others
 
-Stock up on essential tech while it's discounted for October Prime Day.
+You can snap up extra storage and processing power with these early Amazon Prime Day deals.
 
-Valentina Palladino
+Sam Chapman
 
-Deputy Editor, Buying Advice
+Senior Writer
 
-Valentina PalladinoDeputy Editor, Buying Advice
+Sam ChapmanSenior Writer
 
-Updated Sun, October 5, 2025 at 3:20 PM UTC
+Updated Sun, October 5, 2025 at 3:00 PM UTC
 
-Anker / Engadget
+Engadget
 
-Maybe youre not looking to snag an iPad, a robot vacuum or a VR headset this Amazon Prime Day because youre set with what you already have. Instead, though, consider picking up a few discounted “essential” gadgets, or really, devices you dont want to be left without in a pinch. Charging gear falls into this camp, and Anker makes some of our favorite power banks, cables, wireless chargers and more.
+If you've never considered adding a solid-state drive (SSD) to your PC or game console, October Prime Day is a great time to start — and if you already know what a difference extra storage can make, October Prime Day is the perfect time to outfit your build. For those who haven't heard of SSDs, they're physical upgrades that stack on top of a device's storage to make more files accessible at once. The more data a console or PC can hold at a time, the quicker it can retrieve and process that data, which makes everything run faster. Here are the best SSD deals we've managed to find on Amazon.
 
-A bunch of Ankers gear is on sale for October Prime Day, making now a great time to stock up. Personally, I always end up getting an extra charging cable or surge protector for my house, or I take stock of the gifts Ill need over the next couple of months and pick up a power brick while theyre deeply discounted. Here, weve collected all of the best October Prime Day deals on Anker devices and other charging accessories so you dont have to go searching for them.
+Best October Prime Day SSD deals
 
-Anker Prime Day deals: Power banks
+Amazon
 
-Power banks are not as straightforward as you might think. They come in all shapes, sizes and capacities and can have extra features like magnetic alignment, built-in kickstands, extra ports and more.
+Crucial T710 2TB Gen5 NVMe SSD
 
-It's worth considering how you'll use a power bank before you decide on the right one to buy. Smartphones dont need huge-capacity bricks to power up a couple of times over; a 5K or 10K portable charger should be plenty if thats all youre looking to support. If you want a more versatile accessory that can charge a tablet, laptop or gaming handheld, consider a brick with a higher capacity — and more ports so you can charge multiple devices simultaneously.
+$230 (36 percent off)$230
 
-Anker 622 MagGo 5K power bank with stand
+Fifth-generation SSDs are still a little faster than most people need, but with software only getting bigger, use cases are likely to grow. To get an early jump on future speeds, check out the Crucial T710 with 2TB of storage, a super-fast SSD that reads at up to 14,500MB/s. This deal doesn't include a heatsink, but it does come with free hardware encryption.
 
-$34$48Save $14with Prime
+$230 (36 percent off) at Amazon
 
-See at Amazon
-
-Anker MagGo 10K Power Bank (Qi2 15W)
-
-$63$80Save $17
-
-See at Amazon
-
-Anker Prime Power Bank (26,250mAh, 300W)
-
-$184$230Save $46with coupon
-
-See at Amazon
-
-Anker Prime Day deals: Wireless chargers
-
-A good wireless charger can lighten your cable load. While wired charging remains faster and more efficient, wireless chargers can clean up your space by eliminating a few of those cables that constantly trip you up.
+Crucial X10 4TB Portable SSD for $240 (39 percent off): The Crucial X9 is our current favorite portable SSD, but the X10 is a step beyond. Based on USB 3.2, it's compatible with a wide range of devices, and reaches reading speeds of 2,100MB/s — all in an extremely portable pocket-sized case.
 
 Advertisement
 
 Advertisement
 
-We recommend thinking about where you'll use a wireless charger before buying one. Those outfitting a home office with new tech may want a wireless charging stand that puts their phone in an upright position thats easier to see while its powering up, while those who want a wireless charger for their nightstand might prefer a lay-flat design or a power station that can charge a smartphone, smartwatch and pair of earbuds all at once.
+Crucial BX500 1TB 3D NAND SATA 2.5-inch Internal SSD for $64 (33 percent off): The BX500 is Crucial's budget-conscious SSD option, but that doesn't mean it disappoints. This internal solid state drive cuts down on battery consumption and improves processing with read speeds reaching 540MB/s. It comes with a three-year warranty, too.
 
-Anker 313 Wireless Charger Stand
+Crucial P310 2TB for $122 (49 percent off): The 2TB level of the Crucial P310 is available at the lowest price we've seen all year. It's a compact drive that works great in small laptops or Steam Decks — especially the latter, given Valve's warning against cramming in large SSDs. For this small size and great price, you get read speeds of over 7,000MB/s.
 
-$14$20Save $6
+Samsung 990 Evo Plus 1TB for $70 (33 percent off): This is an incredible deal on an internal SSD from a reliable brand. All capacities of the Samsung 990 Evo Plus are currently on sale, but even the 1TB option can visibly boost your performance with top read speeds of 7,250MB/s. There's no heatsink, but nickel plating on the controller reduces both heat output and energy use.
 
-See at Amazon
+Samsung 990 PRO 2 TB for $170 (19 percent off): Samsung's 990 Pro series represents a massive leap forward for the brand, cutting energy costs by around half while boosting speeds up to at least 7,000MB/s write and 5,000MB/s read. This version comes with 2TB of storage and its own built-in heatsink.
 
-Anker MagGo iPhone 17 MagSafe Charger Compatible Stand (Qi2 15W)
+Advertisement
 
-$29$40Save $11
+Advertisement
 
-See at Amazon
+Samsung Fit Plus 256GB for $23 (30 percent off): The Samsung Fit Plus isn't just the best thumb drive on the market right now — it's one of the best SSDs, period. This deal gets you 256GB of storage and read speeds of 400MB/s for almost unfathomably cheap. It's also built to resist water, extreme temperatures, magnets and even radiation.
 
-Anker MagGo UFO 3-in-1 Charger (Qi2 15W)
+Kingston SX1000 1TB High Performance for $105 (9 percent off): If you can't swing a Crucial X9 or X10 right now, Kingston offers a much more affordable alternative. The SX1000 can handle both PC backups and gaming storage with ease, nearly matching the X9 in our speed tests. It's also easy to carry around, though keep a tight grip as it's not officially rated for any drop height.
 
-$63$90Save $27with Prime
+SanDisk 2TB Extreme Portable SSD for $148 (29 percent off): The SanDisk Extreme line of portable SSDs provides a great middle ground in both price and performance. Read speeds of 1,050MB/s are enough for transferring most files you'll encounter day-to-day. Its external design holds up too, with a large carabiner loop, IP65 waterproofing and dustproofing and drop protection as high as three meters.
 
-See at Amazon
-
-Anker MagGo 3 in 1 Wireless Charging Station (Qi2 15W)
-
-$71$111Save $40
-
-See at Amazon
-
-Anker Prime Day deals: Charging gear
-
-Plenty of other charging gear is on sale for Prime Day. Its never a bad idea to pick up a few 30W USB-C adapters so you always have what you need to reliably power up your phone. Same goes for extra USB-C (or USB-A) cables that can live in your car, in your office at work or by the couch.
-
-Anker Car Carplay Cable for iPhone 17 16 Pro Max Plus (3FT)
-
-$10$15Save $5
-
-See at Amazon
-
-Anker Nano 30W GaN Charger
-
-$16$20Save $4
-
-See at Amazon
-
-Anker Prime USB C to USB C Cable (240W, 6 FT)
-
-$24$35Save $11
-
-See at Amazon
+Seagate Storage Expansion Card 2TB for $250 (31 percent off): This SeaGate SSD is specifically for expanding storage on the Xbox Series X and S, and it's designed to meet Xbox specs exactly. You'll get exactly the same performance booting a game from this card as you would from internal Xbox storage, which makes data management infinitely easier.
 
 Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals | Best credit card for Amazon
 
