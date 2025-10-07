@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/06/instagram-introduces-new-ring-award-for-top-creators/
+https://techcrunch.com/2025/10/06/openai-launches-agentkit-to-help-developers-build-and-ship-ai-agents/
 
-Instagram announced on Monday that its launching an awards program, with 25 creators set to receive a gold ring next week. The company says the new awards program will recognize creators around the world who shift culture and break barriers.
+OpenAI CEO Sam Altman on Monday announced the launch of AgentKit, a toolkit for building and deploying AI agents, at the firms Dev Day event.
 
-The judges panel for the new awards program includes Instagram head Adam Mosseri, director Spike Lee, designer Marc Jacobs, YouTuber Marques Brownlee, actress Yara Shahidi, makeup artist Pat McGrath, and more.
+“AgentKit is a complete set of building blocks available in the open AI platform designed to help you take agents from prototype to production. It is everything you need to build, deploy, and optimize agent workflows with way less friction,” Altman said.
