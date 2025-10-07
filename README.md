@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/06/openai-launches-apps-inside-of-chatgpt/
+https://techcrunch.com/2025/10/06/sam-altman-says-chatgpt-has-hit-800m-weekly-active-users/
 
-OpenAI is launching a new way for developers to build applications inside of ChatGPT. Starting Monday, users in ChatGPT will be able to access interactive applications from companies like Booking.com, Expedia, Spotify, Figma, Coursera, Zillow, and Canva. OpenAI is also launching a preview of the Apps SDK, the developer-facing toolkit to build these apps.
+OpenAI CEO Sam Altman said Monday that ChatGPT has reached 800 million weekly active users, marking an increase of adoption among consumers, developers, enterprises, and governments.
 
-OpenAI made the announcement at its annual developer conference, DevDay 2025.
+ChatGPTs impressive growth comes as OpenAI is on a race to secure as many AI chips and build as much AI infrastructure as possible. In August, OpenAI said it was on the cusp of reaching 700 million weekly active users, already an increase from 500 million weekly active users at the end of March.
