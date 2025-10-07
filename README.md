@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/06/lucid-motors-sets-record-as-gravity-sales-pick-up-and-tax-credit-expires/
+https://techcrunch.com/2025/10/06/taylor-swift-fans-accuse-singer-of-using-ai-in-her-google-scavenger-hunt-videos/
 
-Lucid Motors delivered a record 4,078 vehicles in the third quarter, likely buoyed by a combination of more Gravity SUVs hitting the road and a rush of customers taking advantage of the expiring federal EV tax credit.
+For the release of her twelfth album, &#8220;The Life of a Showgirl,&#8221; Taylor Swift sent fans on an online scavenger hunt this weekend, which began by searching for &#8220;Taylor Swift&#8221; on Google. But as fans unveiled secret videos as part of the campaign, some fretted that the clips looked like they were AI-generated &#8212; and they were not pleased.
 
-The Saudi-owned luxury EV startup is still way off the projections it used to go public in 2021 &#8212; a transaction that netted it $4 billion. But Lucid Motors has seen deliveries steadily climb over the last two years. The third-quarter delivery figures announced Monday mark the seventh consecutive quarter that Lucid Motors has seen sales increase.
+A Google search for the singers name yields a cryptic message: &#8220;12 cities, 12 doors, 1 video to unlock.&#8221;
