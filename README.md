@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/06/meta-llama-everything-you-need-to-know-about-the-open-generative-ai-model/
+https://techcrunch.com/2025/10/06/clop-hackers-caught-exploiting-oracle-zero-day-bug-to-steal-executives-personal-data/
 
-Like every Big Tech company these days, Meta has its own flagship generative AI model, called Llama. Llama is somewhat unique among major models in that its &#8220;open,&#8221; meaning developers can download and use it however they please (with certain limitations). Thats in contrast to models like Anthropics Claude, Googles Gemini, xAIs Grok, and most of OpenAIs ChatGPT models, which can only be accessed via APIs.
+Oracle has fixed a zero-day vulnerability in one of its flagship business software products that a hacking group is currently abusing to steal personal information about corporate executives.
 
-In the interest of giving developers choice, however, Meta has also partnered with vendors, including AWS, Google Cloud, and Microsoft Azure, to make cloud-hosted versions of Llama available. In addition, the company publishes tools, libraries, and recipes in its Llama cookbook to help developers fine-tune, evaluate, and adapt the models to their domain. With newer generations like Llama 3 and Llama 4, these capabilities have expanded to include native multimodal support and broader cloud rollouts.
+In a brief post updated over the weekend, Oracle chief security officer Rob Duhart said the tech giant released a new patch to fix a vulnerability in its Oracle E-Business suite, and urged customers to install the update as soon as possible.
