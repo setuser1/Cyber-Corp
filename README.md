@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/06/taylor-swift-fans-accuse-singer-of-using-ai-in-her-google-scavenger-hunt-videos/
+https://techcrunch.com/2025/10/06/microsoft-buys-another-100-mw-of-solar-this-time-in-japan/
 
-For the release of her twelfth album, &#8220;The Life of a Showgirl,&#8221; Taylor Swift sent fans on an online scavenger hunt this weekend, which began by searching for &#8220;Taylor Swift&#8221; on Google. But as fans unveiled secret videos as part of the campaign, some fretted that the clips looked like they were AI-generated &#8212; and they were not pleased.
+Microsoft is buying 100 megawatts of solar capacity from Japanese developer Shizen Energy, the latest in a string of renewable energy deals designed to power the tech companys growing compute needs.
 
-A Google search for the singers name yields a cryptic message: &#8220;12 cities, 12 doors, 1 video to unlock.&#8221;
+The agreement, which the companies announced late last week, covers four different solar developments; one is already operating and three are under construction. The deal covers output from the plants for 20 years.
