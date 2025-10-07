@@ -1,65 +1,81 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/amazon-prime-day-tech-deals-under-25-save-on-blink-anker-roku-and-fire-tv-084136589.html?src=rss
+https://www.engadget.com/audio/speakers/the-best-prime-day-speaker-deals-jbl-bose-ultimate-ears-and-more-070038290.html?src=rss
 
-Deals
+Audio
 
-Amazon Prime Day tech deals under $25: Save on Blink, Anker, Roku and Fire TV
+Speakers
 
-Snap up Prime Day deals under $25 on some of our favorite tech.
+The best Prime Day speaker deals: JBL, Bose, Ultimate Ears and more
 
-Amy Skorheim
+Amazon has some of the best bluetooth audio gear, smart speakers and soundbars in the game on sale.
 
-Senior Reporter, Buying Advice
+Sam Chapman
 
-Amy SkorheimSenior Reporter, Buying Advice
+Senior Writer
 
-Tue, October 7, 2025 at 8:41 AM UTC
+Sam ChapmanSenior Writer
 
-Amazon/Samsung/Roku/Engadget
+Tue, October 7, 2025 at 8:35 AM UTC
 
-Forget iPads and TVs. This list is all about the best Prime Day deals you can buy for less than $25. Theres a surprising number of deals on Amazons site for gadgets, accessories and small electronics that weve tested and recommend. If youre looking for mini speakers to keep you company by the fire pit, a new cable that wont conk out on you or a smart plug to control your Halloween lights, check out this list. Weve linked to our buying guides and reviews so you can read up on a product before plunking down your hard-earned (but less than 25) dollars. Here are Engadgets picks for the best October Prime Day tech deals under $25.
+Valentina Palladino for Engadget
 
-The best Prime Day deals under $25
+It's once again time for October Prime Day. While this fall's Big Deal Days event isn't a four-day extravaganza like we got in July, we're still seeing steep discounts on some of the world's best audio gear. This time, our audiophiles have dug up markdowns on top-tier portable bluetooth speakers, smart speakers and soundbars from JBL, Beats, Sonos and more. Whether you're building a permanent setup for your home theater or chaining portable speakers together to blast dance tunes through an outdoor party venue, we bet you'll find some Prime Day speaker deals to love on our professionally curated list.
+
+Best Prime Day bluetooth speaker deals
 
 Amazon
 
-Amazon Smart Plug
+JBL Xtreme 2
 
-$13$25Save $12
+$297 (77 percent off)$1,306
 
-Amazon Smart Plug for $13 ($12 off): We named this the best smart plug for Alexa users because it hooks up painlessly and stays connected reliably. Use it to control lamps or your holiday lights using programs and schedules in the Alexa app, or just your voice by talking to your Echo Dot or other Alexa-enabled listener.
+This deal isn't just the best way to get ahold of the JBL Xtreme 2, an old favorite from 2018 we still love — it actually ships two Xtreme 2 units at a total price cut of 77 percent. If you place both strategically, you'll get a deep surround sound experience. Each Xtreme 2 can get louder than you'd expect from a portable speaker, putting out 40 watts at maximum, and stays charged for around 15 hours. At 4.6 pounds, they're tough enough to resist falls but still easy to carry.
 
-$13 at Amazon
+$297 (77 percent off) at Amazon
 
-Explore More Buying Options
+JBL Xtreme 3 for $209 (36 percent off): Like the Xtreme 2, the JBL Xtreme 3 is a hefty bluetooth speaker with a 15-hour battery life and the ability to chain together with other JBL speakers. But don't fret if you've only got one — even on its own, we've found the Xtreme 3's 100-watt output manages to sound both crisp and deep in any space.
 
-$13 at Best Buy
+JBL Flip 6 for $98 (24 percent off): The JBL Flip 6 is a solid choice for an all-around bluetooth speaker, performing well in any room or on the go. It sounds good at almost any frequency and volume, runs for 12 hours on a single charge and is nearly impossible to damage with falls, dust or water.
 
-Blink Mini 2 security camera for $20 ($20 off): This is the top budget pick in our guide to the best security cameras. The Mini 2 is a great option for indoor monitoring or you can put it outside with a weatherproof adapter, but since it needs to be plugged in, we like it for keeping an eye on your pets while you're away and watching over entry ways from the inside.
+JBL Clip 3 for $32 (64 percent off): The JBL Clip 3 is one of the best traveling speakers on the market, weighing a quarter of a pound and including a large and versatile carabiner ring. Output power reaches 5 watts, which is pretty good for such a small unit, and the battery runs for 10 hours per charge.
 
-Samsung EVO Select microSD card (128GB) for $13 ($4 off): This Samsung card has been one of our recommended models for a long time. It's a no-frills microSD card that, while not the fastest, will be perfectly capable in most devices where you're just looking for simple, expanded storage. The larger-capacity 256GB model is on sale for $23, but the 128GB is a better gigs-to-dollars deal.
+JBL Go 3 for $25 (37 percent off): The JBL Go 3 is a decent and highly affordable carabiner speaker for all your outdoor adventures — as is its sister product, the Go 3 Eco, which is made from recycled materials. It's obviously not the most powerful speaker at 4.2 watts, but it has a surprisingly good functional range. Plus, the design looks good on any belt or backpack.
 
-Advertisement
+Ultimate Ears Miniroll for $50 (37 percent off): Miniroll is the smallest speaker from Ultimate Ears, but it punches far above its weight, starting with UE's trademark massive volume buttons. While small enough to fit in a jeans pocket, its combination of a driver and radiator manages about 85 decibels. A Miniroll can run for about 12 hours on a single charge.
 
-Advertisement
+Ultimate Ears Boom 4 for $100 (33 percent off): The UE Boom 4 is a balanced speaker that does well anywhere. Take it camping (it's waterproof and a charge lasts for 15 hours), to a party (it puts out loud 360 degree sound) or make it part of a permanent home system by chaining it with other UE speakers — one of these plus two Minirolls or Wonderbooms would come pretty close to full surround sound.
 
-Jisulife Life7 handheld fan for $23 ($6 off with Prime): This handy little fan is a must-have if you live in a warm climate or have a tropical vacation planned anytime soon. It can be used as a table or handheld fan and even be worn around the neck so you don't have to hold it at all. Its 5,000 mAh battery allows it to last hours on a single charge, and the small display in the middle of the fan's blades shows its remaining battery level.
+Ultimate Ears Wonderboom 4 for $50 (44 percent off): The Wonderboom 4 may be our favorite UE product. At just 1.2 pounds, it can pump out mighty sound on its own, or chain with other UE speakers for a deeper full-range experience. USB charging is simple and lasts for 14 hours between top-ups.
 
-Amazon Fire TV Stick HD for $19 ($16 off): Heres what we named the best budget streaming stick. At a price this low and only an HD resolution, you shouldnt expect a premium picture, but if you just want a quick way to get your streaming apps up and running on a basic screen, this will do the thing.
+Ultimate Ears Everboom for $231 (15 percent off): The Everboom is the middle ground of the UE line, with more powerful output than the Wonderboom and more portability than the Hyperboom. Its 360 degree sound pairs with an Outdoor Boost feature to work better outside, though it isn't quite as impressive in the middle ranges.
 
-Roku Streaming Stick HD for $18 ($12 off): If you dont care about 4K (or your screen resolution isnt that high anyway) you can still get the same simple-to-use Roku OS that we liked in our guide with this device. The best thing about Roku devices is the access to all the free content — and this is an affordable way to get it.
+Bose SoundLink Flex for $99 (33 percent off): We've rarely seen the Bose SoundLink Flex this cheap, so now is the time to snap up this high-fidelity outdoor speaker. It's small enough to carry in one hand and can be operated from up to 30 feet away via the Bose Connect app. We've also found it simple and fun to use for hands-free phone calls during breaks in the music.
 
-Ring Indoor Cam for $25 ($25 off): While we thought the Blink Mini 2 was a better overall indoor camera in our guide, we do like the Ring app, which is ideal for beginners. Plus you get access to the Ring Neighbors app which is a fascinating glimpse into your neighborhoods Ring-captured events.
+Bose SoundLink Revolve+ for $179 (40 percent off): The SoundLink Revolve+ line, Bose's original upright 360-degree speakers, continue to pack a punch. This current model features a 17-hour battery life, IP55 water resistance and the ability to connect to a smart speaker to extend your virtual assistant's range.
 
-Advertisement
+Bose SoundLink Max for $299 (25 percent off): The Bose SoundLink Max may put you in mind of a classic boombox, with its detachable handle and thudding base. But inside it's all modern, with a 50-watt output, an effective range of 52.6Hz and a 20-hour rechargeable battery. It even comes with a 3.5mm AUX input to connect to a turntable, if you really want to embrace your inner 90s DJ.
 
-Advertisement
+Beats Pill for $129 (14 percent off): We gave the revived Beats Pill a full review last year, and we stand by our opinion that it was worth waiting for. Its newly enlarged subwoofer delivers much more powerful bass that sounds clean and lossless even over USB-C. The latest Pill also travels well, with 24 hours of battery life and IP67 waterproofing.
 
-Echo Pop smart speaker for $25 ($15 off): The half sphere Pop is the most affordable Echo speaker in Amazons lineup. The sound wont be as full as its larger siblings, but will do a fine job of bringing Alexas help to smaller rooms. Just note that it went as low as $18 for Black Friday and October Prime Day last year.
+Marshall Emberton II for $100 (44 percent off): Marshall, the old warhorse of the audio world, continues to crush it with the portable and bluetooth-ready Emberton II. Although it looks like an antique, it's anything but, with 360-degree sound and over 30 hours of battery life from a single charge — all weighing a little more than a quarter of a pound.
 
-JLab Go Air Pop+ for $17.49 ($12 off): JLab earbuds pop up in a few of our guides including the best running headphones and best budget buds. The Pop+ earbuds are smaller and lighter than the previous model, and the apps preset EQ modes let you customize your sound. Total battery life with the case comes in at more than 35 hours.
+Best Prime Day smart speaker deals
+
+Amazon Echo Dot 5th Generation for $35 (30 percent off): The Echo Dot, our favorite smart speaker under $50, is now...even farther under $50. Despite being small enough to fit on a cluttered bookshelf, the Dot pumps out high-quality sound that can fill a room, and comes equipped with physical buttons to supplement Alexa's voice command interface.
+
+Amazon Echo Pop for $25 (38 percent off): The Echo Pop is Amazon's smallest and cheapest smart speaker, resembling an Echo Dot sliced in half. It's a little quiet, and probably best for extending Alexa's range rather than serving as the primary host for your virtual assistant. In a smaller room, though, this is as convenient and clear-sounding as any other Echo you'll use.
+
+Best Prime Day soundbar deals
+
+JBL Bar 9.1 for $700 (41 percent off): JBL designed the 9.1 soundbar for Dolby Atmos, and the results speak for themselves, with 820 watts of booming audio. The best thing about this soundbar is the pair of detachable wireless speakers you can place around your viewing room to make the sound even more surround.
+
+JBL Bar 300 for $250 (37 percent off): The Bar 300, part of JBL's 2023 soundbar explosion, is a mighty yet cheap soundbar with an integrated subwoofer. Despite being small, it manages to create a theatrical experience by working both Dolby Atmos and MultiBeam. Its voice sharpening algorithm is especially good at making dialogue clearer (for those of us who always have to put on the subtitles).
+
+JBL Bar 700 for $500 (44 percent off): Another 2023 drop, the JBL Bar 700 upgrades the Bar 300 by adding detachable wireless speakers for true 360-degree sound. While it costs twice as much as the 300, that money gets you more than four times the output, as the 700 tops out at 620 watts — and thanks to a 10-inch subwoofer, you'll feel all of it.
+
+Amazon Fire TV Soundbar Plus for $150 (40 percent off): One of the cheapest soundbars you'll ever see, the Fire TV Soundbar Plus provides a noticeable boost to your TV's audio quality, even if it doesn't reach Dolby Atmos heights. It's simple, but that makes it a breeze to set up — all you have to do is plug in one HDMI cable.
 
 Shop Prime Day deals: Early October Prime Day 2025 deals | Early Prime Day tech deals | Best credit card for Amazon
 
