@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/06/microsoft-buys-another-100-mw-of-solar-this-time-in-japan/
+https://techcrunch.com/2025/10/06/openai-ramps-up-developer-push-with-more-powerful-models-in-its-api/
 
-Microsoft is buying 100 megawatts of solar capacity from Japanese developer Shizen Energy, the latest in a string of renewable energy deals designed to power the tech companys growing compute needs.
+OpenAI unveiled new API updates at its Dev Day on Monday, introducing GPT-5 Pro, its latest language model, its new video generation model Sora 2, and a smaller, cheaper voice model.
 
-The agreement, which the companies announced late last week, covers four different solar developments; one is already operating and three are under construction. The deal covers output from the plants for 20 years.
+The updates were part of a series of announcements geared toward wooing developers to OpenAIs ecosystem, including the launch of an agent-building tool and the ability to build apps in ChatGPT.
