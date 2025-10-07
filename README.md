@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/06/openai-launches-agentkit-to-help-developers-build-and-ship-ai-agents/
+https://techcrunch.com/2025/10/06/openai-launches-apps-inside-of-chatgpt/
 
-OpenAI CEO Sam Altman on Monday announced the launch of AgentKit, a toolkit for building and deploying AI agents, at the firms Dev Day event.
+OpenAI is launching a new way for developers to build applications inside of ChatGPT. Starting Monday, users in ChatGPT will be able to access interactive applications from companies like Booking.com, Expedia, Spotify, Figma, Coursera, Zillow, and Canva. OpenAI is also launching a preview of the Apps SDK, the developer-facing toolkit to build these apps.
 
-“AgentKit is a complete set of building blocks available in the open AI platform designed to help you take agents from prototype to production. It is everything you need to build, deploy, and optimize agent workflows with way less friction,” Altman said.
+OpenAI made the announcement at its annual developer conference, DevDay 2025.
