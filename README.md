@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/06/deloitte-goes-all-in-on-ai-despite-having-to-issue-a-hefty-refund-for-use-of-ai/
+https://techcrunch.com/2025/10/06/lucid-motors-sets-record-as-gravity-sales-pick-up-and-tax-credit-expires/
 
-Professional services and consultant firm Deloitte announced a landmark AI enterprise deal with Anthropic the same day it was revealed the company would issue a refund for a government-contracted report that contained inaccurate AI-produced slop.
+Lucid Motors delivered a record 4,078 vehicles in the third quarter, likely buoyed by a combination of more Gravity SUVs hitting the road and a rush of customers taking advantage of the expiring federal EV tax credit.
 
-The upshot: Deloittes deal with Anthropic is a referendum on its commitment to AI, even as it grapples with the technology. And Deloitte is not alone in this challenge.
+The Saudi-owned luxury EV startup is still way off the projections it used to go public in 2021 &#8212; a transaction that netted it $4 billion. But Lucid Motors has seen deliveries steadily climb over the last two years. The third-quarter delivery figures announced Monday mark the seventh consecutive quarter that Lucid Motors has seen sales increase.
