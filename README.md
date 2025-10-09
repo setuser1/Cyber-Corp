@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/08/amazon-pharmacy-is-launching-vending-machines-for-prescription-drugs/
+https://techcrunch.com/2025/10/08/heres-the-tech-powering-ices-deportation-crackdown/
 
-Amazon announced on Wednesday that its debuting prescription vending machines at its One Medical clinics. The new in-office kiosks, which are operated by Amazon Pharmacy, let patients pick up their prescriptions immediately after their appointment.
+President Donald Trump made countering immigration one of his flagship issues during last years presidential campaign, promising an unprecedented number of deportations.
 
-Amazon Pharmacy Kiosks will be available at One Medical locations in Los Angeles starting in December, and Amazon plans to expand to more locations soon after.
+In his first eight months in office, that promise turned into around 350,000 deportations, a figure that includes deportations by Immigration and Customs Enforcement, or ICE (around 200,000), Customs and Border Protection (more than 132,000), and almost 18,000 self-deportations, according to CNN.
