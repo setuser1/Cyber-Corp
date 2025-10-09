@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/08/openais-nick-turley-on-transforming-chatgpt-into-an-operating-system/
+https://techcrunch.com/2025/10/08/soras-downloads-in-its-first-week-was-nearly-as-big-as-chatgpts-launch/
 
-When Nick Turley joined OpenAI in 2022 as the head of ChatGPT, he was tasked with commercializing the companys research. He has made great strides toward that goal, growing the product to 800 million weekly active users. Now Turley wants to take an even bigger swing: transforming ChatGPT into a new type of operating system full of third-party apps.
+After OpenAIs video-generating app Sora surged to the No. 1 position on the U.S. App Store, it has now, technically, experienced a bigger first week than ChatGPT on iOS, according to new data from app intelligence provider Appfigures. Its estimates show that Sora saw 627,000 iOS downloads in its first seven days of availability, compared with ChatGPTs 606,000 iOS downloads during its first week.
 
-I sat down with Turley this week on the outskirts of San Franciscos Fort Mason, a former U.S. military post where OpenAI held its third annual developer conference, to discuss how hes thinking about ChatGPTs future. You can find a transcript of our conversation at the bottom of this article.
+This isnt the fairest comparison, however, because ChatGPT was available only in the U.S. during its first week, while Sora is currently offered in the U.S. and Canada at launch. Still, Appfigures says that Canada contributed about 45,000 installs, so the Sora launch was about 96% of ChatGPTs launch, if the data had been based on the U.S. numbers only.
