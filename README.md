@@ -1,8 +1,12 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/09/battlefield-alum-devally-raises-e2m-to-help-companies-with-europes-feisty-new-accessibility-law/
+https://techcrunch.com/2025/10/09/openais-affordable-chatgpt-go-plan-expands-to-16-new-countries-in-asia/
 
-Many businesses that provide goods and services to the EUs 450 million consumers must comply with new accessibility standards that took effect in June. Like the GDPR before it, this new act had companies scrambling to adjust their websites, e-commerce platforms, and banking apps. But despite similar standards existing in the U.S., many still have a long way to go.
+OpenAI is rapidly expanding its affordable ChatGPT Go plan, which costs under $5, to 16 new countries across Asia. The subscription tier is now available in Afghanistan, Bangladesh, Bhutan, Brunei Darussalam, Cambodia, Laos, Malaysia, Maldives, Myanmar, Nepal, Pakistan, the Philippines, Sri Lanka, Thailand, East Timor, and Vietnam.
 
-“One thing that surprised us was companies, even massive companies, coming to us two weeks before [the deadline] saying, ‘Oh we didnt know anything about this,” said Irish entrepreneur Cormac Chisholm.
+In select countries such as Malaysia, Thailand, Vietnam, the Philippines, and Pakistan, the company is allowing users to pay in local currencies. In the remaining countries, users must pay in USD at a price of approximately $5, with the final cost varying based on local taxation.
+
+Image Credits: OpenAI
+
+ChatGPT Go gives users higher daily limits for messages, image generation, and file or image uploads per day. The plan also offers twice as much memory as the free plan, enabling more personalized responses.
