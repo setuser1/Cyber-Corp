@@ -1,131 +1,103 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/the-best-prime-day-gaming-deals-that-are-still-available-save-on-ps5-games-headsets-controllers-and-more-082623683.html?src=rss
+https://www.engadget.com/deals/the-best-amazon-prime-day-deals-on-kindles-echo-speakers-fire-tv-devices-and-more-for-day-2-081210482.html?src=rss
 
 Deals
 
-The best Prime Day gaming deals that are still available: Save on PS5 games, headsets, controllers and more
+The best Amazon Prime Day deals on Kindles, Echo speakers, Fire TV devices and more for Day 2
 
-Several worthwhile Prime Day gaming deals are still up for grabs on day two of Amazon's sale.
+Get big discounts on all of the tech Amazon makes including smart home gear, tablets, ereaders and more.
 
-Jeff Dunn
+Valentina Palladino
 
-Senior Reporter, Buying Advice
+Deputy Editor, Buying Advice
 
-Jeff DunnSenior Reporter, Buying Advice
+Valentina PalladinoDeputy Editor, Buying Advice
 
-Updated Thu, October 9, 2025 at 2:15 AM UTC
+Updated Thu, October 9, 2025 at 2:01 AM UTC
 
-Engadget
+Engadget / Amazon
 
-Amazons October Prime Day sale tends to be a decent source of discounts for gaming gear, and the latest iteration of the “Prime Big Deal Days” event is no exception. Several games, mice, controllers and other accessories we like remain on sale as we approach the end of the two-day event, so if you just cant wait until Black Friday, weve rounded up the best Prime Day deals on gaming devices below. Just remember that you need to be a Prime member to access some of the offers, and that the event as a whole ends at 3AM ET on October 9.
+While you can often find discounts on Echo speakers, Fire tablets, Kindles and other Amazon devices throughout the year, Amazon Prime Day is the best time to buy them, period. Prime Day is basically Black Friday for all Amazon-made gear, provided youre a Prime member who can actually participate in the members-only shopping event. In recent years, October Prime Day discounts on these gadgets have been the same or even better than those weve seen during the holiday shopping season. For October Prime Day, youll find most of Amazons devices on sale for record-low prices (or close to them). These are the best October Prime Day deals you can get on Kindles, Fire TVs, Echos and more before the sale ends tonight.
 
-Best Prime Day video game deals
+Prime Day Kindle deals
 
-PlayStation
+Amazon Kindle
 
-Death Stranding 2: On The Beach
+$85$110Save $25
 
-$50$70Save $20
+See at Amazon
 
-The latest adventure from Metal Gear Solid creator Hideo Kojima, Death Stranding 2 is both a delivery sim deeply fixated on how we interact with landscapes and a massively indulgent melodrama that youll either find endearing or unbearable depending on your persuasion. Either way, it is undeniably earnest. It should also be a bit easier to come to grips with than the original. Outside of that predecessor, there really isnt another game like it. This deal marks a new low.
+Kindle Kids for $95 ($35 off): This is the same device as the base Kindle, but it becomes more kid-friendly thanks to the included cover, two-year warranty and the included year of Amazon Kids+, which gives children ages 3-12 access to hundreds of appropriate ebooks and audiobooks. Just be sure to take note when you activate that subscription because it will renew after one year at the standard $6/month rate.
 
-$50 at Amazon
-
-Elden Ring (PS5) for $30 ($20 off MSRP): Youve probably heard about it by now, but the action-RPG Elden Ring is both challenging and darkly funny, with a world that runs incredibly deep and feels lived-in a way few games have. Its unafraid to test your resolve, yet it always grants you the freedom to simply turn around and find another path forward.
-
-Final Fantasy VII Rebirth (PS5) for $35 ($15 off): Engadgets Mat Smith gave this grandiose action-RPG a favorable review last year. You need to have played its predecessor — and ideally, the original PS1 game — to get the most out of it, but its positively stuffed with things to do, and its combat system is still a tactical rush at its best.
+Kindle Paperwhite for $125 ($35 off): The latest version of the Paperwhite has a seven-inch display, thinner bezels, an adjustable warm light, speedier page turns and a battery that can last up to 12 weeks on a single charge. This model is also IPX8 waterproof and has built-in Audible integration.
 
 Advertisement
 
 Advertisement
 
-Gran Turismo 7 for $30 ($40 off): Gran Turismo 7 is the PS5s premier sim racer, and a love letter to automobiles as a whole. Like the rest of the GT series, it revels in the patience and precision required to figure out how a given car meshes with a given course. Learning the intricacies of each combination is both intense and rewarding, and theres a singular style to it all that just doesnt exist with most sports games.
+Kindle Colorsoft for $200 ($50 off): Amazon's only color e-reader has a seven-inch, high-contrast display, an auto-adjusting front light, a color highlighting feature and an eight-week battery life.
 
-Returnal for $30 ($70 off): Returnal is a third-person shooter roguelike thats at once a technical showcase, a stiff challenge and an achingly beautiful reflection on the nature of grief. It is not for the faint of heart, but its bullet-hell battles are wonderfully fierce, and just about everything in it contributes to its overarching story. Its also worth checking out if youre eager to developer Housemarques next game, Saros, which seems to borrow many of the elements introduced here.
+Kindle Scribe for $300 ($100 off): The Scribe is one of the best E-Ink tablets you can buy at the moment, and certainly the top pick if you want a writable table that also excels as an ereader. It provides a great reading and writing experience, thanks in part to its ability to access the entire Kindle ebook library, and it has handy Google Drive, Microsoft OneDrive and Dropbox integration.
 
-The Last of Us Part I for $30 ($40 off): The PS5 remake of Sonys zombie drama is one of the most unnecessary remakes ever made, but if youve never played one of the earlier versions, this is the best way to rectify that. If youre looking to play the (even moodier) sequel, the PS5 version of that one is similarly discounted.
+Prime Day Echo deals
 
-God of War Ragnarok for $30 ($40 off): Ragnarok is another Sony sequel thats more about increasing scope than radically reinventing itself, but its Norse world is beautifully varied and detailed, smashing baddies with a magic axe feels great, and the whole thing is excessive in the way youd expect a God of War game to be without going overboard.
+Amazon Echo Spot
 
-Advertisement
+$45$80Save $35
 
-Advertisement
+See at Amazon
 
-Horizon Forbidden West for $30 ($40 off): Engadgets Jess Conditt called Horizon Forbidden West the “total package” in her review a few years back, praising its frenzied combat, gorgeous art direction and complex narrative. It still has one of the more distinctive post-apocalypses in gaming, blending robot beasts with stunning vistas. That helps paper over some less-than-inspired side content and bits of sluggish pacing.
+Echo Pop speaker for $25 (38 percent off): One of the newer Echo devices available, the Pop it sports a 1.95-inch front-facing speaker and a physical mic mute switch for extra privacy. The Pop also has built-in eero compatibility, so it can extend the area of your home Wi-Fi network if you already have an eero router system.
 
-Final Fantasy XVI (PS5) for $23 ($7 off): Final Fantasy XVI is a more straightforward action-RPG than something like Final Fantasy VII Rebirth: You dont need to come in with prior knowledge of any other story, and its hack-and-slash combat is simple to pick up. It can get bogged down in pointless side quests, but its main concern is having you watch giant demigods melodramatically smack each other, and theres nothing wrong with that.
-
-Armored Core VI: Fires of Rubicon for $20 ($10 off): Armored Core VI is a big loud action game about building a mech and using it to blow up everything in sight. It rules. But its not mindless: Its many boss fights are genuine duels, and its deeply flexible in how it lets you tweak your death machine to tackle stages in different ways. This ties the best price we've seen for the PS5 version.
-
-Metaphor: ReFantazio (Xbox) for $16 ($54 off): Its about as subtle as youd expect a game named “Metaphor” to be, but the latest from the minds behind Persona 5 is a fantasy JRPG through and through: bombastic, stylish and deeply earnest. (And long.) This deal represents a new low, though it only applies to the Xbox copy.
+Echo Dot speaker for $35 (30 percent off): One of the smallest Echo speakers, this version of the Dot has improved audio and a compact design that will fit almost anywhere. You'll control it mostly with Alexa voice commands, but there are a few onboard buttons, including a mic-off button for when you need more privacy.
 
 Advertisement
 
 Advertisement
 
-Madden NFL 26 for $37 ($33 off): It always feels like Madden could use a creative reset, but at the end of the day, its Madden, and it works fine enough if you just want to scratch the pro football game itch. This is the largest discount weve seen for the latest entry, and it applies to the PS5, Xbox and Switch 2 copies.
+Echo Show 5 for $55 (39 percent off): This model is one of our favorite smart displays thanks to its compact design, ambient light sensor and sunrise alarm feature, all of which make it an excellent smart alarm clock. Amazon improved the speaker quality on this latest model, which gives sound deeper bass and clearer vocals.
 
-Xbox Game Pass Ultimate (3-month) for $57 ($33 off): It hasnt exactly been a great stretch for Xbox lately, what with Microsoft jacking up console prices, laying off huge swaths of employees and massively hiking the cost of its Game Pass service to $30 per month. But if you arent looking to cancel your Game Pass subscription as a result, you can still grab three months of the top-end Ultimate tier for a little less than its old going rate. While the service itself may end up being too pricey in the long term, its still home to a wide range of games worth checking out, so this offer might be useful if you have some free time coming up and want to blast through a few titles youve been meaning to get around to.
+Echo Show 8 for $100 (33 percent off): This is our current top pick for the best smart display with Amazons Alexa thanks in part to its 8-inch touchscreen, 13MP camera that supports auto-framing for better video chats and its built-in Zigbee smart home hub. The 2023 model supports Visual ID, which will show personalized information on the devices display depending on whos using it, and video streaming from Netflix, Hulu, Prime Video and other services.
 
-Best Prime Day gaming device deals
+Prime Day Fire TV deals
 
-Meta
+Amazon Fire TV Stick HD
 
-Meta Quest 3S (128GB)
+$18$35Save $17
 
-$249$299Save $50
+See at Amazon
 
-The Quest 3S is the budget pick in our guide to the best VR headsets. Its older Fresnel lenses arent exactly class-leading, but theyre good enough for those new to VR, and the headset as a whole is just as fast and comfortable as the pricier Quest 3. It supports the same games and apps, too. This deal ties the best widely available discount weve seen for the 128GB model. A configuration with twice the storage and a copy of the game Batman: Arkham Shadow is also on sale for $329.
+Fire TV Stick 4K for $25 (50 percent off): This is the cheapest Fire TV Stick you can get to stream 4K content, plus it has support for Wi-Fi 6 and Dolby Vision and Atmos. With its live picture-in-picture feature, you can view security camera feeds right on your TV while youre watching your favorite show or movie.
 
-$249 at Amazon
-
-Astro A50 X gaming headset for $315 ($75 off): The A50 X is an upgrade pick in our guide to the best gaming headsets. It should specifically appeal to those who own multiple gaming systems, as its base station lets you connect and swap between PC, PS5 and Xbox audio with the press of a button. Its among the better-sounding wireless headsets weve tried as well, and its mic is fantastic. This deal isnt an all-time low, but its the largest drop weve seen since February. The standard Astro A50 is also on sale for $237; that one works just as well if you only play on one device, but it lacks HDMI switching functionality.
-
-8BitDo Ultimate 2 Wireless Controller for $48 ($12 off): The Ultimate 2 is a versatile wireless gamepad for Windows PCs and mobile devices. It can connect over Bluetooth, a wireless dongle or a USB cable, and its magnetic TMR joysticks should be far less susceptible to “joystick drift” than typical controllers. Those with large hands may find it a touch too small, but its built well, it comes with a handy charging dock and it gets a solid 20 or so hours of battery life. 8BitDos companion software includes a variety of useful customizations beyond that. This isnt an all-time low, but its still a few bucks below the pads typical street price.
+Fire TV Stick 4K Max for $40 (33 percent off): In addition to 4K HDR streaming with Dolby Vision and Atmos support, the 4K Max dongle includes Wi-Fi 6E connectivity, 16GB of built-in storage and live picture-in-picture capabilities. It also supports the Fire TV “ambient experience,” which lets you display photos and images on your TV screen when youre not actively watching something.
 
 Advertisement
 
 Advertisement
 
-Corsair Scimitar RGB Elite MMO gaming mouse for $55 ($25 off): We recommend the Scimitar RGB Elite to MMO and MOBA players in our guide to the best gaming mice. Its not the lightest or most technically advanced model, but it comes with 12 comfortable and easy-to-reach side buttons, which make it easier to pull off more complex actions in games like World of Warcraft or Final Fantasy XIV. Weve seen it fall below $50 a few times before, but this deal matches the lowest price weve tracked since May. A newer wireless model called the Scimitar Elite Wireless SE is also on sale for a low of $80.
+Fire TV Cube streaming box for $100 (29 percent off): This model will provide the best performance of any Fire TV streaming device, and it supports 4K HDR content, Dolby Vision and Atmos and an enhanced version of the Alexa Voice Remote. Along with live picture-in-picture view and the Fire TV ambient experience, you can also hardware other devices to the Fire TV Cube including a cable box or a game console.
 
-Razer Basilisk V3 gaming mouse for $30 ($40 off): We recommend the Basilisk V3 in our gaming mouse guide for those who dont mind using a cable and prefer a more ergonomic right-handed shape. This is its lowest price to date. Note that Razer now sells a newer version with an improved sensor, but that one costs $49 more and isnt a massive upgrade in real-world use.
+Prime Day Fire tablet deals
 
-Razer DeathAdder V3 HyperSpeed gaming mouse for $71 ($29 off): The wireless DeathAdder V3 HyperSpeed is another recommendation from our gaming mouse buying guide. For less than $100, it gets you a sturdy yet superlight design that weighs just 55 grams — making it easy to flick around in fast-paced games — and doesnt have any annoying cutouts in its outer shell. Its contoured shape should fit most small- to medium-sized hands comfortably, and it performs reliably for competitive play. This deal is an all-time low.
+Amazon Fire HD 10 tablet
 
-Keychron Q3 Max mechanical keyboard for $195 ($35 off): The Keychron Q Max series is the top pick in our guide to the best mechanical keyboards, pairing an upscale (if heavy) aluminum case with a lovely typing experience and extensive customizability. This isnt the lowest price weve ever seen for the tenkeyless model, but its a rare drop from the boards typical street price. Other size layouts are discounted as well.
+$70$140Save $70
 
-Advertisement
+See at Amazon
 
-Advertisement
+Fire HD 8 tablet for $55 (45 percent off): This is Amazon's most bare-bones tablet, featuring an eight-inch HD touchscreen, hexa-core processor and 13 hours of battery life. The improvements in the screen quality alone from the old-school Fire 7 tablet make it a better buy for most people, and this slab would make a good couch device for general web browsing, email checking, online shopping and more.
 
-ASUS ROG Strix Scope II 96 Wireless mechanical keyboard for $151 ($59 off): We speak positively about this model in our guide to the best gaming keyboards. Its sturdy case, crisp keycaps and battery life all impress, while the thocky NX Snow switches in this model feel and sound delightful. Its companion software is a bit of a mess, and its 96 percent layout may feel a little cramped to some, but its a nice buy if you want a higher-class pre-built keyboard. This is the lowest price we've seen since March.
+Fire Max 11 tablet for $140 (39 percent off): Amazons most powerful tablet, the Fire Max 11 sports an 11-inch 2,000 x 1,200 touchscreen, an octa-core processor, up to 128GB of storage and 14 hours of battery life. It also works with a number of optional accessories, including a stylus and keyboard case.
 
-ASUS ROG Azoth mechanical keyboard for $155 ($120 off): Its a couple years old at this point, but the ROG Azoth remains an exceptionally well-built mechanical keyboard for enthusiasts. Its gasket-mounted design and layers of foam give each key press a soft landing, while its pre-lubed switches feel nice and smooth. It even comes with a toolkit for manually lubing the switches down the road, and the PCB is hot-swappable if you ever want to switch things up. Theres a useful control knob and programmable OLED display for quickly adjusting settings and checking the battery level beyond that. ASUS' Armoury Crate software is still fairly sloppy, however. This deal comes within a couple bucks of the lowest price we've seen for a model with the linear NX Snow switches.
-
-Lexar
-
-Lexar Play Pro (256GB) microSD Express Card
-
-$50$60Save $10
-
-If you want to add more storage space to a Nintendo Switch 2, you need a microSD Express card. We tested a number of those for our buying guide and found that there isnt much difference between them when it comes to real-world performance, so the best option is usually whichever one you can find on sale. Right now, that happens to be the Lexar Play Pro, the 256GB version of which is down to the lowest price weve seen since April. If you need more space, the 512GB version is $20 off at $100, while the 1TB model is $187, a $33 discount.
-
-$50 at Amazon
-
-PNY microSD Express Card (128GB) for $38 ($7 off): We generally recommend getting at least 256GB of storage from your Switch 2 microSD card, since recent games can fill up that space pretty quickly. But if you only want a little bit extra, this is the lowest price weve seen for PNYs 128GB model. Just note that this card is technically the slowest we've tested when it came to moving games to the card from the Switchs internal storage, though it's perfectly fine for in-game tasks.
-
-Seagate Storage Expansion Card for Xbox Series X/S (2TB) for $190 ($170 off): Its annoying, but the only way to fully add storage to an Xbox Series X/S is to use a proprietary expansion card. Seagates model is one of the very few examples of those, and this discount marks the lowest price weve seen for the 2TB variant in the past year. Yes, its still overpriced compared to a normal SSD, but any extra savings should be welcome.
+Fire HD 10 Kids tablet for $105 (45 percent off): This slab is designed for kids aged three to seven, with full parental controls plus one year of Amazon Kids+ for free with the tablet purchase. This model has a 10-inch FHD touchscreen, an octa-core processor and 13 hours of battery life, plus it comes with a two-year warranty and a protective case.
 
 Advertisement
 
 Advertisement
 
-Crucial X9 Pro (1TB) portable SSD for $75 ($26 off): If youre looking to offload some games to external storage, we consider the Crucial X9 Pro the best portable SSD for most people, as it offers fast enough transfer speeds in a rugged and compact design. This isnt the best price ever for the 1TB model but it matches the largest discount weve seen since April. Other size options are also on sale.
-
-Crucial P310 (1TB) M.2 2230 SSD for $80 ($55 off): The P310 is a small-size SSD you can use to add storage to a handheld PC like the Steam Deck or ASUS ROG Ally. It uses cheaper QLC memory, not the faster and more durable TLC, but reviews say that it performs well anyway. This deal ties the best price weve seen for the 1TB version since April.
+Fire HD 10 Kids Pro tablet for $105 (45 percent off): This model is designed for kids aged six to 12 and comes with a slimmer protective case, a two-year warranty and one year of access to Amazon Kids+. Otherwise, you get a very similar experience here that you would with the non-Pro version, including parental controls, a 10-inch touchscreen, solid performance and a 13-hour battery life.
 
 Shop Prime Day deals: October Prime Day 2025 deals | Prime Day lightning deals | Best Prime Day tech deals | Best Prime Day deals to shop | October Prime Day deals on tech | Prime Day laptop deals | Robot vacuum deals | Video game deals | Prime Day Apple deals | Prime Day TV deals | Best credit card for Amazon
 
