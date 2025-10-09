@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/08/soras-downloads-in-its-first-week-was-nearly-as-big-as-chatgpts-launch/
+https://techcrunch.com/2025/10/08/elon-musk-will-settle-128m-lawsuit-with-former-twitter-execs/
 
-After OpenAIs video-generating app Sora surged to the No. 1 position on the U.S. App Store, it has now, technically, experienced a bigger first week than ChatGPT on iOS, according to new data from app intelligence provider Appfigures. Its estimates show that Sora saw 627,000 iOS downloads in its first seven days of availability, compared with ChatGPTs 606,000 iOS downloads during its first week.
+Elon Musk will settle a $128 million lawsuit with four Twitter executives he fired after taking over the company in 2022.
 
-This isnt the fairest comparison, however, because ChatGPT was available only in the U.S. during its first week, while Sora is currently offered in the U.S. and Canada at launch. Still, Appfigures says that Canada contributed about 45,000 installs, so the Sora launch was about 96% of ChatGPTs launch, if the data had been based on the U.S. numbers only.
+One of Musks first moves upon buying Twitter was to fire CEO Parag Agrawal, CFO Ned Segal, and top lawyers Sean Edgett and Vijaya Gadde. The four executives never received severance payments, which they claim is because they tried to hold Musk to his $44 billion commitment when he tried to back out of buying the company. The lawsuit even quotes Walter Isaacsons biography of Musk, which quotes him as saying that he would &#8220;hunt every single one&#8221; of Twitters C-suite &#8220;till the day they die.&#8221;
