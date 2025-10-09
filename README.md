@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/08/even-after-stargate-oracle-nvidia-and-amd-openai-has-more-big-deals-coming-soon-sam-altman-says/
+https://techcrunch.com/2025/10/08/heres-what-its-really-like-to-appear-on-billionaire-vc-tim-drapers-meet-the-drapers-pitch-show/
 
-At nearly the same moment as Nvidia CEO Jensen Huang was expressing surprise over OpenAIs multibillion-dollar deal with competitor AMD — shortly after his company agreed to invest up to $100 billion into the AI model maker — Sam Altman was saying that more such deals are in the works.
+There was barely a breeze on the roof of the MCM studios building in Manhattan last week as six entrepreneurs graced a stage to pitch their businesses.
 
-Huang appeared on CNBCs Squawk Box on Wednesday. When asked if he knew about the AMD deal before it was announced, he answered, “Not really.”
+At one point, it was April Wachtels turn. She stood and made the case for her company, Cheeky Cocktails, to a judging panel that included the billionaire venture capitalist Tim Draper. Men holding TV cameras circled her as she pitched, capturing the moment live for Drapers &#8220;Shark Tank&#8221;-style business competition show “Meet the Drapers.”
