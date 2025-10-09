@@ -1,129 +1,131 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/audio/speakers/prime-day-speaker-deals-are-still-available-save-on-jbl-bose-ultimate-ears-and-more-083538046.html?src=rss
+https://www.engadget.com/deals/the-best-prime-day-gaming-deals-that-are-still-available-save-on-ps5-games-headsets-controllers-and-more-082623683.html?src=rss
 
-Audio
+Deals
 
-Speakers
+The best Prime Day gaming deals that are still available: Save on PS5 games, headsets, controllers and more
 
-Prime Day speaker deals are still available: Save on JBL, Bose, Ultimate Ears and more
+Several worthwhile Prime Day gaming deals are still up for grabs on day two of Amazon's sale.
 
-Amazon has some of the best bluetooth audio gear, smart speakers and soundbars in the game on sale.
+Jeff Dunn
 
-Sam Chapman
+Senior Reporter, Buying Advice
 
-Senior Writer
+Jeff DunnSenior Reporter, Buying Advice
 
-Sam ChapmanSenior Writer
+Updated Thu, October 9, 2025 at 2:15 AM UTC
 
-Updated Thu, October 9, 2025 at 2:46 AM UTC
+Engadget
 
-Valentina Palladino for Engadget
+Amazons October Prime Day sale tends to be a decent source of discounts for gaming gear, and the latest iteration of the “Prime Big Deal Days” event is no exception. Several games, mice, controllers and other accessories we like remain on sale as we approach the end of the two-day event, so if you just cant wait until Black Friday, weve rounded up the best Prime Day deals on gaming devices below. Just remember that you need to be a Prime member to access some of the offers, and that the event as a whole ends at 3AM ET on October 9.
 
-Amazon Prime Day is nearly over, but our audio experts are still sifting through Amazon for bargains on the best smart speakers, soundbars and portable blueetooth speakers. We're always ready to argue this high-quality speakers are a worthwhile investment, adding new dimensions to any kind of entertainment — and with these deals on top speakers from JBL, Bose, Beats, Marshall and more, there's no excuse not to upgrade. Whether you're building a permanent setup for your home theater or chaining portable speakers together to blast dance tunes through an outdoor party venue, we bet you'll find some deals to love on this curated list.
+Best Prime Day video game deals
 
-Quick Overview
+PlayStation
 
-Ultimate Ears Wonderboom 4
+Death Stranding 2: On The Beach
 
-$66 (34 percent off)$100
+$50$70Save $20
 
-See at Amazon
+The latest adventure from Metal Gear Solid creator Hideo Kojima, Death Stranding 2 is both a delivery sim deeply fixated on how we interact with landscapes and a massively indulgent melodrama that youll either find endearing or unbearable depending on your persuasion. Either way, it is undeniably earnest. It should also be a bit easier to come to grips with than the original. Outside of that predecessor, there really isnt another game like it. This deal marks a new low.
 
-Echo Dot 5th Gen Smart Speaker
+$50 at Amazon
 
-$35 (30 percent off)$50
+Elden Ring (PS5) for $30 ($20 off MSRP): Youve probably heard about it by now, but the action-RPG Elden Ring is both challenging and darkly funny, with a world that runs incredibly deep and feels lived-in a way few games have. Its unafraid to test your resolve, yet it always grants you the freedom to simply turn around and find another path forward.
 
-See at Amazon
+Final Fantasy VII Rebirth (PS5) for $35 ($15 off): Engadgets Mat Smith gave this grandiose action-RPG a favorable review last year. You need to have played its predecessor — and ideally, the original PS1 game — to get the most out of it, but its positively stuffed with things to do, and its combat system is still a tactical rush at its best.
 
-JBL Bar 9.1
+Advertisement
 
-$699 (42 percent off)$1,200
+Advertisement
 
-See at Amazon
+Gran Turismo 7 for $30 ($40 off): Gran Turismo 7 is the PS5s premier sim racer, and a love letter to automobiles as a whole. Like the rest of the GT series, it revels in the patience and precision required to figure out how a given car meshes with a given course. Learning the intricacies of each combination is both intense and rewarding, and theres a singular style to it all that just doesnt exist with most sports games.
 
-Best Prime Day bluetooth speaker deals
+Returnal for $30 ($70 off): Returnal is a third-person shooter roguelike thats at once a technical showcase, a stiff challenge and an achingly beautiful reflection on the nature of grief. It is not for the faint of heart, but its bullet-hell battles are wonderfully fierce, and just about everything in it contributes to its overarching story. Its also worth checking out if youre eager to developer Housemarques next game, Saros, which seems to borrow many of the elements introduced here.
 
-Ultimate Ears
+The Last of Us Part I for $30 ($40 off): The PS5 remake of Sonys zombie drama is one of the most unnecessary remakes ever made, but if youve never played one of the earlier versions, this is the best way to rectify that. If youre looking to play the (even moodier) sequel, the PS5 version of that one is similarly discounted.
 
-Ultimate Ears Wonderboom 4
+God of War Ragnarok for $30 ($40 off): Ragnarok is another Sony sequel thats more about increasing scope than radically reinventing itself, but its Norse world is beautifully varied and detailed, smashing baddies with a magic axe feels great, and the whole thing is excessive in the way youd expect a God of War game to be without going overboard.
 
-$66 (34 percent off)$100
+Advertisement
 
-The Wonderboom 4 is one our favorite Bluetooth speakers on the market. At just 1.2 pounds, it can pump out mighty sound on its own, or chain with other UE speakers for a deeper full-range experience. USB charging is simple and lasts for 14 hours between top-ups, and it's IP67-rated for dustproofing and waterproofing, so you can take it pretty much anywhere.
+Advertisement
 
-$66 (34 percent off) at Amazon
+Horizon Forbidden West for $30 ($40 off): Engadgets Jess Conditt called Horizon Forbidden West the “total package” in her review a few years back, praising its frenzied combat, gorgeous art direction and complex narrative. It still has one of the more distinctive post-apocalypses in gaming, blending robot beasts with stunning vistas. That helps paper over some less-than-inspired side content and bits of sluggish pacing.
 
-JBL Xtreme 2 for $150 (17 percent off): This deal is a great way to get ahold of the JBL Xtreme 2, an old favorite from 2018 we still love. An Xtreme 2 can get louder than you'd expect from a portable speaker, putting out 40 watts at maximum, and stays charged for around 15 hours.
+Final Fantasy XVI (PS5) for $23 ($7 off): Final Fantasy XVI is a more straightforward action-RPG than something like Final Fantasy VII Rebirth: You dont need to come in with prior knowledge of any other story, and its hack-and-slash combat is simple to pick up. It can get bogged down in pointless side quests, but its main concern is having you watch giant demigods melodramatically smack each other, and theres nothing wrong with that.
 
-JBL Flip 6 for $100 (23 percent off): The JBL Flip 6 is a solid choice for an all-around bluetooth speaker, performing well in any room or on the go. It sounds good at almost any frequency and volume, runs for 12 hours on a single charge and is nearly impossible to damage with falls, dust or water.
+Armored Core VI: Fires of Rubicon for $20 ($10 off): Armored Core VI is a big loud action game about building a mech and using it to blow up everything in sight. It rules. But its not mindless: Its many boss fights are genuine duels, and its deeply flexible in how it lets you tweak your death machine to tackle stages in different ways. This ties the best price we've seen for the PS5 version.
 
-JBL Go 3 for $35 (30 percent off): The JBL Go 3 is a decent and highly affordable carabiner speaker for all your outdoor adventures — as is its sister product, the Go 3 Eco, which is made from recycled materials. It's obviously not the most powerful speaker at 4.2 watts, but it has a surprisingly good functional range. Plus, the design looks good on any belt or backpack.
+Metaphor: ReFantazio (Xbox) for $16 ($54 off): Its about as subtle as youd expect a game named “Metaphor” to be, but the latest from the minds behind Persona 5 is a fantasy JRPG through and through: bombastic, stylish and deeply earnest. (And long.) This deal represents a new low, though it only applies to the Xbox copy.
 
-Beats Pill for $119 (34 percent off): This Bluetooth speaker from Apple subsidiary Beats earned a score of 83 in our review and currently holds a spot in our buying guide. Its not the best raw value on the market, and it can struggle at maximum volume, but it generally pumps out strong bass without sounding imbalanced. A stylish and water-resistant design, ample battery life and the ability to play lossless audio over a USB-C cable add to the appeal. This sizable discount matches the lowest price weve tracked.
+Advertisement
 
-Ultimate Ears Miniroll for $47 (41 percent off): Miniroll is the smallest speaker from Ultimate Ears, but it punches far above its weight, starting with UE's trademark massive volume buttons. While small enough to fit in a jeans pocket, its combination of a driver and radiator manages about 85 decibels. A Miniroll can run for about 12 hours on a single charge.
+Advertisement
 
-Ultimate Ears Boom 4 for $95 (37 percent off): The UE Boom 4 is a balanced speaker that does well anywhere. Take it camping (it's waterproof and a charge lasts for 15 hours), to a party (it puts out loud 360 degree sound) or make it part of a permanent home system by chaining it with other UE speakers — one of these plus two Minirolls or Wonderbooms would come pretty close to full surround sound.
+Madden NFL 26 for $37 ($33 off): It always feels like Madden could use a creative reset, but at the end of the day, its Madden, and it works fine enough if you just want to scratch the pro football game itch. This is the largest discount weve seen for the latest entry, and it applies to the PS5, Xbox and Switch 2 copies.
 
-Ultimate Ears Everboom for $231 (15 percent off): The Everboom is the middle ground of the UE line, with more powerful output than the Wonderboom and more portability than the Hyperboom. Its 360 degree sound pairs with an Outdoor Boost feature to work better outside, though it isn't quite as impressive in the middle ranges.
+Xbox Game Pass Ultimate (3-month) for $57 ($33 off): It hasnt exactly been a great stretch for Xbox lately, what with Microsoft jacking up console prices, laying off huge swaths of employees and massively hiking the cost of its Game Pass service to $30 per month. But if you arent looking to cancel your Game Pass subscription as a result, you can still grab three months of the top-end Ultimate tier for a little less than its old going rate. While the service itself may end up being too pricey in the long term, its still home to a wide range of games worth checking out, so this offer might be useful if you have some free time coming up and want to blast through a few titles youve been meaning to get around to.
 
-Bose SoundLink Flex for $99 (34 percent off): We've rarely seen the Bose SoundLink Flex this cheap, so now is the time to snap up this high-fidelity outdoor speaker. It's small enough to carry in one hand and can be operated from up to 30 feet away via the Bose Connect app. We've also found it simple and fun to use for hands-free phone calls during breaks in the music.
+Best Prime Day gaming device deals
 
-Bose SoundLink Revolve+ for $179 (40 percent off): The SoundLink Revolve+ line, Bose's original upright 360-degree speakers, continue to pack a punch. This current model features a 17-hour battery life, IP55 water resistance and the ability to connect to a smart speaker to extend your virtual assistant's range.
+Meta
 
-Bose SoundLink Max for $299 (25 percent off): The Bose SoundLink Max may put you in mind of a classic boombox, with its detachable handle and thudding base. But inside it's all modern, with a 50-watt output, an effective range of 52.6Hz and a 20-hour rechargeable battery. It even comes with a 3.5mm AUX input to connect to a turntable, if you really want to embrace your inner 90s DJ.
+Meta Quest 3S (128GB)
 
-Anker Soundcore 2 for $28 (38 percent off): This larger speaker doesn't look like much, but it's tough, water-resistant and versatile. It's got a broad range of optimal pitch, effective across 70 Hz from bass to treble, and 12 watts of output. While it's portable and sounds good outdoors, its wide design means it can also substitute for a soundbar in your home theater.
+$249$299Save $50
 
-Soundcore Select 4 Go for $18 (20 percent off): The Soundcore Select 4 Go weighs only 9.3 ounces, which makes the rest of its specs even more impressive: 20 hours of battery life, IP67 waterproofing and sound that fills rooms. It even sounds pretty good in compact outdoor spaces, more than capable of serenading an outdoor desk or livening up a pool party.
+The Quest 3S is the budget pick in our guide to the best VR headsets. Its older Fresnel lenses arent exactly class-leading, but theyre good enough for those new to VR, and the headset as a whole is just as fast and comfortable as the pricier Quest 3. It supports the same games and apps, too. This deal ties the best widely available discount weve seen for the 128GB model. A configuration with twice the storage and a copy of the game Batman: Arkham Shadow is also on sale for $329.
 
-Soundcore Motion 300 for $56 (30 percent off): The Soundcore Motion 300 is a full-frequency champ, with clean sound in the higher ranges and reasonably heavy bass. Its adaptive audio feature changes output depending on whether the speaker is currently lying down, standing on end or hanging from your belt loop. It's also small and light enough to carry in your pocket or clip to your backpack.
+$249 at Amazon
 
-Marshall Emberton II for $100 (44 percent off): Marshall, the old warhorse of the audio world, continues to crush it with the portable and bluetooth-ready Emberton II. Although it looks like an antique, it's anything but, with 360-degree sound and over 30 hours of battery life from a single charge — all weighing a little more than a quarter of a pound.
+Astro A50 X gaming headset for $315 ($75 off): The A50 X is an upgrade pick in our guide to the best gaming headsets. It should specifically appeal to those who own multiple gaming systems, as its base station lets you connect and swap between PC, PS5 and Xbox audio with the press of a button. Its among the better-sounding wireless headsets weve tried as well, and its mic is fantastic. This deal isnt an all-time low, but its the largest drop weve seen since February. The standard Astro A50 is also on sale for $237; that one works just as well if you only play on one device, but it lacks HDMI switching functionality.
 
-Marshall Acton III for $200 (33 percent off): Marshall recently re-engineered the Acton's speaker setup by angling the tweeters outward. It paid off, especially in the Acton III, which now delivers a pleasingly wide soundscape. At 6.3 pounts, it's not technically portable, but the design makes it easy to move around — and for the eco-conscious, it's made of 70 percent recycled materials.
+8BitDo Ultimate 2 Wireless Controller for $48 ($12 off): The Ultimate 2 is a versatile wireless gamepad for Windows PCs and mobile devices. It can connect over Bluetooth, a wireless dongle or a USB cable, and its magnetic TMR joysticks should be far less susceptible to “joystick drift” than typical controllers. Those with large hands may find it a touch too small, but its built well, it comes with a handy charging dock and it gets a solid 20 or so hours of battery life. 8BitDos companion software includes a variety of useful customizations beyond that. This isnt an all-time low, but its still a few bucks below the pads typical street price.
 
-Best Prime Day smart speaker deals
+Advertisement
 
-Amazon
+Advertisement
 
-Echo Dot 5th Gen Smart Speaker
+Corsair Scimitar RGB Elite MMO gaming mouse for $55 ($25 off): We recommend the Scimitar RGB Elite to MMO and MOBA players in our guide to the best gaming mice. Its not the lightest or most technically advanced model, but it comes with 12 comfortable and easy-to-reach side buttons, which make it easier to pull off more complex actions in games like World of Warcraft or Final Fantasy XIV. Weve seen it fall below $50 a few times before, but this deal matches the lowest price weve tracked since May. A newer wireless model called the Scimitar Elite Wireless SE is also on sale for a low of $80.
 
-$35 (30 percent off)$50
+Razer Basilisk V3 gaming mouse for $30 ($40 off): We recommend the Basilisk V3 in our gaming mouse guide for those who dont mind using a cable and prefer a more ergonomic right-handed shape. This is its lowest price to date. Note that Razer now sells a newer version with an improved sensor, but that one costs $49 more and isnt a massive upgrade in real-world use.
 
-The Echo Dot, our favorite smart speaker under $50, is now...even farther under $50. Despite being small enough to fit on a cluttered bookshelf, the Dot pumps out high-quality sound that can fill a room, and comes equipped with physical buttons to supplement Alexa's voice command interface.
+Razer DeathAdder V3 HyperSpeed gaming mouse for $71 ($29 off): The wireless DeathAdder V3 HyperSpeed is another recommendation from our gaming mouse buying guide. For less than $100, it gets you a sturdy yet superlight design that weighs just 55 grams — making it easy to flick around in fast-paced games — and doesnt have any annoying cutouts in its outer shell. Its contoured shape should fit most small- to medium-sized hands comfortably, and it performs reliably for competitive play. This deal is an all-time low.
 
-$35 (30 percent off) at Amazon
+Keychron Q3 Max mechanical keyboard for $195 ($35 off): The Keychron Q Max series is the top pick in our guide to the best mechanical keyboards, pairing an upscale (if heavy) aluminum case with a lovely typing experience and extensive customizability. This isnt the lowest price weve ever seen for the tenkeyless model, but its a rare drop from the boards typical street price. Other size layouts are discounted as well.
 
-Amazon Echo Pop for $25 (38 percent off): The Echo Pop is Amazon's smallest and cheapest smart speaker, resembling an Echo Dot sliced in half. It's a little quiet, and probably best for extending Alexa's range rather than serving as the primary host for your virtual assistant. In a smaller room, though, this is as convenient and clear-sounding as any other Echo you'll use.
+Advertisement
 
-Amazon Echo Spot for $45 (44 percent off): Other than perhaps the Pop, no Amazon Echo fits better on a bedside table than the Spot. Its user-friendly design incorporates both a speaker and a digital display — so it's recognizable as a classic alarm clock, but with much more information on the screen and far better sound quality. This is the lowest price we've ever seen it sell for.
+Advertisement
 
-Sonos Era 100 for $180 (10 percent off): The Sonos Era 100 is a fantastic smart speaker for an even better price. It's not only loud — it also sounds good at any volume, no matter what platform you're streaming audio from. It can connect via bluetooth or physical lines, and uses TruePlay to tune the sound to your current location using included mics.
+ASUS ROG Strix Scope II 96 Wireless mechanical keyboard for $151 ($59 off): We speak positively about this model in our guide to the best gaming keyboards. Its sturdy case, crisp keycaps and battery life all impress, while the thocky NX Snow switches in this model feel and sound delightful. Its companion software is a bit of a mess, and its 96 percent layout may feel a little cramped to some, but its a nice buy if you want a higher-class pre-built keyboard. This is the lowest price we've seen since March.
 
-Sonos Era 300 for $379 (21 percent off): In our full review of the Sonos Era 300, we found that it's easy to set up and sounds incredible. It includes the exciting spatial audio feature that makes music sound like it's coming from everywhere — while it doesn't always work, it's exhilarating when it hits. The Era 300 can even automatically tune sound to your location, and you no longer need an iPhone for this feature to work.
+ASUS ROG Azoth mechanical keyboard for $155 ($120 off): Its a couple years old at this point, but the ROG Azoth remains an exceptionally well-built mechanical keyboard for enthusiasts. Its gasket-mounted design and layers of foam give each key press a soft landing, while its pre-lubed switches feel nice and smooth. It even comes with a toolkit for manually lubing the switches down the road, and the PCB is hot-swappable if you ever want to switch things up. Theres a useful control knob and programmable OLED display for quickly adjusting settings and checking the battery level beyond that. ASUS' Armoury Crate software is still fairly sloppy, however. This deal comes within a couple bucks of the lowest price we've seen for a model with the linear NX Snow switches.
 
-Best Prime Day soundbar deals
+Lexar
 
-Amazon
+Lexar Play Pro (256GB) microSD Express Card
 
-JBL Bar 9.1
+$50$60Save $10
 
-$699 (42 percent off)$1,200
+If you want to add more storage space to a Nintendo Switch 2, you need a microSD Express card. We tested a number of those for our buying guide and found that there isnt much difference between them when it comes to real-world performance, so the best option is usually whichever one you can find on sale. Right now, that happens to be the Lexar Play Pro, the 256GB version of which is down to the lowest price weve seen since April. If you need more space, the 512GB version is $20 off at $100, while the 1TB model is $187, a $33 discount.
 
-JBL designed the 9.1 soundbar for Dolby Atmos, and the results speak for themselves, with 820 watts of booming audio. The best thing about this soundbar is the pair of detachable wireless speakers you can place around your viewing room to make the sound even more surround.
+$50 at Amazon
 
-$699 (42 percent off) at Amazon
+PNY microSD Express Card (128GB) for $38 ($7 off): We generally recommend getting at least 256GB of storage from your Switch 2 microSD card, since recent games can fill up that space pretty quickly. But if you only want a little bit extra, this is the lowest price weve seen for PNYs 128GB model. Just note that this card is technically the slowest we've tested when it came to moving games to the card from the Switchs internal storage, though it's perfectly fine for in-game tasks.
 
-JBL Bar 300 for $250 (38 percent off): The Bar 300, part of JBL's 2023 soundbar explosion, is a mighty yet cheap soundbar with an integrated subwoofer. Despite being small, it manages to create a theatrical experience by working both Dolby Atmos and MultiBeam. Its voice sharpening algorithm is especially good at making dialogue clearer (for those of us who always have to put on the subtitles).
+Seagate Storage Expansion Card for Xbox Series X/S (2TB) for $190 ($170 off): Its annoying, but the only way to fully add storage to an Xbox Series X/S is to use a proprietary expansion card. Seagates model is one of the very few examples of those, and this discount marks the lowest price weve seen for the 2TB variant in the past year. Yes, its still overpriced compared to a normal SSD, but any extra savings should be welcome.
 
-Amazon Fire TV Soundbar Plus for $150 (40 percent off): One of the cheapest soundbars you'll ever see, the Fire TV Soundbar Plus provides a noticeable boost to your TV's audio quality, even if it doesn't reach Dolby Atmos heights. It's simple, but that makes it a breeze to set up — all you have to do is plug in one HDMI cable.
+Advertisement
 
-Sony Bravia Theater Bar 6 for $498 (29 percent off): The Sony Bravia Theater Bar 6 is part of Sony's Dolby Atmos soundbar lineup. It stands out from that line as a great entry point, balancing theatrical sound with defined dialogue by adjusting outputs through machine learning. It's capable of transforming normal stereo into surround sound through automatic up-mixing.
+Advertisement
 
-Roku Streambar for $69 (31 percent off): The Roku Streambar is already affordable, but this deal puts it within anyone's reach. It's also economical in terms of space — as we noted in our full review, it's about the size of an egg carton, but still manages to give off near-surround sound.
+Crucial X9 Pro (1TB) portable SSD for $75 ($26 off): If youre looking to offload some games to external storage, we consider the Crucial X9 Pro the best portable SSD for most people, as it offers fast enough transfer speeds in a rugged and compact design. This isnt the best price ever for the 1TB model but it matches the largest discount weve seen since April. Other size options are also on sale.
+
+Crucial P310 (1TB) M.2 2230 SSD for $80 ($55 off): The P310 is a small-size SSD you can use to add storage to a handheld PC like the Steam Deck or ASUS ROG Ally. It uses cheaper QLC memory, not the faster and more durable TLC, but reviews say that it performs well anyway. This deal ties the best price weve seen for the 1TB version since April.
 
 Shop Prime Day deals: October Prime Day 2025 deals | Prime Day lightning deals | Best Prime Day tech deals | Best Prime Day deals to shop | October Prime Day deals on tech | Prime Day laptop deals | Robot vacuum deals | Video game deals | Prime Day Apple deals | Prime Day TV deals | Best credit card for Amazon
 
