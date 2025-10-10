@@ -1,41 +1,37 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/transportation/evs/tensors-robocar-will-be-lyft-ready-out-of-the-factory-182010143.html?src=rss
+https://www.engadget.com/ai/openais-tiktok-of-ai-slop-hit-one-million-downloads-faster-than-chatgpt-181216271.html?src=rss
 
-Transportation
+AI
 
-EVs
+OpenAI's TikTok of AI slop hit one million downloads faster than ChatGPT
 
-Tensor's Robocar will be 'Lyft-ready' out of the factory
+Sora appears exceedingly popular and shows no signs of slowing down.
 
-Lyft has committed to buy 'hundreds' of the AVs for its own fleet.
-
-Will Shanklin
+Ian Carlos Campbell
 
 Contributing Reporter
 
-Will ShanklinContributing Reporter
+Ian Carlos CampbellContributing Reporter
 
-Thu, October 9, 2025 at 6:20 PM UTC
+Thu, October 9, 2025 at 6:12 PM UTC
 
 2 min read
 
-A photorealistic rendering of a Tensor Robocar fleet.
+OpenAI
 
-(Lyft / Tensor)
+Sora, OpenAI's app and social network for AI-generated videos, has been downloaded over one million times, according to Sora head Bill Peebles. The app reached one million downloads in less than five days, Peebles says, "even faster than ChatGPT did." That's despite OpenAI only making the app available in North America, and its decision to require users to have an invite to actually use it.
 
-Lyft is partnering with San Jose-based Tensor Auto. Lyft says it has reserved "hundreds" of Tensor robotaxis and will operate its own fleet. The other piece of the partnership: Tensor will make its Robocar "Lyft-ready" straight out of the factory.
+Like TikTok, Sora offers an endless vertical feed of videos, only Sora's videos are AI-generated rather than uploaded by users. Creating a 10-second video of your own is as simple as writing a prompt to OpenAI's Sora 2 model in the app. And through the Sora's Cameo feature, you can even create videos of yourself and anyone else who's agreed to share their likeness to the service.
 
-Shipping the Robocar with Lyft's platform will allow a futuristic form of passive income for owners in regions with level 4 regulatory approval. "Traditional car ownership means a vehicle loses value as it sits idle most of the time," the companies wrote in a press release. "Tensor Robocars flip this model, turning personal luxury vehicles into productive assets that can generate income around the clock."
+sora hit 1M app downloads in <5 days, even faster than chatgpt did (despite the invite flow and only targeting north america!)!
 
-It's similar to what Tesla plans to do with its yet-to-be-shipped Cybercab. Lyft's rival Uber announced a similar plan in July, involving 20,000 Lucid EVs.
+team working hard to keep up with surging growth. more features and fixes to overmoderation on the way!
 
-That's also a rendering.
+— Bill Peebles (@billpeeb) October 9, 2025
 
-(Tensor / Lyft)
-
-Tensor plans to deliver its first Robocars by the end of 2026. The company says the "Lyft-ready" autonomous vehicle (AV) will include over 100 sensors. (That includes 37 cameras, five lidars, and 11 radars.) Eight NVIDIA chips, based on Blackwell GPU architecture, help it interpret sensor data. Tensor says the computer is capable of 8,000 trillion operations per second.
+The limited guardrails OpenAI has put on Sora has already led to a rash of videos featuring OpenAI's Sam Altman and content that clearly infringes on copyright. The fact that Sora can so readily create videos of recognizable characters like Pikachu raises questions about what OpenAI's model was trained on, and has unsurprisingly prompted pushback from the larger entertainment industry.
 
 Advertisement
 
@@ -43,9 +39,9 @@ Advertisement
 
 Advertisement
 
-This is far from Lyft's first AV partnership. Among others, it teamed up last month with May Mobility to launch an autonomous fleet in Atlanta. Lyft also plans to match users with Waymo rides in Nashville starting next year. However, Bloomberg notes that the Tensor partnership is Lyft's first where it will purchase and operate its own AV fleet.
+In response, the company has updated Sora to give users more control over what videos their likeness can appear in. OpenAI plans to offer similar controls to rights holders, giving them "the ability to specify how their characters can be used (including not at all)," according to Altman. It's not clear why these controls weren't available when Sora launched, but both seem like good changes.
 
-Tensor spun out of the Chinese robotaxi company AutoX. The company says it divested and discontinued its China operations to focus exclusively on the US-based Tensor. The Robocar will be produced in Vietnam through a partnership with VinFast.
+Because of Sora's invite system, it's difficult to say if the over one million downloads the app has received translates to as many users. It's not unusual for someone to download an app and never use it. Whatever the case, OpenAI's bet on AI-generated videos seems like it might be a winning one, provided the company finds a way to actually make more money than it looses generating videos for Sora.
 
 Advertisement
 
