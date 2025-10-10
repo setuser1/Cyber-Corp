@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/09/andreessen-horowitz-denies-report-of-india-office-calls-it-fake-news/
+https://techcrunch.com/2025/10/09/reflection-raises-2b-to-be-americas-open-frontier-ai-lab-challenging-deepseek/
 
-Venture capital firm Andreessen Horowitz (a16z) has pushed back on local media reports suggesting it plans to open an office in India, with a general partner calling the coverage &#8220;entirely fake news.&#8221;
+Reflection AI, a startup founded just last year by two former Google DeepMind researchers, has raised $2 billion at an $8 billion valuation, a whopping 15x leap from its $545 million valuation just seven months ago. The company, which originally focused on autonomous coding agents, is now positioning itself as both an open source alternative to closed frontier labs like OpenAI and Anthropic, and a Western equivalent to Chinese AI firms like DeepSeek.
 
-Earlier on Thursday, Indian media outlets reported that a16z was preparing to establish a physical presence in the country by setting up an office in Bengaluru. The reports, which cited unnamed sources, also said the firm was in the process of hiring a local partner.
+The startup was launched in March 2024 by Misha Laskin, who led reward modeling for DeepMinds Gemini project, and Ioannis Antonoglou, who co-created AlphaGo, the AI system that famously beat the world champion in the board game Go in 2016. Their background developing these very advanced AI systems is central to their pitch, which is that the right AI talent can build frontier models outside established tech giants.
