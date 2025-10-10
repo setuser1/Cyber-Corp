@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/09/intel-unveils-new-processor-powered-by-its-18a-semiconductor-tech/
+https://techcrunch.com/2025/10/09/italian-businessmans-phone-reportedly-targeted-with-paragon-spyware/
 
-Six months after Lip-Bu Tan began his quest to turn around struggling Intel, the semiconductor giant has announced a major hardware upgrade.
+A prominent Italian businessman was targeted with Paragon spyware, according to local news reports.
 
-On Thursday, Intel unveiled a new processor, codenamed Panther Lake. This marks the next generation of the companys Intel Core Ultra processor family and is the first chip built using Intels 18A semiconductor process.
+On Thursday, Italian online investigative website IrpiMedia and newspaper La Stampa reported that Francesco Gaetano Caltagirone was among around 90 people who received a notification from WhatsApp in January, alerting him that he had been targeted with spyware made by Paragon Solutions.
