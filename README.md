@@ -1,35 +1,51 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/nintendo/nintendo-just-surprise-dropped-a-japan-only-snes-mario-game-onto-the-virtual-console-183536913.html?src=rss
+https://www.engadget.com/transportation/evs/tensors-robocar-will-be-lyft-ready-out-of-the-factory-182010143.html?src=rss
 
-Gaming
+Transportation
 
-Nintendo
+EVs
 
-Nintendo just surprise-dropped a Japan-only SNES Mario game onto the Virtual Console
+Tensor's Robocar will be 'Lyft-ready' out of the factory
 
-It actually uses the Joy-Con mouse functionality on Switch 2.
+Lyft has committed to buy 'hundreds' of the AVs for its own fleet.
 
-Lawrence Bonk
+Will Shanklin
 
 Contributing Reporter
 
-Lawrence BonkContributing Reporter
+Will ShanklinContributing Reporter
 
-Thu, October 9, 2025 at 6:35 PM UTC
+Thu, October 9, 2025 at 6:20 PM UTC
 
-1 min read
+2 min read
 
-Nintendo
+A photorealistic rendering of a Tensor Robocar fleet.
 
-Nintendo just released an odd little game onto the SNES Virtual Console that was previously exclusive to Japan. The simply-titled Mario & Wario is a point-and-click puzzle game that finds the plumber on the search for his brother after his money-obsessed doppelganger drops a bucket on his head. That's the actual plot.
+(Lyft / Tensor)
 
-Players lead the bucket-headed Mario through 100 levels, each of which are filled with point-and-click puzzles set in a sidescrolling world. The original game was controlled via mouse and this Virtual Console release is no different. Switch owners can simply plug in a USB mouse to get going but Switch 2 owners have a niftier option.
+Lyft is partnering with San Jose-based Tensor Auto. Lyft says it has reserved "hundreds" of Tensor robotaxis and will operate its own fleet. The other piece of the partnership: Tensor will make its Robocar "Lyft-ready" straight out of the factory.
 
-You may remember that the new console's Joy-Con controllers can flip over and be used as a mouse. Mario & Wario is another use case for this concept, after Drag x Drive and a minigame in Nintendo Switch 2 Welcome Tour. The game is available right now for Nintendo Switch Online members.
+Shipping the Robocar with Lyft's platform will allow a futuristic form of passive income for owners in regions with level 4 regulatory approval. "Traditional car ownership means a vehicle loses value as it sits idle most of the time," the companies wrote in a press release. "Tensor Robocars flip this model, turning personal luxury vehicles into productive assets that can generate income around the clock."
 
-That's not the only title that hit Virtual Console today. The SNES platformer Bubsy in Claws Encounters of the Furred Kind is available to play, as is the SNES fighter Fatal Fury Special. That one includes characters from both the original game and Fatal Fury 2.
+It's similar to what Tesla plans to do with its yet-to-be-shipped Cybercab. Lyft's rival Uber announced a similar plan in July, involving 20,000 Lucid EVs.
+
+That's also a rendering.
+
+(Tensor / Lyft)
+
+Tensor plans to deliver its first Robocars by the end of 2026. The company says the "Lyft-ready" autonomous vehicle (AV) will include over 100 sensors. (That includes 37 cameras, five lidars, and 11 radars.) Eight NVIDIA chips, based on Blackwell GPU architecture, help it interpret sensor data. Tensor says the computer is capable of 8,000 trillion operations per second.
+
+Advertisement
+
+Advertisement
+
+Advertisement
+
+This is far from Lyft's first AV partnership. Among others, it teamed up last month with May Mobility to launch an autonomous fleet in Atlanta. Lyft also plans to match users with Waymo rides in Nashville starting next year. However, Bloomberg notes that the Tensor partnership is Lyft's first where it will purchase and operate its own AV fleet.
+
+Tensor spun out of the Chinese robotaxi company AutoX. The company says it divested and discontinued its China operations to focus exclusively on the US-based Tensor. The Robocar will be produced in Vietnam through a partnership with VinFast.
 
 Advertisement
 
