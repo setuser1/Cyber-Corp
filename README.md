@@ -1,35 +1,33 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/playstation/sony-and-amd-tease-the-gpu-tech-theyre-building-for-the-next-playstation-172500942.html?src=rss
+https://www.engadget.com/big-tech/youtube-will-give-second-chances-to-some-banned-creators-172000443.html?src=rss
 
-Gaming
+Big tech
 
-Playstation
+YouTube will give 'second chances' to some banned creators
 
-Sony and AMD tease the GPU tech they're building for the next PlayStation
+The company previously told House Republicans it would reinstate creators banned for spreading election and COVID misinformation
 
-With Project Amethyst, the two companies want to improve ray and path tracing performance.
+Karissa Bell
 
-Igor Bonifacic
+Senior Editor
 
-Senior reporter
+Karissa BellSenior Editor
 
-Igor BonifacicSenior reporter
+Thu, October 9, 2025 at 5:20 PM UTC
 
-Thu, October 9, 2025 at 5:25 PM UTC
+2 min read
 
-3 min read
+The YouTube logo is seen outside the company's corporate headquarters in San Bruno, California, on April 23, 2025. (Photo by JOSH EDELSON/AFP via Getty Images)
 
-A white PS5 Pro sits next to a succulent and rodent skull.
+(JOSH EDELSON via Getty Images)
 
-(Engadget)
+Last month, Alphabet told the House Judiciary Committee that it would allow some creators who were banned from YouTube for spreading COVID-19 and election-related misinformation to come back to the platform. Now, the company is outlining how that process will work, though it's not clear exactly who will be provided that opportunity,
 
-Sony just dropped a new video with Mark Cerny, and its a big one, with significant implications for the companys next console and AMDs future GPUs. Over nearly nine minutes, Cerny, who was the lead designer for the PlayStation 4 and PS5, chats with Jack Huynh, senior vice president and general manager of AMDs Computing and Graphics Group, about a series of technologies, collectively dubbed Project Amethyst, the two companies are developing together. According to Cerny, those technologies “only exist in simulations” right now, but theyre broadly designed to make the next PlayStation better at ray tracing, upscaling and other machine learning-based rendering techniques.
+YouTube says that beginning today it will give "some previously terminated creators" the ability to "request" a fresh channel in an effort the company is characterizing as a bid for "second chances" on the platform. The update doesn't reference its COVID-19 or election misinformation policies, which had come under fire from House Republicans. Instead, YouTube says that the "pilot program" will be available to some "qualified creators." It doesn't explain how it will determine who qualifies. Last month, far-right personalities Nick Fuentes and Alex Jones — both of whom were banned from YouTube years before the pandemic — attempted to rejoin YouTube after the letter was made public and were promptly removed.
 
-If you know anything about AMD graphics cards, its that theyve historically offered poor ray tracing performance relative to NVIDIAs RTX GPUs. For years, AMD tried to bridge the gap with cards that outmuscled NVIDIAs offerings with better rasterization performance, an approach the company now admits wont work for modern, graphically intensive games. “Trying to brute force [ray-tracing] with raw power alone just doesnt scale,” Huynh said. AMDs solution is an entirely new architecture that combines two hardware innovations: Neural Arrays and Radiance Cores.
-
-In AMDs older GPUs, the individual compute units are designed to work independently of one another. This approach worked great for a long time, but in modern games — dependent as they are on expensive upscaling techniques likes FSR and Sonys own PSSR to deliver playable framerates at high resolutions — it can lead to inefficiencies. AMD is trying to solve that problem with Neural Arrays, which give the compute units a way to work together and share data between one another.
+"Our goal is to roll this out to creators who are eligible to apply over the coming months, and we appreciate the patience as we ramp up, carefully review requests, and learn as we go," the company wrote. "Not every type of channel termination will be eligible." Among the factors YouTube will consider are "whether the creator committed particularly severe or persistent violations of our Community Guidelines or Terms of Service, or whether the creators on- or off-platform activity harmed or may continue to harm the YouTube community." People banned for copyright infringement won't be able to apply.
 
 Advertisement
 
@@ -37,13 +35,9 @@ Advertisement
 
 Advertisement
 
-According to Huynh, AMD isnt linking an entire GPU together, as that would create a cable-management nightmare, but it is giving the silicon a way to process a “large chunk” of the screen in one go. In practice, he says that should allow the next PlayStation and AMDs future video cards to offer a “whole new level of machine learning performance.” In turn, that will translate to better and faster upscaling performance, alongside better ray regeneration. The latter is something NVIDIA already offers with DLSS Ray Reconstruction and in games that support the technology, it translates to better-looking ray tracing effects and improved performance.
+All that is still remarkably vague compared to the language Alphabet used in its letter to the House Judiciary Committee last month. "YouTube will provide an opportunity for all creators to rejoin the platform if the Company terminated their channels for repeated violations of COVID-19 and elections integrity policies that are no longer in effect," it said.
 
-As for Radiance Cores, it sound like AMD is taking another page from NVIDIA. For the uninitiated, the companys RTX cards feature dedicated, fixed-function “RT” cores designed to accelerate the math needed to simulate light rays in real-time. Huynh says the Radiance Cores are an entirely new hardware block designed to handle ray and path tracing. “Its a brand-new rendering approach for AMD,” he added. As a bonus, by taking on this work, the Radiance Cores will free up other parts of AMDs new GPUs to process shaders and textures more quickly, leading to further efficiency gains.
-
-Lastly, the two companies are working on new software theyre calling Universal Compression. It builds on the PS5 and PS5 Pros existing Delta Color Compression technique. It will theoretically allow Sonys next console to compress everything that goes through its graphics pipeline, reducing the amount memory bandwidth needed by the GPU and potentially reducing its power consumption.
-
-Again, Ill note Cerny said its still “early days” for all the technologies he and Huynh discussed, but its reassuring to know Sony and AMD are thinking about how to best approach ray tracing performance and upscaling. Techniques like ray-traced global illumination can completely change the look of a game, making for a more immersive experience. If Sony and AMD can find ways to make those technologies less expensive to run, thats a win for everyone.
+Importantly, YouTube isn't giving previously banned creators access to their old channels and subscribers. Anyone who is let back on under the program will instead have the opportunity to create an entirely new channel, which means they'll have to rebuild their presence from scratch.
 
 Advertisement
 
