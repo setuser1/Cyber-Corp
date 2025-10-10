@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/09/dozens-of-organizations-had-data-stolen-in-oracle-linked-hacks/
+https://techcrunch.com/2025/10/09/youtubers-who-were-kicked-off-the-platform-for-rule-violations-can-now-request-a-second-chance/
 
-Security researchers at Google say hackers targeting corporate executives with extortion emails have stolen data from “dozens of organizations,” one of the first signs that the hacking campaign may be far-reaching.
+YouTube announced on Thursday that creators whose channels were previously terminated will be able to request new accounts.
 
-The tech giant said Thursday in a statement shared with TechCrunch that the Clop extortion gang exploited multiple security vulnerabilities in Oracles E-Business Suite software to steal significant amounts of data from affected organizations.
+&#8220;We know many terminated creators deserve a second chance – YouTube has evolved and changed over the past 20 years, and weve had our share of second chances to get things right with our community too,&#8221; YouTube wrote in the blog post.
