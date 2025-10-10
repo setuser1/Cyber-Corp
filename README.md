@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/09/stoke-spaces-510m-round-shows-the-future-of-launch-belongs-to-defense/
+https://techcrunch.com/2025/10/09/intel-unveils-new-processor-powered-by-its-18a-semiconductor-tech/
 
-Stoke Space announced a massive capital raise on Wednesday that might seem, at first glance, like just another bet on the commercial launch market. The details tell a different story.
+Six months after Lip-Bu Tan began his quest to turn around struggling Intel, the semiconductor giant has announced a major hardware upgrade.
 
-Led by billionaire Thomas Tulls U.S. Innovative Technology (USIT), a fund that explicitly invests in technologies tied to national security, the $510 million Series D round underscores a larger shift in the launch industry. The old assumption was the winners of launch would be the companies that capture the lions share of commercial payloads.
+On Thursday, Intel unveiled a new processor, codenamed Panther Lake. This marks the next generation of the companys Intel Core Ultra processor family and is the first chip built using Intels 18A semiconductor process.
