@@ -1,55 +1,49 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/one-of-our-favorite-budgeting-apps-has-30-percent-off-annual-plans-right-now-174011690.html?src=rss
+https://www.engadget.com/gaming/playstation/sony-and-amd-tease-the-gpu-tech-theyre-building-for-the-next-playstation-172500942.html?src=rss
 
-Deals
+Gaming
 
-One of our favorite budgeting apps has 30 percent off annual plans right now
+Playstation
 
-Newcomers can get a year of access to Monarch Money for $70.
+Sony and AMD tease the GPU tech they're building for the next PlayStation
 
-Kris Holt
+With Project Amethyst, the two companies want to improve ray and path tracing performance.
 
-Contributing Reporter
+Igor Bonifacic
 
-Kris HoltContributing Reporter
+Senior reporter
 
-Thu, October 9, 2025 at 5:40 PM UTC
+Igor BonifacicSenior reporter
 
-Towfiqu barbhuiya/Unsplash
+Thu, October 9, 2025 at 5:25 PM UTC
 
-Monarch Money is one of our favorite budgeting apps and, fittingly enough, there's a way for newcomers to save money on a subscription right now. If you use the code WELCOME at checkout, you can get an annual plan for 30 percent off. It typically costs $100, but you can get 12 months of access for $70 with this code.
+3 min read
 
-There are some key caveats here. The discount is only for new users, and it can't be combined with other offers. The code only works when you sign up through the web. You can't redeem it through the Monarch mobile app.
+A white PS5 Pro sits next to a succulent and rodent skull.
 
-Monarch Money
+(Engadget)
 
-Monarch Money (annual plan)
+Sony just dropped a new video with Mark Cerny, and its a big one, with significant implications for the companys next console and AMDs future GPUs. Over nearly nine minutes, Cerny, who was the lead designer for the PlayStation 4 and PS5, chats with Jack Huynh, senior vice president and general manager of AMDs Computing and Graphics Group, about a series of technologies, collectively dubbed Project Amethyst, the two companies are developing together. According to Cerny, those technologies “only exist in simulations” right now, but theyre broadly designed to make the next PlayStation better at ray tracing, upscaling and other machine learning-based rendering techniques.
 
-$70$100
+If you know anything about AMD graphics cards, its that theyve historically offered poor ray tracing performance relative to NVIDIAs RTX GPUs. For years, AMD tried to bridge the gap with cards that outmuscled NVIDIAs offerings with better rasterization performance, an approach the company now admits wont work for modern, graphically intensive games. “Trying to brute force [ray-tracing] with raw power alone just doesnt scale,” Huynh said. AMDs solution is an entirely new architecture that combines two hardware innovations: Neural Arrays and Radiance Cores.
 
-Save $30 with code
-
-New users of Monarch Money can get a year of access to the in-depth budgeting app for $70.
-
-Save $30 with code
-
-Copied!
-
-WELCOME
-
-$70 at Monarch Money
-
-We feel that Monarch has a steeper learning curve than some other budget trackers and that certain aspects of the app are slightly more complex than they probably need to be. But it offers a great deal of customization and granularity, which outweighs our misgivings.
+In AMDs older GPUs, the individual compute units are designed to work independently of one another. This approach worked great for a long time, but in modern games — dependent as they are on expensive upscaling techniques likes FSR and Sonys own PSSR to deliver playable framerates at high resolutions — it can lead to inefficiencies. AMD is trying to solve that problem with Neural Arrays, which give the compute units a way to work together and share data between one another.
 
 Advertisement
 
 Advertisement
 
-On the main dashboard, you'll see your net worth along with your latest transactions, spending versus the previous month, your income so far for the month and details about upcoming bills, your investments and goals you've set. There's also a link to a month-in-review page, which offers an in-depth overview of what's been happening with your money that month. You'll also be able to take a peek at how your net worth has changed over time.
+Advertisement
 
-Monarch can connect to your bank and track Apple Card, Apple Cash and Savings accounts. It can pull in your transactions and balance history automatically and detect your recurring expenses and income. The app can even keep your car valuation up to date. While it might take a little work to set up Monarch (and you might have to tweak things here and there), it's a detailed budgeting app that can help you keep better track of your income, expenditure and net worth.
+According to Huynh, AMD isnt linking an entire GPU together, as that would create a cable-management nightmare, but it is giving the silicon a way to process a “large chunk” of the screen in one go. In practice, he says that should allow the next PlayStation and AMDs future video cards to offer a “whole new level of machine learning performance.” In turn, that will translate to better and faster upscaling performance, alongside better ray regeneration. The latter is something NVIDIA already offers with DLSS Ray Reconstruction and in games that support the technology, it translates to better-looking ray tracing effects and improved performance.
+
+As for Radiance Cores, it sound like AMD is taking another page from NVIDIA. For the uninitiated, the companys RTX cards feature dedicated, fixed-function “RT” cores designed to accelerate the math needed to simulate light rays in real-time. Huynh says the Radiance Cores are an entirely new hardware block designed to handle ray and path tracing. “Its a brand-new rendering approach for AMD,” he added. As a bonus, by taking on this work, the Radiance Cores will free up other parts of AMDs new GPUs to process shaders and textures more quickly, leading to further efficiency gains.
+
+Lastly, the two companies are working on new software theyre calling Universal Compression. It builds on the PS5 and PS5 Pros existing Delta Color Compression technique. It will theoretically allow Sonys next console to compress everything that goes through its graphics pipeline, reducing the amount memory bandwidth needed by the GPU and potentially reducing its power consumption.
+
+Again, Ill note Cerny said its still “early days” for all the technologies he and Huynh discussed, but its reassuring to know Sony and AMD are thinking about how to best approach ray tracing performance and upscaling. Techniques like ray-traced global illumination can completely change the look of a game, making for a more immersive experience. If Sony and AMD can find ways to make those technologies less expensive to run, thats a win for everyone.
 
 Advertisement
 
