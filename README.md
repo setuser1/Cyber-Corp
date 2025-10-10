@@ -1,35 +1,35 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/the-esas-power-of-play-report-paints-a-portrait-of-the-the-worlds-gamers-205105064.html?src=rss
+https://www.engadget.com/entertainment/a-minecraft-movie-is-getting-a-minecraft-sequel-203509569.html?src=rss
 
-The ESA's Power of Play report paints a portrait of the the world's gamers
+Entertainment
 
-Spoiler alert: Gaming isn't just for kids.
+A Minecraft Movie is getting A Minecraft Sequel
 
-Anna Washenko
+The original has grossed nearly a billion dollars globally.
+
+Will Shanklin
 
 Contributing Reporter
 
-Anna WashenkoContributing Reporter
+Will ShanklinContributing Reporter
 
-Thu, October 9, 2025 at 8:51 PM UTC
+Updated Thu, October 9, 2025 at 8:35 PM UTC
 
 1 min read
 
-ESA
+Warner Bros. / YouTube
 
-The Entertainment Software Association has released its Power of Play report, which presents a snapshot of who is playing video games, and why, all around the world. There are a lot of interesting data points here from more than 24,000 respondents, all of whom are older than 16 and play at least weekly. The doubters who think gaming is just for kids may be surprised to learn that the average age of the respondents is 41 years old, and the gender split is nearly even between men and women.
+If Hollywood has taught us anything, it's that a blockbuster that makes bank will get a sequel (or seven). Enter A Minecraft Movie, with its surprisingly effective humor and $957 million box office payday. (Who had "Jack Black will anchor a nearly billion-dollar movie" on their 2025 bingo card?) So, it's no surprise that Warner Bros. has officially greenlit a sequel.
 
-One of the most intriguing aspects to the report were the benefits people said they received from playing games. The top answer was that games offered mental stimulation, which 81 percent of the respondents said. Eighty percent said games provided stress relief, 73 percent said games made them feel happier and 64 percent said games connected them with other people which helped them feel less isolated or lonely.
+Variety reports that Warner Bros. has penciled in the sequel for a July 23, 2027, premiere date. That would place it around two years after the original, which is the second-highest-grossing film of the year so far. (Disney's Lilo & Stitch is in first, with a cool $1.03 billion at the box office.)
 
-ESA Power of Play 2025
+Warner Bros. / X
 
-(ESA)
+The sequel will reportedly bring back director Jared Hess. The Napoleon Dynamite creator will also co-write the screenplay with Chris Galletta. Producers are said to include Mary Parent, Cale Boyter, Roy Lee, Eric McLeod, Kayleen Walters, Torfi Frans Ólafsson and Jason Momoa.
 
-And although having fun was the top reason respondents gave for playing (66 percent), they also said gaming could improve their skills. Seventy-seven percent said gaming increased creativity, 76 percent said it improved problem-solving and 74 percent said gaming upped both cognitive skills and teamwork or collaboration.
-
-The report also points to how popular mobile gaming still is. Overall, 55 percent of the respondents said mobile was their favorite gaming platform. Half of the respondents under age 35 play on mobile, and an impressive 61 percent of the over 50 gamers also play on mobile.
+Engadget was among the many publications taken aback by how good A Minecraft Movie was. After all, a film about an open-ended building game, starring one of the leads of the crummy Borderlands, didn't sound promising. But we found it surprisingly funny, with just the right degree of winking self-awareness. On top of that, Devindra Hardawar said it "delivers a decent message about championing creativity in a world that wants to beat down free-thinking non-conformists." Amen to that.
 
 Advertisement
 
