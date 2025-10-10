@@ -1,29 +1,35 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/researchers-find-just-250-malicious-documents-can-leave-llms-vulnerable-to-backdoors-191112960.html?src=rss
+https://www.engadget.com/gaming/nintendo/nintendo-just-surprise-dropped-a-japan-only-snes-mario-game-onto-the-virtual-console-183536913.html?src=rss
 
-Researchers find just 250 malicious documents can leave LLMs vulnerable to backdoors
+Gaming
 
-It doesn't take much for bad actors to influence an AI model during pretraining.
+Nintendo
 
-Anna Washenko
+Nintendo just surprise-dropped a Japan-only SNES Mario game onto the Virtual Console
+
+It actually uses the Joy-Con mouse functionality on Switch 2.
+
+Lawrence Bonk
 
 Contributing Reporter
 
-Anna WashenkoContributing Reporter
+Lawrence BonkContributing Reporter
 
-Thu, October 9, 2025 at 7:11 PM UTC
+Thu, October 9, 2025 at 6:35 PM UTC
 
 1 min read
 
-Yana Iskayeva via Getty Images
+Nintendo
 
-Artificial intelligence companies have been working at breakneck speeds to develop the best and most powerful tools, but that rapid development hasn't always been coupled with clear understandings of AI's limitations or weaknesses. Today, Anthropic released a report on how attackers can influence the development of a large language model.
+Nintendo just released an odd little game onto the SNES Virtual Console that was previously exclusive to Japan. The simply-titled Mario & Wario is a point-and-click puzzle game that finds the plumber on the search for his brother after his money-obsessed doppelganger drops a bucket on his head. That's the actual plot.
 
-The study centered on a type of attack called poisoning, where an LLM is pretrained on malicious content intended to make it learn dangerous or unwanted behaviors. The key finding from this study is that a bad actor doesn't need to control a percentage of the pretraining materials to get the LLM to be poisoned. Instead, the researchers found that a small and fairly constant number of malicious documents can poison an LLM, regardless of the size of the model or its training materials. The study was able to successfully backdoor LLMs based on using only 250 malicious documents in the pretraining data set, a much smaller number than expected for models ranging from 600 million to 13 billion parameters.
+Players lead the bucket-headed Mario through 100 levels, each of which are filled with point-and-click puzzles set in a sidescrolling world. The original game was controlled via mouse and this Virtual Console release is no different. Switch owners can simply plug in a USB mouse to get going but Switch 2 owners have a niftier option.
 
-"Were sharing these findings to show that data-poisoning attacks might be more practical than believed, and to encourage further research on data poisoning and potential defenses against it," the company said. Anthropic collaborated with the UK AI Security Institute and the Alan Turing Institute on the research.
+You may remember that the new console's Joy-Con controllers can flip over and be used as a mouse. Mario & Wario is another use case for this concept, after Drag x Drive and a minigame in Nintendo Switch 2 Welcome Tour. The game is available right now for Nintendo Switch Online members.
+
+That's not the only title that hit Virtual Console today. The SNES platformer Bubsy in Claws Encounters of the Furred Kind is available to play, as is the SNES fighter Fatal Fury Special. That one includes characters from both the original game and Fatal Fury 2.
 
 Advertisement
 
