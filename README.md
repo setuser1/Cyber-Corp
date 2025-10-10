@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/09/shutdown-silver-lining-your-ipo-review-comes-after-investors-buy-in/
+https://techcrunch.com/2025/10/09/flipkarts-super-money-quietly-partners-with-with-troubled-juspay-as-it-expands-its-reach/
 
-In a development born of the government shutdown, the SEC announced Thursday that companies can proceed with IPOs using an obscure automatic approval process, now with the added bonus of skipping pricing information entirely.
+Super.money, a financial service platform spun off last year by Walmart-owned Flipkart, has quietly partnered with payments infrastructure firm Juspay as it expands into direct-to-consumer (D2C) checkout and targets $100 million in annual revenue by 2026.
 
-Whats happening is that with 90% of SEC staff furloughed, startups can file their paperwork and have it automatically become effective after 20 days. This option always existed; firms just rarely use it because they prefer having SEC reviewers actually look at their disclosures before going public. The difference here is that the SEC wont penalize companies for omitting pricing or &#8220;price-dependent information&#8221; during the shutdown, making this workaround more palatable.
+The partnership comes as Juspay works to rebuild momentum after facing pushback from major payment companies earlier this year &#8212; a dispute that complicated its fundraising efforts.
