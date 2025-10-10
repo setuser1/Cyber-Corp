@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/09/while-openai-races-to-build-ai-data-centers-nadella-reminds-us-that-microsoft-already-has-them/
+https://techcrunch.com/2025/10/09/andreessen-horowitz-denies-report-of-india-office-calls-it-fake-news/
 
-Microsoft CEO Satya Nadella on Thursday tweeted a video of his companys first deployed massive AI system — or AI “factory” as Nvidia likes to call them. He promised this is the “first of many” such Nvidia AI factories that will be deployed across Microsoft Azures global data centers to run OpenAI workloads.
+Venture capital firm Andreessen Horowitz (a16z) has pushed back on local media reports suggesting it plans to open an office in India, with a general partner calling the coverage &#8220;entirely fake news.&#8221;
 
-Each system is a cluster of more than 4,600 Nvidia GB300 rack computers sporting the much-in-demand Blackwell Ultra GPU chip and connected via Nvidias super-fast networking tech called InfiniBand. (Besides AI chips, Nvidia CEO Jensen Huang also had the foresight to corner the market on InfiniBand when his company acquired Mellanox for $6.9 billion in 2019.)
+Earlier on Thursday, Indian media outlets reported that a16z was preparing to establish a physical presence in the country by setting up an office in Bengaluru. The reports, which cited unnamed sources, also said the firm was in the process of hiring a local partner.
