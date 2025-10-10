@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/09/discord-suffers-data-breach-impacting-at-least-70000-users/
+https://techcrunch.com/2025/10/09/sora-copycats-flooded-apples-app-store-and-some-still-remain/
 
-Discord disclosed on Wednesday that around 70,000 users may have had sensitive data &#8212; like their government ID photos &#8212; exposed after hackers breached a third-party vendor that the platform uses for age-related appeals.
+Soras rapid adoption drove a number of App Store scammers to try to get in on the act. Following the launch of OpenAIs invite-only, video-generating mobile app last week, Apples App Store was flooded with fakes that also proclaimed themselves to be &#8220;Sora&#8221; or &#8220;Sora 2&#8221; &#8212; the latter a reference to the underlying new AI video model that was released alongside the mobile app.
 
-A Discord user would make an &#8220;age-related appeal&#8221; if the platform suspects they may be underage, or if they live somewhere that requires identity verification for platform access. In those cases, users are asked to send a selfie holding their government ID and Discord username to the platforms Trust & Safety team.
+These apps somehow made it past Apples App Review process. They actually had public listings on the App Store, despite using a brand name thats trademarked by OpenAI and fairly well known in the tech industry even before the apps debut.
