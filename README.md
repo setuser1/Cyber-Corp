@@ -1,43 +1,29 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ar-vr/the-final-details-of-samsungs-android-xr-headset-have-been-all-but-confirmed-200915560.html?src=rss
+https://www.engadget.com/researchers-find-just-250-malicious-documents-can-leave-llms-vulnerable-to-backdoors-191112960.html?src=rss
 
-AR/VR
+Researchers find just 250 malicious documents can leave LLMs vulnerable to backdoors
 
-The final details of Samsung's Android XR headset have been all but confirmed
+It doesn't take much for bad actors to influence an AI model during pretraining.
 
-New images of Project Moohan were revealed in an extensive leak.
-
-Ian Carlos Campbell
+Anna Washenko
 
 Contributing Reporter
 
-Ian Carlos CampbellContributing Reporter
+Anna WashenkoContributing Reporter
 
-Thu, October 9, 2025 at 8:09 PM UTC
+Thu, October 9, 2025 at 7:11 PM UTC
 
-2 min read
+1 min read
 
-Samsung
+Yana Iskayeva via Getty Images
 
-After announcing its intentions to make an XR device in 2023, and revealing the design and intended use-cases for the headset alongside the announcement of Android XR in 2024, Samsung has shared precious few details about Project Moohan. A new leak from Android Headlines is set to change that, detailing not only the specs of Samsung's new headset, but also a final name and new controller accessories ahead of the device's rumored launch later this fall.
+Artificial intelligence companies have been working at breakneck speeds to develop the best and most powerful tools, but that rapid development hasn't always been coupled with clear understandings of AI's limitations or weaknesses. Today, Anthropic released a report on how attackers can influence the development of a large language model.
 
-Samsung's Project Moohan — officially called "Samsung Galaxy XR" per Android Headlines — is a marriage of sorts between the discontinued Meta Quest Pro and an Apple Vision Pro. It features an adjustable headband, primarily acts as passthrough goggles to the world around you and supports an external battery pack. While Samsung's demos of the Project Moohan focused on the headset's ability to accept voice commands and track eye and hand movements through built-in microphones and cameras, Android Headlines reports the headset will also support two controller accessories that look a lot like Meta's Touch Plus controllers for the Quest 3.
+The study centered on a type of attack called poisoning, where an LLM is pretrained on malicious content intended to make it learn dangerous or unwanted behaviors. The key finding from this study is that a bad actor doesn't need to control a percentage of the pretraining materials to get the LLM to be poisoned. Instead, the researchers found that a small and fairly constant number of malicious documents can poison an LLM, regardless of the size of the model or its training materials. The study was able to successfully backdoor LLMs based on using only 250 malicious documents in the pretraining data set, a much smaller number than expected for models ranging from 600 million to 13 billion parameters.
 
-Android Headlines
-
-More expected are the internals and software experience on the new device. Project Moohan will use a Snapdragon XR2 Gen 2 chip to power its One UI-ified version of Android XR, just as Qualcomm promised when it announced the new processor in 2024. Samsung appears to be taking a lighter touch when it comes to software. Screenshots shared by Android Headlines show an app grid with the company's browser, photos and camera apps, but the rest lines up with what Google's shown of Android XR.
-
-Advertisement
-
-Advertisement
-
-Advertisement
-
-The headset will also reportedly feature one high-resolution 4K micro-OLED screen per eye, as previously rumored by Korean publication The Elec, and around a two hours of battery life, which is comparable to the Vision Pro. Importantly, Project Moohan is also lighter. The headset reportedly weighs 545 grams, a good bit less than the over 600-gram Apple headset.
-
-The only thing really missing now is a price for Project Moohan and a release date. Samsung shared in its Q2 2025 earnings that it still expected to ship the headset in 2025, but hasn't announced an event to introduce the new device. Whenever it does launch, it sounds like it'll be expensive. In August 2025, rumors pointed to Project Moohan costing anywhere from 2,500,000 to 4,000,000 Korean won (around $1,700 to $2,800).
+"Were sharing these findings to show that data-poisoning attacks might be more practical than believed, and to encourage further research on data poisoning and potential defenses against it," the company said. Anthropic collaborated with the UK AI Security Institute and the Alan Turing Institute on the research.
 
 Advertisement
 
