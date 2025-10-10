@@ -1,39 +1,35 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/audio/someone-programmed-a-65-year-old-computer-to-play-boards-of-canadas-olson-220857441.html?src=rss
+https://www.engadget.com/the-esas-power-of-play-report-paints-a-portrait-of-the-the-worlds-gamers-205105064.html?src=rss
 
-Audio
+The ESA's Power of Play report paints a portrait of the the world's gamers
 
-Someone programmed a 65-year old computer to play Boards of Canada's 'Olson'
+Spoiler alert: Gaming isn't just for kids.
 
-Tracks have to be manually fed into the PDP-1 via paper tape.
-
-Ian Carlos Campbell
+Anna Washenko
 
 Contributing Reporter
 
-Ian Carlos CampbellContributing Reporter
+Anna WashenkoContributing Reporter
 
-Thu, October 9, 2025 at 10:08 PM UTC
+Thu, October 9, 2025 at 8:51 PM UTC
 
 1 min read
 
-The Programmed Data Processor-1 (PDP-1) is perhaps most recognizable as the home of Spacewar!, one of the world's first video games, but as the video above proves, it also works as an enormous and very slow iPod, too.
+ESA
 
-In the video, Boards of Canada's "Olson" is playing off of paper tape that's carefully fed and programmed into the PDP-1 by engineer and Computer History Museum docent Peter Samson. It's the final product of Joe Lynch's PDP-1.music project, an attempt to translate the short and atmospheric song into something the PDP-1 can reproduce.
+The Entertainment Software Association has released its Power of Play report, which presents a snapshot of who is playing video games, and why, all around the world. There are a lot of interesting data points here from more than 24,000 respondents, all of whom are older than 16 and play at least weekly. The doubters who think gaming is just for kids may be surprised to learn that the average age of the respondents is 41 years old, and the gender split is nearly even between men and women.
 
-As Lynch writes on GitHub, the "Harmony Compiler" used to translate "Olson" to paper tape was actually created by Samson to play audio through four of computer's lightbulbs while he was a student at MIT in the 1960s. He used it to recreate classical music, but it'll work with '90s electronic music in a pinch, too.
+One of the most intriguing aspects to the report were the benefits people said they received from playing games. The top answer was that games offered mental stimulation, which 81 percent of the respondents said. Eighty percent said games provided stress relief, 73 percent said games made them feel happier and 64 percent said games connected them with other people which helped them feel less isolated or lonely.
 
-Advertisement
+ESA Power of Play 2025
 
-Advertisement
+(ESA)
 
-Advertisement
+And although having fun was the top reason respondents gave for playing (66 percent), they also said gaming could improve their skills. Seventy-seven percent said gaming increased creativity, 76 percent said it improved problem-solving and 74 percent said gaming upped both cognitive skills and teamwork or collaboration.
 
-"While these bulbs were originally intended to provide program status information to the computer operator," Lynch writes, "Peter repurposed four of these light bulbs into four square wave generators (or four 1-bit DACs, put another way), by turning the bulbs on and off at audio frequencies." The signal from each bulb is then downmixed into stereo audio channels, transcribed via an emulator and merged into a single file that has to be manually punched into the paper tape that's fed into the PDP-1.
-
-It's a laborious process for playing even the simplest of songs, but it's worth it to hear Boards of Canada's already nostalgic music from an even older classic computer.
+The report also points to how popular mobile gaming still is. Overall, 55 percent of the respondents said mobile was their favorite gaming platform. Half of the respondents under age 35 play on mobile, and an impressive 61 percent of the over 50 gamers also play on mobile.
 
 Advertisement
 
