@@ -1,47 +1,55 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ai/openais-tiktok-of-ai-slop-hit-one-million-downloads-faster-than-chatgpt-181216271.html?src=rss
+https://www.engadget.com/deals/one-of-our-favorite-budgeting-apps-has-30-percent-off-annual-plans-right-now-174011690.html?src=rss
 
-AI
+Deals
 
-OpenAI's TikTok of AI slop hit one million downloads faster than ChatGPT
+One of our favorite budgeting apps has 30 percent off annual plans right now
 
-Sora appears exceedingly popular and shows no signs of slowing down.
+Newcomers can get a year of access to Monarch Money for $70.
 
-Ian Carlos Campbell
+Kris Holt
 
 Contributing Reporter
 
-Ian Carlos CampbellContributing Reporter
+Kris HoltContributing Reporter
 
-Thu, October 9, 2025 at 6:12 PM UTC
+Thu, October 9, 2025 at 5:40 PM UTC
 
-2 min read
+Towfiqu barbhuiya/Unsplash
 
-OpenAI
+Monarch Money is one of our favorite budgeting apps and, fittingly enough, there's a way for newcomers to save money on a subscription right now. If you use the code WELCOME at checkout, you can get an annual plan for 30 percent off. It typically costs $100, but you can get 12 months of access for $70 with this code.
 
-Sora, OpenAI's app and social network for AI-generated videos, has been downloaded over one million times, according to Sora head Bill Peebles. The app reached one million downloads in less than five days, Peebles says, "even faster than ChatGPT did." That's despite OpenAI only making the app available in North America, and its decision to require users to have an invite to actually use it.
+There are some key caveats here. The discount is only for new users, and it can't be combined with other offers. The code only works when you sign up through the web. You can't redeem it through the Monarch mobile app.
 
-Like TikTok, Sora offers an endless vertical feed of videos, only Sora's videos are AI-generated rather than uploaded by users. Creating a 10-second video of your own is as simple as writing a prompt to OpenAI's Sora 2 model in the app. And through the Sora's Cameo feature, you can even create videos of yourself and anyone else who's agreed to share their likeness to the service.
+Monarch Money
 
-sora hit 1M app downloads in <5 days, even faster than chatgpt did (despite the invite flow and only targeting north america!)!
+Monarch Money (annual plan)
 
-team working hard to keep up with surging growth. more features and fixes to overmoderation on the way!
+$70$100
 
-— Bill Peebles (@billpeeb) October 9, 2025
+Save $30 with code
 
-The limited guardrails OpenAI has put on Sora has already led to a rash of videos featuring OpenAI's Sam Altman and content that clearly infringes on copyright. The fact that Sora can so readily create videos of recognizable characters like Pikachu raises questions about what OpenAI's model was trained on, and has unsurprisingly prompted pushback from the larger entertainment industry.
+New users of Monarch Money can get a year of access to the in-depth budgeting app for $70.
+
+Save $30 with code
+
+Copied!
+
+WELCOME
+
+$70 at Monarch Money
+
+We feel that Monarch has a steeper learning curve than some other budget trackers and that certain aspects of the app are slightly more complex than they probably need to be. But it offers a great deal of customization and granularity, which outweighs our misgivings.
 
 Advertisement
 
 Advertisement
 
-Advertisement
+On the main dashboard, you'll see your net worth along with your latest transactions, spending versus the previous month, your income so far for the month and details about upcoming bills, your investments and goals you've set. There's also a link to a month-in-review page, which offers an in-depth overview of what's been happening with your money that month. You'll also be able to take a peek at how your net worth has changed over time.
 
-In response, the company has updated Sora to give users more control over what videos their likeness can appear in. OpenAI plans to offer similar controls to rights holders, giving them "the ability to specify how their characters can be used (including not at all)," according to Altman. It's not clear why these controls weren't available when Sora launched, but both seem like good changes.
-
-Because of Sora's invite system, it's difficult to say if the over one million downloads the app has received translates to as many users. It's not unusual for someone to download an app and never use it. Whatever the case, OpenAI's bet on AI-generated videos seems like it might be a winning one, provided the company finds a way to actually make more money than it looses generating videos for Sora.
+Monarch can connect to your bank and track Apple Card, Apple Cash and Savings accounts. It can pull in your transactions and balance history automatically and detect your recurring expenses and income. The app can even keep your car valuation up to date. While it might take a little work to set up Monarch (and you might have to tweak things here and there), it's a detailed budgeting app that can help you keep better track of your income, expenditure and net worth.
 
 Advertisement
 
