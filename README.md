@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/10/best-ipad-apps-for-unleashing-and-exploring-your-creativity/
+https://techcrunch.com/2025/10/10/homeland-security-reassigns-hundreds-of-cisa-cyber-staffers-to-support-trumps-deportation-crackdown/
 
-There are a number of iPad apps that can help you explore and express your creativity. Although the iPad started off as a simple device that could be used to stream content or browse the web on the go, Apple has essentially turned its iPads into powerful machines that can be used to do things like create digital art and edit videos.
+The U.S. Department of Homeland Security is reassigning hundreds of employees across several of its agencies to assist in the Trump administrations broad immigration crackdown and will dismiss staffers who refuse to comply, according to news reports.
 
-Weve compiled a list of some of the best iPad apps for creativity that are available on the App Store.
+Bloomberg reported Wednesday that the department moved staffers from the U.S. cybersecurity agency CISA, many of whom focus on issuing cyber guidance to help U.S. government agencies and critical infrastructure defend from cyber threats, to other agencies within the federal department, including Immigration and Customs Enforcement (ICE) and Customs and Border Protection (CBP).
