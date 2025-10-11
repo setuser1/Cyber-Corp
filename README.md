@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/10/prezent-raises-30-million-to-acquire-ai-services-firms-starting-with-founders-other-company/
+https://techcrunch.com/2025/10/10/best-ipad-apps-for-unleashing-and-exploring-your-creativity/
 
-Prezent, a startup that offers an AI-powered presentation builder to enterprises, said today that it has raised $30 million in funding led by Multiplier Capital, Greycroft, and Nomura Strategic Ventures, with participation from existing investors like Emergent Ventures, WestWave Capital, and Alumni Ventures.
+There are a number of iPad apps that can help you explore and express your creativity. Although the iPad started off as a simple device that could be used to stream content or browse the web on the go, Apple has essentially turned its iPads into powerful machines that can be used to do things like create digital art and edit videos.
 
-The Los Altos, California, startup, which is now valued at $400 million, has raised over $74 million to date. It plans to use the new capital largely for acquisitions.
+Weve compiled a list of some of the best iPad apps for creativity that are available on the App Store.
