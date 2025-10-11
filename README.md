@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/10/kalshi-hits-5b-valuation-days-after-rival-polymarket-gets-2b-nyse-backing-at-8b/
+https://techcrunch.com/2025/10/10/google-chrome-silences-those-pesky-notifications/
 
-Kalshi, a prediction market that allows people to bet on future events, announced that it raised over $300 million at a $5 billion valuation. The companys value has increased 2.5x since its last fundraise just three months ago, when it was valued at $2 billion.
+Googles Chrome web browser is about to become much less noisy.
 
-The fresh capital came from Kalshis existing investor, Sequoia Capital, with new investor Andreessen Horowitz co-leading the round. Paradigm Ventures, CapitalG, and Coinbase Ventures also participated.
+On Friday, the technology giant announced a new feature that will automatically disable browser notifications for the websites you havent interacted with recently, disrupting their ability to pop up alerts and updates that you may no longer be interested in.
