@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/10/the-fixers-dilemma-chris-lehane-and-openais-impossible-mission/
+https://techcrunch.com/2025/10/10/salesforce-ceo-says-national-guard-should-patrol-san-francisco-stunning-his-own-pr-team/
 
-Chris Lehane is one of the best in the business at making bad news disappear. Al Gores press secretary during the Clinton years, Airbnbs chief crisis manager through every regulatory nightmare from here to Brussels – Lehane knows how to spin. Now hes two years into what might be his most impossible gig yet: as OpenAIs VP of global policy, his job is to convince the world that OpenAI genuinely gives a damn about democratizing artificial intelligence while the company increasingly behaves like, well, every other tech giant thats ever claimed to be different.
+Marc Benioff has long been San Franciscos liberal-leaning billionaire, the tech executive who funded homeless services, donated to the citys public schools, and hosted Hillary Clinton fundraisers.
 
-I had 20 minutes with him on stage at the Elevate conference in Toronto earlier this week – 20 minutes to get past the talking points and into the real contradictions eating away at OpenAIs carefully constructed image. It wasnt easy or entirely successful. Lehane is genuinely good at his job. Hes likable. He sounds reasonable. He admits uncertainty. He even talks about waking up at 3 a.m. worried about whether any of this will actually benefit humanity.
+But in a new, wide-ranging phone interview with the New York Times from his private plane, Benioff revealed a political transformation that seemed to surprise even his own communications team, despite that Salesforce has hundreds of contracts with the federal government.
