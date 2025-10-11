@@ -1,41 +1,45 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/big-tech/the-uks-antitrust-regulator-will-keep-a-closer-eye-on-google-search-130021994.html?src=rss
+https://www.engadget.com/gaming/a-long-lost-ratchet-and-clank-mobile-game-has-been-found-123008739.html?src=rss
 
-Big tech
+Gaming
 
-The UK's antitrust regulator will keep a closer eye on Google Search
+A long-lost Ratchet and Clank mobile game has been found
 
-Google is expecting to face new rules and regulations on how Search works in the UK.
+The canceled Java title 'Ratchet & Clank: Clone Home' was a successor to 'Going Mobile.'
 
-Mariella Moon
+Steve Dent
 
-Contributing Reporter
+Reporter
 
-Mariella MoonContributing Reporter
+Steve DentReporter
 
-Fri, October 10, 2025 at 1:00 PM UTC
+Fri, October 10, 2025 at 12:30 PM UTC
 
 2 min read
 
-coldsnowstorm via Getty Images
+The Golden Bolt
 
-The UK's Competition and Markets Authority (CMA) has officially designated Google with strategic market status (SMS) under the new digital markets competition regime. Specifically, it found that Google holds "substantial and entrenched market power and a position of strategic significance" when it comes to general search and search advertising services. The digital markets competition regime came into force on January 1, 2025 and will enable the agency to "promote competition in fast-moving digital markets, while protecting UK consumers and businesses from unfair or harmful practices by the very largest technology firms."
+After years of trying, a dedicated team has managed to download and archive a fully playable version of the long-lost canceled mobile game, Ratchet & Clank: Clone Home. The story of its search and recovery has been detailed in a new video by YouTuber The Golden Bolt, who helped kick off the search himself back in 2019.
 
-So what does getting the "strategic market status" designation mean, exactly? As the CMA clarifies, it doesn't automatically mean Google did something wrong, but it does allow the agency to launch interventions that ensure general search services in the UK are "open to effective competition" and that businesses relying on Google are being treated fairly. The company is expecting to face new rules and regulations on how Search works in the near future. UK's CMA launched an investigation on Google's standing in the search industry on January 14 to confirm its status.
+Ratchet & Clank: Clone Home has usually been attributed to Handheld Games, which developed a string of mobile titles in 2005 including Spider-Man 2: The Hero Returns and Ratchet & Clank: Going Mobile, the predecessor to Clone Home. Originally set to debut in 2006 for Java phones, it was quietly canceled just prior to release.
 
-"We have found that Google maintains a strategic position in the search and search advertising sector – with more than 90% of searches in the UK taking place on its platform," said Will Hayter, Executive Director for Digital Markets at the CMA. To be clear, the designation applies to the company's AI Overviews and AI Mode features, as well, but not to its Gemini AI assistant, at least for now.
+It wasn't forgotten, though. Rumors persisted that it was a fully playable game, helping elevate it to mythical status among fans. Then, The Golden Bolt heard from one of the original developers that the game was indeed finished and may have found its way to a handful of mobile devices. His 2019 video on the subject helped kick off a new search.
+
+The most dedicated fans researching the game were college students "Emily" and "Super Gamer Omega Clank." The latter posted on Reddit four years ago that they found someone with the game on a Sony Ericsson W880i. It was encrypted, though, and as little as a few weeks ago, they said that their quest to extract it from that device was proving to be "hopeless."
+
+Advertisement
 
 Advertisement
 
 Advertisement
 
-Advertisement
+Then, a breakthrough. The team managed to safely crack the phone's encryption, extract Clone Home and archive it for anyone to download. Miraculously, it's complete and fully playable, if a bit unpolished. Golden Bolt now believes that the game was actually developed not by Handheld Games but a company called JavaGround, which made Sony's last few Java (J2ME) games. It may have been uploaded by accident to mobile networks like Cingular or Sprint for a brief period, then downloaded by a handful of people before being pulled.
 
-The CMA said it's expecting to start consulting on possible interventions later this year. In an announcement of its own, Google said that "many of the ideas for interventions that have been raised in this process would inhibit UK innovation and growth, potentially slowing product launches at a time of profound AI-based innovation." The company believes that some of those ideas would "pose direct harm to businesses" and could lead to higher prices for consumers.
+People who have played the game so far say it's surprisingly good and even better than Going Mobile. It's a wonderfully eccentric entry to the R&C canon (which now counts 17 titles), thanks to the nonsensical plot, solid mechanics, ability to play as two different Lombaxes and a gun called the "Ewezie" that turns your enemies into sheep.
 
-"The UK enjoys access to the latest products and services before other countries because it has so far avoided costly restrictions on popular services, such as Search. Retaining this position means avoiding unduly onerous regulations and learning from the negative results seen in other jurisdictions, which have cost businesses an estimated €114 billion," Google wrote. By "other jurisdictions," Google means the European Union, whose similar Digital Markets Act law designated the company as a gatekeeper in 2023.
+So why was Clone Home canceled? It may have been due to potential litigation between Sony and Handheld Games, The Golden Bolt speculated. In any case, it's a gem for game preservationists and an amazing reward for the years of work put in by R&C fans.
 
 Advertisement
 
