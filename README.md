@@ -1,29 +1,45 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/chrome-update-aims-to-automatically-turn-off-unwanted-notifications-170000844.html?src=rss
+https://www.engadget.com/big-tech/the-fcc-is-trying-to-make-it-easier-for-internet-providers-to-charge-hidden-fees-155305720.html?src=rss
 
-Chrome update aims to automatically turn off unwanted notifications
+Big tech
 
-The browser can stop sending alerts from websites you rarely interact with.
+The FCC is trying to make it easier for internet providers to charge hidden fees
 
-Anna Washenko
+A new proposal would weaken Biden-era transparency rules.
+
+Lawrence Bonk
 
 Contributing Reporter
 
-Anna WashenkoContributing Reporter
+Lawrence BonkContributing Reporter
 
-Fri, October 10, 2025 at 5:00 PM UTC
+Fri, October 10, 2025 at 3:53 PM UTC
 
-1 min read
+2 min read
 
-Chrome is getting a new feature aimed at cutting back on notification overload. If enabled, Chrome can now revoke notification permission for websites that the user hasn't interacted with recently. It's a similar option to the automatic actions taken by Chrome's Safety Check for apps such as the camera or location information. The new feature will roll out to Chrome on both Android devices and on desktop.
+Brandon Bell via Getty Images
 
-Chrome revoking notifications
+The FCC has submitted a proposal that would make it harder for consumers to receive itemized bills with accurate information from their ISPs, as spotted by The Verge. The draft would revise previous "unnecessary" requirements on the grounds that a fact-based list of charges "may confuse customers."
 
-The browser will, ironically, notify you when a site is no longer going to send notifications. Once a site's permissions have been revoked, a user can re-enable them through Safety Check or by manually re-starting them from the site in question. If you don't want Chrome to ever take these actions for you, you can turn off the permissions revoking option completely.
+This comes as a response to complaints by ISPs over a Biden-era transparency rule that went into effect back in 2024. Compliance with this rule mandates that ISPs make it easier for consumers to compare prices and avoid hidden fees. This typically comes in the form or something called a "nutrition label", which shows speeds, fees and data allowances for internet plans.
 
-Right now, Google said less than 1 percent of all notifications get any interactions from users. According to the company's internal tests, it found that receiving fewer overall notifications meant people were more likely to click on the alerts they did receive.
+The FCC is planning on examining ways to eliminate "any other label requirements that are unduly burdensome and provide minimal benefit to consumers." Getting an actual list of what we are paying $100 for each month doesn't seem like a minimal benefit to me.
+
+Advertisement
+
+Advertisement
+
+Advertisement
+
+The regulatory agency isn't looking to ditch these nutrition labels entirely, at least not yet, but is seeking to eliminate the requirements to itemize location-based fees. "We propose to eliminate the requirement that providers itemize discretionary, recurring monthly fees that represent costs they choose to pass through to consumers and which vary by consumer location," the draft proposal said.
+
+It also targets requirements to make this data readily available to all consumers. The proposal has language that would stop forcing ISPs to make this information multi-lingual and to make it available both online and to customers on the phone. It also seeks to decouple these labels from customer account portals. We aren't sure where these nutrition labels would continue to live.
+
+FCC head Brendan Carr wrote a cheeky blog about the proposal that seemed more interested in discussing pumpkin spice lattes over ISP regulation. He said that the proposal seeks to "separate the wheat from the chaff" so that consumers can "get quick and easy access to the information they want and need to compare broadband plans." The language of the proposal seems to indicate the exact opposite of that sentiment, but that's politics for ya.
+
+A vote on the proposal is scheduled for October 28. This is all part of Carr's "Delete, Delete, Delete" initiative, which seeks to appease President Trump by removing as many government regulations as possible.
 
 Advertisement
 
