@@ -1,35 +1,33 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/cybersecurity/vpn/malware-apps-posing-as-free-vpns-are-on-the-rise-175629088.html?src=rss
+https://www.engadget.com/wearables/ifixit-says-the-pixel-watch-4-is-the-most-repairable-smartwatch-around-171242107.html?src=rss
 
-Cybersecurity
+Wearables
 
-VPNs
+iFixit says the Pixel Watch 4 is the most repairable smartwatch around
 
-Malware apps posing as free VPNs are on the rise
+Its all in the screws.
 
-A recent report on the Klopatra malware operation shows hackers taking advantage of a surge in VPN use.
+Matt Tate
 
-Sam Chapman
+Matt Tate
 
-Senior Writer
-
-Sam ChapmanSenior Writer
-
-Fri, October 10, 2025 at 5:56 PM UTC
+Fri, October 10, 2025 at 5:12 PM UTC
 
 2 min read
 
-Diy13 via Getty Images
+Google
 
-Cybersecurity firm Cleafy just issued a report warning against a rising malware called Klopatra, which infects personal devices by posing as a free VPN app called Mobdro Pro IP + VPN. This is the latest corroboration of a series of warnings delivered by Kaspersky security researchers in 2024 about the increasing number of malware apps pretending to be free VPNs — a warning that's more relevant than ever as VPN usage spikes in response to age-restriction laws.
+When Google announced the Pixel Watch 4, it made a point to mention that the smartwatch was "designed with serviceability in mind." Now that it's out, the repair experts at iFixit have taken a look and can confirm Google's claims. The how-to specialist site has called the Pixel Watch 4 the most repairable smartwatch you can buy right now. Thats notable, as iFixit points out, because youd probably expect a sustainability-oriented brand such as Fairphone or Framework to be getting this kind of recognition ahead of Google. (That said, the Fairphone 6 did recently receive a perfect 10/10 repairability review.) But iFixit said it was "truly impressed" with what owners can do to fix Googles latest wearable on their own.
 
-Mobdro is the name of a popular IPTV app that's been taken down by the Spanish government at least once, but the Mobdro Pro IP + VPN app appears to be unrelated, piggybacking on the name to use it as a malware vector. If you download the app, it guides you through what appears to be an installation wizard, but is actually the steps for handing over total control of your device. Once inside, Klopatra abuses accessibility services to pose as you, enter your banking apps, drain your accounts and assimilate your device into the botnet for further attacks.
+​​
 
-Cleafy believes that Klopatra has already roped around 3,000 devices into its botnet, mainly in Italy and Spain. Its report concludes that the group behind Klopatra is probably based in Turkey, and is actively refining its approach, incorporating innovations and changing with the times. Hence the use of a combined cord-cutting and free VPN app as a mask — it's perfect for exploiting rising frustrations with both streaming balkanization and government clampdowns on web freedom.
+The first thing it highlights is the presence of visible screws that dont interfere with the watchs IP68 water and dust resistance rating. Both the vibration motor and battery are also easy to remove, the latter being glue-free and requiring you only to unscrew from its enclosure. As for the display, thats also secured by screws alone (spotting a pattern here yet?) and sealed using a replaceable O-ring gasket that you can easily purchase. iFixit notes that its harder for square watches to use the same solution, so Googles decision to make the Pixel Watch 4 round boosts its repairability.
 
-According to Kaspersky, other free VPNs used as malware vectors in the past year include MaskVPN, PaladinVPN, ShineVPN, ShieldVPN, DewVPN and ProxyGate. With Klopatra's runaway success, Cleafy believes that imitators will spring up. App stores aren't always quick to take down implicated apps, so be very careful to vet any free VPN app before you download it. If you're not sure, you can always go with one of the free recommendations from our best VPN list (Proton VPN or hide.me).
+At the end of its comprehensive video, iFixit awards Google a provisional rating of 9/10 for repairability, calling it "the most satisfying smartwatch teardown" it has performed to date. For transparency, the site points out that it does have an ongoing business partnership with Google, but insists its completely unrelated to the teardown treatment it gives the Pixel Watch 4.
+
+Its perhaps surprising level of repairability isnt the only thing in the Pixel Watch 4s favor. In Engadgets 86/100 review of the device, Cherlynn Low also praised its rapid charging speeds, excellent health and fitness tracking credentials and attractive display.
 
 Advertisement
 
