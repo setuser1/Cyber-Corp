@@ -1,45 +1,41 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/sonos-ace-headphones-are-100-off-right-now-142323913.html?src=rss
+https://www.engadget.com/big-tech/the-uks-antitrust-regulator-will-keep-a-closer-eye-on-google-search-130021994.html?src=rss
 
-Deals
+Big tech
 
-Sonos Ace headphones are $100 off right now
+The UK's antitrust regulator will keep a closer eye on Google Search
 
-You can purchase them either from Amazon or Sonos itself.
+Google is expecting to face new rules and regulations on how Search works in the UK.
 
-Matt Tate
+Mariella Moon
 
-Matt Tate
+Contributing Reporter
 
-Fri, October 10, 2025 at 2:23 PM UTC
+Mariella MoonContributing Reporter
 
-Billy Steele for Engadget
+Fri, October 10, 2025 at 1:00 PM UTC
 
-Sonos Ace headphones didnt get off to the best start, but the brands first headphones have come a long way since launch, and for $100 off when purchased directly from Sonos or Amazon, theyre well worth considering. The Ace are down to $299 from both retailers, and for that price youre getting one of the most feature-packed pairs of noise-canceling headphones on the market right now.
+2 min read
 
-Sonos
+coldsnowstorm via Getty Images
 
-Sonos Ace
+The UK's Competition and Markets Authority (CMA) has officially designated Google with strategic market status (SMS) under the new digital markets competition regime. Specifically, it found that Google holds "substantial and entrenched market power and a position of strategic significance" when it comes to general search and search advertising services. The digital markets competition regime came into force on January 1, 2025 and will enable the agency to "promote competition in fast-moving digital markets, while protecting UK consumers and businesses from unfair or harmful practices by the very largest technology firms."
 
-$299$399Save $100
+So what does getting the "strategic market status" designation mean, exactly? As the CMA clarifies, it doesn't automatically mean Google did something wrong, but it does allow the agency to launch interventions that ensure general search services in the UK are "open to effective competition" and that businesses relying on Google are being treated fairly. The company is expecting to face new rules and regulations on how Search works in the near future. UK's CMA launched an investigation on Google's standing in the search industry on January 14 to confirm its status.
 
-Sonos Ace are $100 off right now.
-
-$299 at Sonos
-
-When the Ace arrived in the summer of 2024, we praised them for their sound quality, premium design and comfy fit, but had no choice but to ding the headphones for not launching with some of their flashiest features. But thats no longer an issue if you pick up a pair today, as Sonos TrueCinema spatial audio tech now works as advertised.
-
-As a reminder, TrueCinema takes into account the dynamics of your living space when youre using TV Audio Swap to create a virtual 3D audio system in your headphones. The idea is that you feel like you arent wearing them at all, which is a big claim to make, but theres no denying that True Cinema enhances the experience of watching movies and TV shows while wearing the Ace.
+"We have found that Google maintains a strategic position in the search and search advertising sector – with more than 90% of searches in the UK taking place on its platform," said Will Hayter, Executive Director for Digital Markets at the CMA. To be clear, the designation applies to the company's AI Overviews and AI Mode features, as well, but not to its Gemini AI assistant, at least for now.
 
 Advertisement
 
 Advertisement
 
-Sonos has also improved the Aces adaptive noise cancellation in updates made available since launch, while phone calls are now clearer than they were when we first reviewed the headphones. Theyre still expensive at full price, but if you use other Sonos products in your home and think youll appreciate the Aces ability to swap audio output with a compatible Sonos soundbar (ideal for late-night movies when the kids are in bed), then its a very easy recommendation at $299.
+Advertisement
 
-Follow @EngadgetDeals on X for the latest tech deals and buying advice.
+The CMA said it's expecting to start consulting on possible interventions later this year. In an announcement of its own, Google said that "many of the ideas for interventions that have been raised in this process would inhibit UK innovation and growth, potentially slowing product launches at a time of profound AI-based innovation." The company believes that some of those ideas would "pose direct harm to businesses" and could lead to higher prices for consumers.
+
+"The UK enjoys access to the latest products and services before other countries because it has so far avoided costly restrictions on popular services, such as Search. Retaining this position means avoiding unduly onerous regulations and learning from the negative results seen in other jurisdictions, which have cost businesses an estimated €114 billion," Google wrote. By "other jurisdictions," Google means the European Union, whose similar Digital Markets Act law designated the company as a gatekeeper in 2023.
 
 Advertisement
 
