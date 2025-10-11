@@ -1,8 +1,12 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/10/homeland-security-reassigns-hundreds-of-cisa-cyber-staffers-to-support-trumps-deportation-crackdown/
+https://techcrunch.com/2025/10/10/iphone-17-pro-max-review-orange-you-glad-the-battery-is-bigger/
 
-The U.S. Department of Homeland Security is reassigning hundreds of employees across several of its agencies to assist in the Trump administrations broad immigration crackdown and will dismiss staffers who refuse to comply, according to news reports.
+When Apple announced its thin and light iPhone Air, some people said, &#8220;Who asked for a thinner phone?&#8221; Moments later, the company went in the other direction and announced a slightly thicker and bulkier iPhone 17 Pro lineup.
 
-Bloomberg reported Wednesday that the department moved staffers from the U.S. cybersecurity agency CISA, many of whom focus on issuing cyber guidance to help U.S. government agencies and critical infrastructure defend from cyber threats, to other agencies within the federal department, including Immigration and Customs Enforcement (ICE) and Customs and Border Protection (CBP).
+With this, Apple did what those people had wanted: It made a phone with a thicker form factor to accommodate a larger battery, leading to better performance. Out of the new iPhones, the Pro phones received more iterative updates (unless you count the new orange color). But people who buy these phones will still reap the benefits.
+
+The build
+
+The first thing that youll notice with the iPhone 17 Pro is the new unibody build with aluminum, alongside a new camera bump design on the back with space for MagSafe-based accessories below it. Ive gotten used to cross-body camera bumps like the one on the Pixel 10, so I dont mind the new design choice from Apple.
