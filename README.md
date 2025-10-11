@@ -1,12 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/10/iphone-17-pro-max-review-orange-you-glad-the-battery-is-bigger/
+https://techcrunch.com/2025/10/10/instagram-head-adam-mosseri-pushes-back-on-mrbeasts-ai-fears-but-admits-society-will-have-to-adjust/
 
-When Apple announced its thin and light iPhone Air, some people said, &#8220;Who asked for a thinner phone?&#8221; Moments later, the company went in the other direction and announced a slightly thicker and bulkier iPhone 17 Pro lineup.
+Instagram head Adam Mosseri said AI will change who can be creative, as the new tools and technology will give people who couldnt be creators before the ability to produce content at a certain quality and scale. However, he also admitted that bad actors will use the technology for &#8220;nefarious purposes&#8221; and that kids growing up today will have to be taught that you cant believe something just because you saw a video of it.
 
-With this, Apple did what those people had wanted: It made a phone with a thicker form factor to accommodate a larger battery, leading to better performance. Out of the new iPhones, the Pro phones received more iterative updates (unless you count the new orange color). But people who buy these phones will still reap the benefits.
-
-The build
-
-The first thing that youll notice with the iPhone 17 Pro is the new unibody build with aluminum, alongside a new camera bump design on the back with space for MagSafe-based accessories below it. Ive gotten used to cross-body camera bumps like the one on the Pixel 10, so I dont mind the new design choice from Apple.
+The Meta executive shared his thoughts on how AI is impacting the creator industry at the Bloomberg Screentime conference this week. At the interviews start, Mosseri was asked to address the recent comments from creator MrBeast (Jimmy Donaldson). On Threads, MrBeast had suggested that AI-generated videos could soon threaten creators livelihoods and said it was &#8220;scary times&#8221; for the industry.
