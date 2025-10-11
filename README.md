@@ -1,45 +1,49 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/big-tech/the-fcc-is-trying-to-make-it-easier-for-internet-providers-to-charge-hidden-fees-155305720.html?src=rss
+https://www.engadget.com/transportation/evs/ford-is-cutting-the-price-of-the-2026-f-150-lightning-by-up-to-4000-144241504.html?src=rss
 
-Big tech
+Transportation
 
-The FCC is trying to make it easier for internet providers to charge hidden fees
+EVs
 
-A new proposal would weaken Biden-era transparency rules.
+Ford is cutting the price of the 2026 F-150 Lightning by up to $4,000
 
-Lawrence Bonk
+The price cut only applies to the most expensive trims on the already pricey electric pickup.
+
+Andre Revilla
 
 Contributing Reporter
 
-Lawrence BonkContributing Reporter
+Andre RevillaContributing Reporter
 
-Fri, October 10, 2025 at 3:53 PM UTC
+Updated Fri, October 10, 2025 at 3:27 PM UTC
 
 2 min read
 
-Brandon Bell via Getty Images
+Ford
 
-The FCC has submitted a proposal that would make it harder for consumers to receive itemized bills with accurate information from their ISPs, as spotted by The Verge. The draft would revise previous "unnecessary" requirements on the grounds that a fact-based list of charges "may confuse customers."
+Ford is cutting the price of the 2026 F-150 Lightning by up to $4,000, as confirmed by the automaker to CarsDirect. The price cuts vary by trim, however, and will only apply to more expensive packages for the electric pickup truck. This comes as the $7,500 EV tax credit expired at the end of September.
 
-This comes as a response to complaints by ISPs over a Biden-era transparency rule that went into effect back in 2024. Compliance with this rule mandates that ISPs make it easier for consumers to compare prices and avoid hidden fees. This typically comes in the form or something called a "nutrition label", which shows speeds, fees and data allowances for internet plans.
+The 2026 model has a starting price of $63,345 for the STX trim, which is the same price as the previous year's entry-level XLT. The STX replaces the XLT and delivers 536 horsepower, up from the XLT's 452, and 290 miles of range, up from 240.
 
-The FCC is planning on examining ways to eliminate "any other label requirements that are unduly burdensome and provide minimal benefit to consumers." Getting an actual list of what we are paying $100 for each month doesn't seem like a minimal benefit to me.
-
-Advertisement
+The Flash edition will receive the full $4,000 price cut, giving it a new price of $65,995. The Lariat, originally priced at $76,995, will get just a $2,000 haircut and will sell for $74,995. The Platinum edition will be priced at $84,995 and will not cost less.
 
 Advertisement
 
 Advertisement
 
-The regulatory agency isn't looking to ditch these nutrition labels entirely, at least not yet, but is seeking to eliminate the requirements to itemize location-based fees. "We propose to eliminate the requirement that providers itemize discretionary, recurring monthly fees that represent costs they choose to pass through to consumers and which vary by consumer location," the draft proposal said.
+Advertisement
 
-It also targets requirements to make this data readily available to all consumers. The proposal has language that would stop forcing ISPs to make this information multi-lingual and to make it available both online and to customers on the phone. It also seeks to decouple these labels from customer account portals. We aren't sure where these nutrition labels would continue to live.
+This summer, Ford announced that it would release an affordable midsize all-electric pickup with a starting price of around $30,000 in 2027. The truck would be built on the company's upcoming Ford Universal EV Platform that will be shared by a new family of products. These models would use Ford's upcoming prismatic LFP batteries.
 
-FCC head Brendan Carr wrote a cheeky blog about the proposal that seemed more interested in discussing pumpkin spice lattes over ISP regulation. He said that the proposal seeks to "separate the wheat from the chaff" so that consumers can "get quick and easy access to the information they want and need to compare broadband plans." The language of the proposal seems to indicate the exact opposite of that sentiment, but that's politics for ya.
+As EV-related tax incentives continue to expire, manufacturers will need to reach into their own pockets to deliver value to consumers. This week Tesla announced the Model 3 and Model Y 'Standard' editions, which give up some luxury touches in exchange for price, with both starting at under $40,000. Inflation has also played a large role in car pricing over the last five years, as $40,000 has roughly the same purchasing power as $32,000 in 2020.
 
-A vote on the proposal is scheduled for October 28. This is all part of Carr's "Delete, Delete, Delete" initiative, which seeks to appease President Trump by removing as many government regulations as possible.
+Ford recently walked back a program that would have enabled dealers to offer a $7,500 tax credit on EV leases even after the expiration of federal subsidies on September 30, as first reported by Reuters. The plan involved having the companys lending arm purchase new EVs out of the brands dealers inventory, after which Ford would apply for the tax credit on the vehicles. That credit would then have been considered in the EV lease terms for customers, passing on the savings.
+
+GM was set to have a similar program before canceling it earlier this week. According to Reuters sources, GM killed the program after Republican Senator Bernie Moreno of Ohio raised concerns about it. It is unclear why Ford followed suit.
+
+Update 11:23 EST: Added more context.
 
 Advertisement
 
