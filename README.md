@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/11/thinking-machines-lab-co-founder-andrew-tulloch-heads-to-meta/
+https://techcrunch.com/2025/10/11/apple-says-goodbye-to-the-clips-app/
 
-Thinking Machines Lab, the AI startup led by former OpenAI CTO Mira Murati, has lost one of its co-founders to Meta.
+Apple appears to be winding down support of Clips, with the company removing Clips from the App Store and saying it will no longer be making any updates.
 
-The Wall Street Journal reports that AI researcher Andrew Tulloch announced his departure to employees in a message on Friday. A Thinking Machine Labs spokesperson confirmed Tullochs departure to the WSJ, saying he “has decided to pursue a different path for personal reasons.”
+In a support page on the Apple website, the company says that as of October 10, Clips is no longer available for new users to download, but existing users can continue to use the app on current or earlier versions of iOS and iPadOS. Existing users can also re-download the app from their Apple account if needed.
