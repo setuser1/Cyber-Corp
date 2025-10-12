@@ -1,14 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/11/its-not-too-late-for-apple-to-get-ai-right/
+https://techcrunch.com/2025/10/10/the-fixers-dilemma-chris-lehane-and-openais-impossible-mission/
 
-This week, OpenAI announced that apps can now run directly inside ChatGPT, letting users book travel, create playlists, and edit designs without switching between different apps. Some immediately declared it the app platform of the future &#8212; predicting a ChatGPT-powered world where Apples App Store becomes obsolete.
+Chris Lehane is one of the best in the business at making bad news disappear. Al Gores press secretary during the Clinton years, Airbnbs chief crisis manager through every regulatory nightmare from here to Brussels – Lehane knows how to spin. Now hes two years into what might be his most impossible gig yet: as OpenAIs VP of global policy, his job is to convince the world that OpenAI genuinely gives a damn about democratizing artificial intelligence while the company increasingly behaves like, well, every other tech giant thats ever claimed to be different.
 
-An open question was answered today &#8211; "what will the AI-native distribution channel be?"
-
-It looks like ChatGPT will be that channel with 800M active users + the Apps SDK.
-
-This is likely as important as Steve Jobs announcing the app store in March of 2008 &#8230; pic.twitter.com/6RCbIi0foq
-
-&mdash; Anish Acharya (@illscience) October 7, 2025
+I had 20 minutes with him on stage at the Elevate conference in Toronto earlier this week – 20 minutes to get past the talking points and into the real contradictions eating away at OpenAIs carefully constructed image. It wasnt easy or entirely successful. Lehane is genuinely good at his job. Hes likable. He sounds reasonable. He admits uncertainty. He even talks about waking up at 3 a.m. worried about whether any of this will actually benefit humanity.
