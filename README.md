@@ -1,8 +1,14 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/11/trump-fires-back-at-chinas-rare-earth-mineral-restrictions-by-threatening-100-tariffs/
+https://techcrunch.com/2025/10/11/its-not-too-late-for-apple-to-get-ai-right/
 
-President Donald Trump declared Friday that he will impose a 100% tariff on all imports from China, while also imposing export controls on “any and all critical software” from the United States.
+This week, OpenAI announced that apps can now run directly inside ChatGPT, letting users book travel, create playlists, and edit designs without switching between different apps. Some immediately declared it the app platform of the future &#8212; predicting a ChatGPT-powered world where Apples App Store becomes obsolete.
 
-This is the latest move in what looks like an escalating trade conflict between the United States and China. In a Truth Social post announcing the tariffs, Trump also said this new tariff would be “over and above” any tariffs already imposed on Chinese imports. (CNBC reports that while U.S. tariffs on Chinese imports vary depending on the goods, the base tariff rate is already 40%.)
+An open question was answered today &#8211; "what will the AI-native distribution channel be?"
+
+It looks like ChatGPT will be that channel with 800M active users + the Apps SDK.
+
+This is likely as important as Steve Jobs announcing the app store in March of 2008 &#8230; pic.twitter.com/6RCbIi0foq
+
+&mdash; Anish Acharya (@illscience) October 7, 2025
