@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/10/salesforce-ceo-says-national-guard-should-patrol-san-francisco-stunning-his-own-pr-team/
+https://techcrunch.com/2025/10/10/navan-plows-ahead-with-ipo-during-shutdown-aims-for-6-45b-valuation/
 
-Marc Benioff has long been San Franciscos liberal-leaning billionaire, the tech executive who funded homeless services, donated to the citys public schools, and hosted Hillary Clinton fundraisers.
+Corporate travel management company Navan &#8212; once known as TripActions &#8212; filed updated IPO documents with the U.S. Securities and Exchange Commission on Friday, even though the federal government is currently shut down.
 
-But in a new, wide-ranging phone interview with the New York Times from his private plane, Benioff revealed a political transformation that seemed to surprise even his own communications team, despite that Salesforce has hundreds of contracts with the federal government.
+Navan is proceeding under new SEC rules that allows wanna-be public companies that are in limbo during the shutdown to file updated information, including share count and pricing, and have their statements automatically okayed in 20 days without staff scrutiny. Once the filings are declared effective, Navan can kick off its roadshow. The rule, however, doesnt mean that staff cant ask questions or require amended filings later.
