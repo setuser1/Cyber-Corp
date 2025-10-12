@@ -1,13 +1,13 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/social-media/instagram-tests-new-layout-that-puts-the-spotlight-on-reels-and-dms-215407062.html?src=rss
+https://www.engadget.com/ar-vr/apple-is-bringing-live-nba-games-to-the-vision-pro-in-2026-184941594.html?src=rss
 
-Social media
+AR/VR
 
-Instagram tests new layout that puts the spotlight on Reels and DMs
+Apple is bringing live NBA games to the Vision Pro in 2026
 
-The change is optional for now, but lines up with Meta's stated priorities.
+Lakers games will be filmed and viewable in the Apple Immersive video format.
 
 Ian Carlos Campbell
 
@@ -15,27 +15,19 @@ Contributing Reporter
 
 Ian Carlos CampbellContributing Reporter
 
-Updated Fri, October 10, 2025 at 9:54 PM UTC
+Fri, October 10, 2025 at 6:49 PM UTC
 
 2 min read
 
-Meta
+Apple
 
-Instagram head Adam Mosseri has announced that as part of a test, some Instagram users will be able to try a new menu bar in the app with a different arrangement of tabs. Notably, the new menu bar has dedicated tabs for both Reels and DMs, two of the app's most popular features.
+Apple is partnering with Spectrum SportsNet to stream select Los Angeles Lakers games directly to the Apple Vision Pro during the 2025-2026 basketball season. The games will be filmed in the Apple Immersive video format, the same VR-friendly filming style the company used to capture the Metallica concert film it released earlier this year.
 
-If you opt-in to the test, Instagram's current tabs for your feed, search, creating a new post, Reels and your profile page will be replaced by a new layout that swaps search and Reels, and switches the dedicated tab for creating a post with a new one for DMs. Meta's test also makes it possible to swipe between tabs.
+Beyond giving you a reason to blow the dust off your $3,500 Apple Vision Pro, watching the games in-headset will showcase "perspectives impossible to capture in traditional broadcasts," Apple claims. Live games will be limited to headset owners living in the Lakers' regional broadcast territory (Southern California, Hawaii and parts of southern Nevada) and will likely require a subscription to view, but Apple says the full replays and highlights will also be accessible in "select countries and regions from both the SportsNet and NBA apps." There's no schedule of games available yet, but Apple and Spectrum say they'll announce their final plans this fall, with the first games streaming early 2026.
 
-Mosseri's post announcing the test acknowledges that these kinds of changes "can take time to get used to," which is why the new layout is optional for now. Based on recent announcements though, it's clear Meta has wanted to move in this direction for a bit. Setting aside the long-awaited iPad version of Instagram defaulting to Reels, the company has also said publicly it plans to prioritize messaging and short-form videos moving forward. It even tested a similar Instagram tab redesign with Indian users in early October, where the default tab was Reels and the second tab was DMs.
+While the general consensus on the Vision Pro is that it makes for a great media consumption device, sports programming that takes advantage of its unique features has been largely missing. Apple makes it easy to watch things like Friday Night Baseball and Major League Soccer, but the NBA is the only mainstream sports league trying to offer an experience that's specific to the Vision Pro. Beyond playing live games, the NBA visionOS app can display real-time player stats, stream multiple games at once in multiview and show you a tabletop view of games, complete with a 3D court and tiny players.
 
-Advertisement
-
-Advertisement
-
-Advertisement
-
-"Reels and DMs have driven most all our growth at Instagram over the last few years, so we are exploring making them the first two tabs," Mosseri said at the time. Users who joined Instagram when it was an app for sharing photos might be uncomfortable with its slow drift away from photography, but the shift is reflective of Meta's decision to chase larger social media trends.
-
-As posting has become more professionalized, chatting and sharing privately has become more popular. If you take Meta at its word, Instagram is increasingly an app for consuming content made by people you don't know, and then talking about it in private group chats with friends. This test just reflects that reality more accurately.
+Now that Apple is reportedly prioritizing smart glasses over a lighter and cheaper version of the Vision Pro, the best thing the company can do is supply existing owners with new things to watch. Not everyone loves the Lakers, but if it opens the door to more live sports in the future, that's only a good thing.
 
 Advertisement
 
