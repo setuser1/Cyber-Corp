@@ -1,27 +1,31 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/apple-is-winding-down-clips-its-forgotten-video-editing-app-210907085.html?src=rss
+https://www.engadget.com/ai/openai-no-longer-has-to-preserve-all-of-its-chatgpt-data-with-some-exceptions-192422093.html?src=rss
 
-Apple is winding down Clips, its forgotten video-editing app
+AI
 
-Existing users will still have access for now, but it's no longer available for new downloads.
+OpenAI no longer has to preserve all of its ChatGPT data, with some exceptions
 
-Cheyenne MacDonald
+The latest decision in New York Times' copyright infringement case against OpenAI puts an end to a sweeping order related to chatlogs.
 
-Weekend Editor
+Jackson Chen
 
-Cheyenne MacDonaldWeekend Editor
+Contributing reporter
 
-Sat, October 11, 2025 at 9:09 PM UTC
+Jackson ChenContributing reporter
+
+Sat, October 11, 2025 at 7:24 PM UTC
 
 1 min read
 
-Apple
+Reuters / Reuters
 
-It seems to be the end of the road for Apple's Clips app. The company said on a support page that it has stopped updating the video-editing app, and new users can no longer download it from the App Store. Existing users on iOS and iPadOS will continue to have access for the time being, but the company hasn't said how long that will last. "If you previously downloaded the Clips app, you can still redownload it from your Apple account in the App Store," the support page notes.
+The controversial preservation order requiring OpenAI to indefinitely keep records of its ChatGPT data has been terminated. Federal judge Ona T. Wang filed a new order on October 9 that frees OpenAI of an obligation to "preserve and segregate all output log data that would otherwise be deleted on a going forward basis."
 
-Clips was introduced in 2017 and offers a host of editing tools geared toward creating videos for social media. But Clips never really caught on, and many of the features it boasts are pretty much standard fare on the social apps now. Apple has recommended that Clips users save their  videos to their photo libraries or elsewhere, so if you are one of the few users hanging on, you should probably go ahead and do that before it's too late.
+The case kicked off in late 2023, with the New York Times suing OpenAI for copyright infringement, alleging that the AI giant trained its models with the news outlet's intellectual property without proper compensation. In May of this year, OpenAI was ordered to retain all of its chat logs so that the NYT could investigate claims of copyright violation. In response, OpenAI appealed the court order, arguing that the preservation order was an "overreach" and risks its users' privacy.
+
+However, this latest decision means the AI giant no longer has to preserve chat logs as of September 26, except for some. The judge in the case said that any chat logs already saved under the previous order would still be accessible and that OpenAI is required to hold on to any data related to ChatGPT accounts that have been flagged by the NYT. Moving forward, the NYT is allowed to expand the number of flagged users, as it continues to comb through OpenAI's preserved records.
 
 Advertisement
 
