@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/11/prince-harry-and-meghan-call-out-the-harmful-effects-of-social-media-on-todays-youth/
+https://techcrunch.com/2025/10/11/trump-fires-back-at-chinas-rare-earth-mineral-restrictions-by-threatening-100-tariffs/
 
-The guests sipped prosecco and chattered away while dessert was served at the third annual Project Health Minds Gala on Thursday night in New York.
+President Donald Trump declared Friday that he will impose a 100% tariff on all imports from China, while also imposing export controls on “any and all critical software” from the United States.
 
-The evening was winding down, but there was still one big award to give out: Humanitarian of the Year, which this year would be honoring Prince Harry and Meghan, the Duke and Duchess of Sussex, for creating The Parents Network through their nonprofit Archewell Foundation. The Parents Network supports families who have been harmed by social media.
+This is the latest move in what looks like an escalating trade conflict between the United States and China. In a Truth Social post announcing the tariffs, Trump also said this new tariff would be “over and above” any tariffs already imposed on Chinese imports. (CNBC reports that while U.S. tariffs on Chinese imports vary depending on the goods, the base tariff rate is already 40%.)
