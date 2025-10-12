@@ -1,13 +1,15 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/anbernics-modern-day-nintendo-ds-dupe-is-cheaper-than-the-original-174405199.html?src=rss
+https://www.engadget.com/transportation/evs/the-beloved-chevrolet-bolt-is-back-but-only-for-a-limited-run-161552328.html?src=rss
 
-Gaming
+Transportation
 
-Anbernic's modern-day Nintendo DS dupe is cheaper than the original
+EVs
 
-The handheld maker teased its dual-screen device that will come in four colors and start at less than $100.
+The beloved Chevrolet Bolt is back but only for a 'limited run'
+
+The 2027 Chevy Bolt will hit dealerships early next year with a starting price of $29,990.
 
 Jackson Chen
 
@@ -15,19 +17,19 @@ Contributing reporter
 
 Jackson ChenContributing reporter
 
-Sat, October 11, 2025 at 5:44 PM UTC
+Sat, October 11, 2025 at 4:15 PM UTC
 
 1 min read
 
-Anbernic
+Chevrolet
 
-After remaking every Game Boy model imaginable, Anbernic is ready to take on the next frontier of classic gaming handhelds: the Nintendo DS. In its usual drip-feed fashion, the handheld maker released a teaser video revealing the Anbernic RG DS. The company didn't offer many details for its Nintendo DS clone, but announced that it would cost less than $100.
+One of the most affordable EVs in America, the Chevrolet Bolt, has made its long-awaited comeback. After discontinuing the Bolt in 2023, the American automaker has refreshed the popular EV with a 2027 model that has some key upgrades. Chevy said the new Bolt will be available at dealerships in the first quarter of 2026, starting with a comfort trim that goes for at least $29,990. The updated Bolt will get even cheaper in the coming months when Chevy releases an LT base model that starts at $28,995.
 
-That price tag isn't surprising for anyone who's been following Anbernic's recipe of recreating iconic handhelds at an affordable price point. However, it's still an attractive price point that's even cheaper than the Nintendo DS' original MSRP of $149.99. Beyond price, Anbernic hinted at a possible new chip and showed off four colorways, including black/red, teal, white and transparent.
+That price tag offers an upgraded EV with an estimated range of 255 miles and peak charging speeds of up to 150kW. According to Chevy, the new Bolt can charge 2.5x faster than the previous model, which often saw complaints about charging speed. Now with a new LFP battery, the 2027 Bolt can charge from 10 to 80 percent in 26 minutes and has access to both DC fast charging and Tesla's Supercharger network thanks to a native NACS port. Along with an 11-inch driver display, the Chevy Bolt is built with an 11.3-inch infotainment display that can handle navigation, music, and entertainment with Google built-in. Notably, the refreshed Bolt doesn't have Apple CarPlay compatibility, even though previous models did.
 
-Anbernic
+Chevrolet
 
-Anbernic hasn't announced a release date yet, but the company often starts selling its devices shortly after the first reveal video. Once available, the Anbernic RG DS will compete against the more premium Ayn Thor that starts at $250. It's important to note that Anbernic paused shipments from its Chinese warehouses to US customers in April following the tariff changes, meaning American buyers were limited to Anbernic's US stock. The previous notice has since been removed, but the Trump administration recently announced another retaliatory tariff on all Chinese goods.
+While Chevy revived the Bolt, it returns as a "limited run model." The carmaker said in a statement that it "moved quickly to retain the nameplate in our portfolio for a little longer, after hearing feedback from ending production," and added that the "Bolt will be available for a limited time...as one of our highest volume EVs at Chevrolet."
 
 Advertisement
 
