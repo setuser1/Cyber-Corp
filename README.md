@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/12/elon-musk-vs-the-regulators/
+https://techcrunch.com/2025/10/12/nvidias-ai-empire-a-look-at-its-top-startup-investments/
 
-Welcome back to TechCrunch Mobility, your hub for all things “future of transportation.” To get this in your inbox, sign up here for free — just click TechCrunch Mobility!
+No company has capitalized on the AI revolution more dramatically than Nvidia. Its revenue, profitability, and cash reserves have skyrocketed since the introduction of ChatGPT over two years ago — and the many competitive generative AI services that have launched since. Its stock price has soared, making it a $4.5 trillion market cap company.
 
-Elon Musk has never had the best relationship with regulators, often bumping up against or outright sidestepping local and state laws where his numerous companies operate.
+The worlds leading high-performance GPU maker has used its ballooning fortunes to significantly increase investments in startups, particularly in AI.
