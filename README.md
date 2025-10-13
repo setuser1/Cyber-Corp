@@ -1,13 +1,13 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ai/openai-no-longer-has-to-preserve-all-of-its-chatgpt-data-with-some-exceptions-192422093.html?src=rss
+https://www.engadget.com/gaming/anbernics-modern-day-nintendo-ds-dupe-is-cheaper-than-the-original-174405199.html?src=rss
 
-AI
+Gaming
 
-OpenAI no longer has to preserve all of its ChatGPT data, with some exceptions
+Anbernic's modern-day Nintendo DS dupe is cheaper than the original
 
-The latest decision in New York Times' copyright infringement case against OpenAI puts an end to a sweeping order related to chatlogs.
+The handheld maker teased its dual-screen device that will come in four colors and start at less than $100.
 
 Jackson Chen
 
@@ -15,17 +15,19 @@ Contributing reporter
 
 Jackson ChenContributing reporter
 
-Sat, October 11, 2025 at 7:24 PM UTC
+Sat, October 11, 2025 at 5:44 PM UTC
 
 1 min read
 
-Reuters / Reuters
+Anbernic
 
-The controversial preservation order requiring OpenAI to indefinitely keep records of its ChatGPT data has been terminated. Federal judge Ona T. Wang filed a new order on October 9 that frees OpenAI of an obligation to "preserve and segregate all output log data that would otherwise be deleted on a going forward basis."
+After remaking every Game Boy model imaginable, Anbernic is ready to take on the next frontier of classic gaming handhelds: the Nintendo DS. In its usual drip-feed fashion, the handheld maker released a teaser video revealing the Anbernic RG DS. The company didn't offer many details for its Nintendo DS clone, but announced that it would cost less than $100.
 
-The case kicked off in late 2023, with the New York Times suing OpenAI for copyright infringement, alleging that the AI giant trained its models with the news outlet's intellectual property without proper compensation. In May of this year, OpenAI was ordered to retain all of its chat logs so that the NYT could investigate claims of copyright violation. In response, OpenAI appealed the court order, arguing that the preservation order was an "overreach" and risks its users' privacy.
+That price tag isn't surprising for anyone who's been following Anbernic's recipe of recreating iconic handhelds at an affordable price point. However, it's still an attractive price point that's even cheaper than the Nintendo DS' original MSRP of $149.99. Beyond price, Anbernic hinted at a possible new chip and showed off four colorways, including black/red, teal, white and transparent.
 
-However, this latest decision means the AI giant no longer has to preserve chat logs as of September 26, except for some. The judge in the case said that any chat logs already saved under the previous order would still be accessible and that OpenAI is required to hold on to any data related to ChatGPT accounts that have been flagged by the NYT. Moving forward, the NYT is allowed to expand the number of flagged users, as it continues to comb through OpenAI's preserved records.
+Anbernic
+
+Anbernic hasn't announced a release date yet, but the company often starts selling its devices shortly after the first reveal video. Once available, the Anbernic RG DS will compete against the more premium Ayn Thor that starts at $250. It's important to note that Anbernic paused shipments from its Chinese warehouses to US customers in April following the tariff changes, meaning American buyers were limited to Anbernic's US stock. The previous notice has since been removed, but the Trump administration recently announced another retaliatory tariff on all Chinese goods.
 
 Advertisement
 
