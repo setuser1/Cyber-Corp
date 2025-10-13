@@ -1,95 +1,107 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/computing/windows-10-support-ends-october-14-but-heres-how-to-get-an-extra-year-for-free-125118616.html?src=rss
+https://www.engadget.com/gaming/stylish-beat-em-ups-platformers-and-rpgs-and-other-new-indie-games-worth-checking-out-110000184.html?src=rss
 
-Computing
+Gaming
 
-Windows 10 support ends October 14, but here's how to get an extra year for free
+Stylish beat-'em-ups, platformers and RPGs, and other new indie games worth checking out
 
-Thanks to Extended Security Updates, you've got another 12 months to figure things out.
+Plus, Getting Over It, but make it pinball.
 
-Katie Teague
+Kris Holt
 
-Senior How-To Writer
+Contributing Reporter
 
-Katie TeagueSenior How-To Writer
+Kris HoltContributing Reporter
 
-Sat, October 11, 2025 at 12:51 PM UTC
+Sat, October 11, 2025 at 11:00 AM UTC
 
-5 min read
+6 min read
 
-You'll get access to Windows 10 a little longer by doing this. (Getty Images)
+Little Rocket Lab
 
-You've known it for a while: Microsoft has determined that it's moving Windows 10 to "end of life" status starting on October 14. That means while Windows 10 PCs will continue to work after that date, they'll stop getting important security updates by default. That leaves you with three choices if you want to make sure your computer remains secure:
+( Teenage Astronauts/No More Robots)
 
-You can choose to upgrade to Windows 11 for free if your computer is compatible.
+Welcome to our latest roundup of what's going on in the indie game space. Some gorgeous new games arrived this week, and we've got some demos and reveals from upcoming projects to take a look at.
 
-You can buy a new PC that already has Windows 11 pre-installed (or opt for an alternative, like a Mac or a Chromebook).
+Later this month, Lorelai and the Laser Eyes studio Simogo is going to celebrate its 15th anniversary with some news and surprises. Perhaps the developer is porting some of its earlier games to more platforms. I'm hoping that we'll learn about Simogo's next game as well.
 
-Forget about Windows 11 right now and sign up for the Extended Security Updates (ESU), which lets you kick the can down the road for a year.
+I'm not holding out hope for a sequel to Sayonara Wild Hearts, which is my favorite game of all time depending on the day you ask me (on other days, it's The Legend of Zelda: A Link to the Past, FYI). However, if Simogo announces a live concert of music from the game, I'm going to do my damndest to be there. I'll be tuning in on October 28 to learn what the studio has for me us in any case.
 
-Since the last one is easy — and can now be done for free in many cases — that's what we're focusing on here. We'll walk you through the steps of keeping Windows 10 on your PC… for now, at least.
-
-How to sign up for Windows 10 Extended Security Updates on your computer
-
-We can question Microsoft's motives for killing off Windows 10, even though it works perfectly well on most older PCs. But without those periodic security updates, your PC will become increasingly susceptible to malware with each passing week. To that end, enrolling in Extended Security Updates (ESU) will give you another year of using Windows 10 securely.
+Speaking of showcases, Entalto Publishing and developer GGTech ran one of their own this week. The Out of Bounds event shone a spotlight on a dozen indie games, spanning a breadth of genres.
 
 Advertisement
 
 Advertisement
 
-At one point, Microsoft suggested the 12-month extension would require a $30 fee. While that's still an option, there's now a free path for Windows 10 users in the US. Here's how to make it happen.
+Also, a quick reminder that the latest Steam Next Fest starts at 1PM ET on Monday, October 13. As always, the week-long event will have tons of demos for you to check out. Its always worth trying a bunch of them. You never know, you might end up being one of the first few folks to play the next Balatro, Manor Lords or Deep Rock Galactic Survivor.
 
-Step 1: Make sure your PC is up to date
+New releases
 
-You can find out if your computer is up-to-date by going into your Settings > System > About, then scroll down to see what version you're running. If not, you'll want to make sure you also install all the Windows 10 updates available.
+Absolum is a beat-'em-up from the folks behind Streets of Rage 4. It's the first original IP from Dotemu, which has found success with the likes of the terrific Teenage Mutant Ninja Turtles: Shredders Revenge. It co-developed this game with Guard Crush Games and Supamonks. The art and animation from the latter looks absolutely divine.
 
-Step 2: Make sure you're using an administrator account
+You can play Absolum solo or with a friend. Since it's a roguelite, you'll gain upgrades to bolster your character on each run while earning experience that goes toward permanent progression. There are multiple paths to explore, so the replayability factor seems strong here. Engadget senior reporter Igor Bonifacic spent some time with Absolum this summer and was impressed by it. The game received strong reviews this week too.
 
-If you share a computer with multiple people in your household, make sure you're signed in to the administrator account. Typically, it's the first account created on the computer. You'll know it's the right one when you see "Administrator" under the name. (You can double-check under Settings > Your Info.)
+Absolum is out now on Steam, Nintendo Switch, PS4 and PS5. Dotemu also has another beat-'em-up, Marvel Cosmic Invasion, coming soon.
 
-Step 3: Verify if your PC is eligible to upgrade to Windows 11 (or not)
-
-If you see an option to upgrade to Windows 11, just do that. It's free and it keeps you in the Windows loop. Otherwise, continue following the steps below so you can keep your computer safe with security updates.
-
-Step 4: Enroll in Extended Security Updates
-
-Sign up for ESU by selecting Update & Security from the Settings menu. Click the "Enroll Now" sign-up link, as pictured below. Again, you may see an option to download Windows 11 if your computer meets the requirements (again, definitely do that if you see it).
-
-Find out if you need to update your computer. (Screenshot/Engadget)
-
-If you're not seeing the "Enroll now" link, you probably need to update and install the latest Windows 10 updates (as noted above).
-
-By enrolling in Extended Security Updates, you'll have another year before you need to upgrade to Windows 11. (Screenshots/Engadget)
-
-Step 5: Choose your upgrade method
-
-Next up is choosing how you want to enroll, and you have a few options. The easiest way is to back up your PC settings. It's free, but it takes a little bit of time since you'll need to back up your data. Again, you'll need to be using your administrator account to get started.
-
-Back up your PC before you enroll in ESU. (ExplainingComputers via YouTube)
-
-That said, the free option here comes with two catches, at least for users in the US. (European users will get the free option with no strings attached.) The first is that you'll be linking your Windows login to Microsoft's cloud-based online service. Most users have likely already done this (if they're using CoPilot, Office 365, GamePass, OneDrive or one of Microsoft's other various online services). But if you've specifically opted for a local login to Windows, the price you're paying for this "free" extension is joining the cloud-connected Microsoft universe.
+A few reviews I've read for Bye Sweet Carole (which are fairly mixed) dinged it for having clunky controls and some other quality-of-life problems, such as getting softlocked while trying to complete puzzles. I hope Little Sewing Machine can iron out those issues since the presentation of this game is quite something. It looks like an early-'90s animated movie, with hand-drawn animations and, seemingly, a soundtrack to match.
 
 Advertisement
 
 Advertisement
 
-The other potential issue is that the free backup only applies to the first 5 GB of storage. Anything more, and youll need to pay up for Microsoft's OneDrive services. But thankfully, you can turn off anything you don't want to back up by going to Settings > OneDrive and toggling off options like Documents, Pictures and Videos to get in under the free threshold to start.
-
-Once you're signed in, a window will pop up that says "Add this device to receive Extended Security Updates." Click Add Device to enroll it. Click Done.
-
-A note: Thanks to YouTube's Explaining Computers channel, where we grabbed the screenshot above (since our test PC was already signed up for cloud backups, and didn't provide the splash screen to choose options). You can watch their full video if you'd like a deeper dive into the process.
-
-That's it, you're done! (Until next year)
-
-You've got 12 more months to figure out an alternative upgrade path to Windows 11. If anything changes next year, we'll update this story with what your next steps are.
-
-You did it right if you see this window. (Screenshot/Engadget)
+Bye Sweet Carole is a 2D horror-platformer from publisher Maximum Entertainment in which you play as a young girl trying to find her best friend, who disappeared from an orphanage. It's out now on PC, PS5, Nintendo Switch and Xbox Series X/S.
 
 Advertisement
 
 Advertisement
+
+Want to see another new game with a unique look that makes it stand out from the crowd? Of course you do.
+
+Exploration action game Dreams of Another — which landed on PS5, PS VR2 and Steam this week — sees you creating the environment in a dream-like world by shooting at it. Director Baiyon (PixelJunk Eden) and the team at Q-Games used point cloud rendering technology to create the unusual, but captivating visuals. Dunno why they felt the need to put a clown in this game though. Clowns are rotten things.
+
+Dreams of Another arrived on the same day that Q-Games' PixelJunk Eden 2 hit PS4, PS5 and Steam (it's coming to Epic Games Store as well). That game debuted on Nintendo Switch in 2020.
+
+Here's yet another lovely-looking project, and this time it's a pixel-art game from Teenage Astronauts and publisher No More Robots. In Little Rocket Lab, you play as aspiring engineer Morgan, who sets out to build factories with the aim of achieving her family's dream of making a rocket ship. Its more build a rocket, girl, than Build A Rocket Boy.
+
+Advertisement
+
+Advertisement
+
+This is a blend of a factory builder and life sim, and it looks rather charming. Little Rocket Lab has touched down on Steam and Xbox. It's on Game Pass Ultimate and PC Game Pass.
+
+On the subject of pixel-art games, I couldn't not include one that came out this week from a developer based in my hometown. Cairn: Mathairs Curse is a turn-based RPG. It's set in the early 2000s in the Scottish Highlands and it sees a young lad and his mates dealing with the aftermath of a cult casting an ancient curse on their home.
+
+Solo developer Ross McRitchie spent five years making Cairn: Mathairs Curse and his partner, Christine, composed the Celtic soundtrack. It's said to have plenty of Scottish humor, which speaks to me. The game, which Steam reviews have likened to EarthBound, is out on Steam now.
+
+Upcoming
+
+I'm looking forward to checking out Blackwood, which is slated to hit Steam in the second half of 2026. It has a pretty great pitch:
+
+Advertisement
+
+Advertisement
+
+By day, you run a DVD store in 2012 New York. By night, youre a ruthless assassin. Blackwood is a cinematic third-person shooter with grounded melee combat, brutal takedowns, responsive gunplay and a double life to manage.
+
+The facial animations look a little rough in the reveal trailer, but it's alpha footage and there's plenty of time to polish it. I'm hoping the team at Bangladesh-based AttritoM7 Productions manages to do that, because otherwise this game is looking quite nifty with its John Wick-style combat.
+
+Advertisement
+
+Advertisement
+
+I do love a game with a great name, and I've got a couple to tell you about. Action RPG Bittersweet Birthday has hand-drawn pixel art and nothing but boss battles when it comes to combat.
+
+Bittersweet Birthday — from World Eater Games and publisher Dangen Entertainment — is set to land on Steam, GOG, Humble and Itch on November 11. It's coming to consoles later.
+
+Heres a pinball-themed precision platformer in the mold of games like Baby Steps and Getting Over It. Fittingly, it's called A Pinball Game That Makes You Mad and you can control it with a single button.
+
+Theres no release date as yet for this project from Azimuth Studios. However, a demo is available on Steam now. Like a good teenage cousin, it's fun and annoying in equal measure.
+
+Another pre-Next Fest demo I've had a chance to check out is for Don't Stop, Girlypop!, a fast-paced arena shooter with an anti-capitalist bent. I've been looking forward to this one since I found out about it late last year. The demo, with its Y2K girly-pop aesthetics and Doom Eternal/Ultrakill-style gameplay, does not disappoint.
+
+I'm glad the team trimmed the first word from the original name — Incolatus: Don't Stop, Girlypop! — since the shorter version is much punchier and more memorable. Funny Fintan Softworks and publisher Kwalee haven't revealed a release date as yet, but I'll be checking my T9 flip phone impatiently in the meantime.
 
 Advertisement
 
