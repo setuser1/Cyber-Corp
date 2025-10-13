@@ -1,33 +1,31 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/science/space/spacex-will-attempt-starships-11th-flight-test-on-monday-204237829.html?src=rss
+https://www.engadget.com/gaming/an-avatar-fighting-game-is-coming-out-in-summer-2026-191008728.html?src=rss
 
-Science
+Gaming
 
-Space
+An Avatar fighting game is coming out in summer 2026
 
-SpaceX will attempt Starship's 11th flight test on Monday
+The 1v1 fighting game has a hand-drawn 2D art style and pits classic characters from the Avatar franchise against each other.
 
-The launch window opens at 7:15PM ET.
+Jackson Chen
 
-Cheyenne MacDonald
+Contributing reporter
 
-Weekend Editor
+Jackson ChenContributing reporter
 
-Cheyenne MacDonaldWeekend Editor
-
-Sun, October 12, 2025 at 8:42 PM UTC
+Sun, October 12, 2025 at 7:10 PM UTC
 
 1 min read
 
-SpaceX
+Gameplay Group International
 
-SpaceX is gearing up for the 11th flight test of its Starship megarocket, which will launch from its Starbase in Texas as early as Monday. The launch window opens on October 13 at 7:15PM ET. You'll be able to watch live starting 30 minutes before liftoff on the SpaceX website and on X.
+We can finally answer the question of who wins in a fight between prime Aang and prime Korra. Avatar Legends: The Fighting Game, which is a working title, was announced at New York Comic Con and already has a release date of summer 2026. The developer, Gameplay Group International, revealed a trailer with some "pre-alpha footage" that resembles Street Fighter but with our favorite characters from the Avatar franchise.
 
-Starship's latest flight follows a successful test at the end of August, during which it deployed a payload — eight dummy Starlink satellites — in space for the first time following a failed attempt earlier in the year. The company is aiming to carry out another payload demonstration for flight 11, again using eight Starlink simulators. For this flight, SpaceX is using a previously flown Super Heavy booster, with 24 of its 33 Raptor engines being flight-proven. The goals this time around include "flight experiments gathering data for the next generation Super Heavy booster, stress-testing Starships heatshield, and demonstrating maneuvers that will mimic the upper stages final approach for a future return to launch site."
+According to the Steam page, the game will offer 12 characters at launch and introduce more on a seasonal basis. While the gameplay still looks like a rough draft, the developer has already detailed a unique fighting system, which includes a "flow system" and support characters that enable special moves. Avatar Legends: The Fighting Game will also have the "energy of classic fighting games" and was made with a focus on "fluidity, responsiveness, and online integrity." Along with combo trials and a gallery mode, the game will have crossplay and be available on PS4, PS5, Xbox Series X and S, Nintendo Switch 2 and Steam.
 
-SpaceX won't attempt to catch Super Heavy in its "chopsticks" back at the launch site this time. The booster is instead expected to end up in the Gulf of Mexico, while Starship will splash down in the Indian Ocean.
+For those not passionate about fighting games, the upcoming release will also feature some original content through its single-player campaign. Alternatively, you can wait for Paramount's "AAA RPG" based on the cartoon with no concrete release date. As for Avatar Legends: The Fighting Game, there's a lot of promise here with the franchise's diverse cast of characters and the developer's experience with other fighting games. At the very least, it's not the same developer that gave us the very forgettable Avatar: The Last Airbender - Quest for Balance game.
 
 Advertisement
 
