@@ -1,31 +1,27 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/big-tech/the-first-products-with-apples-m5-chip-could-make-their-debut-this-week-163149688.html?src=rss
+https://www.engadget.com/apple-is-winding-down-clips-its-forgotten-video-editing-app-210907085.html?src=rss
 
-Big tech
+Apple is winding down Clips, its forgotten video-editing app
 
-The first products with Apple's M5 chip could make their debut this week
+Existing users will still have access for now, but it's no longer available for new downloads.
 
-Apple is reportedly set to reveal the new MacBook Pro, iPad Pro and Vision Pro, all of which are expected to have the latest Apple silicon.
+Cheyenne MacDonald
 
-Jackson Chen
+Weekend Editor
 
-Contributing reporter
+Cheyenne MacDonaldWeekend Editor
 
-Jackson ChenContributing reporter
-
-Sun, October 12, 2025 at 4:31 PM UTC
+Sat, October 11, 2025 at 9:09 PM UTC
 
 1 min read
 
 Apple
 
-We may only be a few days away from the big reveal of Apple's latest chips. According to Bloomberg's Mark Gurman, Apple is getting ready to release its October lineup of new products powered by the M5 chip as soon as this week. In the latest Power On newsletter, Gurman expects announcements for an upgraded iPad Pro, a refreshed Vision Pro with a revamped strap, and the new base model MacBook Pro, all of which will come with the latest Apple silicon.
+It seems to be the end of the road for Apple's Clips app. The company said on a support page that it has stopped updating the video-editing app, and new users can no longer download it from the App Store. Existing users on iOS and iPadOS will continue to have access for the time being, but the company hasn't said how long that will last. "If you previously downloaded the Clips app, you can still redownload it from your Apple account in the App Store," the support page notes.
 
-Previously, the expected launch for the M5 MacBook Pro flip-flopped between early next year and its typical fall release. Gurman previously reported that Apple was targeting an early 2026 release for the upgraded MacBook Pro, but more recently revealed that the company was "nearing mass production" for its laptops.
-
-Gurman referenced another hint that the entry-level M5 MacBook Pro is on the way, since Apple stores are running low on their M4 MacBook Pro stock, but still have enough inventory with the M4 Pro or M4 Max options. Gurman also noted in a previous edition of his newsletter that the M5 Pro and M5 Max chips wouldn't be "ready in volume" until early next year. As for the October releases, we're not expecting another event like Apple did with its iPhone 17 reveal. Instead, Apple will likely reveal its remaining fall lineup with online announcements, like it did with the current MacBook Pro in October of last year.
+Clips was introduced in 2017 and offers a host of editing tools geared toward creating videos for social media. But Clips never really caught on, and many of the features it boasts are pretty much standard fare on the social apps now. Apple has recommended that Clips users save their  videos to their photo libraries or elsewhere, so if you are one of the few users hanging on, you should probably go ahead and do that before it's too late.
 
 Advertisement
 
