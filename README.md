@@ -1,13 +1,13 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ai/apple-hit-with-another-class-action-lawsuit-for-alleged-copyright-infringement-175242922.html?src=rss
+https://www.engadget.com/big-tech/the-first-products-with-apples-m5-chip-could-make-their-debut-this-week-163149688.html?src=rss
 
-AI
+Big tech
 
-Apple hit with another class action lawsuit for alleged copyright infringement
+The first products with Apple's M5 chip could make their debut this week
 
-A new lawsuit from two neuroscientists alleges that Apple misused copyright works to train its artificial intelligence models.
+Apple is reportedly set to reveal the new MacBook Pro, iPad Pro and Vision Pro, all of which are expected to have the latest Apple silicon.
 
 Jackson Chen
 
@@ -15,15 +15,17 @@ Contributing reporter
 
 Jackson ChenContributing reporter
 
-Sun, October 12, 2025 at 5:52 PM UTC
+Sun, October 12, 2025 at 4:31 PM UTC
 
 1 min read
 
 Apple
 
-Just about a month after being accused of using pirated books to train its AI, Apple is facing another similar proposed class action lawsuit. As first reported by Bloomberg Law, two neuroscience professors from SUNY Downstate Health Sciences University in Brooklyn, NY, claimed that Apple used their "registered works without authorization." The neuroscientists, Susana Martinez-Conde and Stephen Macknik, said Apple trained its AI models using "shadow libraries" and "web-crawling software" that provide access to pirated, copyrighted books, including two of their own.
+We may only be a few days away from the big reveal of Apple's latest chips. According to Bloomberg's Mark Gurman, Apple is getting ready to release its October lineup of new products powered by the M5 chip as soon as this week. In the latest Power On newsletter, Gurman expects announcements for an upgraded iPad Pro, a refreshed Vision Pro with a revamped strap, and the new base model MacBook Pro, all of which will come with the latest Apple silicon.
 
-In the previous class action lawsuit, a separate pair of authors also alleged that Apple committed copyright infringement when using published works to train Apple Intelligence models without consent. Apple isn't the only tech giant facing copyright lawsuits related to its AI, as OpenAI is in a similar situation after being sued by The New York Times for similar accusations. While these AI models are relatively new, there's already a case that may have set some precedent. Earlier this year, Anthropic settled a class action lawsuit by agreeing to pay $1.5 billion to 500,000 authors involved in the case, which revolved around copyright claims.
+Previously, the expected launch for the M5 MacBook Pro flip-flopped between early next year and its typical fall release. Gurman previously reported that Apple was targeting an early 2026 release for the upgraded MacBook Pro, but more recently revealed that the company was "nearing mass production" for its laptops.
+
+Gurman referenced another hint that the entry-level M5 MacBook Pro is on the way, since Apple stores are running low on their M4 MacBook Pro stock, but still have enough inventory with the M4 Pro or M4 Max options. Gurman also noted in a previous edition of his newsletter that the M5 Pro and M5 Max chips wouldn't be "ready in volume" until early next year. As for the October releases, we're not expecting another event like Apple did with its iPhone 17 reveal. Instead, Apple will likely reveal its remaining fall lineup with online announcements, like it did with the current MacBook Pro in October of last year.
 
 Advertisement
 
