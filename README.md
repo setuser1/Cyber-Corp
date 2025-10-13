@@ -1,13 +1,13 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/an-avatar-fighting-game-is-coming-out-in-summer-2026-191008728.html?src=rss
+https://www.engadget.com/ai/apple-hit-with-another-class-action-lawsuit-for-alleged-copyright-infringement-175242922.html?src=rss
 
-Gaming
+AI
 
-An Avatar fighting game is coming out in summer 2026
+Apple hit with another class action lawsuit for alleged copyright infringement
 
-The 1v1 fighting game has a hand-drawn 2D art style and pits classic characters from the Avatar franchise against each other.
+A new lawsuit from two neuroscientists alleges that Apple misused copyright works to train its artificial intelligence models.
 
 Jackson Chen
 
@@ -15,17 +15,15 @@ Contributing reporter
 
 Jackson ChenContributing reporter
 
-Sun, October 12, 2025 at 7:10 PM UTC
+Sun, October 12, 2025 at 5:52 PM UTC
 
 1 min read
 
-Gameplay Group International
+Apple
 
-We can finally answer the question of who wins in a fight between prime Aang and prime Korra. Avatar Legends: The Fighting Game, which is a working title, was announced at New York Comic Con and already has a release date of summer 2026. The developer, Gameplay Group International, revealed a trailer with some "pre-alpha footage" that resembles Street Fighter but with our favorite characters from the Avatar franchise.
+Just about a month after being accused of using pirated books to train its AI, Apple is facing another similar proposed class action lawsuit. As first reported by Bloomberg Law, two neuroscience professors from SUNY Downstate Health Sciences University in Brooklyn, NY, claimed that Apple used their "registered works without authorization." The neuroscientists, Susana Martinez-Conde and Stephen Macknik, said Apple trained its AI models using "shadow libraries" and "web-crawling software" that provide access to pirated, copyrighted books, including two of their own.
 
-According to the Steam page, the game will offer 12 characters at launch and introduce more on a seasonal basis. While the gameplay still looks like a rough draft, the developer has already detailed a unique fighting system, which includes a "flow system" and support characters that enable special moves. Avatar Legends: The Fighting Game will also have the "energy of classic fighting games" and was made with a focus on "fluidity, responsiveness, and online integrity." Along with combo trials and a gallery mode, the game will have crossplay and be available on PS4, PS5, Xbox Series X and S, Nintendo Switch 2 and Steam.
-
-For those not passionate about fighting games, the upcoming release will also feature some original content through its single-player campaign. Alternatively, you can wait for Paramount's "AAA RPG" based on the cartoon with no concrete release date. As for Avatar Legends: The Fighting Game, there's a lot of promise here with the franchise's diverse cast of characters and the developer's experience with other fighting games. At the very least, it's not the same developer that gave us the very forgettable Avatar: The Last Airbender - Quest for Balance game.
+In the previous class action lawsuit, a separate pair of authors also alleged that Apple committed copyright infringement when using published works to train Apple Intelligence models without consent. Apple isn't the only tech giant facing copyright lawsuits related to its AI, as OpenAI is in a similar situation after being sued by The New York Times for similar accusations. While these AI models are relatively new, there's already a case that may have set some precedent. Earlier this year, Anthropic settled a class action lawsuit by agreeing to pay $1.5 billion to 500,000 authors involved in the case, which revolved around copyright claims.
 
 Advertisement
 
