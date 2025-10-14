@@ -1,57 +1,49 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/california-enacts-age-gate-law-for-app-stores-172802711.html?src=rss
+https://www.engadget.com/deals/get-up-to-700-off-a-new-microsoft-copilot-pc-before-windows-10-support-ends-165735272.html?src=rss
 
-California enacts age-gate law for app stores
+Deals
 
-Governor Gavin Newsom also signed bills concerning social media warning labels, chatbots and deepfake pornography.
+Get up to $700 off a new Microsoft Copilot+ PC before Windows 10 support ends
 
-Kris Holt
+Deals at Best Buy include a souped-up Surface laptop for $1,100.
+
+Lawrence Bonk
 
 Contributing Reporter
 
-Kris HoltContributing Reporter
+Lawrence BonkContributing Reporter
 
-Mon, October 13, 2025 at 5:28 PM UTC
+Mon, October 13, 2025 at 4:57 PM UTC
 
-3 min read
+Microsoft
 
-California Gov. Gavin Newsom speaks before signing legislation related to student literacy in Los Angeles on Thursday, Oct. 9, 2025. (AP Photo/Damian Dovarganes)
+Best Buy is holding a sitewide sale on Microsoft Copilot+ PCs with steep discounts up to $700 off. This is fantastic timing, given that Microsoft ends official support for Windows 10 this week. If you're thinking about upgrading, now is likely the time.
 
-(ASSOCIATED PRESS)
+One cool deal here is for a souped-up version of the Microsoft Surface 7 laptop. This one ships with a Snapdragon X Plus processor, 32GB of RAM and 1TB of internal storage. It also includes a 13.8-inch touchscreen and a battery that gets 20 hours per charge. The laptop ships with Windows 11 Home, which should be relatively futureproof for the next several years. It costs just $1,100, which is a nice discount of $700.
 
-California has become the latest state to age-gate app stores and operating systems. AB 1043 is one of several internet regulation bills that Governor Gavin Newsom signed into law on Monday, including ones related to social media warning labels, chatbots and deepfake pornography.
+Microsoft
 
-The State Assembly passed AB 1043 with a 58-0 vote in September. The legislation received backing from notable tech companies such as Google, OpenAI, Meta, Snap and Pinterest. The companies claimed the bill offered a more balanced approach to age verification, with more privacy protection, than laws passed in other states.
+Microsoft Surface 7 Laptop (32GB/1TB)
 
-Unlike with legislation in Utah and Texas, children will still be able to download apps without their parents' consent. The law doesn't require people to upload photo IDs either. Instead, the idea is that a parent will enter their child's age while setting up a device for them — so its more of an age gate than age verification. The operating system and/or app store will place the user into one of four age categories (under 13, 13-16, 16-18 or adult) and make that information available to app developers.
+$1,100$1,800Save $700
 
-Advertisement
+This includes a Snapdragon X Plus CPU and a touchscreen.
 
-Advertisement
+$1,100 at Best Buy
 
-Advertisement
-
-Enacting AB 1043 means that California is joining the likes of Utah, Texas and Louisiana in mandating that app stores carry out age verification (the UK has a broad age verification law in place too). Apple has detailed how it plans to comply with the Texas law, which takes effect on January 1, 2026. The California legislation takes effect one year later.
-
-AB 56, another bill Newsom signed Monday, will force social media services to display warning labels that inform kids and teens about the risks of using such platforms. These messages will appear the first time the user opens an app each day, then after three hours of total use and once an hour thereafter. This law will take effect on January 1, 2027 as well.
-
-Elsewhere, California will require AI chatbots to have guardrails in place to prevent self-harm content from appearing and direct users who express suicidal ideation to crisis services. Platforms will need to inform the Department of Public Health about how they're addressing self-harm and to share details on how often they display crisis center prevention notifications.
-
-The legislation is coming into force after lawsuits were filed against OpenAI and Character AI in relation to teen suicides. OpenAI last month announced plans to automatically identify teen ChatGPT users and restrict their usage of the chatbot.
+This model can be outfitted with even more bells and whistles. There's one with a more powerful Snapdragon X Elite processor and a 15-inch touchscreen. That one costs $1,500, which is a discount of $600.
 
 Advertisement
 
 Advertisement
 
-Advertisement
+Other deals include the HP Omen gaming laptop with an AMD Ryzen AI 9 HX 375 and NVIDIA GeForce RTX 5070 Ti for $2,000 instead of $2,380 and the MSI Codex gaming desktop with an NVIDIA GeForce RTX 5070 GPU for $1,460 instead of $1,600. There are plenty of other discounted laptops, desktops and accessories on the main sale page.
 
-In addition, SB 243 prohibits chatbots from being marketed as health care professionals. Chatbots will need to make it clear to users that they aren't interacting with a person when they're using such services, and instead theyre receiving artificially generated responses. Chatbot providers will need to remind minors of this at least every three hours.
+Microsoft will officially end support of Windows 10 on October 14, but it may not be an immediate death knell. There is a way for users to get an additional 12 months of support via the company's Extended Security Updates plan. Many Windows 10 computers can also easily handle Windows 11, and a software update would be much cheaper than buying a new computer.
 
-Newsom also signed a bill concerning deepfake pornography into law. AB 621 includes steeper potential penalties for "third parties who knowingly facilitate or aid in the distribution of nonconsensual sexually explicit material." The legislation allows victims to seek up to $250,000 per "malicious violation" of the law.
-
-In the US, the National Suicide Prevention Lifeline is 1-800-273-8255 or you can simply dial 988. Crisis Text Line can be reached by texting HOME to 741741 (US), CONNECT to 686868 (Canada) or SHOUT to 85258 (UK). Wikipedia maintains a list of crisis lines for people outside of those countries.
+Follow @EngadgetDeals on X for the latest tech deals and buying advice.
 
 Advertisement
 
