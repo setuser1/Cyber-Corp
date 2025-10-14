@@ -1,27 +1,41 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gm-ends-development-of-hydrogen-fuel-cells-195212217.html?src=rss
+https://www.engadget.com/ai/googles-nano-banana-ai-image-editing-is-coming-to-search-notebooklm-and-photos-184111046.html?src=rss
 
-GM ends development of hydrogen fuel cells
+AI
 
-The hydrogen dream seems to be dissolving.
+Google's Nano Banana AI-image editing is coming to Search, NotebookLM and Photos
 
-Anna Washenko
+It's being used to add more style options to Video Overviews.
+
+Lawrence Bonk
 
 Contributing Reporter
 
-Anna WashenkoContributing Reporter
+Lawrence BonkContributing Reporter
 
-Mon, October 13, 2025 at 7:52 PM UTC
+Mon, October 13, 2025 at 6:41 PM UTC
 
 1 min read
 
-Reuters / REUTERS
+Google
 
-In a bulletin on Friday, GM announced that it will end its HYDROTEC brand's work on hydrogen fuel cell development. Instead, GM will focus its R&D efforts on batteries, charging technologies and electric vehicles. The company said it will continue its Fuel Cell System Manufacturing joint venture with Honda, which creates cells for data centers and power generation.
+Google's Nano Banana AI image editor became something of a viral sensation when it launched last month. Now the tool is being integrated into a bunch of pre-existing Google products, like Search, NotebookLM and Photos.
 
-The post from GM said that due to limited infrastructure and high costs, hydrogen cells simply haven't taken off for consumer vehicles. Lately, the automotive industry seems to agree. GM's shift follows a similar move in February from Toyota, which isn't completely giving up the ghost but instead pivoted its hydrogen cell projects to focus on industrial applications rather than consumer ones.
+Perhaps the most notable integration here is with NotebookLM. Nano Banana is being used to drastically change up Video Overviews, offering up six new styles like watercolor and anime. It also now generates contextual illustrations based on sources and there's a new option for micro-videos called Briefs.
+
+For the uninitiated, Video Overviews is a neat little tool available to NotebookLM users that automatically generates explainer videos from documents. It can even whip up a narrated slideshow with visuals. The AI-heavy update starts rolling out to Pro users this week and to all users in "the upcoming weeks."
+
+Advertisement
+
+Advertisement
+
+Advertisement
+
+Search integration offers new ways to make and edit images while using the official Google app. The company says folks can use a chat prompt to, say, ask the bot to create a stylized version of a pre-existing image. Additionally, photos can be snapped directly from the Lens tool and then edited via the AI. This is rolling out right now in English for US customers, with more countries and languages coming in the near future.
+
+We don't have any actual information as to what the Photos integration will look like, with Google simply saying it's bringing Nano Banana to the platform in "the weeks ahead." The company promises more details soon. Nano Banana is an image editor and Google Photos is a service for storing and organizing photos, so it'll likely involve editing these stored images in some way.
 
 Advertisement
 
