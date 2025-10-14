@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/14/indias-airbound-led-by-20-year-old-bags-8-65m-to-work-toward-one-cent-drone-deliveries-at-scale/
+https://techcrunch.com/2025/10/13/goldman-sachs-is-acquiring-industry-ventures-for-up-to-965m-as-alternative-vc-exits-surge/
 
-Airbound, an Indian drone startup, has raised $8.65 million in seed funding led by Physical Intelligence co-founder Lachy Groom, as it begins a drone-delivery pilot with a private hospital and works toward one-cent delivery using its ultra-light, blended-wing-body aircraft.
+Goldman Sachs has agreed to acquire Industry Ventures, a 25-year-old, San Francisco-based investment firm with $7 billion in assets under management, CNBC was first to report on Monday. The deal underscores the growing importance of secondary markets and buyouts as traditional venture exits remain sluggish.
 
-The seed round includes participation from Humba Ventures and Airbounds existing investor Lightspeed Venture Partners, as well as senior leaders at Tesla, SpaceX, and Anduril.
+The investment bank is paying $665 million in cash and equity, with up to $300 million more tied to the firms performance through 2030, according to a release from Goldman. The deal is expected to close in the first quarter of next year, and all 45 Industry Ventures employees are expected to join Goldman.
