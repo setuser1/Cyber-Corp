@@ -1,39 +1,45 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/science/space/spacex-will-attempt-starships-11th-flight-test-on-monday-204237829.html?src=rss
+https://www.engadget.com/ai/slack-is-transforming-its-slackbot-into-a-personalized-ai-companion-154156367.html?src=rss
 
-Science
+AI
 
-Space
+Slack is transforming its Slackbot into a 'personalized AI companion'
 
-SpaceX will attempt Starship's 11th flight test on Monday
+It can whip up project plans, flag daily priorities and more.
 
-The launch window opens at 7:15PM ET.
+Lawrence Bonk
 
-Cheyenne MacDonald
+Contributing Reporter
 
-Weekend Editor
+Lawrence BonkContributing Reporter
 
-Cheyenne MacDonaldWeekend Editor
+Mon, October 13, 2025 at 3:41 PM UTC
 
-Updated Mon, October 13, 2025 at 4:24 PM UTC
+2 min read
 
-1 min read
+Slack/Salesforce
 
-SpaceX
+I've been using Slack for like a decade and the platform's proprietary chatbot, Slackbot, has always been a bit underwhelming. It can deliver reminders and notifications and, well, that's about it. That could change in the near future, as the platform is testing a redesigned Slackbot that's chock full of AI.
 
-SpaceX is gearing up for the 11th flight test of its Starship megarocket, which will launch from its Starbase in Texas as early as Monday. The launch window opens on October 13 at 7:15PM ET. You'll be able to watch live starting 30 minutes before liftoff on the SpaceX website and on X.
+The new Slackbot is basically an AI chatbot like all the rest, but this one has been purpose-built to help with common work tasks. Folks can use natural language to converse with the bot and it can do stuff like whip up project plans, flag daily priorities and analyze reports. It can also help people find information when they only remember a few scant details. The company says it will "give every employee AI superpowers" so they can "drive productivity at AI speed."
 
-As of the morning of October 13, SpaceX appears to be set for the next test flight — theres no word of any delays and the SpaceX X account said last night that weather was 80 percent favorable for a launch today.
+Slack/Salesforce
 
-Starship and Super Heavy on the pad for the eleventh flight test pic.twitter.com/oFyMB2fGVj
+To that end, the new Slackbot integrates with tools like Google Drive, Salesforce and One Drive. It can provide "clear insights" by analyzing those other platforms. Slack also says that the chatbot will continue to grow and evolve, eventually being able to "take action on your behalf and build agents at your request, all with no code required."
 
-— SpaceX (@SpaceX) October 13, 2025
+Advertisement
 
-Starship's latest flight follows a successful test at the end of August, during which it deployed a payload — eight dummy Starlink satellites — in space for the first time following a failed attempt earlier in the year. The company is aiming to carry out another payload demonstration for flight 11, again using eight Starlink simulators. For this flight, SpaceX is using a previously flown Super Heavy booster, with 24 of its 33 Raptor engines being flight-proven. The goals this time around include "flight experiments gathering data for the next generation Super Heavy booster, stress-testing Starships heatshield, and demonstrating maneuvers that will mimic the upper stages final approach for a future return to launch site."
+Advertisement
 
-SpaceX won't attempt to catch Super Heavy in its "chopsticks" back at the launch site this time. The booster is instead expected to end up in the Gulf of Mexico, while Starship will splash down in the Indian Ocean.
+Advertisement
+
+The Verge got a look at the new Slackbot in action and noted that it helped create a social media campaign using a brand's tone and organized a product's launch plan. The publication didn't indicate if the social media campaign and product launch plan were any good.
+
+The redesigned and AI-centric Slackbot is currently available as a beta to 70,000 users, but Slack has plans for a broad rollout by the end of the year. Companies will be able to turn off the feature, but all of us individual worker bees won't have that luxury.
+
+This is just the latest AI injection by Slack. After all, parent company Salesforce absolutely loves the technology. Slack recently added AI writing assistance to its Canvas document-sharing space and introduced AI‑generated channel recaps and thread summaries. It also recently came out that the company has been using people's chats to train its AI models by default, with companies being forced to specifically request an opt-out.
 
 Advertisement
 
