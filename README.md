@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/13/salesforce-announces-agentforce-360-as-enterprise-ai-competition-heats-up/
+https://techcrunch.com/2025/10/13/andurils-new-eagleeye-mr-helmet-sees-palmer-luckey-return-to-his-vr-roots/
 
-Salesforce announced Monday the latest version of its AI agent platform as the company looks to lure enterprises to its AI software in an increasingly crowded market.
+In the latest bid by a Silicon Valley defense firm to assert its own solution for the Armys mixed-reality ambitions, Anduril Industries on Monday unveiled “EagleEye,” a helmeted computing system that seeks to turn soldiers into AI-augmented warfighters.
 
-The customer relations manager giant unveiled the new platform, branded Agentforce 360, ahead of its annual Dreamforce customer conference that kicks off October 14. This newer version of Agentforce includes new ways to instruct AI agents through text, a new platform to build and deploy agents, and new infrastructure for messaging app Slack, among others.
+The launch is notable given that the initiative is led by Anduris co-founder Palmer Luckey, who previously started the pioneering VR company, Oculus, which was acquired by Meta.
