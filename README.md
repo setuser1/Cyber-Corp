@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/13/andurils-new-eagleeye-mr-helmet-sees-palmer-luckey-return-to-his-vr-roots/
+https://techcrunch.com/2025/10/12/strava-eyes-ipo-as-gen-z-trades-dating-apps-for-running-clubs/
 
-In the latest bid by a Silicon Valley defense firm to assert its own solution for the Armys mixed-reality ambitions, Anduril Industries on Monday unveiled “EagleEye,” a helmeted computing system that seeks to turn soldiers into AI-augmented warfighters.
+Strava, the 16-year-old fitness tracking app, is gearing up to go public, the Financial Times reports.
 
-The launch is notable given that the initiative is led by Anduris co-founder Palmer Luckey, who previously started the pioneering VR company, Oculus, which was acquired by Meta.
+CEO Michael Martin told the FT that the San Francisco company plans to list &#8220;at some point,&#8221; eyeing capital for more acquisitions. The company, backed by Sequoia Capital, TCV, and Jackson Square Ventures, was last valued at $2.2 billion in May.
