@@ -1,37 +1,45 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/another-game-freak-leak-claims-to-show-the-pokemon-roadmap-205503195.html?src=rss
+https://www.engadget.com/entertainment/streaming/apple-tv-is-now-just-apple-tv-200644609.html?src=rss
 
-Another Game Freak leak claims to show the Pokémon roadmap
+Entertainment
 
-Some people just can't be patient.
+Streaming
 
-Anna Washenko
+Apple TV+ is now just Apple TV
+
+It is possible to make things too clean.
+
+Kris Holt
 
 Contributing Reporter
 
-Anna WashenkoContributing Reporter
+Kris HoltContributing Reporter
 
-Mon, October 13, 2025 at 8:55 PM UTC
+Mon, October 13, 2025 at 8:06 PM UTC
 
 2 min read
 
-EnchantedFairy via Getty Images
+Apple TV 4K and remote
 
-Days ahead of the next Pokémon game release, Centro Leaks is back with another batch of possible leaks about the franchise. The source claims that the same hacker behind last year's so-called Teraleak has released more information they obtained from datamining files owned by Pokémon developer Game Freak that shows the roadmap for all upcoming projects the company has in the works. And there appear to be quite a few of them.
+(Devindra Hardawar for Engadget)
 
-This type of hacked information may not be an accurate reflection of Game Freak's actual plans, and any alleged details about the games may not appear in final iterations of the studio's titles. And even if these files are genuine, some of the planning documents are supposedly from 2020, so hardly the freshest info. With those caveats in mind, here's an overview of what the datamining revealed.
+Its been an interesting few months in the realm of streaming service branding. Warner Bros. Discovery reverted Max back to HBO Max after a baffling decision to trim the name in the first place. Disney made Hulu the "global general entertainment brand" on Disney+ when it rebranded the Star hub on the service. Now Apple would like you to know that its changing the name of its streaming service too. Going forward, Apple TV+ is now just Apple TV.
 
-The leaker claims that the Gen 10 game will be called Pokémon Wind and Waves. Its theme is "infinity" and the project is slated for a 2026 release with a DLC planned for 2027. The datamine also revealed that an early build of the game treated the central area as an MMO-style lobby, where players could see and interact with each other as well as access quest boards. Wind and Waves could also have an MMO raid boss and may give players the ability to explore underwater. A bunch of other details about the plot, characters and mechanics may have been uncovered in the leak.
+The company revealed the news in very lowkey fashion, at the end of a press release about when its F1 movie will land on Apple TV, the streaming service with a monthly subscription (December 12, FYI). “Apple TV+ is now simply Apple TV, with a vibrant new identity,” the company said without elaborating.
 
-Pokémon Project Seed is not only the dream multi-region Pokémon game that people have always asked for, it also appears to be an MMO.
+Apple does like to keep things clean, and shearing off the plus sign is one way of doing that. But oversimplification can cause greater confusion.
 
-"Seed is a prototyping project for a next-generation online game playable by multiple people, set in a region that connects Hoenn and Sinnoh" https://t.co/JPN5tAJfr5
+Advertisement
 
-— Centro LEAKS (@CentroLeaks) October 13, 2025
+Advertisement
 
-Other Pokémon projects reportedly in the works at Game Freak include another new Pokémon Legends game set in Galar that's slated for 2027 and beyond. A multi-region Pokémon remake, internally called Project Seed, may be released in 2028. The datamined leaks suggest this game also seems to be exploring some online multiplayer mechanics as well as letting players walk freely between different regions from past titles, which sure sounds like it could be a full-on Pokémon MMO. And Pokémon Pokopia is also apparently getting DLC.
+As Apple states in its own press release, “Apple TV is available on the Apple TV app” and “For a limited time, customers who purchase and activate a new iPhone, iPad, Apple TV or Mac can enjoy three months of Apple TV for free.” Did no one at Apples (generally very effective) marketing team spot the problem with this? Buying Apple TV to get free Apple TV sounds like a recursive capitalist fever dream that will never end.
+
+As it stands, you can turn on your Apple TV device to open the Apple TV app to watch Apple TV. There are lots of things in the Apple TV app that arent actually Apple TV shows or movies and you may have to pay for those separately. The press release also states that you can watch F1 right now if you buy it on Apple TV through the Apple TV app, so you dont have to wait for the film to make its “global streaming debut” on Apple TV. What a mess.
+
+Apple hasnt fully rolled out the change yet, as there are still plenty of references to “Apple TV+” on the streaming services website. Its still referred to as Apple TV+ on the TV apps listing on the App Store too. Im interested to see how confusing things really get if, in the coming months, Apple reveals a refreshed Apple TV. You know, that device you can use to watch Apple TV.
 
 Advertisement
 
