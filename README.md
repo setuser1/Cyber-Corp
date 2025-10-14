@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/13/grindrs-owners-may-take-it-private-after-a-financial-squeeze/
+https://techcrunch.com/2025/10/13/oura-is-winning-young-women-and-losing-gym-rats-and-its-fine-with-that/
 
-Grindrs majority owners are scrambling to take the LGBTQ+ dating app private after a stock decline triggered a personal financial crisis, according to a report from Semafor.
+Dorothy Kilroy has seen her companys smart ring on some very famous fingers. Mark Zuckerberg wears one. So does Jack Dorsey. Prince Harry, too. But when Oura&#8216;s chief commercial officer sat down at Torontos Elevate conference with this editor last week, she surprised me, saying the companys fastest-growing user segment isnt tech billionaires or wellness-obsessed execs. Its women in their early twenties.
 
-The owners in question are Raymond Zage, a former hedge fund manager and U.S. expat now based in Singapore, and James Lu, a Chinese-American entrepreneur and former Amazon and Baidu exec. Together they led the 2020 acquisition of Grindr from Chinese ownership for over $600 million, then took the app public in 2022 through a blank-check merger.
+It highlighted what an interesting moment this is for Oura. The 13-year-old Finnish health tech company essentially invented the smart ring category and turned it into a billion-dollar business. But now competitors are circling, including Samsung with its Galaxy Ring, Ultrahuman with its no-subscription pitch, and Whoop with its athletic performance mystique. Each one promises to take a bite out of Ouras lead.
