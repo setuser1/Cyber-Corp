@@ -1,49 +1,39 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/get-up-to-700-off-a-new-microsoft-copilot-pc-before-windows-10-support-ends-165735272.html?src=rss
+https://www.engadget.com/science/space/spacex-will-attempt-starships-11th-flight-test-on-monday-204237829.html?src=rss
 
-Deals
+Science
 
-Get up to $700 off a new Microsoft Copilot+ PC before Windows 10 support ends
+Space
 
-Deals at Best Buy include a souped-up Surface laptop for $1,100.
+SpaceX will attempt Starship's 11th flight test on Monday
 
-Lawrence Bonk
+The launch window opens at 7:15PM ET.
 
-Contributing Reporter
+Cheyenne MacDonald
 
-Lawrence BonkContributing Reporter
+Weekend Editor
 
-Mon, October 13, 2025 at 4:57 PM UTC
+Cheyenne MacDonaldWeekend Editor
 
-Microsoft
+Updated Mon, October 13, 2025 at 4:24 PM UTC
 
-Best Buy is holding a sitewide sale on Microsoft Copilot+ PCs with steep discounts up to $700 off. This is fantastic timing, given that Microsoft ends official support for Windows 10 this week. If you're thinking about upgrading, now is likely the time.
+1 min read
 
-One cool deal here is for a souped-up version of the Microsoft Surface 7 laptop. This one ships with a Snapdragon X Plus processor, 32GB of RAM and 1TB of internal storage. It also includes a 13.8-inch touchscreen and a battery that gets 20 hours per charge. The laptop ships with Windows 11 Home, which should be relatively futureproof for the next several years. It costs just $1,100, which is a nice discount of $700.
+SpaceX
 
-Microsoft
+SpaceX is gearing up for the 11th flight test of its Starship megarocket, which will launch from its Starbase in Texas as early as Monday. The launch window opens on October 13 at 7:15PM ET. You'll be able to watch live starting 30 minutes before liftoff on the SpaceX website and on X.
 
-Microsoft Surface 7 Laptop (32GB/1TB)
+As of the morning of October 13, SpaceX appears to be set for the next test flight — theres no word of any delays and the SpaceX X account said last night that weather was 80 percent favorable for a launch today.
 
-$1,100$1,800Save $700
+Starship and Super Heavy on the pad for the eleventh flight test pic.twitter.com/oFyMB2fGVj
 
-This includes a Snapdragon X Plus CPU and a touchscreen.
+— SpaceX (@SpaceX) October 13, 2025
 
-$1,100 at Best Buy
+Starship's latest flight follows a successful test at the end of August, during which it deployed a payload — eight dummy Starlink satellites — in space for the first time following a failed attempt earlier in the year. The company is aiming to carry out another payload demonstration for flight 11, again using eight Starlink simulators. For this flight, SpaceX is using a previously flown Super Heavy booster, with 24 of its 33 Raptor engines being flight-proven. The goals this time around include "flight experiments gathering data for the next generation Super Heavy booster, stress-testing Starships heatshield, and demonstrating maneuvers that will mimic the upper stages final approach for a future return to launch site."
 
-This model can be outfitted with even more bells and whistles. There's one with a more powerful Snapdragon X Elite processor and a 15-inch touchscreen. That one costs $1,500, which is a discount of $600.
-
-Advertisement
-
-Advertisement
-
-Other deals include the HP Omen gaming laptop with an AMD Ryzen AI 9 HX 375 and NVIDIA GeForce RTX 5070 Ti for $2,000 instead of $2,380 and the MSI Codex gaming desktop with an NVIDIA GeForce RTX 5070 GPU for $1,460 instead of $1,600. There are plenty of other discounted laptops, desktops and accessories on the main sale page.
-
-Microsoft will officially end support of Windows 10 on October 14, but it may not be an immediate death knell. There is a way for users to get an additional 12 months of support via the company's Extended Security Updates plan. Many Windows 10 computers can also easily handle Windows 11, and a software update would be much cheaper than buying a new computer.
-
-Follow @EngadgetDeals on X for the latest tech deals and buying advice.
+SpaceX won't attempt to catch Super Heavy in its "chopsticks" back at the launch site this time. The booster is instead expected to end up in the Gulf of Mexico, while Starship will splash down in the Indian Ocean.
 
 Advertisement
 
