@@ -1,8 +1,18 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/13/oura-is-winning-young-women-and-losing-gym-rats-and-its-fine-with-that/
+https://techcrunch.com/2025/10/13/slate-autos-electric-truck-see-it-first-at-techcrunch-disrupt-2025/
 
-Dorothy Kilroy has seen her companys smart ring on some very famous fingers. Mark Zuckerberg wears one. So does Jack Dorsey. Prince Harry, too. But when Oura&#8216;s chief commercial officer sat down at Torontos Elevate conference with this editor last week, she surprised me, saying the companys fastest-growing user segment isnt tech billionaires or wellness-obsessed execs. Its women in their early twenties.
+Get ready for one of TechCrunch Disrupt 2025s most electrifying moments — literally. Chris Barman, CEO of Slate Auto, is rolling one of her companys brand-new electric trucks onto the Disrupt Stage before anyone else in the world sees it on the road.
 
-It highlighted what an interesting moment this is for Oura. The 13-year-old Finnish health tech company essentially invented the smart ring category and turned it into a billion-dollar business. But now competitors are circling, including Samsung with its Galaxy Ring, Ultrahuman with its no-subscription pitch, and Whoop with its athletic performance mystique. Each one promises to take a bite out of Ouras lead.
+Be in the room for this live EV unveiling on the main stage. Save up to $624 this week when you register before October 17. Bringing a team? Save an additional 15% to 30% on group passes.
+
+How Slate is reinventing the commercial EV market — live onstage
+
+Barman will give attendees an insiders look at how Slate is reimagining the commercial EV market — from design to manufacturing — and will share what it takes to build a next-generation vehicle company in one of the most capital-intensive industries on earth. Expect an unfiltered conversation about the realities of hardware innovation, supply chain complexity, and startup-scale production, plus a live, in-person reveal of one of the years buzziest new EVs.
+
+Image Credits:Slate Auto
+
+About Chris Barman
+
+Slate Auto&#8216;s CEO Christine (Chris) Barman leads the companys mission to build vehicles people can afford, personalize, and love. Prior to founding Slate, she served as global VP of strategic business development and solutions in transportation at HCL Technologies and was CTO of the Industrial Sector at Eaton Corporation.
