@@ -1,11 +1,11 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/microsoft-debuts-its-first-in-house-ai-image-generator-224153867.html?src=rss
+https://www.engadget.com/google-is-making-search-ads-more-and-less-avoidable-215658127.html?src=rss
 
-Microsoft debuts its first in-house AI image generator
+Google is making search ads more and less avoidable
 
-The company is gearing MAI-Image-1 toward photorealism.
+You can only hide the "Sponsored results" sections once you scroll past them.
 
 Anna Washenko
 
@@ -13,15 +13,17 @@ Contributing Reporter
 
 Anna WashenkoContributing Reporter
 
-Mon, October 13, 2025 at 10:41 PM UTC
+Mon, October 13, 2025 at 9:56 PM UTC
 
 1 min read
 
-Microsoft
+Reuters / REUTERS
 
-Microsoft is continuing to roll out in-house AI models, further decreasing its reliance on long-standing partnership with OpenAI. Today, the company introduced MAI-Image-1, its first internally-developed image-generating AI model. According to the blog post, MAI-Image-1 is particularly good for creating photorealistic results, and can generate natural lighting and landscapes. For now, the model is being tested on LMArena, and Microsoft said it plans to roll out MAI-Image-1 to Copilot and its Bing Image Creator "very soon."
+Google is tweaking how sponsored results will appear in Search. Going forward, it will group any text ads on the Search page into a "Sponsored results" section that will appear at the top of the screen. The size of the ads is unchanged and Google says there will never be more than four ads in a grouping. Once you scroll past the section with ads, you can click a button to hide all sponsored results.
 
-Over the summer, Microsoft made its first break from collaborating with OpenAI when it unveiled its first two in-house trained models, MAI-Voice-1 and MAI-1-preview. At that time, Microsoft AI division leader Mustafa Suleyman said in an interview that the company had "an enormous five-year roadmap that we're investing in quarter after quarter." So far, it's at least setting a solid clip of releases.
+According to Google, "the new design helps people navigate the top of the page more easily." Maybe that's because people have gotten used to automatically looking farther down the search results to skip the AI Overviews. Google's announcement even noted that the sponsored tab might appear either above or below its AI-generated summary. What's another second of scrolling to actually reach information? But lest you scroll too far, Google will also have a "Sponsored results" section at the very bottom of the page that can only be hidden after you've seen those hits.
+
+The new approach is currently rolling out globally on mobile and desktop platforms.
 
 Advertisement
 
