@@ -1,12 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/15/co-founder-of-indian-social-network-koo-releases-a-new-photo-sharing-app/
+https://techcrunch.com/2025/10/15/seoul-weighs-approval-for-google-apple-high-resolution-map-requests/
 
-In the last few years, photo-sharing apps have capitalized on the idea that Instagram has become too curated, creating spaces for users to share unfiltered photos from their camera rolls. Locket tapped into lockscreen-based sharing, Retro took a photo journaling route, and Yope is building Instagram for private groups.
+South Korea is nearing a decision on whether to allow Google and Apple to export high-resolution geographic map data to servers outside the country. The detailed maps, which use a 1:5,000 scale, would show streets, buildings, and alleyways in far greater detail than currently available on these platforms. However, several regulatory and security hurdles remain unresolved.
 
-Now, Mayank Bidawatka, co-founder of Indian social network Koo, which was shut down last year after collapsed buyout talks, is releasing a new photo-sharing app called PicSee. The app, released Thursday, both on iOS and Android, aims to automatically detect and share photos of friends that are in your camera roll without you having to use any messaging system like WhatsApp or Instagram.
-
-Image Credits: PicSee
-
-Bidawatka said that your friends probably have hundreds of photos of you that you dont have. Either they forgot to send you those photos, or they themselves have forgotten about those photos. PicSee scan faces in your camera gallery and picks out photos of your friends.
+Earlier this week, South Koreas National Assembly Defense Committee held a parliamentary audit of Google Korea. Lawmakers questioned the companys requests for local map data, raising concerns over national security and digital sovereignty. The session comes two months after Seoul postponed its decision on Googles request to export high-resolution map data in August, following an earlier delay in May.
