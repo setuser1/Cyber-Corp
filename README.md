@@ -1,43 +1,37 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/computing/accessories/razers-new-kiyo-v2-webcams-offer-4k-streaming-with-hdr-211411212.html?src=rss
+https://www.engadget.com/wearables/apple-will-sell-ps-vr2-sense-controllers-separately-for-250-next-month-203602932.html?src=rss
 
-Computing
+Wearables
 
-Accessories
+Apple will sell PS VR2 Sense controllers separately for $250 next month
 
-Razer's new Kiyo V2 webcams offer 4K streaming with HDR
+Your fake pickleball court awaits.
 
-One of the new models is also getting AI-powered auto-framing and image enhancement.
-
-Ian Carlos Campbell
+Will Shanklin
 
 Contributing Reporter
 
-Ian Carlos CampbellContributing Reporter
+Will ShanklinContributing Reporter
 
-Wed, October 15, 2025 at 9:14 PM UTC
+Wed, October 15, 2025 at 8:36 PM UTC
 
-2 min read
+1 min read
 
-The Razer Kiyo V2 webcam perched on the top of a monitor.
+Apple
 
-(Razer)
+Tucked away in Apple's announcement of a second-generation Vision Pro was news on the controller front. First, we already knew that, with visionOS 26, Apple's headset supports PlayStation VR2 Sense controllers. But now you can get them without Sony's headset.
 
-Razer is updating its lineup of creator-focused webcams with two new models, the Razer Kiyo V2 and Razer Kiyo V2 X. The webcams offer new AI-powered features and 4K streaming at a more affordable price than the company's Kiyo Pro webcams.
+The Apple Store will soon begin selling the PS VR2 Sense controllers for $250. (Cue spit take.) The $400 PS VR2 headset bundle was previously the only way to buy them new. Maybe when you can justify spending $3,499 on Apple's reality machine, $250 for the controllers is reasonable.
 
-The $100 Kiyo V2 X is capable of capturing 720p video at either 60 or 30 frames per second, 1080p video at 24, 30 or 60 frames per second and 1440p video at 60 frames per second. Like some of Razer's other webcams, the Kiyo V2 X has a wide, 83-degree field of view that can be customized with the company's Synapse software. The webcam doesn't have the AI-powered features of the V2, but you do get all the basics, like auto-focus, a privacy shutter and a built-in microphone.
+The second-generation Vision Pro
 
-For about $50 more, the Kiyo V2 offers higher-quality capture and a few more automated features. The $150 webcam uses an 8.3MP Sony STARVIS image sensor and can capture true 4K HDR footage at 30 frames per second. The V2 also has a slightly wider field of view than the V2 X, at 93 degrees to the V2 X's 83 degrees. Razer is using that extra wiggle room to offer auto-framing — similar to Apple's Center Stage feature — through an integration with Reincubate's Camo Studio software. The Kiyo V2 can keep you in frame, remove your background and offer "adaptive lighting correction," all with the new software improvements Razer and Reincubate are adding.
+(Apple)
 
-Advertisement
+Apple says Sony's controllers open the door to more immersive gameplay on the Vision Pro. They support six degrees of freedom motion tracking (any direction you move or rotate), finger touch detection and rumble support.
 
-Advertisement
-
-While both webcams are pitched as creator tools, the basic features Razer is offering and the prices its offering them at easily make the Kiyo V2 and V2 X worth considering. At $150, the Kiyo V2 is only slightly more expensive than Engadget's favorite webcam and should, if Razers claims are true, offer even better video performance.
-
-Razer says you can purchase the Kiyo V2 X and Kiyo V2 today, for $100 and $150, respectively.
+Apple's second-gen Vision Pro is more powerful with the new M5 chip. It also includes a Dual Knit Band, which adds a top strap for increased stability and comfort. You'll be able to buy the PS VR2 Sense controllers from the Apple Store on November 11.
 
 Advertisement
 
