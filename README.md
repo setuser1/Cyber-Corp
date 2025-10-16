@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/15/self-driving-car-companies-pony-ai-and-weride-get-the-ok-for-hong-kong-listing/
+https://techcrunch.com/2025/10/15/arm-partners-with-meta-to-scale-ai-efforts/
 
-Pony.ai and WeRide have received a key approval from Chinese securities regulators that clears the way for the autonomous vehicle technology companies to pursue secondary listings on the Stock Exchange of Hong Kong.
+Semiconductor design company Arm is partnering up with Meta to enhance the social media giants AI systems amid an unprecedented infrastructure buildout. Under the partnership, Metas ranking and recommendation systems will move to Arms Neoverse platform, which was recently optimized for AI systems in the cloud, among other implementations.
 
-The Chinese companies, both of which are based in Guangzhou, are already publicly traded in the U.S. on the Nasdaq Exchange. WeRide made its public debut in October 2024, and Pony.ai followed a month later.
+&#8220;AI is transforming how people connect and create,&#8221; Santosh Janardhan, Metas head of infrastructure, said in a statement. &#8220;Partnering with Arm enables us to efficiently scale that innovation to the more than 3 billion people who use Metas apps and technologies.&#8221;
