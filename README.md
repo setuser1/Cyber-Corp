@@ -1,35 +1,51 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/playstation/the-silent-hill-2-and-until-dawn-remakes-will-hit-ps-plus-in-time-for-halloween-191333113.html?src=rss
+https://www.engadget.com/home/home-theater/the-latest-roku-update-adds-ai-powered-voice-control-and-better-search-184513277.html?src=rss
 
-Gaming
+Home
 
-Playstation
+Home theater
 
-The Silent Hill 2 and Until Dawn remakes will hit PS Plus in time for Halloween
+The latest Roku update adds AI-powered voice control and better search
 
-Other Game Catalog additions for October include Yakuza: Like A Dragon.
+The company is also rolling out its Bluetooth headphone mode to streaming sticks.
 
-Kris Holt
+Lawrence Bonk
 
 Contributing Reporter
 
-Kris HoltContributing Reporter
+Lawrence BonkContributing Reporter
 
-Wed, October 15, 2025 at 7:13 PM UTC
+Updated Wed, October 15, 2025 at 6:45 PM UTC
 
-1 min read
+2 min read
 
-Pyramid Head in Silent Hill 2
+Roku
 
-(Bloober Team/Konami)
+Roku just announced a robust software update coming to many of its devices. These are free upgrades, with search getting a major AI boost.
 
-It's that time of year when trick-or-treaters are finalizing their costumes and horror movie streaming service Shudder surely sees an uptick in usage. Yes, spooky season is upon us and Sony is getting in on the fun with its PlayStation Plus Game Catalog additions for October.
+First of all, the pre-existing voice search feature is getting "AI smarts." This means that users will be able to ask contextual questions about movies, actors and shows. It's worth noting that the bot will deliver the answers on-screen and not via a digital voice. This can be used to help find something to watch, as Roku gives examples of people asking how scary a movie is or if something is safe for children to watch.
 
-Starting on October 21, Extra and Premium subscribers will be able to play the remakes of Silent Hill 2 and Until Dawn on PS5 at no extra cost. Both games were released last October, so it hasn't taken too long for them to hit PS Plus. For extra spookiness, 2023's Alan Wake 2 is one of the games that all PS Plus members can claim this month, alongside Cocoon and Goat Simulator 3.
+Roku
 
-The other Game Catalog additions this time around are Yakuza: Like A Dragon (PS4 and PS5), As Dusk Falls (PS4, PS5), Poppy Playtime: Chapter 1 (PS4, PS5), Wizard with a Gun (PS5) and V Rising (PS5). Premium subscribers will also get a blast from the past in the shape of Tekken 3 (PS4, PS5), which debuted on the original PlayStation.
+A search bar is being added to the live TV page and it will scour all of the platform's free live channels to find a match. The search tool will also now give more accurate information as to which streaming platform to choose based on active subscriptions and what people are looking for.
+
+Advertisement
+
+Advertisement
+
+The dedicated Roku Sports page will be able to track live scores and will let viewers keep tabs on multiple games at once, thanks to matchup tiles. This can be shut off to keep things spoiler-free.
+
+Roku
+
+The company's pre-existing Bluetooth Headphone Mode is rolling out to more devices, including the Roku Streaming Stick and Streaming Stick Plus. This lets people connect headphones directly without having to use the dedicated app. Both of those made our list of the best streaming devices, so more functionality is always appreciated.
+
+Roku
+
+The app is getting an overhaul, with new shortcuts and the ability to rate shows and movies directly within the app. The company has also revealed that Philips Ambilight technology is now available on Roku TVs in the US. This tech automatically changes the ambient lighting based on what's being shown on-screen. All of these software updates will be available to Roku devices in the coming months.
+
+The company also recently refreshed many of its midrange TVs with pro-level features. New Roku Plus Series TVs now allow for hands-free voice control and a feature that automatically adjusts the picture on a scene-by-scene basis.
 
 Advertisement
 
