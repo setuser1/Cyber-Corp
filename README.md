@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/15/seoul-weighs-approval-for-google-apple-high-resolution-map-requests/
+https://techcrunch.com/2025/10/15/electric-aircraft-startup-beta-technologies-seeks-to-raise-825m-in-ipo/
 
-South Korea is nearing a decision on whether to allow Google and Apple to export high-resolution geographic map data to servers outside the country. The detailed maps, which use a 1:5,000 scale, would show streets, buildings, and alleyways in far greater detail than currently available on these platforms. However, several regulatory and security hurdles remain unresolved.
+Electric aviation startup Beta Technologies has priced shares for its initial public offering between $27 and $33, in hopes of raising as much as $825 million, according to a regulatory document filed with the U.S. Securities and Exchange Commission. If the company attracts investors at the top of that range it will debut with a valuation of about $7.2 billion.
 
-Earlier this week, South Koreas National Assembly Defense Committee held a parliamentary audit of Google Korea. Lawmakers questioned the companys requests for local map data, raising concerns over national security and digital sovereignty. The session comes two months after Seoul postponed its decision on Googles request to export high-resolution map data in August, following an earlier delay in May.
+The Vermont-based company, which was founded in 2017 by its enigmatic CEO Kyle Clark, filed the paperwork Wednesday despite the government shutdown. The SEC issued guidance earlier this month that allows companies in IPO limbo to allow their statements on certain areas, including share price, to become automatically effective after 20 days, even without SEC staff review. Several other companies, including Navan, have pressed ahead with IPO plans under this rule.
