@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/15/apple-adds-650-megawatts-of-renewables-in-europe-with-more-coming-in-china/
+https://techcrunch.com/2025/10/15/eightfold-co-founders-raise-35m-for-viven-an-ai-digital-twin-startup-for-querying-unavailable-coworkers/
 
-Apple announced Tuesday that it had signed contracts for 650 megawatts of renewable power in Europe.
+While employees spend much of their day communicating and coordinating amongst themselves on projects, this effort is often undermined by the availability of specific individuals. When a colleague with vital information is away — whether on vacation or in a different time zone — the rest of the team must delay progress until that person responds.
 
-This includes wind and solar projects that are either operational or will be soon. A large chunk of the power theyll produce will go toward offsetting the energy used by Apple customers. Use of everything from Mac Pros to Apple Watches accounts for nearly one-third of the companys carbon footprint.
+Ashutosh Garg and Varun Kacholia, the co-founders of Eightfold — an AI recruiting startup last valued at $2.1 billion — believe that advances in LLMs and data privacy technologies can help solve some aspects of this costly problem. Earlier this year, they launched Viven, a digital twin startup with a mission to grant employees access to crucial information from teammates even when those colleagues are unavailable.
