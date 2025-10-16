@@ -1,37 +1,31 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/wearables/apple-will-sell-ps-vr2-sense-controllers-separately-for-250-next-month-203602932.html?src=rss
+https://www.engadget.com/mobile/smartphones/honor-is-making-a-smartphone-with-a-fold-out-camera-201555268.html?src=rss
 
-Wearables
+Mobile
 
-Apple will sell PS VR2 Sense controllers separately for $250 next month
+Smartphones
 
-Your fake pickleball court awaits.
+Honor is making a smartphone with a fold-out camera
 
-Will Shanklin
+The device is expected to center AI use.
+
+Anna Washenko
 
 Contributing Reporter
 
-Will ShanklinContributing Reporter
+Anna WashenkoContributing Reporter
 
-Wed, October 15, 2025 at 8:36 PM UTC
+Wed, October 15, 2025 at 8:15 PM UTC
 
 1 min read
 
-Apple
+Honor via CNBC
 
-Tucked away in Apple's announcement of a second-generation Vision Pro was news on the controller front. First, we already knew that, with visionOS 26, Apple's headset supports PlayStation VR2 Sense controllers. But now you can get them without Sony's headset.
+Device maker Honor has revealed that one of its upcoming smartphones will offer an unusual design choice. While many manufacturers push to have more numerous and powerful cameras in their products, the Chinese company will put the camera for its new phone on a pop-out mechanical arm. According to CNBC, the design of this so-called "robot phone" is meant to showcase Honor's AI capabilities as the company makes a $10 billion investment in artificial intelligence over the next five years. Honor hasn't shared too much about this product, but will likely have more details during next year's Mobile World Congress.
 
-The Apple Store will soon begin selling the PS VR2 Sense controllers for $250. (Cue spit take.) The $400 PS VR2 headset bundle was previously the only way to buy them new. Maybe when you can justify spending $3,499 on Apple's reality machine, $250 for the controllers is reasonable.
-
-The second-generation Vision Pro
-
-(Apple)
-
-Apple says Sony's controllers open the door to more immersive gameplay on the Vision Pro. They support six degrees of freedom motion tracking (any direction you move or rotate), finger touch detection and rumble support.
-
-Apple's second-gen Vision Pro is more powerful with the new M5 chip. It also includes a Dual Knit Band, which adds a top strap for increased stability and comfort. You'll be able to buy the PS VR2 Sense controllers from the Apple Store on November 11.
+Honor has experimented with unusual form factors before, including a surreally thin foldable smartphone and a laptop with a detachable webcam, and we've even seen a similar concept of a pop-up camera several years back in products like the OnePlus 7 Pro phone. The idea to swing out a camera could offer some interesting options for image and video capture, but it's also a prime place for mechanical failures and high manufacturing costs.
 
 Advertisement
 
