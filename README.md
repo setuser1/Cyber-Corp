@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/15/eightfold-co-founders-raise-35m-for-viven-an-ai-digital-twin-startup-for-querying-unavailable-coworkers/
+https://techcrunch.com/2025/10/15/anthropic-launches-new-version-of-scaled-down-haiku-model/
 
-While employees spend much of their day communicating and coordinating amongst themselves on projects, this effort is often undermined by the availability of specific individuals. When a colleague with vital information is away — whether on vacation or in a different time zone — the rest of the team must delay progress until that person responds.
+On Wednesday, Anthropic released Claude Haiku 4.5, the newest version of its smallest model, billed as offering similar performance to Sonnet 4 &#8220;at one-third the cost and more than twice the speed,&#8221; per a company blog post.
 
-Ashutosh Garg and Varun Kacholia, the co-founders of Eightfold — an AI recruiting startup last valued at $2.1 billion — believe that advances in LLMs and data privacy technologies can help solve some aspects of this costly problem. Earlier this year, they launched Viven, a digital twin startup with a mission to grant employees access to crucial information from teammates even when those colleagues are unavailable.
+Anthropic cites a range of new benchmark results to back up those performance claims. In the companys testing, Haiku scored 73% on SWE-Bench verified and 41% on the command-line-focused Terminal-Bench — below Sonnet 4.5, but on par with Sonnet 4, GPT-5, and Gemini 2.5 in each case. Tests show similar results on benchmarks for tool use, computer use, and visual reasoning.
