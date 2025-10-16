@@ -1,35 +1,27 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ai/googles-veo-31-is-better-at-generating-videos-from-images-220829129.html?src=rss
+https://www.engadget.com/indie-darling-1000xresist-heads-to-xbox-and-playstation-on-november-4-212654512.html?src=rss
 
-AI
+Indie darling 1000xResist heads to Xbox and PlayStation on November 4
 
-Google's Veo 3.1 is better at generating videos from images
+You can also serve the ALLMOTHER via Xbox Game Pass.
 
-Besides improving its model, Google is also adding new capabilities to its Flow video editor.
-
-Ian Carlos Campbell
+Anna Washenko
 
 Contributing Reporter
 
-Ian Carlos CampbellContributing Reporter
+Anna WashenkoContributing Reporter
 
-Wed, October 15, 2025 at 10:08 PM UTC
+Wed, October 15, 2025 at 9:26 PM UTC
 
-2 min read
+1 min read
 
-A collection of frames from videos generated with Veo 3.1
+Sunset Visitor
 
-(Google)
+Heads up, indie game fans: 1000xResist will arrive on Xbox Series X/S and PlayStation 5 on November 4. The title, which is already out for PC and Nintendo Switch, will also be available through Xbox Game Pass on the same date. The game is also adding more localization support, bringing Brazilian Portuguese, French and Korean languages, so more players around the world can experience the story.
 
-Google has released a new update to its Veo AI video generation model that should make it do a better job of sticking to prompts and converting images into videos. Veo 3.1 is available to try today through Google's Gemini API and is now also powering the company's Flow video editor.
-
-Veo 3.1 builds on the new capabilities Google introduced with launch of Veo 3 at Google I/O 2025. The new model offers better "prompt adherence," according to Google, and should have an easier time creating videos based on the image "ingredients" you upload alongside your written prompt. Veo 3.1 also makes it possible to convert images to video and generate audio at the same time, a capability that wasn't available with Veo 3.
-
-In Flow, Veo 3.1 supports at least a new feature that gives you finer control over the videos you generate. With what Google calls "Frame to Video," Flow lets you upload a first and last frame, and then generates the video in-between. Adobe Firefly, which is powered by Veo 3, offers a similar feature, but Flow will be able to pull it off and create audio at the same time. Those added audio skills will also apply to the video editor's ability to extend clips and insert objects into existing footage, too.
-
-Based on the samples Google's shared, videos generated with Veo 3.1 still have an uncanny quality that seems to vary greatly depending on the prompt and subject. Even if it's missing some of the realism of OpenAI's Sora 2, though, the company's decision to try and make Veo more useful to people who actually work with video rather than a source of social media spam is a welcome move.
+And the story is the highlight of 1000xResist. This was an indie hit from 2024 that won a lot of fans for its innovative and branching story of a future timeline where the remaining members of humanity live underground in the aftermath of an alien invasion. The project from developer Sunset Visitor also picked up nominations for both the Hugo Awards and Nebula Awards, as well as winning a Peabody last year. Sometimes you'll want to take award winners with a grain (or a pound) of salt, but the industry and players alike have lauded the game's sci-fi storytelling chops.
 
 Advertisement
 
