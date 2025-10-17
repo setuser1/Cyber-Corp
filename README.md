@@ -1,37 +1,49 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/entertainment/tv-movies/apple-tv-and-peacock-team-up-on-a-bundle-that-costs-15-per-month-170403406.html?src=rss
+https://www.engadget.com/social-media/snap-is-bringing-shopping-features-to-its-ar-glasses-170000985.html?src=rss
 
-Entertainment
+Social media
 
-TV & movies
+Snap is bringing shopping features to its AR glasses
 
-Apple TV and Peacock team up on a bundle that costs $15 per month
+The company's first pair of standalone AR glasses for consumers is coming next year.
 
-That's a savings of around $9 every 30 days.
+Karissa Bell
 
-Lawrence Bonk
+Senior Editor
 
-Contributing Reporter
+Karissa BellSenior Editor
 
-Lawrence BonkContributing Reporter
+Thu, October 16, 2025 at 5:00 PM UTC
 
-Thu, October 16, 2025 at 5:04 PM UTC
+2 min read
 
-1 min read
+Snap's AR glasses are getting shopping features.
 
-Apple/NBC
+(Snap)
 
-There's a new streaming bundle in town. Apple TV and Peacock are teaming up to offer a combined subscription that starts at $15 per month. This will allow access to all original programming from both platforms, in addition to Peacock's stable of network and cable shows.
+Snap is continuing to lay the groundwork for its first consumer-ready AR glasses called Specs. While the company has still revealed few details about the device set to launch next year, it used its Lens Fest event to preview new features and apps that will work on the new hardware.
 
-This is a mighty fine deal, given that Apple TV recently changed both its name and price. The platform costs $13 per month now on its own. Peacock starts at $11 per month. In other words, this is a discount of around $9 each month. In this economy, we'll take any savings we can get.
+At the event dedicated to AR developers and creators, Snap said it would enable Specs users to buy items directly from their glasses. Snap CTO Bobby Murphy said that new software tools called Commerce Kit would allow "select developers to accept payments directly inside lenses," either for "digital goods" or as upgrades to unlock "premium features."
 
-There's one caveat here. The $15 price tag is for Peacock with ads. The subscription shoots up to $20 per month for an ad-free version. However, a standalone subscription to ad-free Peacock is $17 on its own. This bundle becomes available on October 20. Additionally, Apple One subscribers will get a 35 percent discount on Peacock Premium Plus plans. It's always nice when two lonely corporations find friendship, isn't it?
+Snap already allows lens creators to make money off AR effects via its Lens Creator rewards program, but offering in-lens commerce could allow the company to monetize its AR platform in a new way. "This is the start of developer monetization for lenses on Specs, and we plan to continue to find ways you can build sustainable businesses on our platform," Murphy said.
 
-For the uninitiated, Apple TV is the company's big-wig streaming platform. It's primarily known for sci-fi like Severance, For All Mankind and the upcoming Pluribus. The platform is also host to plenty of comedy, like The Studio, Shrinking and Ted Lasso.
+Advertisement
 
-Peacock is NBC's streaming service. It streams old-school network programming like The Office, Grimm and Superstore. The service features a stable of original programming like Poker Face, Twisted Metal and the underrated Mrs. Davis. The platform also recently premiered a little show called The Paper, which is a spinoff of The Office. Against all odds, this is actually a great little sitcom and a worthy successor to the original.
+Advertisement
+
+Advertisement
+
+Whether this could turn into a meaningful business for Snap is less clear. The company has so far released two versions of its standalone AR glasses, but those devices have been aimed at Snap developers not users. That's set to change next year with its next version of glasses. CEO Evan Spiegel has promised the new glasses will be "lightweight" compared with the current bulky and awkward-looking frames, but has said little else about the design.
+
+When Specs do launch, we know there will be a solid lineup of AR features available. Snap has already released a standalone experience for watching Spotlight videos and a more powerful web browser. There's also a new translation lens that can translate and transcribe audio in real-time.
+
+There are more AR integrations in the works, according to Snap. Tripadvisor is working on an AR lens that will overlay "trusted insights" into your field-of-view as you encounter restaurants, shops and other establishments in the real world. Design platform Figma is also working on a lens, though Snap didn't share details about how these will work.
+
+The updates are a reminder of how ambitious Snap's vision for AR glasses is. The company has been nurturing an ecosystem of AR creators and developers for years; it's now getting ready to carry that work over to its nascent glasses platform. "We see Specs powering everything from classrooms to design studios, creating opportunities and work for developers in entirely new categories," Murphy said.
+
+Jim Lanzone, the CEO of Engadgets parent company Yahoo, joined the board of directors at Snap on September 12, 2024. No one outside of Engadgets editorial team has any say in our coverage of the company.
 
 Advertisement
 
