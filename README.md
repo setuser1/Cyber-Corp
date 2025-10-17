@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/16/meta-to-shut-down-messenger-desktop-apps-for-mac-and-windows/
+https://techcrunch.com/2025/10/16/the-real-reason-google-deepmind-is-working-with-a-fusion-energy-startup/
 
-Meta is shutting down Messengers stand-alone desktop apps for Windows and Mac on December 15, the company confirmed to TechCrunch on Thursday.
+Energy startup Commonwealth Fusion Systems (CFS) said Thursday its working with Googles DeepMind division to fine tune — and even improve — the operation of its forthcoming Sparc reactor using AI.
 
-Starting December 15, users will no longer be able to log into the apps and will be automatically redirected to the Facebook website to access Messenger.
+The companies plan will simulate the plasma that will burn inside CFSs reactor using specialized DeepMind software known as Torax. They also plan on pairing Torax with AI models to help CFS figure out how best to achieve fusion power.
