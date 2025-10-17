@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/16/amazons-ring-to-partner-with-flock-a-network-of-ai-cameras-used-by-ice-feds-and-police/
+https://techcrunch.com/2025/10/16/meta-to-shut-down-messenger-desktop-apps-for-mac-and-windows/
 
-Amazons surveillance camera maker Ring announced a partnership on Thursday with Flock, a maker of AI-powered surveillance cameras that share footage with law enforcement.
+Meta is shutting down Messengers stand-alone desktop apps for Windows and Mac on December 15, the company confirmed to TechCrunch on Thursday.
 
-Now agencies that use Flock can request that Ring doorbell users share footage to help with &#8220;evidence collection and investigative work.&#8221;
+Starting December 15, users will no longer be able to log into the apps and will be automatically redirected to the Facebook website to access Messenger.
