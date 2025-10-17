@@ -1,49 +1,53 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/social-media/snap-is-bringing-shopping-features-to-its-ar-glasses-170000985.html?src=rss
+https://www.engadget.com/entertainment/streaming/why-does-amazon-need-five-tv-streamers-163014576.html?src=rss
 
-Social media
+Entertainment
 
-Snap is bringing shopping features to its AR glasses
+Streaming
 
-The company's first pair of standalone AR glasses for consumers is coming next year.
+Why does Amazon need five TV streamers?
 
-Karissa Bell
+Why have five when three will do? Or — gasp — just one?
 
-Senior Editor
+Valentina Palladino
 
-Karissa BellSenior Editor
+Deputy Editor, Buying Advice
 
-Thu, October 16, 2025 at 5:00 PM UTC
+Valentina PalladinoDeputy Editor, Buying Advice
 
-2 min read
+Thu, October 16, 2025 at 4:30 PM UTC
 
-Snap's AR glasses are getting shopping features.
+4 min read
 
-(Snap)
+Amazon
 
-Snap is continuing to lay the groundwork for its first consumer-ready AR glasses called Specs. While the company has still revealed few details about the device set to launch next year, it used its Lens Fest event to preview new features and apps that will work on the new hardware.
+Whats in a name? Apparently quite a bit, according to Amazon. The company recently announced yet another change to its Fire TV devices lineup, which just means they renamed a few things yet again. The family now includes the $35 Fire TV Stick HD, the $40 Fire TV Stick 4K Select, the $50 Fire TV Stick 4K Plus, the $60 Fire TV Stick 4K Max and the $140 Fire TV Cube.
 
-At the event dedicated to AR developers and creators, Snap said it would enable Specs users to buy items directly from their glasses. Snap CTO Bobby Murphy said that new software tools called Commerce Kit would allow "select developers to accept payments directly inside lenses," either for "digital goods" or as upgrades to unlock "premium features."
+That was a pain to type out and probably a pain to read (my apologies). Two of those devices were “rebranded” previously within the past year, so if youre confused, youre likely not alone. Whats a humble shopper to do when youre trying to decide which is the best (and budget-friendly) option to upgrade an old TV so you can binge-watch Hunting Wives and ask Alexa about tomorrows weather forecast?
 
-Snap already allows lens creators to make money off AR effects via its Lens Creator rewards program, but offering in-lens commerce could allow the company to monetize its AR platform in a new way. "This is the start of developer monetization for lenses on Specs, and we plan to continue to find ways you can build sustainable businesses on our platform," Murphy said.
-
-Advertisement
+Ill make your decision quite easy: just get the Fire TV Stick 4K Max. Really, if youre looking for the best streaming device, period, we recommend turning to Google for that. But if youve decided Amazons Fire TV lineup is where you want to spend your money, the 4K Max is the best option of the bunch. Not only has it stuck around without being subject to a “rebrand” for quite some time, but it also has arguably the best balance of features and price of any Fire TV streaming device.
 
 Advertisement
 
 Advertisement
 
-Whether this could turn into a meaningful business for Snap is less clear. The company has so far released two versions of its standalone AR glasses, but those devices have been aimed at Snap developers not users. That's set to change next year with its next version of glasses. CEO Evan Spiegel has promised the new glasses will be "lightweight" compared with the current bulky and awkward-looking frames, but has said little else about the design.
+The Fire TV Stick 4K Max gives you 4K streaming capabilities with Dolby Vision and all the HDRs that matter, Dolby Atmos audio and support for Amazon Luna and Xbox Game Pass. (It has some decent retro gaming chops, too, as our Jeff Dunn has previously explained.) Aside from the lack of an onboard Ethernet port present on the Fire TV Cube, the 4K Max has the same Wi-Fi 6E support as the more expensive Cube, plus the same 16GB of storage and 2GB of memory.
 
-When Specs do launch, we know there will be a solid lineup of AR features available. Snap has already released a standalone experience for watching Spotlight videos and a more powerful web browser. There's also a new translation lens that can translate and transcribe audio in real-time.
+When compared to the other dongles in the Fire TV lineup, things get even more perplexing. The $60 4K Max and the $50 4K Plus are essentially the same stick, but the latter has less storage, only Wi-Fi 6 capabilities (not 6E), a standard Alexa Voice remote and no support for the Fire TV ambient experience, which turns your TV into an Alexa smart display when youre not actively watching anything. Step down further once more to the $40 4K Select and you miss out on Dolby Vision and extra memory, and youll have to settle for Wi-Fi 5.
 
-There are more AR integrations in the works, according to Snap. Tripadvisor is working on an AR lens that will overlay "trusted insights" into your field-of-view as you encounter restaurants, shops and other establishments in the real world. Design platform Figma is also working on a lens, though Snap didn't share details about how these will work.
+If youre going to make all those compromises to save a few dollars, then you should just get the entry-level $35 Fire TV Stick HD. The biggest thing here is that it only supports 1080p streaming, but that will be ok for some people. We consider it to be the best budget streaming device on the market right now, and for folks just looking to make a cheap, basic upgrade to an aging set — go off and know your $35 was well spent (or, pro tip: wait for a sale and pick one up for less than $20).
 
-The updates are a reminder of how ambitious Snap's vision for AR glasses is. The company has been nurturing an ecosystem of AR creators and developers for years; it's now getting ready to carry that work over to its nascent glasses platform. "We see Specs powering everything from classrooms to design studios, creating opportunities and work for developers in entirely new categories," Murphy said.
+The case for the $140 Fire TV Cube isnt a strong one, but its one that Ill admit might be attractive to some users. It adds into the mix an Ethernet port, hands-free Alexa controls (meaning you dont have to press a button on its remote to activate the virtual assistant, you can just talk to it) and it can control your other entertainment devices like a cable box and game console. It ultimately gives you more control over both the other things in your entertainment ecosystem and Alexa all in one device.
 
-Jim Lanzone, the CEO of Engadgets parent company Yahoo, joined the board of directors at Snap on September 12, 2024. No one outside of Engadgets editorial team has any say in our coverage of the company.
+Advertisement
+
+Advertisement
+
+That means Amazon has three strong streaming devices with very clear value propositions: the $35 Stick HD, the $60 4K Max and the $140 TV Cube. Affordable, mid-tier and high-end categories are covered and most people will find something that fits in their budget and their needs with these three. The two Sticks sandwiched in the middle do nothing but confuse consumers. Looking at a comparison chart of all the Fire TV streaming devices, you might start to ask yourself, do I really need Wi-Fi 6E over Wi-Fi 6? Will one extra gigabyte of memory make a difference? Can I live without the Alexa Voice Remote Enhanced?
+
+You shouldnt be asking yourself these questions; you have better things to do. There are only three Fire TV streaming devices worth considering, and Id take it one step further and say most people should just get the Fire TV Stick 4K Max when it inevitably goes on sale for Black Friday for around $35. Youll spend less and get a better product.
 
 Advertisement
 
