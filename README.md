@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/16/the-real-reason-google-deepmind-is-working-with-a-fusion-energy-startup/
+https://techcrunch.com/2025/10/16/rent-a-cyber-friend-will-pay-you-to-talk-to-strangers-online-and-will-show-off-its-platform-at-techcrunch-disrupt-2025/
 
-Energy startup Commonwealth Fusion Systems (CFS) said Thursday its working with Googles DeepMind division to fine tune — and even improve — the operation of its forthcoming Sparc reactor using AI.
+Francesco Vitali will be the first to admit that when his co-founder Chris Siametis first pitched him on Rent a Cyber Friend, he didnt quite get the idea.
 
-The companies plan will simulate the plasma that will burn inside CFSs reactor using specialized DeepMind software known as Torax. They also plan on pairing Torax with AI models to help CFS figure out how best to achieve fusion power.
+&#8220;Whos going to pay somebody to speak with somebody?&#8221; Vitali told TechCrunch. &#8220;But Chris was insistent. Chris is a millennial, and Im Gen X, so it wasnt easy for me to understand his vision.&#8221;
