@@ -1,33 +1,41 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/computing/laptops/apples-m6-macbook-pro-generation-will-reportedly-offer-touchscreens-203029809.html?src=rss
+https://www.engadget.com/meta-is-shutting-down-its-desktop-messenger-app-202539375.html?src=rss
 
-Computing
+Meta is shutting down its desktop Messenger app
 
-Laptops
+You'll have to access your chats through Facebook or Messenger on the web after December 15.
 
-Apple's M6 MacBook Pro generation will reportedly offer touchscreens
-
-Sorry, Steve.
-
-Anna Washenko
+Ian Carlos Campbell
 
 Contributing Reporter
 
-Anna WashenkoContributing Reporter
+Ian Carlos CampbellContributing Reporter
 
-Thu, October 16, 2025 at 8:30 PM UTC
+Thu, October 16, 2025 at 8:25 PM UTC
 
 1 min read
 
-MacBook Pro M1
+Meta is shutting down its Messenger app for macOS and Windows and pushing users to the web. Meta confirmed over email to Engadget that the app will be fully shutdown on December 15, after which the easiest ways to access Messenger chats when you're not on your phone will be the Facebook app on Windows, or the Facebook and Messenger websites.
 
-Apple insiders are pointing to a tactile new future for the company's laptops. Last month, analyst Ming-Chi Kuo suggested that Apple would incorporate touchscreens into MacBooks some time in the next few years, "further blurring the line with the iPad." Today, Mark Gurman at Bloomberg confirmed that prediction, sharing even more specifics about the touchscreen approach for a MacBook Pro that is currently projected for release in late 2026 or early 2027.
+The company hasn't provided an explanation for why it's abandoning its desktop Messenger apps, but Meta's support article does say that users will receive a notification informing them of the shutdown, and will be blocked from accessing the app after December 15.
 
-Gurman reports that the touchscreen laptops are internally known as K114 and K116, and will run on M6 chips; Apple just introduced the M5 generation of its silicon for this year's iteration of the MacBook Pro and iPad Pro. His sources also say that the laptops will have OLED screens and will boast "a reinforced hinge and screen hardware" so that the display portion doesn't move when being used. The laptops will still have a trackpad and keyboard for non-touchscreen control, and will be housed in "thinner and lighter frames." Finally, this laptop will reportedly abandon the notch housing for the MacBook Pro's camera in favor of a hole-punch design that leaves a display area around that sensor.
+In order for your chats to be saved going forward, the company says you'll have to turn on secure storage and add a pin code to your account. To make sure your chats will be archived:
 
-Longtime Apple leader Steve Jobs was adamantly opposed to touchscreen computers. But most other computer companies have had touchscreen models available for about a decade, so Apple did adhere to that philosophy for a really long time. Rather than bring touch to a laptop, for a while Apple was trying to position the iPad as being capable of doing all the tasks you'd use a laptop for, as epitomized in the notorious "what's a computer?" ad. It should be interesting to see how touch MacBooks and iPads will coexist.
+Advertisement
+
+Advertisement
+
+Advertisement
+
+Click on the gear icon above your profile picture.
+
+Click on Privacy & Safety, and then End-to-end encrypted chats.
+
+Click on Message storage, and then make sure Turn on secure storage is toggled on.
+
+Meta officially cut Messenger out of Facebook in 2014 to create a focused messaging experience separate from the tangle of features the social media platform offered at the time. The company later tried to connect Messenger and Instagram Direct Messaging into one communication platform, but backed away from the idea in 2023. Rather than Metas interest in messaging suddenly waning, abandoning the desktop apps likely reflects the fact that most people prefer to use the companys mobile apps or websites.
 
 Advertisement
 
