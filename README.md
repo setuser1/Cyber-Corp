@@ -1,41 +1,43 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/meta-is-shutting-down-its-desktop-messenger-app-202539375.html?src=rss
+https://www.engadget.com/ai/googles-ask-photos-feature-isnt-available-in-texas-and-illinois-200536477.html?src=rss
 
-Meta is shutting down its desktop Messenger app
+AI
 
-You'll have to access your chats through Facebook or Messenger on the web after December 15.
+Google's Ask Photos feature isn't available in Texas and Illinois
 
-Ian Carlos Campbell
+A pair of data privacy settlements seems the likeliest explanation.
+
+Will Shanklin
 
 Contributing Reporter
 
-Ian Carlos CampbellContributing Reporter
+Will ShanklinContributing Reporter
 
-Thu, October 16, 2025 at 8:25 PM UTC
+Thu, October 16, 2025 at 8:05 PM UTC
 
-1 min read
+2 min read
 
-Meta is shutting down its Messenger app for macOS and Windows and pushing users to the web. Meta confirmed over email to Engadget that the app will be fully shutdown on December 15, after which the easiest ways to access Messenger chats when you're not on your phone will be the Facebook app on Windows, or the Facebook and Messenger websites.
+Google
 
-The company hasn't provided an explanation for why it's abandoning its desktop Messenger apps, but Meta's support article does say that users will receive a notification informing them of the shutdown, and will be blocked from accessing the app after December 15.
+One of Google's Gemini-powered photo features is MIA in Texas and Illinois. The company confirmed to Engadget that Ask Photos is currently unavailable in the two states. It didn't say why. Google Photos' Conversational Editing is reportedly missing in those states, too.
 
-In order for your chats to be saved going forward, the company says you'll have to turn on secure storage and add a pin code to your account. To make sure your chats will be archived:
+"The ability to ask Photos to edit your images is not available to users in Texas and Illinois at this time," Google's statement to Engadget reads. "We are working to determine how to make Ask Photos available to more users."
+
+As for why that is, we don't have confirmation. But the Houston Chronicle, which first reported the news, pointed to a pair of lawsuit settlements as a likely culprit. In 2022, Google settled an Illinois class action suit over Google Photos data privacy concerns for $200 million. Earlier this year, it settled one with Texas for $1.4 billion over collecting user data without permission.
+
+Advertisement
 
 Advertisement
 
 Advertisement
 
-Advertisement
+The common theme in both settlements was biometric data collection. Lo and behold, both of the missing AI features require "face grouping" to be turned on. That Google Photos feature uses automated facial recognition to cluster pictures of the same person.
 
-Click on the gear icon above your profile picture.
+The tricky part comes when state laws require informed consent for data collection. 9to5Google notes that only the photographer — and not the many subjects of their pictures — have typically agreed to Google's terms and conditions. That creates a head-spinning legal conundrum that could have easily led Google to play it safe.
 
-Click on Privacy & Safety, and then End-to-end encrypted chats.
-
-Click on Message storage, and then make sure Turn on secure storage is toggled on.
-
-Meta officially cut Messenger out of Facebook in 2014 to create a focused messaging experience separate from the tangle of features the social media platform offered at the time. The company later tried to connect Messenger and Instagram Direct Messaging into one communication platform, but backed away from the idea in 2023. Rather than Metas interest in messaging suddenly waning, abandoning the desktop apps likely reflects the fact that most people prefer to use the companys mobile apps or websites.
+Ask Google Photos lets you type or speak queries about your picture library. For example, you could say, "What are all the cities I visited last year?" or "Show me the best photo from each national park I've visited." Meanwhile, Conversational Editing lets you tweak images using natural language. It launched with the Pixel 10 series in August and expanded to other Android phones in September.
 
 Advertisement
 
