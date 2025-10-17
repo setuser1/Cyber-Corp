@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/16/waymo-dips-its-wheels-back-into-delivery-this-time-with-doordash/
+https://techcrunch.com/2025/10/16/eff-unions-sue-trump-administration-over-alleged-mass-social-media-surveillance-of-legal-residents/
 
-The sprawling metropolis of Phoenix continues to be a testbed for Waymo, and not just on the technical front. The Alphabet-owned company has used its first testing and commercial market to experiment with its business model, too, including delivery.
+Digital rights group the Electronic Frontier Foundation (EFF) filed a lawsuit on Thursday against the Trump administration over the governments alleged social media monitoring of people who are lawfully living in the United States.
 
-Waymo is known for its robotaxis, but it has tested how its tech could be used for delivery. The company previously tapped UPS and Uber Eats for pilot programs, and it put considerable staff and resources toward developing self-driving trucks under its Waymo Via arm, before shuttering that program in 2023 to focus on robotaxis.
+The suit contends that the government is using AI and other methods to watch the social media posts of virtually every single non-citizen who is in the United States legally and on a valid visa, as well as many people who have obtained permanent resident status. The U.S. government is, according to these allegations, looking for posts that express views that the current government disfavors.
