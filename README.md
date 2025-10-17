@@ -1,11 +1,15 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/the-crew-2-is-now-playable-offline-211629508.html?src=rss
+https://www.engadget.com/computing/laptops/apples-m6-macbook-pro-generation-will-reportedly-offer-touchscreens-203029809.html?src=rss
 
-The Crew 2 is now playable offline
+Computing
 
-It's a welcome addition from Ubisoft.
+Laptops
+
+Apple's M6 MacBook Pro generation will reportedly offer touchscreens
+
+Sorry, Steve.
 
 Anna Washenko
 
@@ -13,17 +17,17 @@ Contributing Reporter
 
 Anna WashenkoContributing Reporter
 
-Thu, October 16, 2025 at 9:16 PM UTC
+Thu, October 16, 2025 at 8:30 PM UTC
 
 1 min read
 
-Ubisoft
+MacBook Pro M1
 
-The Crew 2 was updated today to include Hybrid Mode, adding an offline mode to the driving game. Online and offline modes are separate saves, so if you snag a sweet ride while playing offline, it won't be available the next time you join an online session. Players will have the option to re-export their online save to the offline one, but it will overwrite and erase all offline-only progress. Multiplayer content, user-generated content, LIVE Summits and Crew Credits purchases will not be available in the offline mode.
+Apple insiders are pointing to a tactile new future for the company's laptops. Last month, analyst Ming-Chi Kuo suggested that Apple would incorporate touchscreens into MacBooks some time in the next few years, "further blurring the line with the iPad." Today, Mark Gurman at Bloomberg confirmed that prediction, sharing even more specifics about the touchscreen approach for a MacBook Pro that is currently projected for release in late 2026 or early 2027.
 
-It's a bare-bones option, but the addition of offline mode is a welcome move from Ubisoft. The company's decision to delete The Crew from players' libraries after servers for the online game shut down sparked some big debates about ownership and preservation. One of the notable voices emerging from that conversation was the Stop Killing Games movement, which is pushing for EU legislation to ensure access to games even after their devs stop supporting a project.
+Gurman reports that the touchscreen laptops are internally known as K114 and K116, and will run on M6 chips; Apple just introduced the M5 generation of its silicon for this year's iteration of the MacBook Pro and iPad Pro. His sources also say that the laptops will have OLED screens and will boast "a reinforced hinge and screen hardware" so that the display portion doesn't move when being used. The laptops will still have a trackpad and keyboard for non-touchscreen control, and will be housed in "thinner and lighter frames." Finally, this laptop will reportedly abandon the notch housing for the MacBook Pro's camera in favor of a hole-punch design that leaves a display area around that sensor.
 
-Having a way to continue accessing The Crew 2 even if (or more likely when) the game loses online support was something the developer had promised, so it's nice to have Ubisoft follow through. "Whether you're looking to preserve your progression for the future or simply enjoy the freedom of playing without a connection, Hybrid Mode ensures The Crew 2 remains accessible for years to come," the company said in the blog post.
+Longtime Apple leader Steve Jobs was adamantly opposed to touchscreen computers. But most other computer companies have had touchscreen models available for about a decade, so Apple did adhere to that philosophy for a really long time. Rather than bring touch to a laptop, for a while Apple was trying to position the iPad as being capable of doing all the tasks you'd use a laptop for, as epitomized in the notorious "what's a computer?" ad. It should be interesting to see how touch MacBooks and iPads will coexist.
 
 Advertisement
 
