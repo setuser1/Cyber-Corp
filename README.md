@@ -1,31 +1,43 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/moderators-call-for-ai-controls-after-reddit-answers-suggests-heroin-for-pain-relief-230749515.html?src=rss
+https://www.engadget.com/transportation/waymo-will-also-drive-for-doordash-in-phoenix-213535127.html?src=rss
 
-Moderators call for AI controls after Reddit Answers suggests heroin for pain relief
+Transportation
 
-There's no way to turn off the AI-generated sections, even when they have dangerous or inaccurate information.
+Waymo will also drive for DoorDash in Phoenix
 
-Anna Washenko
+The company previously explored offering deliveries through Uber Eats in 2024.
+
+Ian Carlos Campbell
 
 Contributing Reporter
 
-Anna WashenkoContributing Reporter
+Ian Carlos CampbellContributing Reporter
 
-Thu, October 16, 2025 at 11:07 PM UTC
+Thu, October 16, 2025 at 9:35 PM UTC
 
 2 min read
 
-REUTERS / REUTERS
+Waymo has announced a new partnership with DoorDash that will make the company's self-driving cars a delivery option for users in Phoenix, Arizona. You can already hail a ride in Waymos Arizona service area, but this new partnership will give the company's cars something to do when they're not transporting human cargo.
 
-We've seen artificial intelligence give some pretty bizarre responses to queries as chatbots become more common. Today, Reddit Answers is in the spotlight after a moderator flagged the AI tool for providing dangerous medical advice that they were unable to disable or hide from view.
+To start, Waymo says that deliveries will be limited to things you can order through DashMart, DoorDash's storefront for convenience and grocery stores. Eventually, though, deliveries will "include more local Phoenix merchants and a wider variety of offerings."
 
-The mod saw Reddit Answers suggest that people experiencing chronic pain stop taking their current prescriptions and take high-dose kratom, which is an unregulated substance that is illegal in some states. The user said they then asked Reddit Answers about other medical questions. They received potentially dangerous advice for treating neo-natal fever alongside some accurate actions as well as suggestions that heroin could be used for chronic pain relief. Several other mods, particularly from health-focused subreddits, replied to the original post adding their concerns that they have no way to turn off or flag a problem when Reddit Answers has provided inaccurate or dangerous information in their communities.
+Phoenix, your next delivery just took a step into the future! Were partnering with @DoorDash to bring the safety and convenience of the Waymo Driver to grocery runs and meal orders. More at https://t.co/qDKGER0wsR pic.twitter.com/y7nIo6pnNB
 
-A representative from Reddit told 404 Media that Reddit Answers had been updated to address some of the mods' concerns. "This update ensures that ‘Related Answers to sensitive topics, which may have been previously visible on the post detail page (also known as the conversation page), will no longer be displayed," the spokesperson told the publication. "This change has been implemented to enhance user experience and maintain appropriate content visibility within the platform." We've reached out to Reddit for additional comment about what topics are being excluded but have not received a reply at this time.
+— Waymo (@Waymo) October 16, 2025
 
-While the rep told 404 Media that Reddit Answers "excludes content from private, quarantined and NSFW communities, as well as some mature topics," the AI tool clearly doesn't seem equipped to properly deliver medical information, much less to handle the snark, sarcasm or potential bad advice that may be given by other Redditors. Aside from the latest move to not appear on “sensitive topics,” it doesn't seem like Reddit plans to provide any tools to control how or when AI is being shown in subreddits, which could make the already-challenging task of moderation nearly impossible.
+In order to try out a Waymo delivery, you'll have to place your order through DoorDash and "opt in to autonomous delivery" during checkout. Once Waymo's car arrives, much like DoorDash's Dot robot, you'll then have to physically leave your home and collect your order from the car's trunk to complete the delivery. Part of the convenience (and complication) of DoorDash is getting what you ordered brought to your door. A Waymo delivery might turn some people off, since it makes that option impossible.
+
+Advertisement
+
+Advertisement
+
+Advertisement
+
+Of course, this isn't the first time Waymo has delivered food in Phoenix. In 2024 the company partnered with Uber Eats for a similar program, with similar limitations around how deliveries were completed and where food could be ordered from. Waymo runs its own robotaxi service in Arizona, Waymo One, but depending on the region, it's also offered rides through third-party partners like Uber. Its partnerships with Uber Eats and DoorDash seem like variations on the same idea.
+
+In 2020, Waymo was exploring using self-driving long-haul trucks for deliveries. The company abandoned those plans in 2023 to prioritize robotaxis and the Waymo Driver software, but these tests with DoorDash and Uber Eats could be a signal that Waymo is interested in pursuing deliveries on a smaller scale.
 
 Advertisement
 
