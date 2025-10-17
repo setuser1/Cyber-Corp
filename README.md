@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/16/kayak-launches-an-ai-mode-for-travel-questions-search-and-bookings/
+https://techcrunch.com/2025/10/16/why-ai-startups-are-taking-data-into-their-own-hands/
 
-Travel search engine Kayak will now allow users to research trips ahead of booking using AI. The company this week launched an &#8220;AI Mode&#8221; feature that lets users ask travel-related questions as well as compare and book flights, hotels, and cars, through an AI chatbot integrated on the companys website.
+For one week this summer, Taylor and her roommate wore GoPro cameras strapped to their foreheads as they painted, sculpted, and did household chores. They were training an AI vision model, carefully syncing their footage so the system could get multiple angles on the same behavior. It was difficult work in many ways, but they were well paid for it — and it allowed Taylor to spend most of her day making art.
 
-The feature is currently available across both desktop and mobile web, and takes advantage of Kayaks integration with ChatGPT to deliver contextual results.
+“We woke up, did our regular routine, and then strapped the cameras on our head and synced the times together,” she told me. “Then we would make our breakfast and clean the dishes. Then wed go our separate ways and work on art.”
