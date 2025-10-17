@@ -1,39 +1,37 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/battlefield-6-sold-over-7-million-copies-in-three-days-181826351.html?src=rss
+https://www.engadget.com/entertainment/tv-movies/apple-tv-and-peacock-team-up-on-a-bundle-that-costs-15-per-month-170403406.html?src=rss
 
-Gaming
+Entertainment
 
-Battlefield 6 sold over 7 million copies in three days
+TV & movies
 
-The news comes days after EA announced that it's going private.
+Apple TV and Peacock team up on a bundle that costs $15 per month
 
-Will Shanklin
+That's a savings of around $9 every 30 days.
+
+Lawrence Bonk
 
 Contributing Reporter
 
-Will ShanklinContributing Reporter
+Lawrence BonkContributing Reporter
 
-Thu, October 16, 2025 at 6:18 PM UTC
+Thu, October 16, 2025 at 5:04 PM UTC
 
 1 min read
 
-EA
+Apple/NBC
 
-EA has had quite the month, and the numbers tell its story. A few weeks ago, the company confirmed an agreement to go private in a $55 billion sale. And now we know that Battlefield 6 sold over 7 million copies in its first three days. The game also had over 172 million online matches played during the holiday weekend. On top of that, it logged 15 million hours watched on streaming services.
+There's a new streaming bundle in town. Apple TV and Peacock are teaming up to offer a combined subscription that starts at $15 per month. This will allow access to all original programming from both platforms, in addition to Peacock's stable of network and cable shows.
 
-Battlefield 6's sales numbers make it the biggest opening yet for the franchise. By comparison, 2021's Battlefield 2042 reportedly sold a relatively paltry 4.2 million copies in its first week.
+This is a mighty fine deal, given that Apple TV recently changed both its name and price. The platform costs $13 per month now on its own. Peacock starts at $11 per month. In other words, this is a discount of around $9 each month. In this economy, we'll take any savings we can get.
 
-The quotes in EA's blog post read like awards ceremony acceptance speeches. "First and foremost, we want to thank our players," franchise General Manager Byron Beede said. "We never take moments like this for granted, so I want to express our sincere gratitude to our global Battlefield Studios and passionate community that has helped get us to this point," Executive VP Vince Zampella added.
+There's one caveat here. The $15 price tag is for Peacock with ads. The subscription shoots up to $20 per month for an ad-free version. However, a standalone subscription to ad-free Peacock is $17 on its own. This bundle becomes available on October 20. Additionally, Apple One subscribers will get a 35 percent discount on Peacock Premium Plus plans. It's always nice when two lonely corporations find friendship, isn't it?
 
-Advertisement
+For the uninitiated, Apple TV is the company's big-wig streaming platform. It's primarily known for sci-fi like Severance, For All Mankind and the upcoming Pluribus. The platform is also host to plenty of comedy, like The Studio, Shrinking and Ted Lasso.
 
-Advertisement
-
-The game's launch came weeks after the company's announcement that it will go private. The gaming giant will be owned by the Saudi Arabia Public Investment Fund (PIF), Silver Lake, and Affinity Partners. On Wednesday, unionized EA staffers spoke out against the acquisition, warning that "every time private equity or billionaire investors take a studio private, workers lose visibility, transparency and power."
-
-Battlefield 6 launched on October 10. It's available for PC, PS5, and Xbox Series X/S. Its Season 1 content is just around the corner, arriving on October 28.
+Peacock is NBC's streaming service. It streams old-school network programming like The Office, Grimm and Superstore. The service features a stable of original programming like Poker Face, Twisted Metal and the underrated Mrs. Davis. The platform also recently premiered a little show called The Paper, which is a spinoff of The Office. Against all odds, this is actually a great little sitcom and a worthy successor to the original.
 
 Advertisement
 
