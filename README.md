@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/16/vc-legend-ron-conway-quits-salesforce-foundation-after-benioffs-national-guard-comments/
+https://techcrunch.com/2025/10/16/waymo-dips-its-wheels-back-into-delivery-this-time-with-doordash/
 
-Ron Conway, the founder of venture firm SV Angel, known for its early investments into Google, Airbnb, and Meta, has resigned from the Salesforce Foundation, the New York Times reported. The resignation follows Salesforce CEO Marc Benioff saying last week that he “fully supported” President Trump and proposing that National Guard troops should patrol San Francisco streets to combat crime and homelessness.
+The sprawling metropolis of Phoenix continues to be a testbed for Waymo, and not just on the technical front. The Alphabet-owned company has used its first testing and commercial market to experiment with its business model, too, including delivery.
 
-In an interview with the New York Times last week, Benioff argued that San Francisco needs &#8220;a show of force&#8221; and called for deploying the National Guard to address what he described as the citys deteriorating conditions. He also praised Elon Musks government efficiency efforts and said that he wasnt keeping up with reports on immigration raids or Trumps attacks on the press, despite owning the news magazine Time, which he purchased in 2018.
+Waymo is known for its robotaxis, but it has tested how its tech could be used for delivery. The company previously tapped UPS and Uber Eats for pilot programs, and it put considerable staff and resources toward developing self-driving trucks under its Waymo Via arm, before shuttering that program in 2023 to focus on robotaxis.
