@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/16/eff-unions-sue-trump-administration-over-alleged-mass-social-media-surveillance-of-legal-residents/
+https://techcrunch.com/2025/10/16/kayak-launches-an-ai-mode-for-travel-questions-search-and-bookings/
 
-Digital rights group the Electronic Frontier Foundation (EFF) filed a lawsuit on Thursday against the Trump administration over the governments alleged social media monitoring of people who are lawfully living in the United States.
+Travel search engine Kayak will now allow users to research trips ahead of booking using AI. The company this week launched an &#8220;AI Mode&#8221; feature that lets users ask travel-related questions as well as compare and book flights, hotels, and cars, through an AI chatbot integrated on the companys website.
 
-The suit contends that the government is using AI and other methods to watch the social media posts of virtually every single non-citizen who is in the United States legally and on a valid visa, as well as many people who have obtained permanent resident status. The U.S. government is, according to these allegations, looking for posts that express views that the current government disfavors.
+The feature is currently available across both desktop and mobile web, and takes advantage of Kayaks integration with ChatGPT to deliver contextual results.
