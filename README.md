@@ -1,43 +1,27 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ai/googles-ask-photos-feature-isnt-available-in-texas-and-illinois-200536477.html?src=rss
+https://www.engadget.com/tesla-reintroduces-mad-max-full-self-driving-mode-that-breaks-speed-limits-190659583.html?src=rss
 
-AI
+Tesla reintroduces 'Mad Max' Full Self-Driving mode that breaks speed limits
 
-Google's Ask Photos feature isn't available in Texas and Illinois
+Full Self-Driving is getting more aggressive while in the midst of yet another federal investigation.
 
-A pair of data privacy settlements seems the likeliest explanation.
-
-Will Shanklin
+Anna Washenko
 
 Contributing Reporter
 
-Will ShanklinContributing Reporter
+Anna WashenkoContributing Reporter
 
-Thu, October 16, 2025 at 8:05 PM UTC
+Thu, October 16, 2025 at 7:06 PM UTC
 
-2 min read
+1 min read
 
-Google
+Reuters / REUTERS
 
-One of Google's Gemini-powered photo features is MIA in Texas and Illinois. The company confirmed to Engadget that Ask Photos is currently unavailable in the two states. It didn't say why. Google Photos' Conversational Editing is reportedly missing in those states, too.
+Tesla has added another brazenly stupid new entry to its dubious safety record. The latest update to Tesla's Full Self-Driving System adds a mode called Mad Max, "which comes with higher speeds and more frequent lane changes" than the system's Hurry mode. This feature isn't new; it was part of the Autopilot mode in 2018 that pre-dated FSD. According to Electrek, the re-introduction of Mad Max mode is going exactly as well as you'd expect: "It hasnt been out for 24 hours, and it has already been spotted rolling stop signs and driving more than 15 mph (24 km/h) over the speed limit."
 
-"The ability to ask Photos to edit your images is not available to users in Texas and Illinois at this time," Google's statement to Engadget reads. "We are working to determine how to make Ask Photos available to more users."
-
-As for why that is, we don't have confirmation. But the Houston Chronicle, which first reported the news, pointed to a pair of lawsuit settlements as a likely culprit. In 2022, Google settled an Illinois class action suit over Google Photos data privacy concerns for $200 million. Earlier this year, it settled one with Texas for $1.4 billion over collecting user data without permission.
-
-Advertisement
-
-Advertisement
-
-Advertisement
-
-The common theme in both settlements was biometric data collection. Lo and behold, both of the missing AI features require "face grouping" to be turned on. That Google Photos feature uses automated facial recognition to cluster pictures of the same person.
-
-The tricky part comes when state laws require informed consent for data collection. 9to5Google notes that only the photographer — and not the many subjects of their pictures — have typically agreed to Google's terms and conditions. That creates a head-spinning legal conundrum that could have easily led Google to play it safe.
-
-Ask Google Photos lets you type or speak queries about your picture library. For example, you could say, "What are all the cities I visited last year?" or "Show me the best photo from each national park I've visited." Meanwhile, Conversational Editing lets you tweak images using natural language. It launched with the Pixel 10 series in August and expanded to other Android phones in September.
+Everything about this is a comically bad idea, or it would be comic if it wasn't so downright dangerous. The US National Highway Traffic Safety Administration just opened an investigation into the company's FSD system last week after receiving more than 50 reports of traffic safety violations in addition to numerous crashes. And this is just the most recent time the regulator has put FSD in its crosshairs. Choosing this moment to reintroduce an automated driving mode based on a post-apocalyptic wasteland where life is meaningless is a level of arrogance that does feel on brand for Tesla.
 
 Advertisement
 
