@@ -1,51 +1,55 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/deals/samsungs-2025-frame-pro-qled-tv-is-on-sale-for-a-record-low-price-155913911.html?src=rss
+https://www.engadget.com/deals/get-three-months-of-xbox-game-pass-ultimate-for-only-52-right-now-152331537.html?src=rss
 
 Deals
 
-Samsung's 2025 Frame Pro QLED TV is on sale for a record low price
+Get three months of Xbox Game Pass Ultimate for only $52 right now
 
-The ultra-thin art TV is over $400 off right now.
+Microsoft recently jacked the price up, so this is a savings of $38.
 
-Andre Revilla
+Lawrence Bonk
 
 Contributing Reporter
 
-Andre RevillaContributing Reporter
+Lawrence BonkContributing Reporter
 
-Fri, October 17, 2025 at 3:59 PM UTC
+Fri, October 17, 2025 at 3:23 PM UTC
 
-Samsung
+Microsoft
 
-Samsung's 2025 The Frame Pro QLED Mini LED Smart TV is on sale for a record-low price. The 65-inch model that normally retails for $2,200 is on sale for $1,760, which is the lowest we've ever seen it.
+Newegg is selling three months of Xbox Game Pass Ultimate for $52, which is a fantastic deal. The list price is $60, but drops down to $52 by entering the code SSE2589 at checkout. The sale ends soon, so don't dilly-dally.
 
-Samsung
+This is a discount of $38, thanks to Microsoft mandating a price hike that brought a single month of Game Pass Ultimate up to $30. That controversial move has irked fans of the subscription service. In other words, make sure to cancel at the end of the three months to avoid getting slammed in the bank account.
 
-Samsung Frame Pro TV
+Wikimedia Commons
 
-$1,760$2,098Save $338
+Xbox Game Pass Ultimate (3 months)
 
-Samsung's top of the line art TV is at a record low price.
+$52$90
 
-$1,760 at Amazon
+Save $38 with code
 
-Explore More Buying Options
+Just make sure to enter the code at checkout.
 
-$1,898 at Macy's$2,200 at HSN
+Save $38 with code
 
-The 1-inch-thick "art" TV uses Samsung's impressive 4K Neo QLED panel, which is a quantum dot LCD panel with a Mini LED backlight array. The Frame Pro can display lifelike art pieces when the TV isn't in use, while its sleek design means it also looks great when turned off.
+Copied!
 
-The Frame Pro comes with Samsung's new Wireless One Connect Box, which is supposed to help with cable management by putting the TV's inputs in a separate box that then wirelessly transmits the feed from your external device to the TV. It does require its own power supply, though, so that's one more plug needed if you are connecting a console or a streaming device.
+SSE2589
+
+$52 at Newegg
+
+Despite the absolutely bonkers move to raise the price by 50 percent in one fell swoop, Game Pass Ultimate is still a fantastic service with over 400 games to choose from. It's home to plenty of standout titles, including recent hits like Clair Obscur Expedition 33 and the indie darling that's currently wrecking productivity across the world, Ball x Pit.
 
 Advertisement
 
 Advertisement
 
-The TV also carries the NQ4 AI Gen3 Processor, which imbues the Frame Pro with AI-enhanced picture and sound. This model also comes with Samsung Vision AI, which works to upscale the image on screen, create personalized experiences and more.
+The platform recently integrated with Ubisoft+, which offers access to dozens more games in franchises like Far Cry and Assassin's Creed. A subscription also signs up users with Fortnite Crew, which gives access to the game's battle pass, 1,000 V-Bucks each month and other perks.
 
-This 2025 model was just made available to order earlier this year, and the current sale price is surprisingly lower than it was during last week's Prime Day event, proving sometimes good things come to those who wait.
+Follow @EngadgetDeals on X for the latest tech deals and buying advice.
 
 Advertisement
 
