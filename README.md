@@ -1,41 +1,43 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/science/space/spacexs-starshield-satellites-are-reportedly-transmitting-signals-on-unauthorized-frequencies-212939991.html?src=rss
+https://www.engadget.com/ai/facebooks-latest-ai-feature-can-scan-your-phones-camera-roll-200056906.html?src=rss
 
-Science
+AI
 
-Space
+Facebook's latest AI feature can scan your phone's camera roll
 
-SpaceX's Starshield satellites are reportedly transmitting signals on unauthorized frequencies
+The opt-in feature can suggest hidden gems and edit them into something worth sharing.
 
-The company's national security network, while secretive, still has to be used with international standards in mind.
-
-Ian Carlos Campbell
+Will Shanklin
 
 Contributing Reporter
 
-Ian Carlos CampbellContributing Reporter
+Will ShanklinContributing Reporter
 
-Fri, October 17, 2025 at 9:29 PM UTC
+Fri, October 17, 2025 at 8:00 PM UTC
 
-1 min read
+2 min read
 
-ASSOCIATED PRESS
+Meta
 
-SpaceX may be violating international telecommunication standards by allowing its Starshield satellites to transmit to Earth on frequencies it's not supposed to use, NPR reports. Starshield is a classified version of SpaceX's Starlink satellite network offered on contract to government agencies "to support national security efforts," according to the company's website.
+A Facebook feature that scans your phone's photo library to make AI collages and edits is now available in North America. Meta tested it earlier this year. It's an opt-in feature, but the company may train its models on your media if you use its AI editing or share the results.
 
-The report is based on findings from amateur satellite tracker Scott Tilley, who observed what appeared to be Starshield satellites broadcasting on frequencies normally dedicated to "uplink" transmissions from the Earth to satellites in orbit. Using the frequencies that way violates standards set by the International Telecommunication Union, a United Nations agency dedicated to coordinating the use of radio spectrum across the world.
+From a user experience perspective, the idea is to help you find "hidden gems" in your library and turn them into something shareable. After scanning your photo library (with your permission), it will cough up suggestions. For example, it might recommend a collage based on a vacation, a recap of a graduation party or simply spruce up some photos with AI. For better or worse, it's another step in the direction of automating creativity and skill.
 
-Standards around which frequencies are used for uplink and downlink broadcasts to satellites were created to avoid interference, among other technical issues. "Nearby satellites could receive radio-frequency interference and could perhaps not respond properly to commands — or ignore commands — from Earth," Tilley told NPR. It's not clear yet whether SpaceX ignoring these rules is causing any issues with satellite communication, but should problems arise, there's now a possible cause.
-
-Advertisement
+Zooming out to Meta's business motives, it's easy to imagine this is a move for more AI training data. The company says it won't train its AI on your camera roll "unless you choose to edit this media with our AI tools, or share." If you find it useful enough to use, your media may help train Meta's AI models.
 
 Advertisement
 
 Advertisement
 
-SpaceX's first major Starshield project was a $70 million contract with US Space Force in 2023. More recently in 2024, there were reports that SpaceX's Starshield division had been tasked with building out a network of spy satellites to gather imagery of Earth for the Department of Defenses National Reconnaissance Office.
+Advertisement
+
+The company says the feature's suggestions are private to you until you choose to share them. Its permissions state, "To create ideas for you, we'll select media from your camera roll and upload it to our cloud on an ongoing basis, based on info like time, location or themes." However, Meta says your media won't be used for ad targeting.
+
+Fortunately, it's opt-in, so you can safely ignore this altogether without privacy worries. If you grant it permission, you'll see its suggestions (visible only to you) in Stories and Feed. And should you activate it but change your mind later, you can turn it back off through Facebook's camera roll settings.
+
+The feature is available now in the US and Canada. Meta says it will soon begin testing it in other countries.
 
 Advertisement
 
