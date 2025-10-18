@@ -1,12 +1,42 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/17/cryptos-next-chapter-with-solanas-anatoly-yakovenko-at-techcrunch-disrupt-2025/
+https://www.engadget.com/science/space/spacexs-starshield-satellites-are-reportedly-transmitting-signals-on-unauthorized-frequencies-212939991.html?src=rss
 
-Solana Labs CEO and Solana co-founder Anatoly Yakovenko takes the Disrupt Stage at TechCrunch Disrupt 2025, happening October 27–29 at San Franciscos Moscone West, to chart where crypto goes next — from the meme coin frenzy to real-world finance and everything in between.
+Science
 
-This is one fintech conversation you will not want to miss. Save up to $624 on your pass before the sale ends tonight at 11:59 p.m. PT. Groups save up to 30% on passes.
+Space
 
-Sharing lessons on scaling blockchain and crypto adoption at Disrupt
+SpaceX's Starshield satellites are reportedly transmitting signals on unauthorized frequencies
 
-Yakovenko will unpack Solanas breakout year, the growing demand for scalable, low-cost blockchain infrastructure, and how the network is powering a new generation of decentralized apps. Hell also share lessons from building through market cycles, what it takes to drive developer adoption at scale, and why hes betting big on cryptos mainstream future.
+The company's national security network, while secretive, still has to be used with international standards in mind.
+
+Ian Carlos Campbell
+
+Contributing Reporter
+
+Ian Carlos CampbellContributing Reporter
+
+Fri, October 17, 2025 at 9:29 PM UTC
+
+1 min read
+
+ASSOCIATED PRESS
+
+SpaceX may be violating international telecommunication standards by allowing its Starshield satellites to transmit to Earth on frequencies it's not supposed to use, NPR reports. Starshield is a classified version of SpaceX's Starlink satellite network offered on contract to government agencies "to support national security efforts," according to the company's website.
+
+The report is based on findings from amateur satellite tracker Scott Tilley, who observed what appeared to be Starshield satellites broadcasting on frequencies normally dedicated to "uplink" transmissions from the Earth to satellites in orbit. Using the frequencies that way violates standards set by the International Telecommunication Union, a United Nations agency dedicated to coordinating the use of radio spectrum across the world.
+
+Standards around which frequencies are used for uplink and downlink broadcasts to satellites were created to avoid interference, among other technical issues. "Nearby satellites could receive radio-frequency interference and could perhaps not respond properly to commands — or ignore commands — from Earth," Tilley told NPR. It's not clear yet whether SpaceX ignoring these rules is causing any issues with satellite communication, but should problems arise, there's now a possible cause.
+
+Advertisement
+
+Advertisement
+
+Advertisement
+
+SpaceX's first major Starshield project was a $70 million contract with US Space Force in 2023. More recently in 2024, there were reports that SpaceX's Starshield division had been tasked with building out a network of spy satellites to gather imagery of Earth for the Department of Defenses National Reconnaissance Office.
+
+Advertisement
+
+About our ads
