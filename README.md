@@ -1,33 +1,41 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/social-media/whatsapp-will-test-a-monthly-cap-on-messages-ignored-by-recipients-164024928.html?src=rss
+https://www.engadget.com/gaming/atari-just-announced-the-intellivision-spirit-a-revamp-of-the-iconic-1980s-gaming-console-163210832.html?src=rss
 
-Social media
+Gaming
 
-WhatsApp will test a monthly cap on messages ignored by recipients
+Atari just announced the Intellivision Spirit, a revamp of the iconic 1980s gaming console
 
-It's the company's latest attempt to tackle its spam problem.
+Unlike the Amico, this one is actually shipping.
 
-Will Shanklin
+Lawrence Bonk
 
 Contributing Reporter
 
-Will ShanklinContributing Reporter
+Lawrence BonkContributing Reporter
 
-Fri, October 17, 2025 at 4:40 PM UTC
+Fri, October 17, 2025 at 4:32 PM UTC
 
 1 min read
 
-Deeksha Pahariya / Unsplash
+Atari
 
-WhatsApp is taking a new anti-spam feature for a spin. On Friday, TechCrunch reported that the trial limits the number of messages accounts can send without a reply from the recipient. The company is currently experimenting with different limits. But it's aiming for a number that only targets high-volume senders and spammers.
+Atari just revealed the Intellivision Spirit, a modern refresh of the classic Intellivision gaming console from 1980. The new console certainly looks like the original. You can practically smell the cigarette-soaked carpeting from here.
 
-All messages from individuals and businesses are said to count toward this cap. That includes multiple unread ones sent to the same recipient. But if the person replies, those messages are removed from the monthly tally. WhatsApp will show a warning to accounts nearing the limit.
+Beyond aesthetics, this console includes plenty of newfangled bells and whistles. The controllers are wireless, which is a technology that didn't quite exist in the 1980s, and it connects to TVs via HDMI.
 
-The company told TechCrunch that average users won't likely reach the limit. It's generally good form for individuals not to keep messaging people who don't reply anyway. So, the test indeed sounds tailor-made for businesses and spammers. The test will roll out in multiple countries over the coming weeks.
+It also includes 45 built-in games, reminding me of stuff like the NES Classic and the Atari 2600+. The library includes plenty of sports and strategy titles, because those genres were considered the console's biggest strength way back when. Other games include the puzzler Boulder Dash and a riff on Space Invaders called Space Armada. Each title comes with a unique overlay that gets placed on the gamepad, showing off the controls.
 
-The trial is the Meta-owned company's latest attempt to fend off its festering spam and scam problem. Last year, it added the ability to unsubscribe from businesses' marketing messages. This August, it began notifying users when someone not in their contacts adds them to a group. Alongside that announcement, WhatsApp said it banned over 6.8 million accounts linked to scam centers in the first half of 2025.
+Advertisement
+
+Advertisement
+
+Advertisement
+
+This is an interesting bit of tech because Intellivision was once Atari's greatest rival, which was sort of like a proto-version of the classic Nintendo/Sega rivalry. Atari actually bought Intellivision last year, officially putting the decades-long struggle to bed.
+
+The Intellivision Spirit costs $150. Preorders are available right now and shipments start going out on December 5. It's good to know that this thing isn't vaporware, like Intellivision's long-gestating Amico console.
 
 Advertisement
 
