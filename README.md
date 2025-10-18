@@ -1,12 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/17/chatgpts-mobile-app-is-seeing-slowing-download-growth-and-daily-use-analysis-shows/
+https://techcrunch.com/2025/10/17/tech-layoffs-2025-list/
 
-ChatGPTs mobile app growth may have hit its peak, according to a new analysis of download trends and daily active users provided by the third-party app intelligence firm Apptopia. Its estimates indicate that new user growth, measured by percentage changes in new global downloads, slowed after April.
+The tech layoff wave is still kicking in 2025. Last year saw more than 150,000 job cuts across 549 companies, according to independent layoffs tracker Layoffs.fyi. So far this year, more than 22,000 workers have been the victim of reductions across the tech industry, with a staggering 16,084 cuts taking place in February alone.
 
-The firm looked at the global daily active user (DAU) growth and found that the numbers have begun to even out over the past month or so.
-
-Global DAUs for ChatGPT mobile app.Image Credits:Apptopia
-
-Although October is only half over, the firm says its on pace to be down 8.1% in terms of a month-over-month percentage change in global downloads.
+Were tracking layoffs in the tech industry in 2025 so you can see the trajectory of the cutbacks and understand the impact on innovation across all types of companies. As businesses continue to embrace AI and automation, this tracker serves as a reminder of the human impact of layoffs — and what could be at stake with increased innovation.
