@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/17/senate-republicans-deepfaked-chuck-schumer-and-x-hasnt-taken-it-down/
+https://techcrunch.com/2025/10/17/your-ai-tools-run-on-fracked-gas-and-bulldozed-texas-land/
 
-Senate Republicans shared a deepfake video of Chuck Schumer, the Senate minority leader, designed to make it seem like Democrats are celebrating the ongoing government shutdown, which has lasted 16 days.
+The AI era is giving fracking a second act, a surprising twist for an industry that, even during its early 2010s boom years, was blamed by climate advocates for poisoned water tables, man-made earthquakes, and the stubborn persistence of fossil fuels.
 
-In the deepfake, an AI-generated Schumer repeats the phrase “every day gets better for us,” an actual quote taken out of context from a Punchbowl News article. In the original story, Schumer discussed the Democrats healthcare-focused shutdown strategy, and said they were not going to back away from Republicans playbook of threats and “bambooz[ling].”
+AI companies are building massive data centers near major gas-production sites, often generating their own power by tapping directly into fossil fuels. Its a trend thats been overshadowed by headlines about the intersection of AI and healthcare (and solving climate change), but its one that could reshape — and raise difficult questions for — the communities that host these facilities.
