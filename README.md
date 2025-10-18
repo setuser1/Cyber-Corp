@@ -1,12 +1,12 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/17/facebooks-ai-can-now-suggest-edits-to-the-photos-still-on-your-phone/
+https://techcrunch.com/2025/10/17/chatgpts-mobile-app-is-seeing-slowing-download-growth-and-daily-use-analysis-shows/
 
-A Facebook feature that gives Meta AI the ability to suggest edits to photos stored on your phones camera roll but havent yet been shared is now rolling out to all users in the U.S. and Canada. The company announced on Friday that users can choose to opt in to receive these sharing suggestions, which will then prompt them to post photos to their Facebook Feed and Stories with the AI edits.
+ChatGPTs mobile app growth may have hit its peak, according to a new analysis of download trends and daily active users provided by the third-party app intelligence firm Apptopia. Its estimates indicate that new user growth, measured by percentage changes in new global downloads, slowed after April.
 
-First launched as a test over the summer, Facebooks app pops up a permission dialog box requesting access to &#8220;allow cloud processing&#8221; so users can get &#8220;creative ideas made for you from your camera roll.&#8221; This box explains that the feature could offer ideas like collages, recaps, AI restyling, birthday themes, and more for the end user.
+The firm looked at the global daily active user (DAU) growth and found that the numbers have begun to even out over the past month or so.
 
-Image Credits:screenshot of Facebook&#039;s app, June 2025
+Global DAUs for ChatGPT mobile app.Image Credits:Apptopia
 
-For the AI to work, Facebooks app would upload images from your device to its cloud on an ongoing basis. This allows Metas AI to make its suggested edits. Meta says users media will not be used for ad targeting purposes, and it wont use the media to improve its AI systems, unless the user takes the step of editing the media or sharing the edited photos with friends or others on its social network.
+Although October is only half over, the firm says its on pace to be down 8.1% in terms of a month-over-month percentage change in global downloads.
