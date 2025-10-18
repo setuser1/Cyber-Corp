@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/17/your-ai-tools-run-on-fracked-gas-and-bulldozed-texas-land/
+https://techcrunch.com/2025/10/17/trump-doe-decides-to-keep-at-least-one-biden-era-energy-program/
 
-The AI era is giving fracking a second act, a surprising twist for an industry that, even during its early 2010s boom years, was blamed by climate advocates for poisoned water tables, man-made earthquakes, and the stubborn persistence of fossil fuels.
+The Department of Energy said Thursday that it had finalized a $1.6 billion loan guarantee to upgrade around 5,000 miles of transmission lines.
 
-AI companies are building massive data centers near major gas-production sites, often generating their own power by tapping directly into fossil fuels. Its a trend thats been overshadowed by headlines about the intersection of AI and healthcare (and solving climate change), but its one that could reshape — and raise difficult questions for — the communities that host these facilities.
+The grid upgrades would ease the flow of electricity in Indiana, Michigan, Ohio, Oklahoma, and West Virginia. The project, which will address lines owned by American Electric Power (AEP), wont add any new routes, but it will help existing ones carry more power.
