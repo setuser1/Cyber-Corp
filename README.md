@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/18/this-top-vc-bet-close-to-20-of-his-fund-on-teenagers-heres-why/
+https://techcrunch.com/2025/10/18/youtubers-arent-relying-on-ad-revenue-anymore-heres-how-some-are-diversifying/
 
-Kevin Hartz tends to be first through the door. In 2001, he co-founded Xoom, back when sending money across borders meant standing in line at Western Union. In 2013, it went public, and in 2015, PayPal paid $1.1 billion for it. Four years after launching Xoom, he co-founded Eventbrite, which went public in 2018 and turned buying event tickets into something you could do without wanting to throw your laptop in the ocean.
+YouTube has become the biggest platform out there, offering tons of opportunities for creators to earn a living. Back in June, the company reported that its creative ecosystem added over $55 billion to the U.S. GDP and created more than 490,000 full-time jobs.
 
-After a stint at Founders Fund, Hartz co-founded his own venture firm, A* Capital (a nod to a computer science algorithm), then in 2020, he spotted another trend before the masses: the SPAC boom. His blank-check company, “one,” swallowed up 3D printing outfit Markforged in a $2.1 billion reverse merger in 2021, right as every other financier in Silicon Valley suddenly decided SPACs were the future.
+However, many YouTubers have reduced their reliance on ad revenue and brand deals. There are several reasons for this shift. First, ad revenue can be unpredictable. With YouTube continually updating its policies, some creators find it challenging to secure ads for their videos, which can negatively impact their earnings. Theyve also realized that income from these streams can vanish unexpectedly.
