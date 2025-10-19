@@ -1,13 +1,13 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/cybersecurity/court-reduces-damages-meta-will-get-from-spyware-maker-nso-group-but-bans-it-from-whatsapp-163016648.html?src=rss
+https://www.engadget.com/cybersecurity/google-has-killed-privacy-sandbox-130029899.html?src=rss
 
 Cybersecurity
 
-Court reduces damages Meta will get from spyware maker NSO Group but bans it from WhatsApp
+Google has killed Privacy Sandbox
 
-The judge reduced the damages from $167 million to $4 million.
+Privacy Sandbox was supposed to replace third-party cookies in Chrome.
 
 Mariella Moon
 
@@ -15,19 +15,17 @@ Contributing Reporter
 
 Mariella MoonContributing Reporter
 
-Sat, October 18, 2025 at 4:30 PM UTC
+Sat, October 18, 2025 at 1:00 PM UTC
 
 2 min read
 
-SOPA Images via Getty Images
+hapabapa via Getty Images
 
-US District Judge Phyllis Hamilton has reduced the damages Meta is getting from the NSO Group from $167 million to $4 million, but she has also ordered the Israeli spyware maker to stop targeting WhatsApp. If you'll recall, Meta sued the NSO Group in 2019 over its Pegasus spyware, which it said was used to spy on 1,400 people from 20 countries, including journalists and human rights activists. Meta said at the time that Pegasus can infect targets' devices even without their participation by sending text messages with malicious codes to WhatsApp. Even a missed call is enough to infect somebody's device.
+Google's Privacy Sandbox is officially dead. In an update on the project's website, Google Vice President Anthony Chavez has announced that the company was sunsetting the remaining technologies developed for Sandbox due to their "low levels of adoption." A spokesperson has confirmed to AdWeek that Google isn't just killing those technologies, it's retiring the whole initiative altogether. "We will be continuing our work to improve privacy across Chrome, Android and the web, but moving away from the Privacy Sandbox branding," the spokesperson said. "We're grateful to everyone who contributed to this initiative, and will continue to collaborate with the industry to develop and advance platform technologies that help support a healthy and thriving web."
 
-According to Courthouse News Service, Hamilton reduced the damages because they would need to follow a legal framework designed to proportionate damages. However, she has also handed down a permanent injunction on the NSO Group's efforts to break into WhatsApp. In her decision, she took note of statements made by NSO's lawyers and its own CEO revealing that it hasn't stopped collecting WhatsApp messages and trying to get around the messaging app's security measures. The defendants previously said that the injunction Meta was requesting would "put NSOs entire enterprise at risk" and "force NSO out of business," since WhatsApp is one of the Pegasus spyware's main ways to infect targets' devices.
+The company launched Privacy Sandbox in 2019 as a future replacement to third-party cookies. It's a set of open standards that are supposed to enable personalized ads without divulging identifying data. Over the years, Google's plans to deprecate third-party cookies got pushed back again and again due to a series of delays and regulatory hurdles. Specifically, both the UK's Competition and Markets Authority (CMA) and the US Department of Justice looked into the Privacy Sandbox out of concerns that it could harm smaller advertisers.
 
-"Todays ruling bans spyware maker NSO from ever targeting WhatsApp and our global users again," said Will Cathcart, Head of WhatsApp. "We applaud this decision that comes after six years of litigation to hold NSO accountable for targeting members of civil society. It sets an important precedent that there are serious consequences to attacking an American company."
-
-Hamilton wrote that the proposed injunction requires the Israeli company to delete and destroy computer code related to Meta's platforms, and that she concluded that the provision is "necessary to prevent future violations, especially given the undetectable nature of defendants technology." It's not quite clear how Meta will ensure that the NSO Group doesn't use WhatsApp to infect its users' devices again. Notably, the NSO Group was recently acquired by an American investment group that invested tens of millions of dollars into it to take controlling ownership.
+In 2024, Google ultimately decided not to kill third-party cookies in Chrome and instead chose to roll out "a new experience in Chrome that lets people make an informed choice that applies across their web browsing." Just this April, Google announced that it wasn't going to make any to changes to how third-party cookies work on the Chrome browser at all, and that it was going to "maintain [its] current approach to offering users third-party cookie choice in Chrome." At the time, the company said that it was going to keep the Privacy Sandbox initiative alive, but things have clearly changed since then. Chavez wrote in the latest update that Google will "continue to utilize learnings from the retired Privacy Sandbox technologies."
 
 Advertisement
 
