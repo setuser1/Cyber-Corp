@@ -1,13 +1,13 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/big-tech/amazon-reveals-what-one-of-the-us-first-modular-nuclear-reactors-will-look-like-180721637.html?src=rss
+https://www.engadget.com/big-tech/texas-hit-with-a-pair-of-lawsuits-for-its-app-store-age-verification-requirements-164940290.html?src=rss
 
 Big tech
 
-Amazon reveals what one of the US' first modular nuclear reactors will look like
+Texas hit with a pair of lawsuits for its app store age verification requirements
 
-The tech giant has already heavily invested into this nuclear energy facility that will help power its AI and cloud services.
+A Big Tech lobbying group joins a student advocacy organization in challenging the Texas App Store Accountability Act.
 
 Jackson Chen
 
@@ -15,17 +15,19 @@ Contributing reporter
 
 Jackson ChenContributing reporter
 
-Sat, October 18, 2025 at 6:07 PM UTC
+Sat, October 18, 2025 at 4:49 PM UTC
 
 1 min read
 
-Amazon
+Apple
 
-To meet its massive energy demand for its AI and cloud services, Amazon is investing in nuclear power as a cleaner option. After signing agreements to help build nuclear energy projects last year, the tech giant revealed plans for an upcoming small modular reactor, or SMR, in Richland, Washington. Amazon is working with Energy Northwest, Washington state's utilities agency, and X-energy, an SMR developer, to build the Cascade Advanced Energy Facility.
+Texas could have a serious legal battle on its hands thanks to an age verification law for app stores that it recently enacted. In response to the Texas App Store Accountability Act, the Computer & Communications Industry Association (CCIA) filed a lawsuit that argues the new order goes against First Amendment rights. The not-for-profit trade association has Amazon, Apple and Google amongst its members.
 
-The SMR has a smaller footprint than traditional nuclear reactors, but will still offer a modular design that can pump out up to 960 megawatts of power. Amazon is planning to help develop four SMRs in the first phase of the Cascade facility that will provide an initial power capacity of 320 megawatts. After that, the facility has the option to expand to 12 units for the maximum energy output. According to Amazon, construction on the project will start sometime before the end of the decade, while operations are expected to start in the 2030s.
+The law goes into effect on New Year's Day and requires app store users to verify their age before downloading apps or making in-app purchases. If underage, users have to get parental consent each time they want to download an app or make another in-app purchase. Along with those stipulations, the suit claims that there's an additional burden on developers, who have to "age-rate" their apps for different age groups.
 
-Amazon isn't the only big tech company to lean into nuclear energy to power its AI operations. In October of last year, Google partnered with a nuclear energy company called Kairos Power to construct seven SMRs across the US. A month later, Meta was also looking to build an AI data center powered by nuclear energy, but reportedly ran into a discovery of a rare bee species that held up plans.
+"This Texas law violates the First Amendment by restricting app stores from offering lawful content, preventing users from seeing that content, and compelling app developers to speak of their offerings in a way pleasing to the state," Stephanie Joyce, senior vice president and chief of staff for the CCIA, said in a press release.
+
+Along with CCIA, a student advocacy group called Students Engaged in Advancing Texas (SEAT) filed a similar lawsuit objecting to Texas' upcoming app store requirements. Davis Wright Tremaine LLP, the firm representing SEAT and the two high school students named in the lawsuit, said the law "violates the First Amendment by imposing sweeping restrictions on access to protected speech and information." The law firm also noted the potential dangers associated with collecting personal information, like government IDs, when it comes to verifying identity.
 
 Advertisement
 
