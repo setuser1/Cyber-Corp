@@ -1,31 +1,55 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/cybersecurity/google-has-killed-privacy-sandbox-130029899.html?src=rss
+https://www.engadget.com/deals/one-of-our-favorite-budgeting-apps-has-50-percent-off-annual-plans-right-now-174011565.html?src=rss
 
-Cybersecurity
+Deals
 
-Google has killed Privacy Sandbox
+One of our favorite budgeting apps has 50 percent off annual plans right now
 
-Privacy Sandbox was supposed to replace third-party cookies in Chrome.
+Newcomers can get a year of access to Monarch Money for $50.
 
-Mariella Moon
+Kris Holt
 
 Contributing Reporter
 
-Mariella MoonContributing Reporter
+Kris HoltContributing Reporter
 
-Sat, October 18, 2025 at 1:00 PM UTC
+Updated Sat, October 18, 2025 at 11:01 AM UTC
 
-2 min read
+Monarch Money
 
-hapabapa via Getty Images
+Those looking for a better way to keep track of their finances should consider a budgeting app. There are dozens of them on the market now, and one of our favorites is running a discount for new subscribers. Monarch Money is offering 50 percent off annual plans right now when you use the code MONARCHVIP at checkout. With the typical yearly price being $100, this will save you $50.
 
-Google's Privacy Sandbox is officially dead. In an update on the project's website, Google Vice President Anthony Chavez has announced that the company was sunsetting the remaining technologies developed for Sandbox due to their "low levels of adoption." A spokesperson has confirmed to AdWeek that Google isn't just killing those technologies, it's retiring the whole initiative altogether. "We will be continuing our work to improve privacy across Chrome, Android and the web, but moving away from the Privacy Sandbox branding," the spokesperson said. "We're grateful to everyone who contributed to this initiative, and will continue to collaborate with the industry to develop and advance platform technologies that help support a healthy and thriving web."
+As mentioned before, the discount is only for new users and it can't be combined with other offers. The code only works when you sign up through the web as well. You can't redeem it through the Monarch mobile app.
 
-The company launched Privacy Sandbox in 2019 as a future replacement to third-party cookies. It's a set of open standards that are supposed to enable personalized ads without divulging identifying data. Over the years, Google's plans to deprecate third-party cookies got pushed back again and again due to a series of delays and regulatory hurdles. Specifically, both the UK's Competition and Markets Authority (CMA) and the US Department of Justice looked into the Privacy Sandbox out of concerns that it could harm smaller advertisers.
+Monarch Money
 
-In 2024, Google ultimately decided not to kill third-party cookies in Chrome and instead chose to roll out "a new experience in Chrome that lets people make an informed choice that applies across their web browsing." Just this April, Google announced that it wasn't going to make any to changes to how third-party cookies work on the Chrome browser at all, and that it was going to "maintain [its] current approach to offering users third-party cookie choice in Chrome." At the time, the company said that it was going to keep the Privacy Sandbox initiative alive, but things have clearly changed since then. Chavez wrote in the latest update that Google will "continue to utilize learnings from the retired Privacy Sandbox technologies."
+Monarch Money (annual plan)
+
+$50$100
+
+Save $50 with code
+
+New users of Monarch Money can get a year of access to the in-depth budgeting app for $50.
+
+Save $50 with code
+
+Copied!
+
+MONARCHVIP
+
+$50 at Monarch Money
+
+We feel that Monarch has a steeper learning curve than some other budget trackers and that certain aspects of the app are slightly more complex than they probably need to be. But it offers a great deal of customization and granularity, which outweighs our misgivings.
+
+Advertisement
+
+Advertisement
+
+On the main dashboard, you'll see your net worth along with your latest transactions, spending versus the previous month, your income so far for the month and details about upcoming bills, your investments and goals you've set. There's also a link to a month-in-review page, which offers an in-depth overview of what's been happening with your money that month. You'll also be able to take a peek at how your net worth has changed over time.
+
+Monarch can connect to your bank and track Apple Card, Apple Cash and Savings accounts. It can pull in your transactions and balance history automatically and detect your recurring expenses and income. The app can even keep your car valuation up to date. While it might take a little work to set up Monarch (and you might have to tweak things here and there), it's a detailed budgeting app that can help you keep better track of your income, expenditure and net worth.
 
 Advertisement
 
