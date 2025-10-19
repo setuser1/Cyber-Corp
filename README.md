@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/17/silicon-valley-spooks-the-ai-safety-advocates/
+https://techcrunch.com/2025/10/17/senate-republicans-deepfaked-chuck-schumer-and-x-hasnt-taken-it-down/
 
-Silicon Valley leaders including White House AI & Crypto Czar David Sacks and OpenAI Chief Strategy Officer Jason Kwon caused a stir online this week for their comments about groups promoting AI safety. In separate instances, they alleged that certain advocates of AI safety are not as virtuous as they appear, and are either acting in the interest of themselves or billionaire puppet masters behind the scenes.
+Senate Republicans shared a deepfake video of Chuck Schumer, the Senate minority leader, designed to make it seem like Democrats are celebrating the ongoing government shutdown, which has lasted 16 days.
 
-AI safety groups that spoke with TechCrunch say the allegations from Sacks and OpenAI are Silicon Valleys latest attempt to intimidate its critics, but certainly not the first. In 2024, some venture capital firms spread rumors that a California AI safety bill, SB 1047, would send startup founders to jail. The Brookings Institution labeled the rumor as one of many &#8220;misrepresentations&#8221; about the bill, but Governor Gavin Newsom ultimately vetoed it anyway.
+In the deepfake, an AI-generated Schumer repeats the phrase “every day gets better for us,” an actual quote taken out of context from a Punchbowl News article. In the original story, Schumer discussed the Democrats healthcare-focused shutdown strategy, and said they were not going to back away from Republicans playbook of threats and “bambooz[ling].”
