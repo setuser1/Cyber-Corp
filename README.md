@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/18/too-burned-out-to-travel-this-new-app-fakes-your-summer-vacation-photos-for-you/
+https://techcrunch.com/2025/10/18/salesforce-ceo-marc-benioff-apologizes-for-saying-national-guard-troops-needed-in-san-francisco/
 
-At a time when startup hustle culture is back, when &#8220;locked in&#8221; tech founders have even embraced the &#8220;996&#8221; way of working &#8212; 9 am to 9 pm, 6 days a week &#8212; there is something dystopian about using an AI app to generate fake vacation photos of yourself.
+Marc Benioff, co-founder and CEO of Salesforce, appears to be walking back comments calling for the National Guard to patrol San Francisco.
 
-And yet, here we are.
+“Having listened closely to my fellow San Franciscans and our local officials, and after the largest and safest Dreamforce in our history, I do not believe the National Guard is needed to address safety in San Francisco,” Benioff said in a post on X. “My earlier comment came from an abundance of caution around the event, and I sincerely apologize for the concern it caused. “
