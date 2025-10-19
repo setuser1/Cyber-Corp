@@ -1,43 +1,35 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ai/facebooks-latest-ai-feature-can-scan-your-phones-camera-roll-200056906.html?src=rss
+https://www.engadget.com/home/smart-home/rings-latest-partnership-allows-police-to-access-camera-footage-through-flock-194609879.html?src=rss
 
-AI
+Home
 
-Facebook's latest AI feature can scan your phone's camera roll
+Smart home
 
-The opt-in feature can suggest hidden gems and edit them into something worth sharing.
+Ring's latest partnership allows police to request camera footage through Flock
 
-Will Shanklin
+The deal is an indicator of the brands' changing relationship with law enforcement.
+
+Ian Carlos Campbell
 
 Contributing Reporter
 
-Will ShanklinContributing Reporter
+Ian Carlos CampbellContributing Reporter
 
-Fri, October 17, 2025 at 8:00 PM UTC
+Fri, October 17, 2025 at 7:46 PM UTC
 
 2 min read
 
-Meta
+Amazon
 
-A Facebook feature that scans your phone's photo library to make AI collages and edits is now available in North America. Meta tested it earlier this year. It's an opt-in feature, but the company may train its models on your media if you use its AI editing or share the results.
+Amazon's Ring brand is entering into a new partnership with surveillance company Flock Safety to make it possible for law enforcement to request footage from smart doorbell owners. The move is part of a pivot back to collaborating with police, after Ring spent several years distancing itself and its products from law enforcement agencies.
 
-From a user experience perspective, the idea is to help you find "hidden gems" in your library and turn them into something shareable. After scanning your photo library (with your permission), it will cough up suggestions. For example, it might recommend a collage based on a vacation, a recap of a graduation party or simply spruce up some photos with AI. For better or worse, it's another step in the direction of automating creativity and skill.
+As part of the partnership, "public safety agencies" using Flock's Nova platform or FlockOS will be able to use Ring's previously announced "Community Requests" program to receive footage captured by the camera of a Ring customer. Agencies investigating an event that might have been captured on camera will have to provide details like the "specific location and timeframe of the incident, a unique investigation code, and details about what is being investigated" before the request is passed on to relevant users. Throughout the process, the identity of Ring users is kept anonymous, as is whether they agree to share footage. The entire process is also entirely optional.
 
-Zooming out to Meta's business motives, it's easy to imagine this is a move for more AI training data. The company says it won't train its AI on your camera roll "unless you choose to edit this media with our AI tools, or share." If you find it useful enough to use, your media may help train Meta's AI models.
+Amazon and Ring's approach to working with law enforcement has varied over the years. While Ring reportedly removed the ability for police to make warrantless video requests in 2024, there were documented cases of the company providing access to law enforcement in years prior. This pivot back towards a more police-friendly stance might have been prompted by Ring founder Jamie Siminoff returning to the Amazon-subsidiary in April 2025. Now Amazon is reportedly pitching its cloud and AI services to law enforcement agencies and Ring is looking to work with Flock and other surveillance companies.
 
-Advertisement
-
-Advertisement
-
-Advertisement
-
-The company says the feature's suggestions are private to you until you choose to share them. Its permissions state, "To create ideas for you, we'll select media from your camera roll and upload it to our cloud on an ongoing basis, based on info like time, location or themes." However, Meta says your media won't be used for ad targeting.
-
-Fortunately, it's opt-in, so you can safely ignore this altogether without privacy worries. If you grant it permission, you'll see its suggestions (visible only to you) in Stories and Feed. And should you activate it but change your mind later, you can turn it back off through Facebook's camera roll settings.
-
-The feature is available now in the US and Canada. Meta says it will soon begin testing it in other countries.
+That might not bother the average Ring customer who already planned to opt out of sharing, but there's reasons to be concerned that Amazon is budding up with Flock. 404 Media reports the company's surveillance tools have been used by Immigration and Customs Enforcement (ICE) to find and detain people, without a formal contract. Navy and Secret Service employees also reportedly had access to Flock's network. That doesn't implicate Ring in anything, but it does make the connection between the two camera networks feel more fraught.
 
 Advertisement
 
