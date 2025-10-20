@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/19/techcrunch-mobility-a-takeover-that-might-not-be-hostile/
+https://techcrunch.com/2025/10/19/the-white-house-is-already-one-of-the-most-blocked-accounts-on-bluesky/
 
-Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation. Want another reason to get this free in your inbox? The emailed version of this newsletter includes polls, including one this week that asks readers what they think the best business model is for autonomous vehicle technology. Have an opinion about this? Email me your opinion at kirsten.korosec@techcrunch.com with the subject line &#8220;AV poll.&#8221;
+The Trump administration is taking its social media attacks on Democratic opponents to an unlikely platform, with the White House and numerous other government agencies joining Bluesky on Friday.
 
-OK, back to the show. Theres another twist in the road for lidar company Luminar. And yes, it includes some inside-the-boardroom intrigue.
+In its first post, the new White House account uploaded a highlight reel of Trump footage and memes, along with the message, “Whats up, Bluesky? We thought you mightve missed some of our greatest hits, so we put this together for you.”
