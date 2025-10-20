@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/20/the-man-betting-everything-on-ai-and-bill-belichick/
+https://techcrunch.com/2025/10/19/kohler-unveils-a-camera-for-your-toilet/
 
-Lee Roberts meets me at the University Club of San Francisco on a Friday morning, hours before his football team will lose to Cal in heartbreaking fashion – a fumble at the goal line, because little about the University of North Carolina at Chapel Hills expensive experiment with Bill Belichick has gone according to script.
+Home goods company Kohler recently unveiled a new device called the Dekoda — a $599 camera that can be attached to your toilet bowl and take pictures of whats inside.
 
-But Roberts, the Chancellor of UNC, doesnt know this yet. Right now, hes in California to talk about artificial intelligence, which is both forward thinking and also – Id hazard a guess – a welcome distraction from a lot else happening at the 235-year-old school.
+CNET reports that the Dekoda analyzes these images in order to provide updates on your gut health and hydration, and to potentially detect blood. It also comes with a rechargeable battery, a USB connection, and a fingerprint sensor to identify whos using the toilet.
