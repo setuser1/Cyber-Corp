@@ -1,27 +1,31 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/this-is-how-the-new-ranching-system-will-work-in-cult-of-the-lamb-woolhaven-194324041.html?src=rss
+https://www.engadget.com/gaming/mexico-is-considering-slapping-an-eight-percent-tax-on-violent-video-games-184101628.html?src=rss
 
-This is how the new ranching system will work in Cult of the Lamb: Woolhaven
+Gaming
 
-We can raise snails!!!
+Mexico is considering slapping an eight percent tax on violent video games
 
-Cheyenne MacDonald
+The proposed tax could affect physical and digital copies, as well as microtransactions.
 
-Weekend Editor
+Jackson Chen
 
-Cheyenne MacDonaldWeekend Editor
+Contributing reporter
 
-Sun, October 19, 2025 at 7:43 PM UTC
+Jackson ChenContributing reporter
+
+Sun, October 19, 2025 at 6:41 PM UTC
 
 1 min read
 
-We still have a few months to wait before the next Cult of the Lamb DLC, Woolhaven, arrives, but the Massive Monster team just shared a closer look at one of the new experiences the expansion will bring and, oh boy, I cannot wait to play this. In addition to adding a new mountain area with two new dungeons, Woolhaven will introduce ranching, so you can raise animals — the regular, non-anthropomorphic kind — to keep as pets, shear for wool or slaughter for meat (you know, if you have no heart).
+NetherRealm Studios
 
-Based on the overview video, we'll get to raise cows(ish), goats and sheep as well as some more unexpected critters like crabs, snails, spiders and turtles. I, personally, am very excited about the snails. You'll be able to form bonds with and name the animals, and you'll have to tend to their wellbeing, feeding them healthy foods and cleaning them. Followers will also be able to bond with the animals and have their own pets. As wholesome as that all sounds, this is Cult of the Lamb we're talking about, so I'm already bracing myself for the inevitable heartbreak of when some unruly follower kills my favorite animals at some point. The video notes that you'll have to keep them safe from predators.
+Violent video games have found themselves in the crosshairs of politicians yet again, but this time with Mexico's government. Earlier this week, Mexico's Chamber of Deputies approved a comprehensive financial package that includes an eight percent tax on video games with mature content. As first reported by Insider Gaming, the proposed tax covers games that have a C or D rating under Mexico's video game age classification system, which is similar to ESRB in the US. The C rating is for players who are at least 18 years old and allows for extreme violence, bloodshed and moderate graphic sexual content, while the D rating is reserved for adults only and allows for prolonged scenes that include similar content.
 
-Woolhaven will be a paid expansion, but we don't know yet how much it will cost or when exactly it drops. The team has so far only said early 2026.
+The proposed law was first introduced in September, when the country's Treasury Department claimed that "recent studies have found a relationship between the use of violent video games and higher levels of aggression among adolescents, as well as negative social and psychological effects such as isolation and anxiety." The report cited a study from 2012 in a footnote, which also observed some positive associations with video games, including motor learning and building resilience.
+
+The current interpretation of the proposal that's been approved by the Chamber of Deputies would apply to digital and physical copies of affected games, as well as any in-game purchases or microtransactions. The proposal still has to go through Mexico's other congressional chamber, the Senate, where it will be debated before a November 15 deadline to submit a budget proposal.
 
 Advertisement
 
