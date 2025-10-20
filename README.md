@@ -1,33 +1,59 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/big-tech/nvidia-shows-off-its-first-blackwell-wafer-manufactured-in-the-us-192836249.html?src=rss
+https://www.engadget.com/gaming/nintendo/8bitdo-drops-an-nes-inspired-collection-for-the-consoles-40th-anniversary-183932844.html?src=rss
 
-Big tech
+Gaming
 
-NVIDIA shows off its first Blackwell wafer manufactured in the US
+Nintendo
 
-The hardware giant marked a major milestone by manufacturing one of its next-gen AI chip parts in TSMC's Arizona facility.
+8BitDo drops an NES-inspired collection for the console's 40th anniversary
 
-Jackson Chen
+An NES-themed Ultimate 2 controller, mechanical keyboard and Bluetooth speaker.
 
-Contributing reporter
+Cheyenne MacDonald
 
-Jackson ChenContributing reporter
+Weekend Editor
 
-Sat, October 18, 2025 at 7:28 PM UTC
+Cheyenne MacDonaldWeekend Editor
 
-1 min read
+Updated Sat, October 18, 2025 at 6:39 PM UTC
 
-NVIDIA
+8BitDo
 
-NVIDIA has taken a big step towards strengthening its domestic chip manufacturing, revealing the first Blackwell wafer made in the US. The hardware company assembled the wafer, which is the base material for NVIDIA's AI chips, in TSMC's semiconductor manufacturing facility in Phoenix, Arizona.
+It's been 40 years to the day since the Nintendo Entertainment System made its US debut, and to celebrate, gaming accessory maker 8BitDo has unveiled a line of NES-themed products. The NES40 collection includes a limited edition version of the company's Ultimate 2 controller that comes with an NES Retro Receiver, so it can be used with the classic console. There's also the NES-inspired Retro Cube 2 speaker and Retro 68 Keyboard, the latter of which sports a full aluminum alloy build and an eye-watering $500 price tag. All are available for pre-order now.
 
-NVIDIA revealed its Blackwell platform last year, boasting a goal of revolutionizing the AI industry through tech giants like Amazon, Google, OpenAI and others who already committed to adopting the next-gen architecture. NVIDIA said the latest platform was more powerful and translated to 25x less cost and energy consumption compared to its predecessor. Now that Blackwell wafers can be made at the TSMC plant, NVIDIA can better insulate itself from the ever-evolving tariff situation and geopolitical tensions.
+Quick Overview
 
-"Its the very first time in recent American history that the single most important chip is being manufactured here in the United States by the most advanced fab, by TSMC, here in the United States,” Jensen Huang, NVIDIA's founder and CEO, said at the celebration event.
+Ultimate 2 Bluetooth - NES 40th Limited Edition
 
-With NVIDIA's Blackwell architecture ready for the volume production stage, the company is still working on expanding its manufacturing footprint across the US. Earlier this year, NVIDIA said it had plans to funnel half a trillion dollars towards building AI infrastructure in the US through partnerships with TSMC, Foxconn and other companies.
+$80 at 8BitDo
+
+Retro 68 Keyboard - NES 40th Limited Edition
+
+$500 at 8BitDo
+
+Retro Cube 2 Speaker - NES Edition
+
+$50 at 8BitDo
+
+The Ultimate 2 controller is one of our favorite controllers for Nintendo Switch and Switch 2, and the NES40 version comes with all the same features, including TMR joysticks, Hall Effect triggers with mode switching and lots of customization options. But with this one, you also get the NES Retro Receiver (a transparent black version that's exclusive to this drop), four custom joystick caps and a robot keychain that pays homage to Nintendo's R.O.B. toy robot. The controller set costs $80 and will ship November 18. It's compatible with Switch 1, 2 and Windows, as well as the original NES using the receiver accessory.
+
+Ultimate 2 Bluetooth - NES 40th Limited Edition
+
+$80 at 8BitDo
+
+The Retro 68 Keyboard is 8BitDo's first 68-key keyboard, and it's made entirely of aluminum alloy. That includes the shell, keycaps and buttons, according to the company. It uses Kailh Box Ice Cream Pro Max switches. The keyboard features the NES colorway (like its similar, much less expensive Retro Mechanical Keyboard) and comes with programmable wireless dual Super Buttons. 8BitDo says it gets up to 300 usage hours on a charge thanks to its 6500mAh battery. It's compatible with Windows and Android, and is expected to ship in January 2026.
+
+Retro 68 Keyboard - NES 40th Limited Edition
+
+$500 at 8BitDo
+
+The Retro Cube 2 speaker isn't just a cosmetic update to the original Cube Speaker, but brings some improvements in battery life and functionality too. The dual-speaker system has three connection modes — Bluetooth, 2.4G wireless and wired USB — and comes with a charging dock. It has a 2000mAh battery that gets up to 30 hours of use between charges. Like the earlier version, it has D-pad controls for volume, playback and pairing. The $50 speaker ships on December 12.
+
+Retro Cube 2 Speaker - NES Edition
+
+$50 at 8BitDo
 
 Advertisement
 
