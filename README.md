@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/18/spyware-maker-nso-group-blocked-from-whatsapp/
+https://techcrunch.com/2025/10/18/wikipedia-says-traffic-is-falling-due-to-ai-search-summaries-and-social-video/
 
-A federal judge has granted Meta-owned WhatsApps request for a permanent injunction blocking Israeli cyberintelligence company NSO Group from targeting the messaging apps users. At the same time, the judge dramatically reduced the fine that NSO Group must pay to Meta.
+Wikipedia is often described as the last good website on an internet increasingly filled with toxic social media and AI slop. But it seems the online encyclopedia is not completely immune to broader trends, with human pageviews falling 8% year-over-year, according to a new blog post from Marshall Miller of the Wikimedia Foundation.
 
-Earlier this year, a jury decided that the cyberintelligence company would have to pay Meta more than $167 million following a 2019 campaign that targeted more than 1,400 WhatsApp users, including human rights activists and journalists.
+The foundation works to distinguish between traffic from humans and bots, and Miller writes that the decline “over the past few months” was revealed after an update to Wikipedias bot detection systems appeared to show that “much of the unusually high traffic for the period of May and June was coming from bots that were built to evade detection.”
