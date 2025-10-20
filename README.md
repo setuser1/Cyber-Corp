@@ -1,33 +1,33 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/big-tech/texas-hit-with-a-pair-of-lawsuits-for-its-app-store-age-verification-requirements-164940290.html?src=rss
+https://www.engadget.com/cybersecurity/court-reduces-damages-meta-will-get-from-spyware-maker-nso-group-but-bans-it-from-whatsapp-163016648.html?src=rss
 
-Big tech
+Cybersecurity
 
-Texas hit with a pair of lawsuits for its app store age verification requirements
+Court reduces damages Meta will get from spyware maker NSO Group but bans it from WhatsApp
 
-A Big Tech lobbying group joins a student advocacy organization in challenging the Texas App Store Accountability Act.
+The judge reduced the damages from $167 million to $4 million.
 
-Jackson Chen
+Mariella Moon
 
-Contributing reporter
+Contributing Reporter
 
-Jackson ChenContributing reporter
+Mariella MoonContributing Reporter
 
-Sat, October 18, 2025 at 4:49 PM UTC
+Sat, October 18, 2025 at 4:30 PM UTC
 
-1 min read
+2 min read
 
-Apple
+SOPA Images via Getty Images
 
-Texas could have a serious legal battle on its hands thanks to an age verification law for app stores that it recently enacted. In response to the Texas App Store Accountability Act, the Computer & Communications Industry Association (CCIA) filed a lawsuit that argues the new order goes against First Amendment rights. The not-for-profit trade association has Amazon, Apple and Google amongst its members.
+US District Judge Phyllis Hamilton has reduced the damages Meta is getting from the NSO Group from $167 million to $4 million, but she has also ordered the Israeli spyware maker to stop targeting WhatsApp. If you'll recall, Meta sued the NSO Group in 2019 over its Pegasus spyware, which it said was used to spy on 1,400 people from 20 countries, including journalists and human rights activists. Meta said at the time that Pegasus can infect targets' devices even without their participation by sending text messages with malicious codes to WhatsApp. Even a missed call is enough to infect somebody's device.
 
-The law goes into effect on New Year's Day and requires app store users to verify their age before downloading apps or making in-app purchases. If underage, users have to get parental consent each time they want to download an app or make another in-app purchase. Along with those stipulations, the suit claims that there's an additional burden on developers, who have to "age-rate" their apps for different age groups.
+According to Courthouse News Service, Hamilton reduced the damages because they would need to follow a legal framework designed to proportionate damages. However, she has also handed down a permanent injunction on the NSO Group's efforts to break into WhatsApp. In her decision, she took note of statements made by NSO's lawyers and its own CEO revealing that it hasn't stopped collecting WhatsApp messages and trying to get around the messaging app's security measures. The defendants previously said that the injunction Meta was requesting would "put NSOs entire enterprise at risk" and "force NSO out of business," since WhatsApp is one of the Pegasus spyware's main ways to infect targets' devices.
 
-"This Texas law violates the First Amendment by restricting app stores from offering lawful content, preventing users from seeing that content, and compelling app developers to speak of their offerings in a way pleasing to the state," Stephanie Joyce, senior vice president and chief of staff for the CCIA, said in a press release.
+"Todays ruling bans spyware maker NSO from ever targeting WhatsApp and our global users again," said Will Cathcart, Head of WhatsApp. "We applaud this decision that comes after six years of litigation to hold NSO accountable for targeting members of civil society. It sets an important precedent that there are serious consequences to attacking an American company."
 
-Along with CCIA, a student advocacy group called Students Engaged in Advancing Texas (SEAT) filed a similar lawsuit objecting to Texas' upcoming app store requirements. Davis Wright Tremaine LLP, the firm representing SEAT and the two high school students named in the lawsuit, said the law "violates the First Amendment by imposing sweeping restrictions on access to protected speech and information." The law firm also noted the potential dangers associated with collecting personal information, like government IDs, when it comes to verifying identity.
+Hamilton wrote that the proposed injunction requires the Israeli company to delete and destroy computer code related to Meta's platforms, and that she concluded that the provision is "necessary to prevent future violations, especially given the undetectable nature of defendants technology." It's not quite clear how Meta will ensure that the NSO Group doesn't use WhatsApp to infect its users' devices again. Notably, the NSO Group was recently acquired by an American investment group that invested tens of millions of dollars into it to take controlling ownership.
 
 Advertisement
 
