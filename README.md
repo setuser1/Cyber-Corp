@@ -1,41 +1,33 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/entertainment/what-to-read-this-weekend-near-flesh-and-the-return-of-30-days-of-night-215141747.html?src=rss
+https://www.engadget.com/big-tech/nvidia-shows-off-its-first-blackwell-wafer-manufactured-in-the-us-192836249.html?src=rss
 
-Entertainment
+Big tech
 
-What to read this weekend: Near Flesh and the return of 30 Days of Night
+NVIDIA shows off its first Blackwell wafer manufactured in the US
 
-Vampires are heading back to Barrow.
+The hardware giant marked a major milestone by manufacturing one of its next-gen AI chip parts in TSMC's Arizona facility.
 
-Cheyenne MacDonald
+Jackson Chen
 
-Weekend Editor
+Contributing reporter
 
-Cheyenne MacDonaldWeekend Editor
+Jackson ChenContributing reporter
 
-Sat, October 18, 2025 at 9:51 PM UTC
+Sat, October 18, 2025 at 7:28 PM UTC
 
-Here are some recently released titles to add to your reading list. This week, we read Near Flesh, a collection of short stories by the late Katherine Dunn, and 30 Days of Night: Falling Sun, the revival of the hit horror series.
+1 min read
 
-MCD
+NVIDIA
 
-Near Flesh
+NVIDIA has taken a big step towards strengthening its domestic chip manufacturing, revealing the first Blackwell wafer made in the US. The hardware company assembled the wafer, which is the base material for NVIDIA's AI chips, in TSMC's semiconductor manufacturing facility in Phoenix, Arizona.
 
-This posthumous collection of short fiction is as strange and gritty and beautiful and horrifying as fans of Geek Love author Katherine Dunn would expect, and a great introduction to her voice and perspective for readers new to her work. Its 19 stories give us everything from a society obsessed with reuniting people with their amputated body parts when they're buried, to a teenager who yearns for salvation brought by alien visitors and a woman who surrounds herself with sex robots. Near Flesh is a dark and sometimes humorous exploration of the human condition, focusing mostly on women getting through their day-to-day lives, faced with both the mundane and the extreme. It hits pretty hard.
+NVIDIA revealed its Blackwell platform last year, boasting a goal of revolutionizing the AI industry through tech giants like Amazon, Google, OpenAI and others who already committed to adopting the next-gen architecture. NVIDIA said the latest platform was more powerful and translated to 25x less cost and energy consumption compared to its predecessor. Now that Blackwell wafers can be made at the TSMC plant, NVIDIA can better insulate itself from the ever-evolving tariff situation and geopolitical tensions.
 
-$27 at Amazon
+"Its the very first time in recent American history that the single most important chip is being manufactured here in the United States by the most advanced fab, by TSMC, here in the United States,” Jensen Huang, NVIDIA's founder and CEO, said at the celebration event.
 
-IDW
-
-30 Days of Night: Falling Sun #1
-
-I love the 30 Days of Night franchise, so I was super excited to discover this week that it's picking back up with Falling Sun, and this first issue did not disappoint. 30 Days of Night: Falling Sun is written by Rodney Barnes (Killadelphia), who worked with the series' original writer Steve Niles to bring the new story to life, and features art by Chris Shehan (House of Slaughter). In 30 Days of Night: Falling Sun, 20 years have passed since vampires descended upon Barrow. Teenager Jalen James arrives in the remote Alaskan town just ahead of the long polar night to stay with his uncle, looking for an escape from his life in LA. But unbeknownst to the townspeople, the vampires have begun stirring again, with vengeance on their minds and their sights set on Barrow.
-
-The first issue is really setting the stage, reintroducing us to the vampires and giving us a sense of who is who in Barrow now (and who is still haunted by the violence of the past). I've got high hopes for where it'll take us.
-
-$6 at Amazon
+With NVIDIA's Blackwell architecture ready for the volume production stage, the company is still working on expanding its manufacturing footprint across the US. Earlier this year, NVIDIA said it had plans to funnel half a trillion dollars towards building AI infrastructure in the US through partnerships with TSMC, Foxconn and other companies.
 
 Advertisement
 
