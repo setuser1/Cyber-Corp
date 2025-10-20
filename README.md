@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/18/wikipedia-says-traffic-is-falling-due-to-ai-search-summaries-and-social-video/
+https://techcrunch.com/2025/10/18/this-top-vc-bet-close-to-20-of-his-fund-on-teenagers-heres-why/
 
-Wikipedia is often described as the last good website on an internet increasingly filled with toxic social media and AI slop. But it seems the online encyclopedia is not completely immune to broader trends, with human pageviews falling 8% year-over-year, according to a new blog post from Marshall Miller of the Wikimedia Foundation.
+Kevin Hartz tends to be first through the door. In 2001, he co-founded Xoom, back when sending money across borders meant standing in line at Western Union. In 2013, it went public, and in 2015, PayPal paid $1.1 billion for it. Four years after launching Xoom, he co-founded Eventbrite, which went public in 2018 and turned buying event tickets into something you could do without wanting to throw your laptop in the ocean.
 
-The foundation works to distinguish between traffic from humans and bots, and Miller writes that the decline “over the past few months” was revealed after an update to Wikipedias bot detection systems appeared to show that “much of the unusually high traffic for the period of May and June was coming from bots that were built to evade detection.”
+After a stint at Founders Fund, Hartz co-founded his own venture firm, A* Capital (a nod to a computer science algorithm), then in 2020, he spotted another trend before the masses: the SPAC boom. His blank-check company, “one,” swallowed up 3D printing outfit Markforged in a $2.1 billion reverse merger in 2021, right as every other financier in Silicon Valley suddenly decided SPACs were the future.
