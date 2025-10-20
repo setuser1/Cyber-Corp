@@ -1,59 +1,31 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/nintendo/8bitdo-drops-an-nes-inspired-collection-for-the-consoles-40th-anniversary-183932844.html?src=rss
+https://www.engadget.com/big-tech/amazon-reveals-what-one-of-the-us-first-modular-nuclear-reactors-will-look-like-180721637.html?src=rss
 
-Gaming
+Big tech
 
-Nintendo
+Amazon reveals what one of the US' first modular nuclear reactors will look like
 
-8BitDo drops an NES-inspired collection for the console's 40th anniversary
+The tech giant has already heavily invested into this nuclear energy facility that will help power its AI and cloud services.
 
-An NES-themed Ultimate 2 controller, mechanical keyboard and Bluetooth speaker.
+Jackson Chen
 
-Cheyenne MacDonald
+Contributing reporter
 
-Weekend Editor
+Jackson ChenContributing reporter
 
-Cheyenne MacDonaldWeekend Editor
+Sat, October 18, 2025 at 6:07 PM UTC
 
-Updated Sat, October 18, 2025 at 6:39 PM UTC
+1 min read
 
-8BitDo
+Amazon
 
-It's been 40 years to the day since the Nintendo Entertainment System made its US debut, and to celebrate, gaming accessory maker 8BitDo has unveiled a line of NES-themed products. The NES40 collection includes a limited edition version of the company's Ultimate 2 controller that comes with an NES Retro Receiver, so it can be used with the classic console. There's also the NES-inspired Retro Cube 2 speaker and Retro 68 Keyboard, the latter of which sports a full aluminum alloy build and an eye-watering $500 price tag. All are available for pre-order now.
+To meet its massive energy demand for its AI and cloud services, Amazon is investing in nuclear power as a cleaner option. After signing agreements to help build nuclear energy projects last year, the tech giant revealed plans for an upcoming small modular reactor, or SMR, in Richland, Washington. Amazon is working with Energy Northwest, Washington state's utilities agency, and X-energy, an SMR developer, to build the Cascade Advanced Energy Facility.
 
-Quick Overview
+The SMR has a smaller footprint than traditional nuclear reactors, but will still offer a modular design that can pump out up to 960 megawatts of power. Amazon is planning to help develop four SMRs in the first phase of the Cascade facility that will provide an initial power capacity of 320 megawatts. After that, the facility has the option to expand to 12 units for the maximum energy output. According to Amazon, construction on the project will start sometime before the end of the decade, while operations are expected to start in the 2030s.
 
-Ultimate 2 Bluetooth - NES 40th Limited Edition
-
-$80 at 8BitDo
-
-Retro 68 Keyboard - NES 40th Limited Edition
-
-$500 at 8BitDo
-
-Retro Cube 2 Speaker - NES Edition
-
-$50 at 8BitDo
-
-The Ultimate 2 controller is one of our favorite controllers for Nintendo Switch and Switch 2, and the NES40 version comes with all the same features, including TMR joysticks, Hall Effect triggers with mode switching and lots of customization options. But with this one, you also get the NES Retro Receiver (a transparent black version that's exclusive to this drop), four custom joystick caps and a robot keychain that pays homage to Nintendo's R.O.B. toy robot. The controller set costs $80 and will ship November 18. It's compatible with Switch 1, 2 and Windows, as well as the original NES using the receiver accessory.
-
-Ultimate 2 Bluetooth - NES 40th Limited Edition
-
-$80 at 8BitDo
-
-The Retro 68 Keyboard is 8BitDo's first 68-key keyboard, and it's made entirely of aluminum alloy. That includes the shell, keycaps and buttons, according to the company. It uses Kailh Box Ice Cream Pro Max switches. The keyboard features the NES colorway (like its similar, much less expensive Retro Mechanical Keyboard) and comes with programmable wireless dual Super Buttons. 8BitDo says it gets up to 300 usage hours on a charge thanks to its 6500mAh battery. It's compatible with Windows and Android, and is expected to ship in January 2026.
-
-Retro 68 Keyboard - NES 40th Limited Edition
-
-$500 at 8BitDo
-
-The Retro Cube 2 speaker isn't just a cosmetic update to the original Cube Speaker, but brings some improvements in battery life and functionality too. The dual-speaker system has three connection modes — Bluetooth, 2.4G wireless and wired USB — and comes with a charging dock. It has a 2000mAh battery that gets up to 30 hours of use between charges. Like the earlier version, it has D-pad controls for volume, playback and pairing. The $50 speaker ships on December 12.
-
-Retro Cube 2 Speaker - NES Edition
-
-$50 at 8BitDo
+Amazon isn't the only big tech company to lean into nuclear energy to power its AI operations. In October of last year, Google partnered with a nuclear energy company called Kairos Power to construct seven SMRs across the US. A month later, Meta was also looking to build an AI data center powered by nuclear energy, but reportedly ran into a discovery of a rare bee species that held up plans.
 
 Advertisement
 
