@@ -1,31 +1,27 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/cybersecurity/china-claims-the-nsa-conducted-cyberattacks-on-its-national-time-center-201852066.html?src=rss
+https://www.engadget.com/this-is-how-the-new-ranching-system-will-work-in-cult-of-the-lamb-woolhaven-194324041.html?src=rss
 
-Cybersecurity
+This is how the new ranching system will work in Cult of the Lamb: Woolhaven
 
-China claims the NSA conducted cyberattacks on its national time center
+We can raise snails!!!
 
-The country's State Security Ministry published a WeChat post detailing a yearslong operation that could've impacted several industries.
+Cheyenne MacDonald
 
-Jackson Chen
+Weekend Editor
 
-Contributing reporter
+Cheyenne MacDonaldWeekend Editor
 
-Jackson ChenContributing reporter
-
-Sun, October 19, 2025 at 8:18 PM UTC
+Sun, October 19, 2025 at 7:43 PM UTC
 
 1 min read
 
-Chinese Academy of Sciences
+We still have a few months to wait before the next Cult of the Lamb DLC, Woolhaven, arrives, but the Massive Monster team just shared a closer look at one of the new experiences the expansion will bring and, oh boy, I cannot wait to play this. In addition to adding a new mountain area with two new dungeons, Woolhaven will introduce ranching, so you can raise animals — the regular, non-anthropomorphic kind — to keep as pets, shear for wool or slaughter for meat (you know, if you have no heart).
 
-As political tensions between the two global superpowers grow, China's State Security Ministry accused the US' National Security Agency of a cyberattack operation that took place between 2023 and 2024. As first reported by Reuters, the Chinese agency posted on WeChat that the NSA targeted the country's National Time Service Center. As part of the Chinese Academy of Sciences, the center is tasked with generating, maintaining and transmitting its national standard of time, which is provided to important sectors across the country, including communications, defense and finance.
+Based on the overview video, we'll get to raise cows(ish), goats and sheep as well as some more unexpected critters like crabs, snails, spiders and turtles. I, personally, am very excited about the snails. You'll be able to form bonds with and name the animals, and you'll have to tend to their wellbeing, feeding them healthy foods and cleaning them. Followers will also be able to bond with the animals and have their own pets. As wholesome as that all sounds, this is Cult of the Lamb we're talking about, so I'm already bracing myself for the inevitable heartbreak of when some unruly follower kills my favorite animals at some point. The video notes that you'll have to keep them safe from predators.
 
-The state ministry said the operation used around 42 types of "special cyberattack weapons" to infiltrate the National Time Service Center which could have led to the disruption of network communications, financial systems and power supply. The WeChat post also claimed that the NSA exploited vulnerabilities in a foreign mobile phone brand's messaging system to steal sensitive info from staff devices, without naming the brand.
-
-The NSA has yet to respond to the accusation. On the other hand, the US Treasury Department said it was targeted by a "China state-sponsored actor" in a December cyberattack.
+Woolhaven will be a paid expansion, but we don't know yet how much it will cost or when exactly it drops. The team has so far only said early 2026.
 
 Advertisement
 
