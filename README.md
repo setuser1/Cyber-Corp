@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/18/youtubers-arent-relying-on-ad-revenue-anymore-heres-how-some-are-diversifying/
+https://techcrunch.com/2025/10/18/too-burned-out-to-travel-this-new-app-fakes-your-summer-vacation-photos-for-you/
 
-YouTube has become the biggest platform out there, offering tons of opportunities for creators to earn a living. Back in June, the company reported that its creative ecosystem added over $55 billion to the U.S. GDP and created more than 490,000 full-time jobs.
+At a time when startup hustle culture is back, when &#8220;locked in&#8221; tech founders have even embraced the &#8220;996&#8221; way of working &#8212; 9 am to 9 pm, 6 days a week &#8212; there is something dystopian about using an AI app to generate fake vacation photos of yourself.
 
-However, many YouTubers have reduced their reliance on ad revenue and brand deals. There are several reasons for this shift. First, ad revenue can be unpredictable. With YouTube continually updating its policies, some creators find it challenging to secure ads for their videos, which can negatively impact their earnings. Theyve also realized that income from these streams can vanish unexpectedly.
+And yet, here we are.
