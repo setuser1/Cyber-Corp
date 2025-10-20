@@ -1,13 +1,15 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/mexico-is-considering-slapping-an-eight-percent-tax-on-violent-video-games-184101628.html?src=rss
+https://www.engadget.com/gaming/xbox/the-next-game-in-the-halo-franchise-could-be-live-service-multiplayer-171036206.html?src=rss
 
 Gaming
 
-Mexico is considering slapping an eight percent tax on violent video games
+Xbox
 
-The proposed tax could affect physical and digital copies, as well as microtransactions.
+The next game in the Halo franchise could be live service multiplayer
+
+Rumors point to a multiplayer Halo game with constant updates like Fortnite, but no mentions of battle royale.
 
 Jackson Chen
 
@@ -15,17 +17,17 @@ Contributing reporter
 
 Jackson ChenContributing reporter
 
-Sun, October 19, 2025 at 6:41 PM UTC
+Sun, October 19, 2025 at 5:10 PM UTC
 
 1 min read
 
-NetherRealm Studios
+343 Industries
 
-Violent video games have found themselves in the crosshairs of politicians yet again, but this time with Mexico's government. Earlier this week, Mexico's Chamber of Deputies approved a comprehensive financial package that includes an eight percent tax on video games with mature content. As first reported by Insider Gaming, the proposed tax covers games that have a C or D rating under Mexico's video game age classification system, which is similar to ESRB in the US. The C rating is for players who are at least 18 years old and allows for extreme violence, bloodshed and moderate graphic sexual content, while the D rating is reserved for adults only and allows for prolonged scenes that include similar content.
+Nearly four years after the release of Halo: Infinite, the sixth installment in the franchise has failed to live up to its name. Instead, the studio behind the sci-fi series may be working on a "live service, long-term updating multiplayer" Halo game that could do just that. According to YouTuber Rebs Gaming, a source claimed that Halo Studios, previously known as 343 Industries, is working on a multiplayer Halo title that could borrow Fortnite's model of constantly pushing out content updates. The report also noted that there aren't any mentions of Fortnite's battle royale style for the upcoming game.
 
-The proposed law was first introduced in September, when the country's Treasury Department claimed that "recent studies have found a relationship between the use of violent video games and higher levels of aggression among adolescents, as well as negative social and psychological effects such as isolation and anxiety." The report cited a study from 2012 in a footnote, which also observed some positive associations with video games, including motor learning and building resilience.
+While live service games are becoming the norm, veterans of the Halo franchise may not have much faith in Halo Studios after failing to deliver on Halo: Infinite's longevity. Back in March, another report revealed that Halo: Infinite was meant to be supported with a 10-year plan of consistent updates, but this roadmap was scrapped following leadership issues and a switch to Unreal Engine. While Halo: Infinite's multiplayer mode has received notable updates since its initial release, the game still sits at a Mixed rating on Steam.
 
-The current interpretation of the proposal that's been approved by the Chamber of Deputies would apply to digital and physical copies of affected games, as well as any in-game purchases or microtransactions. The proposal still has to go through Mexico's other congressional chamber, the Senate, where it will be debated before a November 15 deadline to submit a budget proposal.
+Along with this upcoming live service Halo title, the report claimed that the studio is working on a remake of the first game in the series, Halo: Combat Evolved. According to John Junyszek, the senior community manager at Halo Studios, we could hear more about either project during the Halo World Championship that takes place from October 24 to 26.
 
 Advertisement
 
