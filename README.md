@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/20/cards-against-humanity-settles-trespass-lawsuit-against-spacex/
+https://techcrunch.com/2025/10/20/ftc-removes-lina-khan-era-posts-about-ai-risks-and-open-source/
 
-Cards Against Humanity, the irreverent party game company known for its provocative humor, has settled its trespassing lawsuit against SpaceX, one year after filing the complaint and launching a profanity-laced marketing campaign against Elon Musks rocket company.
+The Federal Trade Commission has removed three blog posts from the Lina Khan era that addressed open source AI and risks of AI to consumers, according to a Wired report.
 
-The dispute centered on a plot of land along the Rio Grande in Cameron County, Texas, that Cards Against Humanity purchased in 2017. The company crowdfunded the purchase through 150,000 separate $15 donations ($2.25 million total) from supporters who wanted to help block President Donald Trumps border wall.
+One post, titled “On Open-Weights Foundation Models,” was published July 10, 2024. Another, titled “Consumers Are Voicing Concerns About AI,” came out in October 2023. A third, authored by Khans staff, was published on January 3, 2025, with the title “AI and the Risk of Consumer Harm.” That post noted the FTC was “taking note of AIs potential for real-world instances of harm — from incentivizing commercial surveillance to enabling fraud and impersonation to perpetuating illegal discrimination.”
