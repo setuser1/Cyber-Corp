@@ -1,12 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/20/meta-ais-app-downloads-and-daily-users-spiked-after-launch-of-vibes-ai-video-feed/
+https://techcrunch.com/2025/10/20/trump-doe-confirms-its-canceling-over-700m-in-manufacturing-grants/
 
-New data indicates that use of Meta AIs mobile app for iOS and Android has seen a significant increase. According to a new analysis from market intelligence provider Similarweb, the apps daily active users across both platforms jumped to 2.7 million as of October 17, up from around 775,000 just four weeks ago. In addition, Meta AIs app installs are also up, reaching 300,000 new downloads per day, compared with under 200,000 daily downloads a few weeks ago.
+Over the past few weeks, the Department of Energy has been looking at canceling billions of dollars worth of contracts. Now the federal agency has confirmed that its axing $720 million worth of manufacturing awards.
 
-For comparison, Meta AIs app had just 4,000 daily downloads a year ago, on October 17, 2024.
-
-Image Credits:Similarweb
-
-The firm says it hasnt seen any meaningful correlation in either search or advertising estimates, but notes Meta could be running Facebook or Instagram promotions that wouldnt be captured in its model.
+The cuts affect companies that make battery materials, recycle lithium-ion batteries, and manufacture super-insulating windows.
