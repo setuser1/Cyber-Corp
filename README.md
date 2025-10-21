@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/20/shin-starrs-robotic-food-truck-kitchen-will-serve-up-korean-bbq-at-techcrunch-disrupt-2025/
+https://techcrunch.com/2025/10/20/automattic-ceo-calls-tumblr-his-biggest-failure-so-far/
 
-When Shin Starr set out to build an autonomous kitchen, the company knew that the gimmick of robotic cooking wouldnt carry the business. What would make Shin Starrs OLHSO Korean BBQ food truck successful is if it could cook and deliver a hot, fresh, tasty meal at a reasonable price.
+WordPress co-founder and Automattic CEO Matt Mullenweg called the companys Tumblr acquisition his biggest failure — but one he hasnt given up on yet. The comments were made at the recent WordCamp Canada 2025 conference, where Mullenweg went live for a Town Hall session to connect with the open source-focused WordPress community.
 
-&#8220;At the end of the day, customers dont care about the type of rocket science that is in your truck or in your kitchen,&#8221; Kish Shin, co-founder and CEO of Shin Starr, told TechCrunch. &#8220;They care about the value theyre getting.&#8221;
+The exec noted that Tumblr was still on a different technical stack than WordPress — something he had intended to correct by migrating the back end to WordPress infrastructure. However, that massive undertaking was put on hold earlier this year, as the cost to move Tumblrs half-billion blogs would be difficult given that the blogging platform wasnt profitable and continues to be sustained by the profits of other Automattic products.
