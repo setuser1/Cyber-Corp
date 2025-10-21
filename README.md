@@ -1,13 +1,15 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/wearables/ouras-new-app-brings-enhanced-health-insights-and-longer-fertility-window-predictions-171329174.html?src=rss
+https://www.engadget.com/entertainment/music/spotify-now-lets-people-follow-venues-to-find-out-about-concerts-153836816.html?src=rss
 
-Wearables
+Entertainment
 
-Oura's new app brings enhanced health insights and longer fertility window predictions
+Music
 
-The whole thing has been redesigned to make it more personal to each user.
+Spotify now lets people follow venues to find out about concerts
+
+Users can filter upcoming shows by genre.
 
 Lawrence Bonk
 
@@ -15,27 +17,29 @@ Contributing Reporter
 
 Lawrence BonkContributing Reporter
 
-Mon, October 20, 2025 at 5:13 PM UTC
+Mon, October 20, 2025 at 3:38 PM UTC
 
 1 min read
 
-Oura
+Spotify
 
-Oura has redesigned its official app with a refreshed visual interface and new health-tracking insights. The company boasts that the app refresh offers "modern visual language with deeper personalization."
+Spotify just introduced a feature that lets users follow their favorite concert venues. This will provide people with updates and details about upcoming concerts.
 
-To that end, there are now three main and easily identifiable tabs. The "Today" tab includes only the most relevant data to help inform daily decisions. The "Vitals" tab offers "at-a-glance views of core health pillars." This includes data on sleep, stress and cardiovascular trends. Colors change based on various biometric indicators to offer quick visual cues.
+Once a venue is selected as a favorite, it gets saved in a user's library. Browsing each venue provides information on scheduled concerts, general announcements and other stuff. Folks can even filter upcoming shows by genre. Clicking on a specific spot will also pull up "tailored suggestions for other venues" in the vicinity.
 
-The "My Health" tab is more interested in long-term health, offering cumulative data on a user's strengths, traits and opportunities for proactive care. This tab also includes a section about habits and routines to link "daily behaviors to measurable outcomes."
-
-Advertisement
+Spotify's new venue-tracking platform will offer links to each location's "official ticketing partner" to make it easier to scoop up some tickets. The company says it currently tracks over 20,000 venues throughout the globe, from "iconic arenas to beloved independent clubs."
 
 Advertisement
 
 Advertisement
 
-The new Oura app also offers some increased health-tracking capabilities. The previous version of the app included a view that showed a month of data regarding menstrual cycles and fertility window predictions. This has been increased to a full year. Members also now get personalized cycle phase data from a single night of sleep instead of having to wait two months like before.
+Advertisement
 
-The app is launching "in the coming weeks," but there's a spot of bad news. It'll only be available for the Oura Ring Gen3 and the Ring 4. The Ring 4 recently got a hardware update, with an option for a durable ceramic coating
+Spotify also announced a change to its live event feed. This will now update daily instead of weekly. For the uninitiated, this tool tracks when artists are touring and lists nearby live events.
+
+The platform recently added yet another tool for concert discovery in the form of custom playlists that highlight artists with upcoming shows in the area. These playlists update every week and include 30 songs.
+
+These are welcome tools, as artists don't get paid a whole lot from streaming platforms, instead relying on live ticket sales. The features could also help stem some of the bad press that's been coming Spotify's way lately, thanks to CEO Daniel Ek's involvement with a weapons manufacturing company and the platform going running recruitment ads for controversial government entities like ICE.
 
 Advertisement
 
