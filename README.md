@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/20/top-openai-google-brain-researchers-set-off-a-300m-vc-frenzy-for-their-startup-periodic-labs/
+https://techcrunch.com/2025/10/20/u-s-and-australia-sign-3b-critical-minerals-deal/
 
-Periodic Labs, a new startup by one of OpenAIs most respected researchers, Liam Fedus, and his former Google Brain colleague, Ekin Dogus Cubuk, came out of stealth last month with an enormous $300 million seed round. It was led by  Felicis and included a whos who of angels and other top VCs.
+President Donald Trump and Australian prime minister Anthony Albanese inked an agreement on Monday that will pump billions of dollars into critical minerals projects.
 
-The startup began when Fedus had a conversation with Cubuk (whose friends call him &#8220;Doge&#8221;) about seven months ago. Cubuk was one of Google Brains foremost machine learning and material science researchers. After endless Silicon Valley takes on how generative AI would radically change scientific discovery, they decided that the pieces were finally in place to make this a reality. Or at least to found a startup that attempted it.
+The U.S. and Australia will together contribute $3 billion to the projects over the next six months. The total project pipeline is worth $8.5 billion, the governments said.
