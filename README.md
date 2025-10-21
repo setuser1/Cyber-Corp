@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/20/yc-alum-cercli-an-ai-powered-rippling-for-mena-raises-oversubscribed-12m-series-a/
+https://techcrunch.com/2025/10/20/apple-will-let-users-roll-back-the-liquid-glass-look-with-new-tinted-option/
 
-In a region long defined by fragmented enterprise systems, outdated compliance tools, and HR software that rarely talks to finance, Cercli is building a unified alternative for MENA businesses with AI at its core.
+Apple has rolled out a new feature that makes it easier to customize Liquid Glass to your liking. Now users will be able to set the appearance of Liquid Glass to either Clear or Tinted, with the help of a new setting included in the latest beta update of its mobile and desktop operating systems.
 
-The Dubai-based startup, founded by ex-Careem operators Akeed Azmi and David Reche, has announced an oversubscribed $12 million Series A round led by European VC Picus Capital.
+The addition indicates Apple is listening closely to user feedback in these early days of the iOS 26, iPadOS 26, and macOS 26 public launches. Apples likes to push through more significant changes, but it will often offer a fallback option for those who have a hard time adjusting.
