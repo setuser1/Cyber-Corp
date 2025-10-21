@@ -1,41 +1,87 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/ea-will-shut-down-the-sims-mobile-in-january-173958279.html?src=rss
+https://www.engadget.com/cybersecurity/vpn/how-to-cancel-nordvpn-and-get-your-money-back-173008588.html?src=rss
 
-Gaming
+Cybersecurity
 
-EA will shut down The Sims Mobile in January
+VPNs
 
-In-app purchases have been switched off and the company will delist the game on October 21.
+How to cancel NordVPN and get your money back
 
-Kris Holt
+NordVPN is fast and feature-rich, but not for everyone. Here's how to cancel and get refunded.
 
-Contributing Reporter
+Sam Chapman
 
-Kris HoltContributing Reporter
+Senior Writer
 
-Mon, October 20, 2025 at 5:39 PM UTC
+Sam ChapmanSenior Writer
 
-2 min read
+Mon, October 20, 2025 at 5:30 PM UTC
 
-EA/Maxis
+4 min read
 
-The Sims Mobile is going away as EA will shut it down on January 20, nearly eight years after its debut in March 2018. An update that went live on Monday is the final one and the company is delisting the game on October 21. Since the game requires online servers (game progress is stored there), it'll no longer be possible to play The Sims Mobile in three months' time.
+NordVPN
 
-"The Sims Mobile and The Sims community as a whole are full of creativity, kindness, and imagination," EA said in a blog post. "Youve amazed us with your stories, builds, and Sims. Were proud to have shared this journey with you, and as a token of our appreciation, weve prepared a few surprises as we head into TSMs final chapter."
+There's a lot to like about NordVPN, as I covered in my full NordVPN review. It's one of the fastest among the best VPNs, and it's got a bunch of cool, specialized servers for various VPN tasks. But the apps can be frustrating, and beyond that, no VPN is perfect for everyone. If you've decided NordVPN isn't for you, here's how to cancel your subscription and get your money back.
 
-EA will run 14 events, including limited-time quests and treasure hunts, in The Sims Mobile over the next few months. It's no longer possible to spend any real money in the game, though players can use their existing in-game currency. As of today, players also have unlimited energy, which "should make it easier to complete projects and enjoy the last few months of play," EA said. On January 6, EA will unlock all of the Build Mode and Create A Sim items so players can fully customize their homes and sims' looks for a couple of weeks before the grim reaper shows up for The Sims Mobile.
+How to turn off auto-renewal on NordVPN
+
+Even though you've decided to part ways with NordVPN, you may want to keep your subscription active while you pick out a replacement service. If that's the case, you can simply cancel automatic renewal and let your subscription expire at the end of the billing period. If you change your mind before then, you can turn auto-renew back on. Here's how to do it.
+
+Go to my.nordaccount.com. Click Log in to Nord Account and enter your email address and password.
+
+You'll arrive at the account overview page. In the left-hand column, click on Billing.
+
+On the list of subscriptions that appears, find NordVPN. Find the line that says "Auto-renewal: ON," and click the Cancel link next to it.
+
+A warning message will appear. Click Cancel auto-renewal at the bottom-right.
+
+Sam Chapman for Engadget
+
+This will turn auto-renewal off. If you decide to turn it back on, just go back to the billing tab of your Nord account overview, find your NordVPN subscription and click Enable auto-renewal.
+
+How to cancel if you subscribed through an app store
+
+If you paid for NordVPN on a mobile device through Google Play or the Apple app store, you'll need to go to the relevant app store to cancel the subscription. On Android, sign in to Google Play, touch your profile picture, tap Payments & subscriptions and tap Subscriptions. Scroll until you find NordVPN, tap it and hit Cancel subscription. If you want a refund, follow the instructions in "How to get a refund from NordVPN" below.
 
 Advertisement
 
 Advertisement
 
-Advertisement
+On iOS, open the settings app, touch your profile picture, then tap Subscription. Scroll down to NordVPN, tap it and hit Cancel subscription. To get a refund for an Apple purchase, contact the Apple support team instead of the NordVPN team.
 
-Back in 2022, EA and Sims studio Maxis announced Project Rene, a game that will run across multiple platforms, including mobile. So it's maybe not too surprising that the company wants to focus its Sims mobile efforts there.
+How to delete your NordVPN account
 
-In any case, the shutdown stinks, especially for those who have spent money on The Sims Mobile as well as for the sake of game preservation. The decision to scuttle the game won't exactly allay concerns that fans of the series, which has a significant LGBTQ+ fanbase, have about the future of The Sims if and when the planned sale of EA to a group that includes Saudi Arabia's Public Investment Fund goes through.
+On the other hand, if you're sick of NordVPN and already have another VPN lined up, you can cancel immediately by deleting your Nord account altogether. This will also cut you off from any other Nord Security products you might be using, including NordPass and NordLocker.
+
+Go to my.nordaccount.com, click Log in to Nord Account and enter your credentials.
+
+At the top-right of the account overview page, click your email address. In the dropdown menu, click Account settings.
+
+Look at the bottom of the page to find the account deletion controls. Click Delete account.
+
+Nord will send an authentication code to your account's email address. Enter it.
+
+Follow the onscreen prompts to confirm deletion.
+
+Sam Chapman for Engadget
+
+How to get a refund from NordVPN
+
+NordVPN has a standard 30-day money-back guarantee. As long as you bought your subscription in the last 30 days, you can get a full refund. To do so, you'll need to first cancel auto-renewal on your plan as described above, then contact support to ask for the refund.
+
+You can reach NordVPN support by going to the help center at support.nordvpn.com. To reach the live chat and email ticket options, you'll need to work your way down to a bottom-level help center article, then scroll down until you reach the section titled "Still having issues?" It's frustrating, but you can get there by just clicking the first link on every page (or just follow this link and scroll down).
+
+Sam Chapman for Engadget
+
+Once you've found the buttons, either start a live chat or open the email form. Whichever you choose, explain that you've cancelled your subscription and would like a refund. Make sure not to end the interaction until you've received confirmation that your refund will be processed. Afterwards, it'll take up to 10 business days for your reimbursement to go through.
+
+NordVPN alternatives
+
+With NordVPN cancelled, you may be in the market for another VPN. I've collected several on my best VPN list (linked at the start of the article), but here's a few specific recommendations: Proton VPN is the best overall, Surfshark is the fastest and ExpressVPN is good for beginners and great at streaming. Good luck in your quest for a VPN that meets your needs.
+
+Best VPN for 2025 | ExpressVPN review | NordVPN review | Norton VPN review | Proton VPN review | Surfshark review | How we test VPNs | How to add VPN to your TV | How to use a VPN on Chromecast or Google TV | How to use a VPN on Roku | How to use a VPN on Apple TV | How to use a VPN on Fire TV | See Engadget's full VPN coverage
 
 Advertisement
 
