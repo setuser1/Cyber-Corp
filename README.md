@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/20/anthropic-brings-claude-code-to-the-web/
+https://techcrunch.com/2025/10/20/cards-against-humanity-settles-trespass-lawsuit-against-spacex/
 
-Anthropic launched a web app on Monday for its viral AI coding assistant, Claude Code, which lets developers create and manage several AI coding agents from their browser.
+Cards Against Humanity, the irreverent party game company known for its provocative humor, has settled its trespassing lawsuit against SpaceX, one year after filing the complaint and launching a profanity-laced marketing campaign against Elon Musks rocket company.
 
-Claude Code for web is now rolling out to subscribers to Anthropics $20-per-month Pro plan, as well as its $100- and $200-per-month Max plans. Pro and Max users can access Claude Code on the web by navigating to claude.ai (the same website for Anthropics consumer chatbot) and clicking into the &#8220;Code&#8221; tab, or through the Claude iOS app.
+The dispute centered on a plot of land along the Rio Grande in Cameron County, Texas, that Cards Against Humanity purchased in 2017. The company crowdfunded the purchase through 150,000 separate $15 donations ($2.25 million total) from supporters who wanted to help block President Donald Trumps border wall.
