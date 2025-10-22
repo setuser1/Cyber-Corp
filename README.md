@@ -1,31 +1,31 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/science/someone-made-a-camera-that-can-shoot-at-two-billion-frames-per-second-202259391.html?src=rss
+https://www.engadget.com/social-media/mark-zuckerberg-adam-mosseri-and-evan-spiegel-ordered-to-testify-in-trial-over-social-media-addiction-190500907.html?src=rss
 
-Science
+Social media
 
-Someone made a 'camera' that can shoot at two billion frames per second
+Mark Zuckerberg, Adam Mosseri and Evan Spiegel ordered to testify in trial over social media addiction
 
-With a bit of work, it can actually film light moving.
+Meta and Snap are facing numerous lawsuits over alleged harms to younger users.
 
-Ian Carlos Campbell
+Karissa Bell
 
-Contributing Reporter
+Senior Editor
 
-Tue, October 21, 2025 at 8:22 PM UTC
+Tue, October 21, 2025 at 7:05 PM UTC
 
-Brian Haidet, a scientist creating videos on YouTube under the handle AlphaPhoenix, showed off a camera in a new video that can capture footage of a laser pointer at the speed of light. The camera is an update on a previous design that could capture footage at one billion frames per second, but it comes with a major caveat: it can only shoot one pixel at a time.
+BATH, UNITED KINGDOM - FEBRUARY 25: In this photo illustration a a 12-year-old school boy looks at a iPhone screen on February 25, 2024 in Bath, England. (Photo by Matt Cardy/Getty Images)
 
-Haidet's camera is made from a gimbal-mounted mirror, two tubes, a simple lens, a light sensor and some Python code to tie it all together. Pointed at a laser pointer, the camera's able to capture a beam of light at two billion frames per second, showing it smoothly traveling between mirrors, with speeds that vary depending on where the camera is in relation to the laser pointer. "Light moves about six inches, or 15 centimeters, per frame of this video," Haidet says. "This beam of light is traveling at the Universes speed limit. Light in any reference frame will never move any faster or any slower than this speed."
+(Matt Cardy via Getty Images)
 
-Pixels had to be tiled together to create what looks like normal video footage.
+Meta CEO Mark Zuckerberg, Instagram chief Adam Mosseri and Snap CEO Evan Spiegel will have to testify in an upcoming trial that deals with social media safety and whether the executives' platforms are addictive. A Los Angeles judge ruled that the three men will need to testify in the trial set to begin in January, according to CNBC.
 
-(Brian Hadet)
+"The testimony of a CEO is uniquely relevant, as that officers knowledge of harms, and failure to take available steps to avoid such harms could establish negligence or ratification of negligent conduct,” Judge Carolyn B. Kuhl wrote. As CNBC points out, the January trial will be closely watched as it's the first of many lawsuits alleging harms to young social media users that will head to trial.
 
-While it's theoretically possible to create a more traditional camera that can capture footage at two billion frames per second, as Haidet explains, you can't do it with the tools most people have in their garage. His solution was to capture one pixel at a time, and then tile that footage together to create something viewable. According to Haidet, "if all these videos are synchronized and we take many, many, many, one pixel videos, we can tile these videos next to each other and play them all back at the exact same moment and give something that looks like a video."
+Lawyers for Meta and Snap had argued that the executives should be spared from testifying at the upcoming trial. Meta's lawyers reportedly argued that forcing testimony from Zuckerberg and Mosseri would "set a precedent" for future trials. Meta is currently facing numerous lawsuits over alleged harms to younger users of its platforms. The company didn't immediately respond to a request for comment.
 
-While it's not the same thing as a true two billion frames-per-second camera, "that's just a significantly more expensive way to do it," Haidet says, "and it really wouldn't get us any better of a result."
+Snap is also facing a number of lawsuits over alleged safety issues. In a statement, the law firm representing Snap said that the judge's order "does not bear at all on the validity of Plaintiffs claims" and that they "look forward to the opportunity to explain why Plaintiffs' allegations against Snapchat are wrong factually and as a matter of law. "
 
 Advertisement
 
