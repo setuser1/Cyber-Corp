@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/21/open-source-agentic-startup-langchain-hits-1-25b-valuation/
+https://techcrunch.com/2025/10/21/sesame-the-conversational-ai-startup-from-oculus-founders-raises-250m-and-launches-beta/
 
-LangChain raised $125 million at a $1.25 billion valuation, the company announced on Monday. TechCrunch reported in July that the provider of a popular open source framework for building AI agents was raising fresh funds at a valuation of at least $1 billion. The deal was led by IVP, as we previously reported. New investors CapitalG and Sapphire Ventures joined in, as did existing investors Sequoia, Benchmark, and Amplify.
+Sesame, a conversational AI startup and smart glasses maker, has raised a $250 million Series B round and is opening up its beta to a select group of testers, the company announced Tuesday.
 
-LangChain began in 2022 as an open source project founded by machine learning engineer Harrison Chase. The startup was an early darling of the AI era, solving problems that made building apps with early-stage LLMs difficult, such as searching the web, calling APIs, and interacting with databases. It became a smash hit project, and Chase launched a startup with a $10 million seed round from Benchmark in April 2023. A week later, Chase raised a $25 million Series A led by Sequoia, reportedly valuing LangChain at $200 million.
+The startup, headed by former Oculus co-founder and CEO Brendan Iribe and Ankit Kumar, former CTO of AR startup Ubiquity6, is working to create a personal AI agent that interacts with users using a natural-sounding human voice. The company plans to embed the personal AI agent into lightweight eyewear that is designed to be worn throughout the day and that users can interact with via voice.
