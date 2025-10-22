@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/21/cloudflare-ceo-matthew-prince-is-pushing-uk-regulator-to-unbundle-googles-search-and-ai-crawlers/
+https://techcrunch.com/2025/10/21/bill-gatess-old-climate-lobbyists-launch-a-new-firm/
 
-After earlier this year launching a marketplace that allows websites to charge AI bots for scraping their content, web infrastructure provider Cloudflare is pushing for increased regulation in the AI sector.
+Back in March, Bill Gates Breakthrough Energy organization disbanded its energy policy team, cutting dozens of staffers. Now some of them have founded a new organization, the nonprofit Clean Economy Project.
 
-The companys chief executive, Matthew Prince, says hes in London to speak with the U.K.s Competition and Markets Authority (CMA), where hes proposing stricter rules on how Google should be able to compete in the AI race, given its search dominance.
+Similar to Breakthrough Energy, the organization is betting that clean energy can beat fossil fuels on cost, if not today, then in the near future.
