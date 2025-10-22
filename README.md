@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/21/a16z-backed-codi-launches-ai-agent-office-manager/
+https://techcrunch.com/2025/10/21/openai-launches-an-ai-powered-browser-chatgpt-atlas/
 
-Codi, an Andreessen Horowitz-backed startup founded by Christelle Rohaut and Dave Schuman, is launching what it hails as the first AI-powered platform to fully automate office management.
+OpenAI announced Tuesday the launch of its AI-powered browser, ChatGPT Atlas, a major step in the companys quest to unseat Google as the main way people find information online.
 
-Codi was founded in 2018, in a pre-pandemic world, with a mission to help companies find flexible office spaces. It was more of a marketplace, as TechCrunch previously reported, that matched companies to buildings that offered flexible office arrangements. Codi then assisted with the move-in processes.
+The company says Atlas will first roll out on macOS, with support for Windows, iOS, and Android coming soon. OpenAI says the product will be available to all free users at launch.
