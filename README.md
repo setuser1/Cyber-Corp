@@ -1,41 +1,29 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ar-vr/how-to-watch-samsung-unveil-its-android-xr-headset-184820772.html?src=rss
+https://www.engadget.com/ar-vr/why-the-samsung-galaxy-xr-can-support-almost-all-android-apps-021000889.html?src=rss
 
 AR/VR
 
-How to watch Samsung unveil its Android XR headset
+Why the Samsung Galaxy XR can support 'almost all' Android apps
 
-The stream starts on October 21 at 10PM ET.
+Unless the app requires hardware that isn't on Android XR devices, it'll be available to use.
 
-Lawrence Bonk
+Ian Carlos Campbell
 
 Contributing Reporter
 
-UpdatedWed, October 22, 2025 at 3:02 AM UTC
+Wed, October 22, 2025 at 2:10 AM UTC
 
-Samsung
+Sam Rutherford for Engadget
 
-Editor's Note: Samsung has officially announced the $1,800 Galaxy XR headset. You can read our hands-on here and how to order the device here.
+The Samsung Galaxy XR is designed to be a showcase for Android XR, Google's new AR / VR operating system, but unlike competing mixed reality headsets, Google says there will be few limits on the apps the Galaxy XR will actually be able to run. In fact, a Google spokesperson tells Engadget that "almost all Android apps will automatically be made available without any additional development effort."
 
-Samsung is set to officially reveal its long-anticipated Android extended reality (XR) headset, which has been codenamed Project Moohan. The company has scheduled a livestream event for October 21 at 10PM ET. That's just a few hours away, which is pretty much nothing compared to the years of lead-up to this reveal since Samsung and its partners have been teasing this device.
+Obviously, Google and Samsung would love deliberately designed spatial experiences for their new hardware, but almost all existing Android apps, regardless if they were made for phones or not, will be considered "Android XR compatible mobile apps" once the headset launches. That means they'll run in a floating spatial panel that can be moved around the virtual space surrounding you, and per Google's Android XR developer guidelines, will automatically support core XR input methods like eye and hand tracking, along with the usual suspects like controllers, mice and keyboards. They should also run and look like they would on a smartphone or tablet. "Apps that specify compact sizes show up accordingly and apps that allow for resizing can be resized in XR. These apps do not run in compatibility mode and wont be letterboxed," Google says.
 
-The event will be streamed live via the company's YouTube page and on the official Samsung Newsroom site. We don't know how long the stream will be, but Samsung promises that Project Moohan will open up the "true potential" of mixed-reality devices. You can bookmark this page and watch it right here.
+The only apps that won't make the cut are ones that require features a given Android XR device doesn't support, like GPS. And in the case of apps that are already updated to work on large screens, or that are "adaptive apps" designed to reflow and change size depending on the Android device they're running on, things will be even smoother. Google says adaptive design will be expected to be the default going forward, an effort that started with this year's release of Android 16. “Many APIs restricting size will be ignored on larger screens (which includes Android XR),” Googles spokesperson said, because the company ultimately wants Android apps to feel responsive whether theyre on a phone, an in-car display or an XR headset.
 
-This isn't just a reveal for a mixed-reality headset. Moohan is the very first device that uses Google's new Android XR operating system, which has been specifically designed for XR, VR and AR devices like glasses and headsets. Google has also shown previews of the ecosystem at its I/O developer conference before, and while we've seen bits and pieces of the software (and hardware) before, the final pieces should be available with the keynote today.
-
-Advertisement
-
-Advertisement
-
-Advertisement
-
-We don't have official specs about the headset itself, but there have been plenty of leaks and rumors that will be confirmed or refuted during the stream. Leaks have suggested it includes a high-end display, advanced tracking and Gemini integration. These same leaks indicate a potential price tag of $1,800 to $2,800, making it more of a rival to the Apple Vision Pro than Meta's new Ray-Ban Display glasses.
-
-Update, October 21 2025, 11:02PM ET This story has been updated with links to Samsung's announcement and to our hands-on of the Galaxy XR.
-
-Update, October 21 2025, 2:48PM ET: This story has been updated to point out the event is happening tonight in a few hours and talk about how Google has previously shown previews of its Android XR platform at its developer conference.
+Apple tried a similar, but more limited approach with the launch of visionOS and the Vision Pro by letting developers list their iOS and iPadOS apps in the visionOS App Store. The move produced mixed results, and a dearth of real visionOS apps. An app designed with a device in mind is better than one that's not, but Google does at least appear to have set Android developers up for a slightly smoother ride. Considering the Galaxy XR's cheaper price when compared to the Vision Pro, they might also have a bigger audience to make apps for, too.
 
 Advertisement
 
