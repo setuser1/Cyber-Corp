@@ -1,27 +1,33 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/xbox/microsoft-increases-the-price-of-xbox-dev-kits-by-500-190000419.html?src=rss
+https://www.engadget.com/entertainment/streaming/netflix-is-adapting-catan-into-movies-and-tv-shows-185133712.html?src=rss
 
-Gaming
+Entertainment
 
-Xbox
+Streaming
 
-Microsoft increases the price of Xbox dev kits by $500
+Netflix is adapting Catan into movies and TV shows
 
-The many price hikes announced during 2025 may burn the company in the end.
+Scripted and unscripted projects based on the popular board game are already in development.
 
-Anna Washenko
+Ian Carlos Campbell
 
 Contributing Reporter
 
-Tue, October 21, 2025 at 7:00 PM UTC
+Tue, October 21, 2025 at 6:51 PM UTC
 
-Players aren't the only ones facing higher price tags from Xbox. According to a report by The Verge, Microsoft has upped the cost of the Xbox Development Kit from $1,500 to $2,000. That's a 33 percent jump in cost for these custom hardware kits, which are essential for devs to make and test games for release on the console.
+Four players playing Catan around a coffee table.
 
-"The adjustment reflects macroeconomic developments," Microsoft said in an email sent to Xbox devs and seen by The Verge. "We remain committed to providing high-quality tools and support for your development efforts." Although the macroeconomics in question are almost certainly the tariffs enacted by the US, it appears this is a blanket increase that will impact developers in other countries as well. The new kit costs appear to be effective immediately.
+(Asmodee)
 
-The change caps off a series of price increases for the Xbox ecosystem. Game Pass prices recently rose, with the Ultimate tier now costing $30 a month compared to the previous $20. And Microsoft has upped the cost of the Xbox twice this year, once in May and again in September. Between these additional expenses and the little matter of cutting thousands of gaming jobs earlier this year, a lot of us are giving up on Xbox before Microsoft can disappoint us yet again.
+Netflix, no stranger to adapting games into streaming hits, has announced that it's partnering with game publisher Asmodee to create new TV shows and films based on the board game Catan, with multiple projects already in development. While the streamer has primarily specialized video game adaptations, the belief in post-Barbie Hollywood is that any recognizable IP could be the source of a future TV show or movie.
+
+In Catan, players are tasked with collecting resources and building out a civilization on a remote island, with multiple ways to win or obstruct fellow players from doing the same. It's not too hard to imagine the game being converted into some kind of competitive reality TV show, though apparently animated and live-action narrative projects are also on the table. "Anyone who has played Catan knows [that] the intense strategy and negotiation at the core of the game has endless opportunities for some serious drama," Jinny Howe, Netflix's head of scripted series for the US and Canada, shared in the press release announcing the deal.
+
+Whichever Catan project ultimately heads into production, Netflix says it'll be produced by Darren Kyman from Asmodee, Pete Fenlon from Catan Studio, and Guido and Benjamin Teuber, the sons of Catan creator Klaus Teuber. If Asmodee sounds familiar, it might be because Netflix has partnered with the publisher in the past. Exploding Kittens, another Asmodee published game, was adapted into both a mobile game for Netflix Games and an animated series with the help of its original creators.
+
+Catan joins a Monopoly adaptation and several shows based on video games at Netflix, including the recently released Splinter Cell: Deathwatch and an upcoming series based on the Assassin's Creed franchise.
 
 Advertisement
 
