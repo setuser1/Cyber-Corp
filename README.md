@@ -1,37 +1,41 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ar-vr/samsung-is-working-on-xr-smart-glasses-with-warby-parker-and-gentle-monster-042632170.html?src=rss
+https://www.engadget.com/ar-vr/how-to-watch-samsung-unveil-its-android-xr-headset-184820772.html?src=rss
 
 AR/VR
 
-Samsung is working on XR smart glasses with Warby Parker and Gentle Monster
+How to watch Samsung unveil its Android XR headset
 
-It's promising 'fashion-forward eyewear that blends cutting-edge AI-native technology' coming next year.
+The stream starts on October 21 at 10PM ET.
 
-Steve Dent
+Lawrence Bonk
 
-Reporter
+Contributing Reporter
 
-Wed, October 22, 2025 at 4:26 AM UTC
+UpdatedWed, October 22, 2025 at 3:02 AM UTC
 
 Samsung
 
-As part of its Galaxy XR headset presentation, Samsung also briefly teased another wearable product. It's working in collaboration with two eyewear companies, Warby Parker and Gentle Monster, on AI-powered smart glasses to go up against Meta's Ray-Ban models, Samsung's head of customer experience Jay Kim announced at the end of the livestream.
+Editor's Note: Samsung has officially announced the $1,800 Galaxy XR headset. You can read our hands-on here and how to order the device here.
 
-"We're also really excited about the AI glasses that we're currently building together with Google," Kim said. "We're working with two of the most forward-thinking brands in eyewear, Warby Parker and Gentle Monster, to introduce new devices that fit into your lifestyle."
+Samsung is set to officially reveal its long-anticipated Android extended reality (XR) headset, which has been codenamed Project Moohan. The company has scheduled a livestream event for October 21 at 10PM ET. That's just a few hours away, which is pretty much nothing compared to the years of lead-up to this reveal since Samsung and its partners have been teasing this device.
 
-Samsung will focus on two different markets with those brands, though both will include "cutting-edge" AI features co-developed with Google. With Gentle Monster, it's developing "fashion-forward" glasses that will likely be aimed at the higher end of the market. The Warby Parker collaboration, meanwhile, will yield eyewear designed for general consumers, probably at a lower price point.
+The event will be streamed live via the company's YouTube page and on the official Samsung Newsroom site. We don't know how long the stream will be, but Samsung promises that Project Moohan will open up the "true potential" of mixed-reality devices. You can bookmark this page and watch it right here.
+
+This isn't just a reveal for a mixed-reality headset. Moohan is the very first device that uses Google's new Android XR operating system, which has been specifically designed for XR, VR and AR devices like glasses and headsets. Google has also shown previews of the ecosystem at its I/O developer conference before, and while we've seen bits and pieces of the software (and hardware) before, the final pieces should be available with the keynote today.
+
+Advertisement
 
 Advertisement
 
 Advertisement
 
-Advertisement
+We don't have official specs about the headset itself, but there have been plenty of leaks and rumors that will be confirmed or refuted during the stream. Leaks have suggested it includes a high-end display, advanced tracking and Gemini integration. These same leaks indicate a potential price tag of $1,800 to $2,800, making it more of a rival to the Apple Vision Pro than Meta's new Ray-Ban Display glasses.
 
-Samsung only said that the AI glasses will bring "style, comfort and practicality" to everyday life via Android's XR ecosystem. As we saw in May with Google's prototype XR smart glasses, it will likely employ a Gemini-powered display that will show notifications and small snippets of info from your apps, like the music you're listening to or turn-by-turn GPS directions. It should also have a built-in camera, of course, along with speakers and a microphone.
+Update, October 21 2025, 11:02PM ET This story has been updated with links to Samsung's announcement and to our hands-on of the Galaxy XR.
 
-Design and appearance will also be key, but Samsung has yet to show any images of the upcoming smart glasses and didn't reveal a release date. However, it will have a tough climb against Meta's lineup given the Ray-Ban branding and that company's head start on the technology. Last week, Meta introduced its Ray-Ban Display model that includes a screen for a true extended reality experience.
+Update, October 21 2025, 2:48PM ET: This story has been updated to point out the event is happening tonight in a few hours and talk about how Google has previously shown previews of its Android XR platform at its developer conference.
 
 Advertisement
 
