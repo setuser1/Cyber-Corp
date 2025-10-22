@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/21/sesame-the-conversational-ai-startup-from-oculus-founders-raises-250m-and-launches-beta/
+https://techcrunch.com/2025/10/21/openais-new-browser-is-a-broadside-shot-at-google/
 
-Sesame, a conversational AI startup and smart glasses maker, has raised a $250 million Series B round and is opening up its beta to a select group of testers, the company announced Tuesday.
+Today, OpenAI launched its new Atlas web browser in a surprise livestream. The show started with CEO Sam Altman, speaking directly to the audience.
 
-The startup, headed by former Oculus co-founder and CEO Brendan Iribe and Ankit Kumar, former CTO of AR startup Ubiquity6, is working to create a personal AI agent that interacts with users using a natural-sounding human voice. The company plans to embed the personal AI agent into lightweight eyewear that is designed to be worn throughout the day and that users can interact with via voice.
+“We think AI represents a rare, once-a-decade opportunity to rethink what a browser can be,” Altman said. “In the same way that, for the previous way people used the internet, the URL bar and the search box were a great analogue, what were starting to see is that the chat experience and the web browser can be a quick analogue.”
