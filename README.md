@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/21/openais-new-browser-is-a-broadside-shot-at-google/
+https://techcrunch.com/2025/10/21/sources-multimodal-ai-startup-fal-ai-already-raised-at-4b-valuation/
 
-Today, OpenAI launched its new Atlas web browser in a surprise livestream. The show started with CEO Sam Altman, speaking directly to the audience.
+Fal.ai, a startup that hosts image, video, and audio AI models for developers, has closed a new round valuing the company at over $4 billion, four people familiar with the deal said. The company raised approximately $250 million, two of the people said.
 
-“We think AI represents a rare, once-a-decade opportunity to rethink what a browser can be,” Altman said. “In the same way that, for the previous way people used the internet, the URL bar and the search box were a great analogue, what were starting to see is that the chat experience and the web browser can be a quick analogue.”
+Major investors in the round are Kleiner Perkins and Sequoia, according to our sources. Fal didnt respond to a request for comment. Sequoia and Kleiner Perkins declined to comment.
