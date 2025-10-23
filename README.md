@@ -1,29 +1,27 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/apps/apple-dumps-dating-apps-tea-and-teaonher-from-the-app-store-over-privacy-and-moderation-issues-191305457.html?src=rss
+https://www.engadget.com/apps/youtube-is-adding-a-timer-to-shorts-so-you-dont-scroll-the-day-away-185204383.html?src=rss
 
 Apps
 
-Apple dumps dating apps Tea and TeaOnHer from the App Store over privacy and moderation issues
+YouTube is adding a timer to Shorts so you don't scroll the day away
 
-The company said the apps also had an "excessive" volume of negative reviews and user complaints.
+It's set by the user and causes a pop-up to appear on the screen.
 
-Kris Holt
+Lawrence Bonk
 
 Contributing Reporter
 
-Wed, October 22, 2025 at 7:13 PM UTC
+Wed, October 22, 2025 at 6:52 PM UTC
 
-A spilled cup of tea next to a teabag pouch
+YouTube
 
-(Chiara Guercio/Unsplash       )
+YouTube is adding a timer to Shorts to help curb all of that incessant doomscrolling, according to a report by TechCrunch. This feature is rolling out to all users after being spotted in an Android APK file earlier this year, which was originally reported on by Android Authority.
 
-Apple has removed dating apps Tea and TeaOnHer from the App Store for violating rules related to content moderation and user privacy. The company told TechCrunch that it pulled the apps as they broke several of its rules, including one mandating that apps can't share or otherwise use an individual's personal info without getting their permission first.
+Here's how it works. Users set a daily time limit for Shorts via the app's settings. Once reached, they'll see a pop-up reminding them to take a break. This pop-up is easily dismissed with a tap, but it's the thought that counts. At the very least, it'll remind people of just how long they've been laying in bed and watching random Curb Your Enthusiasm clips.
 
-Apple said they also violated a rule concerning user-generated content, which stipulates that apps need to allow for reporting offensive or concerning material, an option to block abusive users and the ability to filter "objectionable material from being posted." In addition, Apple claimed the apps broke rules related to user reviews. It told TechCrunch they had an "excessive" volume of negative reviews and complaints from users, including ones related to minors personal details being shared. The company noted that it raised these issues' with the apps' developers, but they were not resolved.
-
-As it stands, both apps are still available on Android through the Google Play Store. Tea (which is formally called Tea Dating Advice) enables women to post details about men they've met or dated. It allows them to post and comment on photos, look up public records on individuals, carry out reverse image searches, share their experiences and rate or review men. Users can, for instance, say whether they'd give a man a "green flag" or a "red flag."
+This doesn't currently integrate with parental controls, but that's coming next year. At that point, parents or guardians will be able to set specific time limits on how long kids can scroll the Shorts feed. That pop-up will not be dismissible by children.
 
 Advertisement
 
@@ -31,11 +29,9 @@ Advertisement
 
 Advertisement
 
-TeaOnHer flips that format on its head, with men sharing info about women. Both are pitched as dating safety apps, with Tea telling users they can "ask our anonymous community of women to make sure your date is safe, not a catfish and not in a relationship."
+This isn't the first move by YouTube to help improve digital well-being. There's a way to set "take a break" reminders at various increments, and the same goes for a pop-up at bedtime.
 
-Tea first emerged in 2023 and it went viral this year. In July, hackers breached the app and leaked tens of thousands of images, including around 3,000 selfies and photo IDs that users submitted to verify their accounts. The other images included posts, comments and private messages. A second hack exposed more than a million private messages.
-
-Days after TeaOnHer went live in August (ripping off text from Teas App Store description in the process), it emerged that app had its own security issues. It was possible to view photo IDs and selfies that users had submitted for account verification, as well as their email addresses.
+Why the renewed focus on limiting user engagement? Well, there are nearly 2,000 lawsuits floating around right now directed toward social media companies, according to a report by Bloomberg Law. Many of these suits accuse the companies of intentionally designing their platforms to be addictive.
 
 Advertisement
 
