@@ -1,43 +1,41 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/social-media/reddit-sues-perplexity-and-three-other-companies-for-allegedly-using-its-content-without-paying-205136436.html?src=rss
+https://www.engadget.com/apps/apple-dumps-dating-apps-tea-and-teaonher-from-the-app-store-over-privacy-and-moderation-issues-191305457.html?src=rss
 
-Social media
+Apps
 
-Reddit sues Perplexity and three other companies for allegedly using its content without paying
+Apple dumps dating apps Tea and TeaOnHer from the App Store over privacy and moderation issues
 
-The company is seeking a permanent injunction and financial damages.
+The company said the apps also had an "excessive" volume of negative reviews and user complaints.
 
-Ian Carlos Campbell
+Kris Holt
 
 Contributing Reporter
 
-Wed, October 22, 2025 at 8:51 PM UTC
+Wed, October 22, 2025 at 7:13 PM UTC
 
-Reddit
+A spilled cup of tea next to a teabag pouch
 
-Reddit is suing companies SerApi, OxyLabs, AWMProxy and Perplexity for allegedly scraping its data from search results and using it without a license, The New York Times reports. The new lawsuit follows legal action against AI startup Anthropic, who allegedly used Reddit content to train its Claude chatbot.
+(Chiara Guercio/Unsplash       )
 
-As of 2023, Reddit charges companies looking access to posts and other content in the hopes of making money on data that could be used for AI training. The company has also signed licensing deals with companies like Google and OpenAI, and even built an AI answer machine of its own to leverage the knowledge in users' posts. Scraping search results for Reddit content avoids those payments, which is why the company is seeking financial damages and a permanent injunction that prevents companies from selling previously scraped Reddit material.
+Apple has removed dating apps Tea and TeaOnHer from the App Store for violating rules related to content moderation and user privacy. The company told TechCrunch that it pulled the apps as they broke several of its rules, including one mandating that apps can't share or otherwise use an individual's personal info without getting their permission first.
 
-Some of the companies Reddit is focused on, like SerApi, OxyLabs and AWMProxy, are not exactly household names, but they've all made collecting data from search results and selling it a key part of their business. Perplexity's inclusion in the lawsuit might be more obvious. The AI company needs data to train its models, and has already been caught seemingly copying and regurgitating material it hasn't paid to license. That also includes reportedly ignoring the robots.txt protocol, a way for websites to communicate that they don't want their material scraped.
+Apple said they also violated a rule concerning user-generated content, which stipulates that apps need to allow for reporting offensive or concerning material, an option to block abusive users and the ability to filter "objectionable material from being posted." In addition, Apple claimed the apps broke rules related to user reviews. It told TechCrunch they had an "excessive" volume of negative reviews and complaints from users, including ones related to minors personal details being shared. The company noted that it raised these issues' with the apps' developers, but they were not resolved.
+
+As it stands, both apps are still available on Android through the Google Play Store. Tea (which is formally called Tea Dating Advice) enables women to post details about men they've met or dated. It allows them to post and comment on photos, look up public records on individuals, carry out reverse image searches, share their experiences and rate or review men. Users can, for instance, say whether they'd give a man a "green flag" or a "red flag."
+
+Advertisement
 
 Advertisement
 
 Advertisement
 
-Advertisement
+TeaOnHer flips that format on its head, with men sharing info about women. Both are pitched as dating safety apps, with Tea telling users they can "ask our anonymous community of women to make sure your date is safe, not a catfish and not in a relationship."
 
-Per a copy of the lawsuit provided to Engadget, Reddit had already sent a cease-and-desist to Perplexity asking it to stop scraping posts without a license. The company claimed it didn't use Reddit data, but it also continued to cite the platform in answers from its chatbot. Reddit says it was able to prove Perplexity was using scraped Reddit content by creating a "test post" that "could only be crawled by Googles search engine and was not otherwise accessible anywhere on the internet." Within a few hours, queries made to Perplexity's answer engine were able to reproduce the content of the post.
+Tea first emerged in 2023 and it went viral this year. In July, hackers breached the app and leaked tens of thousands of images, including around 3,000 selfies and photo IDs that users submitted to verify their accounts. The other images included posts, comments and private messages. A second hack exposed more than a million private messages.
 
-"The only way that Perplexity could have obtained that Reddit content and then used it in its 'answer engine' is if it and/or its co-defendants scraped Google [search results] for that Reddit content and Perplexity then quickly incorporated that data into its answer engine," the lawsuit claims.
-
-When asked to comment, Perplexity provided the following statement:
-
-Perplexity has not yet received the lawsuit, but we will always fight vigorously for users rights to freely and fairly access public knowledge. Our approach remains principled and responsible as we provide factual answers with accurate AI, and we will not tolerate threats against openness and the public interest.
-
-This new lawsuit fits with the aggressive stance Reddit has taken towards protecting its data, including rate-limiting unknown bots and web crawlers in 2024, and even limiting what access the Internet Archive's Wayback Machine has to its site in August 2025. The company has also sought to define new terms around how websites are crawled by adopting the Really Simple Licensing standard, which adds licensing terms to robots.txt.
+Days after TeaOnHer went live in August (ripping off text from Teas App Store description in the process), it emerged that app had its own security issues. It was possible to view photo IDs and selfies that users had submitted for account verification, as well as their email addresses.
 
 Advertisement
 
