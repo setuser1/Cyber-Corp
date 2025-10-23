@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/22/elon-musk-frets-over-controlling-teslas-robot-army-as-car-biz-rebounds/
+https://techcrunch.com/2025/10/22/snapchat-makes-its-first-open-prompt-ai-lens-available-for-free-in-the-us/
 
-Teslas record sales quarter has offered the company a reprieve after a terrible start to 2025. But CEO Elon Musk is focused on building a &#8220;robot army&#8221; and making good on his years-long, unfulfilled promise of self-driving cars &#8212; tasks he needs to accomplish if he is to unlock the full value of the $1 trillion compensation package that Tesla wants to award him.
+Snapchat is making its new &#8220;Imagine Lens,&#8221; the companys first open prompt image-generation AI Lens, available to all users for free. The Lens was initially launched in September but only for paid subscribers. With the Lens, users can edit their own Snaps using custom prompts or generate their own.
 
-The tension between Teslas current automotive-driven business and the AI-centric one that Musk is aiming for has never been more clear.
+For instance, you could prompt the app, &#8220;Turn me into an alien&#8221; after snapping a selfie, or request an image of a &#8220;grumpy cat.&#8221; The company suggests you could use the Lens to try on Halloween costume ideas, or reimagine your friend in a new look, among other things.
