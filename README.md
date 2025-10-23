@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/22/snapchat-makes-its-first-open-prompt-ai-lens-available-for-free-in-the-us/
+https://techcrunch.com/2025/10/22/why-coheres-ex-ai-research-lead-is-betting-against-the-scaling-race/
 
-Snapchat is making its new &#8220;Imagine Lens,&#8221; the companys first open prompt image-generation AI Lens, available to all users for free. The Lens was initially launched in September but only for paid subscribers. With the Lens, users can edit their own Snaps using custom prompts or generate their own.
+AI labs are racing to build data centers as large as Manhattan, each costing billions of dollars and consuming as much energy as a small city. The effort is driven by a deep belief in “scaling” — the idea that adding more computing power to existing AI training methods will eventually yield superintelligent systems capable of performing all kinds of tasks.
 
-For instance, you could prompt the app, &#8220;Turn me into an alien&#8221; after snapping a selfie, or request an image of a &#8220;grumpy cat.&#8221; The company suggests you could use the Lens to try on Halloween costume ideas, or reimagine your friend in a new look, among other things.
+But a growing chorus of AI researchers say the scaling of large language models may be reaching its limits, and that other breakthroughs may be needed to improve AI performance.
