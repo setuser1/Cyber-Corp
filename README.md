@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/22/amazon-unveils-ai-smart-glasses-for-its-delivery-drivers/
+https://techcrunch.com/2025/10/22/amazon-will-buy-thousands-of-pedal-assist-cargo-vehicles-from-rivian-spinoff-also/
 
-Amazon announced on Wednesday that its developing AI-powered smart glasses for its delivery drivers. The idea behind the glasses is to give delivery drivers a hands-free experience that reduces the need to keep looking between their phone, the package theyre delivering, and their surroundings.
+Also, the micromobility startup spun out of Rivian, has landed a commercial deal with Amazon to supply the e-commerce company with thousands of its new pedal-assist cargo quad vehicles that are big enough to carry more than 400 pounds of packages and small enough to use a bike lane.
 
-The e-commerce giant says the glasses will allow delivery drivers to scan packages, follow turn-by-turn walking directions, and capture proof of delivery, all without using their phones. The glasses use AI-powered sensing capabilities and computer vision alongside cameras to create a display that includes things like hazards and delivery tasks.
+Under the multi-year collaboration, the two companies will work on customizing the pedal-assist vehicles to meet Amazons delivery needs in Europe and the United States. The TM-Q pedal-assist electric quads will launch in spring 2026, according to Also, which was revealed on Wednesday at an event in Oakland alongside the companys new e-bike called the TM-B.
