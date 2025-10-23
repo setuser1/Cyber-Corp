@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/22/why-coheres-ex-ai-research-lead-is-betting-against-the-scaling-race/
+https://techcrunch.com/2025/10/22/openai-requested-memorial-attendee-list-in-chatgpt-suicide-lawsuit/
 
-AI labs are racing to build data centers as large as Manhattan, each costing billions of dollars and consuming as much energy as a small city. The effort is driven by a deep belief in “scaling” — the idea that adding more computing power to existing AI training methods will eventually yield superintelligent systems capable of performing all kinds of tasks.
+OpenAI reportedly asked the Raine family — whose 16-year-old son Adam Raine died by suicide after prolonged conversations with ChatGPT — for a full list of attendees from the teenagers memorial, signaling that the AI firm may try to subpoena friends and family.
 
-But a growing chorus of AI researchers say the scaling of large language models may be reaching its limits, and that other breakthroughs may be needed to improve AI performance.
+OpenAI also requested “all documents relating to memorial services or events in the honor of the decedent, including but not limited to any videos or photographs taken, or eulogies given,” per a document obtained by the Financial Times.
