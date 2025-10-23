@@ -1,33 +1,45 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/science/google-says-it-made-a-breakthrough-toward-practical-quantum-computing-183502245.html?src=rss
+https://www.engadget.com/transportation/google-gemini-will-arrive-in-gm-cars-starting-next-year-181249237.html?src=rss
 
-Science
+Transportation
 
-Google says it made a breakthrough toward practical quantum computing
+Google Gemini will arrive in GM cars starting next year
 
-The company's Quantum Echoes algorithm verifies the advantage of quantum computers, and suggests real applications aren't far away.
+The vehicle company says it'll be able to suss out maintenance concerns and offer route suggestions.
 
-Ian Carlos Campbell
+Lawrence Bonk
 
 Contributing Reporter
 
-Wed, October 22, 2025 at 6:35 PM UTC
+UpdatedWed, October 22, 2025 at 6:12 PM UTC
 
-Enabled by the introduction of its Willow quantum chip last year, Google today claims it's conducted breakthrough research that confirms it can create real-world applications for quantum computers. The company's Quantum Echoes algorithm, detailed in a paper published in Nature, is a demonstration of "the first-ever verifiable quantum advantage running the out-of-order time correlator (OTOC) algorithm."
+ASSOCIATED PRESS
 
-A core belief in quantum computing is that developing computer systems with qubits — which can represent multiple states at once, as opposed to binary ones and zeroes — could lead to greater understanding of the quantum systems surrounding us. Google believes its new algorithm is further proof of that assumption. The Quantum Echoes algorithm is able to illustrate how different parts of a quantum system interact with each other, in a way that's repeatable by other quantum computers and that "runs 13,000 times faster on Willow than the best classical algorithm on one of the worlds fastest supercomputers."
+Google Gemini is coming to GM vehicles in 2026. The company will be integrating a conversational AI assistant powered by Google's platform into many of its cars, trucks and SUVs.
 
-The "echo" in Quantum Echoes comes from how Google's algorithm interacts with a quantum system, in this case the Willow chip. "We send a carefully crafted signal into our quantum system (qubits on Willow chip), perturb one qubit, then precisely reverse the signals evolution to listen for the 'echo' that comes back," the company explained in its announcement blog. That echo is magnified by the "constructive interference" of quantum waves, making the measurement Google is able to take extremely sensitive.
+GM says this assistant will be able to access vehicle data to suss out maintenance concerns, alerting the driver when necessary. The company also promises it'll be able to help plan routes and explain various features of the car. It should also be able to do stuff like turn on the heat or air conditioning, even before entering the vehicle.
+
+This will replace the "Google built-in" operating system that already exists in many GM vehicles. This OS already offers access to stuff like Google Maps, Google Assistant and related apps. The upcoming Gemini-based chat assistant will do the same type of things, but it should perform better.
 
 Advertisement
 
 Advertisement
 
-That sensitivity suggests quantum computers could be an important tool in modeling things like the interaction of particles or the structure of molecules. In a separate experiment with the University of California, Berkeley, Google tried to prove that by running the Quantum Echoes algorithm to study two different molecules, and comparing it to the Nuclear Magnetic Resonance (NMR) method currently used by scientists to understand chemical structure. The results from both systems matched, and Google says Quantum Echoes even "revealed information not usually available from NMR."
+Advertisement
 
-In the longterm, a full-scale quantum computer could be used for everything from drug discovery to the development of new battery components. For now though, Google believes its Quantum Echoes research means real-world quantum computer applications could arrive within the next five years.
+“One of the challenges with current voice assistants is that, if youve used the, youve probably also been frustrated by them because theyre trained on certain code words or they dont understand accents very well or if you dont say it quite right, you dont get the right response,” GM VP Dave Richardson told TechCrunch. “Whats great about large language models is they dont seem to be affected by that."
+
+One brand-new feature that Gemini will bring to the table is web integration. This will let drivers ask the chatbot questions pertaining to geographic location and the like. GM gives an example of someone asking about the history of a bridge they are passing over.
+
+The Gemini assistant will be available via the Play Store after launch as an over-the-air upgrade to Onstar-equipped vehicles. It won't be limited to newer releases, as GM says it'll work with vehicles from the model year 2015 and above. The company also says it's working on its own AI chatbot that has been "custom-built for your vehicle." There's no timetable on that one.
+
+GM ran into hot water recently when it was found that it had been selling some customer information sourced from its OnStar Smart Driver program to insurance companies without user consent. This led to the FTC banning the company from selling any driver data for five years. Richardson says the Gemini integration will be privacy-focused and the software will let drivers control what information it can access and use.
+
+GM
+
+The company made these announcements at the GM Forward media event, where it also discussed other forthcoming initiatives. It has scheduled a rollout of its self-driving platform for 2028. It's also developing its own computing platform, also launching in 2028. This does mean that GM will be sunsetting integration with Apple CarPlay and Android Auto. This software will be phased out over the next few years.
 
 Advertisement
 
