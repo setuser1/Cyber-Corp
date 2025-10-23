@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/22/whats-updog-datadogs-new-tool-tells-you-which-apps-are-down/
+https://techcrunch.com/2025/10/22/rivian-spinoff-also-reveals-a-high-end-modular-e-bike-for-4500/
 
-Cloud monitoring and security platform Datadog has solved an age-old joke: Whats up, dog?
+Several years ago, as a skunkworks team of engineers inside Rivian set out to develop an electric micromobility vehicle, one question loomed: &#8220;What do we build in-house?&#8221; Rivian founder and CEO RJ Scaringe said in an interview recounting the early days of Also, which spun out of Rivian earlier this year.
 
-Datadogs answer is not, &#8220;Not much, you?&#8221; Rather, the company launched a web dashboard that shows developers the status of dozens of services and tools like AWS, Cloudflare, OpenAI, and Slack &#8212; essentially letting them check whether major software providers are functioning properly. The tool is free, so anyone can check Updog to find out if major SaaS providers are up … dog.
+&#8220;We realized the only way to do this well is to build everything,&#8221; said Scaringe, who sits on Alsos board.
