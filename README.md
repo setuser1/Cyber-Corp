@@ -1,41 +1,39 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/wearables/nike-pitches-robotic-sneakers-and-mind-altering-mules-212716340.html?src=rss
+https://www.engadget.com/wearables/strava-pulls-the-plug-on-its-garmin-lawsuit-after-just-21-days-204255109.html?src=rss
 
 Wearables
 
-Nike pitches robotic sneakers and mind-altering mules
+Strava pulls the plug on its Garmin lawsuit after just 21 days
 
-The company's Project Amplify shoes allegedly shaved minutes off some users' mile times.
+"Brave Sir Strava ran away..."
 
-Ian Carlos Campbell
+Will Shanklin
 
 Contributing Reporter
 
-Thu, October 23, 2025 at 9:27 PM UTC
+Thu, October 23, 2025 at 8:42 PM UTC
 
-Nike
+Henry Ren / Unsplash
 
-Nike is no stranger to a unique footwear concept, be it self-lacing shoes or a "Hyperboot" that can speed up recovery. The company claims its Project Amplify and new "neuroscience-based" footwear take things a bit further, though, by actively augmenting your body and mind while you're wearing them.
+Strava's big attack on Garmin didn't last long. On Tuesday, the former filed paperwork to dismiss its patent infringement lawsuit against the latter, according to DC Rainmaker. The battle, which included a "Setting the record straight" Reddit post from Strava's chief product officer, lasted all of 21 days.
 
-Developed with robotics startup Dephy, Project Amplify acts as "a second set of calf muscles" for "everyday athletes" who want to walk or run more. Nike says the first-generation model consists of a running shoe with a carbon fiber plate, a calf-mounted rechargeable battery, a motor and a drive belt. While it has the neon colors and cushioned finish of a normal pair of running shoes, the basic design of Project Amplify seems like a more polished version of the robotic Sidekick shoes Dephy is already pitching on its website.
+The lawsuit accused Garmin of infringing on patents related to heat maps and segments. Strava asked the court to halt all sales of infringing Garmin products, which, according to its characterization, would have been, well, most of them.
 
-Project Amplify doesn't replace your legs' ability to walk or run, but rather makes going further and faster easier. Nike compares the experience to an e-bike, which typically don't eliminate the need for pedaling, and instead augment your pedals with power from an electric motor. Nike says Project Amplify "makes walking or running uphill feel like moving on flat ground," and in the case of some people who tested it, turned a 12-minute mile into a 10-minute mile. Dephy and the Nike Sport Research Lab (NSRL) worked with more than 400 different athletes to test various versions of robotic shoes, covering "over 2.4 million steps, the equivalent of roughly 12,000 laps around the NSRLs 200-meter track."
+Strava Chief Product Officer Matt Salazar escalated the fight with an October 2 Reddit post. He said his company's legal maneuver was in response to Garmin API guidelines that "required the Garmin logo to be present on every single activity post, screen, graph, image, sharing card, etc." Salazar wrote that Garmin "wants to use Strava and every other partner as an advertising platform — they told us they care more about their marketing than your user experience."
+
+Advertisement
 
 Advertisement
 
 Advertisement
 
-The companies' approach, melding an existing fashion brand with robotics, is similar to Arc'teryx's MO/GO pants from 2024, robotic trousers developed in partnership with Skip that help hikers with balance and endurance. Project Amplify is smaller (and hopefully less expensive), but robot-assisted gadgets increasingly seem like a way robotics research could make its way into consumer products, beyond things like vacuums.
+Those are fighting words, and Strava appeared to be digging in for a righteous and bitter battle against its partner. But now, it's essentially, "Eh, never mind."
 
-The Nike Mind 001 mules and Nike Mind 002 sneakers on a white background.
+Why the quick reversal? We reached out to Strava for comment, and we'll update this post if we hear back. But closed-door discussions between the companies, possibly including threats from Garmin to counter-sue, seem likely. Garmin has a stacked patent library and a strong record defending them in court. Besides, DC Rainmaker says Strava's case (especially the parts related to heat map patents) didn't appear to hold much water in the first place.
 
-(Nike)
-
-Nike's Mind 001 and Mind 002 shoes are based on the company's neuroscience research, and are strange in a different way. Created by the Nike Mind Science Department, the foam nodes in both shoes — a pair of mules and sneakers, respectively — imparts the texture of the ground underneath the wearer's feet. This process "heightens sensory awareness, which can help clear away distractions and enhance concentration," Nike says.
-
-The Nike Mind 001 and Mind 002 will go on sale in January 2026 as the first shoes in the Nike Mind line. Nike says Project Amplify, meanwhile, will receive "a broad consumer launch in the coming years."
+Strava's initial move was all the more bizarre, considering how much its business model depends on activity data from Garmin devices. The two companies have a longstanding relationship, which you can imagine isn't so healthy at the moment. Losing access to Garmin's legion of devices could have been catastrophic to the San Francisco-based Strava, which plans to file an IPO next year.
 
 Advertisement
 
