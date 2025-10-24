@@ -1,27 +1,31 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/wearables/strava-pulls-the-plug-on-its-garmin-lawsuit-after-just-21-days-204255109.html?src=rss
+https://www.engadget.com/home/home-theater/verizons-latest-ad-defies-crt-physics-202441012.html?src=rss
 
-Wearables
+Home
 
-Strava pulls the plug on its Garmin lawsuit after just 21 days
+Home theater
 
-"Brave Sir Strava ran away..."
+Verizon's latest ad defies CRT physics
 
-Will Shanklin
+One does not simply toss a 27-inch set to another human being.
 
-Contributing Reporter
+Igor Bonifacic
 
-Thu, October 23, 2025 at 8:42 PM UTC
+Senior reporter
 
-Henry Ren / Unsplash
+Thu, October 23, 2025 at 8:24 PM UTC
 
-Strava's big attack on Garmin didn't last long. On Tuesday, the former filed paperwork to dismiss its patent infringement lawsuit against the latter, according to DC Rainmaker. The battle, which included a "Setting the record straight" Reddit post from Strava's chief product officer, lasted all of 21 days.
+A real Verizon commercial.
 
-The lawsuit accused Garmin of infringing on patents related to heat maps and segments. Strava asked the court to halt all sales of infringing Garmin products, which, according to its characterization, would have been, well, most of them.
+(Verizon)
 
-Strava Chief Product Officer Matt Salazar escalated the fight with an October 2 Reddit post. He said his company's legal maneuver was in response to Garmin API guidelines that "required the Garmin logo to be present on every single activity post, screen, graph, image, sharing card, etc." Salazar wrote that Garmin "wants to use Strava and every other partner as an advertising platform — they told us they care more about their marketing than your user experience."
+I know there are bigger fish to fry, but I wouldn't be doing my job if I didn't draw your attention to this travesty of a commercial Verizon just released. It's only 30 seconds long but may go down as one of the worst ads I've ever seen.
+
+Whats so offensive, you ask? Well, the carrier (and one-time parent company of Engadget) wants to promote the fact that it will give AT&T and T-Mobile customers a better deal on their wireless plan if they bring in their monthly cellular bill. That's all well and good, but we need to talk about the cathode-ray tube TV that's at the center of the commercial.
+
+The ad opens with a woman walking into a Best Buy-coded store and handing over a 27-inch CRT TV to a nearby sales associate. "Hi, I got this old thing and the bill from the store where I got it," she tells the young salesperson while casually tossing the TV to him. "Figured you could beat it with a better deal on one of these big boys," she adds, pointing to, lets be honest, an objectively worse flat panel TV.
 
 Advertisement
 
@@ -29,11 +33,13 @@ Advertisement
 
 Advertisement
 
-Those are fighting words, and Strava appeared to be digging in for a righteous and bitter battle against its partner. But now, it's essentially, "Eh, never mind."
+Now, I need to know: did anyone who worked on this commercial try to lift a CRT? Look, I know it's 2025, and even the newest sets are now close to two decades old, but even if you've never seen one in real-life, surely you've heard how heavy they are? If I had to guess, the TV we see in the commercial, which looks like an RCA 27R411T, weighs close to 75 pounds. There's a reason so many Facebook Marketplace listings recommend you bring a friend with you when you come pick up the CRT they're selling; most people can't lift even a mid-sized set on their own.
 
-Why the quick reversal? We reached out to Strava for comment, and we'll update this post if we hear back. But closed-door discussions between the companies, possibly including threats from Garmin to counter-sue, seem likely. Garmin has a stacked patent library and a strong record defending them in court. Besides, DC Rainmaker says Strava's case (especially the parts related to heat map patents) didn't appear to hold much water in the first place.
+I hate to think how Verizon made this commercial. CRTs are a dead technology. No company is making new consumer sets anymore, and any working CRTs left out in the world are on borrowed time. If the company gutted a working set to make this commercial, it means theres one less CRT in an ever-dwindling pool. Someone could have enjoyed that TV and stopped it from entering a landfill.
 
-Strava's initial move was all the more bizarre, considering how much its business model depends on activity data from Garmin devices. The two companies have a longstanding relationship, which you can imagine isn't so healthy at the moment. Losing access to Garmin's legion of devices could have been catastrophic to the San Francisco-based Strava, which plans to file an IPO next year.
+But as for the rest of the commercial, its equally as bad. No big box retailer is accepting trade-ins for a CRT TV, and even if they were, trying to get rid of one that way would be a rookie move. CRTs, both TVs and monitors, are highly sought after by retro gamers. Even a relatively unknown set like the 27R411T can catch a few hundred dollars, especially if it's in pristine condition. In fact, a quick eBay search returns a seller looking for $350 for their 27R411T unit.
+
+But you know what our dear Verizon booster does? She just walks away without the CRT after the salesperson tells her the shop won't give her a better deal on a new TV. "Guess you're not as cool as Verizon" she says, uttering a thing no one in the history has ever said. Sorry, joke's on you, lady. Not only is that TV impossibly light, it's way cooler than anything Verizon has ever done.
 
 Advertisement
 
