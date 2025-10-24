@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/23/trump-credits-benioff-huang-for-decision-not-to-surge-fed-troops-into-san-francisco/
+https://techcrunch.com/2025/10/23/openai-buys-sky-an-ai-interface-for-mac/
 
-President Trump had planned an operation to “surge” San Francisco by marching National Guard troops into the city, but was convinced to alter course, he said on a post on his social network Truth Social on Thursday. Nvidias Jensen Huang and Salesforce CEO Marc Benioff were among the tech industrys luminaries who called him and convinced him to change his mind, the post said.
+OpenAI announced on Thursday it has acquired Software Applications, Inc., the makers of an AI-powered natural language interface for Mac computers called Sky.
 
-San Francisco mayor Daniel Lurie confirmed in a statement that the military operation had been planned and called off, although he didnt name names as to who had conversations with the President.
+The software product, which had not been released to the public, is designed to work alongside you throughout your day, as you use apps on the computer, writing, planning, coding, and more. Similar to AI browsers, Sky can see whats on the your screen and take action in your apps for you.
