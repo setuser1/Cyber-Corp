@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/23/youtube-paid-out-8b-to-the-music-industry-in-12-months/
+https://techcrunch.com/2025/10/23/20-year-old-dropouts-built-ai-notetaker-turbo-ai-to-5-million-users/
 
-YouTube has paid more than $8 billion to the music industry in the 12 months between July 2024 and July 2025, the company announced on Thursday.
+Five million users. Eight-figure annual recurring revenue. Twenty thousand new users joining daily. These are some solid numbers for a startup called Turbo AI launched in early 2024 by Rudy Arora and Sarthak Dhawan, two 20-year-old college dropouts.
 
-“Todays $8 billion payout is a testament to the fact that the twin engine of ads and subscriptions is firing on all cylinders,” said YouTubes Global Head of Music, Lyor Cohen, in a statement. “This number is not an endpoint; it represents meaningful, sustained progress in our journey to build a long-term home for every artist, songwriter, and publisher on the global stage.”
+Most of this growth has come in the past six months, the founders tell TechCrunch, during which their AI-powered note-taking and study tool grew from one million to five million users, while remaining profitable.
