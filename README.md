@@ -1,29 +1,27 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/blumhouse-games-sleep-awake-creeps-onto-steam-and-consoles-december-2-214055543.html?src=rss
+https://www.engadget.com/big-tech/apple-loses-uk-antitrust-lawsuit-over-app-store-fees-184515613.html?src=rss
 
-Gaming
+Big tech
 
-Blumhouse Games' Sleep Awake creeps onto Steam and consoles December 2
+Apple loses UK antitrust lawsuit over App Store fees
 
-The horror title comes from Eyes Out, founded by NIN guitarist Robin Finck and AAA veteran Cory Davis.
+A tribunal found Apple has "near absolute market power" for iOS app distribution and payments.
 
-Jessica Conditt
+Will Shanklin
 
-Senior Editor
+Contributing Reporter
 
-Thu, October 23, 2025 at 9:40 PM UTC
+UpdatedThu, October 23, 2025 at 9:30 PM UTC
 
-Sleep Awake
+Amit Daruka / Unsplash
 
-(Blumhouse Games)
+Apple will owe money to UK users after losing an App Store antitrust lawsuit there on Thursday, according to Financial Times. The Competition Appeal Tribunal ruled that the iPhone maker abused its dominant market position to inflate developer fees.
 
-Confession time: Ive had the Sleep Awake Steam page open in a tab for about a month (hey, we all organize our thoughts in unique and beautiful ways), just so I dont forget about it. The past year has been stacked with fabulous original games across a wide range of genres, including horror, and this is one I didnt want to miss. Now, I can close the tab and put a firm release date on the calendar, as Sleep Awake is officially due to hit PC, PlayStation 5 and Xbox Series X/S on December 2. Happy holidays, indeed.
+The tribunal found that the company has "near absolute market power" for iOS app distribution and in-app payments. The decision declared that Apple has been "abusing its dominant position by charging excessive and unfair prices." FT reports that Apple will appeal the decision.
 
-Sleep Awake is a first-person, narrative-heavy, psychedelic horror game set in the last known city on an Earth thats been ravaged by The HUSH, a mysterious force that disappears anyone who falls asleep. Katja must stay alert and survive the city as its citizens experiment on themselves in increasingly extreme ways, attempting to achieve permanent wakefulness and outmaneuver The HUSH. Needless to say, things get weird.
-
-Sleep Awake comes from Eyes Out, the studio founded by Spec Ops: The Line director Cory Davis and Nine Inch Nails guitarist Robin Finck, and its published by Blumhouse Games. Finck is responsible for the trippy audio stylings of Sleep Awake, of course. This is the studios debut title and something theyve been working on for four years. Back in 2021, Davis and Finck told Engadget they were focused on building an ultra-immersive, audio-driven horror experience with a nightmarish bent.
+The class action claimants said damages of about £1.5bn would be split between 36 million consumers. A subsequent hearing to determine the process for "resolving any questions relating to the calculation" of damages could come as soon as next month.
 
 Advertisement
 
@@ -31,11 +29,13 @@ Advertisement
 
 Advertisement
 
-“The type of horror that we're building has a lot to do with the horrors of the universe and the horrors that you kind of go to sleep with at night, the ones that are just around the corner and outside of our purview, but exist,” Davis said. “And the technology for building those types of soundscapes, the localized audio and reverb and the realism behind that, coming from VR before, I had a lot of opportunity to work with that stuff.”
+Apple has an increasingly strained relationship with the tighter regulations across the Atlantic. Earlier this week, the company stepped up its attacks on the EU's Digital Markets Act (DMA), a law designed to protect consumers from Big Tech dominance. And on Wednesday, the UK's Competition and Markets Authority (CMA) confirmed that Apple has "strategic market status" in the country's equivalent of the DMA. That gives the CMA authority to "ensure that mobile platforms are open to effective competition."
 
-Finck added the following: “I'm really excited about the nuance and the subtlety of coming from silence, like a really impactful silence, and beginning to emerge from that silence towards an impactful embellishment of some sort, however great or greater. And that play between the diegetic soundscape of the world within the tangible, physical space inside the game, and where it blurs with the score, the music of the game, can be really challenging and inspiring.”
+Apple provided the following statement in response to the ruling:
 
-Blumhouse Games published its first horror project, Fear the Spotlight, in October 2024 and on top of Sleep Awake, it has a steady stream of additional terrors in store. The co-op gothic-horror game Eyes of Hellfire landed in August from developer Gambrinous, and titles including Grave Seasons and Crisol: Theater of Idols are due to drop soon.
+"We thank the tribunal for its consideration but strongly disagree with this ruling, which takes a flawed view of the thriving and competitive app economy. The App Store has benefited businesses and consumers across the U.K., creating a dynamic marketplace where developers compete and users can choose from millions of innovative apps. This ruling overlooks how the App Store helps developers succeed and gives consumers a safe, trusted place to discover apps and securely make payments. The App Store faces vigorous competition from many other platforms — often with far fewer privacy and security protections — giving developers and consumers many options in how they build, share, and download apps. We intend to appeal."
+
+Update, October 23, 2025, 5:30PM ET: This story has been updated to include a statement from Apple on today's ruling.
 
 Advertisement
 
