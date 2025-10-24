@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/23/openai-buys-sky-an-ai-interface-for-mac/
+https://techcrunch.com/2025/10/23/rivian-ceo-takes-top-marketing-role-in-shakeup-ahead-of-r2-launch/
 
-OpenAI announced on Thursday it has acquired Software Applications, Inc., the makers of an AI-powered natural language interface for Mac computers called Sky.
+Rivians founder and CEO RJ Scaringe is taking on a new role at his company as part of a restructuring ahead of next years launch of the R2 SUV, which involves a layoff of more than 600 employees.
 
-The software product, which had not been released to the public, is designed to work alongside you throughout your day, as you use apps on the computer, writing, planning, coding, and more. Similar to AI browsers, Sky can see whats on the your screen and take action in your apps for you.
+Scaringe told employees in an email on Thursday that he will be acting as Rivians chief marketing officer on an interim basis as the company searches for someone to fill that position for the first time. The head of Rivians &#8220;marketing experiences&#8221; team and the lead of the companys creative studio will now report directly to Scaringe, according to a copy of the email obtained by TechCrunch.
