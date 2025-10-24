@@ -1,37 +1,41 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/ea-partners-with-the-company-behind-stable-diffusion-to-make-games-with-ai-222253069.html?src=rss
+https://www.engadget.com/gaming/blumhouse-games-sleep-awake-creeps-onto-steam-and-consoles-december-2-214055543.html?src=rss
 
 Gaming
 
-EA partners with the company behind Stable Diffusion to make games with AI
+Blumhouse Games' Sleep Awake creeps onto Steam and consoles December 2
 
-The company believes it can speed up development with new AI tools.
+The horror title comes from Eyes Out, founded by NIN guitarist Robin Finck and AAA veteran Cory Davis.
 
-Ian Carlos Campbell
+Jessica Conditt
 
-Contributing Reporter
+Senior Editor
 
-Thu, October 23, 2025 at 10:22 PM UTC
+Thu, October 23, 2025 at 9:40 PM UTC
 
-ASSOCIATED PRESS
+Sleep Awake
 
-Electronic Arts has announced a new partnership with Stability AI, the creator of AI image generation tool Stable Diffusion. The company will "co-develop transformative AI models, tools, and workflows" for the game developer, with the hopes of speeding up development while maintaining quality.
+(Blumhouse Games)
 
-"I use the term smarter paintbrushes,” Steve Kestell, Head of Technical Art for EA SPORTS said in the announcement. "We are giving our creatives the tools to express what they want." To start, the "smarter paintbrushes" EA and Stability AI are building are concentrated on generating textures and in-game assets. EA hopes to create "Physically Based Rendering materials" with new tools "that generate 2D textures that maintain exact color and light accuracy across any environment."
+Confession time: Ive had the Sleep Awake Steam page open in a tab for about a month (hey, we all organize our thoughts in unique and beautiful ways), just so I dont forget about it. The past year has been stacked with fabulous original games across a wide range of genres, including horror, and this is one I didnt want to miss. Now, I can close the tab and put a firm release date on the calendar, as Sleep Awake is officially due to hit PC, PlayStation 5 and Xbox Series X/S on December 2. Happy holidays, indeed.
 
-The company also describes using AI to "pre-visualize entire 3D environments from a series of intentional prompts, allowing artists to creatively direct the generation of game content." Stability AI is most famous for its powerful Stable Diffusion image generator, but the company maintains multiple tools for generating 3D models, too, so the partnership is by no means out of place.
+Sleep Awake is a first-person, narrative-heavy, psychedelic horror game set in the last known city on an Earth thats been ravaged by The HUSH, a mysterious force that disappears anyone who falls asleep. Katja must stay alert and survive the city as its citizens experiment on themselves in increasingly extreme ways, attempting to achieve permanent wakefulness and outmaneuver The HUSH. Needless to say, things get weird.
+
+Sleep Awake comes from Eyes Out, the studio founded by Spec Ops: The Line director Cory Davis and Nine Inch Nails guitarist Robin Finck, and its published by Blumhouse Games. Finck is responsible for the trippy audio stylings of Sleep Awake, of course. This is the studios debut title and something theyve been working on for four years. Back in 2021, Davis and Finck told Engadget they were focused on building an ultra-immersive, audio-driven horror experience with a nightmarish bent.
+
+Advertisement
 
 Advertisement
 
 Advertisement
 
-Advertisement
+“The type of horror that we're building has a lot to do with the horrors of the universe and the horrors that you kind of go to sleep with at night, the ones that are just around the corner and outside of our purview, but exist,” Davis said. “And the technology for building those types of soundscapes, the localized audio and reverb and the realism behind that, coming from VR before, I had a lot of opportunity to work with that stuff.”
 
-It helps that AI is on the tip of most video game executives' tongues. Strauss Zelnick, the head of Grand Theft Auto publisher Take-Two, recently shared that generative AI "will not reduce employment, it will increase employment," because "technology always increases productivity, which in turn increases GDP, which in turn increases employment." Krafton, the publisher of PUBG: Battlegrounds, made its commitment to AI even more clear, announcing plans on Thursday to become an AI-first company. Companies with a direct stake in the success of the AI industry, like Microsoft, have also created gaming-focused tools and developed models for prototyping.
+Finck added the following: “I'm really excited about the nuance and the subtlety of coming from silence, like a really impactful silence, and beginning to emerge from that silence towards an impactful embellishment of some sort, however great or greater. And that play between the diegetic soundscape of the world within the tangible, physical space inside the game, and where it blurs with the score, the music of the game, can be really challenging and inspiring.”
 
-The motivations for EA might be even simpler, though. The company is in the midst of being taken private, and will soon be saddled with billions in debt. Theoretically cutting costs with AI might be one way the company hopes to survive the transition.
+Blumhouse Games published its first horror project, Fear the Spotlight, in October 2024 and on top of Sleep Awake, it has a steady stream of additional terrors in store. The co-op gothic-horror game Eyes of Hellfire landed in August from developer Gambrinous, and titles including Grave Seasons and Crisol: Theater of Idols are due to drop soon.
 
 Advertisement
 
