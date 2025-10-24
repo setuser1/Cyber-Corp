@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/23/20-year-old-dropouts-built-ai-notetaker-turbo-ai-to-5-million-users/
+https://techcrunch.com/2025/10/23/instagram-users-can-now-use-meta-ai-editing-tools-directly-in-ig-stories/
 
-Five million users. Eight-figure annual recurring revenue. Twenty thousand new users joining daily. These are some solid numbers for a startup called Turbo AI launched in early 2024 by Rudy Arora and Sarthak Dhawan, two 20-year-old college dropouts.
+Meta is bringing its AI-powered photo and video editing tools directly to Instagram Stories, allowing users to enter text prompts to add or remove things in photos and videos or even change it completely.
 
-Most of this growth has come in the past six months, the founders tell TechCrunch, during which their AI-powered note-taking and study tool grew from one million to five million users, while remaining profitable.
+While Meta has already offered image editing capabilities on Instagram, those tools were limited to interactions with the Meta AI chatbot. The addition of text-based prompts in Stories now makes these editing features much more accessible.
