@@ -1,14 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/24/techcrunch-disrupt-2025-breakout-sessions/
+https://techcrunch.com/2025/10/24/automattic-files-counterclaims-against-wp-engine-in-wordpress-lawsuit-alleging-trademark-misuse/
 
-With TechCrunch Disrupt 2025 in less than 3 days, were loading up Moscone West with 200+ cant-miss sessions — including breakout sessions led by top leaders across the tech and startup ecosystem. Breakout sessions are tailored for hands-on learning and tactical takeaways. These first-come, first-served rooms put you shoulder to shoulder with operators, founders, and investors building whats next.
+On Friday, WordPress.com maker Automattic filed its counterclaims in the lawsuit initiated by hosting company WP Engine in October 2024, which had accused Automattic and its CEO, Matt Mullenweg, of defamation and abuse of power. Automattic believes that WP Engine has been abusing the WordPress trademark and has engaged in deceptive marketing practices, without properly giving back to the open source community.
 
-Dont miss your chance to pocket ticket savings and join these breakouts! Register now to save up to $444 on your pass, and get 60% off a second before prices increase when event doors open on October 27.
-
-The complete Disrupt 2025 breakout session agenda
-
-The Untapped Opportunity Hidden in Business Workflows
-
-Umair Javed, CEO, tkxel; Marcus Torres, CPO, Quickbase; and Umair Bashir, fractional CTO, Signal
+As a result, Automattic took action against WP Engine last year, which included calling the hosting provider a &#8220;cancer to WordPress&#8221; and sending it a cease-and-desist letter claiming WP Engine had breached its trademark usage rules. As the battle continued, Automattic banned WP Engine from accessing WordPress.org resources and attempted to negotiate a licensing deal with the host. Automattic claims that the company strung it along, negotiating in bad faith.
