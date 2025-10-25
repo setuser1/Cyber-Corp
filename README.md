@@ -1,8 +1,12 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/24/rivian-will-pay-250m-to-settle-lawsuit-over-r1-price-hike/
+https://techcrunch.com/2025/10/24/ai-at-the-edge-how-startups-are-powering-the-future-of-space-at-techcrunch-disrupt-2025/
 
-Rivian has agreed to pay $250 million to settle a class action shareholder lawsuit filed after the company suddenly hiked prices on its R1 pickup truck and SUV in 2022.
+Just three days until liftoff for TechCrunch Disrupt 2025 — and the Space Stage is ready to explore the future of space tech (and every other frontier of innovation). Space leaders Adam Maher (Ursa), Dr. Lucy Hoag (Violet Labs), and Dr. Debra L. Emmons (The Aerospace Corporation) will unpack how AI is transforming life in orbit.
 
-The lawsuit alleged Rivian had included misleading statements and figures in regulatory filings in the run-up to its 2021 IPO about the costs required to build the R1 EVs. Despite agreeing to the payment, Rivian said in a press release that it &#8220;denies the allegations in the suit and maintains that this agreement to settle is not an admission of fault or wrongdoing.&#8221;
+If youre after insights, inspiration, and a front-row seat to whats next, this is the room to be in. Save up to $444 on your pass before doors open on October 27 — plus, grab a guest pass for 60% off or get 15% to 30% off group rates for your team.
+
+Redefining the final frontier: AI at the edge of space
+
+Forget just rockets and satellites. The real revolution in space isnt in what we launch, but in the intelligence we deploy.
