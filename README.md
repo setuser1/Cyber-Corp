@@ -1,39 +1,53 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/entertainment/streaming/disney-warns-that-youtube-tv-could-lose-its-channels-amid-fee-negotations-155347776.html?src=rss
+https://www.engadget.com/deals/this-battery-powered-ring-doorbell-is-back-on-sale-for-a-record-low-price-154029007.html?src=rss
 
-Entertainment
+Deals
 
-Streaming
+This battery-powered Ring doorbell is back on sale for a record-low price
 
-Disney warns that YouTube TV could lose its channels amid fee negotations
+The Ring Battery Doorbell Plus has dropped back down to its Prime Day price.
 
-The two sides have until midnight on October 30 to reach an agreement.
-
-Will Shanklin
+Kris Holt
 
 Contributing Reporter
 
-Fri, October 24, 2025 at 3:53 PM UTC
+Fri, October 24, 2025 at 3:40 PM UTC
 
-Kéoma Oran / Unsplash
+Amazon
 
-Stop me if you've heard this one before: YouTube TV may lose a provider's content because a deadline is approaching without a deal in place. This time, the media company is Disney. It's warning (via Variety) that its networks could soon go dark on Google's streaming service.
+Amazon is offering a hefty discount on the Ring Battery Doorbell Plus. The video doorbell has dropped from its regular price of $150 to $80 in a limited-time deal.
 
-The two sides are negotiating ahead of an October 30 midnight ET deadline. If they can't agree by then, all Disney content will disappear from YouTube TV. That includes (among others) all ESPN channels, local ABC stations, ABC News, FX, NatGeo, Disney Channel and Freeform. A YouTube spokesperson told Variety that if that should happen for "an extended period of time," subscribers will receive a $20 credit.
+That's a discount of 47 percent for this particular model. It also matches the record-low price we saw for the Ring Battery Doorbell Plus during the Prime Day event earlier this month.
 
-One aspect of these battles is finger-pointing as each side tries to leverage public perception. Disney says YouTube is trying to muscle the mouse into paying below market value. Meanwhile, YouTube claims Disney is "proposing costly economic terms" that could lead to even higher subscription fees. YouTube TV launched at $35 per month in 2017 and now costs a whopping $83 monthly.
+Ring
+
+Ring Battery Doorbell Plus
+
+$80$150Save $70
+
+The Ring Battery Doorbell Plus has dropped back down to $80 in a limited-time deal.
+
+$80 at Amazon
+
+Explore More Buying Options
+
+$80 at Target$150 at Chewy
+
+The Ring Battery Doorbell Plus has a more expanded field-of-view compared with earlier models, allowing for head-to-toe views of whoever's at your doorstep. There's support for color night vision, along with motion detection and the ability to set up privacy zones.
 
 Advertisement
 
 Advertisement
 
-Advertisement
+Amazon says the Battery Doorbell Plus is easy to set up using the Ring app and mounting tools. The company added that there's a quick release system for the battery pack, so you can take it inside for recharging without having to unscrew a cover.
 
-If recent history is any indication, you can expect the dire warnings of content removal to continue until they strike a deal at the last second. That already happened several times this year.
+Naturally, the device is connected to the Alexa smart home ecosystem, so you'll be able to receive motion alerts on compatible Echo devices or see a live view of the camera's feed on an Echo Show, Fire TV or Fire Tablet. You'll be able to chat to whoever's at the door too, via the doorbell's two-way communication system.
 
-In February, YouTube TV and Paramount had that dance. Google's streaming network and Fox came to a renewal deal in August after repeated content-removal warnings. YouTube TV and NBCUniversal did the thing earlier this month. However, in that case, the streaming service dropped Univision and other TelevisaUnivision networks, so tidy deals aren't inevitable. Time will tell how this one plays out, but it's hard to imagine either side here wanting to play chicken past the October 30 deadline.
+A Ring Home subscription is required for you to receive package alerts — this feature will let you know when the doorbell's camera detects a package within a particular zone. The subscription also includes the option to save recorded videos for up to 180 days, among other features.
+
+Follow @EngadgetDeals on X for the latest tech deals and buying advice.
 
 Advertisement
 
