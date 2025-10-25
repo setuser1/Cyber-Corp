@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/24/tech-layoffs-2025-list/
+https://techcrunch.com/2025/10/24/how-to-use-the-new-chatgpt-app-integrations-including-spotify-figma-canva-and-others/
 
-The tech layoff wave is still kicking in 2025. Last year saw more than 150,000 job cuts across 549 companies, according to independent layoffs tracker Layoffs.fyi. So far this year, more than 22,000 workers have been the victim of reductions across the tech industry, with a staggering 16,084 cuts taking place in February alone.
+OpenAI recently launched new app integrations in ChatGPT to allow you to connect your accounts directly to ChatGPT and ask the assistant to do things for you. For instance, with a Spotify integration, you can tell it to create personalized playlists that will show up right in your Spotify app.
 
-Were tracking layoffs in the tech industry in 2025 so you can see the trajectory of the cutbacks and understand the impact on innovation across all types of companies. As businesses continue to embrace AI and automation, this tracker serves as a reminder of the human impact of layoffs — and what could be at stake with increased innovation.
+To get started, make sure youre logged into ChatGPT. Then type the name of the app you want to use at the start of your prompt, and ChatGPT will guide you through signing in and connecting your account.
