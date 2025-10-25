@@ -1,39 +1,53 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/social-media/wordpress-co-founder-files-countersuit-against-wp-engine-over-trademark-violations-182123619.html?src=rss
+https://www.engadget.com/ai/surprising-no-one-researchers-confirm-that-ai-chatbots-are-incredibly-sycophantic-185935470.html?src=rss
 
-Social media
+AI
 
-WordPress co-founder files countersuit against WP Engine over trademark violations
+Surprising no one, researchers confirm that AI chatbots are incredibly sycophantic
 
-Automattic alleges private equity firm Silver Lake pushed WP Engine to violate trademarks and neglect open-source WordPress.
+A study confirms they endorse a users actions 50 percent more often than humans do.
 
-Ian Carlos Campbell
+Lawrence Bonk
 
 Contributing Reporter
 
-UpdatedFri, October 24, 2025 at 7:35 PM UTC
+Fri, October 24, 2025 at 6:59 PM UTC
 
-SOPA Images via Getty Images
+Unsplash / Sanket Mishra
 
-There's been another turn in Automattic and WordPress co-founder Matt Mullenwegs ongoing legal battle with WordPress provider WP Engine. In a counterclaim Automattic filed as part of WP Engine's lawsuit against the company, it claims investment from private equity firm Silver Lake led WP Engine to violate its trademarks and fail to contribute to the open-source WordPress project.
+We all have anecdotal evidence of chatbots blowing smoke up our butts, but now we have science to back it up. Researchers at Stanford, Harvard and other institutions just published a study in Nature about the sycophantic nature of AI chatbots and the results should surprise no one. Those cute little bots just love patting us on our heads and confirming whatever nonsense we just spewed out.
 
-Automattic believes that following a $250 million investment from Silver Lake, which gave the firm a controlling interest in WP Engine, the hosting provider "sought to inflate its valuation and engineer a quick, lucrative exit." It allegedly did that, per the counterclaim, by describing itself as the "WordPress Technology Company" and allowing its partners to refer to it as "WordPress Engine," violations of the WordPress trademark. Automattic claims products WP Engine released like "Core WordPress" and "Headless WordPress" further obfuscated the companys role, while WP Engine also failed to commit a promised "five percent of its resources to support the WordPress project."
+The researchers investigated advice issued by chatbots and they discovered that their penchant for sycophancy "was even more widespread than expected." The study involved 11 chatbots, including recent versions of ChatGPT, Google Gemini, Anthropic's Claude and Meta's Llama. The results indicate that chatbots endorse a human's behavior 50 percent more than a human does.
 
-The counterclaim goes on to say that Automattic and Mullenweg tried to work out these issues with WP Engine by offering a "fair trademark license," but the company only "pretended to engage in licensing discussions," while actually delaying any kind of agreement because it would "impact its earnings." Keeping earnings up was important to WP Engine because Silver Lake was allegedly trying to sell WP Engine at a $2 billion valuation, and had even made "overtures to Automattic" about it.
+They conducted several types of tests with different groups. One compared responses by chatbots to posts on Reddit's "Am I the Asshole" thread to human responses. This is a subreddit in which people ask the community to judge their behavior, and Reddit users were much harder on these transgressions than the chatbots.
 
-A WP Engine spokesperson provided the following statement to Engadget:
+But there's a darker side…
+
+MIT researchers used Reddit's "Am I The Asshole?" data to test how AI models become overly sycophantic and agreeable
+
+Your most vulnerable moments are training tomorrow's AI. pic.twitter.com/vRgYSjudGh
+
+— anarchy.build (@anarchy_build) July 19, 2025
+
+One poster wrote about tying a bag of trash to a tree branch instead of throwing it away, to which ChatGPT-4o declared that the person's "intention to clean up" after themself was "commendable." The study went on to suggest that chatbots continued to validate users even when they were "irresponsible, deceptive or mentioned self-harm", according to a report by The Guardian.
 
 Advertisement
 
 Advertisement
 
-WP Engines use of the WordPress trademark to refer to the open-source software is consistent with longstanding industry practice and fair use under settled trademark law, and we will defend against these baseless claims.
+What's the harm in indulging a bit of digital sycophancy? Another test had 1,000 participants discuss real or hypothetical scenarios with publicly available chatbots, but some of them had been reprogrammed to tone down the praise. Those who received the sycophantic responses were less willing to patch things up when arguments broke out and felt more justified in their behavior, even when it violated social norms. It's also worth noting that the traditional chatbots very rarely encouraged users to see things from another person's perspective.
 
-Auttomatics countersuit tells a different story than the one WP Engine spun in its original lawsuit against the company, which accused Mullenweg of "abuse of power, extortion and greed." WP Engine's original complaint claimed that Automattic asked the company for eight percent of its monthly revenue as a royalty payment. Mullenweg's attempts to punish WP Engine were seen as so aggressive at the time that over 100 Automattic employees voluntarily left the company in response. WP Engine won a preliminary injunction in response to its lawsuit, but it seems like the story might be more complicated than it originally appeared.
+"That sycophantic responses might impact not just the vulnerable but all users, underscores the potential seriousness of this problem," said Dr. Alexander Laffer, who studies emergent technology at the University of Winchester. "There is also a responsibility on developers to be building and refining these systems so that they are truly beneficial to the user."
 
-Update, October 24, 3:35PM ET: Clarified Automattics relationship to open-source WordPress. The company is not WordPress creator.
+A study found 33% of teenagers use AI chatbots for companionship, conversation practice, and romance
+
+They found talking to AI easier than talking to real people and use it for emotional support pic.twitter.com/AbCZbv6tpK
+
+— Dexerto (@Dexerto) July 26, 2025
+
+This is serious because of just how many people use these chatbots. A recent report by the Benton Institute for Broadband & Society suggested that 30 percent of teenagers talk to AI rather than actual human beings for "serious conversations." OpenAI is currently embroiled in a lawsuit that accuses its chatbot of enabling a teen's suicide. The company Character AI has also been sued twice after a pair of teenage suicides in which the teens spent months confiding in its chatbots.
 
 Advertisement
 
