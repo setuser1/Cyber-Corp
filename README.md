@@ -1,49 +1,39 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/big-tech/big-tech-is-helping-to-pay-for-trumps-ballroom-that-we-all-definitely-want-162545434.html?src=rss
+https://www.engadget.com/entertainment/streaming/disney-warns-that-youtube-tv-could-lose-its-channels-amid-fee-negotations-155347776.html?src=rss
 
-Big tech
+Entertainment
 
-Big tech is helping to pay for Trump's ballroom that we all definitely want
+Streaming
 
-I'm sure companies like Amazon, Google and Microsoft are doing this out of kindness and a pure love of pageantry.
+Disney warns that YouTube TV could lose its channels amid fee negotations
 
-Lawrence Bonk
+The two sides have until midnight on October 30 to reach an agreement.
+
+Will Shanklin
 
 Contributing Reporter
 
-UpdatedFri, October 24, 2025 at 4:25 PM UTC
+Fri, October 24, 2025 at 3:53 PM UTC
 
-ASSOCIATED PRESS
+Kéoma Oran / Unsplash
 
-The federal government has released a list of all of the entities helping to pay for President Trump's lavish White House ballroom, according to reporting by Business Insider. Big tech is all over this thing, with companies like Amazon, Apple, Google, Meta and Microsoft all shelling out cash to fund the 90,000-square-foot ballroom.
+Stop me if you've heard this one before: YouTube TV may lose a provider's content because a deadline is approaching without a deal in place. This time, the media company is Disney. It's warning (via Variety) that its networks could soon go dark on Google's streaming service.
 
-It's not just big tech. Defense firms are also helping to pony the bill here. Companies like Lockheed Martin and Palintir are sending some cash, as are random billionaires like the Winklevoss twins and Domino Sugar magnate José Fanjul. The list reads like a who's who of the ultra wealthy and connected.
+The two sides are negotiating ahead of an October 30 midnight ET deadline. If they can't agree by then, all Disney content will disappear from YouTube TV. That includes (among others) all ESPN channels, local ABC stations, ABC News, FX, NatGeo, Disney Channel and Freeform. A YouTube spokesperson told Variety that if that should happen for "an extended period of time," subscribers will receive a $20 credit.
 
-As we all know, giant corporations and billionaires are kind and selfless, but what if just this one time they want something in return for their largesse? Columbia professor of law Richard Briffault told Time that most of these donors have done "significant" business with the federal government, raising ethical concerns.
+One aspect of these battles is finger-pointing as each side tries to leverage public perception. Disney says YouTube is trying to muscle the mouse into paying below market value. Meanwhile, YouTube claims Disney is "proposing costly economic terms" that could lead to even higher subscription fees. YouTube TV launched at $35 per month in 2017 and now costs a whopping $83 monthly.
+
+Advertisement
 
 Advertisement
 
 Advertisement
 
-"I doubt its a literal quid-pro-quo, but its probably more like ‘if you give this, I will look favorably upon you. Or maybe more like, ‘if you don't give this, after you've been asked, I won't [look favorably upon you]," Briffault said. "It's greasing the system by making contributions, and in some ways, his leaning on them for contributions is quasi-coercive."
+If recent history is any indication, you can expect the dire warnings of content removal to continue until they strike a deal at the last second. That already happened several times this year.
 
-Noah Bookbinder, CEO and President of ethics watchdog organization Citizens for Responsibility and Ethics in Washington said the whole thing is “extraordinarily unusual, deeply disturbing and does have tremendous ethics implications." He also said that "Donald Trump has made very clear over the years that he does appreciate people paying tribute to him, and he does tend to do things that benefit those people."
-
-President Trump hosted top donors to the $250 million ballroom project at the White House, opening the door to potential institutional favoritism.
-
-During a government shutdown, the optics of this pay-to-play are even worse. https://t.co/MbAKxOaPdG
-
-— Citizens for Ethics (@CREWcrew) October 23, 2025
-
-Trump has been personally woo-ing these potential financiers. There was a fundraising dinner in the East Room last week that included representatives of several of the aforementioned companies. The dinner was billed as an event to “Establish the Magnificent White House Ballroom,” according to the Wall Street Journal. The outlet also reported that Trump has held meetings at the White House and at his club in Virginia to raise money for the project.
-
-It's worth noting that this isn't the first time big tech companies have banded together to pay tribute to Trump. Most of the aforementioned companies helped pay for his inauguration and, heck, Apple CEO Tim Cook gave Trump an actual 24K gold statue for some reason.
-
-The construction of this glorious ballroom we all most definitely want has already been at the heart of several controversies. Americans were recently surprised to find that the East Wing of the White House had been completely demolished, despite the president previously promising the ballroom would not even touch the actual property.
-
-In any event, we'll soon be able to watch live feeds of the ultra rich dancing the night away to the Village People or whatever, which is sure to solve all of our problems. In unrelated news, food stamps are likely to run out next week for around 41 million Americans and beef now averages $10 a pound.
+In February, YouTube TV and Paramount had that dance. Google's streaming network and Fox came to a renewal deal in August after repeated content-removal warnings. YouTube TV and NBCUniversal did the thing earlier this month. However, in that case, the streaming service dropped Univision and other TelevisaUnivision networks, so tidy deals aren't inevitable. Time will tell how this one plays out, but it's hard to imagine either side here wanting to play chicken past the October 30 deadline.
 
 Advertisement
 
