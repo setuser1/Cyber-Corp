@@ -1,37 +1,39 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/mouse-pi-for-hire-arrives-in-march-2026-195454228.html?src=rss
+https://www.engadget.com/social-media/wordpress-co-founder-files-countersuit-against-wp-engine-over-trademark-violations-182123619.html?src=rss
 
-Gaming
+Social media
 
-Mouse: P.I. for Hire arrives in March 2026
+WordPress co-founder files countersuit against WP Engine over trademark violations
 
-Prepare for Troy Baker's long-awaited turn as a cartoon mouse.
+Automattic alleges private equity firm Silver Lake pushed WP Engine to violate trademarks and neglect open-source WordPress.
 
-Will Shanklin
+Ian Carlos Campbell
 
 Contributing Reporter
 
-Fri, October 24, 2025 at 7:54 PM UTC
+UpdatedFri, October 24, 2025 at 7:35 PM UTC
 
-Fumi Games / Steam
+SOPA Images via Getty Images
 
-We finally have a release date for Mouse: P.I. for Hire. The delightfully animated game, which marks Troy Baker's first time playing a rodent private eye, is slated for March 19, 2026.
+There's been another turn in Automattic and WordPress co-founder Matt Mullenwegs ongoing legal battle with WordPress provider WP Engine. In a counterclaim Automattic filed as part of WP Engine's lawsuit against the company, it claims investment from private equity firm Silver Lake led WP Engine to violate its trademarks and fail to contribute to the open-source WordPress project.
 
-Based on its trailers, you'd be forgiven for viewing Mouse: P.I. for Hire as Cuphead meets Doom. Although it does include FPS action, Engadget's Jessica Conditt discovered surprising depth behind its whimsical brutality. The game "has more to offer than shock-value cartoon violence," she wrote. "This is a clue-gathering, photo-snapping, girlfriend-avenging, noir detective simulator that happens to star a bunch of slick-talking mice and rats, and I'm fully into it."
+Automattic believes that following a $250 million investment from Silver Lake, which gave the firm a controlling interest in WP Engine, the hosting provider "sought to inflate its valuation and engineer a quick, lucrative exit." It allegedly did that, per the counterclaim, by describing itself as the "WordPress Technology Company" and allowing its partners to refer to it as "WordPress Engine," violations of the WordPress trademark. Automattic claims products WP Engine released like "Core WordPress" and "Headless WordPress" further obfuscated the companys role, while WP Engine also failed to commit a promised "five percent of its resources to support the WordPress project."
 
-Baker plays Private Investigator Jack Pepper, the game's protagonist. When he isn't hunting clues or sneaking around during the game's quieter moments, he'll have a delightful arsenal on hand. This includes wacky ones like a turpentine gun that melts the inked "skin" of your foes. Fun stuff.
+The counterclaim goes on to say that Automattic and Mullenweg tried to work out these issues with WP Engine by offering a "fair trademark license," but the company only "pretended to engage in licensing discussions," while actually delaying any kind of agreement because it would "impact its earnings." Keeping earnings up was important to WP Engine because Silver Lake was allegedly trying to sell WP Engine at a $2 billion valuation, and had even made "overtures to Automattic" about it.
 
-Advertisement
-
-Advertisement
+A WP Engine spokesperson provided the following statement to Engadget:
 
 Advertisement
 
-Like Cuphead, Mouse's most obvious point of comparison, it uses hand-drawn frames to recreate that old-school style. It also deploys an original jazz soundtrack recorded by an orchestral ensemble. It's all presented in a gritty, film noir aesthetic.
+Advertisement
 
-You can check out the release date trailer below. Mouse: P.I. for Hire will launch next March on PC, Switch 2, Switch, PS5/4, Xbox Series X/S and Xbox One.
+WP Engines use of the WordPress trademark to refer to the open-source software is consistent with longstanding industry practice and fair use under settled trademark law, and we will defend against these baseless claims.
+
+Auttomatics countersuit tells a different story than the one WP Engine spun in its original lawsuit against the company, which accused Mullenweg of "abuse of power, extortion and greed." WP Engine's original complaint claimed that Automattic asked the company for eight percent of its monthly revenue as a royalty payment. Mullenweg's attempts to punish WP Engine were seen as so aggressive at the time that over 100 Automattic employees voluntarily left the company in response. WP Engine won a preliminary injunction in response to its lawsuit, but it seems like the story might be more complicated than it originally appeared.
+
+Update, October 24, 3:35PM ET: Clarified Automattics relationship to open-source WordPress. The company is not WordPress creator.
 
 Advertisement
 
