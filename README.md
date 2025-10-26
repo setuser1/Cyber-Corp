@@ -1,39 +1,37 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/xbox/halo-campaign-evolved-is-a-remake-of-the-original-story-coming-to-xbox-pc-and-ps5-in-2026-203913552.html?src=rss
+https://www.engadget.com/gaming/mouse-pi-for-hire-arrives-in-march-2026-195454228.html?src=rss
 
 Gaming
 
-Xbox
+Mouse: P.I. for Hire arrives in March 2026
 
-Halo: Campaign Evolved is a remake of the original story, coming to Xbox, PC and PS5 in 2026
+Prepare for Troy Baker's long-awaited turn as a cartoon mouse.
 
-The game will feature three new prequel missions, along with its graphical improvements.
-
-Ian Carlos Campbell
+Will Shanklin
 
 Contributing Reporter
 
-UpdatedFri, October 24, 2025 at 8:54 PM UTC
+Fri, October 24, 2025 at 7:54 PM UTC
 
-Before theres a new Halo game, Halo Studios is revisiting the past. Xbox has announced Halo: Campaign Evolved, a remake of the first game in the storied shooter series, Halo: Combat Evolved, developed by Halo Studios and coming to Xbox, PC and PS5 in 2026.
+Fumi Games / Steam
 
-Halo: Campaign Evolved is described as “a faithful yet modernized remake” of the first games campaign, with updated visuals and cinematics, “refined controls” and “three brand-new prequel missions featuring the Master Chief and Sgt. Johnson.”
+We finally have a release date for Mouse: P.I. for Hire. The delightfully animated game, which marks Troy Baker's first time playing a rodent private eye, is slated for March 19, 2026.
 
-The game will feature new weapons, vehicles and enemies, along with the all-important option for two-player splitscreen co-op on console. The game will also support cross-platform play with PS5 for the first time, and four-player online co-op between consoles and PC.
+Based on its trailers, you'd be forgiven for viewing Mouse: P.I. for Hire as Cuphead meets Doom. Although it does include FPS action, Engadget's Jessica Conditt discovered surprising depth behind its whimsical brutality. The game "has more to offer than shock-value cartoon violence," she wrote. "This is a clue-gathering, photo-snapping, girlfriend-avenging, noir detective simulator that happens to star a bunch of slick-talking mice and rats, and I'm fully into it."
+
+Baker plays Private Investigator Jack Pepper, the game's protagonist. When he isn't hunting clues or sneaking around during the game's quieter moments, he'll have a delightful arsenal on hand. This includes wacky ones like a turpentine gun that melts the inked "skin" of your foes. Fun stuff.
+
+Advertisement
 
 Advertisement
 
 Advertisement
 
-Advertisement
+Like Cuphead, Mouse's most obvious point of comparison, it uses hand-drawn frames to recreate that old-school style. It also deploys an original jazz soundtrack recorded by an orchestral ensemble. It's all presented in a gritty, film noir aesthetic.
 
-Notably, Campaign Evolved is built in Unreal Engine 5. Halo Studios announced it would focus on Unreal development when it rebranded from 343 Industries in 2024. Besides the new visuals and controls, the remake will also include tweaks to memorable missions from the original game as a way to better onboard new players into Halos world.
-
-“We wanted to start where it all began, with the original campaign that defined Halo,” producer Damon Conn said in the blog post announcing the game. “Starting here means people that have never played the game before will be able to understand the story from the very beginning, and that can help us chart a course forward with new Halo stories.”
-
-Halo: Campaign Evolved will be available in 2026 for Xbox Series X / S, PS5 and PC.
+You can check out the release date trailer below. Mouse: P.I. for Hire will launch next March on PC, Switch 2, Switch, PS5/4, Xbox Series X/S and Xbox One.
 
 Advertisement
 
