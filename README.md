@@ -1,27 +1,23 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ai/chinese-startup-shows-off-a-dancing-humanoid-robot-that-starts-at-1400-174010960.html?src=rss
+https://www.engadget.com/shuttered-robot-vacuum-maker-neato-is-ending-cloud-services-sooner-than-planned-171604823.html?src=rss
 
-AI
+Shuttered robot vacuum maker Neato is ending cloud services sooner than planned
 
-Chinese startup shows off a dancing humanoid robot that starts at $1,400
+The company said in 2023 that cloud services would stay running for at least five years.
 
-Noetix Robotic's Bumi is an affordable, lightweight robot that's designed for consumer use.
+Cheyenne MacDonald
 
-Jackson Chen
+Weekend Editor
 
-Contributing reporter
+Sat, October 25, 2025 at 5:16 PM UTC
 
-Sat, October 25, 2025 at 5:40 PM UTC
+Neato
 
-REUTERS / Reuters
+Starting soon, Neato robovac owners will no longer be able to control their devices using the app. Neato Robotics, which shut down in 2023 due to declining sales, has notified customers that "cloud services are being phased out during Q4 2025," according to an email obtained by The Verge.
 
-For roughly the same price as a flagship smartphone, you could instead buy an affordable humanoid robot that's meant for consumer and educational use. Noetix Robotics, a Beijing-based startup, revealed its Bumi robot that's priced at nearly 10,000 yuan, or around $1,400.
-
-Unlike higher-end robots, the inexpensive Bumi stands at around three feet tall and weighs about 26 lbs. You won't find Noetix's latest robot on assembly lines or in research labs, especially since early demos only show Bumi walking around and dancing. According to a TechNode report, Bumi will offer a programming interface that allows for learning or creative tasks. The report also noted that Noetix is planning to put the Bumi up for preorders later this year. Before the Bumi, Noetix Robotics showed off its expertise by competing in the world's first half-marathon for robots with its N2 model, which was one of four robotic competitors that completed the race.
-
-At such a low price point, Bumi beats out another relatively affordable option that was announced earlier this year. In the summer, Unitree showed off its R1 robot that starts at $5,900 and could handle complex tasks. While the Bumi sets a new price tag to beat, both Noetix and Unitree are offering more affordable options than Tesla's Optimus bot, which had an early price estimate of around $20,000.
+While Neato's parent company Vorwerk Group initially said cloud support would continue for at least five years following its closure, the email now says "cybersecurity standards, compliance obligations, and regulations have advanced in ways that make it no longer possible to safely and sustainably operate these legacy systems." This doesn't mean existing Neato products will be completely bricked — there's still the option to start them manually by pressing a button — but they won't offer all the smart home conveniences expected from a robovac that cost hundreds of dollars. Without use of the app, customers won't be able to set cleaning schedules, remotely start the vacuums or assign No-go zones.
 
 Advertisement
 
