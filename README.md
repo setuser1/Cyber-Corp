@@ -1,25 +1,27 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/blumhouse-is-adapting-something-is-killing-the-children-for-a-live-action-film-and-animated-series-192540134.html?src=rss
+https://www.engadget.com/gaming/relive-the-commodore-64s-glory-days-with-a-slimmer-blacked-out-remake-181259874.html?src=rss
 
-Blumhouse is adapting Something is Killing the Children for a live-action film and animated series
+Gaming
 
-Please let this be good.
+Relive the Commodore 64's glory days with a slimmer, blacked-out remake
 
-Cheyenne MacDonald
+THEC64 Mini - Black Edition has 25 pre-installed games in a thinner shell that holds on to the old-school look.
 
-Weekend Editor
+Jackson Chen
 
-Sat, October 25, 2025 at 7:25 PM UTC
+Contributing reporter
 
-BOOM! Studios
+Sat, October 25, 2025 at 6:12 PM UTC
 
-The hit horror comic series Something is Killing the Children is headed to the big (and small) screen. According to The Hollywood Reporter, Blumhouse is developing a live-action movie and adult animated series based on the comics. There are no details yet on the release timeline or casting.
+Retro Games Ltd./Plaion Replai
 
-Something is Killing the Children, created by writer James Tynion IV and illustrator Werther DellEdera, follows monster hunter Erica Slaughter in a reality where monsters exist and only children can see them. While it was announced back in 2023 that Netflix would be developing a TV series based on the comic and helmed by Dark creators Baran Bo Odar and Jantje Friese (which could have been awesome, honestly), that plan was scrapped last year, according to THR.
+The Commodore 64 is back in black, sort of. Retro Games and Plaion Replai released a limited edition redesign of the best-selling computer, called THEC64 - Black Edition. Like its name suggests, the console is a modernized version of the classic Commodore 64 in an all-black shell.
 
-It's a big week for comics I love getting the TV/film treatment, and I am cautiously hyped (emphasis on cautious); the SIKTC news comes on the heels of the announcement that Charles Burns' Black Hole is being adapted for a Netflix series by Jane Schoenbrun (I Saw the TV Glow, We're All Going to the World's Fair). Fingers crossed that they dont suck!
+THEC64 - Black Edition will come with 25 pre-installed games, but unlike the company's previous consoles, this one will feature "neo-retro" games from C64 developers who have designed new games on the old-school architecture. Once you finish all the new titles like Sam's Journey, A Pig Quest and Hessian, you can plug in your own USB drive to play custom games. According to Retro Games, the updated redesign comes with four save slots per game, plug-and-play HDMI compatibility and a USB joystick.
+
+If you want THEC64 - Black Edition to feel more like the original Commodore 64, you can plug in a keyboard through the USB port. However, Retro Games also designed a non-mini THEC64 that has a fully functional keyboard. The latest blacked-out version is now available on Amazon or Retro Games' website for $119.99.
 
 Advertisement
 
