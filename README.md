@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/24/instagrams-latest-feature-lets-you-go-back-see-your-watched-reels/
+https://techcrunch.com/2025/10/24/arbors-vegetarian-rocket-engine-power-plant-is-actually-an-omnivore/
 
-Instagram announced on Friday that it will now let you go back and see your previously watched Reels thanks to a new &#8220;Watch History&#8221; feature. Rival TikTok has had a Watch History feature for a few years now.
+Two years ago, former SpaceX engineers used rocket tech to develop a power plant capable of removing carbon dioxide from the atmosphere, with a small asterisk. To draw down CO2, it burned plant waste, making it a sort of &#8220;vegetarian rocket engine&#8221; for the grid.
 
-With the new feature, you can go back and find videos you might not have had the chance to save. For example, you could be watching an interesting Reel and then receive a phone call, or accidentally close the app while watching, or get distracted by something else and lose your place in the Reels feed.
+This week, Arbor Energy said it had raised a $55 million Series A led by Lowercarbon Capital and Voyager Ventures on the heels of a partial pivot. Its power plant, rather than sticking to a strict vegetarian diet, is going to be more of an omnivore, capable of burning natural gas in addition to biomass.
