@@ -1,23 +1,29 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/shuttered-robot-vacuum-maker-neato-is-ending-cloud-services-sooner-than-planned-171604823.html?src=rss
+https://www.engadget.com/computing/laptops/apple-makes-the-m5-macbook-pros-battery-ever-so-slightly-easier-to-replace-154124765.html?src=rss
 
-Shuttered robot vacuum maker Neato is ending cloud services sooner than planned
+Computing
 
-The company said in 2023 that cloud services would stay running for at least five years.
+Laptops
 
-Cheyenne MacDonald
+Apple makes the M5 MacBook Pro's battery ever so slightly easier to replace
 
-Weekend Editor
+The latest MacBook Pro teardown earned a 4 out of 10 repairability score from iFixit.
 
-Sat, October 25, 2025 at 5:16 PM UTC
+Jackson Chen
 
-Neato
+Contributing reporter
 
-Starting soon, Neato robovac owners will no longer be able to control their devices using the app. Neato Robotics, which shut down in 2023 due to declining sales, has notified customers that "cloud services are being phased out during Q4 2025," according to an email obtained by The Verge.
+UpdatedSat, October 25, 2025 at 3:41 PM UTC
 
-While Neato's parent company Vorwerk Group initially said cloud support would continue for at least five years following its closure, the email now says "cybersecurity standards, compliance obligations, and regulations have advanced in ways that make it no longer possible to safely and sustainably operate these legacy systems." This doesn't mean existing Neato products will be completely bricked — there's still the option to start them manually by pressing a button — but they won't offer all the smart home conveniences expected from a robovac that cost hundreds of dollars. Without use of the app, customers won't be able to set cleaning schedules, remotely start the vacuums or assign No-go zones.
+iFixit
+
+Just like a minor upgrade in specs, Apple's latest M5 MacBook Pro gets the slightest improvement when it comes to repairability. According to iFixit's teardown, the M5 MacBook Pro is the first of its kind that lets you replace the battery without having to remove the trackpad. However, Apple's official method of replacing the battery still requires navigating an arduous process that may steer most users away.
+
+For anyone willing to tackle the DIY repair, Apple's Self Service Repair Store only offers a Top Case with Battery and Keyboard in its product parts catalog. Since the only option to replace the battery is buying this main chassis part with both the keyboard and battery pre-installed, MacBook Pro owners will also have to disassemble an irritating number of unrelated screws and hardware — except for the trackpad — just to replace a battery. However, iFixit confirmed that Apple included a slightly upgraded 72.6Wh battery with the latest MacBook Pro compared to its predecessor's 72.4Wh battery.
+
+It's minor progress for battery replacement, so iFixit still gave the M5 MacBook Pro a four out of 10 repairability score, meaning it's possible to do yourself, but it's "tougher than it needs to be." The latest score is a bump down from the M1 MacBook Pro that earned a five out of 10, but Apple has made incremental steps towards making MacBook repairs more accessible.
 
 Advertisement
 
