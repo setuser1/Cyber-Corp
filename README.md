@@ -1,23 +1,25 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/heres-our-first-look-at-the-paranormal-activity-game-from-the-maker-of-the-mortuary-assistant-210657767.html?src=rss
+https://www.engadget.com/blumhouse-is-adapting-something-is-killing-the-children-for-a-live-action-film-and-animated-series-192540134.html?src=rss
 
-Here's our first look at the Paranormal Activity game from the maker of The Mortuary Assistant
+Blumhouse is adapting Something is Killing the Children for a live-action film and animated series
 
-The found footage horror game is called Paranormal Activity: Threshold.
+Please let this be good.
 
 Cheyenne MacDonald
 
 Weekend Editor
 
-Sat, October 25, 2025 at 9:06 PM UTC
+Sat, October 25, 2025 at 7:25 PM UTC
 
-A teaser shared at the end of the Indie Horror Showcase this week gives us a better idea of what the upcoming found footage Paranormal Activity game will be like. In the short trailer for Paranormal Activity: Threshold, we're introduced to an unfortunate couple who has purchased a home that not only needs some serious work, but is also very much haunted. Cue creepy faces appearing in doorways and around corners.
+BOOM! Studios
 
-While yet another installation in the Paranormal Activity franchise may not be what everyone is clamoring for, the fact that Threshold is being developed by solo dev Brian Clarke (DarkStone Digital), the creator of The Mortuary Assistant, is pretty promising. Per the game's Steam page, you'll be able to "Play in multiple timelines; hunt and communicate with entities; perform demonic rituals to alter your fate;" and "discover multiple endings and expand the story." Each playthrough will be unique, thanks to the "Paranormal Engine," it adds.
+The hit horror comic series Something is Killing the Children is headed to the big (and small) screen. According to The Hollywood Reporter, Blumhouse is developing a live-action movie and adult animated series based on the comics. There are no details yet on the release timeline or casting.
 
-As of now, there's no release date, but you can wishlist it on Steam. It was previously said the game would be released in 2026 on multiple platforms, but the Steam page only says it's coming soon.
+Something is Killing the Children, created by writer James Tynion IV and illustrator Werther DellEdera, follows monster hunter Erica Slaughter in a reality where monsters exist and only children can see them. While it was announced back in 2023 that Netflix would be developing a TV series based on the comic and helmed by Dark creators Baran Bo Odar and Jantje Friese (which could have been awesome, honestly), that plan was scrapped last year, according to THR.
+
+It's a big week for comics I love getting the TV/film treatment, and I am cautiously hyped (emphasis on cautious); the SIKTC news comes on the heels of the announcement that Charles Burns' Black Hole is being adapted for a Netflix series by Jane Schoenbrun (I Saw the TV Glow, We're All Going to the World's Fair). Fingers crossed that they dont suck!
 
 Advertisement
 
