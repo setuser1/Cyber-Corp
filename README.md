@@ -1,85 +1,85 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/apps/how-to-cancel-your-spotify-subscription-133022215.html?src=rss
+https://www.engadget.com/wearables/how-to-unpair-your-apple-watch-from-your-iphone-120052222.html?src=rss
 
-Apps
+Wearables
 
-How to cancel your Spotify subscription
+How to unpair your Apple Watch from your iPhone
 
-You can cancel via web or third-party services.
+Whether you're selling your old watch or want to fix some software issues, disconnecting is simple.
 
-Mariella Moon
+Georgie Peru
 
 Contributing Reporter
 
-Sat, October 25, 2025 at 1:30 PM UTC
+Sat, October 25, 2025 at 12:00 PM UTC
 
-Anadolu via Getty Images
+Apple
 
-Spotify recently came under fire for running recruitment ads for ICE, which ask users to "join the mission to protect America" and to "fulfill [their] mission," in the US. Despite music labels calling on the streaming service to stop serving ICE recruitment ads, Spotify doubled down. A spokesperson for the company told The Independent that the ads are "part of a broad campaign" by the US government running across different channels and that they do not violate its policies. The spokesperson advised users to just mark ads with a thumbs up or down so that the app can learn their preferences.
+If youre moving on to a new Apple Watch, selling your current one or fixing some software hiccups, youll probably need to disconnect it from your iPhone. Apple calls this unpairing; its the step that wipes your watch, breaks the connection to your phone and removes Activation Lock so the next person can use it. The good news is that unpairing is straightforward whether you have your iPhone nearby or not. Heres how it works, along with why you might want to disconnect your watch in the first place.
 
-In addition, several artists have pulled their music from Spotify recently over its CEO's, Daniel EK's, investments in European defense tech firm Helsing. The defense company builds drones, aircraft and submarines, and it also sells AI software that can analyze sensor and weapons data from battlefields. Spotify has been facing backlash for its payout rates, which artists argue are unfair and lower than what other services pay, over the past few years as well.
+How to disconnect Apple Watch using your iPhone
 
-So if you want to cancel Spotify, whether for any those reasons or another one altogether, you can follow the instructions below.
+The simplest way to unpair your Apple Watch is through your iPhone.
 
-How to cancel via web:
+Keep your iPhone and Apple Watch close together.
 
-1. Log into your Spotify account in your browser.
+Open the Apple Watch app on your iPhone.
 
-Advertisement
+Navigate to the My Watch tab, then All Watches at the top.
 
-Advertisement
+Tap the info button next to the watch you want to disconnect.
 
-2. Go to Account in the dropdown menu that shows up when you click on your Profile.
+Select Unpair Apple Watch, then select Unpair [your Apple Watch name].
 
-3. Find Cancel Subscription under the Subscription section.
+If you have a cellular model, choose whether to keep or remove your cellular plan. Remove it if youre selling or giving away the watch. Keep it if you plan to pair it again later
 
-4. Spotify will tell you that you'll hear ads every 15 minutes on a free account, along with the date when your premium access will end. Click "Continue to cancel" at the bottom of the screen.
+Enter your Apple Account password when asked to turn off Activation Lock, then select Unpair.
 
-If you're on mobile, make sure to request the desktop site after you log into your account on your mobile browser. Take note that if you're part of a Spotify Family or Duo plan, only the plan manager will be able to cancel your subscription altogether. If you follow the same steps above as a member, you'll only remove your account from the plan, but the manager will continue paying for it.
+Your iPhone will create a backup before erasing the watch. When you set up a new Apple Watch, you can choose to restore from that backup and carry on with your data and settings intact.
 
-How to cancel via third-party provider:
+How to disconnect Apple Watch without your iPhone
 
-If you pay for your subscription through third-party providers, you can follow these instructions instead.
-
-Cancel via Google
-
-1. Fire up the Google Play app and tap on the icon for the account you use.
+If you dont have your paired iPhone with you, you can still reset your Apple Watch directly. This will wipe your data, but wont create a backup and Activation Lock will remain, so keep that in mind if you want to save your information.
 
 Advertisement
 
 Advertisement
 
-2. Go to Payments & subscriptions.
+Advertisement
 
-3. Tap on Subscriptions.
+On your Apple Watch, open Settings.
 
-4. Find Spotify among your subscriptions and tap on it.
+Select General, then scroll down and select Reset.
 
-5. Tap on Cancel Subscription at the bottom of the screen, select a reason for cancellation and confirm it.
+Select Erase All Content and Settings.
 
-Cancel via Apple
+Enter your passcode if prompted.
 
-1. Go to Settings in your iPhone or iPad.
+For cellular models, choose whether to keep or remove your plan.
 
-2. Tap on your name and go to Subscriptions.
+Your watch will erase itself and restart as if it were brand new.
 
-3. Find Spotify and go through the cancellation process.
+Why you should disconnect your Apple Watch
 
-Cancel via carrier
+There are a few reasons you might want to unpair your Apple Watch. Maybe youre upgrading to a new model and need to start fresh. Maybe youre trading it in, selling it or handing it down to someone else. You might also need to disconnect your watch if youre troubleshooting. Sometimes a clean reset is the easiest way to fix syncing issues, missed notifications or fitness data that isnt updating.
 
-Instructions for this may vary, depending on your carrier. Generally, however, you can follow these steps.
+Whatever the reason, unpairing keeps your data safe, makes sure a backup is stored and disables Activation Lock. That last step is important because if you skip it, the next owner wont be able to use the watch.
 
-1. Log into your carrier account on its website.
+What happens to your data when you disconnect your Apple Watch?
 
-2. Find the option to manage your subscriptions under your account.
+When you unpair your Apple Watch using your iPhone, the watch creates a backup that includes app data, settings and most health and fitness information. This backup is stored on your iPhone and will transfer to iCloud if you have backups turned on. That makes it easy to restore everything on a new watch.
 
-3. Find Spotify and go through the cancellation process.
+Advertisement
 
-What happens after you cancel
+Advertisement
 
-You'll still have access to Spotify's premium features until your next billing cycle begins. That means you still won't encounter ads and will have access to offline downloads, as well as unlimited skips and higher audio quality. You'll be able to access your Spotify library even with a free account, but if you want to find another streaming service to pay for, you can check Engadget's list of best music streaming services in 2025.
+Advertisement
+
+If you reset from the watch without your iPhone, a backup is not created. Your data will be erased and the watch will be wiped clean, but Activation Lock remains.
+
+Activation Lock is tied to your Apple Account and helps keep your watch secure if its lost or stolen. It turns on automatically when you pair your watch with your iPhone. Thats why unpairing isnt the same as a simple reset. You need the Apple Account and password associated with the watch to turn off Activation Lock.
 
 Advertisement
 
