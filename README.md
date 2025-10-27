@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/26/techcrunch-mobility-the-robot-army-argument/
+https://techcrunch.com/2025/10/25/openai-reportedly-developing-new-generative-music-tool/
 
-Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation. To get this in your inbox, sign up here for free — just click TechCrunch Mobility!
+OpenAI is working on a new tool that would generate music based on text and audio prompts, according to a report in The Information.
 
-I am sure you are waiting to learn the results of last weeks poll. (Reminder: Sign up for the Mobility newsletter to participate in our polls!) Here is what I asked: “What is the best business model for autonomous vehicle tech? (Keep profitability in mind.)”
+Such a tool could be used to add music to existing videos, or to add guitar accompaniment to an existing vocal track, sources said. Its not clear when OpenAI plans to launch such a tool or whether it would be available as a standalone product (as opposed to integrating with OpenAIs ChatGPT and video app Sora).
