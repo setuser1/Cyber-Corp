@@ -1,23 +1,27 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/openai-is-reportedly-working-on-an-ai-music-generation-tool-204208186.html?src=rss
+https://www.engadget.com/cybersecurity/cbp-will-photograph-non-citizens-entering-and-exiting-the-us-for-its-facial-recognition-database-184557905.html?src=rss
 
-OpenAI is reportedly working on an AI music-generation tool
+Cybersecurity
 
-The slop expands.
+CBP will photograph non-citizens entering and exiting the US for its facial recognition database
 
-Cheyenne MacDonald
+A new rule amendment allows for more situations in which the agency can demand photos of non-citizens.
 
-Weekend Editor
+Jackson Chen
 
-Sun, October 26, 2025 at 8:42 PM UTC
+Contributing reporter
 
-OpenAI
+Sun, October 26, 2025 at 6:45 PM UTC
 
-According to a report from The Information, OpenAI is interested in developing a tool that could generate music from text and audio prompts, and has been working with students from The Juilliard School to help with creating training data. The company envisions something that could be used to generate guitar accompaniment for a vocal track, for example, or to add music to videos, sources with knowledge of the project told the publication.
+Reuters / Reuters
 
-There's no word on how far into these efforts OpenAI is. According to one source that spoke to The Information, OpenAI enlisted the Juilliard students to annotate music scores, which could be used to train the AI. It wouldn't be the first time the company has explored music-generating AI, and it's something we're seeing more and more of elsewhere with other startups, like Suno and ElevenLabs, launching their own versions. AI spam is already cluttering up streaming platforms and, lest we forget, there was the whole The Velvet Sundown debacle. It's only the beginning.
+The US Customs and Border Protection (CBP) submitted a new measure that allows it to photograph any non-US citizen who enters or exits the country for facial recognition purposes. According to a filing with the government's Federal Register, CBP and the Department of Homeland Security are looking to crack down on threats of terrorism, fraudulent use of travel documents and anyone who overstays their authorized stay.
+
+The filing detailed that CBP will "implement an integrated, automated entry and exit data system to match records, including biographic data and biometrics, of aliens entering and departing the United States." The government agency already has the ability to request photos and fingerprints from anyone entering the country, but this new rule change would allow for requiring photos of anyone exiting as well. These photos would "create galleries of images associated with individuals, including photos taken by border agents, and from passports or other travel documents," according to the filing, adding that these galleries would be compared to live photos at entry and exit points.
+
+These new requirements are scheduled to go into effect on December 26, but CBP will need some time to implement a system to handle the extra demand. According to the filing, the agency said "a biometric entry-exit system can be fully implemented at all commercial airports and sea ports for both entry and exit within the next three to five years."
 
 Advertisement
 
