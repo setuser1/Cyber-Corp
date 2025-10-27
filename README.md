@@ -1,111 +1,129 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/superhero-workplace-comedy-more-powerwashing-and-other-new-indie-games-worth-checking-out-230000337.html?src=rss
+https://www.engadget.com/entertainment/streaming/dodgers-vs-blue-jays-game-2-how-to-watch-the-2025-mlb-world-series-without-cable-133403240.html?src=rss
 
-Gaming
+Entertainment
 
-Superhero workplace comedy, more powerwashing and other new indie games worth checking out
+Streaming
 
-Plus, publisher No More Robots starts making games in-house.
+Dodgers vs. Blue Jays, Game 2 tonight: How to watch the 2025 MLB World Series without cable
 
-Kris Holt
+You can stream Shohei Ohtani's attempt for a second straight Series ring.
 
-Contributing Reporter
+Danica Creahan, Liz Kocan
 
-Sat, October 25, 2025 at 11:00 PM UTC
+UpdatedSat, October 25, 2025 at 10:58 PM UTC
 
-Dispatch
+Dodgers vs. Blue Jays, Game 2 tonight: How to watch the 2025 MLB World Series without cable
 
-( AdHoc Studio)
+The League Championship Series are history, and the final two teams have emerged: The 2025 Fall Classic will see the Los Angeles Dodgers face the Toronto Blue Jays. Game 2 of the 2025 MLB World Series begins tonight — Saturday, Oct. 25 — at 8PM ET/5PM PT, with the Blue Jays getting the initial home field advantage at Rogers Centre, Toronto for the second night in a row. Shohei Ohtani and the Dodgers are aiming to win their second consecutive championship, while Vlad Guerrero Jr. and the Blue Jays are eyeing their first ring since 1993. Despite Toronto's victory over Los Angeles last night, the World Series odds still favor the Dodgers ahead of Game 2. Every 2025 MLB World Series game will air on Fox and Fox Deportes.
 
-Welcome to our latest roundup of what's going on in the indie game space. It's been a packed week with lots of tasty new games arriving, and news and reveals of upcoming projects. So, let's take a look at a bunch of them.
+Of course, Fox is a "free" over-the-air channel, so any affordable digital antenna will pull in the game if you live close enough to a local affiliate. But if that's not an option, here's a full rundown of how to watch the Dodgers vs. Blue Jays World Series, even without cable.
 
-Before we get started though, Engadget senior editor Jessica Conditt spoke with Maxi Boch, one of the core trio behind Baby Steps, about how the game came together. Boch offered some fascinating insights into the games development process (which started in 2019), especially on the audio side.
+How to watch the L.A. Dodgers vs. Toronto Blue Jays, Game 2
 
-New releases
+You can stream Fox on any live TV streaming service that airs Fox local stations, including DirecTV, Fubo and Hulu + Live TV. MLB World Series games will also be available on Fox's new streaming platform, Fox One.
 
-Dispatch is a superhero workplace comedy from AdHoc Studio, a team that includes former Telltale Games developers. It adopts the narrative-heavy, dialogue-driven gameplay of Telltale's games, with your choices having a bearing on how everything plays out. Dispatch has a packed cast as well, as it includes the likes of Aaron Paul, Laura Bailey and Jeffrey Wright.
+Watch Fox and FS1 on DirecTV
+
+DirecTV
+
+DirecTV gets you access to Fox and FS1, the channels you need to watch the World Series, plus the CW, ABC, CBS, Fox, ACC Network, Big Ten Network, SEC Network and plenty more local regional sports networks.
+
+DirecTV also offers unlimited Cloud DVR storage and access to ESPN+'s new streaming tier, ESPN Unlimited. That's all part of why we named it the best cable TV alternative without a contract.
+
+The best part is that you can try all this out for free for five days. So if you're interested in a live TV streaming service but aren't ready to commit, we recommend starting with DirecTV.
+
+Try free at DirecTV
+
+Watch Fox and FS1 on Fubo
+
+Fubo TV
+
+We named Fubo the best live TV streaming service for sports, and it's not just because it's a great place to watch the World Series. Fubo TV gives you access to 100-plus live channels, including Fox and FS1. The cheapest plan starts at $85/month, making the live TV streaming service a significant investment. However, the inclusion of ESPN Unlimited, a $30/month value, is a great deal if you watch sports year-round. Fubo subscribers also get access to unlimited cloud DVR storage.
+
+Currently, the platform is offering a free trial, allowing you to explore everything it has to offer risk-free.
+
+Try it free at Fubo
+
+Watch the World Series on Fox and Fox Deportes
+
+Hulu + Live TV
+
+Hulus live TV tier includes access to live TV channels like Fox, Fox Deportes, ESPN, ABC, NBC, and more. That means you can watch this year's World Series live as it happens, and enjoy over 95 other channels — not to mention take advantage of all the great shows streaming on Hulu, Disney+ and ESPN Select, all of which are included at no extra charge.
+
+Youll also enjoy access to unlimited DVR storage, the ability to stream on multiple devices and more. Right now, you can get your first three months of Hulu + Live TV for $65/month. This special rate ends at 6PM ET/3PM PT on November 5.
+
+Hulu + Live TV starts at $90/month after this deal ends.
+
+$65/mo for three months at Hulu
+
+Watch MLB on Fox One
+
+Fox One
+
+Fox One is exactly what it sounds like — a one-stop streaming destination for the entire universe of Fox content, including a ton of sports (Fox Sports, Fox FS1, FS2, Fox Deportes, Big Ten Network), news and opinion (Fox News, Fox Business, Fox Weather) and local Fox stations, too. That means you can watch every World Series game in one place.
+
+Fox One offers live programming, as well as shows and movies on demand. At launch, the base price for Fox One costs $20 a month, or you can save with an annual subscription for $200. You can also bundle Fox One with ESPN's newly revamped streaming service for $40/month.
+
+$20/month at Fox
+
+More ways to watch the 2025 World Series
+
+Watch local Fox
+
+Channel Master Flatenna
+
+$35 at Amazon
+
+Watch Fox and more
+
+Sling Orange & Blue
+
+$33 for your first month at Sling
+
+Watch Fox and more
+
+YouTube TV
+
+Try free at YouTube
+
+When is the Dodgers vs. Blue Jays game time?
+
+Game 1 of the Dodgers vs. Blue Jays World Series begins on Friday, Oct. 24 at 8PM ET/5PM PT. The Blue Jays are hosting the first two games of the series at Rogers Centre, Toronto.
+
+What channel is playing the Los Angeles Dodgers vs. Toronto Blue Jays?
+
+Every game in the 2025 World Series between the Los Angeles Dodgers and the Toronto Blue Jays, will air on Fox and Fox Deportes.
+
+When is the 2025 World Series?
+
+Game 1 of the World Series between the Dodgers and Blue Jays is scheduled for Friday, Oct. 24.
+
+Los Angeles Dodgers vs. Toronto Blue Jays World Series schedule
+
+All times Eastern
 
 Advertisement
 
 Advertisement
 
-I really dug the demo, so I'm hoping to carve out some time to play Dispatch soon. As with many of Telltale's games, AdHoc Studio went with an episodic approach for this one, but the developer is releasing them on a weekly basis. The first two episodes of Dispatch are out now on PS5 and Steam, and reviewers' impressions so far are generally positive.
+Game 1: Friday, Oct. 24, 8PM ET
 
-We've got a trio of titles that just hit Game Pass Ultimate and PC Game Pass to talk about, including PowerWash Simulator 2. I don't typically listen to music or podcasts while I'm playing games. I prefer to listen to the game audio and I'm a terrible multitasker, anyway.
+Game 2: Saturday, Oct. 25, 8PM ET
 
-However, I did catch up on a bunch of podcast episodes while playing the original PowerWash Simulator. I'm looking forward to doing that once again while blissfully ignoring IRL chores as I blast away virtual gunk with a pressure washer.
+Game 3: Monday, Oct. 27, 8PM ET
 
-"More of the same, but better" is exactly what I wanted from PowerWash Simulator 2, so I was very glad to read some reviews indicating that's the case. As well as Xbox Series X/S, this sequel from FuturLab is also available on Steam, Epic Games Store, PlayStation 5 and Nintendo Switch 2.
+Game 4: Tuesday, Oct. 28, 8PM ET
 
-Next up, we have a surprise Game Pass addition as Pacific Drive arrived on the Ultimate, Premium and PC tiers without prior warning this week. It wasnt available on Xbox at all until now. Pacific Drive turns the title of Netflix's F1 docuseries into an actual "drive to survive" horror game. You'll roam the Pacific Northwest in a station wagon to search for parts to upgrade your vehicle and stay alive.
+Game 5*: Wednesday, Oct. 29, 8PM ET
 
-Advertisement
+Game 6*: Friday, Oct. 31, 8PM ET
 
-Advertisement
+Game 7*: Saturday, Nov. 1, 8PM ET
 
-Ironwood Studios and publisher Kepler Interactive brought Pacific Drive to Xbox on the same day they released an expansion called Whispers in the Woods. The game (and DLC) is also available on PS5 and Steam. I've been meaning to play Pacific Drive for a while but, as always, there are too many games and not enough time to check everything out. Perhaps I'll finally try this now that it's on Game Pass, but I might just end up waiting for the TV show instead.
-
-Advertisement
-
-Advertisement
-
-Here's something interesting from DinoGod and publisher Annapurna Interactive. Bounty Star is a blend of mech action game, farming sim and base builder. As war veteran Clem, you'll try to become a force for good in a "post-post-apocalyptic version of the American Southwest."
-
-I'm interested to see how the core aspects of Bounty Star play off each other as you take care of your homestead and hunt down bounties in your mech (which you can customize). It's out now on PS5, Xbox Series X/S, Steam and Epic Games Store. Bounty Star is on Game Pass Ultimate and PC Game Pass too.
-
-Ila: A Frosty Glide is a chill, 3D platform adventure from Magic Rain Studios and publisher First Break Labs. As a young witch-in-training named Ila, you'll explore a snowy mountainous island while searching for your missing cat.
-
-My favorite thing about the game, at least based on the trailer and what I've read, is that instead of a broom, Ila uses a "skatebroom" to get around. It's a skateboard and a flying broomstick in one! I'd like one of those.
-
-Advertisement
-
-Advertisement
-
-As it happens, developers Ítalo and Yesenia met while skateboarding. They started making games with skateboarding elements a few years later. Ila: A Frosty Glide is out now on Steam, Epic Games Store, Xbox Series X/S, PS5 and Nintendo Switch.
-
-After reading one sentence of a pitch for The Bench, I was sold: "In The Bench, you played as a retired secret agent on one last mission: escaping the retirement home and unfolding a pigeon conspiracy." Wonderful stuff, there.
-
-As said pensioner, you'll amass a flock of customizable pigeons to help you during your adventure as you explore some parks. Along the way, you'll solve puzzles, play bowls and chess, doodle in your notebook, play pranks and go fishing.
-
-The Bench — from Voxel Studios and Noovola Publishing — is out now on Steam. I hope I don't have to wait until I'm retired to have time to play it.
-
-Upcoming
-
-No More Robots unveiled two games this week, and one of them is a step in an (almost) entirely new direction for the publisher of Descenders Next and Little Rocket Lab. It's now making games internally, and the first one to see the light of day is Cruise Control. This is a cruise liner management sim in which you'll try to make your guests happy by fulfilling their needs and wants. It looks quite charming. I'm a big fan of the oversized bingo cage device.
-
-Advertisement
-
-Advertisement
-
-This is actually the third game No More Robots has worked on in-house, but it's the first one that the company has unveiled. The publisher noted that Cruise Control isn't quite ready. Still, playtests should start later this year ahead of an early 2026 release.
-
-Advertisement
-
-Advertisement
-
-The other upcoming game No More Robots showed off is Thank You For Your Application from IceLemonTea Studio. Here, you'll review job candidates' resumes and make decisions whether to bring them on board based on the hiring company's criteria.
-
-This has an air of Papers, Please and No More Robots' own Not Tonight series about it — you'll have to deal with bills, rent and otherwise managing your life too. It also seems quite timely given that the job application process is now so onerous for many people. Thank You For Your Application will arrive in 2026 and there's a demo available on Steam now.
-
-Finite Reflection Studios, the developer of last year's acclaimed Void Sols, has revealed its next game. Mouseward is another Soulslike, but it's one in the vein of '90s collectathon platformers like Banjo-Kazooie. As a reincarnated Royal Mouse Guard, you set out to save the kingdom from a curse.
-
-I love the aesthetic here. There's no release window for Mouseward as yet. It's coming to Steam and you can play an early build on Itch right now.
-
-Speaking of games inspired by '90s platformers, there's danger that Windswept could become my entire personality for a spell. It's coming to Steam, Nintendo Switch, PS4, PS5, Xbox One and Xbox Series X/S on November 11.
-
-Advertisement
-
-Advertisement
-
-Windswept — from WeatherFell and publisher Top Hat Studios — is a precision platformer which sees animal buddies Marbles (a duck) and Checkers (a turtle) trying to get back home after a storm whisks them away. The 40-plus stages are full of collectibles and have secrets for you to discover.
-
-The glimpses of levels where you have to navigate sticky walls and ceilings, thorny brambles and pirate ship masts are very reminiscent of Donkey Kong Country 2. I'm not exactly complaining though, as that's one of my favorite games of all time.
-
-We've known for a while that a beat-'em-up based on the splatterfest movie series Terrifier was on the way and now we have a release date. Unfortunately, it's not coming your way in time for Halloween, but you will be able to gingerly set foot into Terrifier: The ARTcade Game on November 21.
-
-Yes, yes, even Art the Clown is in Fortnite now, but you can also play as the brutal killer in his own game from Relevo and publisher Selecta Play. There's support for local co-op for up to four players (and you can turn on each other, if you like. Terrifier fans will probably be pleased that they can use weapons like chainsaws and cleavers to cause bloody carnage. Terrifier: The ARTcade Game is bound for Steam, PS5, Xbox Series X/S and Nintendo Switch.
+*if necessary
 
 Advertisement
 
