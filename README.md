@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/26/trump-and-xi-will-consummate-tiktok-deal-on-thursday-treasury-secretary-says/
+https://techcrunch.com/2025/10/26/techcrunch-mobility-the-robot-army-argument/
 
-The United States and China are ready to move forward on a TikTok deal, according to Treasury Secretary Scott Bessent.
+Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation. To get this in your inbox, sign up here for free — just click TechCrunch Mobility!
 
-Bessent had already said last month that the two countries reached a “framework” on a deal during discussions in Madrid, and President Donald Trump subsequently signed an executive order to facilitate the transaction.
+I am sure you are waiting to learn the results of last weeks poll. (Reminder: Sign up for the Mobility newsletter to participate in our polls!) Here is what I asked: “What is the best business model for autonomous vehicle tech? (Keep profitability in mind.)”
