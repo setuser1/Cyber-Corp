@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/26/ads-might-be-coming-to-apple-maps-next-year/
+https://techcrunch.com/2025/10/26/techcrunch-disrupt-2025-begins-in-less-than-24-hours-catch-our-last-ticket-deals/
 
-Apple Maps users could start seeing ads in the app as soon as next year, according to a new report from Bloombergs Mark Gurman.
+The countdown is almost over — tomorrows the day! In less than 24 hours, TechCrunch Disrupt 2025 takes over Moscone West. From October 27–29, 10,000 founders, investors, and innovators will flood San Francisco for three days of building, connecting, and deal-making.
 
-Similar to Google Maps and other mapping apps, Apples plan is to allow restaurants and other businesses with brick-and-mortar locations to pay to promote themselves in search results, Gurman says. While Apple already runs ads in the App Store, this could be part of a larger strategy to introduce more advertising in iOS.
+Were just days away from live demos of never-before-seen tech and high-stakes pitches as startups compete for the $100,000 prize.
