@@ -1,25 +1,29 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/apps/apple-is-reportedly-getting-ready-to-introduce-ads-to-its-maps-app-170654072.html?src=rss
+https://www.engadget.com/mobile/tablets/the-next-ipad-pro-could-be-the-first-to-get-vapor-chamber-cooling-160536540.html?src=rss
 
-Apps
+Mobile
 
-Apple is reportedly getting ready to introduce ads to its Maps app
+Tablets
 
-According to Bloomberg's latest Power On newsletter, businesses that advertise on Maps could get better visibility.
+The next iPad Pro could be the first to get vapor chamber cooling
+
+Bloomberg's Mark Gurman expects the next iPad Pro to come with a new M6 chip and a vapor chamber for better cooling performance.
 
 Jackson Chen
 
 Contributing reporter
 
-UpdatedSun, October 26, 2025 at 5:06 PM UTC
+UpdatedSun, October 26, 2025 at 4:05 PM UTC
 
 Apple
 
-Opening Apple's Maps app just for directions may look a little different in the near future. According to Bloomberg's Mark Gurman, Apple is planning to introduce ads to Maps as soon as next year. While it won't be as annoying as unskippable YouTube ads, Apple wants to offer better visibility on Maps to restaurants and businesses that are willing to pay.
+The iterative upgrades for iPads may not be enticing enough to warrant a new purchase every year, but Apple may have a particularly cool upgrade to convince users to shell out for the next iPad Pro. According to Bloomberg's Mark Gurman, Apple is planning to include a vapor chamber for the upcoming iPad Pro that's due to ship with the M6 chip.
 
-When looking for a new restaurant or relevant business, you may already be used to seeing ads on Google Maps or Yelp that highlight certain establishments. However, Gurman said that Apple is planning to lean on AI for better search results and offer a better interface than Google Maps. The introduction of ads across Apple's iOS ecosystem shouldn't be surprising since Gurman previously reported Apple's interest back in 2022. On top of that, Apple already offers ad slots within the App Store where developers can pay to appear in a more visible position for user searches. Beyond Maps, Apple could be looking at infusing ads into its News, Books, Podcasts and other apps to generate more revenue.
+We've already seen the vapor chamber included in the iPhone 17 Pro models, helping to boost cooling and performance. While an iPad's larger surface area makes for greater heat dissipation than an iPhone, this cooling system should make the tablet more capable when it comes to demanding tasks, like gaming, video editing or AI apps. Gurman also predicts that Apple could market the vapor chamber cooling as another way to differentiate between the iPad models.
+
+Apple previously improved the cooling performance of iPad Pros with the M4 generation, which included a new copper heat sink. With the vapor chamber, Apple is borrowing a concept already found in other smartphones from Samsung and Google. Samsung has even included this style of liquid cooling in its Galaxy Tab S9, which came out in 2023. As for the first potential iPad Pro with a vapor chamber, Gurman said he expects Apple to follow its typical 18-month release schedule, meaning the M6 iPad Pro with improved heat performance could come out sometime in 2027.
 
 Advertisement
 
