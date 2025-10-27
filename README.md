@@ -1,29 +1,33 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/mobile/tablets/the-next-ipad-pro-could-be-the-first-to-get-vapor-chamber-cooling-160536540.html?src=rss
+https://www.engadget.com/ai/googles-gemini-will-now-generate-presentations-for-you-010040637.html?src=rss
 
-Mobile
+AI
 
-Tablets
+Google's Gemini will now generate presentations for you
 
-The next iPad Pro could be the first to get vapor chamber cooling
+You can either write a prompt or upload your own sources.
 
-Bloomberg's Mark Gurman expects the next iPad Pro to come with a new M6 chip and a vapor chamber for better cooling performance.
+Mariella Moon
 
-Jackson Chen
+Contributing Reporter
 
-Contributing reporter
+Sun, October 26, 2025 at 2:03 PM UTC
 
-UpdatedSun, October 26, 2025 at 4:05 PM UTC
+Google
 
-Apple
+Google is rolling out out a new feature for Gemini's Canvas, the free interactive workspace inside the AI chatbot's app, meant for students and employees who need to create presentations. Gemini is now capable of generating slides with just a prompt, though users can also upload files like documents, spreadsheets and research papers if they want a presentation based on a specific source. If the source doesn't matter, users can write a prompt, such as "Upload any source to create a presentation on [a specific topic]," for instance. But if the source is essential, they can upload the file first and then ask Gemini to create the presentation for them.
 
-The iterative upgrades for iPads may not be enticing enough to warrant a new purchase every year, but Apple may have a particularly cool upgrade to convince users to shell out for the next iPad Pro. According to Bloomberg's Mark Gurman, Apple is planning to include a vapor chamber for the upcoming iPad Pro that's due to ship with the M6 chip.
+5/ Up your presentation game in Canvas
 
-We've already seen the vapor chamber included in the iPhone 17 Pro models, helping to boost cooling and performance. While an iPad's larger surface area makes for greater heat dissipation than an iPhone, this cooling system should make the tablet more capable when it comes to demanding tasks, like gaming, video editing or AI apps. Gurman also predicts that Apple could market the vapor chamber cooling as another way to differentiate between the iPad models.
+Upload any source to create entire decks with images and data visualization. Export to Google Slides to add any finishing touches. Rolling out to Pro subscribers today and to Free users in the coming weeks pic.twitter.com/70qercWf4E
 
-Apple previously improved the cooling performance of iPad Pros with the M4 generation, which included a new copper heat sink. With the vapor chamber, Apple is borrowing a concept already found in other smartphones from Samsung and Google. Samsung has even included this style of liquid cooling in its Galaxy Tab S9, which came out in 2023. As for the first potential iPad Pro with a vapor chamber, Gurman said he expects Apple to follow its typical 18-month release schedule, meaning the M6 iPad Pro with improved heat performance could come out sometime in 2027.
+— Google Gemini App (@GeminiApp) October 24, 2025
+
+The resulting decks already have a theme and images attached with the text. Users will be able to export them straight from the Gemini app into Google Slides, though, and will still be able to edit and refine the decks as needed or work on it in collaboration with a teammate. The capability is now making its way to both personal and Workspace accounts.
+
+Google launched Canvas in March for people to use when they want to share their writing or code to Gemini for editing. If users put in code or prompts for projects like apps, web pages and infographics, Canvas will be able to show them a visual representation of their design.
 
 Advertisement
 
