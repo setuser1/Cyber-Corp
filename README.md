@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/25/openai-reportedly-developing-new-generative-music-tool/
+https://techcrunch.com/2025/10/25/high-schools-ai-security-system-confuses-doritos-bag-for-a-possible-firearm/
 
-OpenAI is working on a new tool that would generate music based on text and audio prompts, according to a report in The Information.
+A high school student in Baltimore County, Maryland was reportedly handcuffed and searched after an AI security system flagged his bag of chips as a possible firearm.
 
-Such a tool could be used to add music to existing videos, or to add guitar accompaniment to an existing vocal track, sources said. Its not clear when OpenAI plans to launch such a tool or whether it would be available as a standalone product (as opposed to integrating with OpenAIs ChatGPT and video app Sora).
+Taki Allen, a student at Kenwood High School, told CNN affiliate WBAL, “I was just holding a Doritos bag — it was two hands and one finger out, and they said it looked like a gun.” But as a result, Allen said, “They made me get on my knees, put my hands behind my back, and cuffed me.”
