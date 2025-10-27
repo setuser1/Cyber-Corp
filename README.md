@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/26/accel-and-prosus-team-up-to-back-early-stage-indian-startups-building-for-1-4b-people/
+https://techcrunch.com/2025/10/26/ads-might-be-coming-to-apple-maps-next-year/
 
-Storied investors Accel and Prosus have launched a new investment partnership to back Indian startups from day zero, targeting founders building large-scale solutions with the potential to serve the masses in the South Asian nation.
+Apple Maps users could start seeing ads in the app as soon as next year, according to a new report from Bloombergs Mark Gurman.
 
-Announced on Monday, the collaboration marks the first time Prosus is investing at the formation stage. Both firms will co-invest from a startups earliest days, with a focus on companies addressing systemic challenges across sectors such as automation, energy transition, internet services, and manufacturing.
+Similar to Google Maps and other mapping apps, Apples plan is to allow restaurants and other businesses with brick-and-mortar locations to pay to promote themselves in search results, Gurman says. While Apple already runs ads in the App Store, this could be part of a larger strategy to introduce more advertising in iOS.
