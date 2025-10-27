@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/25/the-glaring-security-risks-with-ai-browser-agents/
+https://techcrunch.com/2025/10/24/musks-ad-chief-at-x-departs-after-just-10-months/
 
-New AI-powered web browsers such as OpenAIs ChatGPT Atlas and Perplexitys Comet are trying to unseat Google Chrome as the front door to the internet for billions of users. A key selling point of these products are their web browsing AI agents, which promise to complete tasks on a users behalf by clicking around on websites and filling out forms.
+John Nitti has left his position as Xs advertising chief after just ten months, reports the Financial Times.
 
-But consumers may not be aware of the major risks to user privacy that come along with agentic browsing, a problem that the entire tech industry is trying to grapple with.
+Nitti, who joined as global head of revenue operations and advertising innovation, was considered a potential successor to former CEO Linda Yaccarino, who resigned in July. His exit adds to a string of high-level departures from Elon Musks increasingly turbulent executive suite. Among others, Xs CFO Mahmoud Reza Banki left in October after less than a year, while xAIs CFO and general counsel both departed over the summer.
