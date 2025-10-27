@@ -1,27 +1,25 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/cybersecurity/cbp-will-photograph-non-citizens-entering-and-exiting-the-us-for-its-facial-recognition-database-184557905.html?src=rss
+https://www.engadget.com/apps/apple-is-reportedly-getting-ready-to-introduce-ads-to-its-maps-app-170654072.html?src=rss
 
-Cybersecurity
+Apps
 
-CBP will photograph non-citizens entering and exiting the US for its facial recognition database
+Apple is reportedly getting ready to introduce ads to its Maps app
 
-A new rule amendment allows for more situations in which the agency can demand photos of non-citizens.
+According to Bloomberg's latest Power On newsletter, businesses that advertise on Maps could get better visibility.
 
 Jackson Chen
 
 Contributing reporter
 
-Sun, October 26, 2025 at 6:45 PM UTC
+UpdatedSun, October 26, 2025 at 5:06 PM UTC
 
-Reuters / Reuters
+Apple
 
-The US Customs and Border Protection (CBP) submitted a new measure that allows it to photograph any non-US citizen who enters or exits the country for facial recognition purposes. According to a filing with the government's Federal Register, CBP and the Department of Homeland Security are looking to crack down on threats of terrorism, fraudulent use of travel documents and anyone who overstays their authorized stay.
+Opening Apple's Maps app just for directions may look a little different in the near future. According to Bloomberg's Mark Gurman, Apple is planning to introduce ads to Maps as soon as next year. While it won't be as annoying as unskippable YouTube ads, Apple wants to offer better visibility on Maps to restaurants and businesses that are willing to pay.
 
-The filing detailed that CBP will "implement an integrated, automated entry and exit data system to match records, including biographic data and biometrics, of aliens entering and departing the United States." The government agency already has the ability to request photos and fingerprints from anyone entering the country, but this new rule change would allow for requiring photos of anyone exiting as well. These photos would "create galleries of images associated with individuals, including photos taken by border agents, and from passports or other travel documents," according to the filing, adding that these galleries would be compared to live photos at entry and exit points.
-
-These new requirements are scheduled to go into effect on December 26, but CBP will need some time to implement a system to handle the extra demand. According to the filing, the agency said "a biometric entry-exit system can be fully implemented at all commercial airports and sea ports for both entry and exit within the next three to five years."
+When looking for a new restaurant or relevant business, you may already be used to seeing ads on Google Maps or Yelp that highlight certain establishments. However, Gurman said that Apple is planning to lean on AI for better search results and offer a better interface than Google Maps. The introduction of ads across Apple's iOS ecosystem shouldn't be surprising since Gurman previously reported Apple's interest back in 2022. On top of that, Apple already offers ad slots within the App Store where developers can pay to appear in a more visible position for user searches. Beyond Maps, Apple could be looking at infusing ads into its News, Books, Podcasts and other apps to generate more revenue.
 
 Advertisement
 
