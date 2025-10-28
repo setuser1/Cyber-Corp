@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/27/zoom-ceo-eric-yuan-says-ai-will-shorten-our-workweek/
+https://techcrunch.com/2025/10/27/roelof-botha-explains-why-sequoia-supports-shaun-maguire-after-coo-quit/
 
-Zoom founder and CEO Eric Yuan believes that AI assistants will finally allow us to shorten our workweek. Speaking on stage at the TechCrunch Disrupt 2025 conference on Monday, Yuan discussed his videoconferencing products embrace of AI, which includes a &#8220;digital twin&#8221; feature where an AI avatar can speak for you.
+During an interview at TechCrunch Disrupt 2025 on Monday, Sequoia Capital managing partner Roelof Botha answered questions about his colleague, Sequoia partner Shaun Maguire, and controversial comments Maguire made earlier this year, calling Sequoia a believer in its partners right to “free speech.”
 
-Yuan began using his AI avatar in an earnings call with investors this year, demonstrating the technologys potential and ability to push the &#8220;boundaries of communication,&#8221; he said.
+In a July 4 post on X, Maguire attacked New York City mayoral candidate Zohran Mamdani, calling the politician an “Islamist” who “comes from a culture that lies about everything.” His remarks led to a sizable online backlash and debate about the reputational risk to the VC firm that has backed companies like Airbnb, Google, Nvidia, and Stripe.
