@@ -1,39 +1,49 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/entertainment/tv-movies/cinemark-is-adding-more-70mm-imax-screens-ahead-of-christopher-nolans-the-odyssey-194155824.html?src=rss
+https://www.engadget.com/deals/apples-macbook-air-m4-is-back-on-sale-for-799-183808431.html?src=rss
 
-Entertainment
+Deals
 
-TV & movies
+Apple's MacBook Air M4 is back on sale for $799
 
-Cinemark is adding more 70mm IMAX screens ahead of Christopher Nolans The Odyssey
+This is a discount of 20 percent.
 
-The format is growing in popularity, and theater chains are trying to accommodate moviegoers.
-
-Kris Holt
+Lawrence Bonk
 
 Contributing Reporter
 
-Mon, October 27, 2025 at 7:41 PM UTC
+Mon, October 27, 2025 at 6:38 PM UTC
 
-Matt Damon as Odysseus in The Odyssey (Universal Pictures)
+Devindra Hardawar for Engadget
 
-The movie industry has been in a tailspin for years, with many people foregoing the theatrical experience in favor of watching films at home. I get it. Going to the movies can be expensive and, lets face it, dealing with other people can be annoying (its been 10 years and Im still mad about those teenagers who would not stop giggling all the way through my first viewing of The Witch). But theres nothing quite like going to a theater and getting lost in a great film for a couple of hours. In addition, large-scale formats are growing in popularity and theater chains are trying to accommodate moviegoers.
+The Apple MacBook Air M4 laptop is back on sale for just $799, which is one heck of a deal. This sale is for the model with 16GB of RAM and 256GB of internal storage. It's available in multiple colorways, but the silver one inexplicably costs $899.
 
-Cinemark is installing more IMAX screens, including ones that support 70mm film projection. The company is adding such screens to its locations in Woodridge, Illinois (a suburb of Chicago); Colorado Springs, Colorado; and Rochester, New York. Its also adding four IMAX with Laser systems — a 4K laser offering — to other locations in the US in the coming months. Its upgrading its other 12 IMAX screens across the Americas with that tech too.
+We ranked this as our favorite Apple laptop in our list of the best MacBook computers. Heck, it's even our very favorite laptop. Full stop. The performance is exceptionally snappy, thanks to the M4 chip. We appreciated the upgraded battery life, which now lasts for around 18 hours per charge. That's well beyond a full day of work.
 
-According to Variety, Cinemark plans to have the new IMAX 70mm film screens set up by July 17, 2026. Thats the release date for Christopher Nolans next film, The Odyssey, which is the first theatrical release to be shot entirely in IMAX. As it stands, only 30 movie theaters on the planet can screen films in IMAX 70mm, which is Nolans preferred format.
+Apple
+
+Apple MacBook Air 13-inch Laptop with M4 chip (16GB/256GB)
+
+$799$999Save $200
+
+This is 20 percent off.
+
+$799 at Amazon
+
+Explore More Buying Options
+
+$984 at Best Buy$894 at P.C. Richard & Son
+
+The design is lightweight, but sturdy. This has become a hallmark for modern MacBook Air computers. The screen is both gorgeous and roomy, even though it's technically just a 13-inch panel. There's support for the P3 wide color gamut and it can reach up to 500 nits of brightness.
 
 Advertisement
 
 Advertisement
 
-Advertisement
+This is a near-perfect laptop, but there are a couple of nitpicks. There's no USB-C port on the right side, limiting how users can arrange accessories on a desk. Also, the screen is capped with a 60Hz refresh rate. Another potential complication is the looming specter of the M5 chip. The company has already released the MacBook Pro M5, so a new MacBook Air is likely coming in the nearish future.
 
-IMAX is proving popular with cinemagoers who are looking for a large-format experience that would be impossible at home (at least not without an obscene private screen). Indeed, many IMAX 70mm screenings of The Odyssey sold out a year in advance.
-
-IMAX 70mm isnt the only format with limited availability thats drawing audiences to theaters. Paul Thomas Andersons One Battle After Another is the first movie in 60 years to be projected in the VistaVision format, but only at a few locations. The film is currently being screened in IMAX 70mm in some cinemas too.
+Check out our coverage of the best Apple deals for more discounts, and follow @EngadgetDeals on X for the latest tech deals and buying advice.
 
 Advertisement
 
