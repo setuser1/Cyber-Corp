@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/27/mbodi-will-show-how-it-can-train-a-robot-using-ai-agents-at-techcrunch-disrupt-2025/
+https://techcrunch.com/2025/10/27/glid-is-building-an-autonomous-shortcut-to-move-freight-from-road-to-rail-catch-it-at-techcrunch-disrupt-2025/
 
-Robots can be programmed to do a variety of tasks, like packing boxes and even performing surgery. But each individual movement or task requires its own specific training process, which makes it hard for robots to adapt in real-world scenarios.
+Kevin Damoa came face-to-face with the challenges and dangers of moving freight from road to rail as a 17-year-old U.S. Army enlistee tasked with loading tanks and Bradley fighting vehicles onto the railroad. It was — as the mechanical engineer and founder of Glīd Technologies puts it — the beginning of his love story with logistics.
 
-Mbodi wants to make training robots easier and quicker with the help of AI agents. The company will be showcasing this tech as one of the Top 20 Startup Battlefield finalists at TechCrunch Disrupt 2025.
+Its a love story that persisted through a 13-year stint with the U.S. Air Force National Guard as a firefighter to his roles in the private sector at SpaceX, Northrup Grumman, Romeo Power Tech, and Xos Trucks — to name a few.
