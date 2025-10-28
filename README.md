@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/27/roelof-botha-explains-why-sequoia-supports-shaun-maguire-after-coo-quit/
+https://techcrunch.com/2025/10/27/defense-startup-pytho-ai-wants-to-turbocharge-military-mission-planning-and-it-will-show-off-its-tech-at-disrupt-2025/
 
-During an interview at TechCrunch Disrupt 2025 on Monday, Sequoia Capital managing partner Roelof Botha answered questions about his colleague, Sequoia partner Shaun Maguire, and controversial comments Maguire made earlier this year, calling Sequoia a believer in its partners right to “free speech.”
+Pytho AI is coming out of stealth with an ambitious pitch to the Department of Defense: turn mission planning that takes warfighters days into a process measured in minutes.
 
-In a July 4 post on X, Maguire attacked New York City mayoral candidate Zohran Mamdani, calling the politician an “Islamist” who “comes from a culture that lies about everything.” His remarks led to a sizable online backlash and debate about the reputational risk to the VC firm that has backed companies like Airbnb, Google, Nvidia, and Stripe.
+The startup was founded by Michael Mearn, a former Marine human-intelligence officer whose teams located insurgents, IEDs, weapons, and other intel. The idea for the company came from watching planners spend days building mission plans for a single operation, he told TechCrunch. Pytho AI is a Top 20 Startup Battlefield finalist at TechCrunch Disrupt 2025.
