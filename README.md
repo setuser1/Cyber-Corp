@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/27/openai-offers-free-chatgpt-go-for-one-year-to-all-users-in-india/
+https://techcrunch.com/2025/10/27/venture-capital-is-not-an-asset-class-says-sequoias-roelof-botha/
 
-OpenAI is offering its ChatGPT Go plan available free of charge for one year to users in India who sign up during a limited promotional period starting November 4, as the company looks to expand in one of its top markets.
+At TechCrunch Disrupt 2025, Sequoia managing partner Roelof Botha argued that the venture industry isnt an asset class, and that throwing more money into Silicon Valley doesnt lead to better companies.
 
-On Tuesday, OpenAI announced the promotion but did not specify how long the offer would remain available. Existing ChatGPT Go subscribers in India will also be eligible for the free 12-month plan, the company said.
+&#8220;Investing in venture is a return-free risk,&#8221; Botha said during an interview on TechCrunchs Disrupts main stage on Monday. &#8220;Anybody whos studied the capital asset pricing model understands the joke of that. The reason I came up with this is, if you look at the history of venture capital, its an asset thats uncorrelated with other asset classes.&#8221;
