@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/27/defense-startup-pytho-ai-wants-to-turbocharge-military-mission-planning-and-it-will-show-off-its-tech-at-disrupt-2025/
+https://techcrunch.com/2025/10/27/strong-by-form-will-show-its-ultralight-engineered-wood-at-techcrunch-disrupt-2025/
 
-Pytho AI is coming out of stealth with an ambitious pitch to the Department of Defense: turn mission planning that takes warfighters days into a process measured in minutes.
+Even before a building accepts its first occupant, it has racked up a steep carbon debt. Worldwide, the materials and construction required to erect buildings contributes 11% of global carbon emissions, according to the World Green Building Council.
 
-The startup was founded by Michael Mearn, a former Marine human-intelligence officer whose teams located insurgents, IEDs, weapons, and other intel. The idea for the company came from watching planners spend days building mission plans for a single operation, he told TechCrunch. Pytho AI is a Top 20 Startup Battlefield finalist at TechCrunch Disrupt 2025.
+Some places have begun experimenting with multistory timber buildings, and while theyve recently reached new heights, timber buildings wont be replacing skyscrapers anytime soon. But one Chilean startup thinks that theres still room for wood to find a place.
