@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/27/macrocycle-found-a-shortcut-for-plastic-recycling-catch-it-at-techcrunch-disrupt-2025/
+https://techcrunch.com/2025/10/27/mbodi-will-show-how-it-can-train-a-robot-using-ai-agents-at-techcrunch-disrupt-2025/
 
-Plastic recycling has fallen short. Only about 9% of all plastic is recycled globally, which sounds pretty bad until you compare it with textiles. Only 0.5% of those are recycled.
+Robots can be programmed to do a variety of tasks, like packing boxes and even performing surgery. But each individual movement or task requires its own specific training process, which makes it hard for robots to adapt in real-world scenarios.
 
-One of the biggest challenges is that textiles are seldom one material. Buttons and zippers complicate matters, but spandex is even worse. Novel synthetic blends have made for clothing thats a dream to wear but a nightmare to recycle.
+Mbodi wants to make training robots easier and quicker with the help of AI agents. The company will be showcasing this tech as one of the Top 20 Startup Battlefield finalists at TechCrunch Disrupt 2025.
