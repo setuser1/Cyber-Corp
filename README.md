@@ -1,27 +1,45 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ar-vr/google-is-bringing-beam-its-3d-video-conferencing-tech-to-deployed-service-members-174500517.html?src=rss
+https://www.engadget.com/gaming/battlefield-6s-free-battle-royale-mode-arrives-on-october-28-174419086.html?src=rss
 
-AR/VR
+Gaming
 
-Google is bringing Beam, its 3D video conferencing tech, to deployed service members
+Battlefield 6's free battle royale mode arrives on October 28
 
-The company is teaming up with United Service Organizations to help keep military families connected.
+This is the same day that Season 1 of the main game drops, which includes new content.
 
-Kris Holt
+Lawrence Bonk
 
 Contributing Reporter
 
-Mon, October 27, 2025 at 5:45 PM UTC
+Mon, October 27, 2025 at 5:44 PM UTC
 
-Google Beam teleconferencing system (HP)
+EA
 
-Google has teamed up with the United Service Organizations (USO) to help deployed service members stay in touch with their families in a different way. As part of a pilot program, the company is bringing Google Beam, its 3D video communication tech, to USO service centers in the US and other countries starting in 2026.
+Battlefield 6 is getting a free battle royale mode on October 28. This follows numerous leaks that have been popping up ever since the mainline game hit store shelves on October 10.
 
-Google suggests that Beam can help military families who are separated by many miles feel like they are in the same room. While family members can keep in touch with deployed loved ones through group chats and video calls, chatting via Beam could help them feel closer together, if the tech works as well as promised.
+It's called Battlefield: RedSec, though we don't have too many gameplay details. It's free for everyone and you don't need the full-priced game to play. That much we do know. This puts it in direct competition with Call of Duty's own free-to-play battle royale, Warzone.
 
-We got our first look at Beam — then known as Project Starline — in 2021. The holographic teleconferencing system uses 3D imaging, spatial audio and adaptive lighting to make video chats more immersive. Beam is primarily intended for enterprise clients (the first such device costs $25,000), but it's interesting to see Google exploring other applications for the tech.
+Eyes up.
+
+Plates on.#REDSEC arrives tomorrow at 8:00 PT / 15:00 UTC 🔴
+
+🔔 set reminder: https://t.co/xuRd1LETVr pic.twitter.com/Lpi7sufuay
+
+— Battlefield (@Battlefield) October 27, 2025
+
+We can assume some gameplay elements, as it's a battle royale. It'll likely feature players heading to a large map and battling one another until the last person is left standing. You know the drill. EA dropped a short teaser that seems to show four different classes of soldier to choose from.
+
+Advertisement
+
+Advertisement
+
+Advertisement
+
+We don't know how or if this battle royale will interact with the main game. Warzone typically includes a story that ties into whatever's going on with Call of Duty's seasonal content drops. To that end, Season 1 of Battlefield 6 also releases on October 28. This update includes new maps, modes, vehicles, guns, attachments and cosmetic items.
+
+Battlefield: RedSec will be available for download on various gaming platforms at 11AM ET. This could end up being a pretty big hit for EA, as the main game managed to sell 7 million copies in three days.
 
 Advertisement
 
