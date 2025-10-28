@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/10/27/venture-capital-is-not-an-asset-class-says-sequoias-roelof-botha/
+https://techcrunch.com/2025/10/27/ceo-of-alphabets-x-astro-teller-on-what-makes-a-moonshot/
 
-At TechCrunch Disrupt 2025, Sequoia managing partner Roelof Botha argued that the venture industry isnt an asset class, and that throwing more money into Silicon Valley doesnt lead to better companies.
+Astro Teller, CEO of X, Alphabets &#8220;moonshot factory,&#8221; where the company incubates the nearly impossible, shared a look into what makes a moonshot and detailed the companys &#8220;fail fast&#8221; mantra at the TechCrunch Disrupt 2025 conference on Monday.
 
-&#8220;Investing in venture is a return-free risk,&#8221; Botha said during an interview on TechCrunchs Disrupts main stage on Monday. &#8220;Anybody whos studied the capital asset pricing model understands the joke of that. The reason I came up with this is, if you look at the history of venture capital, its an asset thats uncorrelated with other asset classes.&#8221;
+Notable companies that started out as moonshots from Xs moonshot factory include Waymo and Wing.
