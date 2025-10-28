@@ -1,43 +1,143 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/ai/googles-ai-health-coach-will-soon-be-available-to-some-fitbit-premium-users-170022769.html?src=rss
+https://www.engadget.com/entertainment/streaming/dodgers-vs-blue-jays-game-3-tonight-how-to-watch-the-2025-mlb-world-series-without-cable-153110828.html?src=rss
 
-AI
+Entertainment
 
-Googles AI health coach will soon be available to some Fitbit Premium users
+Streaming
 
-It starts with a five or ten minute conversation with the bot to assess fitness goals.
+Dodgers vs. Blue Jays, Game 3 tonight: How to watch the 2025 MLB World Series without cable
 
-Lawrence Bonk
+You can stream Shohei Ohtani's attempt for a second straight Series ring.
 
-Contributing Reporter
+Danica Creahan, Liz Kocan
 
-Mon, October 27, 2025 at 5:00 PM UTC
+UpdatedMon, October 27, 2025 at 4:08 PM UTC
 
-Google
+Dodgers vs. Blue Jays, Game 3 tonight: How to watch the 2025 MLB World Series without cable
 
-Googles long-awaited AI health coach is nearly upon us, as a preview version is launching tomorrow for some Fitbit Premium users in the US. This will only be for Android devices at first, but the company promises an iOS version is in the works.
+The 2025 Fall Classic has already reached Game 3 between the Los Angeles Dodgers and the Toronto Blue Jays. The tied-up World Series heads to Los Angeles tonight — Monday, Oct. 27 — at 8PM ET/5PM PT, with the Dodgers getting their turn at a home field advantage at Dodger Stadium, Los Angeles. Shohei Ohtani and the Dodgers are aiming to win their second consecutive championship, while Vlad Guerrero Jr. and the Blue Jays are eyeing their first ring since 1993. Despite Toronto's victory over Los Angeles last night, the World Series odds still favor the Dodgers ahead of Game 3. Every 2025 MLB World Series game will air on Fox and Fox Deportes.
 
-This is a Public Preview version of the software, so think of it like a beta release. Google says it'll incorporate user feedback to "add, change or improve features and capabilities." The company warns users that this is a "new experience, so initially, there will be some gaps."
+Of course, Fox is a "free" over-the-air channel, so any affordable digital antenna will pull in the game if you live close enough to a local affiliate. But if that's not an option, here's a full rundown of how to watch the Dodgers vs. Blue Jays World Series, even without cable.
 
-For the uninitiated, Google's AI health coach is exactly what it sounds like. This is an AI chatbot intended to help users reach fitness and health goals. The company boasts that the tech is "secure, personalized and grounded in science." Everything starts with a five to ten minute conversation with the coach to assess health and fitness goals.
+How to watch the L.A. Dodgers vs. Toronto Blue Jays, Game 3
+
+You can stream Fox on any live TV streaming service that airs Fox local stations, including DirecTV, Fubo and Hulu + Live TV. MLB World Series games will also be available on Fox's new streaming platform, Fox One.
+
+Watch Fox and FS1 on DirecTV
+
+DirecTV
+
+DirecTV gets you access to Fox and FS1, the channels you need to watch the World Series, plus the CW, ABC, CBS, Fox, ACC Network, Big Ten Network, SEC Network and plenty more local regional sports networks.
+
+DirecTV also offers unlimited Cloud DVR storage and access to ESPN+'s new streaming tier, ESPN Unlimited. That's all part of why we named it the best cable TV alternative without a contract.
+
+The best part is that you can try all this out for free for five days. So if you're interested in a live TV streaming service but aren't ready to commit, we recommend starting with DirecTV.
+
+Try free at DirecTV
+
+Watch Fox and FS1 on Fubo
+
+Fubo TV
+
+We named Fubo the best live TV streaming service for sports, and it's not just because it's a great place to watch the World Series. Fubo TV gives you access to 100-plus live channels, including Fox and FS1. The cheapest plan starts at $85/month, making the live TV streaming service a significant investment. However, the inclusion of ESPN Unlimited, a $30/month value, is a great deal if you watch sports year-round. Fubo subscribers also get access to unlimited cloud DVR storage.
+
+Currently, the platform is offering a free trial, allowing you to explore everything it has to offer risk-free.
+
+Try it free at Fubo
+
+Watch the World Series on Fox and Fox Deportes
+
+Hulu + Live TV
+
+Hulus live TV tier includes access to live TV channels like Fox, Fox Deportes, ESPN, ABC, NBC, and more. That means you can watch this year's World Series live as it happens, and enjoy over 95 other channels — not to mention take advantage of all the great shows streaming on Hulu, Disney+ and ESPN Select, all of which are included at no extra charge.
+
+Youll also enjoy access to unlimited DVR storage, the ability to stream on multiple devices and more. Right now, you can get your first three months of Hulu + Live TV for $65/month. This special rate ends at 6PM ET/3PM PT on November 5.
+
+Hulu + Live TV starts at $90/month after this deal ends.
+
+$65/mo for three months at Hulu
+
+Watch MLB on Fox One
+
+Fox One
+
+Fox One is exactly what it sounds like — a one-stop streaming destination for the entire universe of Fox content, including a ton of sports (Fox Sports, Fox FS1, FS2, Fox Deportes, Big Ten Network), news and opinion (Fox News, Fox Business, Fox Weather) and local Fox stations, too. That means you can watch every World Series game in one place.
+
+Fox One offers live programming, as well as shows and movies on demand. At launch, the base price for Fox One costs $20 a month, or you can save with an annual subscription for $200. You can also bundle Fox One with ESPN's newly revamped streaming service for $40/month.
+
+$20/month at Fox
+
+More ways to watch the 2025 World Series
+
+Watch local Fox
+
+Channel Master Flatenna
+
+$35 at Amazon
+
+Watch Fox and more
+
+Sling Orange & Blue
+
+$33 for your first month at Sling
+
+Watch Fox and more
+
+YouTube TV
+
+Try free at YouTube
+
+How to watch the MLB World Series from Canada:
+
+Stream from anywhere
+
+ExpressVPN
+
+From $3.49/month at ExpressVPN
+
+Watch NHL, NBA, MLB, UFC and more from Canada
+
+Sportsnet+
+
+$29.99/month at Sportsnet
+
+When is the Dodgers vs. Blue Jays game time?
+
+Game 3 of the Dodgers vs. Blue Jays World Series is tonight, Oct. 27 at 8PM ET/5PM PT.
+
+What channel is playing the Los Angeles Dodgers vs. Toronto Blue Jays?
+
+Every game in the 2025 World Series between the Los Angeles Dodgers and the Toronto Blue Jays, will air on Fox and Fox Deportes.
+
+When is the 2025 World Series?
+
+Game 3 of the World Series between the Dodgers and Blue Jays is scheduled for Oct. 27, 2025.
+
+Los Angeles Dodgers vs. Toronto Blue Jays World Series schedule
+
+All times Eastern. Series tied 1-1.
 
 Advertisement
 
 Advertisement
 
-Advertisement
+Game 1: Friday, Oct. 24, 8PM ET
 
-The coach can be a sounding board for personal health, fitness and sleep goals, but also acts as a personal trainer. Google says it can be used to review and adjust fitness plans, check progress, get advice on trends and create workouts. To that last point, the company says the chatbot can create workouts based on pre-existing constraints. For instance, users can ask the bot to make a workout that can be done in a cramped hotel room.
+Game 2: Saturday, Oct. 25, 8PM ET
 
-The coach can also be used to brainstorm questions to ask a doctor and to track and analyze a number of sleep metrics. The bot provides a "detailed sleep analysis" and can allegedly understand patterns and trends that can impact sleep. All of this data can be accessed via the app.
+Game 3: Monday, Oct. 27, 8PM ET
 
-Being as this is a preview build, it won't roll out to everyone tomorrow. Eligible Fitbit Premium users will receive notification that the software is ready to use. It works with any Pixel Watch or Fitbit device.
+Game 4: Tuesday, Oct. 28, 8PM ET
 
-Google
+Game 5: Wednesday, Oct. 29, 8PM ET
 
-The entire Fitbit app is being redesigned to focus more on AI and this is a large piece of the puzzle. Google promises integration with its health coach across every aspect of the app.
+Game 6*: Friday, Oct. 31, 8PM ET
+
+Game 7*: Saturday, Nov. 1, 8PM ET
+
+*if necessary
 
 Advertisement
 
