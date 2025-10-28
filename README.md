@@ -1,143 +1,97 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/entertainment/streaming/dodgers-vs-blue-jays-game-3-tonight-how-to-watch-the-2025-mlb-world-series-without-cable-153110828.html?src=rss
+https://www.engadget.com/entertainment/streaming/how-to-cancel-your-peacock-subscription-160047090.html?src=rss
 
 Entertainment
 
 Streaming
 
-Dodgers vs. Blue Jays, Game 3 tonight: How to watch the 2025 MLB World Series without cable
+How to cancel your Peacock subscription
 
-You can stream Shohei Ohtani's attempt for a second straight Series ring.
+Say goodbye to all of those reruns of The Office.
 
-Danica Creahan, Liz Kocan
+Lawrence Bonk
 
-UpdatedMon, October 27, 2025 at 4:08 PM UTC
+Contributing Reporter
 
-Dodgers vs. Blue Jays, Game 3 tonight: How to watch the 2025 MLB World Series without cable
+Mon, October 27, 2025 at 4:00 PM UTC
 
-The 2025 Fall Classic has already reached Game 3 between the Los Angeles Dodgers and the Toronto Blue Jays. The tied-up World Series heads to Los Angeles tonight — Monday, Oct. 27 — at 8PM ET/5PM PT, with the Dodgers getting their turn at a home field advantage at Dodger Stadium, Los Angeles. Shohei Ohtani and the Dodgers are aiming to win their second consecutive championship, while Vlad Guerrero Jr. and the Blue Jays are eyeing their first ring since 1993. Despite Toronto's victory over Los Angeles last night, the World Series odds still favor the Dodgers ahead of Game 3. Every 2025 MLB World Series game will air on Fox and Fox Deportes.
+NBC
 
-Of course, Fox is a "free" over-the-air channel, so any affordable digital antenna will pull in the game if you live close enough to a local affiliate. But if that's not an option, here's a full rundown of how to watch the Dodgers vs. Blue Jays World Series, even without cable.
+It happened again. Peacock just raised subscription prices for its Premium and Premium Plus plans. This is the third price increase in as many years. If your bank account is feeling the pain, or if you're just looking to streamline your entertainment options, you may decide it's time to take a break from NBC's flagship platform. Here's everything you need to know about canceling your Peacock subscription.
 
-How to watch the L.A. Dodgers vs. Toronto Blue Jays, Game 3
+How to cancel via web
 
-You can stream Fox on any live TV streaming service that airs Fox local stations, including DirecTV, Fubo and Hulu + Live TV. MLB World Series games will also be available on Fox's new streaming platform, Fox One.
+The simplest way to end your Peacock Premium service is if you're being billed directly by the company. You can follow the same steps in a web or mobile browser.
 
-Watch Fox and FS1 on DirecTV
+Log in to your Peacock Premium or Premium Plus account.
 
-DirecTV
+Click on the Profile icon.
 
-DirecTV gets you access to Fox and FS1, the channels you need to watch the World Series, plus the CW, ABC, CBS, Fox, ACC Network, Big Ten Network, SEC Network and plenty more local regional sports networks.
+Select Account or Plans & Payments.
 
-DirecTV also offers unlimited Cloud DVR storage and access to ESPN+'s new streaming tier, ESPN Unlimited. That's all part of why we named it the best cable TV alternative without a contract.
+Click on Cancel Plan.
 
-The best part is that you can try all this out for free for five days. So if you're interested in a live TV streaming service but aren't ready to commit, we recommend starting with DirecTV.
+Follow the prompts to confirm the cancellation.
 
-Try free at DirecTV
+That's pretty simple, but things get a bit more complicated if you're not in a direct-billing situation.
 
-Watch Fox and FS1 on Fubo
+How to cancel via third-party provider
 
-Fubo TV
+Like most modern streaming platforms, Peacock has partnerships with third-party providers like Apple and Amazon. This lets users sign up for the service through an entirely separate platform, like Prime Video. Cancelling has to also go through this third party. The general idea here is to sign into that account and find somewhere to manage billing and subscriptions, looking for Peacock. Here are specific steps for some of the more common providers.
 
-We named Fubo the best live TV streaming service for sports, and it's not just because it's a great place to watch the World Series. Fubo TV gives you access to 100-plus live channels, including Fox and FS1. The cheapest plan starts at $85/month, making the live TV streaming service a significant investment. However, the inclusion of ESPN Unlimited, a $30/month value, is a great deal if you watch sports year-round. Fubo subscribers also get access to unlimited cloud DVR storage.
+Cancel via Apple
 
-Currently, the platform is offering a free trial, allowing you to explore everything it has to offer risk-free.
+Go to the Settings app on your iPhone or iPad.
 
-Try it free at Fubo
+Tap on your name at the top of the screen and tap Subscriptions.
 
-Watch the World Series on Fox and Fox Deportes
+Select your Peacock subscription to manage and make changes.
 
-Hulu + Live TV
+Cancel via Amazon
 
-Hulus live TV tier includes access to live TV channels like Fox, Fox Deportes, ESPN, ABC, NBC, and more. That means you can watch this year's World Series live as it happens, and enjoy over 95 other channels — not to mention take advantage of all the great shows streaming on Hulu, Disney+ and ESPN Select, all of which are included at no extra charge.
+Go to Amazon Memberships and Subscriptions using a web browser.
 
-Youll also enjoy access to unlimited DVR storage, the ability to stream on multiple devices and more. Right now, you can get your first three months of Hulu + Live TV for $65/month. This special rate ends at 6PM ET/3PM PT on November 5.
+Sign in to your Amazon account.
 
-Hulu + Live TV starts at $90/month after this deal ends.
+Navigate to your Peacock subscription and select Cancel Subscription.
 
-$65/mo for three months at Hulu
+Cancel via Google Play
 
-Watch MLB on Fox One
+Go to the Google Play store using a web browser.
 
-Fox One
+Confirm that youre signed in to your Google account.
 
-Fox One is exactly what it sounds like — a one-stop streaming destination for the entire universe of Fox content, including a ton of sports (Fox Sports, Fox FS1, FS2, Fox Deportes, Big Ten Network), news and opinion (Fox News, Fox Business, Fox Weather) and local Fox stations, too. That means you can watch every World Series game in one place.
+On the top right, click your Google account icon and select Payment & Subscriptions.
 
-Fox One offers live programming, as well as shows and movies on demand. At launch, the base price for Fox One costs $20 a month, or you can save with an annual subscription for $200. You can also bundle Fox One with ESPN's newly revamped streaming service for $40/month.
+Click the Subscriptions tab and select your Peacock subscription.
 
-$20/month at Fox
+Click Manage and select Cancel subscription.
 
-More ways to watch the 2025 World Series
+Cancel via Roku
 
-Watch local Fox
+On your Roku TV, highlight Peacock.
 
-Channel Master Flatenna
+Press the star (*) button.
 
-$35 at Amazon
+Select Manage Subscriptions.
 
-Watch Fox and more
+Look for Peacock and hit Cancel.
 
-Sling Orange & Blue
+How to cancel a promotional subscription
 
-$33 for your first month at Sling
+Peacock is often given away by internet providers like Comcast and phone carriers, among others. These plans often start free, but that goes away after a year or so. Check the fine print to see when your gifted subscription will run out, as you'll begin getting charged the usual rate. The best way to cancel these subscriptions is via the entity that offered it in the first place. This means you'll have to call up Xfinity or Spectrum directly. A customer representative should be able to handle the cancellation.
 
-Watch Fox and more
+Can I pause a Peacock subscription?
 
-YouTube TV
+No, Peacock doesn't currently offer the ability to pause a subscription. The best way to effectively "pause" a subscription is to cancel via one of the aforementioned methods and then resubscribe at a later date.
 
-Try free at YouTube
+What happens after you cancel?
 
-How to watch the MLB World Series from Canada:
+Cancelling a Peacock subscription doesn't immediately end your service. There are no partial refunds given, so you'll have full access to the account until the next payment date. At that point, the service will revert to the free tier. This means that if you change your mind before the next pay period, it's really easy to get things going again. Just look for a Restart Subscription button somewhere on the Account page.
 
-Stream from anywhere
-
-ExpressVPN
-
-From $3.49/month at ExpressVPN
-
-Watch NHL, NBA, MLB, UFC and more from Canada
-
-Sportsnet+
-
-$29.99/month at Sportsnet
-
-When is the Dodgers vs. Blue Jays game time?
-
-Game 3 of the Dodgers vs. Blue Jays World Series is tonight, Oct. 27 at 8PM ET/5PM PT.
-
-What channel is playing the Los Angeles Dodgers vs. Toronto Blue Jays?
-
-Every game in the 2025 World Series between the Los Angeles Dodgers and the Toronto Blue Jays, will air on Fox and Fox Deportes.
-
-When is the 2025 World Series?
-
-Game 3 of the World Series between the Dodgers and Blue Jays is scheduled for Oct. 27, 2025.
-
-Los Angeles Dodgers vs. Toronto Blue Jays World Series schedule
-
-All times Eastern. Series tied 1-1.
-
-Advertisement
-
-Advertisement
-
-Game 1: Friday, Oct. 24, 8PM ET
-
-Game 2: Saturday, Oct. 25, 8PM ET
-
-Game 3: Monday, Oct. 27, 8PM ET
-
-Game 4: Tuesday, Oct. 28, 8PM ET
-
-Game 5: Wednesday, Oct. 29, 8PM ET
-
-Game 6*: Friday, Oct. 31, 8PM ET
-
-Game 7*: Saturday, Nov. 1, 8PM ET
-
-*if necessary
+Like most modern tech services, cancelling doesn't erase any of your data. The subscription reverts to the free tier and will live on. To permanently close an account, you have to manually fill out a request via the Privacy Web Form in the Account page. This will lead you to a website to close the account.
 
 Advertisement
 
