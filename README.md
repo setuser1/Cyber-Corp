@@ -1,29 +1,53 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/social-media/threads-introduces-ghost-posts-that-disappear-after-24-hours-160000228.html?src=rss
+https://www.engadget.com/deals/save-50-percent-on-a-year-subscription-to-one-of-our-favorite-budgeting-apps-174011259.html?src=rss
 
-Social media
+Deals
 
-Threads introduces 'ghost' posts that disappear after 24 hours
+Save 50 percent on a year subscription to one of our favorite budgeting apps
 
-Likes and replies are only visible to the original poster, even if the post is public.
+Newcomers can get a year of access to Monarch Money for only $50.
 
-Karissa Bell
+Kris Holt
 
-Senior Editor
+Contributing Reporter
 
-Mon, October 27, 2025 at 4:00 PM UTC
+UpdatedMon, October 27, 2025 at 3:00 PM UTC
 
-Threads 'ghost posts' will disappear after 24 hours. (Meta)
+Monarch Money
 
-Meta's Threads is getting its own version of ephemeral posting with a new feature the company is calling "ghost posts." The temporary posts will be published within Threads' main feed like any other post, but will disappear after 24 hours. And while other users can interact with ghost posts, only the original poster will be able to view likes and replies.
+Those looking for a better way to keep track of their finances should consider a budgeting app. There are dozens of them on the market now, and one of our favorites is running a discount for new subscribers. Monarch Money is offering 50 percent off annual plans right now when you use the code MONARCHVIP at checkout. With the typical yearly price being $100, this will save you $50.
 
-Instead of typical public-facing replies, replies to ghost posts will be routed directly to users' inboxes, where they can opt to respond privately. In some cases, this could also mean that replies for ghost posts are more limited than replies to normal posts, as Meta's default messaging settings limit DMs to followed accounts only (these settings can be tweaked in the Threads app).
+As mentioned before, the discount is only for new users and it can't be combined with other offers. The code only works when you sign up through the web as well. You can't redeem it through the Monarch mobile app.
 
-In some ways, it's not surprising Meta would add temporary posts to Threads as a way to encourage users there to share more. On Instagram, Stories are used far more than permanent grid posts. In a blog post, Meta describes the new feature as a way for people to "share unfiltered thoughts and fresh takes without the pressure of permanence or polish."
+Monarch Money
 
-But ephemeral formats haven't always been successful on text-based platforms like Threads. Twitter briefly experimented with an ephemeral Stories like format it called "Fleets." Then-CEO Jack Dorsey reportedly "grew to despise" the feature, and it was killed less than a year after it launched.
+Monarch Money (annual plan)
+
+$50$100
+
+Save $50 with code
+
+New users of Monarch Money can get a year of access to the in-depth budgeting app for $50.
+
+Save $50 with code
+
+Copied!
+
+MONARCHVIP
+
+$50 at Monarch Money
+
+We feel that Monarch has a steeper learning curve than some other budget trackers and that certain aspects of the app are slightly more complex than they probably need to be. But it offers a great deal of customization and granularity, which outweighs our misgivings.
+
+Advertisement
+
+Advertisement
+
+On the main dashboard, you'll see your net worth along with your latest transactions, spending versus the previous month, your income so far for the month and details about upcoming bills, your investments and goals you've set. There's also a link to a month-in-review page, which offers an in-depth overview of what's been happening with your money that month. You'll also be able to take a peek at how your net worth has changed over time.
+
+Monarch can connect to your bank and track Apple Card, Apple Cash and Savings accounts. It can pull in your transactions and balance history automatically and detect your recurring expenses and income. The app can even keep your car valuation up to date. While it might take a little work to set up Monarch (and you might have to tweak things here and there), it's a detailed budgeting app that can help you keep better track of your income, expenditure and net worth.
 
 Advertisement
 
