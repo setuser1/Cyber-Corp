@@ -1,35 +1,29 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/gaming/battlefield-6s-free-battle-royale-mode-arrives-on-october-28-174419086.html?src=rss
+https://www.engadget.com/transportation/evs/federal-investigators-are-looking-into-teslas-mad-max-mode-which-reportedly-defies-speed-limits-170913959.html?src=rss
 
-Gaming
+Transportation
 
-Battlefield 6's free battle royale mode arrives on October 28
+EVs
 
-This is the same day that Season 1 of the main game drops, which includes new content.
+Federal investigators are looking into Tesla's Mad Max mode, which reportedly defies speed limits
 
-Lawrence Bonk
+The NHTSA is seeking "additional information" as it investigates the Full Self-Driving system.
+
+Kris Holt
 
 Contributing Reporter
 
-Mon, October 27, 2025 at 5:44 PM UTC
+Mon, October 27, 2025 at 5:09 PM UTC
 
-EA
+Tesla Cybertrucks. (AP Photo/Eric Gay) (ASSOCIATED PRESS)
 
-Battlefield 6 is getting a free battle royale mode on October 28. This follows numerous leaks that have been popping up ever since the mainline game hit store shelves on October 10.
+Federal investigators who are looking into Teslas Full Self-Driving (FSD) tech have requested information from the company about the Mad Max mode it added to the system. The company has claimed that Mad Max offers “higher speeds and more frequent lane changes” than its Hurry speed profile.
 
-It's called Battlefield: RedSec, though we don't have too many gameplay details. It's free for everyone and you don't need the full-priced game to play. That much we do know. This puts it in direct competition with Call of Duty's own free-to-play battle royale, Warzone.
+"NHTSA is in contact with the manufacturer to gather additional information," the National Highway Traffic Safety Administration (NHTSA) told Reuters. "The human behind the wheel is fully responsible for driving the vehicle and complying with all traffic safety laws."
 
-Eyes up.
-
-Plates on.#REDSEC arrives tomorrow at 8:00 PT / 15:00 UTC 🔴
-
-🔔 set reminder: https://t.co/xuRd1LETVr pic.twitter.com/Lpi7sufuay
-
-— Battlefield (@Battlefield) October 27, 2025
-
-We can assume some gameplay elements, as it's a battle royale. It'll likely feature players heading to a large map and battling one another until the last person is left standing. You know the drill. EA dropped a short teaser that seems to show four different classes of soldier to choose from.
+When it opened a fresh probe into FSD earlier this month, the NHTSA said the tech had "induced vehicle behavior that violated traffic safety laws.” Some Tesla vehicles with FSD engaged are said to have run red lights and driven against the flow of traffic.
 
 Advertisement
 
@@ -37,9 +31,9 @@ Advertisement
 
 Advertisement
 
-We don't know how or if this battle royale will interact with the main game. Warzone typically includes a story that ties into whatever's going on with Call of Duty's seasonal content drops. To that end, Season 1 of Battlefield 6 also releases on October 28. This update includes new maps, modes, vehicles, guns, attachments and cosmetic items.
+Tesla initially offered a Mad Max mode in 2018, before FSD was available. The company revived Mad Max this month and it didnt take long before there were reports of Tesla vehicles that were using the mode rolling stop signs and driving above speed limits.
 
-Battlefield: RedSec will be available for download on various gaming platforms at 11AM ET. This could end up being a pretty big hit for EA, as the main game managed to sell 7 million copies in three days.
+Earlier this year, when Tesla CEO Elon Musk was at the helm of the Department of Government Efficiency (DOGE), the Trump administration initiative reportedly culled NHTSA staff. As part of that, DOGE was said to have fired three people who were part of a small team that worked on autonomous vehicle safety.
 
 Advertisement
 
