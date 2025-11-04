@@ -160,8 +160,13 @@ int main() {
     SDL_Window *win = SDL_CreateWindow("Ecosystem Simulation", 100, 100, 800, 600, SDL_WINDOW_SHOWN);
     SDL_Renderer *renderer = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
 
-    int timesteps = 10000;
+    const int timesteps = 10000;
+    const int target_fps = 60;
+    const int frame_delay = 1000 / target_fps;
+
     for (int t = 0; t < timesteps; t++) {
+        Uint32 frame_start = SDL_GetTicks();
+
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         SDL_RenderClear(renderer);
 
@@ -174,7 +179,7 @@ int main() {
 
                 // Speciation chance
                 if ((rand() / (float)RAND_MAX) < 0.001f) {
-                    plants[i].species_id += 1; // new species
+                    plants[i].species_id += 1;
                 }
             }
         }
@@ -188,14 +193,20 @@ int main() {
 
                 // Speciation chance
                 if ((rand() / (float)RAND_MAX) < 0.001f) {
-                    animals[i].species_id += 1; // new species
+                    animals[i].species_id += 1;
                 }
             }
         }
 
         SDL_RenderPresent(renderer);
-        SDL_Delay(50);
 
+        // Limit FPS to ~60
+        Uint32 frame_time = SDL_GetTicks() - frame_start;
+        if (frame_delay > frame_time) {
+            SDL_Delay(frame_delay - frame_time);
+        }
+
+        // Event handling
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
             if (e.type == SDL_QUIT) {
