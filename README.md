@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/11/10/lenskart-recovers-from-tepid-open-to-close-first-day-slightly-above-ipo-price/
+https://techcrunch.com/2025/11/09/blue-origin-scrubs-second-new-glenn-launch-will-try-again-november-12/
 
-Lenskart shares recovered after a soft start to finish slightly above the offer price on Monday, following the Indian eyewear retailers ₹72.8 billion ($821 million) IPO that sold out within hours but stirred debate over its valuation.
+Jeff Bezos space company Blue Origin scrubbed the second launch of its New Glenn mega-rocket planned for Sunday afternoon due to concerns with weather, a few minor problems with launch pad equipment, and at least one cruise ship that strayed too close to the flight path.
 
-The stock opened at ₹395, below the IPO price of ₹402, and fell as much as 11% to ₹356.10 during the session before recovering to close at ₹404.55. The closing price valued Lenskart at about ₹702 billion (around $8 billion). The IPO was heavily oversubscribed with bids coming in at about 28 times the shares available, led primarily by institutional investors.
+The company said late Sunday that it will take another go at launching New Glenns second mission on Wednesday, November 12. The Federal Aviation Administration (FAA) announced restrictions on space launches late last week due to the government shutdown, and Blue Origin said in a post on X Sunday that it worked with the FAA to make the second attempt happen. The launch windo opens at 2:50 p.m. ET and lasts until 4:17 p.m. ET.
