@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/11/09/apple-reportedly-plans-ambitious-satellite-powered-iphone-features/
+https://techcrunch.com/2025/11/09/techcrunch-mobility-elon-musks-threats-worked/
 
-While Apples iPhone already supports texting, calling emergency services, and contacting roadside assistance via satellite connectivity, the company has many more satellite-powered features in the works, according to Bloombergs Mark Gurman.
+Welcome back to TechCrunch Mobility, your hub for all things “future of transportation.” To get this in your inbox, sign up here for free — just click TechCrunch Mobility!
 
-In-development features reportedly include an API allowing app makers to support satellite connections in their own apps, a version of Apple Maps that allows users to navigate without a cell or WiFi connection, adding photos to messaging, and increased support for “natural usage,” allowing users to connect to a satellite even if their phone isnt pointed directly at the sky.
+Did you hear? Elon Musk got his $1 trillion pay package. Of course you did, because coverage of that highly anticipated vote is everywhere, including here at TechCrunch. But what does this actually mean?
