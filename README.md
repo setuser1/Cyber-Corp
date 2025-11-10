@@ -1,5 +1,5 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/11/10/consolidation-begins-to-hit-the-carbon-credit-market/
+https://techcrunch.com/2025/11/10/youtubers-arent-relying-on-ad-revenue-anymore-heres-how-some-are-diversifying/
 
