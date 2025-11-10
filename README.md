@@ -1,311 +1,413 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/audio/best-record-player-120000239.html?src=rss
+https://www.engadget.com/computing/accessories/best-keyboard-120000018.html?src=rss
 
-Audio
+Computing
 
-The best record players for 2025
+Accessories
 
-If you're just getting into vinyl or want to upgrade, we've got options for everyone under $600.
+The best keyboards for 2025
 
-Billy Steele
+These are the models we've tested that will work for all kinds of people.
 
-Deputy editor, reviews
+Amy Skorheim, Jeff Dunn, Valentina Palladino
 
-Mon, November 10, 2025 at 12:00 PM UTC
+UpdatedMon, November 10, 2025 at 10:00 AM UTC
 
-Best record players (Billy Steele for Engadget)
+Engadget
 
-Everyone knows by now that vinyl is back. The classic format has seen a resurgence for years at this point, and new albums these days almost always include a vinyl preorder. If youve finally decided to embark on the hobby, or if youre looking to upgrade your current setup, weve compiled a list of the best turntables you can buy for under $600. Obviously, there are some very good, very popular options out there for around $1,000, but we had to start somewhere, and we had to narrow down the options a bit. Plus, theres no reason for novices or even experienced spinners to spend that much to get a decent deck.
+Typing, gaming, coding or just browsing — how your fingers connect with your keyboard can change the whole feel of your setup. Whether youre looking for something whisper-quiet and compact or a thunderous mechanical board that sings with every stroke, the best keyboards make a real difference in comfort and performance.
+
+Some people want a minimalist board that lives neatly next to their laptop or slips into a travel bag. Others need a full-size model with a numpad, dedicated macros and a build that stands up to long sessions. Todays keyboard market is more diverse than ever. Youll find boards designed for elegant workspace minimalism, gaming keyboards with aggressive RGB-lit setups and ergonomic keyboards built to reduce strain when you spend hours typing. Wireless models offer flexibility and tidy desks, while wired options still lead when speed and reliability matter most.
+
+Whether youre upgrading your first desktop, building a pro-level gaming rig or simply looking for a board that works better day after day, weve found the keyboards worth your time and money.
 
 Quick Overview
 
-Best record player overall
+Best keyboard for most people
 
-Fluance RT85N Turntable
+Logitech MX Keys S
 
-More options
+$130 at Amazon
 
-$550 at Macy's
+Best budget keyboard
 
-Best record player overall - runner up
+Logitech Pop Icon Keys
 
-U-Turn Audio Orbit Special (Gen 2)
+$50 at Amazon
 
-More options
+Best wireless ergonomic keyboard
 
-$549 at Macy's
-
-Best record player for beginners
-
-Audio-Technica AT-LP70XBT
+Logitech Ergo K860
 
 More options
 
-$205 at Wayfair
+$150 at Amazon
 
-Best record player for beginners - runner up
+Best split ergonomic keyboard
 
-U-Turn Orbit Basic
+ZSA Voyager
 
-$249 at U-Turn Audio
+$365 at ZSA
 
-Best record player under $350
+Best mechanical keyboard
 
-Fluance RT81+
+Keychron Q Max
 
 More options
 
-$350 at Macy's
+$189+ at Keychron
 
-Best record players for 2025
+See 3 more
 
-Billy Steele for Engadget
+Table of contents
 
-Best record player overall
+Best keyboards for 2025
 
-Fluance RT85N Turntable
+What to look for in a keyboard
 
-Drive: Belt | Cartridge: Nagaoka MP-110 | Platter: Acrylic | Preamp: No | Bluetooth: No
+Best keyboards for 2025
 
-Fluances preference for a glossy finish may not be your first choice, but the RT85N should absolutely be on your radar as a purely analog turntable. Theres no preamp here, so youll need to buy one separately for this model. Youll get warm, expressive sound that caters to all the fine details of your record collection for highly enjoyable listening sessions.
+Logitech
 
-Like other Fluance models, theres a solid MDF wood plinth equipped with adjustable resonance damping feet. On the RT85N, the company moved the motor from underneath the acrylic platter to prevent unwanted noise and vibrations. Theres also a Nagaoka MP-110 cartridge and elliptical diamond stylus that provide a substantial upgrade over the RT81+. Simplified controls and automatic stop help bridge the gap when beginners are ready to upgrade to a more advanced setup.
+Best keyboard for most people
+
+Logitech MX Keys S
+
+Connectivity: Bluetooth and Logi Bolt USB receiver | Size: Full-size layout | Material: Plastic chassis with low-profile scissor switches | Switches: Scissor switches | Hot-swappable: No | Backlight: Yes, smart illumination with ambient light sensors | Software: Logi Options+
+
+Logitech knows how to make a solid keyboard, and the Master series has been an excellent one over the past few years. The MX Keys S is the latest full-sized edition and it combines a low-profile design with comfortable keys and handy customization tools. It looks quite sleek in black, white or graphite, measuring just under 17 inches in width and only 0.8 inches high off your desk. Its spherically-dished keys cradle your fingertips every time you press, and while I wouldnt go so far to say they totally prevented me from putting any typos in this guide, the shape definitely helps more than other, flatter keycaps Ive used.
+
+This is a backlit keyboard with “smart illumination,” which just means the backlight will kick on when your hands approach the board and adjust depending on the lighting in your environment. I have a decent amount of natural light in my home office during regular working hours, so I opted to turn the backlight off — if you do the same, you can get up to five months of battery life out of the MX Keys S (Logitech estimates 10 days with smart illumination on). The keyboard has a built-in USB-C port for charging as well.
+
+In addition to the low-profile design that still includes a number pad, the biggest kickers for the MX Keys S are its wide compatibility and customizable features with Logi Options+. This peripheral works with Windows, macOS, ChromeOS, Linux and iPadOS, and it has three device pairing buttons so you can connect it to up to three devices at once and switch between them as necessary. Logi Options+ is free software that many Logitech accessories use, and for the MX Keys S, it allows you to customize brightness levels and duration, set smart actions (one-key shortcuts you program to your liking) and more.
+
+The Master Series also includes a “mini” version of this keyboard that nixes the number pad and $10 from the price tag. Ive used that and enjoy it as well, but when youre only saving $10, the full-sized version feels like a better value. Can you find cheaper wireless keyboards than either of these? Of course. But Logitechs expertise in this space really shines in the Master series, and with the MX Keys S in particular as it stands out as a high-quality wireless keyboard with a bunch of extra features at a decent price. — Valentina Palladino, Deputy Editor
 
 Pros
 
-Warm, expressive sound
+Good build quality
 
-Isolated motor
+Comfortable typing experience
 
-Robust plinth with vibration-isolating, adjustable feet
+Logi Options+ provides a ton of customization options
+
+Works across all major OSes
 
 Cons
 
-Requires a separate preamp
+Not the cheapest keyboard out there
 
-Glossy finish isnt for everyone
+Not a big price difference between the full-sized version and the mini model without the number pad
 
-$550 at Macy's
+$130 at Amazon
+
+Logitech
+
+Best budget keyboard
+
+Logitech Pop Icon Keys
+
+Connectivity: Bluetooth and Logi Bolt USB receiver | Size: Compact (75% layout) | Material: Plastic frame with retro-style keycaps | Switches: Mechanical switches | Hot-swappable: No | Backlight: No | Software: Logi Options+
+
+Logitechs Pop Icon Keys takes a lot of notes from the Master series and translates them into a more fun (and cheaper) package. The $50 keyboard doesnt include a number pad, but instead has a row on the right side that includes four buttons that you can customize using Logi Options+. I have mine programmed to activate macOS mission control, open the emoji keyboard and to move page up and down, respectively. But those arent the only buttons you can customize — 11 of the top function keys can also be programmed to your liking as well.
+
+The Pop Icon keycaps have a slight indentation to them, though not as dramatic as those on the Master series keys, and the typing experience is a comfortable and quiet one overall. While this isnt billed as a travel keyboard, its small enough to fit into a standard work bag or backpack, so you could take it with you without much hassle.
+
+You can connect the Pop Icon keys to up to three devices at once and switch between them easily, and the keyboard supports macOS, Windows, Linux, Chrome, iPadOS, iOS and Android devices. Besides there being no option for a number pad configuration, arguably the biggest downside to this keyboard is the fact that it runs on two AAA batteries. Logitech estimates it will last up to three years before you need to replace them, so maybe thats a pro for some rather than a con. I also appreciate that, when connected to a Mac computer over Bluetooth, you can still monitor the Pop Icon Keys battery life from the Bluetooth menu.
+
+This is also a great price for a solid wireless keyboard. Logitech itself makes even cheaper ones, but the Pop Icon Keys strikes a good balance between design and capabilities at this price point. The biggest question, if you choose this keyboard, is which colorway you fancy the most out of the five options. — V.P.
+
+Pros
+
+Cheap!
+
+Compact design with a low profile
+
+Comfortable typing experience
+
+Programmable keys with Logi Options+
+
+Works across all major OSes
+
+Cons
+
+Key travel could be better
+
+No number pad
+
+$50 at Amazon
+
+Logitech
+
+Best wireless ergonomic keyboard
+
+Logitech Ergo K860
+
+Connectivity: Bluetooth and Logi Bolt USB receiver | Size: Full-size with integrated numeric keypad | Material: Plastic frame with fabric-covered wrist rest | Switches: Scissor switches | Hot-swappable: No | Backlight: No | Software: Logi Options+
+
+Read our full guide to the best ergonomic keyboards
+
+The Ergo K860 from Logitech combines four helpful ergonomic features in a keyboard that operates much like any standard board. The Alice split shifts your elbows apart while keeping your forearms and wrists lined up. The tenting raises the keys upward in the middle, rotating your palms subtly toward one another. The optional negative tilt slopes the bottom edge above the top edge to keep the backs of your hands straighter. And theres a palm rest built in, which some find more comfortable during long typing sessions.
+
+Unlike other more aggressively ergonomic boards, theres no learning curve here. Typing on the Ergo K860 feels a lot like typing on a standard set of keys. The low profile, scissor-switch keys are springy and easy to hit. You even get a ten-key number pad, navigation keys and arrow buttons, all of which make it a full-featured and familiar accessory. You can program the keys with Logitechs software, but this will likely appeal most to those who just want a plug-and-play board for a Mac or PC setup. — Amy Skorheim, Senior Reporter
+
+Pros
+
+Rotated, tented keys make typing comfortable
+
+An ergonomic board with no learning curve
+
+Wirelessly connects quickly to three devices
+
+Hotkeys work with MacOS and Windows
+
+Cons
+
+Wrist rest is not removable
+
+Takes up a lot of space
+
+$150 at Amazon
 
 Explore More Buying Options
 
-$550 at Amazon
+$149 at Best Buy$150 at Walmart
 
-Billy Steele for Engadget
+Photo by Amy Skorheim / Engadget
 
-Best record player overall - runner up
+Best split ergonomic keyboard
 
-U-Turn Audio Orbit Special (Gen 2)
+ZSA Voyager
 
-Drive: Belt | Cartridge: Ortofon 2M Red | Platter: Grooved acrylic | Preamp: No (optional) | Bluetooth: No
+Connectivity: Wired (USB-C) | Size: Split ergonomic layout with 52 keys | Material: Plastic housing | Switches: Kailh Choc low-profile switches (tactile, linear, or clicky) | Hot-swappable: Yes | Backlight: No | Software: Oryx and VIA
 
-If youre into minimal turntable designs that still look great, U-Turns Orbit line fits the bill. The company opts for a thinner plinth than most of the competition, offering a slimmed down look that I think is more sophisticated on the shelf. Theres also a range of colors and wood finishes available, so you can match your setup or cater to your style. The external drive belt will help reduce motor noise and unlike some of U-Turns models, you get electronic speed control here on the Orbit Special.
+Read our full guide to the best ergonomic keyboards
 
-The company gives you the option to include a built-in preamp for an additional $80, but the Orbit Special I tested didnt have one (remember our $600 limit). I enjoyed the expressive, detailed sound here, rich with analog warmth. U-Turns Orbit Arm 3 is also a highlight, combining a one-piece magnesium armtube with an Ortogon 2M Red cartridge (with elliptical diamond stylus) and a cue lever. It has an adjustable counterweight and internal anti-skate as well. Lastly, the adjustable rubber feet are robust, providing ample cushioning from any vibrations that could impact playback.
+If youre ready to make a serious commitment to increasing your ergonomics, I recommend the ZSA Voyager. I use it every day and, even though its not super portable, I brought it with me when I worked away from my home office for a week. But at first, it took me at least three weeks before I was comfortable typing on it. Not only will you need to reprogram the keys (and remember what they do), youll need to use your fingers in a different way than youre used to. For one, your thumbs will do far more than just hit the spacebar. Theyll operate the return, shift, control and even layer buttons, depending on how you program the board.
+
+But the ergonomic benefits are equally significant. The fully split board lets me open up my arms and chest. On days when Im feeling particularly tight, Ill put the two halves a full foot apart. Relocating the return, command and forward-delete key to the thumbclusters saves me from shifting my hands around the board and the layers function allows for far more functionality than a standard keyboard.
+
+That said, it also adds to the security of my computer, making it all but impossible for other people to type with the Voyager. It comes with magnetic knobs for the center tenting feature, but I wish it came with the option to lift the middle a little higher. I created extra lift by adding rubber bumpers to the board, but for the price, itd be nice not to have to MacGuyver it. Still, whenever Im forced to use a regular keyboard, I feel like I'm toiling in the typing pool at Sterling Cooper. — A.S.
 
 Pros
 
-Simple design
+Ergonomic, fully split board
 
-External drive belt
+Programmable thumb cluster minimizes hand travel
 
-Expressive, detailed sound
+Low profile, mechanical keys make typing easy
 
-Easily removable dust cover
+Compact size and clever key mapping keep your hands in the home position
 
 Cons
 
-No automatic stop
+Takes a couple weeks to relearn how to type
 
-No ground wire connection
+Center tenting could be higher
 
-Wood finish costs more
+$365 at ZSA
 
-$549 at Macy's
+Photo by Jeff Dunn / Engadget
+
+Best mechanical keyboard
+
+Keychron Q Max
+
+Connectivity: 2.4 GHz wireless, Bluetooth 5.1, and USB-C wired | Size: 75% layout | Material: Aluminum top case with PC plate | Switches: Gateron Jupiter switches | Hot-swappable: Yes | Backlight: South-facing RGB LED | Software: QMK/VIA
+
+Read our full guide to the best mechanical keyboards
+
+The Keychron Q Max series doesnt come cheap, but it has just about everything we want out of a high-end mechanical keyboard. Its full aluminum case is exceedingly sturdy, hefty and cool to the touch. While its PBT-coated keycaps are on the taller side, they have a lovely texture and are sculpted in a way that gently hugs your fingertips. There are multiple switch options available, all of which are hot-swappable, while a double gasket-mount design inside the keyboard gives each press a cushioned yet springy feel by default. Combined with several layers of foam, those presses have a delightfully poppy and even sound.
+
+We tested the tenkeyless Q3 Max, but Keychron offers several other size and layout options as well. Each can connect over a wireless dongle, Bluetooth or USB-C and includes extra Windows- and Mac-specific keycaps in the box. There are still things to nitpick — theres a faint bit of rattle to a couple of the larger keys; you cant adjust the keyboards height; and Keychrons one-year warranty is pretty short — but if you just want to buy a mechanical keyboard that delivers a premium experience from the jump, this will get you there. – Jeff Dunn, Senior Reporter
+
+Pros
+
+Superb typing feel and sound
+
+Premium aluminum case
+
+Crisp PBT keycaps
+
+Hot-swappable
+
+Reliable wireless performance
+
+Tons of layout options
+
+Knob!
+
+Cons
+
+A bit pricey
+
+Keycaps aren't shine-through and may be too tall for some
+
+Heavy
+
+Slight rattling with some stabilizers
+
+$189+ at Keychron
 
 Explore More Buying Options
 
-$549 at Amazon$549 at Best Buy
+$229+ at Amazon
 
-Billy Steele for Engadget
+Photo by Jeff Dunn / Engadget
 
-Best record player for beginners
+Best budget mechanical keyboard
 
-Audio-Technica AT-LP70XBT
+Keychron C3 Pro
 
-Drive: Belt | Cartridge: AT-VM95C | Platter: Aluminum | Preamp: Yes | Bluetooth: Yes (aptX Adaptive)
+Connectivity: USB-C wired | Size: Tenkeyless (80%) layout | Material: Plastic frame | Switches: Keychron mechanical switches | Hot-swappable: No | Backlight: Red LED | Software: QMK/VIA
 
-I cut my teeth on an AT-LP60XBT, so I can vouch for how much of an upgrade the AT-LP70XBT is over that model. The audio improvements come from higher quality components like the cartridge, stylus, tonearm and three-piece construction. Simply put, the LP70XBT just looks more premium than the LP60XBT, and does so at a comparable price. Plus, you still get the fully automatic operation that will help beginners ease into their vinyl habit.
+Read our full guide to the best mechanical keyboards
 
-While the sound is crisp and clear on the LP70XBT, its not as full and immersive as some other turntables in this price range. The simple, straightforward controls are easy to master and theres no tonearm calibration required during the setup process. And if you dont have a need for Bluetooth connectivity, you can save yourself $70 and get all of the features I just mentioned on the regular AT-LP70X.
+We recommend the Keychron C3 Pro if you want to spend as little as possible for a delightful mechanical keyboard. Its a stellar value at just under $50, with factory-lubricated switches, a gasket mount, multiple layers of internal foam and other touches we dont usually see in this price range. The stabilizers avoid any aggressive rattling, and theres none of the pinging noise you get from many cheaper cases. All of this helps feel comfortable for typing, while the tactile Brown switches in our test unit sound pleasantly clacky.
+
+As with any budget keyboard, you have to make some sacrifices. It only works wired, for one, and the ABS keycaps feel slicker and cheaper than the best PBT caps. While the case doesnt exhibit any serious flexing, its still made of plastic. You also need to pay $10 extra to get a version with RGB backlighting and hot-swappable switches — the base model is still a great buy for those looking to get into the hobby on the cheap, but it saddles you with a red-only backlight and prevents you from easily popping in new switches down the road. – J.D.
 
 Pros
 
-Fully automatic operation is good for beginners
+Inexpensive
 
-Crisp, clear sound
+Tremendous typing experience for the money
 
-Optional Bluetooth connection
+Programmable with software
 
-Easily adjusts for 7-inch records
+Shine-through keycaps
 
 Cons
 
-Better sound is available for less money
+ABS keycaps are a bit slick
 
-Youll probably want to upgrade the stylus quickly
+Wired only
 
-Less-than-premium look
+RGB lighting and hot-swappable switch cost a little bit extra
 
-$205 at Wayfair
+$42 at Amazon
+
+Jeff Dunn for Engadget
+
+Best gaming keyboard
+
+Wooting 80HE
+
+Connectivity: USB-C wired | Size: 80% layout | Material: Plastic or zinc alloy case options | Switches: Lekker Hall-effect analog switches | Hot-swappable: Yes | Backlight: Per-key RGB with customizable LED bar | Software: Wootility
+
+Read our full guide to the best gaming keyboards
+
+The Wooting 80HE is our favorite keyboard for gamers thanks to its magnetic Hall effect switches, which can respond to varying levels of pressure. This lets you customize the actuation point of each individual key, so you could make them more sensitive during quick-twitch shooting games or more deliberate when you just want to type. Another feature called rapid trigger lets you repeat inputs faster, without having to wait for a given key to return to a fixed reset point. That can be a real boon for, say, strafing back and forth more precisely during a 1v1 shootout in Overwatch. You can also tie multiple commands to one key: In Halo Infinite, for example, you could make it so lightly pressing W makes you walk more stealthily, while pressing it all the way down makes you run at full speed.
+
+Does everyone need all of this? Of course not. Any keyboard can be a “gaming keyboard,” and nothing here will magically make you good at games. But for more hardcore types looking for any extra bit of granular control, they can make a tangible difference.
+
+The 80HE isnt the only keyboard to offer this set of tricks, but it stands out for getting the rest of the package right as well. Wootings Wootility software is best-in-class, making it particularly easy to tweak settings and customize the RGB lighting. You can save multiple control profiles directly to the device. And while the all-plastic case isnt the highest-quality thing out there for $200, the stock hardware still feels and sounds pleasant, with crisp PBT keycaps, smooth pre-lubed switches and a pleasingly thocky tone. – J.D.
+
+Pros
+
+Magnetic switches are deeply versatile for gaming
+
+Easy-to-use software
+
+Sturdily built
+
+Comfortable for typing and sounds pleasant
+
+Cons
+
+Wired-only
+
+A bit expensive
+
+80 percent design is somewhat awkward
+
+Only available to buy in batches
+
+$200 at Wooting
+
+Jeff Dunn for Engadget
+
+Best wireless gaming keyboard
+
+SteelSeries Apex Pro TKL Wireless (Gen 3)
+
+Connectivity: 2.4 GHz wireless, Bluetooth, and USB-C wired | Size: Tenkeyless (TKL) layout | Material: Aluminum top plate with plastic base | Switches: OmniPoint 2.0 adjustable mechanical switches | Hot-swappable: No | Backlight: Per-key RGB | Software: SteelSeries GG
+
+Read our full guide to the best gaming keyboards
+
+If you want the Wooting 80HEs gaming-friendly features in a wireless keyboard, we like the SteelSeries Apex Pro TKL Wireless (Gen 3). It offers most of the same adjustable actuation and rapid trigger tools as the 80HE, plus a “protection mode” that makes it harder to hit nearby keys by accident and preset profiles for some popular games. The typing experience is a plus as well, with crisp and easy-to-reach PBT keycaps, a sturdy aluminum top plate and smooth-feeling switches that are sufficiently muffled. Theres a magnetic wrist rest in the box, and the whole thing can connect over a wireless dongle, Bluetooth or USB-C.
+
+Our main issues with the Apex Pro involve SteelSeries GG app. So much of the experience with these analog-style keyboards comes down to software, and GG is a bit less refined than Wootility across the board. At $270, the Apex Pro is definitely on the higher end of the price spectrum, too. Still, the app is easy enough to grok over time — especially compared to other gaming models weve used — and the board as a whole gets much more right than wrong. – J.D.
+
+Pros
+
+Fast and deeply versatile magnetic switches
+
+Useful OLED display
+
+Pleasant typing experience
+
+Multiple connection modes
+
+Cons
+
+Pricey
+
+Software isn't always intuitive
+
+Battery life could be better
+
+$237 at Amazon
 
 Explore More Buying Options
 
-$279 at Macy's$279 at Amazon
+$237 at Best Buy$300 at Lenovo
 
-Billy Steele for Engadget
+What to look for in a keyboard
 
-Best record player for beginners - runner up
+Design
 
-U-Turn Orbit Basic
+Size
 
-Drive: Belt | Cartridge: Audio-Technica AT91B | Platter: MDF | Preamp: Yes (optional) | Bluetooth: No
+The first thing youll want to consider when it comes to your next computer keyboards design is size. There are a number of different keyboard layouts to choose from, but the most common are full-sized, tenkeyless and those smaller than tenkeyless.
 
-The Orbit Basic offers a lot of U-Turns best turntable elements in a $249 package. And for $80 more, you can have a built-in preamp added straight from the factory like our test unit. This model features U-Turns simple yet sophisticated design thats available in several colors and two wood-grain options. You also get the companys OA3 gimbal tonearm with internal anti-skate and adjustable counterweight. However, theres no cue arm here and the tonearm is rather free swinging, so you have to be careful when placing it on a record.
-
-The biggest downside to the Orbit Basic is the manual speed control. This requires you to physically move the belt on the external drive motor to change speeds from 33 to 45. Depending on your collection, you may not have to contend with that nuisance often. When it comes to playing music though, the Orbit Basic provides warm, crisp sound across a range of genres. The audio performance is best of any turntable we tested at this price, though the fully manual operation and lack of cue arm may present a bit of a learning curve to beginners.
-
-Pros
-
-Simple design
-
-Optional preamp
-
-Easily removable dust cover
-
-Great sound quality for the price
-
-Cons
-
-Manual speed control
-
-No cue arm
-
-Freeswinging tonearm
-
-Wood finish costs more
-
-$249 at U-Turn Audio
-
-Billy Steele for Engadget
-
-Best record player under $350
-
-Fluance RT81+
-
-Drive: Belt | Cartridge: Audio-Technica AT-VM95E | Platter: Aluminum | Preamp: Yes | Bluetooth: No
-
-The sound quality on the RT81+ is nearly identical to that of the Alva ST, a turntable that costs more than twice as much. And here, you get robust, adjustable rubber feet to ensure your record player is sitting level. The solid MDF cabinet comes in an optional walnut wood veneer that looks nicer than the black and white options, but the high gloss finish may not appeal to everyone. I also enjoy the simple operation here, where you simultaneously turn the unit on and select speed with a single knob. The RT81+ also offers automatic stop (which you can disable) and an anti-skate system that arent always standard at this price.
-
-Pros
-
-Straightforward design
-
-Automatic stop
-
-Adjustable feet
-
-Anti-skate system
-
-Cons
-
-Sound quality is good, not great
-
-Glossy finish isnt for everyone
-
-$350 at Macy's
-
-Explore More Buying Options
-
-$350 at Amazon
-
-Other record players we tested
-
-Audio-Technica AT-LP60XBT
-
-This is about as basic as it gets, unless you opt for the AT-LP60X which ditches the Bluetooth connectivity. This is a perfectly decent option for someone just getting into vinyl, but if you spend a little more for the AT-LP70X, you wont be in quite as big of a hurry to upgrade once you surrender to the obsession.
-
-Cambridge Audio Alva ST
-
-The Alva ST has a refined design that made me want to keep it out in my living room longer than many of the models on this list. The controls are limited on the top to power and individual options for 33 and 45 RPM speeds. Everything else is on the back panel, including Bluetooth pairing and preamp buttons. To complete the look, Cambridge Audio opted for a 1mm aluminium top plate, which sits on an MDF plinth with a layer of EVA to absorb vibrations in between.
+Full-sized keyboards, or 100 percent, include a function row at the top and a complete numpad with arrow keys on the right side, along with all of the rest of the alphanumeric keys youd expect on a standard QWERTY layout. Tenkeyless, or 80 percent, removes the number pad but keeps the arrow keys and the function row, reducing the overall width measurement of the board by a decent amount. Compact keyboards keep things ultra simple by including only the alphanumeric keys and modifiers like Alt, Shift, Ctrl and others and they come in different sizes like 60 percent, 65 percent and more. These are the most popular sizes out there, but you can find plenty of other designs that include different mixes of keys along with the standard letters and numbers all should have.
 
 Advertisement
 
 Advertisement
 
-While the overall audio performance on the Alva ST is warm and inviting, there is a lack of detail across genres. Ive noticed albums dont have a particularly wide soundstage, and songs lack their normal punch at times, so some sound compressed compared to when theyre played on other turntables. Additionally, the free swinging tone arm needs more resistance so its not so prone to dropping on a record immediately if it slips out of your fingers when you have the cueing lever down. Since this turntable is fully manual operation, I felt a bit of peril every time I went to lower the needle. (The price increased during testing for this guide.)
+Aside from size, there are two other big categories that you could use to define a keyboard: ergonomic and mechanical. Ergonomic keyboards are designed with, you guessed it, better ergonomics in mind, taking into account where you should position your fingers, hands and forearms to maintain proper posture. Separately, mechanical keyboards use mechanical switches (of which there are many types) that differ greatly from the membrane or scissor-switch keyboards youll find dominating most wired and wireless options widely available today. We have guides to the best ergonomic keyboards and best mechanical keyboards, but well summarize what you need to know about both here.
 
-Denon DP-300F
+Ergonomic keyboards
 
-Denons DP-300F is a mixed bag. On one hand, you get the convenience of fully automatic operation, dedicated speed and record size buttons and somewhat refined design. There are also some confounding decisions though, like the permanently affixed cables, the preamp switch being under the platter and the overall midrange build quality for a $500 turntable. The sound from the preamp and Denons cartridge has a clear lack of depth and detail that almost any model at this price should offer.
+If you deal with discomfort from working at a computer all day, ergonomic keyboards can help. These specially designed boards re-orient the keys, allowing you to hold your elbows farther apart and maintain a straighter line from your forearms to hands. Some people find this subtle change more comfortable.
 
-How to shop for a turntable
+Ergonomic keyboards typically fall into two categories: Alice and split keyboards. The former is a single unit with an A-shaped gap in the center of the keys. Split models come in two separate pieces which you can arrange as you like on your desk. Additional ergonomic features like tenting and negative tilt can make typing feel even more comfortable, and are often available on both Alice and split boards. Tenting raises the middle of the keys up so your hands take on more of a “handshake” position. Negative tilting lowers the top of the keyboard to keep your wrists angled downward instead of back towards your forearms.
 
-The first question youll need to ask yourself when looking for a turntable is how you plan to use it. Are you into vinyl for the ritual? If you simply like the concept of physical media, having to flip a record to finish it or the need to intentionally swap out an album when its done, thats just fine. You probably can make do with a more affordable turntable since overall sound quality may not be a main concern. If you crave the warmth of analog sound, and you want the collection youve invested in to sound its best, youll need to consider something with better specs.
+The way the keys are arranged on the keyboard may make typing easier as well. Traditionally, keyboards are staggered, with one row of letters slightly offset from the row beneath it. Columnar keyboards arrange the keys in a grid of rows and columns. This style takes a little getting used to, but some people find it allows them to type faster. You can also make the keys of some keyboards do more than just produce letters. Programmable boards let you map shortcuts and other functions, including macros, which may keep you from reaching for the mouse quite so often, saving you time and possibly strain as well.
 
-Youll also need to account for where and how youre going to listen to vinyl. Are you planning to connect this turntable to headphones or Bluetooth speakers? Do you have shelf or tower speakers youre going to use? Are you willing to invest in a dedicated preamp or would you rather a new turntable come with one built in? All of these questions will impact your buying decision — even the Bluetooth codecs, if youre going the wireless route.
+Mechanical keyboards
 
-Best record players (Billy Steele for Engadget)
-
-Automatic, semi-auto and manual operation
-
-If youre just getting into vinyl, an automatic turntable will save you a lot of stress. These are the models that place the stylus for you — all you have to do is push a button. When you get to the end of the record, the turntable will also return the tonearm to its resting spot automatically. Or, if you need to stop your session mid-side, theres a button for that too.
+Mechanical keyboards have blown up in popularity as more people have been thrust into creating their own workspaces at home. Its easy to see why: Compared to a traditional membrane keyboard, a good mechanical board is more durable, more satisfying to press and, most importantly, infinitely more customizable. The best of them usually come with a price premium, but even some cheaper models let you “hot-swap” between keycaps, switches and other materials, letting you tinker with different typing sensations and sound profiles until you find a combination that best expresses your preferences.
 
 Advertisement
 
 Advertisement
 
-Some turntables have semi-automatic operation. Maybe they cant place the needle for you, but they do have an automatic stop when a side of a record is complete. This auto stop, which sometimes comes with an on/off switch, can prevent unnecessary wear on your stylus and vinyl. Plus, many turntables with automatic operation allow you to take control if you need to drop the stylus in a certain place (thats not the beginning of the record) or if you have a die-cut vinyl (like the It's the Great Pumpkin, Charlie Brown soundtrack).
+Do you want each press to feel deep and full or fast and light? Do you need them to sound loud and clacky or almost totally muffled? Do you prefer your keycaps to look subdued and professional, stuffed with RGB lights or written in an Elvish language from The Lord of the Rings for some reason? With the right new keyboard, its all up to you — the only things really holding you back are your imagination and your wallet.
 
-Then theres the fully manual option. Here, youre solely responsible for placing the tonearm and taking it off when the music stops. A lot of turntables have a cue lever to assist with the process, and a lot of tonearms have a mechanism that lowers them slowly rather than violently dropping them on a record. This adds one more step to the ritual, and its one many purists prefer.
+We have a dedicated buying guide that digs deeper into the key aspects to consider when buying a mechanical gaming keyboard, so we encourage you to look at that for a full rundown. To keep things high-level, the most influential part of your purchase is your keyboards switch type. These little mechanisms slot underneath the keycaps and generally have the biggest effect on how your keyboard feels and sounds as you type away.
 
-Preamp
+You can broadly separate mechanical switches into three buckets: linear, tactile and clicky. Linear switches feel smooth all the way down; theyre often popular with gamers since they tend to be light and fast to actuate. Tactile switches create a tangible “bump” sensation partway through a press; many people who spend all day typing prefer them because they clearly confirm each press without (always) being all that loud. Clicky switches are functionally similar to tactiles but make an audible “click” sound to match the bump; your coworkers may hate them, but others love the full-throated sense of feedback they provide. To be clear, just because two switches fall within the same bucket doesnt mean they feel or sound exactly the same. The only way to figure out which switch works best for you is to do your research and, preferably, try some out for yourself.
 
-The biggest decision youll need to make in terms of a preamp is to decide if you want one built into your turntable or if youd rather use a separate one. It can be very convenient, especially for beginners, to use a built-in component to amplify the signal from the turntable before it hits any speakers or headphones. The downside is that youre left with what the company provides from the factory, so if youre looking to upgrade, youll have to disable the preamp inside. On most turntables, theres a switch that allows you to do this, so its no trouble. But, opting to skip the preamp on some models could save you money that could be invested elsewhere.
+Other keyboards have a mechanical-style feel but are built on different mechanisms entirely. The hot new trend in gaming-focused keyboards, for example, is Hall effect switches, which use tiny magnets to register keystrokes and let you customize the sensitivity of each press. Optical switches, meanwhile, offer similar functionality by replacing the physical contact point of a typical mechanical switch with a beam of infrared light. More recently, weve seen a couple keyboards launch with inductive switches, which can work like magnetic switches but use inductive coils in the keyboards printed circuit board (PCB) to cater to all switches collectively and dont require a sensor for each individual switch. We touch on a couple of magnetic-switch keyboards in our picks below, but for a fuller breakdown of this sort of tech, we recommend you check out our dedicated buying guide to the best gaming keyboards.
 
-A dedicated preamp typically uses higher-quality components and reduces noise by keeping internal parts properly separated. More robust models may even provide controls for things like tone or multiple inputs, while the basic options will simply allow you to plug in, play and forget it. If youre after the best possible clarity and realism from your record collection, wed recommend a dedicated preamp right from the start.
+Connectivity
 
-Best record players (Billy Steele for Engadget)
-
-Removable cartridge/headshell
-
-The next item youll want to consider is if the turntable youre eyeing can be upgraded in the future. The best way to do this is by swapping out the cartridge. Most turntables allow you to do this but there are some that dont, so youll need to pay attention to this detail. Upgrading the cartridge down the road is a great way to improve overall sound quality without having to buy a new turntable, new speakers or a new amp.
-
-Belt drive vs. direct drive
-
-There are two main types of turntables: belt drive and direct drive. All of the models we tested for this guide are belt drive, which means theres a thin belt that connects the platter to the motor to make the thing spin. Direct drive turntables are widely used by DJs and Technics was the first to make them. Here, the motor is directly under the platter and connected to it directly so the setup is less prone to wearing out. This is especially key when youre doing things like scratching. Direct-drive turntables tend to be more expensive than their belt-driven counterparts.
-
-Counterweight and anti-skate control
-
-Most turntables will include a counterweight on the tonearm and some form of anti-skate control. Both of these help keep the stylus in place with the correct amount of pressure, all to ensure proper operation with minimal wear on your records. Sometimes the anti-skate elements are built into the tonearm while other models offer a dedicated dial on the surface of the plinth. The ability to adjust both of these can help you fine-tune the performance of your turntable over time, which may be necessary after upgrading the cartridge or other components.
-
-Other components to consider
-
-Some final items youll want to evaluate on a prospective turntable purchase include the materials used for the base (plinth), platter and even the feet. Cheaper turntables may be mostly plastic affairs while more expensive models can use solid MDF (medium-density fibreboard) for the plinth. A lot of turntables have aluminum platters with a felt pad while others may feature a thick acrylic version. And while entry-level turntables may have small, plastic feet, premium models come with larger, adjustable, rubberized feet for better vibration isolation. While some of these come down to personal preference — a frosted acrylic platter looks really nice — there are some performance boosts to be gained depending on how the company uses the components.
-
-How we test turntables
-
-Since most turntables under $600 meet the criteria for entry-level through midrange, we tested every model with a set of Audio-Technica AT-SP3X powered speakers. These offer balanced sound for turntables with a 1.1-inch tweeter and 3-inch woofer in each unit. And at $269, they wont break the bank if you need speakers for your new turntable and theyll provide ample sound performance even if you spend more than our budget on a new deck.
-
-Advertisement
-
-Advertisement
-
-For all of our test units that didnt have a built-in preamp, we used the Fluance PA-10. At $100, its an affordable upgrade if youre looking to bypass a turntables included components or if youre looking to go more analog with your turntable purchase. There are no buttons or controls, just connect your turntable, speakers and ground wire (if youre using one) and youre ready to go. Its simple, straightforward and inexpensive, so its a great option for beginners and more experienced vinyl collectors alike.
-
-In terms of performance testing, we play a variety of genres on each turntable to evaluate sound quality. We also carefully examine the overall experience of putting a record on, setting the speed, placing the tonearm and more, which allows us to judge how well each turntable will work for users at different experience levels. Lastly, we take notes on design and components, comparing those elements from each turntable with our other test subjects to make our recommendations.
+Youve got two options here: wired or wireless. Wired keyboards typically have an attached cable that plugs into a USB-A or USB-C port on your computer (or docking station), although some come with cables that can be removed. Wireless mechanical keyboards connect to your machine either via Bluetooth or a wireless receiver dongle. Theres always the chance of some latency with wireless keyboards, so keep that in mind if youre picking one up to use primarily with a gaming PC. Of course, youll only have to worry about battery life with Bluetooth keyboards.
 
 Advertisement
 
