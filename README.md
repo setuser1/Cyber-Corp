@@ -1,5 +1,5 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/11/10/amazon-music-allows-users-in-canada-to-chat-and-stream-music-with-each-other/
+https://techcrunch.com/2025/11/10/sapphire-sport-spins-out-rebrands-as-359-capital-with-300m-aum/
 
