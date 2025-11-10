@@ -1,31 +1,35 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/science/space/blue-origin-scrubs-new-glenns-second-flight-due-to-bad-weather-214349212.html?src=rss
+https://www.engadget.com/mobile/smartphones/how-to-adjust-the-liquid-glass-effect-in-ios-261-203634681.html?src=rss
 
-Science
+Mobile
 
-Space
+Smartphones
 
-Blue Origin scrubs New Glenn's second flight due to bad weather
+How to adjust the Liquid Glass effect in iOS 26.1
 
-The company called off the launch at the very last second.
+Apple introduced an option to scale back the transparent effect of Liquid Glass.
 
-Cheyenne MacDonald
+Jackson Chen
 
-Weekend Editor
+Contributing reporter
 
-Sun, November 9, 2025 at 9:43 PM UTC
+Sun, November 9, 2025 at 8:36 PM UTC
 
-Blue Origin
+Apple
 
-Blue Origin has postponed the second flight of its New Glenn rocket, which was slated to send a pair of NASA spacecraft on the first step of their journey to Mars on Sunday afternoon. The heavy-lift launch vehicle was scheduled to take off from Cape Canaveral Space Force Station in Florida at 2:45PM ET., but multiple holds were issued during the under-two-hour launch window due to inclement weather. Blue Origin called off the launch attempt around 4:13PM.
+Apple's latest iterative update for iPhones brings a welcome change for those who aren't a fan of its Liquid Glass design overhaul. After user complaints that the Liquid Glass' translucent design was hard to read, Apple introduced a compromise in iOS 26's fourth beta that allowed for a more frosted look as well as a Reduce Transparency option buried in the Accessibility settings. Now, Apple is making this Liquid Glass toggle available for all iPhone users with iOS 26.1.
 
-The next launch opportunity is as yet unclear. Blue Origin was previously given a backup opportunity set for Monday afternoon, but the FAA has since issued an emergency order restricting commercial launches for the time being due to the government shutdown. As of November 10, commercial space launches can only take place between 10:00PM and 6:00AM. Blue Origin said on Sunday that its reviewing opportunities based on the weather, and did not mention the FAAs order.
+What is Liquid Glass?
 
-New Glenn's development has faced significant delays over the last decade since it was first announced, and finally took its maiden flight at the beginning of this year. Its first stage booster is intended to be reusable, and the company plans to recover the booster from the upcoming launch by landing it on an autonomous landing platform vessel dubbed Jacklyn, also known as the barge. Blue Origin attempted the same during its first flight, but failed.
+Apple debuted Liquid Glass at WWDC 2025 as its major visual redesign, which prompted a lot of comparisons to Windows Vista. Everything from switches and sliders to sidebars and panels would imitate glass, so that users can see the underlying colors and content. While some iPhone users liked the fluidity and freshness, others said the transparent look often created legibility issues, caused lag from the animations and led to eye strain over extended periods of time.
 
-The spacecraft on board New Glenn are twin satellites built by Rocket Lab and operated by UC Berkeley for NASA's Escapade mission to study the effects of space weather. They'll be following a new trajectory to the red planet, lingering in "a lazy, 12-month kidney bean-shaped orbit" around Earth until Mars is in alignment, according to UC Berkeley. Escapade should reach Mars in 2027.
+How to reduce the Liquid Glass effect
+
+To access the new Liquid Glass toggle, make sure your iPhone is updated to iOS 26.1. You can check which version you're by navigating to Settings, then General, then Software Update. After you confirmed that you're on the most recent iOS, you can go back into Settings, then Display & Brightness. From there, you'll find a new setting for Liquid Glass that lets you choose between "Clear" or "Tinted." The Clear option is Apple's original vision for Liquid Glass with see-through controls, while the Tinted option "increases opacity and adds more contrast."
+
+You can preview the differences between the two choices in the Liquid Glass setting before you commit to one. When in use, the Tinted option switches to the same frosted look first seen by iOS beta testers, which adds a more solid background to panels that have been Liquid Glass-ified. It's important to note that there are only two options and Apple didn't instead opt for a slider to adjust opacity. However, Apple is leaning more into customizability with its operating systems, as indicated by its recently introduced Spatial Scenes feature.
 
 Advertisement
 
