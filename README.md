@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/11/10/6sense-founder-amanda-kahlow-raises-30-million-for-new-human-replacement-ai-sales-startup-1mind/
+https://techcrunch.com/2025/11/10/scribe-hits-1-3b-valuation-as-it-moves-to-show-where-ai-will-actually-pay-off/
 
-Although LLM-powered AI agents are a fairly new phenomenon, one of the areas where theyve been most popular so far is in sales. 1Mind, a startup co-founded by Amanda Kahlow, has been quietly shipping its sales agent, named Mindy, for about a year.
+After helping several enterprises document how work actually happens, Scribe has raised $75 million at a $1.3 billion post-money valuation to roll out Scribe Optimize, a platform that maps workflows across the enterprise to reveal where automation and AI will actually yield returns — instead of becoming another sunk cost.
 
-On Monday, the startup announced a $30 million Series A round led by Battery Ventures. This brings 1Minds total raise to $40 million, the company says.
+The all-equity Series C round was led by StepStone, with participation from existing investors Amplify Partners, Redpoint Ventures, Tiger Global, Morado Ventures, and New York Life Ventures. The new funding comes over a year after Scribe raised its $25 million Series B, capital the five-year-old startup has largely not needed to draw down, co-founder and CEO Jennifer Smith (pictured above, left) said in an exclusive interview. With this round, Scribe plans to accelerate the rollout of Scribe Optimize and related products, as enterprises struggle to determine where AI and automation will have the greatest impact.
