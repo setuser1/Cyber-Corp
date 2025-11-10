@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/11/10/why-a-lot-of-people-are-getting-hacked-with-government-spyware/
+https://techcrunch.com/2025/11/10/6sense-founder-amanda-kahlow-raises-30-million-for-new-human-replacement-ai-sales-startup-1mind/
 
-For more than a decade, makers of government spyware have defended themselves from criticism by saying that their surveillance technology is intended to be used only against serious criminals and terrorists, and only in limited cases.
+Although LLM-powered AI agents are a fairly new phenomenon, one of the areas where theyve been most popular so far is in sales. 1Mind, a startup co-founded by Amanda Kahlow, has been quietly shipping its sales agent, named Mindy, for about a year.
 
-The evidence gathered from dozens, if not hundreds of documented instances of spyware abuse all over the world, however, shows that neither of those arguments are true.
+On Monday, the startup announced a $30 million Series A round led by Battery Ventures. This brings 1Minds total raise to $40 million, the company says.
