@@ -1,8 +1,8 @@
 # Article:
 
 ## Check commits for more!
-https://techcrunch.com/2025/11/10/scribe-hits-1-3b-valuation-as-it-moves-to-show-where-ai-will-actually-pay-off/
+https://techcrunch.com/2025/11/10/lenskart-recovers-from-tepid-open-to-close-first-day-slightly-above-ipo-price/
 
-After helping several enterprises document how work actually happens, Scribe has raised $75 million at a $1.3 billion post-money valuation to roll out Scribe Optimize, a platform that maps workflows across the enterprise to reveal where automation and AI will actually yield returns — instead of becoming another sunk cost.
+Lenskart shares recovered after a soft start to finish slightly above the offer price on Monday, following the Indian eyewear retailers ₹72.8 billion ($821 million) IPO that sold out within hours but stirred debate over its valuation.
 
-The all-equity Series C round was led by StepStone, with participation from existing investors Amplify Partners, Redpoint Ventures, Tiger Global, Morado Ventures, and New York Life Ventures. The new funding comes over a year after Scribe raised its $25 million Series B, capital the five-year-old startup has largely not needed to draw down, co-founder and CEO Jennifer Smith (pictured above, left) said in an exclusive interview. With this round, Scribe plans to accelerate the rollout of Scribe Optimize and related products, as enterprises struggle to determine where AI and automation will have the greatest impact.
+The stock opened at ₹395, below the IPO price of ₹402, and fell as much as 11% to ₹356.10 during the session before recovering to close at ₹404.55. The closing price valued Lenskart at about ₹702 billion (around $8 billion). The IPO was heavily oversubscribed with bids coming in at about 28 times the shares available, led primarily by institutional investors.
