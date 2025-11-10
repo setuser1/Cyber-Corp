@@ -1,29 +1,39 @@
 # Article:
 
 ## Check commits for more!
-https://www.engadget.com/apps/apple-told-to-remove-lgbtq-dating-apps-by-china-130022336.html?src=rss
+https://www.engadget.com/deals/apples-airpods-4-drop-to-85-ahead-of-black-friday-162917226.html?src=rss
 
-Apps
+Deals
 
-Apple told to remove LGBTQ+ dating apps by China
+Apple's AirPods 4 drop to $85 ahead of Black Friday
 
-Blued and Finka were removed from Apple's App Store.
+The best budget AirPods are even cheaper than usual right now.
 
-Sarah Fielding
+Cheyenne MacDonald
 
-Contributing reporter
+Weekend Editor
 
-Mon, November 10, 2025 at 1:00 PM UTC
+UpdatedMon, November 10, 2025 at 12:55 PM UTC
 
-Anadolu via Getty Images
+Billy Steele for Engadget
 
-LGBTQ+ rights and acceptance have taken another hit in China, with Apple removing two of the countries biggest LGBTQ+ dating apps. Wired reports that Blued and Finka are no longer available on the iOS App Store or certain Android App Stores following orders from the Cyberspace Administration of China, the country's internet regulator and censor.
+Black Friday Apple deals are already trickling in, and one of the best we're tracking is on the AirPods 4. They're down to $85 right now, which is a new record low. While these buds don't provide active noise cancellation, they're still a great option for those who want all of the conveniences of a pair of Apple earbuds in an affordable package.
 
-Apple told Wired that it must "follow the laws in the countries where we operate." Both dating apps were available solely in China, where LGBTQ+ dating apps are minimal — Grindr, for instance, hasn't been available on Apple since 2022. Blued exists internationally under the name HeeSay.
+Apple
 
-China has increasingly cracked down on LGBTQ+ individuals' rights and groups in recent years, allegedly shuttering large organizations like the Beijing LGBT Center in 2023. For reasons unknown, Blued previously stopped new registrations this past July, with individuals buying second-hand accounts to use the app. However, it reopened in the middle of August.
+Apple AirPods 4
 
-sBlued and Finka share a parent company, BlueCity, which is, in turn, owned by Newborn Town. BlueCity also operates in the healthcare space, with a non-profit dedicated specifically to prevention and treatment for diseases such as HIV/AIDS.
+$85$129Save $44
+
+The best budget AirPods are 34 percent off.
+
+$85 at Amazon
+
+The Apple AirPods 4 are the best budget AirPods you can get in 2025, with Apple's H2 audio chip to support some of the more advanced audio features from more expensive models. They offer Voice Isolation, Personalized Spatial Audio with dynamic head tracking and more. If you get the model without active noise cancellation, you won't have features like Transparency Mode and Conversation Awareness, or Apple's hearing health tools. But, the entry-level model still offers great sound quality for the price.
+
+This model also features the redesigned shape, which makes for a more comfortable and secure fit so you don't have to worry about them falling out of your ears. A force sensor on the stem allows for basic touch controls, including play and pause, play next track, previous track and answer a call. You can also summon Siri by pressing and holding the stem.
+
+You can expect to get up to 5 hours of battery life on a charge with the non-ANC model, and up to 30 hours using the USB-C charging case.
 
 Advertisement
 
