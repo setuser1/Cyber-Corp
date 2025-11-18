@@ -27,10 +27,18 @@ class Player:
             self.mana = 50
             self.max_mana = 50
             self.spell_power = 10
+        if role == "Warlock":
+            self.hp = 80
+            self.max_hp = 80
+            self.mana = 30
+            self.max_mana = 30
+            self.spell_power = 10
 
     def show_status(self):
         print(f"\nName: {self.name} ({self.role})\nLevel: {self.level}  XP: {self.xp}\nHP: {self.hp}/{self.max_hp}  Gold: {self.gold}")
         if self.role == "Mage":
+            print(f"Mana: {self.mana}/{self.max_mana}  Spell Power: {self.spell_power}")
+        if self.role == "Warlock":
             print(f"Mana: {self.mana}/{self.max_mana}  Spell Power: {self.spell_power}")
         print(f"Attack: {self.attack}  Bleed Chance: {self.bleed_chance}%\nInventory: {self.inventory if self.inventory else 'Empty'}")
 
@@ -171,6 +179,8 @@ def battle(player, enemy):
         print(f"\n{player.name}: {player.hp} HP")
         if player.role == "Mage":
             print(f"Mana: {player.mana}/{player.max_mana}")
+        if player.role == "Warlock":
+            print(f"Mana: {player.mana}/{player.max_mana}")
         print(f"{enemy.name}: {enemy.hp} HP")
 
         choice = input("Choose action: (1) Attack  (2) Use Inventory: ").strip()
@@ -182,6 +192,19 @@ def battle(player, enemy):
                     damage = player.attack + player.spell_power
                     player.mana -= 10
                     print(f"You cast Fireball for {damage} damage!")
+                else:
+                    damage = player.attack
+                    print(f"You attack the {enemy.name} for {damage} damage!")
+            elif player.role == "Warlock":
+                spell_choice = input("Cast spell? (e) Eldritch Blast (-10 MP, +spell power) or (h) Hellfire (-10 HP, +spell power) or (n) Normal Attack: ").strip().lower()
+                if spell_choice == 'e':
+                    damage = player.attack + player.spell_power + random.randint(1,5)
+                    player.mana -= 10
+                    print(f"You cast Eldritch Blast for {damage} damage!")
+                elif spell_choice == "h":
+                    damage = player.attack + player.spell_power + random.randint(1,10)
+                    player.hp -= 10
+                    print(f"You cast Hellfire for {damage} damage!")
                 else:
                     damage = player.attack
                     print(f"You attack the {enemy.name} for {damage} damage!")
@@ -240,6 +263,8 @@ def group_battle(players, enemy):
             print(f"\n{p.name}: {p.hp} HP", end='')
             if p.role == "Mage":
                 print(f", Mana: {p.mana}/{p.max_mana}")
+            if p.role == "Warlock":
+                print(f", Mana: {p.mana}/{p.max_mana}")
             else:
                 print()
 
@@ -252,6 +277,19 @@ def group_battle(players, enemy):
                             damage = p.attack + p.spell_power
                             p.mana -= 10
                             print(f"{p.name} casts Fireball for {damage} damage!")
+                        else:
+                            damage = p.attack
+                            print(f"{p.name} attacks for {damage} damage!")
+                    elif p.role == "Warlock" and p.mana >= 10:
+                        spell_choice = input("Cast spell? (e) Eldritch Blast or (h) Hellfire (n) Normal Attack: ").strip().lower()
+                        if spell_choice == 'e':
+                            damage = p.attack + p.spell_power + random.randint(1,5)
+                            p.mana -= 10
+                            print(f"{p.name} casts Eldritch Blast for {damage} damage!")
+                        elif spell_choice == "h":
+                            damage = p.attack + p.spell_power + random.randint(1,10)
+                            p.hp -= 10
+                            print(f"{p.name} casts Hellfire for {damage} damage!")
                         else:
                             damage = p.attack
                             print(f"{p.name} attacks for {damage} damage!")
@@ -320,6 +358,11 @@ def level_up(player):
     if player.role == "Mage":
         player.max_mana += 10
         player.mana = player.max_mana
+        player.spell_power += 2
+    if player.role == "Warlock":
+        player.max_mana += 5
+        player.mana = player.max_mana
+        player.hp += 5
         player.spell_power += 2
     print(f"\n*** {player.name} leveled up to {player.level}! Stat points +3 ***")
 
@@ -711,9 +754,9 @@ def revive_teammate(current_player, players):
 # Main Game Loop
 # -------------------------------
 def main():
-    print("========================================")
-    print(" Welcome to the Python LitRPG Adventure!")
-    print("========================================\n")
+    print("===========")
+    print(" Welcome!")
+    print("===========\n")
 
     players = []
     save_name = "autosave"  # Default
@@ -734,8 +777,13 @@ def main():
             num_players = 1
 
         for i in range(num_players):
-            role_choice = input(f"Player {i + 1}, choose your class: Enter 1 for Warrior or 2 for Mage (default is Warrior): ").strip()
-            role = "Mage" if role_choice == "2" else "Warrior"
+            role_choice = input(f"Player {i + 1}, choose your class: Enter 1 for Warrior, 2 for Mage, 3 for Warlock (default is Warrior): ").strip()
+            if role_choice == "2":
+                role = "Mage" 
+            elif role_choice == "3":
+                role = "Warlock" 
+            else:
+                role = "Warrior"
             name = input(f"Enter name for Player {i + 1}: ").strip()
             player = Player(name, role)
             assign_quests(player)
