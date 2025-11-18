@@ -108,9 +108,18 @@ CLASS_DEFS = {
         ],
         "stat_options": ["1. Max HP (+4)", "2. Attack (+1)", "3. Max Mana (+5)", "4. Spell Power (+1)"]
     },
-    # To add new classes, just add here:
-    # "Rogue": { ... }
 }
+
+def choose_player_class():
+    print("Choose your class:")
+    for idx, class_name in enumerate(CLASS_DEFS.keys(), 1):
+        print(f"{idx}. {class_name}")
+    choice = input("Enter the number for your class (leave blank for default): ").strip()
+    if choice.isdigit() and 1 <= int(choice) <= len(CLASS_DEFS):
+        role = list(CLASS_DEFS.keys())[int(choice) - 1]
+    else:
+        role = list(CLASS_DEFS.keys())[0]  # Default to first class (Warrior, etc)
+    return role
 
 class Player:
     def __init__(self, name, role="Warrior"):
@@ -865,17 +874,18 @@ def main():
             num_players = 1
 
         for i in range(num_players):
-            role_choice = input(f"Player {i + 1}, choose your class: Enter 1 for Warrior, 2 for Mage, 3 for Warlock (default is Warrior): ").strip()
-            if role_choice == "2":
-                role = "Mage" 
-            elif role_choice == "3":
-                role = "Warlock" 
+            print("\nChoose your class:")
+            for idx, class_name in enumerate(CLASS_DEFS.keys(), 1):
+                print(f"{idx}. {class_name}")
+            role_choice = input(f"Player {i + 1}, enter the number for your chosen class (default is 1): ").strip()
+            if role_choice.isdigit() and 1 <= int(role_choice) <= len(CLASS_DEFS):
+                role = list(CLASS_DEFS.keys())[int(role_choice) - 1]
             else:
-                role = "Warrior"
-            name = input(f"Enter name for Player {i + 1}: ").strip()
-            player = Player(name, role)
-            assign_quests(player)
-            players.append(player)
+                role = list(CLASS_DEFS.keys())[0]
+        name = input(f"Enter name for Player {i + 1}: ").strip()
+        player = Player(name, role)
+        assign_quests(player)
+        players.append(player)
 
         save_name = input("Name your save file: ").strip() or "autosave"
 
