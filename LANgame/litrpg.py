@@ -77,6 +77,41 @@ def cast_spell_menu(player):
 # -------------------------------
 # Player and Enemy Classes
 # -------------------------------
+# Centralize class definitions
+CLASS_DEFS = {
+    "Warrior": {
+        "hp": 100, "max_hp": 100,
+        "mana": 0, "max_mana": 0,
+        "attack": 10,
+        "spell_power": 0,
+        "spell_list": [],
+        "stat_options": ["1. Max HP (+4)", "2. Attack (+1)"]
+    },
+    "Mage": {
+        "hp": 75, "max_hp": 75,
+        "mana": 50, "max_mana": 50,
+        "attack": 10,
+        "spell_power": 10,
+        "spell_list": [
+            {"name": "Fireball", "cost_type": "mana", "cost": 10, "effect": "fireball", "description": "Deal spell power + attack damage."}
+        ],
+        "stat_options": ["1. Max HP (+4)", "2. Attack (+1)", "3. Max Mana (+5)", "4. Spell Power (+1)"]
+    },
+    "Warlock": {
+        "hp": 80, "max_hp": 80,
+        "mana": 30, "max_mana": 30,
+        "attack": 10,
+        "spell_power": 10,
+        "spell_list": [
+            {"name": "Eldritch Blast", "cost_type": "mana", "cost": 10, "effect": "eldritch_blast", "description": "Deal spell power + attack + d5 damage."},
+            {"name": "Hellfire", "cost_type": "hp", "cost": 10, "effect": "hellfire", "description": "Sacrifice HP for massive attack."}
+        ],
+        "stat_options": ["1. Max HP (+4)", "2. Attack (+1)", "3. Max Mana (+5)", "4. Spell Power (+1)"]
+    },
+    # To add new classes, just add here:
+    # "Rogue": { ... }
+}
+
 class Player:
     def __init__(self, name, role="Warrior"):
         self.name = name
@@ -84,33 +119,33 @@ class Player:
         self.level = 1
         self.xp = 0
         self.gold = 100
-        self.hp = 100
-        self.max_hp = 100
-        self.attack = 10
         self.stat_points = 0
         self.inventory = []
         self.bleed_chance = 0
         self.quests = []
-        if role == "Mage":
-            self.hp = 75
-            self.max_hp = 75
-            self.mana = 50
-            self.max_mana = 50
-            self.spell_power = 10
-        if role == "Warlock":
-            self.hp = 80
-            self.max_hp = 80
-            self.mana = 30
-            self.max_mana = 30
-            self.spell_power = 10
+        # Load properties from CLASS_DEFS
+        cfg = CLASS_DEFS.get(role, CLASS_DEFS["Warrior"])
+        self.hp = cfg["hp"]
+        self.max_hp = cfg["max_hp"]
+        self.mana = cfg["mana"]
+        self.max_mana = cfg["max_mana"]
+        self.attack = cfg["attack"]
+        self.spell_power = cfg.get("spell_power", 0)
+        self.spell_list = cfg.get("spell_list", [])
+        self.stat_options = cfg.get("stat_options", [])
 
     def show_status(self):
         print(f"\nName: {self.name} ({self.role})\nLevel: {self.level}  XP: {self.xp}\nHP: {self.hp}/{self.max_hp}  Gold: {self.gold}")
-        if self.role == "Mage":
+        if self.max_mana > 0:
             print(f"Mana: {self.mana}/{self.max_mana}  Spell Power: {self.spell_power}")
-        if self.role == "Warlock":
-            print(f"Mana: {self.mana}/{self.max_mana}  Spell Power: {self.spell_power}")
-        print(f"Attack: {self.attack}  Bleed Chance: {self.bleed_chance}%\nInventory: {self.inventory if self.inventory else 'Empty'}")
+        print(f"Attack: {self.attack}")
+
+def allocate_stats(player):
+    if player.stat_points <= 0:
+        print("\nNo stat points to allocate.")
+        return
+    print(f"\nYou have {player.stat_points} stat points.")
+    print("\n" + "\n".join(player.stat_options))
 
 class Enemy:
     def __init__(self, name, hp, attack, xp_reward, has_bleed_enchantment=False):
@@ -196,47 +231,6 @@ def explore(current_player, all_players):
         print("The area is peaceful. You relax and enjoy the scenery.")
 
     input("\nPress Enter to return to the menu...")
-
-# -------------------------------
-# Stat Allocation
-# -------------------------------
-def allocate_stats(player):
-    if player.stat_points <= 0:
-        print("\nNo stat points to allocate.")
-        return
-
-    print(f"\nYou have {player.stat_points} stat points.")
-    options = ["1. Max HP (+4)", "2. Attack (+1)"]
-    if player.role == "Mage":
-        options += ["3. Max Mana (+5)", "4. Spell Power (+1)"]
-    print("\n" + "\n".join(options))
-
-    while player.stat_points > 0:
-        if player.role == "Mage":
-            choice = input("Choose (1-4), or 'q' to quit: ").strip()
-        else:
-            choice = input("Choose (1-2), or 'q' to quit: ").strip()
-
-        if choice == '1':
-            player.max_hp += 4
-            player.hp += 4
-        elif choice == '2':
-            player.attack += 1
-        elif choice == '3' and player.role == "Mage":
-            player.max_mana += 5
-            player.mana += 5
-        elif choice == '4' and player.role == "Mage":
-            player.spell_power += 1
-        elif choice == 'q':
-            break
-        else:
-            print("Invalid choice.")
-            continue
-
-        player.stat_points -= 1
-        print("Stat applied.")
-
-    print("\nAllocation complete.")
 
 # -------------------------------
 # Battle System
