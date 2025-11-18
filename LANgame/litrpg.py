@@ -196,15 +196,27 @@ def battle(player, enemy):
                     damage = player.attack
                     print(f"You attack the {enemy.name} for {damage} damage!")
             elif player.role == "Warlock":
-                spell_choice = input("Cast spell? (e) Eldritch Blast (-10 MP, +spell power) or (h) Hellfire (-10 HP, +spell power) or (n) Normal Attack: ").strip().lower()
+                spell_choice = input("Cast spell? (e) Eldritch Blast (-10 MP, +spell power) or (h) Hellfire (-HP, +spell power) or (n) Normal Attack: ").strip().lower()
                 if spell_choice == 'e':
                     damage = player.attack + player.spell_power + random.randint(1,5)
                     player.mana -= 10
                     print(f"You cast Eldritch Blast for {damage} damage!")
                 elif spell_choice == "h":
-                    damage = player.attack + player.spell_power + random.randint(1,10)
-                    player.hp -= 10
-                    print(f"You cast Hellfire for {damage} damage!")
+                # Choose how much HP to sacrifice
+                    print(f"You have {player.hp} HP. How much will you sacrifice? (minimum 1, max {player.hp - 1})")
+                    try:
+                        hp_sacrifice = int(input("HP to sacrifice: ").strip())
+                        max_sac = max(1, player.hp - 1)
+                        if not (1 <= hp_sacrifice <= max_sac):
+                            print("Invalid amount.")
+                            return
+                    except:
+                        print("Invalid input.")
+                        return
+                    player.hp -= hp_sacrifice
+                     # Damage scales with HP sacrificed
+                    damage = player.attack + player.spell_power + hp_sacrifice + random.randint(1, 5)
+                    print(f"You cast Hellfire, sacrificing {hp_sacrifice} HP for {damage} damage!")
                 else:
                     damage = player.attack
                     print(f"You attack the {enemy.name} for {damage} damage!")
