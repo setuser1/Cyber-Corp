@@ -75,6 +75,64 @@ def cast_spell_menu(player):
         return None
 
 # -------------------------------
+# Skills Database and Menu
+# -------------------------------
+SKILLS = {
+    "Warrior": [
+        {
+            "name": "Cleave",
+            "cooldown": 3,
+            "description": "A heavy strike that deals extra damage.",
+            "effect": "cleave",
+            "power": 5
+        },
+        {
+            "name": "Berserk",
+            "cooldown": 5,
+            "description": "A furious attack that deals big damage but costs a bit of HP.",
+            "effect": "berserk",
+            "power": 10,
+            "self_hp_cost": 8
+        }
+    ],
+    # Placeholder: mages/warlocks could have active skills later
+    "Mage": [],
+    "Warlock": []
+}
+
+
+def use_skill_menu(player):
+    available_skills = SKILLS.get(player.role, [])
+    if not available_skills:
+        print("You have no class skills.")
+        return None
+
+    print("\nWhich skill would you like to use?")
+    for idx, sk in enumerate(available_skills, 1):
+        cd = player.skill_cooldowns.get(sk["name"], 0)
+        ready = "(Ready)" if cd <= 0 else f"(CD: {cd})"
+        print(f"{idx}. {sk['name']} - {sk['description']} {ready}")
+    print("0. Cancel")
+
+    choice = input("Choose your skill (number): ").strip()
+    if choice == "0":
+        return None
+    try:
+        sk_idx = int(choice) - 1
+        if not (0 <= sk_idx < len(available_skills)):
+            print("Invalid skill choice.")
+            return None
+        selected_skill = available_skills[sk_idx]
+        # Check cooldown
+        if player.skill_cooldowns.get(selected_skill['name'], 0) > 0:
+            print("That skill is on cooldown.")
+            return None
+        return selected_skill
+    except:
+        print("Invalid input.")
+        return None
+
+# -------------------------------
 # Player and Enemy Classes
 # -------------------------------
 # Centralize class definitions
@@ -85,6 +143,10 @@ CLASS_DEFS = {
         "attack": 10,
         "spell_power": 0,
         "spell_list": [],
+        "skill_list": [
+            {"name": "Cleave", "cooldown": 3, "effect": "cleave", "power": 5},
+            {"name": "Berserk", "cooldown": 5, "effect": "berserk", "power": 10, "self_hp_cost": 8}
+        ],
         "stat_options": ["1. Max HP (+4)", "2. Attack (+1)"]
     },
     "Mage": {
@@ -95,6 +157,7 @@ CLASS_DEFS = {
         "spell_list": [
             {"name": "Fireball", "cost_type": "mana", "cost": 10, "effect": "fireball", "description": "Deal spell power + attack damage."}
         ],
+        "skill_list": [],
         "stat_options": ["1. Max HP (+4)", "2. Attack (+1)", "3. Max Mana (+5)", "4. Spell Power (+1)"]
     },
     "Warlock": {
@@ -106,6 +169,7 @@ CLASS_DEFS = {
             {"name": "Eldritch Blast", "cost_type": "mana", "cost": 10, "effect": "eldritch_blast", "description": "Deal spell power + attack + d5 damage."},
             {"name": "Hellfire", "cost_type": "hp", "cost": 10, "effect": "hellfire", "description": "Sacrifice HP for massive attack."}
         ],
+        "skill_list": [],
         "stat_options": ["1. Max HP (+4)", "2. Attack (+1)", "3. Max Mana (+5)", "4. Spell Power (+1)"]
     },
 }
@@ -142,12 +206,19 @@ class Player:
         self.spell_power = cfg.get("spell_power", 0)
         self.spell_list = cfg.get("spell_list", [])
         self.stat_options = cfg.get("stat_options", [])
+        # Skills and cooldown tracking
+        self.skill_list = cfg.get("skill_list", [])
+        self.skill_cooldowns = {}
 
     def show_status(self):
         print(f"\nName: {self.name} ({self.role})\nLevel: {self.level}  XP: {self.xp}\nHP: {self.hp}/{self.max_hp}  Gold: {self.gold}")
         if self.max_mana > 0:
             print(f"Mana: {self.mana}/{self.max_mana}  Spell Power: {self.spell_power}")
         print(f"Attack: {self.attack}")
+        # Show skill cooldowns
+        if self.skill_list:
+            cds = ", ".join([f"{s['name']}: {self.skill_cooldowns.get(s['name'],0)}" for s in self.skill_list])
+            print(f"Skills cooldowns: {cds}")
 
 def allocate_stats(player):
     if player.stat_points <= 0:
@@ -211,22 +282,38 @@ def explore(current_player, all_players):
     outcome = random.random()
 
     if outcome < 0.6:
+        # Normal enemy encounter, with a chance to be a multi-enemy ambush
         enemy_pool = [
             ("Goblin", 30, 5, 20), ("Skeleton", 40, 7, 25),
             ("Wolf", 35, 6, 22), ("Bat", 25, 4, 15),
             ("Orc", 50, 10, 30), ("Troll", 60, 12, 40),
             ("Giant", 70, 15, 50)
         ]
-        enemies = [e for e in enemy_pool if current_player.level >= 3 or e[1] < 50]
-        e = random.choice(enemies)
-        enemy = Enemy(e[0], e[1], e[2], e[3], random.random() < 0.03)
+        enemies_allowed = [e for e in enemy_pool if current_player.level >= 3 or e[1] < 50]
 
-        # Only trigger group battle if there are 2 or more *alive* players
-        living_players = [p for p in all_players if p.hp > 0]
-        if len(living_players) >= 2:
-            group_battle(living_players, enemy)
+        # 20% of encounters with enemies become multi-enemy ambushes
+        if random.random() < 0.20:
+            count = random.choice([2, 2, 3])  # bias towards 2 enemies, sometimes 3
+            chosen = random.choices(enemies_allowed, k=count)
+            enemies = [Enemy(e[0], e[1], e[2], e[3], random.random() < 0.03) for e in chosen]
+
+            # Use all living players if 2+ alive, otherwise the single current player
+            living_players = [p for p in all_players if p.hp > 0]
+            if len(living_players) >= 2:
+                multi_enemy_battle(living_players, enemies)
+            else:
+                multi_enemy_battle([current_player], enemies)
+
         else:
-            battle(current_player, enemy)
+            e = random.choice(enemies_allowed)
+            enemy = Enemy(e[0], e[1], e[2], e[3], random.random() < 0.03)
+
+            # Only trigger group battle if there are 2 or more *alive* players
+            living_players = [p for p in all_players if p.hp > 0]
+            if len(living_players) >= 2:
+                group_battle(living_players, enemy)
+            else:
+                battle(current_player, enemy)
 
     elif outcome < 0.7:
         heal = random.randint(10, 30)
@@ -256,7 +343,7 @@ def battle(player, enemy):
             print(f"Mana: {player.mana}/{player.max_mana}")
         print(f"{enemy.name}: {enemy.hp} HP")
 
-        choice = input("Choose action: (1) Attack  (2) Use Inventory: ").strip()
+        choice = input("Choose action: (1) Attack  (2) Use Inventory  (3) Use Skill: ").strip()
 
         if choice == '1':
             # Dynamic spell menu for Mage and Warlock
@@ -265,31 +352,23 @@ def battle(player, enemy):
                 if spell_choice == 'y':
                     spell = cast_spell_menu(player)
                     if not spell:
-                        damage = player.attack
-                        print(f"You attack the {enemy.name} for {damage} damage!")
-                    elif spell["effect"] == "fireball":
-                        player.mana -= spell["cost"]
-                        damage = player.attack + player.spell_power
-                        print(f"You cast Fireball for {damage} damage!")
-                    elif spell["effect"] == "eldritch_blast":
-                        player.mana -= spell["cost"]
-                        damage = player.attack + player.spell_power + random.randint(1,5)
-                        print(f"You cast Eldritch Blast for {damage} damage!")
-                    elif spell["effect"] == "hellfire":
-                        print(f"You have {player.hp} HP. How much will you sacrifice? (minimum 1, max {player.hp - 1})")
-                        try:
-                            max_sac = max(1, player.hp - 1)
-                            hp_sacrifice = int(input("HP to sacrifice: ").strip())
-                            if not (1 <= hp_sacrifice <= max_sac):
-                                print("Invalid amount.")
-                                damage = 0
-                            else:
-                                player.hp -= hp_sacrifice
-                                damage = player.attack + player.spell_power + hp_sacrifice + random.randint(1, 5)
-                                print(f"You cast Hellfire, sacrificing {hp_sacrifice} HP for {damage} damage!")
-                        except:
-                            print("Invalid input.")
-                            damage = 0
+                        # cancelled or can't afford, skip applying spell
+                        pass
+                    else:
+                        if spell["effect"] == "fireball":
+                            damage = player.spell_power + player.attack
+                            player.mana -= spell.get("cost", 0)
+                            print(f"You cast Fireball for {damage} damage!")
+                        elif spell["effect"] == "eldritch_blast":
+                            damage = player.spell_power + player.attack + random.randint(1,5)
+                            player.mana -= spell.get("cost", 0)
+                            print(f"You cast Eldritch Blast for {damage} damage!")
+                        elif spell["effect"] == "hellfire":
+                            damage = player.spell_power + player.attack + 15
+                            player.hp -= spell.get("cost", 0)
+                            print(f"You use Hellfire for {damage} damage at the cost of HP!")
+                        else:
+                            damage = player.attack
                 else:
                     damage = player.attack
                     print(f"You attack the {enemy.name} for {damage} damage!")
@@ -307,6 +386,28 @@ def battle(player, enemy):
             used = manage_inventory(player, [player], in_battle=True)
             if not used:
                 continue
+
+        elif choice == '3':
+            skill = use_skill_menu(player)
+            if not skill:
+                continue
+            # Apply skill effects
+            if skill['effect'] == 'cleave':
+                damage = player.attack + skill.get('power', 0)
+                print(f"You use {skill['name']} for {damage} damage!")
+            elif skill['effect'] == 'berserk':
+                damage = player.attack + skill.get('power', 0)
+                self_cost = skill.get('self_hp_cost', 0)
+                player.hp = max(1, player.hp - self_cost)
+                print(f"You go berserk! {skill['name']} deals {damage} damage but costs {self_cost} HP.")
+            else:
+                damage = player.attack
+                print(f"You use {skill['name']} for {damage} damage!")
+
+            # put skill on cooldown
+            player.skill_cooldowns[skill['name']] = skill.get('cooldown', 1)
+            enemy.hp -= damage
+
         else:
             print("Invalid choice.")
             continue
@@ -354,7 +455,7 @@ def group_battle(players, enemy):
                 print()
 
             while True:
-                choice = input(f"{p.name}'s turn - (1) Attack  (2) Inventory: ").strip()
+                choice = input(f"{p.name}'s turn - (1) Attack  (2) Inventory  (3) Skill: ").strip()
                 if choice == '1':
                     # Dynamic spell menu for Mage/Warlock!
                     if p.role in SPELLS:
@@ -362,31 +463,23 @@ def group_battle(players, enemy):
                         if spell_choice == 'y':
                             spell = cast_spell_menu(p)
                             if not spell:
-                                damage = p.attack
-                                print(f"{p.name} attacks for {damage} damage!")
-                            elif spell["effect"] == "fireball":
-                                p.mana -= spell["cost"]
-                                damage = p.attack + p.spell_power
-                                print(f"{p.name} casts Fireball for {damage} damage!")
-                            elif spell["effect"] == "eldritch_blast":
-                                p.mana -= spell["cost"]
-                                damage = p.attack + p.spell_power + random.randint(1,5)
-                                print(f"{p.name} casts Eldritch Blast for {damage} damage!")
-                            elif spell["effect"] == "hellfire":
-                                print(f"You have {p.hp} HP. How much will you sacrifice? (minimum 1, max {p.hp - 1})")
-                                try:
-                                    max_sac = max(1, p.hp - 1)
-                                    hp_sacrifice = int(input("HP to sacrifice: ").strip())
-                                    if not (1 <= hp_sacrifice <= max_sac):
-                                        print("Invalid amount.")
-                                        damage = 0
-                                    else:
-                                        p.hp -= hp_sacrifice
-                                        damage = p.attack + p.spell_power + hp_sacrifice + random.randint(1, 5)
-                                        print(f"{p.name} casts Hellfire, sacrificing {hp_sacrifice} HP for {damage} damage!")
-                                except:
-                                    print("Invalid input.")
-                                    damage = 0
+                                # cancelled
+                                pass
+                            else:
+                                if spell["effect"] == "fireball":
+                                    damage = p.spell_power + p.attack
+                                    p.mana -= spell.get("cost", 0)
+                                    print(f"{p.name} casts Fireball for {damage} damage!")
+                                elif spell["effect"] == "eldritch_blast":
+                                    damage = p.spell_power + p.attack + random.randint(1,5)
+                                    p.mana -= spell.get("cost", 0)
+                                    print(f"{p.name} casts Eldritch Blast for {damage} damage!")
+                                elif spell["effect"] == "hellfire":
+                                    damage = p.spell_power + p.attack + 15
+                                    p.hp -= spell.get("cost", 0)
+                                    print(f"{p.name} uses Hellfire for {damage} damage at the cost of HP!")
+                                else:
+                                    damage = p.attack
                         else:
                             damage = p.attack
                             print(f"{p.name} attacks for {damage} damage!")
@@ -407,6 +500,26 @@ def group_battle(players, enemy):
                         break  # Turn used
                     else:
                         continue  # Let them act again
+
+                elif choice == '3':
+                    skill = use_skill_menu(p)
+                    if not skill:
+                        continue
+                    if skill['effect'] == 'cleave':
+                        damage = p.attack + skill.get('power', 0)
+                        print(f"{p.name} uses {skill['name']} for {damage} damage!")
+                    elif skill['effect'] == 'berserk':
+                        damage = p.attack + skill.get('power', 0)
+                        self_cost = skill.get('self_hp_cost', 0)
+                        p.hp = max(1, p.hp - self_cost)
+                        print(f"{p.name} goes berserk! {skill['name']} deals {damage} damage but costs {self_cost} HP.")
+                    else:
+                        damage = p.attack
+                        print(f"{p.name} uses {skill['name']} for {damage} damage!")
+
+                    p.skill_cooldowns[skill['name']] = skill.get('cooldown', 1)
+                    enemy.hp -= damage
+                    break
 
                 else:
                     print("Invalid choice.")
@@ -442,6 +555,193 @@ def group_battle(players, enemy):
                 check_quests(p, "kill")
     else:
         print("\nThe party has been defeated.")
+
+def multi_enemy_battle(players, enemies):
+    """
+    Handles battles where players face multiple enemies.
+    `players` is a list of Player objects (one or more).
+    `enemies` is a list of Enemy objects.
+    Players may attempt to escape during the encounter (chance depends on number of enemies and player level).
+    """
+    print(f"\nAmbush! {len(enemies)} enemies appear!")
+
+    # Show enemies
+    for idx, e in enumerate(enemies, 1):
+        print(f" {idx}. {e.name} - {e.hp} HP")
+
+    # Offer an initial escape attempt (by lead player)
+    lead = players[0]
+    try_escape = input("Attempt to escape before fighting? (y/n): ").strip().lower()
+    def calc_escape_chance(player):
+        base = 60
+        penalty = 10 * (len(enemies) - 1)
+        level_bonus = player.level * 2
+        chance = max(10, base - penalty + level_bonus)
+        return chance
+
+    if try_escape == 'y':
+        chance = calc_escape_chance(lead)
+        roll = random.randint(1, 100)
+        if roll <= chance:
+            print(f"You successfully escaped! (rolled {roll} <= {chance})")
+            return
+        else:
+            print(f"Escape failed! (rolled {roll} > {chance}) The enemies block your path and strike first!")
+            # enemies get a free round of attacks
+            for e in enemies:
+                if e.hp <= 0:
+                    continue
+                target = random.choice([p for p in players if p.hp > 0])
+                dmg = e.attack
+                target.hp -= dmg
+                print(f"{e.name} hits {target.name} for {dmg} damage!")
+
+    # Main loop
+    while any(e.hp > 0 for e in enemies) and any(p.hp > 0 for p in players):
+        # Players' turns
+        for p in players:
+            if p.hp <= 0:
+                continue
+            print(f"\n{p.name}: {p.hp} HP")
+            if p.max_mana > 0:
+                print(f"Mana: {p.mana}/{p.max_mana}")
+            print("Enemies:")
+            for idx, e in enumerate(enemies, 1):
+                if e.hp > 0:
+                    print(f" {idx}. {e.name} - {e.hp} HP")
+
+            choice = input("Choose action: (1) Attack  (2) Use Inventory  (3) Use Skill  (4) Attempt Escape: ").strip()
+
+            if choice == '1':
+                # Choose target enemy
+                alive_enemies = [e for e in enemies if e.hp > 0]
+                for idx, e in enumerate(alive_enemies, 1):
+                    print(f"{idx}. {e.name} - {e.hp} HP")
+                t_choice = input("Choose enemy target: ").strip()
+                try:
+                    target = alive_enemies[int(t_choice) - 1]
+                except:
+                    print("Invalid target.")
+                    continue
+
+                # Spell support for Mage/Warlock
+                if p.role in SPELLS:
+                    spell_choice = input("Cast spell? (y) Yes or (n) Normal Attack: ").strip().lower()
+                    if spell_choice == 'y':
+                        spell = cast_spell_menu(p)
+                        if spell:
+                            if spell["effect"] == "fireball":
+                                damage = p.spell_power + p.attack
+                                p.mana -= spell.get("cost", 0)
+                                print(f"{p.name} casts Fireball for {damage} damage on {target.name}!")
+                            elif spell["effect"] == "eldritch_blast":
+                                damage = p.spell_power + p.attack + random.randint(1,5)
+                                p.mana -= spell.get("cost", 0)
+                                print(f"{p.name} casts Eldritch Blast for {damage} damage on {target.name}!")
+                            elif spell["effect"] == "hellfire":
+                                damage = p.spell_power + p.attack + 15
+                                p.hp -= spell.get("cost", 0)
+                                print(f"{p.name} uses Hellfire for {damage} damage on {target.name} at the cost of HP!")
+                            else:
+                                damage = p.attack
+                        else:
+                            damage = p.attack
+                            print(f"{p.name} attacks {target.name} for {damage} damage!")
+                    else:
+                        damage = p.attack
+                        print(f"{p.name} attacks {target.name} for {damage} damage!")
+                else:
+                    damage = p.attack
+                    print(f"{p.name} attacks {target.name} for {damage} damage!")
+
+                if random.randint(1, 100) <= p.bleed_chance:
+                    print("Bleed applied to the enemy!")
+                    target.hp -= 5  # small bleed instant
+
+                target.hp -= damage
+
+            elif choice == '2':
+                used = manage_inventory(p, players, in_battle=True)
+                if not used:
+                    continue
+
+            elif choice == '3':
+                skill = use_skill_menu(p)
+                if not skill:
+                    continue
+                # Target skill effects at a single enemy for simplicity
+                alive_enemies = [e for e in enemies if e.hp > 0]
+                if not alive_enemies:
+                    continue
+                target = alive_enemies[0]
+                if skill['effect'] == 'cleave':
+                    # Cleave deals extra damage and hits one additional enemy if present
+                    damage = p.attack + skill.get('power', 0)
+                    print(f"{p.name} uses {skill['name']} for {damage} damage on {target.name}!")
+                    target.hp -= damage
+                    # Hit a second enemy if exists
+                    others = [e for e in enemies if e.hp > 0 and e is not target]
+                    if others:
+                        splash = others[0]
+                        splash_dmg = max(1, damage // 2)
+                        splash.hp -= splash_dmg
+                        print(f"{skill['name']} also hits {splash.name} for {splash_dmg} damage!")
+                elif skill['effect'] == 'berserk':
+                    damage = p.attack + skill.get('power', 0)
+                    self_cost = skill.get('self_hp_cost', 0)
+                    p.hp = max(1, p.hp - self_cost)
+                    print(f"{p.name} goes berserk! {skill['name']} deals {damage} damage but costs {self_cost} HP.")
+                    target.hp -= damage
+                else:
+                    damage = p.attack
+                    print(f"{p.name} uses {skill['name']} for {damage} damage on {target.name}!")
+                    target.hp -= damage
+
+                p.skill_cooldowns[skill['name']] = skill.get('cooldown', 1)
+
+            elif choice == '4':
+                # Attempt to escape mid-battle
+                chance = calc_escape_chance(p)
+                roll = random.randint(1, 100)
+                if roll <= chance:
+                    print(f"{p.name} successfully escaped the battle! (rolled {roll} <= {chance})")
+                    return
+                else:
+                    print(f"{p.name} failed to escape (rolled {roll} > {chance}).")
+                    # continue; enemies will act next
+
+            else:
+                print("Invalid choice.")
+                continue
+
+            # Remove defeated enemies quietly
+            enemies = [e for e in enemies if e.hp > 0]
+            if not enemies:
+                break
+
+        # Enemies' turn
+        if enemies and any(p.hp > 0 for p in players):
+            for e in enemies:
+                if e.hp <= 0:
+                    continue
+                target = random.choice([p for p in players if p.hp > 0])
+                dmg = e.attack
+                target.hp -= dmg
+                print(f"\n{e.name} attacks {target.name} for {dmg} damage!")
+
+    # Outcome
+    if not any(e.hp > 0 for e in enemies):
+        print("\nYou defeated all enemies!")
+        total_xp = sum(e.xp_reward for e in enemies)
+        for p in players:
+            if p.hp > 0:
+                p.xp += total_xp
+                print(f"{p.name} gains {total_xp} XP!")
+                if p.xp >= p.level * 100:
+                    level_up(p)
+                check_quests(p, "kill")
+    else:
+        print("\nYour party was defeated by the ambush.")
 
 # -------------------------------
 # Level Up System
@@ -893,6 +1193,15 @@ def main():
     turn = 0
     while any(p.hp > 0 for p in players):
         player = players[turn]
+
+        # Decrement skill cooldowns for the active player at the start of their turn
+        if hasattr(player, 'skill_cooldowns'):
+            for s in list(player.skill_cooldowns.keys()):
+                if player.skill_cooldowns[s] > 0:
+                    player.skill_cooldowns[s] -= 1
+                    if player.skill_cooldowns[s] == 0:
+                        print(f"{player.name}'s skill '{s}' is ready!")
+
         if player.hp <= 0:
             print(f"\n{player.name} is unconscious and skips their turn.")
             turn = (turn + 1) % len(players)
