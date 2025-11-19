@@ -35,6 +35,20 @@ SPELLS = {
     ]
 }
 
+# Developer-only access password (can be overridden by env var LITRPG_DEV_PASSWORD)
+DEV_PASSWORD = os.environ.get("LITRPG_DEV_PASSWORD", "devpass")
+
+# Add Cultivator starting spells (developer-only)
+SPELLS.setdefault("Cultivator", [
+    {
+        "name": "Qi Strike",
+        "cost_type": "qi",
+        "cost": 8,
+        "description": "Strike using cultivated Qi to deal spell_power + attack damage.",
+        "effect": "qi_strike"
+    }
+])
+
 def cast_spell_menu(player):
     available_spells = SPELLS.get(player.role, [])
     if not available_spells:
@@ -44,7 +58,9 @@ def cast_spell_menu(player):
     print("\nWhich spell would you like to cast?")
     for idx, sp in enumerate(available_spells, 1):
         if sp["cost_type"] == "mana":
-            affordable = player.mana >= sp["cost"]
+            affordable = getattr(player, 'mana', 0) >= sp["cost"]
+        elif sp["cost_type"] == "qi":
+            affordable = getattr(player, 'qi', 0) >= sp["cost"]
         elif sp["cost_type"] == "hp":
             affordable = player.hp > sp["cost"]
         else:
@@ -63,8 +79,11 @@ def cast_spell_menu(player):
             return None
         selected_spell = available_spells[spell_idx]
         # Affordability check
-        if selected_spell["cost_type"] == "mana" and player.mana < selected_spell["cost"]:
+        if selected_spell["cost_type"] == "mana" and getattr(player, 'mana', 0) < selected_spell["cost"]:
             print("Not enough mana!")
+            return None
+        if selected_spell["cost_type"] == "qi" and getattr(player, 'qi', 0) < selected_spell["cost"]:
+            print("Not enough Qi!")
             return None
         if selected_spell["cost_type"] == "hp" and player.hp <= selected_spell["cost"]:
             print("Not enough HP!")
@@ -99,6 +118,25 @@ SKILLS = {
     "Mage": [],
     "Warlock": []
 }
+
+# Cultivator skills (developer-only)
+SKILLS.setdefault("Cultivator", [
+    {
+        "name": "Flowing Palm",
+        "cooldown": 3,
+        "description": "A precise strike that scales with Qi.", 
+        "effect": "flowing_palm",
+        "power": 6
+    },
+    {
+        "name": "Overcharge",
+        "cooldown": 6,
+        "description": "Channel Qi to greatly increase next attack at cost of Qi.",
+        "effect": "overcharge",
+        "power": 14,
+        "qi_cost": 10
+    }
+])
 
 
 def use_skill_menu(player):
@@ -172,6 +210,20 @@ CLASS_DEFS = {
         "skill_list": [],
         "stat_options": ["1. Max HP (+4)", "2. Attack (+1)", "3. Max Mana (+5)", "4. Spell Power (+1)"]
     },
+    "Cultivator": {
+        "hp": 85, "max_hp": 85,
+        "qi": 60, "max_qi": 60,
+        "attack": 9,
+        "spell_power": 12,
+        "spell_list": [
+            {"name": "Qi Strike", "cost_type": "qi", "cost": 8, "effect": "qi_strike", "description": "Strike using cultivated Qi to deal spell_power + attack damage."}
+        ],
+        "skill_list": [
+            {"name": "Flowing Palm", "cooldown": 3, "effect": "flowing_palm", "power": 6},
+            {"name": "Overcharge", "cooldown": 6, "effect": "overcharge", "power": 14, "qi_cost": 10}
+        ],
+        "stat_options": ["1. Max HP (+4)", "2. Attack (+1)", "3. Max Qi (+5)", "4. Spell Power (+1)"]
+    },
 }
 
 def choose_player_class():
@@ -183,6 +235,14 @@ def choose_player_class():
         role = list(CLASS_DEFS.keys())[int(choice) - 1]
     else:
         role = list(CLASS_DEFS.keys())[0]  # Default to first class (Warrior, etc)
+
+    # Developer-only class protection
+    if role == "Cultivator":
+        pwd = input("Developer class selected. Enter developer password to unlock (leave blank to cancel): ").strip()
+        if not pwd or pwd != DEV_PASSWORD:
+            print("Access denied or cancelled. Defaulting to Warrior.")
+            role = list(CLASS_DEFS.keys())[0]
+
     return role
 
 class Player:
@@ -200,8 +260,11 @@ class Player:
         cfg = CLASS_DEFS.get(role, CLASS_DEFS["Warrior"])
         self.hp = cfg["hp"]
         self.max_hp = cfg["max_hp"]
-        self.mana = cfg["mana"]
-        self.max_mana = cfg["max_mana"]
+        # Support both classic 'mana' and Cultivator's 'qi'. Keep both attributes for compatibility.
+        self.mana = cfg.get("mana", 0)
+        self.max_mana = cfg.get("max_mana", 0)
+        self.qi = cfg.get("qi", self.mana)
+        self.max_qi = cfg.get("max_qi", self.max_mana)
         self.attack = cfg["attack"]
         self.spell_power = cfg.get("spell_power", 0)
         self.spell_list = cfg.get("spell_list", [])
@@ -212,7 +275,10 @@ class Player:
 
     def show_status(self):
         print(f"\nName: {self.name} ({self.role})\nLevel: {self.level}  XP: {self.xp}\nHP: {self.hp}/{self.max_hp}  Gold: {self.gold}")
-        if self.max_mana > 0:
+        # Show resource depending on class (Mana or Qi)
+        if getattr(self, 'max_qi', 0) > 0:
+            print(f"Qi: {getattr(self, 'qi', 0)}/{getattr(self, 'max_qi', 0)}  Spell Power: {self.spell_power}")
+        elif self.max_mana > 0:
             print(f"Mana: {self.mana}/{self.max_mana}  Spell Power: {self.spell_power}")
         print(f"Attack: {self.attack}")
         # Show skill cooldowns
@@ -337,9 +403,10 @@ def battle(player, enemy):
 
     while enemy.hp > 0 and player.hp > 0:
         print(f"\n{player.name}: {player.hp} HP")
-        if player.role == "Mage":
-            print(f"Mana: {player.mana}/{player.max_mana}")
-        if player.role == "Warlock":
+        # Show resource (Mana or Qi) depending on class
+        if getattr(player, 'max_qi', 0) > 0:
+            print(f"Qi: {getattr(player, 'qi', 0)}/{getattr(player, 'max_qi', 0)}")
+        elif player.role in ("Mage", "Warlock") or player.max_mana > 0:
             print(f"Mana: {player.mana}/{player.max_mana}")
         print(f"{enemy.name}: {enemy.hp} HP")
 
@@ -357,8 +424,19 @@ def battle(player, enemy):
                     else:
                         if spell["effect"] == "fireball":
                             damage = player.spell_power + player.attack
-                            player.mana -= spell.get("cost", 0)
+                            # deduct resource based on spell's cost_type
+                            if spell.get("cost_type") == "mana":
+                                player.mana -= spell.get("cost", 0)
+                            elif spell.get("cost_type") == "qi":
+                                player.qi -= spell.get("cost", 0)
                             print(f"You cast Fireball for {damage} damage!")
+                        elif spell["effect"] == "qi_strike":
+                            damage = player.spell_power + player.attack
+                            if spell.get("cost_type") == "mana":
+                                player.mana -= spell.get("cost", 0)
+                            elif spell.get("cost_type") == "qi":
+                                player.qi -= spell.get("cost", 0)
+                            print(f"You channel Qi and strike for {damage} damage!")
                         elif spell["effect"] == "eldritch_blast":
                             damage = player.spell_power + player.attack + random.randint(1,5)
                             player.mana -= spell.get("cost", 0)
@@ -386,7 +464,6 @@ def battle(player, enemy):
             used = manage_inventory(player, [player], in_battle=True)
             if not used:
                 continue
-
         elif choice == '3':
             skill = use_skill_menu(player)
             if not skill:
@@ -395,6 +472,26 @@ def battle(player, enemy):
             if skill['effect'] == 'cleave':
                 damage = player.attack + skill.get('power', 0)
                 print(f"You use {skill['name']} for {damage} damage!")
+            elif skill['effect'] == 'flowing_palm':
+                damage = player.spell_power + player.attack + skill.get('power', 0)
+                print(f"You use {skill['name']} for {damage} Qi damage!")
+            elif skill['effect'] == 'overcharge':
+                # Support either mana_cost or qi_cost
+                cost = skill.get('mana_cost', skill.get('qi_cost', 0))
+                if skill.get('qi_cost') is not None or player.role == 'Cultivator':
+                    if getattr(player, 'qi', 0) < cost:
+                        print("Not enough Qi to use that skill!")
+                        continue
+                    player.qi -= cost
+                    cost_label = 'Qi'
+                else:
+                    if getattr(player, 'mana', 0) < cost:
+                        print("Not enough mana to use that skill!")
+                        continue
+                    player.mana -= cost
+                    cost_label = 'mana'
+                damage = player.attack + skill.get('power', 0) + player.spell_power
+                print(f"You overcharge and deal {damage} damage (cost {cost} {cost_label})!")
             elif skill['effect'] == 'berserk':
                 damage = player.attack + skill.get('power', 0)
                 self_cost = skill.get('self_hp_cost', 0)
@@ -447,9 +544,10 @@ def group_battle(players, enemy):
             if p.hp <= 0:
                 continue
             print(f"\n{p.name}: {p.hp} HP", end='')
-            if p.role == "Mage":
-                print(f", Mana: {p.mana}/{p.max_mana}")
-            elif p.role == "Warlock":
+            # Show resource (Mana or Qi)
+            if getattr(p, 'max_qi', 0) > 0:
+                print(f", Qi: {getattr(p, 'qi', 0)}/{getattr(p, 'max_qi', 0)}")
+            elif p.role in ("Mage", "Warlock") or p.max_mana > 0:
                 print(f", Mana: {p.mana}/{p.max_mana}")
             else:
                 print()
@@ -468,11 +566,17 @@ def group_battle(players, enemy):
                             else:
                                 if spell["effect"] == "fireball":
                                     damage = p.spell_power + p.attack
-                                    p.mana -= spell.get("cost", 0)
+                                    if spell.get("cost_type") == "mana":
+                                        p.mana -= spell.get("cost", 0)
+                                    elif spell.get("cost_type") == "qi":
+                                        p.qi -= spell.get("cost", 0)
                                     print(f"{p.name} casts Fireball for {damage} damage!")
                                 elif spell["effect"] == "eldritch_blast":
                                     damage = p.spell_power + p.attack + random.randint(1,5)
-                                    p.mana -= spell.get("cost", 0)
+                                    if spell.get("cost_type") == "mana":
+                                        p.mana -= spell.get("cost", 0)
+                                    elif spell.get("cost_type") == "qi":
+                                        p.qi -= spell.get("cost", 0)
                                     print(f"{p.name} casts Eldritch Blast for {damage} damage!")
                                 elif spell["effect"] == "hellfire":
                                     damage = p.spell_power + p.attack + 15
@@ -508,6 +612,25 @@ def group_battle(players, enemy):
                     if skill['effect'] == 'cleave':
                         damage = p.attack + skill.get('power', 0)
                         print(f"{p.name} uses {skill['name']} for {damage} damage!")
+                    elif skill['effect'] == 'flowing_palm':
+                        damage = p.spell_power + p.attack + skill.get('power', 0)
+                        print(f"{p.name} uses {skill['name']} for {damage} Qi damage!")
+                    elif skill['effect'] == 'overcharge':
+                        cost = skill.get('mana_cost', skill.get('qi_cost', 0))
+                        if skill.get('qi_cost') is not None or p.role == 'Cultivator':
+                            if getattr(p, 'qi', 0) < cost:
+                                print(f"{p.name} doesn't have enough Qi for {skill['name']}!")
+                                continue
+                            p.qi -= cost
+                            cost_label = 'Qi'
+                        else:
+                            if getattr(p, 'mana', 0) < cost:
+                                print(f"{p.name} doesn't have enough mana for {skill['name']}!")
+                                continue
+                            p.mana -= cost
+                            cost_label = 'mana'
+                        damage = p.attack + skill.get('power', 0) + p.spell_power
+                        print(f"{p.name} overcharges and deals {damage} damage (cost {cost} {cost_label})!")
                     elif skill['effect'] == 'berserk':
                         damage = p.attack + skill.get('power', 0)
                         self_cost = skill.get('self_hp_cost', 0)
@@ -603,7 +726,10 @@ def multi_enemy_battle(players, enemies):
             if p.hp <= 0:
                 continue
             print(f"\n{p.name}: {p.hp} HP")
-            if p.max_mana > 0:
+            # Show resource (Mana or Qi)
+            if getattr(p, 'max_qi', 0) > 0:
+                print(f"Qi: {getattr(p, 'qi', 0)}/{getattr(p, 'max_qi', 0)}")
+            elif p.max_mana > 0:
                 print(f"Mana: {p.mana}/{p.max_mana}")
             print("Enemies:")
             for idx, e in enumerate(enemies, 1):
@@ -632,11 +758,24 @@ def multi_enemy_battle(players, enemies):
                         if spell:
                             if spell["effect"] == "fireball":
                                 damage = p.spell_power + p.attack
-                                p.mana -= spell.get("cost", 0)
+                                if spell.get("cost_type") == "mana":
+                                    p.mana -= spell.get("cost", 0)
+                                elif spell.get("cost_type") == "qi":
+                                    p.qi -= spell.get("cost", 0)
                                 print(f"{p.name} casts Fireball for {damage} damage on {target.name}!")
+                            elif spell["effect"] == "qi_strike":
+                                damage = p.spell_power + p.attack
+                                if spell.get("cost_type") == "mana":
+                                    p.mana -= spell.get("cost", 0)
+                                elif spell.get("cost_type") == "qi":
+                                    p.qi -= spell.get("cost", 0)
+                                print(f"{p.name} channels Qi and strikes {target.name} for {damage} damage!")
                             elif spell["effect"] == "eldritch_blast":
                                 damage = p.spell_power + p.attack + random.randint(1,5)
-                                p.mana -= spell.get("cost", 0)
+                                if spell.get("cost_type") == "mana":
+                                    p.mana -= spell.get("cost", 0)
+                                elif spell.get("cost_type") == "qi":
+                                    p.qi -= spell.get("cost", 0)
                                 print(f"{p.name} casts Eldritch Blast for {damage} damage on {target.name}!")
                             elif spell["effect"] == "hellfire":
                                 damage = p.spell_power + p.attack + 15
@@ -686,6 +825,26 @@ def multi_enemy_battle(players, enemies):
                         splash_dmg = max(1, damage // 2)
                         splash.hp -= splash_dmg
                         print(f"{skill['name']} also hits {splash.name} for {splash_dmg} damage!")
+                elif skill['effect'] == 'flowing_palm':
+                    damage = p.spell_power + p.attack + skill.get('power', 0)
+                    print(f"{p.name} uses {skill['name']} for {damage} Qi damage on {target.name}!")
+                    target.hp -= damage
+                elif skill['effect'] == 'overcharge':
+                    cost = skill.get('mana_cost', skill.get('qi_cost', 0))
+                    if skill.get('qi_cost') is not None or p.role == 'Cultivator':
+                        if getattr(p, 'qi', 0) < cost:
+                            print(f"{p.name} doesn't have enough Qi for {skill['name']}!")
+                            continue
+                        p.qi -= cost
+                        cost_label = 'Qi'
+                    else:
+                        if getattr(p, 'mana', 0) < cost:
+                            print(f"{p.name} doesn't have enough mana for {skill['name']}!")
+                            continue
+                        p.mana -= cost
+                        cost_label = 'mana'
+                    damage = p.attack + skill.get('power', 0) + p.spell_power
+                    print(f"{p.name} overcharges and deals {damage} damage (cost {cost} {cost_label}) on {target.name}!")
                 elif skill['effect'] == 'berserk':
                     damage = p.attack + skill.get('power', 0)
                     self_cost = skill.get('self_hp_cost', 0)
@@ -761,6 +920,13 @@ def level_up(player):
         player.mana = player.max_mana
         player.hp += 5
         player.spell_power += 2
+    if player.role == "Cultivator":
+        # Cultivator breakthroughs feel special
+        player.max_qi += 10
+        player.qi = player.max_qi
+        player.spell_power += 2
+        print(f"\n*** {player.name} broke through a realm and advanced to level {player.level}! Stat points +3 ***")
+        return
     print(f"\n*** {player.name} leveled up to {player.level}! Stat points +3 ***")
 
 # -------------------------------
@@ -1182,6 +1348,12 @@ def main():
                 role = list(CLASS_DEFS.keys())[int(role_choice) - 1]
             else:
                 role = list(CLASS_DEFS.keys())[0]
+            # If the developer-only class was chosen, require the developer password
+            if role == "Cultivator":
+                pwd = input("Developer class selected. Enter developer password to unlock (leave blank to cancel): ").strip()
+                if not pwd or pwd != DEV_PASSWORD:
+                    print("Access denied or cancelled. Defaulting to Warrior.")
+                    role = list(CLASS_DEFS.keys())[0]
         name = input(f"Enter name for Player {i + 1}: ").strip()
         player = Player(name, role)
         assign_quests(player)
@@ -1210,6 +1382,9 @@ def main():
         if player.role == "Mage":
             player.mana = min(player.max_mana, player.mana + 5)
             print(f"\n({player.name}'s mana regenerates by 5. Mana: {player.mana}/{player.max_mana})")
+        elif player.role == "Cultivator":
+            player.qi = min(getattr(player, 'max_qi', 0), getattr(player, 'qi', 0) + 5)
+            print(f"\n({player.name}'s Qi regenerates by 5. Qi: {getattr(player, 'qi', 0)}/{getattr(player, 'max_qi', 0)})")
 
         result = main_menu(player, players)
 
