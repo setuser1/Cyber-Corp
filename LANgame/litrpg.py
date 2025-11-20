@@ -43,7 +43,7 @@ SPELLS.setdefault("Cultivator", [
     {
         "name": "Qi Strike",
         "cost_type": "qi",
-        "cost": 8,
+        "cost": 10,
         "description": "Strike using cultivated Qi to deal spell_power + attack damage.",
         "effect": "qi_strike"
     }
@@ -925,7 +925,9 @@ def level_up(player):
         player.max_qi += 10
         player.qi = player.max_qi
         player.spell_power += 2
-        print(f"\n*** {player.name} broke through a realm and advanced to level {player.level}! Stat points +3 ***")
+        print(f"\n*** {player.name} broke through and advanced to level {player.level} of Qi Condensing Realm! Stat points +3 ***")
+        if player.level >= 10:
+            print(f"\n*** {player.name} broke through and advanced to level {player.level - 10} of Foundation Realm! Stat points +3 ***")
         return
     print(f"\n*** {player.name} leveled up to {player.level}! Stat points +3 ***")
 
