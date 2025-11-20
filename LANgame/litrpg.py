@@ -126,15 +126,15 @@ SKILLS.setdefault("Cultivator", [
         "cooldown": 3,
         "description": "A precise strike that scales with Qi.", 
         "effect": "flowing_palm",
-        "power": 6
+        "power": 20
     },
     {
         "name": "Overcharge",
         "cooldown": 6,
         "description": "Channel Qi to greatly increase next attack at cost of Qi.",
         "effect": "overcharge",
-        "power": 14,
-        "qi_cost": 10
+        "power": 30,
+        "qi_cost": 15
     }
 ])
 
@@ -219,8 +219,8 @@ CLASS_DEFS = {
             {"name": "Qi Strike", "cost_type": "qi", "cost": 10, "effect": "qi_strike", "description": "Strike using cultivated Qi to deal spell_power + attack damage."}
         ],
         "skill_list": [
-            {"name": "Flowing Palm", "cooldown": 3, "effect": "flowing_palm", "power": 10},
-            {"name": "Overcharge", "cooldown": 6, "effect": "overcharge", "power": 20, "qi_cost": 15}
+            {"name": "Flowing Palm", "cooldown": 3, "effect": "flowing_palm", "power": 20},
+            {"name": "Overcharge", "cooldown": 6, "effect": "overcharge", "power": 30, "qi_cost": 15}
         ],
         "stat_options": ["1. Max HP (+4)", "2. Attack (+1)", "3. Max Qi (+5)", "4. Spell Power (+1)"]
     },
