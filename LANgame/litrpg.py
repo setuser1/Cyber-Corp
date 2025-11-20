@@ -211,16 +211,16 @@ CLASS_DEFS = {
         "stat_options": ["1. Max HP (+4)", "2. Attack (+1)", "3. Max Mana (+5)", "4. Spell Power (+1)"]
     },
     "Cultivator": {
-        "hp": 85, "max_hp": 85,
-        "qi": 60, "max_qi": 60,
-        "attack": 9,
-        "spell_power": 12,
+        "hp": 100, "max_hp": 100,
+        "qi": 100, "max_qi": 100,
+        "attack": 20,
+        "spell_power": 30,
         "spell_list": [
-            {"name": "Qi Strike", "cost_type": "qi", "cost": 8, "effect": "qi_strike", "description": "Strike using cultivated Qi to deal spell_power + attack damage."}
+            {"name": "Qi Strike", "cost_type": "qi", "cost": 10, "effect": "qi_strike", "description": "Strike using cultivated Qi to deal spell_power + attack damage."}
         ],
         "skill_list": [
-            {"name": "Flowing Palm", "cooldown": 3, "effect": "flowing_palm", "power": 6},
-            {"name": "Overcharge", "cooldown": 6, "effect": "overcharge", "power": 14, "qi_cost": 10}
+            {"name": "Flowing Palm", "cooldown": 3, "effect": "flowing_palm", "power": 10},
+            {"name": "Overcharge", "cooldown": 6, "effect": "overcharge", "power": 20, "qi_cost": 15}
         ],
         "stat_options": ["1. Max HP (+4)", "2. Attack (+1)", "3. Max Qi (+5)", "4. Spell Power (+1)"]
     },
