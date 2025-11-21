@@ -16,6 +16,14 @@ SPELLS = {
             "description": "Deal spell power + attack damage.",
             "effect": "fireball"
         }
+        ,
+        {
+            "name": "Meteor Shower",
+            "cost_type": "mana",
+            "cost": 18,
+            "description": "A meteor shower that strikes multiple enemies (AoE).",
+            "effect": "firestorm"
+        }
     ],
     "Warlock": [
         {
@@ -32,11 +40,84 @@ SPELLS = {
             "description": "Sacrifice HP for massive attack.",
             "effect": "hellfire"
         }
+        ,
+        {
+            "name": "Shadow Nova",
+            "cost_type": "mana",
+            "cost": 15,
+            "description": "Unleash a nova of shadow that damages all nearby enemies (AoE).",
+            "effect": "shadow_nova"
+        }
     ]
 }
 
 # Developer-only access password (can be overridden by env var LITRPG_DEV_PASSWORD)
 DEV_PASSWORD = os.environ.get("LITRPG_DEV_PASSWORD", "devpass")
+
+# -------------------------------
+# Cultivator Realms (data-driven)
+# Add or reorder entries here to create new realms easily.
+# Each realm fires once when the cultivator reaches the required level.
+CULTIVATOR_REALMS = [
+    {"name": "Qi Novice", "level_req": 1, "qi_bonus": 0, "attack_multiplier": 1.0, "spell_power_bonus": 0, "description": "The beginning of cultivation."},
+    {"name": "Foundation Establishment", "level_req": 3, "qi_bonus": 10, "attack_multiplier": 1.05, "spell_power_bonus": 2, "description": "A deeper connection to Qi."},
+    {"name": "Core Formation", "level_req": 6, "qi_bonus": 20, "attack_multiplier": 1.12, "spell_power_bonus": 4, "description": "Your core consolidates, strength grows."},
+    {"name": "Nascent Soul", "level_req": 9, "qi_bonus": 35, "attack_multiplier": 1.20, "spell_power_bonus": 8, "description": "A nascent soul forms within."},
+    {"name": "Spirit Ascendant", "level_req": 12, "qi_bonus": 60, "attack_multiplier": 1.35, "spell_power_bonus": 15, "description": "You touch the spirit realm itself."},
+]
+
+
+def attempt_realm_breakthrough(player, consume_pill=True):
+    """
+    Attempt to advance the player's cultivator realm if they meet the level requirement.
+    If `consume_pill` is True, the function will require a 'Breakthrough Pill' in the player's inventory
+    and consume it on success. Returns True if a breakthrough was applied, False otherwise.
+    """
+    if player.role != "Cultivator":
+        print("Only Cultivators can attempt realm breakthroughs.")
+        return False
+
+    # Find the next realm index
+    next_index = player.realm_stage + 1
+    if next_index >= len(CULTIVATOR_REALMS):
+        print("You have already reached the highest known realm.")
+        return False
+
+    next_realm = CULTIVATOR_REALMS[next_index]
+    req = next_realm.get("level_req", 9999)
+    if player.level < req:
+        print(f"You are not yet ready for {next_realm.get('name')}. Reach level {req} to attempt breakthrough.")
+        return False
+
+    # Check for pill if consumption required
+    pill_name = "Breakthrough Pill"
+    has_pill = pill_name in player.inventory
+    if consume_pill and not has_pill:
+        print(f"A {pill_name} is required to break through to {next_realm.get('name')}.")
+        return False
+
+    # Apply realm bonuses
+    player.realm_stage = next_index
+    player.realm_name = next_realm.get("name")
+    qi_bonus = next_realm.get("qi_bonus", 0)
+    player.max_qi = getattr(player, 'max_qi', 0) + qi_bonus
+    player.qi = player.max_qi
+    mult = next_realm.get("attack_multiplier", 1.0)
+    player.attack = max(1, int(player.attack * mult))
+    player.spell_power += next_realm.get("spell_power_bonus", 0)
+
+    print(f"\n*** {player.name} broke through the realm: {player.realm_name}! Stat points +3 ***")
+
+    if consume_pill and has_pill:
+        # consume one pill from inventory
+        try:
+            player.inventory.remove(pill_name)
+            print(f"{pill_name} consumed.")
+        except ValueError:
+            pass
+
+    return True
+
 
 # Add Cultivator starting spells (developer-only)
 SPELLS.setdefault("Cultivator", [
@@ -106,6 +187,13 @@ SKILLS = {
             "power": 5
         },
         {
+            "name": "Whirlwind",
+            "cooldown": 5,
+            "description": "Spin and hit all nearby enemies for moderate damage (AoE).",
+            "effect": "whirlwind",
+            "power": 8
+        },
+        {
             "name": "Berserk",
             "cooldown": 5,
             "description": "A furious attack that deals big damage but costs a bit of HP.",
@@ -135,6 +223,15 @@ SKILLS.setdefault("Cultivator", [
         "effect": "overcharge",
         "power": 30,
         "qi_cost": 15
+    }
+    ,
+    {
+        "name": "Qi Wave",
+        "cooldown": 5,
+        "description": "Release a wave of Qi that damages all enemies (AoE).",
+        "effect": "qi_wave",
+        "power": 12,
+        "qi_cost": 12
     }
 ])
 
@@ -260,13 +357,28 @@ class Player:
         cfg = CLASS_DEFS.get(role, CLASS_DEFS["Warrior"])
         self.hp = cfg["hp"]
         self.max_hp = cfg["max_hp"]
-        # Support both classic 'mana' and Cultivator's 'qi'. Keep both attributes for compatibility.
+        # Support both classic 'mana' and Cultivator's 'qi'. Only initialize Qi for Cultivator.
         self.mana = cfg.get("mana", 0)
         self.max_mana = cfg.get("max_mana", 0)
-        self.qi = cfg.get("qi", self.mana)
-        self.max_qi = cfg.get("max_qi", self.max_mana)
-        self.attack = cfg["attack"]
-        self.spell_power = cfg.get("spell_power", 0)
+        if role == "Cultivator":
+            self.qi = cfg.get("qi", 0)
+            self.max_qi = cfg.get("max_qi", 0)
+        else:
+            self.qi = 0
+            self.max_qi = 0
+        # Keep base stats for exponential scaling (especially for Cultivator)
+        self.base_attack = cfg.get("attack", 1)
+        self.base_spell_power = cfg.get("spell_power", 0)
+        self.attack = int(self.base_attack)
+        self.spell_power = int(self.base_spell_power)
+        # Cultivation tracking
+        if role == "Cultivator":
+            # start at realm index 0 (Qi Novice)
+            self.realm_stage = 0
+            self.realm_name = CULTIVATOR_REALMS[0]["name"] if CULTIVATOR_REALMS else ""
+        else:
+            self.realm_stage = -1
+            self.realm_name = None
         self.spell_list = cfg.get("spell_list", [])
         self.stat_options = cfg.get("stat_options", [])
         # Skills and cooldown tracking
@@ -281,6 +393,9 @@ class Player:
         elif self.max_mana > 0:
             print(f"Mana: {self.mana}/{self.max_mana}  Spell Power: {self.spell_power}")
         print(f"Attack: {self.attack}")
+        # Show current cultivator realm if applicable
+        if self.role == "Cultivator":
+            print(f"Realm: {getattr(self, 'realm_name', 'Unknown')} (Stage {getattr(self, 'realm_stage', -1)})")
         # Show skill cooldowns
         if self.skill_list:
             cds = ", ".join([f"{s['name']}: {self.skill_cooldowns.get(s['name'],0)}" for s in self.skill_list])
@@ -301,6 +416,39 @@ class Enemy:
         self.xp_reward = xp_reward
         self.has_bleed_enchantment = has_bleed_enchantment
 
+
+def maybe_drop_breakthrough_pill(enemy, player):
+    """Chance to drop a Breakthrough Pill depending on enemy strength."""
+    # Very simple mapping by boss name
+    drops = {
+        "Spirit Lord": 0.20,
+        "Elder Dragon": 0.10,
+        "Abyssal Warden": 0.06,
+        "Giant": 0.01,
+        "Troll": 0.005,
+        "Orc": 0.002,
+    }
+    chance = drops.get(enemy.name, 0.0005)  # tiny chance for common enemies
+    roll = random.random()
+    if roll < chance:
+        player.inventory.append("Breakthrough Pill")
+        print(f"\nThe {enemy.name} dropped a Breakthrough Pill! It has been added to your inventory.")
+        # If the player already meets any quest's level requirement that requires this item, auto-consume to complete
+        for quest in player.quests:
+            if quest.get('completed'):
+                continue
+            if quest.get('requires_item') == 'Breakthrough Pill' and quest['type'] == 'level' and player.level >= quest.get('goal', 0):
+                # consume and apply breakthrough
+                attempt_realm_breakthrough(player, consume_pill=True)
+                quest['completed'] = True
+                reward = quest.get('reward')
+                if reward:
+                    player.inventory.append(reward)
+                    print(f"\nQuest Complete: {quest['name']}! You received a {reward}!")
+                break
+        return True
+    return False
+
 # -------------------------------
 # Quest System
 # -------------------------------
@@ -308,6 +456,10 @@ QUESTS = [
     {"id": 1, "name": "First Blood", "desc": "Defeat 1 enemy", "type": "kill", "goal": 1, "progress": 0, "completed": False, "reward": "Health Potion"},
     {"id": 2, "name": "Hunter", "desc": "Defeat 5 enemies", "type": "kill", "goal": 5, "progress": 0, "completed": False, "reward": "Steel Sword"},
     {"id": 3, "name": "Survivor", "desc": "Reach level 3", "type": "level", "goal": 3, "progress": 0, "completed": False, "reward": "Magic Scroll"},
+    # Breakthrough Trial now requires the player to reach level AND use a Breakthrough Pill to complete
+    {"id": 4, "name": "Breakthrough Trial", "desc": "Reach level 6 and use a Breakthrough Pill to prove your readiness.", "type": "level", "goal": 6, "progress": 0, "completed": False, "reward": "Magic Scroll", "role": "Cultivator", "requires_item": "Breakthrough Pill"},
+    # Mid-level cultivator quest that rewards a Breakthrough Pill (assigned only when player is experienced)
+    {"id": 5, "name": "Warden's Trial", "desc": "Defeat a powerful foe to earn a Breakthrough Pill.", "type": "kill", "goal": 1, "progress": 0, "completed": False, "reward": "Breakthrough Pill", "role": "Cultivator", "min_level": 6},
 ]
 
 def assign_quests(player):
@@ -315,6 +467,12 @@ def assign_quests(player):
         quest_copy = dict(quest)  # Make a copy
         if "progress" not in quest_copy:
             quest_copy["progress"] = 0
+        # If quest has a role restriction, only assign to players with that role
+        if quest_copy.get("role") and quest_copy.get("role") != player.role:
+            continue
+        # If quest has min_level, only assign when player meets it
+        if quest_copy.get("min_level") and player.level < quest_copy.get("min_level"):
+            continue
         if quest_copy not in player.quests:
             player.quests.append(quest_copy)
 
@@ -326,11 +484,18 @@ def check_quests(player, type_, value=1):
             if type_ == "kill":
                 quest["progress"] += value
             elif type_ == "level" and player.level >= quest["goal"]:
-                quest["progress"] = quest["goal"]
+                # If the quest requires an item, don't auto-complete on level reach.
+                if quest.get("requires_item"):
+                    quest["progress"] = quest["goal"]
+                    print(f"You meet the level requirement for '{quest['name']}'. Use or obtain a {quest.get('requires_item')} to complete it.")
+                else:
+                    quest["progress"] = quest["goal"]
         if quest["progress"] >= quest["goal"]:
-            quest["completed"] = True
-            player.inventory.append(quest["reward"])
-            print(f"\nQuest Complete: {quest['name']}! You received a {quest['reward']}!")
+            # Only auto-complete if no required item
+            if not quest.get("requires_item"):
+                quest["completed"] = True
+                player.inventory.append(quest["reward"])
+                print(f"\nQuest Complete: {quest['name']}! You received a {quest['reward']}!")
 
 def show_quests(player):
     print("\n==== Quest Log ====")
@@ -350,18 +515,26 @@ def explore(current_player, all_players):
     if outcome < 0.6:
         # Normal enemy encounter, with a chance to be a multi-enemy ambush
         enemy_pool = [
-            ("Goblin", 30, 5, 20), ("Skeleton", 40, 7, 25),
-            ("Wolf", 35, 6, 22), ("Bat", 25, 4, 15),
-            ("Orc", 50, 10, 30), ("Troll", 60, 12, 40),
-            ("Giant", 70, 15, 50)
+            {"name": "Bat", "hp": 25, "attack": 4, "xp": 15, "min_level": 1},
+            {"name": "Goblin", "hp": 30, "attack": 5, "xp": 20, "min_level": 1},
+            {"name": "Skeleton", "hp": 40, "attack": 7, "xp": 25, "min_level": 1},
+            {"name": "Wolf", "hp": 35, "attack": 6, "xp": 22, "min_level": 1},
+            {"name": "Orc", "hp": 50, "attack": 10, "xp": 30, "min_level": 3},
+            {"name": "Troll", "hp": 60, "attack": 12, "xp": 40, "min_level": 4},
+            {"name": "Giant", "hp": 80, "attack": 16, "xp": 70, "min_level": 6},
+            {"name": "Abyssal Warden", "hp": 150, "attack": 30, "xp": 180, "min_level": 8},
+            {"name": "Elder Dragon", "hp": 220, "attack": 40, "xp": 300, "min_level": 10},
+            {"name": "Spirit Lord", "hp": 320, "attack": 55, "xp": 500, "min_level": 14}
         ]
-        enemies_allowed = [e for e in enemy_pool if current_player.level >= 3 or e[1] < 50]
+
+        # Allow enemies appropriate to the player's level; weaker enemies may appear earlier
+        enemies_allowed = [e for e in enemy_pool if current_player.level >= e.get('min_level', 1) or e.get('hp', 0) < 50]
 
         # 20% of encounters with enemies become multi-enemy ambushes
         if random.random() < 0.20:
             count = random.choice([2, 2, 3])  # bias towards 2 enemies, sometimes 3
             chosen = random.choices(enemies_allowed, k=count)
-            enemies = [Enemy(e[0], e[1], e[2], e[3], random.random() < 0.03) for e in chosen]
+            enemies = [Enemy(e['name'], e['hp'], e['attack'], e['xp'], random.random() < 0.03) for e in chosen]
 
             # Use all living players if 2+ alive, otherwise the single current player
             living_players = [p for p in all_players if p.hp > 0]
@@ -372,7 +545,7 @@ def explore(current_player, all_players):
 
         else:
             e = random.choice(enemies_allowed)
-            enemy = Enemy(e[0], e[1], e[2], e[3], random.random() < 0.03)
+            enemy = Enemy(e['name'], e['hp'], e['attack'], e['xp'], random.random() < 0.03)
 
             # Only trigger group battle if there are 2 or more *alive* players
             living_players = [p for p in all_players if p.hp > 0]
@@ -430,6 +603,14 @@ def battle(player, enemy):
                             elif spell.get("cost_type") == "qi":
                                 player.qi -= spell.get("cost", 0)
                             print(f"You cast Fireball for {damage} damage!")
+                        elif spell["effect"] in ("firestorm", "shadow_nova"):
+                            # AoE spells used in single-target battle still deal strong damage
+                            damage = player.spell_power + player.attack + 8
+                            if spell.get("cost_type") == "mana":
+                                player.mana -= spell.get("cost", 0)
+                            elif spell.get("cost_type") == "qi":
+                                player.qi -= spell.get("cost", 0)
+                            print(f"You unleash {spell['name']} for {damage} damage!")
                         elif spell["effect"] == "qi_strike":
                             damage = player.spell_power + player.attack
                             if spell.get("cost_type") == "mana":
@@ -439,7 +620,10 @@ def battle(player, enemy):
                             print(f"You channel Qi and strike for {damage} damage!")
                         elif spell["effect"] == "eldritch_blast":
                             damage = player.spell_power + player.attack + random.randint(1,5)
-                            player.mana -= spell.get("cost", 0)
+                            if spell.get("cost_type") == "mana":
+                                player.mana -= spell.get("cost", 0)
+                            elif spell.get("cost_type") == "qi":
+                                player.qi -= spell.get("cost", 0)
                             print(f"You cast Eldritch Blast for {damage} damage!")
                         elif spell["effect"] == "hellfire":
                             damage = player.spell_power + player.attack + 15
@@ -469,12 +653,25 @@ def battle(player, enemy):
             if not skill:
                 continue
             # Apply skill effects
+            # Handle AoE skills for single-target battles as powerful single-target hits
             if skill['effect'] == 'cleave':
                 damage = player.attack + skill.get('power', 0)
                 print(f"You use {skill['name']} for {damage} damage!")
             elif skill['effect'] == 'flowing_palm':
                 damage = player.spell_power + player.attack + skill.get('power', 0)
                 print(f"You use {skill['name']} for {damage} Qi damage!")
+            elif skill['effect'] == 'whirlwind':
+                damage = player.attack + skill.get('power', 0) + 4
+                # whirlwinds are physical and don't cost Qi by default
+                print(f"You spin in a Whirlwind and strike for {damage} damage!")
+            elif skill['effect'] == 'qi_wave':
+                cost = skill.get('qi_cost', 0)
+                if getattr(player, 'qi', 0) < cost:
+                    print("Not enough Qi to use that skill!")
+                    continue
+                player.qi -= cost
+                damage = player.spell_power + player.attack + skill.get('power', 0)
+                print(f"You release a Qi Wave for {damage} damage! (cost {cost} Qi)")
             elif skill['effect'] == 'overcharge':
                 # Support either mana_cost or qi_cost
                 cost = skill.get('mana_cost', skill.get('qi_cost', 0))
@@ -528,6 +725,8 @@ def battle(player, enemy):
         print(f"\nYou defeated the {enemy.name}!")
         player.xp += enemy.xp_reward
         print(f"You gained {enemy.xp_reward} XP!")
+        # Check for rare drops
+        maybe_drop_breakthrough_pill(enemy, player)
         if player.xp >= player.level * 100:
             level_up(player)
         check_quests(player, "kill")
@@ -571,6 +770,19 @@ def group_battle(players, enemy):
                                     elif spell.get("cost_type") == "qi":
                                         p.qi -= spell.get("cost", 0)
                                     print(f"{p.name} casts Fireball for {damage} damage!")
+                                
+                                
+                                
+                                
+                                
+                                elif spell["effect"] in ("firestorm", "shadow_nova"):
+                                    # AoE spells in single-enemy group combat are powerful single-target strikes
+                                    damage = p.spell_power + p.attack + 10
+                                    if spell.get("cost_type") == "mana":
+                                        p.mana -= spell.get("cost", 0)
+                                    elif spell.get("cost_type") == "qi":
+                                        p.qi -= spell.get("cost", 0)
+                                    print(f"{p.name} unleashes {spell['name']} for {damage} damage!")
                                 elif spell["effect"] == "eldritch_blast":
                                     damage = p.spell_power + p.attack + random.randint(1,5)
                                     if spell.get("cost_type") == "mana":
@@ -615,6 +827,17 @@ def group_battle(players, enemy):
                     elif skill['effect'] == 'flowing_palm':
                         damage = p.spell_power + p.attack + skill.get('power', 0)
                         print(f"{p.name} uses {skill['name']} for {damage} Qi damage!")
+                    elif skill['effect'] == 'whirlwind':
+                        damage = p.attack + skill.get('power', 0) + 6
+                        print(f"{p.name} spins in a Whirlwind and strikes for {damage} damage!")
+                    elif skill['effect'] == 'qi_wave':
+                        cost = skill.get('qi_cost', 0)
+                        if getattr(p, 'qi', 0) < cost:
+                            print(f"{p.name} doesn't have enough Qi for {skill['name']}!")
+                            continue
+                        p.qi -= cost
+                        damage = p.spell_power + p.attack + skill.get('power', 0)
+                        print(f"{p.name} releases a Qi Wave for {damage} damage! (cost {cost} Qi)")
                     elif skill['effect'] == 'overcharge':
                         cost = skill.get('mana_cost', skill.get('qi_cost', 0))
                         if skill.get('qi_cost') is not None or p.role == 'Cultivator':
@@ -676,6 +899,8 @@ def group_battle(players, enemy):
                 if p.xp >= p.level * 100:
                     level_up(p)
                 check_quests(p, "kill")
+                # Check for rare drops for each participating player
+                maybe_drop_breakthrough_pill(enemy, p)
     else:
         print("\nThe party has been defeated.")
 
@@ -718,6 +943,9 @@ def multi_enemy_battle(players, enemies):
                 dmg = e.attack
                 target.hp -= dmg
                 print(f"{e.name} hits {target.name} for {dmg} damage!")
+
+    # Keep a copy of the original enemies for drop checks later
+    all_enemies = [Enemy(e.name, e.hp, e.attack, e.xp_reward, e.has_bleed_enchantment) for e in enemies]
 
     # Main loop
     while any(e.hp > 0 for e in enemies) and any(p.hp > 0 for p in players):
@@ -770,6 +998,33 @@ def multi_enemy_battle(players, enemies):
                                 elif spell.get("cost_type") == "qi":
                                     p.qi -= spell.get("cost", 0)
                                 print(f"{p.name} channels Qi and strikes {target.name} for {damage} damage!")
+                            elif spell["effect"] in ("firestorm", "shadow_nova"):
+                                # AoE spell: hits all alive enemies
+                                cost_type = spell.get("cost_type")
+                                cost_amt = spell.get("cost", 0)
+                                if cost_type == "mana":
+                                    if getattr(p, 'mana', 0) < cost_amt:
+                                        print(f"{p.name} doesn't have enough mana for {spell['name']}!")
+                                        damage = 0
+                                        # skip applying
+                                    else:
+                                        p.mana -= cost_amt
+                                elif cost_type == "qi":
+                                    if getattr(p, 'qi', 0) < cost_amt:
+                                        print(f"{p.name} doesn't have enough Qi for {spell['name']}!")
+                                        damage = 0
+                                    else:
+                                        p.qi -= cost_amt
+                                # Apply to each alive enemy
+                                alive_enemies = [e for e in enemies if e.hp > 0]
+                                if alive_enemies:
+                                    base_dmg = p.spell_power + p.attack + 6
+                                    print(f"{p.name} unleashes {spell['name']} hitting {len(alive_enemies)} enemies!")
+                                    for ae in alive_enemies:
+                                        ae.hp -= base_dmg
+                                        print(f"  {ae.name} takes {base_dmg} damage!")
+                                    # mark damage applied
+                                    damage = 0
                             elif spell["effect"] == "eldritch_blast":
                                 damage = p.spell_power + p.attack + random.randint(1,5)
                                 if spell.get("cost_type") == "mana":
@@ -825,6 +1080,24 @@ def multi_enemy_battle(players, enemies):
                         splash_dmg = max(1, damage // 2)
                         splash.hp -= splash_dmg
                         print(f"{skill['name']} also hits {splash.name} for {splash_dmg} damage!")
+                elif skill['effect'] == 'whirlwind':
+                    # Hit all enemies for moderate damage
+                    damage = p.attack + skill.get('power', 0)
+                    alive_enemies = [e for e in enemies if e.hp > 0]
+                    print(f"{p.name} spins in a Whirlwind and hits {len(alive_enemies)} enemies for {damage} damage each!")
+                    for ae in alive_enemies:
+                        ae.hp -= damage
+                elif skill['effect'] == 'qi_wave':
+                    cost = skill.get('qi_cost', 0)
+                    if getattr(p, 'qi', 0) < cost:
+                        print(f"{p.name} doesn't have enough Qi for {skill['name']}!")
+                        continue
+                    p.qi -= cost
+                    damage = p.spell_power + p.attack + skill.get('power', 0)
+                    alive_enemies = [e for e in enemies if e.hp > 0]
+                    print(f"{p.name} releases a Qi Wave hitting {len(alive_enemies)} enemies for {damage} damage each! (cost {cost} Qi)")
+                    for ae in alive_enemies:
+                        ae.hp -= damage
                 elif skill['effect'] == 'flowing_palm':
                     damage = p.spell_power + p.attack + skill.get('power', 0)
                     print(f"{p.name} uses {skill['name']} for {damage} Qi damage on {target.name}!")
@@ -899,6 +1172,9 @@ def multi_enemy_battle(players, enemies):
                 if p.xp >= p.level * 100:
                     level_up(p)
                 check_quests(p, "kill")
+                # Check for rare drops against the original enemies
+                for orig in all_enemies:
+                    maybe_drop_breakthrough_pill(orig, p)
     else:
         print("\nYour party was defeated by the ambush.")
 
@@ -910,27 +1186,51 @@ def level_up(player):
     player.stat_points += 3
     player.max_hp += 10
     player.hp = player.max_hp
-    player.attack += 2
-    if player.role == "Mage":
-        player.max_mana += 10
-        player.mana = player.max_mana
-        player.spell_power += 2
-    if player.role == "Warlock":
-        player.max_mana += 5
-        player.mana = player.max_mana
-        player.hp += 5
-        player.spell_power += 2
-    if player.role == "Cultivator":
-        # Cultivator breakthroughs feel special
-        player.max_qi += 10
-        player.qi = player.max_qi
-        player.spell_power += 2
-        if player.level <= 10:
-            print(f"\n*** {player.name} broke through and advanced to level {player.level} of Qi Condensing Realm! Stat points +3 ***")
-        if player.level >= 11:
-            print(f"\n*** {player.name} broke through and advanced to level {player.level - 10} of Foundation Realm! Stat points +3 ***")
+
+    # Default linear gains for non-cultivators
+    if player.role != "Cultivator":
+        player.attack += 2
+        if player.role == "Mage":
+            player.max_mana += 10
+            player.mana = player.max_mana
+            player.spell_power += 2
+        if player.role == "Warlock":
+            player.max_mana += 5
+            player.mana = player.max_mana
+            player.hp += 5
+            player.spell_power += 2
+        print(f"\n*** {player.name} leveled up to {player.level}! Stat points +3 ***")
         return
-    print(f"\n*** {player.name} leveled up to {player.level}! Stat points +3 ***")
+
+    # Cultivator: exponential scaling and realm breakthroughs
+    # Use base stats as the source of truth and compute scaled stats
+    # growth per level (exponential)
+    growth = 1.12
+    # Recompute attack and spell_power from base values
+    player.attack = max(1, int(player.base_attack * (growth ** (player.level - 1))))
+    player.spell_power = max(0, int(player.base_spell_power * (growth ** (player.level - 1))))
+
+    # Increase Qi pool slightly each level (base per-level Qi gain)
+    player.max_qi += 10
+    player.qi = player.max_qi
+
+    # Check for realm breakthroughs (data-driven) but require a Breakthrough Pill to advance
+    # If the cultivator has a Breakthrough Pill in inventory it will be consumed automatically
+    # and the breakthrough applied. Otherwise, inform the player that a pill is required.
+    while player.realm_stage + 1 < len(CULTIVATOR_REALMS):
+        next_realm = CULTIVATOR_REALMS[player.realm_stage + 1]
+        if player.level >= next_realm.get("level_req", 9999):
+            # attempt to break through; this will consume a pill if present
+            success = attempt_realm_breakthrough(player, consume_pill=True)
+            if not success:
+                print(f"You meet the level requirement for {next_realm.get('name')}, but you need a Breakthrough Pill to advance.")
+                break
+            # if success, the loop continues and may attempt the next realm too
+        else:
+            break
+    # If no realm advancement occurred this level, still show a general message
+    if player.realm_stage < 0 or not CULTIVATOR_REALMS:
+        print(f"\n*** {player.name} advanced to level {player.level} of cultivation! Stat points +3 ***")
 
 # -------------------------------
 # Inventory
@@ -973,6 +1273,15 @@ def manage_inventory(player, players, in_battle=False):
         else:
             print("Your Mana is already full.")
 
+    elif item == "Qi Potion" and player.role == "Cultivator":
+        if getattr(player, 'qi', 0) < getattr(player, 'max_qi', 0):
+            regen = min(40, getattr(player, 'max_qi', 0) - getattr(player, 'qi', 0))
+            player.qi = getattr(player, 'qi', 0) + regen
+            print(f"You used a Qi Potion and restored {regen} Qi!")
+            used = True
+        else:
+            print("Your Qi is already full.")
+
     elif item == "Magic Scroll" and player.role == "Mage":
         print("The Magic Scroll glows... You feel wiser!")
         player.spell_power += 1
@@ -1005,6 +1314,31 @@ def manage_inventory(player, players, in_battle=False):
             except:
                 print("Invalid choice. Feather not used.")
                 return used  # Don't consume turn or item if error
+
+    elif item == "Breakthrough Pill":
+        # Only useful for Cultivators and only if they meet the realm requirement
+        if player.role != "Cultivator":
+            print("Only Cultivators can use a Breakthrough Pill.")
+            return used
+
+        # Attempt breakthrough and only consume if success
+        success = attempt_realm_breakthrough(player, consume_pill=True)
+        if success:
+            used = True
+            # Complete any quests that require this item and for which the player already met the level requirement
+            for quest in player.quests:
+                if quest.get('completed'):
+                    continue
+                if quest.get('requires_item') == 'Breakthrough Pill' and quest['type'] == 'level' and player.level >= quest.get('goal', 0):
+                    quest['completed'] = True
+                    # grant reward
+                    reward = quest.get('reward')
+                    if reward:
+                        player.inventory.append(reward)
+                        print(f"\nQuest Complete: {quest['name']}! You received a {reward}!")
+        else:
+            print("The Breakthrough Pill had no effect. Perhaps you're not high enough level or another pill is required.")
+            used = False
 
     else:
         print(f"You can't use the {item} right now.")
@@ -1166,19 +1500,23 @@ def shop(player):
     all_items = {
         "Health Potion": 20,
         "Mana Potion": 25,
+        "Qi Potion": 30,
         "Magic Scroll": 40,
         "Steel Sword": 50,
         "Bleed Enchantment": 60,
-        "Phoenix Feather": 150  # Rare item for reviving teammates
+        "Phoenix Feather": 150,  # Rare item for reviving teammates
+        "Breakthrough Pill": 300
     }
 
     # Weighted item pool for rarity
     weighted_pool = (
         ["Health Potion"] * 5 +
         ["Mana Potion"] * 4 +
+        ["Qi Potion"] * 3 +
         ["Magic Scroll"] * 3 +
         ["Steel Sword"] * 2 +
         ["Bleed Enchantment"] * 2 +
+        ["Breakthrough Pill"] * 1 +
         ["Phoenix Feather"] * 1  # Rare
     )
 
@@ -1211,6 +1549,20 @@ def shop(player):
                     player.inventory.append(item)
                     shop_stock[item]["stock"] -= 1
                     print(f"You bought a {item}!")
+                    # If buying a Breakthrough Pill and player already meets any quest requirements, auto-apply
+                    if item == "Breakthrough Pill" and player.role == "Cultivator":
+                        for quest in player.quests:
+                            if quest.get('completed'):
+                                continue
+                            if quest.get('requires_item') == 'Breakthrough Pill' and quest['type'] == 'level' and player.level >= quest.get('goal', 0):
+                                print("You acquired a Breakthrough Pill and meet the level requirement — it will be consumed to complete your trial.")
+                                # attempt breakthrough (will consume pill)
+                                attempt_realm_breakthrough(player, consume_pill=True)
+                                quest['completed'] = True
+                                reward = quest.get('reward')
+                                if reward:
+                                    player.inventory.append(reward)
+                                    print(f"\nQuest Complete: {quest['name']}! You received a {reward}!")
                     if shop_stock[item]["stock"] == 0:
                         print(f"{item} is now out of stock.")
                 else:
