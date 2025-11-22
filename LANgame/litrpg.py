@@ -66,6 +66,16 @@ CULTIVATOR_REALMS = [
     {"name": "Spirit Ascendant", "level_req": 12, "qi_bonus": 60, "attack_multiplier": 1.35, "spell_power_bonus": 15, "description": "You touch the spirit realm itself."},
 ]
 
+def prologue():
+    text = (
+        "You arrived at Hearthvale for reasons you can't name: a letter, a dream, or hunger for the road. "
+        "The shrine's glow coughs like a dying candle — and from its dying flame comes the first whisper: the world remembers.\n"
+        "Elder Maelin watches you closely. 'Walk softly,' she says. 'The light remembers those who listen.'"
+    )
+    print("\n=== Prologue ===\n")
+    print(text)
+    input("\nPress Enter to continue...")
+
 
 def attempt_realm_breakthrough(player, consume_pill=True):
     """
@@ -191,7 +201,7 @@ SKILLS = {
             "cooldown": 5,
             "description": "Spin and hit all nearby enemies for moderate damage (AoE).",
             "effect": "whirlwind",
-            "power": 8
+            "power": 6
         },
         {
             "name": "Berserk",
@@ -230,7 +240,7 @@ SKILLS.setdefault("Cultivator", [
         "cooldown": 5,
         "description": "Release a wave of Qi that damages all enemies (AoE).",
         "effect": "qi_wave",
-        "power": 12,
+        "power": 10,
         "qi_cost": 12
     }
 ])
@@ -406,7 +416,53 @@ def allocate_stats(player):
         print("\nNo stat points to allocate.")
         return
     print(f"\nYou have {player.stat_points} stat points.")
-    print("\n" + "\n".join(player.stat_options))
+
+    # Interactive allocation loop
+    while player.stat_points > 0:
+        print(f"\nStat points remaining: {player.stat_points}")
+        for idx, opt in enumerate(player.stat_options, 1):
+            print(f"{idx}. {opt}")
+        print("0. Cancel/Exit allocation")
+        choice = input("Choose an option number to spend 1 point: ").strip()
+        if choice == '0' or choice == 'q':
+            print("Exiting stat allocation.")
+            break
+        if not choice.isdigit():
+            print("Invalid choice.")
+            continue
+        idx = int(choice) - 1
+        if idx < 0 or idx >= len(player.stat_options):
+            print("Invalid selection.")
+            continue
+
+        sel = player.stat_options[idx].lower()
+        # Apply effects based on the option text
+        if 'max hp' in sel:
+            player.max_hp += 4
+            player.hp = min(player.max_hp, player.hp + 4)
+            print("Max HP increased by 4.")
+        elif 'attack' in sel:
+            player.attack += 1
+            print("Attack increased by 1.")
+        elif 'max mana' in sel or 'max mp' in sel:
+            player.max_mana = getattr(player, 'max_mana', 0) + 5
+            player.mana = getattr(player, 'mana', 0) + 5
+            print("Max Mana increased by 5.")
+        elif 'max qi' in sel:
+            player.max_qi = getattr(player, 'max_qi', 0) + 5
+            player.qi = getattr(player, 'qi', 0) + 5
+            print("Max Qi increased by 5.")
+        elif 'spell power' in sel:
+            player.spell_power += 1
+            print("Spell Power increased by 1.")
+        else:
+            # Fallback: apply a generic +1 attack
+            player.attack += 1
+            print("Applied +1 Attack as a fallback for that option.")
+
+        player.stat_points -= 1
+
+    print("Stat allocation complete.")
 
 class Enemy:
     def __init__(self, name, hp, attack, xp_reward, has_bleed_enchantment=False):
@@ -459,12 +515,18 @@ QUESTS = [
     # Breakthrough Trial now requires the player to reach level AND use a Breakthrough Pill to complete
     {"id": 4, "name": "Breakthrough Trial", "desc": "Reach level 6 and use a Breakthrough Pill to prove your readiness.", "type": "level", "goal": 6, "progress": 0, "completed": False, "reward": "Magic Scroll", "role": "Cultivator", "requires_item": "Breakthrough Pill"},
     # Mid-level cultivator quest that rewards a Breakthrough Pill (assigned only when player is experienced)
-    {"id": 5, "name": "Warden's Trial", "desc": "Defeat a powerful foe to earn a Breakthrough Pill.", "type": "kill", "goal": 1, "progress": 0, "completed": False, "reward": "Breakthrough Pill", "role": "Cultivator", "min_level": 6},
+    {"id": 5, "name": "Warden's Trial", "desc": "Defeat a powerful foe to earn a Breakthrough Pill.", "type": "kill", "goal": 1, "progress": 0, "completed": False, "reward": "Breakthrough Pill", "role": "Cultivator", "min_level": 3},
+    # Story quests (prologue + early arc)
+    {"id": 10, "name": "Hearthvale Trial", "desc": "Cleanse the Shrine (Defeat 3 corrupted beasts)", "type": "kill", "goal": 3, "progress": 0, "completed": False, "reward": "Health Potion", "min_level": 1, "target": "Corrupted Beast"},
+    {"id": 11, "name": "Warden's Trial (Story)", "desc": "Defeat the Abyssal Warden in Ironpass (Hard Mode guarantees Breakthrough Pill)", "type": "kill", "goal": 1, "progress": 0, "completed": False, "reward": "Breakthrough Pill", "role": "Cultivator", "min_level": 3},
+    {"id": 12, "name": "Rift Shards", "desc": "Collect 5 Rift Shards and close a minor rift.", "type": "collect", "goal": 5, "progress": 0, "completed": False, "reward": "Magic Scroll", "min_level": 7},
 ]
 
 def assign_quests(player):
     for quest in QUESTS:
         quest_copy = dict(quest)  # Make a copy
+        # Ensure quests have a consistent hard_mode flag (default False)
+        quest_copy.setdefault('hard_mode', False)
         if "progress" not in quest_copy:
             quest_copy["progress"] = 0
         # If quest has a role restriction, only assign to players with that role
@@ -473,16 +535,26 @@ def assign_quests(player):
         # If quest has min_level, only assign when player meets it
         if quest_copy.get("min_level") and player.level < quest_copy.get("min_level"):
             continue
-        if quest_copy not in player.quests:
-            player.quests.append(quest_copy)
+        # Avoid adding duplicate quests: check by quest id
+        if any(existing.get('id') == quest_copy.get('id') for existing in player.quests):
+            continue
+        player.quests.append(quest_copy)
 
-def check_quests(player, type_, value=1):
+def check_quests(player, type_, value=1, target_name=None):
+    """
+    Update quest progress. If a quest has a 'target' field, only kills of that named target count.
+    """
     for quest in player.quests:
         if quest["completed"]:
             continue
         if quest["type"] == type_:
             if type_ == "kill":
-                quest["progress"] += value
+                # If the quest targets a specific enemy name, require a matching target_name
+                if quest.get('target'):
+                    if target_name and target_name == quest.get('target'):
+                        quest["progress"] += value
+                else:
+                    quest["progress"] += value
             elif type_ == "level" and player.level >= quest["goal"]:
                 # If the quest requires an item, don't auto-complete on level reach.
                 if quest.get("requires_item"):
@@ -494,14 +566,20 @@ def check_quests(player, type_, value=1):
             # Only auto-complete if no required item
             if not quest.get("requires_item"):
                 quest["completed"] = True
-                player.inventory.append(quest["reward"])
-                print(f"\nQuest Complete: {quest['name']}! You received a {quest['reward']}!")
+                reward = quest.get("reward")
+                if reward:
+                    player.inventory.append(reward)
+                    print(f"\nQuest Complete: {quest['name']}! You received a {reward}!")
+                    # Special message for Hard Mode Warden's Trial
+                    if quest.get('id') == 11 and quest.get('hard_mode'):
+                        print("You completed the Warden's Trial in Hard Mode — the Breakthrough Pill is yours!")
 
 def show_quests(player):
     print("\n==== Quest Log ====")
     for quest in player.quests:
-        status = "✓" if quest["completed"] else f"{quest.get('progress', 0)}/{quest['goal']}"
-        print(f"{quest['name']} - {quest['desc']} ({status})")
+        status = "Done" if quest["completed"] else f"{quest.get('progress', 0)}/{quest['goal']}"
+        hm = " [Hard Mode]" if quest.get('hard_mode') else ""
+        print(f"{quest['name']}{hm} - {quest['desc']} ({status})")
     input("Press Enter to continue...")
 
 # -------------------------------
@@ -515,6 +593,7 @@ def explore(current_player, all_players):
     if outcome < 0.6:
         # Normal enemy encounter, with a chance to be a multi-enemy ambush
         enemy_pool = [
+            {"name": "Corrupted Beast", "hp": 20, "attack": 4, "xp": 10, "min_level": 1},
             {"name": "Bat", "hp": 25, "attack": 4, "xp": 15, "min_level": 1},
             {"name": "Goblin", "hp": 30, "attack": 5, "xp": 20, "min_level": 1},
             {"name": "Skeleton", "hp": 40, "attack": 7, "xp": 25, "min_level": 1},
@@ -528,12 +607,23 @@ def explore(current_player, all_players):
         ]
 
         # Allow enemies appropriate to the player's level; weaker enemies may appear earlier
-        enemies_allowed = [e for e in enemy_pool if current_player.level >= e.get('min_level', 1) or e.get('hp', 0) < 50]
+        # Determine if the Hearthvale Trial is active for this player (quest id 10)
+        hearthvale_active = any(q.get('id') == 10 and not q.get('completed') for q in current_player.quests)
+
+        # Build a weighted pool to boost chances of 'Corrupted Beast' when the player has the Hearthvale Trial
+        weighted_pool = []
+        for e in enemy_pool:
+            if current_player.level >= e.get('min_level', 1) or e.get('hp', 0) < 50:
+                # base weight
+                w = 1
+                if e.get('name') == 'Corrupted Beast' and hearthvale_active:
+                    w = 6
+                weighted_pool += [e] * w
 
         # 20% of encounters with enemies become multi-enemy ambushes
         if random.random() < 0.20:
             count = random.choice([2, 2, 3])  # bias towards 2 enemies, sometimes 3
-            chosen = random.choices(enemies_allowed, k=count)
+            chosen = random.choices(weighted_pool, k=count)
             enemies = [Enemy(e['name'], e['hp'], e['attack'], e['xp'], random.random() < 0.03) for e in chosen]
 
             # Use all living players if 2+ alive, otherwise the single current player
@@ -543,8 +633,9 @@ def explore(current_player, all_players):
             else:
                 multi_enemy_battle([current_player], enemies)
 
+
         else:
-            e = random.choice(enemies_allowed)
+            e = random.choice(weighted_pool) if weighted_pool else random.choice(enemy_pool)
             enemy = Enemy(e['name'], e['hp'], e['attack'], e['xp'], random.random() < 0.03)
 
             # Only trigger group battle if there are 2 or more *alive* players
@@ -604,8 +695,8 @@ def battle(player, enemy):
                                 player.qi -= spell.get("cost", 0)
                             print(f"You cast Fireball for {damage} damage!")
                         elif spell["effect"] in ("firestorm", "shadow_nova"):
-                            # AoE spells used in single-target battle still deal strong damage
-                            damage = player.spell_power + player.attack + 8
+                            # AoE spells used in single-target battle still deal strong damage (slightly nerfed)
+                            damage = player.spell_power + player.attack + 6
                             if spell.get("cost_type") == "mana":
                                 player.mana -= spell.get("cost", 0)
                             elif spell.get("cost_type") == "qi":
@@ -729,7 +820,8 @@ def battle(player, enemy):
         maybe_drop_breakthrough_pill(enemy, player)
         if player.xp >= player.level * 100:
             level_up(player)
-        check_quests(player, "kill")
+        # Inform quest system of the exact enemy killed
+        check_quests(player, "kill", value=1, target_name=enemy.name)
     else:
         print("\nYou have fallen in battle.")
 
@@ -898,7 +990,8 @@ def group_battle(players, enemy):
                 print(f"{p.name} gains {enemy.xp_reward} XP!")
                 if p.xp >= p.level * 100:
                     level_up(p)
-                check_quests(p, "kill")
+                # Credit kill quests for this defeated enemy
+                check_quests(p, "kill", value=1, target_name=enemy.name)
                 # Check for rare drops for each participating player
                 maybe_drop_breakthrough_pill(enemy, p)
     else:
@@ -1018,7 +1111,8 @@ def multi_enemy_battle(players, enemies):
                                 # Apply to each alive enemy
                                 alive_enemies = [e for e in enemies if e.hp > 0]
                                 if alive_enemies:
-                                    base_dmg = p.spell_power + p.attack + 6
+                                    # Slightly nerfed AoE baseline to reduce one-shotting multiple enemies
+                                    base_dmg = p.spell_power + p.attack + 4
                                     print(f"{p.name} unleashes {spell['name']} hitting {len(alive_enemies)} enemies!")
                                     for ae in alive_enemies:
                                         ae.hp -= base_dmg
@@ -1164,14 +1258,17 @@ def multi_enemy_battle(players, enemies):
     # Outcome
     if not any(e.hp > 0 for e in enemies):
         print("\nYou defeated all enemies!")
-        total_xp = sum(e.xp_reward for e in enemies)
+        # Use the original enemy list (`all_enemies`) to compute XP rewards
+        total_xp = sum(e.xp_reward for e in all_enemies)
         for p in players:
             if p.hp > 0:
                 p.xp += total_xp
                 print(f"{p.name} gains {total_xp} XP!")
                 if p.xp >= p.level * 100:
                     level_up(p)
-                check_quests(p, "kill")
+                # Credit quest kills for each original enemy
+                for orig in all_enemies:
+                    check_quests(p, "kill", value=1, target_name=orig.name)
                 # Check for rare drops against the original enemies
                 for orig in all_enemies:
                     maybe_drop_breakthrough_pill(orig, p)
@@ -1494,7 +1591,12 @@ def delete_save_file(protect_latest=True, base_name="autosave"):
 # Shop Function
 # -------------------------------
 def shop(player):
+    # Flavor line depending on context
     print("\n==== Welcome to the Shop ====")
+    if player.role == 'Cultivator':
+        print("The shopkeeper eyes your Qi-curled beads with a mix of curiosity and caution.")
+    else:
+        print("The shopkeeper nods and lays out wares with a practiced hand.")
 
     # Define item prices
     all_items = {
@@ -1505,7 +1607,7 @@ def shop(player):
         "Steel Sword": 50,
         "Bleed Enchantment": 60,
         "Phoenix Feather": 150,  # Rare item for reviving teammates
-        "Breakthrough Pill": 300
+        "Breakthrough Pill": 90
     }
 
     # Weighted item pool for rarity
@@ -1516,7 +1618,7 @@ def shop(player):
         ["Magic Scroll"] * 3 +
         ["Steel Sword"] * 2 +
         ["Bleed Enchantment"] * 2 +
-        ["Breakthrough Pill"] * 1 +
+        ["Breakthrough Pill"] * 3 +
         ["Phoenix Feather"] * 1  # Rare
     )
 
@@ -1525,6 +1627,14 @@ def shop(player):
 
     # Assign random stock quantities (1–3 for each item)
     shop_stock = {item: {"price": all_items[item], "stock": random.randint(1, 3)} for item in stock_keys}
+
+    # Special offers: if the player completed the Warden's Trial (story id 11), offer a unique item
+    warden_completed = any(q.get('id') == 11 and q.get('completed') for q in player.quests)
+    if warden_completed:
+        special = "Warden's Talisman"
+        all_items[special] = 200
+        shop_stock[special] = {"price": all_items[special], "stock": 1}
+        print("\nSpecial Offer: A Warden's Talisman is available for those who proved themselves.")
 
     while True:
         print("\nAvailable Items:")
@@ -1579,6 +1689,7 @@ def shop(player):
 def main_menu(player, players):
     menu = [
         ("Explore", lambda p: explore(p, players)),
+        ("Talk", lambda p: talk_menu(p)),
         ("Check Status", lambda p: (p.show_status(), input("Press Enter to continue..."))),
         ("Use Inventory", lambda p: manage_inventory(p, players, in_battle=False)),
         ("Allocate Stats", allocate_stats),
@@ -1668,6 +1779,92 @@ def revive_teammate(current_player, players):
     
     input("Press Enter to continue...")
 
+
+# -------------------------------
+# NPC Talk Helpers
+# -------------------------------
+def talk_menu(player):
+    npcs = ["Elder Maelin (Hearthvale)", "Captain Rurik (Ironpass)", "Archivist Serin (Ruins)"]
+    print("\nWho would you like to talk to?")
+    for i, n in enumerate(npcs, 1):
+        print(f"{i}. {n}")
+    print("0. Cancel")
+    choice = input("Choose NPC: ").strip()
+    if not choice.isdigit() or int(choice) < 0 or int(choice) > len(npcs):
+        print("Cancelled.")
+        return
+    if choice == '0':
+        return
+    idx = int(choice) - 1
+    if idx == 0:
+        talk_to_elder(player)
+    elif idx == 1:
+        talk_to_rurik(player)
+    elif idx == 2:
+        talk_to_serin(player)
+
+
+def talk_to_elder(player):
+    print("\nElder Maelin: 'The shrine's light weakens. Take care on the roads.'")
+    print("1. Ask about the shrine\n2. Ask about the rift\n0. Back")
+    choice = input("Choose: ").strip()
+    if choice == '1':
+        print("Maelin: 'Once the shrine kept wolves at bay. Restore it and you will be welcomed.'")
+        # offer Hearthvale Trial if not already assigned
+        assign_quests(player)
+    elif choice == '2':
+        print("Maelin: 'Rifts are like old wounds. Tend them, or they fester.'")
+    input("Press Enter to continue...")
+
+
+def talk_to_rurik(player):
+    print("\nCaptain Rurik: 'Face the Warden in Ironpass if you want to prove your strength.'")
+    print("1. Ask about Warden's Trial\n2. Trade rumors\n0. Back")
+    choice = input("Choose: ").strip()
+    if choice == '1':
+        print("Rurik: 'Defeat the Abyssal Warden. Hard mode grants the best reward.'")
+        # Assign Warden's Trial if player qualifies
+        assign_quests(player)
+        # Find the assigned story Warden's Trial (id 11) and offer Hard Mode
+        assigned = next((q for q in player.quests if q.get('id') == 11 and not q.get('completed')), None)
+        if assigned:
+            ans = input("Do you accept Hard Mode for the Warden's Trial? (y/n): ").strip().lower()
+            if ans == 'y':
+                assigned['hard_mode'] = True
+                print("Rurik: 'Hard Mode registered. Succeed and the Breakthrough Pill is yours.'")
+            else:
+                assigned['hard_mode'] = False
+        else:
+            # If not assigned due to level, inform player of requirement
+            quest_def = next((qq for qq in QUESTS if qq.get('id') == 11), None)
+            if quest_def:
+                minl = quest_def.get('min_level', 1)
+                if player.level < minl:
+                    print(f"Rurik: 'You must reach level {minl} before the Warden will accept challengers.'")
+    elif choice == '2':
+        print("Rurik: 'Rumors say the mines hide more than ore. Be ready.'")
+    input("Press Enter to continue...")
+
+
+def talk_to_serin(player):
+    print("\nArchivist Serin: 'Fragments hum if you hold them close.'")
+    print("1. Trade lore fragments\n2. Ask about Rift Shards\n0. Back")
+    choice = input("Choose: ").strip()
+    if choice == '1':
+        # simple check for fragments stored as 'Lore Fragment' in inventory
+        count = player.inventory.count('Lore Fragment')
+        if count >= 3:
+            for _ in range(3):
+                player.inventory.remove('Lore Fragment')
+            player.inventory.append('Magic Scroll')
+            print("Serin: 'Thank you. Take this Magic Scroll.'")
+        else:
+            print("Serin: 'Bring me three Lore Fragments.'")
+    elif choice == '2':
+        print("Serin: 'Rift Shards are dangerous. Bring five to close a minor rift.'")
+        assign_quests(player)
+    input("Press Enter to continue...")
+
 # -------------------------------
 # Main Game Loop
 # -------------------------------
@@ -1688,6 +1885,12 @@ def main():
 
     # If no players were loaded, create new game
     if not players:
+        # Show the narrative prologue for new games
+        try:
+            prologue()
+        except NameError:
+            # prologue may be defined later in file; ignore if missing
+            pass
         num_players = input("How many players? (1-4): ").strip()
         try:
             num_players = max(1, min(4, int(num_players)))
