@@ -16,10 +16,7 @@ print(" Boom! You were jolted awake by a loud, sudden noise, hurriedly scramblin
 
 class Player:
     def __init__(self, name):
-        # 1. Accept the user's custom name
         self.name = name
-        
-        # 2. Automatically assign starting RPG stats to 'self'
         self.lvl = 1
         self.con = 10
         self.stg = 10
@@ -28,6 +25,10 @@ class Player:
         self.hp = 100
         self.max_hp = 100
 
+    def dmg_taken(self, amount):
+        self.hp = max(0, self.hp - amount)
+        print(f"You have taken {amount} points of damage. Remaining hp: {self.hp}")
+        
 class MutantEnemy1:
     def __init__(self):
         self.name = "One-Armed Mutant"
@@ -48,11 +49,15 @@ class MutantEnemy1:
         
         # 3. Default attack pool if conditions aren't met
         return random.choice(["Bite", "Headbutt"])
+        
+    def dmg_taken(self, amount):
+        self.hp = max(0, self.hp - amount)
+        print(f"The mutant has taken {amount} points of damage. Remaining hp: {self.hp}")
 #------------
 
 print("\n----??? years later---- \n"
       " You wake up groggily, stepping out of a capsule. Your eyes adapt to your surrounding environment. \n"
-      " When you suddenly came to a realization... who are you?")
+      " When you suddenly came to a realization... what is your name?")
 
 player_name_choice = input(" Choose your name: ")
 
@@ -60,4 +65,3 @@ player1 = Player(player_name_choice)
 
 print(f"\n After long contemplation, you decided to call yourself {player1.name}.\n As you finally decided on your name, a loud growling noise could be heard from down the hall. \n You turn to look, noticing a single armed, red skinned mutant \n with teeth that seem to be about 15 inches long.")
 print(f" Just as you were recovering from the shock of seeing a mutant for the first time, it rudely began charging at you.")
-
