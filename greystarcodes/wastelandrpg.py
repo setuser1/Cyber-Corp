@@ -22,6 +22,7 @@ class Player:
         self.stg = 10
         self.agi = 12
         self.per = 11
+        self.end = 10
         self.hp = 100
         self.max_hp = 100
 
@@ -51,7 +52,7 @@ class MutantEnemy1:
         return random.choice(["Bite", "Headbutt"])
         
     def dmg_taken(self, amount):
-        self.hp = max(0, self.hp - amount)
+        self.hp = self.hp - amount
         print(f"The mutant has taken {amount} points of damage. Remaining hp: {self.hp}")
 #------------
 
@@ -59,9 +60,20 @@ print("\n----??? years later---- \n"
       " You wake up groggily, stepping out of a capsule. Your eyes adapt to your surrounding environment. \n"
       " When you suddenly came to a realization... what is your name?")
 
-player_name_choice = input(" Choose your name: ")
+player_name_choice = input(" Choose your name: ") #variable to get and save username
 
-player1 = Player(player_name_choice)
+player1 = Player(player_name_choice) #saves name into a class instance
 
 print(f"\n After long contemplation, you decided to call yourself {player1.name}.\n As you finally decided on your name, a loud growling noise could be heard from down the hall. \n You turn to look, noticing a single armed, red skinned mutant \n with teeth that seem to be about 15 inches long.")
 print(f" Just as you were recovering from the shock of seeing a mutant for the first time, it rudely began charging at you.")
+
+def combat_options(mutant, value):
+    if value == 1:
+        dmg = player1.stg * player1.stg / 10
+        mutant1 = mutant
+        mutant1.dmg_taken(mutant1, dmg)
+    else:
+        return 0
+    
+combat_options(MutantEnemy1, 1)
+    
