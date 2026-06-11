@@ -28,7 +28,7 @@ class Player:
 
     def dmg_taken(self, amount):
         self.hp = max(0, self.hp - amount)
-        print(f"You have taken {amount} points of damage. Remaining hp: {self.hp}")
+        print(f" You have taken {amount} points of damage. Remaining hp: {self.hp}")
         
 class MutantEnemy1:
     def __init__(self):
@@ -53,7 +53,7 @@ class MutantEnemy1:
         
     def dmg_taken(self, amount):
         self.hp = self.hp - amount
-        print(f"The mutant has taken {amount} points of damage. Remaining hp: {self.hp}")
+        print(f" The mutant has taken {amount} points of damage. Remaining hp: {self.hp}")
 #------------
 
 print("\n----??? years later---- \n"
@@ -69,11 +69,19 @@ print(f" Just as you were recovering from the shock of seeing a mutant for the f
 
 def combat_options(mutant, value):
     if value == 1:
-        dmg = player1.stg * player1.stg / 10
-        mutant1 = mutant
-        mutant1.dmg_taken(mutant1, dmg)
+        #gambling is good for you, thats why your damage will be random
+        dmg = random.randint(10,15) * player1.stg / 10
+        mutant.dmg_taken(dmg) 
     else:
-        return 0
-    
-combat_options(MutantEnemy1, 1)
+        print("The mutant dodged your attack.")
+
+# Create an instance of the mutant before passing it
+mutant_enemy = MutantEnemy1()
+value = int(input("Fight or Fight? Enter Number 1: "))
+while True:
+    if mutant_enemy.hp > 0:
+        combat_options(mutant_enemy, value)
+    else: 
+        print("You won!")
+        break
     
